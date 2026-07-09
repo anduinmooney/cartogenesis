@@ -4,45 +4,47 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 2 · 2026-07-08
-- **Engine version:** 0.5.0
-- **Health:** 🟢 Green. 59 tests pass; engine produces valid, deterministic output.
+- **As of:** Session 3 · 2026-07-08
+- **Engine version:** 0.8.0
+- **Health:** 🟢 Green. 87 tests pass; engine produces valid, deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 
 ## What works today
 
-- Seed → a full **physical world**: elevation, oceans/lakes/coasts, temperature,
-  moisture, rivers (real drainage networks), and 16 biomes — all deterministic.
-- Five rendered layers per world (terrain, biomes, temperature, moisture,
-  relief) as PNGs + JSON metadata with a `contentHash` determinism fingerprint.
-- CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`
-  writes `.map.png`, `.biome.png`, `.height.png`, `.json`.
-- 59 passing tests, including a golden-hash guard and river mass-conservation.
-- A 6-world **multi-layer atlas** + static viewer under `docs/`; local preview
-  via `node scripts/serve-docs.ts`.
+- Seed → a full **physical AND human world**: elevation, oceans/lakes/coasts,
+  temperature, moisture, rivers, 16 biomes, named provinces with cultures,
+  cities/ports with a capital, a road network, and a written history — all
+  deterministic from the seed.
+- Per world the CLI emits **7 artifacts**: terrain / biome / political map PNGs,
+  a grayscale heightmap, a **labeled SVG poster**, a **Markdown gazetteer**, and
+  JSON metadata with a `contentHash` fingerprint.
+- CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
+- 87 passing tests, incl. golden-hash guard, river mass-conservation, road
+  no-cycle, region full-partition.
+- A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
+  under `docs/`; local preview via `node scripts/serve-docs.ts`.
 
 ## Current layers (see ROADMAP.md for the full plan)
 
 | Layer | Status |
 |-------|--------|
-| L0 RNG & noise | ✅ done |
-| L1 Elevation | ✅ done |
-| L2 Hydrology I (sea, coasts, lakes) | ✅ done |
-| L3 Temperature | ✅ done |
-| L4 Moisture | ✅ done |
-| L5 Rivers (drainage) | ✅ done |
-| L6 Biomes | ✅ done |
-| L7 Regions & naming | 🔜 next |
-| L8+ settlements, roads, history | ⬜ planned |
+| L0 RNG & noise · L1 Elevation | ✅ done |
+| L2 Hydrology · L3 Temp · L4 Moisture | ✅ done |
+| L5 Rivers · L6 Biomes | ✅ done |
+| L7 Regions · L8 Naming | ✅ done |
+| L9 Settlements · L10 Roads · L11 History | ✅ done |
+| P1 SVG poster · P3 World report | ✅ done |
+| P2 Browser build (live generation) | 🔜 next |
+| P4 interactive atlas · erosion · CI | ⬜ planned |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 59 tests, all offline
-node src/cli.ts generate --seed hello
-node scripts/make-samples.ts   # rebuild docs/ atlas
+npm test                  # 87 tests, all offline
+node src/cli.ts generate --seed hello   # writes 7 artifacts to ./output
+node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/serve-docs.ts     # preview docs/ at http://localhost:8123
 ```
 
@@ -57,17 +59,18 @@ No `npm install` is required — there are zero dependencies.
 
 ## Known limitations / debt
 
-- The physical world is complete, but nothing *lives* on it yet — no regions,
-  settlements, roads, or history (that's L7+).
-- Moisture runs a single west→east prevailing wind; latitude-varying wind belts
-  (trade winds vs. westerlies) would be more realistic (future tuning).
-- Rivers fill enclosed basins over lakes rather than modeling lake outflow/
-  overflow explicitly — fine visually, revisit if lakes become important.
-- The continent mask is a simple radial falloff; revisit when regions arrive.
+- The world is complete on paper but Node-only — it can't yet run in a browser
+  (that's P2, next). `png.ts` uses `node:zlib` and `world.ts` uses
+  `node:crypto`; a browser build must swap these (Canvas ImageData, a pure hash).
+- Tiny single-cell islands become their own 1-cell "regions" (from the coverage
+  pass), which clutters gazetteers. Consider merging sub-threshold islets.
+- History wars need adjacent realms; small worlds (few cities) get few/no wars.
+- Moisture runs a single west→east prevailing wind; latitude wind belts would be
+  more realistic (future tuning).
 - No CI yet (planned). Tests are run manually via `npm test`.
 - Cross-platform float determinism is assumed (V8 is consistent in practice);
   guarded by the golden hash but not formally proven across architectures.
-- No TS `enum` anywhere — Node strip-only mode rejects them; use const objects.
+- No TS `enum`/namespaces/decorators — Node strip-only mode rejects them.
 
 ## Pointers
 

@@ -8,6 +8,57 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 3 — 2026-07-08 — The human world (L7–L11 + presentation)
+
+**Theme:** Populate and narrate the world. In one session: provinces, cultures,
+cities, roads, and a written history — plus two presentation firsts (labeled
+map posters and world-report gazetteers). The entire "structure & meaning" arc.
+
+### Added
+- **L7 — Regions** (`src/regions.ts`): partition land into contiguous provinces
+  via spaced seeds + water-respecting multi-source BFS + a coverage pass so
+  isolated islands become their own regions. Per-region stats + symmetric
+  adjacency. Each region's naming culture is chosen from its climate.
+- **L8 — Naming** (`src/names.ts`): syllable-based phonology engine with four
+  distinct cultures (Auld / Meridian / Kesh / Sylvan); deterministic per-key namer.
+- **L9 — Settlements** (`src/settlements.ts`): a habitability field (climate +
+  fresh-water access + low, flat land) drives placement via non-max suppression;
+  village/town/city tiers, a capital, port detection, culture-appropriate names.
+- **L10 — Roads** (`src/roads.ts`): single multi-source Dijkstra over terrain
+  (slope cost, ocean impassable, river bridges) → territory boundaries →
+  Kruskal MST → a connected road network with reconstructed paths.
+- **L11 — History** (`src/history.ts`): names notable features (peak, main
+  river, largest lake), forms realms around cities, and generates a
+  chronological chronicle — foundings, realm proclamations, wars between
+  neighbours, geography-tied disasters, academies, golden ages.
+- **Presentation:** `src/report.ts` (Markdown gazetteer per world) and
+  `src/svgmap.ts` (self-contained labeled **SVG poster** — first named-on-map
+  output). CLI now emits 7 artifacts; the atlas gallery gained a Political
+  layer plus per-world poster + gazetteer links.
+
+### Verified
+- `npm test` → **87 passing, 0 failing** (was 59). New invariants: region full-
+  partition & area-sum, symmetric adjacency, settlement spacing & capital
+  uniqueness, road forest/no-cycle & ocean-avoidance, chronological history,
+  SVG well-formedness/escaping, report determinism.
+- Elevation untouched → golden hash `54146be48037737d` still green.
+- Live gallery verified serving political maps, posters (30 vector labels), and
+  gazetteers (HTTP 200 end-to-end).
+
+### Decided
+- D-009 (region partition = spaced-seed BFS provinces, not river basins).
+- D-010 (roads via territory-boundary Dijkstra + Kruskal MST).
+- D-011 (SVG for labels; PNG can't carry text).
+
+### Metrics
+- Source modules: 19. Tests: 87. Runtime deps: 0. Engine: v0.8.0.
+
+### Left for next session
+- **P2 — Browser build**: run the engine live on the Pages site (type a seed,
+  watch a world generate). See `NEXT_SESSION.md` for the bundler decision.
+
+---
+
 ## Session 2 — 2026-07-08 — The physical world (L2–L6)
 
 **Theme:** Turn a bare elevation field into a living physical world — water,

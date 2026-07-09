@@ -6,6 +6,36 @@ old one — the history is the point.
 
 ---
 
+## D-011 — SVG (not PNG) for labeled map posters (2026-07-08, Session 3)
+**Decision:** Text-labeled maps are exported as SVG (`src/svgmap.ts`), embedding
+a rendered PNG as a base64 data-URI background with vector `<text>` labels on top.
+**Why:** Our PNG encoder has no font support, and hand-rasterizing a bitmap font
+is a rat-hole. SVG gives crisp, scalable labels, stays a single self-contained
+file (data-URI background = no external asset), renders in any browser, and is
+trivially styleable (outlined text for legibility). PNG maps remain the base
+render; SVG is the "poster" presentation layer over them.
+
+## D-010 — Roads via territory-boundary Dijkstra + Kruskal MST (2026-07-08, Session 3)
+**Decision:** Build the road network with ONE multi-source Dijkstra (all
+settlements seeded at once) whose territory boundaries yield candidate edges,
+then Kruskal's MST over those edges.
+**Why:** The naïve approach (Dijkstra from every settlement to every other) is
+N full-grid runs and O(N²) memory for predecessors. The single-pass territory
+method finds all inter-settlement candidate routes in one Dijkstra; Kruskal then
+yields a connected, cycle-free network. Settlements on separate landmasses simply
+never meet → they form separate components (a forest), which is correct. Verified
+by forest/no-cycle and ocean-avoidance tests.
+
+## D-009 — Regions = spaced-seed BFS provinces (not river basins) (2026-07-08, Session 3)
+**Decision:** Partition land into provinces by scattering well-spaced seed points
+and growing them with a water-respecting multi-source BFS, plus a coverage pass
+so unseeded islands become their own regions.
+**Why:** River basins (an elegant alternative using `flowTo`) vary wildly in size
+— a few huge basins and many slivers — which reads poorly as "provinces." Spaced
+seeds give controllable, evenly-sized, contiguous regions that look like a
+political map. Basins remain a good option for a future "watershed" view.
+Trade-off: single-cell islets become 1-cell regions (noted as debt).
+
 ## D-008 — Fixed physical pipeline order (2026-07-08, Session 2)
 **Decision:** Generation runs in strict physical-dependency order:
 elevation → water → temperature → moisture → rivers → biomes. Each subsystem

@@ -3,10 +3,11 @@
 **A deterministic, dependency-free procedural world generation engine.**
 
 Cartogenesis turns a single seed into a whole world — **elevation, oceans and
-lakes, temperature, rainfall, rivers, and biomes today**; regions, settlements,
-and history over time. Same seed, same world, forever, on any machine. It has
-**zero runtime dependencies** and runs directly on modern Node.js with no build
-step.
+lakes, temperature, rainfall, rivers, biomes, named provinces with distinct
+cultures, cities and ports, a road network, and a written history**. Same seed,
+same world, forever, on any machine. It has **zero runtime dependencies** and
+runs directly on modern Node.js with no build step. Each world exports labeled
+map posters and a Markdown gazetteer.
 
 ![A generated island world](docs/samples/cartogenesis.map.png)
 
@@ -55,9 +56,12 @@ Each `generate` run writes three files:
 
 | File | Contents |
 |------|----------|
-| `<name>.map.png` | Hypsometric-tinted, hill-shaded terrain map with rivers |
+| `<name>.map.png` | Terrain map: hypsometric + rivers + roads + settlements |
 | `<name>.biome.png` | Biome atlas (16 biomes) with rivers |
+| `<name>.political.png` | Political map: provinces + roads + settlements |
 | `<name>.height.png` | Raw grayscale elevation (heightmap) |
+| `<name>.poster.svg` | Labeled poster: named regions, cities, and features |
+| `<name>.report.md` | Gazetteer: overview, regions, settlements, chronicle |
 | `<name>.json` | World metadata, including a determinism `contentHash` |
 
 ## The gallery
@@ -88,8 +92,15 @@ seed ──► Rng ──► named sub-streams ──► subsystems ──► Wo
 | `src/climate.ts` | Temperature + moisture fields (L3, L4) |
 | `src/rivers.ts` | Priority-Flood drainage + rivers (L5) |
 | `src/biomes.ts` | Whittaker biome classification (L6) |
-| `src/render.ts` | Grids/layers → RGBA (terrain, biome, climate, rivers) |
+| `src/regions.ts` | Land partitioned into named provinces (L7) |
+| `src/names.ts` | Procedural place-name languages (L8) |
+| `src/settlements.ts` | Habitability → cities, ports, capital (L9) |
+| `src/roads.ts` | Least-cost road network, Dijkstra + MST (L10) |
+| `src/history.ts` | Realms, wars, disasters — a chronicle (L11) |
+| `src/render.ts` | Layers → RGBA (terrain, biome, political, climate, overlays) |
 | `src/png.ts` | Dependency-free PNG encoder |
+| `src/svgmap.ts` | Labeled SVG poster export |
+| `src/report.ts` | Markdown gazetteer generator |
 | `src/world.ts` | Orchestration, metadata, content hashing |
 | `src/cli.ts` | Command-line interface |
 

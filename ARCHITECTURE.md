@@ -20,10 +20,16 @@ WorldConfig ─► generateWorld()
                  │     │                      └► generateMoisture()   ─► moisture    ✅ L4
                  │     ├ .stream("rivers")   ─► generateRivers()      ─► rivers      ✅ L5
                  │     ├ .stream("biomes")   ─► classifyBiomes()      ─► biomes      ✅ L6
-                 │     ├ .stream("regions")  ─► (next) region partition            🔜 L7
-                 │     └ .stream("history")  ─► (future) settlements, events        ⬜
+                 │     ├ .stream("regions")  ─► generateRegions()     ─► regions     ✅ L7 (+L8 names)
+                 │     ├ .stream("settlements")─► generateSettlements()─► settlements ✅ L9
+                 │     ├ .stream("roads")    ─► generateRoads()       ─► roads       ✅ L10
+                 │     └ .stream("history")  ─► generateHistory()     ─► history     ✅ L11
                  │
-                 └─ World { meta, elevation, water, temperature, moisture, rivers, biomes }
+                 └─ World { meta, elevation, water, temperature, moisture, rivers,
+                            biomes, regions, settlements, roads, history }
+
+Presentation (not part of generateWorld): report.ts → Markdown gazetteer,
+svgmap.ts → labeled SVG poster, render.ts → PNG layers.
 ```
 
 ## Determinism rules (do not violate)
@@ -88,10 +94,27 @@ WorldConfig ─► generateWorld()
   matrix + alpine/snow elevation overrides. `Biome` is a **const object, not an
   enum** (Node strip-only mode — see D-006). `BIOME_NAMES`, `BIOME_COLORS`.
 
-### `render.ts`
-- `renderGrayscale`, `renderHypsometric` (ocean/lake/hillshade),
-  `renderScalarField` / `renderTemperature` / `renderMoisture`, `renderBiomes`,
-  and `overlayRivers` (in-place river overlay, width by log-flow).
+### `regions.ts` (L7) + `names.ts` (L8)
+- `generateRegions(...)` — spaced seeds + water-respecting BFS → contiguous
+  named provinces; culture chosen from climate. `names.ts` is the syllable-based
+  phonology engine (`LANGUAGES`, `makeName`, `makeNamer`).
+
+### `settlements.ts` (L9) + `roads.ts` (L10)
+- `generateSettlements(...)` — `habitabilityField` + non-max suppression →
+  cities/towns/villages, capital, ports. `generateRoads(...)` — territory-boundary
+  Dijkstra + Kruskal MST road network.
+
+### `history.ts` (L11)
+- `generateHistory(...)` — names notable features, forms realms, emits a dated
+  chronicle (foundings, wars, disasters, golden ages).
+
+### `render.ts`, `svgmap.ts`, `report.ts`
+- `render.ts`: `renderGrayscale`, `renderHypsometric`, `renderScalarField` /
+  `renderTemperature` / `renderMoisture`, `renderBiomes`, `renderRegions`, and
+  in-place overlays `overlayRivers` / `overlayRoads` / `overlaySettlements`.
+  **All return `Uint8Array` RGBA — directly usable as browser `ImageData`.**
+- `svgmap.ts`: `worldPosterSVG` — labeled SVG poster (PNG data-URI + vector text).
+- `report.ts`: `worldReportMarkdown` — the gazetteer.
 
 ### `png.ts`
 - `encodePNG(w, h, rgba)` — minimal PNG writer (zlib for DEFLATE, hand-rolled

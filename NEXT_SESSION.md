@@ -6,87 +6,84 @@
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm green **before** changing anything (baseline: **59**).
-3. Skim `CHANGELOG.md` (top entry, Session 2) and `ROADMAP.md`.
-4. Read `ARCHITECTURE.md` → "How to add a subsystem" before writing code.
-5. Preview the current atlas if useful: `node scripts/serve-docs.ts` →
-   http://localhost:8123.
+2. `npm test` → confirm green **before** changing anything (baseline: **87**).
+3. Skim `CHANGELOG.md` (top, Session 3) and `ROADMAP.md`.
+4. Preview the current atlas: `node scripts/serve-docs.ts` → http://localhost:8123.
 
 ## Context: where the project is
 
-The **entire physical foundation is done** (L1–L6): elevation, water, climate,
-rivers, biomes — all tested and rendered. The world is physically complete but
-**nothing lives on it or is named yet**. Session 3 begins the "structure &
-meaning" arc.
+The world is **complete end to end** — physical (L1–L6) and human (L7–L11) —
+plus labeled SVG posters and Markdown gazetteers. But it only runs in Node. The
+single biggest remaining milestone is making it **run live in the browser** so
+anyone can type a seed on the Pages site and watch a world generate.
 
-## This session's objective: **L7 — Regions & naming**
+## This session's objective: **P2 — Browser build (live generation)**
 
-Partition the land into coherent, named regions and name notable features. This
-is the bridge from *physical* to *human* geography.
+Get the engine generating and rendering worlds in the browser, published on the
+Pages site.
 
-### 1. Build `src/regions.ts`
-- Partition all land cells into N contiguous **regions**. Recommended approach:
-  scatter `regionCount` seed points on land using a `regions` RNG stream
-  (rejection-sample points where `elevation >= seaLevel` and not lake), then
-  **multi-source BFS over land only** (4-connectivity, never crossing
-  ocean/lake) so each land cell is labeled with its nearest seed. Contiguous by
-  construction. Scale `regionCount` with land area (e.g. ~1 per 1500 land cells,
-  min 4).
-- Alternative worth considering: regions = **river basins** (group land by the
-  ocean/lake cell each cell ultimately drains to — you already have `flowTo`).
-  This is elegant and physical. Pick one; note the choice in `DECISIONS.md`.
-- Per region compute: cell count (area), centroid (x,y), mean elevation, mean
-  temperature, dominant biome, `coastal` flag (touches ocean), and the region's
-  id. Return `{ ids: Uint8Array|Int32Array, regions: RegionInfo[] }`.
+### Key facts that make this feasible
+- Almost every module is pure TS with **no Node dependencies**. The only two
+  Node touchpoints are:
+  - `src/png.ts` → `node:zlib` (the browser won't need PNG — draw to a Canvas).
+  - `src/world.ts` `hashGrid()` → `node:crypto` (needs a pure-JS replacement).
+- **The render functions already return `Uint8Array` RGBA** — that is exactly
+  `ImageData.data`. So `ctx.putImageData(new ImageData(rgba, w, h), 0, 0)` draws
+  any layer with zero new rendering code. The overlays (`overlayRivers`, etc.)
+  mutate RGBA in place and work as-is.
 
-### 2. Build `src/names.ts`
-- A deterministic procedural name generator. Suggested design: a small
-  syllable-based phonology (onsets, vowels, codas) with a few "language" presets
-  chosen per region so neighboring regions can share a naming style. Seed each
-  name from a `names` stream + the region id so names are stable.
-- Expose `makeNamer(seed)` → `() => string`, plus helpers to name regions and
-  notable features (the main river = highest `maxFlow` outlet, largest lake,
-  highest peak). Keep names pronounceable (alternate consonant/vowel).
+### Decisions to make first (record in DECISIONS.md)
+1. **Bundler.** Browsers can't run `.ts` (type-stripping is Node-only). Recommend
+   adding **esbuild as a dev-only dependency** to bundle `web/main.ts` →
+   `docs/app/bundle.js`. This keeps the *runtime* zero-dependency (esbuild is
+   build-time only, and the committed bundle means Pages needs no build). This is
+   a deliberate, documented exception to "no build step" — for the web target only;
+   Node dev stays build-free. (Alternative: hand-write a tiny concatenator — not
+   worth it. Decide and note it as D-012.)
+2. **Pure hash.** Replace `node:crypto` in `hashGrid` with a small pure-JS hash
+   (e.g. FNV-1a or cyrb over the quantized grid) so the engine is universal.
+   **This changes the golden `contentHash`** — regenerate it, update
+   `tests/world.test.ts`, and record the intentional change in DECISIONS (D-013).
+   Alternatively keep `node:crypto` for Node and branch — but a single universal
+   pure hash is cleaner.
 
-### 3. Wire into `world.ts`
-- Add `root.stream("regions")` and `root.stream("names")`. Compute regions, then
-  names. Attach `world.regions` (+ names). Add to `meta`: `regionCount`, and
-  maybe a `featured` object (largest region name, main river name).
+### Build steps
+1. Make the engine browser-safe: add `src/hash.ts` (pure), refactor `hashGrid`
+   to use it. Confirm `npm test` still green (with the updated golden hash).
+2. Add `web/main.ts`: a small app that reads a seed from an `<input>`, calls
+   `generateWorld`, and draws the selected layer to a `<canvas>` via `ImageData`.
+   Wire buttons for layers (terrain/biome/political/temp/rain) reusing the
+   existing renderers + overlays. Show the meta (capital, regions, etc.) and the
+   chronicle text beside it. Keep it dependency-free browser code.
+3. Add `scripts/build-web.ts` (or an npm script) that invokes esbuild to bundle
+   `web/main.ts` to `docs/app/bundle.js` (format=esm or iife, minify). Add
+   `esbuild` to `devDependencies` and an npm `build:web` script.
+4. Add `docs/app/index.html` (seed box, generate button, canvas, layer tabs,
+   info panel). Link to it from the main gallery (`docs/index.html`) — a "Generate
+   your own →" call to action in the masthead.
+5. **Commit the built `docs/app/bundle.js`** so Pages serves it with no build.
+6. Verify locally with `scripts/serve-docs.ts` and the browser preview; confirm
+   generating a couple of seeds renders on the canvas and layer switching works.
 
-### 4. Render
-- `renderRegions(regionLayer, ...)`: give each region a distinct, stable color
-  (hash region id → hue, or a fixed palette cycled). Add subtle coastlines.
-- Add a **"Regions"** layer to `scripts/make-samples.ts` and the `LAYERS` array
-  in `docs/index.html`. Regenerate samples.
-- NOTE: text labels *on* the PNG need a bitmap font (hard). For now, expose
-  region names in metadata / console; on-map labels are a future SVG-export job
-  (roadmap P1). Don't rat-hole on text rendering this session.
-
-### 5. Test (`tests/regions.test.ts`, `tests/names.test.ts`)
-- Determinism: same seed → identical region ids and names.
-- Partition: every land cell belongs to exactly one region; no ocean/lake cell
-  has a region; region cell counts sum to land cell count.
-- Contiguity (if BFS approach): each region is 4-connected (spot-check).
-- Names: non-empty, deterministic, reasonably varied across regions.
+### Test / verify
+- `npm test` stays green (87, adjusted golden hash).
+- A tiny node smoke test that `generateWorld` works without importing `png.ts`
+  (i.e. no `node:crypto`/`node:zlib` on the generation+meta path).
+- Manual: load `docs/app/` locally, generate seeds, switch layers.
 
 ### Close out (do not skip)
-1. `npm test` green. Elevation is untouched, so the golden hash
-   `54146be48037737d` must stay green — if it changes you broke terrain.
-2. `node scripts/make-samples.ts` to refresh `docs/` with the Regions layer.
-3. Update `CHANGELOG.md` (Session 3 entry), `PROJECT_STATE.md` (layer table +
-   date + version bump to 0.6.0), `ROADMAP.md` (tick L7, mark L8 🔜),
-   `DECISIONS.md` (region-partition choice), and rewrite this file for **L8 —
-   Naming languages / L9 — Settlements**.
-4. Commit per logical unit and push. Verify the live site updated.
+1. Update `CHANGELOG.md` (Session 4), `PROJECT_STATE.md` (P2 done, version bump),
+   `ROADMAP.md` (tick P2, mark P4 🔜), `DECISIONS.md` (D-012/D-013), and rewrite
+   this file for **P4 — interactive atlas** (pan/zoom, clickable regions) or
+   deeper simulation (hydraulic erosion).
+2. Commit per logical unit and push. Verify the live site's new `/app/` page.
 
 ## Guardrails
-- Zero new dependencies. All randomness via `Rng` streams. No `Math.random`,
-  no clock, no ambient state.
-- **No TS `enum`s / namespaces / decorators** (Node strip-only mode — see D-006).
-- Every public function gets a doc comment; every subsystem gets a determinism
-  test. Keep `main` always green.
+- Runtime stays **zero-dependency**; esbuild is dev-only. All randomness via
+  `Rng` streams. No `Math.random`, no clock. No TS enums/namespaces/decorators.
+- Keep `main` green. Every new module gets a doc comment + determinism test.
 
-## Stretch goals (only if L7 is done, tested, committed)
-- Begin L9 settlement scoring: a habitability field (near fresh water + mild
-  climate + not too high) → candidate city sites via non-maximum suppression.
-- Add a `regionCount` CLI flag.
+## Stretch goals (only if P2 is done, tested, committed)
+- Layer cross-fade animation as generation completes.
+- A "randomize seed" button; shareable `?seed=` URL param.
+- Begin P4: pan/zoom on the canvas; hover a region to show its name/stats.

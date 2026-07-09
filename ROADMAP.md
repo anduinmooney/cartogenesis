@@ -10,8 +10,8 @@ you can't have rivers before elevation, or forests before rainfall.
 |--------|----------------------------|
 | **1 day** (Session 1) | A working, tested, deterministic engine that turns a seed into a rendered elevation map. Continuity docs in place. On GitHub. ✅ |
 | **1 week** | Water and climate: coastlines, temperature, moisture, and rivers by flow accumulation. Maps look like *places*. ✅ **Reached in Session 2 — ahead of schedule.** |
-| **1 month** | A full physical world: biome classification ✅ (Session 2). Still ahead: named regions, a labeled poster-quality SVG export, and a browser build so worlds render live on the Pages site. |
-| **6 months** | A living world: settlements placed by habitability, a procedural history/timeline, cultures and place-name languages, trade routes, and an explorable web atlas. Reproducible "world reports." |
+| **1 month** | A full physical world + named regions + labeled SVG posters. ✅ **All reached by Session 3.** |
+| **6 months** | A living world: settlements by habitability ✅, a procedural history ✅, place-name languages ✅, trade routes ✅, reproducible world reports ✅. **Core reached in Session 3 — far ahead of schedule.** Remaining: an *explorable, live, in-browser* atlas (P2/P4). |
 
 Success is **not** measured by lines of code but by: *does the latest layer make
 the world more coherent, and is it tested and reproducible?*
@@ -33,26 +33,31 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **L6 — Biomes.** 16-biome Whittaker classification (temperature × moisture)
   + alpine/snow overrides; biome atlas renderer.
 
-### Structure & meaning
-- 🔜 **L7 — Regions.** Segment the world into named landmasses/regions; a
-  distance/flood partition of the land into provinces.
-- ⬜ **L8 — Naming languages.** Per-culture phonologies → coherent place names.
-- ⬜ **L9 — Settlements.** Habitability scoring → cities/towns near water & good land.
-- ⬜ **L10 — Roads & trade.** Least-cost paths between settlements over terrain.
-- ⬜ **L11 — History.** A timeline of events (founding, wars, migrations) seeded
-  from geography.
+### Structure & meaning ✅ COMPLETE (Session 3)
+- ✅ **L7 — Regions.** Land partitioned into named provinces (spaced-seed BFS).
+- ✅ **L8 — Naming languages.** Four phonologies → coherent place names; culture
+  follows climate.
+- ✅ **L9 — Settlements.** Habitability scoring → cities/towns/ports + a capital.
+- ✅ **L10 — Roads & trade.** Least-cost Dijkstra + Kruskal MST road network.
+- ✅ **L11 — History.** Realms, wars, disasters, golden ages — a dated chronicle.
 
 ### Presentation & platform
-- ⬜ **P1 — SVG poster export.** Labeled, print-quality maps with a legend.
-- ⬜ **P2 — Browser engine.** Compile/port the core to run in the Pages viewer so
-  users can type a seed and watch a world generate live.
-- ⬜ **P3 — World report.** A generated Markdown/HTML "atlas" describing a world.
+- ✅ **P1 — SVG poster export.** Labeled maps with region/city/feature names.
+- 🔜 **P2 — Browser engine.** Port the core to run in the Pages viewer so users
+  can type a seed and watch a world generate live on a Canvas. (Needs swapping
+  `node:zlib`/`node:crypto`; decide on a dev-only bundler — see NEXT_SESSION.)
+- ✅ **P3 — World report.** Markdown gazetteer describing each world.
 - ⬜ **P4 — Interactive atlas.** Pan/zoom, layer toggles, clickable regions.
+
+### Deeper simulation (optional polish)
+- ⬜ Hydraulic erosion pass on elevation (carve valleys along rivers).
+- ⬜ Latitude-varying wind belts for moisture (trade winds vs. westerlies).
+- ⬜ Lake outflow / river-into-lake-into-river continuity.
+- ⬜ Merge sub-threshold islet "regions".
 
 ### Engineering hygiene (ongoing)
 - ⬜ CI via GitHub Actions (run `npm test` on push).
-- ⬜ Performance budget: keep 512² generation under ~1s.
-- ⬜ A `benchmark` script tracking generation time per layer.
+- ⬜ Performance budget + a `benchmark` script per layer.
 
 ## Guiding principles
 
