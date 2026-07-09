@@ -1,60 +1,145 @@
 {
-  "size": 320,
-  "generatedWith": "0.1.0",
+  "size": 360,
+  "engineVersion": "0.5.0",
+  "layers": [
+    "map",
+    "biome",
+    "temperature",
+    "moisture",
+    "height"
+  ],
   "worlds": [
     {
       "seed": "cartogenesis",
       "title": "Cartogenesis",
       "note": "The canonical world.",
-      "map": "cartogenesis.map.png",
-      "height": "cartogenesis.height.png",
-      "landFraction": 63.6,
-      "contentHash": "4144b83d27b73844"
+      "files": {
+        "map": "cartogenesis.map.png",
+        "biome": "cartogenesis.biome.png",
+        "temperature": "cartogenesis.temperature.png",
+        "moisture": "cartogenesis.moisture.png",
+        "height": "cartogenesis.height.png"
+      },
+      "stats": {
+        "landFraction": 63.5,
+        "oceanFraction": 36.5,
+        "lakeCount": 0,
+        "riverFraction": 2.99,
+        "mainRiverFlow": 4481,
+        "biomeDiversity": 15,
+        "dominantBiome": "Grassland"
+      },
+      "contentHash": "57db9941130431a0"
     },
     {
       "seed": "atlas",
       "title": "Atlas",
       "note": "A fragmented archipelago.",
-      "map": "atlas.map.png",
-      "height": "atlas.height.png",
-      "landFraction": 38.4,
-      "contentHash": "181a40fba0557631"
+      "files": {
+        "map": "atlas.map.png",
+        "biome": "atlas.biome.png",
+        "temperature": "atlas.temperature.png",
+        "moisture": "atlas.moisture.png",
+        "height": "atlas.height.png"
+      },
+      "stats": {
+        "landFraction": 38.5,
+        "oceanFraction": 61.4,
+        "lakeCount": 5,
+        "riverFraction": 1.67,
+        "mainRiverFlow": 1464,
+        "biomeDiversity": 14,
+        "dominantBiome": "Savanna"
+      },
+      "contentHash": "50b9759b8032afa8"
     },
     {
       "seed": "borea",
       "title": "Borea",
       "note": "A broad northern continent.",
-      "map": "borea.map.png",
-      "height": "borea.height.png",
-      "landFraction": 59.4,
-      "contentHash": "f0aacd6006ffe347"
+      "files": {
+        "map": "borea.map.png",
+        "biome": "borea.biome.png",
+        "temperature": "borea.temperature.png",
+        "moisture": "borea.moisture.png",
+        "height": "borea.height.png"
+      },
+      "stats": {
+        "landFraction": 59.5,
+        "oceanFraction": 40.5,
+        "lakeCount": 2,
+        "riverFraction": 2.77,
+        "mainRiverFlow": 3295,
+        "biomeDiversity": 16,
+        "dominantBiome": "Grassland"
+      },
+      "contentHash": "966ec0715564e087"
     },
     {
       "seed": "mistral",
       "title": "Mistral",
       "note": "Scattered coastal isles.",
-      "map": "mistral.map.png",
-      "height": "mistral.height.png",
-      "landFraction": 46.3,
-      "contentHash": "2c9614eb17adc489"
+      "files": {
+        "map": "mistral.map.png",
+        "biome": "mistral.biome.png",
+        "temperature": "mistral.temperature.png",
+        "moisture": "mistral.moisture.png",
+        "height": "mistral.height.png"
+      },
+      "stats": {
+        "landFraction": 46.3,
+        "oceanFraction": 53.7,
+        "lakeCount": 0,
+        "riverFraction": 2,
+        "mainRiverFlow": 2437,
+        "biomeDiversity": 15,
+        "dominantBiome": "Grassland"
+      },
+      "contentHash": "2f323980a7e3e56d"
     },
     {
       "seed": "vahalia",
       "title": "Vahalia",
-      "note": "A rugged mountainous land.",
-      "map": "vahalia.map.png",
-      "height": "vahalia.height.png",
-      "landFraction": 56.4,
-      "contentHash": "d13574ec32e8c9b8"
+      "note": "A rugged, river-veined land.",
+      "files": {
+        "map": "vahalia.map.png",
+        "biome": "vahalia.biome.png",
+        "temperature": "vahalia.temperature.png",
+        "moisture": "vahalia.moisture.png",
+        "height": "vahalia.height.png"
+      },
+      "stats": {
+        "landFraction": 56.5,
+        "oceanFraction": 43.3,
+        "lakeCount": 3,
+        "riverFraction": 2.4,
+        "mainRiverFlow": 2802,
+        "biomeDiversity": 16,
+        "dominantBiome": "Savanna"
+      },
+      "contentHash": "6f614fac67002553"
     },
     {
       "seed": "aurelia-9",
       "title": "Aurelia IX",
       "note": "A temperate heartland.",
-      "map": "aurelia-9.map.png",
-      "height": "aurelia-9.height.png",
-      "landFraction": 32.9,
-      "contentHash": "645870f7b00c2a03"
+      "files": {
+        "map": "aurelia-9.map.png",
+        "biome": "aurelia-9.biome.png",
+        "temperature": "aurelia-9.temperature.png",
+        "moisture": "aurelia-9.moisture.png",
+        "height": "aurelia-9.height.png"
+      },
+      "stats": {
+        "landFraction": 32.9,
+        "oceanFraction": 67.1,
+        "lakeCount": 1,
+        "riverFraction": 1.46,
+        "mainRiverFlow": 1629,
+        "biomeDiversity": 15,
+        "dominantBiome": "Savanna"
+      },
+      "contentHash": "02f5fd230edc7e37"
     }
   ]
 }

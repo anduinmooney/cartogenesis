@@ -3,170 +3,454 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cartogenesis — Procedural World Gallery</title>
+    <title>Cartogenesis — an atlas of worlds from seeds</title>
+    <meta
+      name="description"
+      content="A deterministic procedural world generation engine. Every world is a pure function of its seed."
+    />
     <style>
       :root {
-        --bg: #0d1117;
-        --panel: #161b22;
-        --border: #2a3038;
-        --ink: #e6edf3;
-        --muted: #8b949e;
-        --accent: #5a9bc8;
+        --ground: #0b1119;
+        --panel: #101923;
+        --panel-2: #0d151d;
+        --border: #23313f;
+        --border-soft: #1a2531;
+        --ink: #e9eff5;
+        --muted: #93a6b7;
+        --faint: #64768a;
+        --accent: #6cc0c9;
+        --accent-2: #d9a441;
+        --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+          serif;
+        --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas,
+          monospace;
       }
-      * { box-sizing: border-box; }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --ground: #ece5d6;
+          --panel: #f6f1e6;
+          --panel-2: #efe8d8;
+          --border: #d3c7ad;
+          --border-soft: #e0d7c2;
+          --ink: #23292e;
+          --muted: #6d6553;
+          --faint: #928a76;
+          --accent: #2b7a86;
+          --accent-2: #96631a;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
       body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif;
-        background: var(--bg);
+        background: var(--ground);
         color: var(--ink);
-        line-height: 1.5;
+        font-family: var(--sans);
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
       }
-      header {
-        padding: 2.5rem 1.5rem 1.5rem;
-        max-width: 1100px;
+      .wrap {
+        max-width: 1180px;
         margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      /* ---- Masthead ---- */
+      header {
+        border-bottom: 1px solid var(--border);
+        background: linear-gradient(
+          180deg,
+          color-mix(in srgb, var(--accent) 6%, var(--ground)),
+          var(--ground)
+        );
+      }
+      .masthead {
+        padding: 3rem 1.5rem 2rem;
+        max-width: 1180px;
+        margin: 0 auto;
+      }
+      .eyebrow {
+        font-family: var(--mono);
+        font-size: 0.72rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 0.9rem;
       }
       h1 {
-        margin: 0 0 0.25rem;
-        font-size: 1.9rem;
-        letter-spacing: -0.02em;
+        font-family: var(--serif);
+        font-weight: 600;
+        font-size: clamp(2.4rem, 6vw, 3.9rem);
+        line-height: 1.02;
+        letter-spacing: -0.015em;
+        margin: 0;
+        text-wrap: balance;
       }
-      .tagline { color: var(--muted); margin: 0 0 1rem; }
-      .meta { color: var(--muted); font-size: 0.85rem; }
-      .meta code {
-        background: var(--panel);
-        padding: 0.1rem 0.4rem;
-        border-radius: 4px;
-        border: 1px solid var(--border);
+      h1 .amp {
+        color: var(--accent-2);
+        font-style: italic;
       }
-      main {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 1.5rem 3rem;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 1.25rem;
-      }
-      .card {
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        overflow: hidden;
-      }
-      .card figure { margin: 0; position: relative; background: #05070d; }
-      .card img {
-        display: block;
-        width: 100%;
-        image-rendering: auto;
-        aspect-ratio: 1 / 1;
-      }
-      .card .body { padding: 0.85rem 1rem 1rem; }
-      .card h2 { margin: 0; font-size: 1.05rem; }
-      .card .note { color: var(--muted); font-size: 0.88rem; margin: 0.15rem 0 0.6rem; }
-      .stats {
-        display: flex;
-        gap: 1rem;
-        font-size: 0.78rem;
+      .lede {
+        max-width: 60ch;
         color: var(--muted);
-        font-variant-numeric: tabular-nums;
+        font-size: 1.08rem;
+        margin: 1.1rem 0 0;
       }
-      .toggle {
-        position: absolute;
-        top: 0.5rem;
-        right: 0.5rem;
+      .lede code {
+        font-family: var(--mono);
+        font-size: 0.86em;
+        color: var(--ink);
+        background: var(--panel);
+        padding: 0.12em 0.42em;
+        border-radius: 4px;
+        border: 1px solid var(--border-soft);
+      }
+      .meta-row {
         display: flex;
-        gap: 2px;
-        background: rgba(13, 17, 23, 0.8);
+        flex-wrap: wrap;
+        gap: 1.4rem;
+        margin-top: 1.6rem;
+        font-family: var(--mono);
+        font-size: 0.78rem;
+        color: var(--faint);
+      }
+      .meta-row b {
+        color: var(--ink);
+        font-weight: 600;
+      }
+      .meta-row a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+      .meta-row a:hover {
+        border-bottom-color: var(--accent);
+      }
+
+      /* ---- Plate grid ---- */
+      main {
+        padding: 2.5rem 0 1rem;
+      }
+      .plates {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 1.6rem;
+      }
+      .plate {
+        background: var(--panel);
         border: 1px solid var(--border);
         border-radius: 6px;
-        padding: 2px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
       }
-      .toggle button {
+      .plate figure {
+        margin: 0;
+        position: relative;
+        background: #05080d;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+      }
+      .plate img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .platenum {
+        position: absolute;
+        top: 0.6rem;
+        left: 0.7rem;
+        font-family: var(--mono);
+        font-size: 0.68rem;
+        letter-spacing: 0.12em;
+        color: #dfe8f0;
+        background: rgba(6, 10, 16, 0.62);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        padding: 0.15rem 0.45rem;
+        border-radius: 3px;
+        backdrop-filter: blur(3px);
+      }
+      .tabs {
+        position: absolute;
+        bottom: 0.6rem;
+        left: 0.6rem;
+        right: 0.6rem;
+        display: flex;
+        gap: 3px;
+        background: rgba(6, 10, 16, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 5px;
+        padding: 3px;
+        backdrop-filter: blur(4px);
+      }
+      .tabs button {
+        flex: 1;
         border: 0;
         background: transparent;
-        color: var(--muted);
-        font-size: 0.72rem;
-        padding: 0.2rem 0.5rem;
-        border-radius: 4px;
+        color: #c6d4e0;
+        font-family: var(--mono);
+        font-size: 0.68rem;
+        letter-spacing: 0.03em;
+        padding: 0.32rem 0.1rem;
+        border-radius: 3px;
         cursor: pointer;
+        transition: background 0.12s, color 0.12s;
       }
-      .toggle button.active { background: var(--accent); color: #041018; }
-      footer {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 1.5rem;
+      .tabs button:hover {
+        color: #fff;
+      }
+      .tabs button[aria-pressed="true"] {
+        background: var(--accent);
+        color: #04141a;
+        font-weight: 600;
+      }
+      .tabs button:focus-visible {
+        outline: 2px solid var(--accent-2);
+        outline-offset: 1px;
+      }
+
+      .caption {
+        padding: 0.9rem 1rem 1.1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+        border-top: 1px solid var(--border-soft);
+      }
+      .caption h2 {
+        font-family: var(--serif);
+        font-size: 1.28rem;
+        font-weight: 600;
+        margin: 0;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+      .caption h2 .seed {
+        font-family: var(--mono);
+        font-size: 0.68rem;
+        color: var(--faint);
+        letter-spacing: 0.04em;
+        font-weight: 400;
+      }
+      .caption .note {
         color: var(--muted);
-        font-size: 0.82rem;
-        border-top: 1px solid var(--border);
+        font-size: 0.9rem;
+        margin: 0;
       }
-      a { color: var(--accent); }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.3rem 1rem;
+        font-family: var(--mono);
+        font-size: 0.74rem;
+        color: var(--muted);
+        border-top: 1px dashed var(--border-soft);
+        padding-top: 0.7rem;
+        font-variant-numeric: tabular-nums;
+      }
+      .stats span b {
+        color: var(--ink);
+        font-weight: 600;
+      }
+      .stats .wide {
+        grid-column: 1 / -1;
+      }
+
+      /* ---- Legend ---- */
+      .legend {
+        margin: 2.5rem 0 1rem;
+        padding: 1.4rem 1.5rem;
+        background: var(--panel-2);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+      }
+      .legend h3 {
+        font-family: var(--mono);
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 1rem;
+      }
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 0.5rem 1.2rem;
+      }
+      .swatch {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+      .swatch i {
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        flex: none;
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        margin-top: 2.5rem;
+        padding: 1.6rem 0 3rem;
+        color: var(--faint);
+        font-family: var(--mono);
+        font-size: 0.76rem;
+      }
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transition: none !important;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Cartogenesis</h1>
-      <p class="tagline">A deterministic, dependency-free procedural world generation engine.</p>
-      <p class="meta">
-        Every map below is generated purely from its <em>seed</em>. Same seed,
-        same world — forever. Regenerate any of them with
-        <code>node src/cli.ts generate --seed &lt;name&gt;</code>.
-      </p>
+      <div class="masthead">
+        <p class="eyebrow">Procedural World Engine · v0.5</p>
+        <h1>Cartogenesis</h1>
+        <p class="lede">
+          An atlas of worlds grown from single seeds. Terrain, seas and lakes,
+          climate, rivers, and biomes — each layer derived, in order, by a
+          deterministic engine with zero dependencies. Same seed,
+          <span class="amp">&amp;</span> same world, forever. Regenerate any
+          plate below with <code>node src/cli.ts generate --seed &lt;name&gt;</code>.
+        </p>
+        <div class="meta-row" id="meta"></div>
+      </div>
     </header>
-    <main>
-      <div class="grid" id="gallery"></div>
+
+    <main class="wrap">
+      <div class="plates" id="plates"></div>
+
+      <section class="legend">
+        <h3>Biome legend</h3>
+        <div class="swatches" id="legend"></div>
+      </section>
     </main>
-    <footer id="footer"></footer>
+
+    <footer class="wrap" id="footer"></footer>
 
     <script>
-      const gallery = document.getElementById("gallery");
-      const footer = document.getElementById("footer");
+      // Layer display order + labels shown on each plate's tab strip.
+      const LAYERS = [
+        ["map", "Terrain"],
+        ["biome", "Biomes"],
+        ["temperature", "Temp"],
+        ["moisture", "Rain"],
+        ["height", "Relief"],
+      ];
+
+      // Mirrors BIOME_COLORS in src/biomes.ts (land biomes shown in the legend).
+      const BIOMES = [
+        ["Snow", [244, 246, 250]],
+        ["Alpine", [150, 140, 134]],
+        ["Tundra", [156, 164, 142]],
+        ["Taiga", [92, 130, 100]],
+        ["Cold Desert", [176, 168, 138]],
+        ["Shrubland", [158, 170, 110]],
+        ["Grassland", [176, 194, 110]],
+        ["Temperate Desert", [204, 182, 122]],
+        ["Temperate Forest", [82, 150, 82]],
+        ["Temperate Rainforest", [50, 120, 72]],
+        ["Desert", [222, 206, 150]],
+        ["Savanna", [192, 188, 100]],
+        ["Tropical Seasonal Forest", [96, 162, 70]],
+        ["Tropical Rainforest", [38, 120, 56]],
+      ];
+
+      const $plates = document.getElementById("plates");
+      const $legend = document.getElementById("legend");
+      const $meta = document.getElementById("meta");
+      const $footer = document.getElementById("footer");
+
+      for (const [name, rgb] of BIOMES) {
+        const el = document.createElement("div");
+        el.className = "swatch";
+        el.innerHTML =
+          `<i style="background:rgb(${rgb.join(",")})"></i><span>${name}</span>`;
+        $legend.appendChild(el);
+      }
 
       fetch("samples/manifest.json")
         .then((r) => r.json())
         .then((data) => {
-          footer.innerHTML =
-            `${data.worlds.length} worlds · rendered at ${data.size}×${data.size} · ` +
-            `engine v${data.generatedWith} · ` +
-            `<a href="https://github.com/anduinmooney/cartogenesis">source on GitHub</a>`;
+          $meta.innerHTML =
+            `<span><b>${data.worlds.length}</b> worlds</span>` +
+            `<span><b>${data.size}×${data.size}</b> cells each</span>` +
+            `<span><b>${LAYERS.length}</b> layers per world</span>` +
+            `<span><b>0</b> dependencies</span>` +
+            `<span><a href="https://github.com/anduinmooney/cartogenesis">source →</a></span>`;
 
-          for (const w of data.worlds) {
-            const card = document.createElement("div");
-            card.className = "card";
-            card.innerHTML = `
+          data.worlds.forEach((w, idx) => {
+            const plate = document.createElement("article");
+            plate.className = "plate";
+            const s = w.stats;
+            const num = String(idx + 1).padStart(2, "0");
+            plate.innerHTML = `
               <figure>
-                <img src="samples/${w.map}" alt="${w.title} map" data-map="samples/${w.map}" data-height="samples/${w.height}" loading="lazy" />
-                <div class="toggle">
-                  <button class="active" data-mode="map">Map</button>
-                  <button data-mode="height">Relief</button>
-                </div>
+                <img alt="${w.title} — terrain map" src="samples/${w.files.map}" />
+                <span class="platenum">PLATE ${num}</span>
+                <div class="tabs" role="group" aria-label="Map layer"></div>
               </figure>
-              <div class="body">
-                <h2>${w.title}</h2>
+              <div class="caption">
+                <h2>${w.title}<span class="seed">seed: ${w.seed}</span></h2>
                 <p class="note">${w.note}</p>
                 <div class="stats">
-                  <span>seed: ${w.seed}</span>
-                  <span>land: ${w.landFraction}%</span>
+                  <span>land <b>${s.landFraction}%</b></span>
+                  <span>ocean <b>${s.oceanFraction}%</b></span>
+                  <span>lakes <b>${s.lakeCount}</b></span>
+                  <span>rivers <b>${s.riverFraction}%</b></span>
+                  <span>biomes <b>${s.biomeDiversity}</b></span>
+                  <span>main river <b>${s.mainRiverFlow}</b></span>
+                  <span class="wide">dominant <b>${s.dominantBiome}</b></span>
                 </div>
               </div>`;
-            const img = card.querySelector("img");
-            card.querySelectorAll(".toggle button").forEach((b) => {
+
+            const img = plate.querySelector("img");
+            const tabs = plate.querySelector(".tabs");
+            LAYERS.forEach(([key, label], li) => {
+              const b = document.createElement("button");
+              b.textContent = label;
+              b.setAttribute("aria-pressed", li === 0 ? "true" : "false");
               b.addEventListener("click", () => {
-                card.querySelectorAll(".toggle button").forEach((x) =>
-                  x.classList.remove("active"),
-                );
-                b.classList.add("active");
-                img.src = b.dataset.mode === "map" ? img.dataset.map : img.dataset.height;
+                img.src = "samples/" + w.files[key];
+                img.alt = `${w.title} — ${label.toLowerCase()}`;
+                tabs
+                  .querySelectorAll("button")
+                  .forEach((x) => x.setAttribute("aria-pressed", "false"));
+                b.setAttribute("aria-pressed", "true");
               });
+              tabs.appendChild(b);
             });
-            gallery.appendChild(card);
-          }
+            $plates.appendChild(plate);
+          });
+
+          $footer.innerHTML =
+            `Cartogenesis engine v${data.engineVersion} · ` +
+            `all imagery generated from seeds, no external assets · ` +
+            `<a href="https://github.com/anduinmooney/cartogenesis">github.com/anduinmooney/cartogenesis</a>`;
         })
-        .catch((e) => {
-          gallery.innerHTML =
-            '<p style="color:#8b949e">Could not load samples/manifest.json — run <code>node scripts/make-samples.ts</code>.</p>';
+        .catch(() => {
+          $plates.innerHTML =
+            '<p style="color:var(--muted);font-family:var(--mono)">Could not load samples/manifest.json — run <code>node scripts/make-samples.ts</code>.</p>';
         });
     </script>
   </body>

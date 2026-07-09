@@ -1,17 +1,24 @@
-// make-samples.ts — Regenerate the committed sample gallery.
+// make-samples.ts — Regenerate the committed sample atlas.
 //
-// Produces a small, curated set of worlds in output/samples/ plus a
-// manifest.json the static viewer (docs/) reads. These committed PNGs are the
-// project's visible artifacts; everything here is reproducible from seeds.
+// For each curated world it renders five layers (physical map, biomes,
+// temperature, moisture, relief) and writes a manifest.json the viewer reads.
+// Everything is reproducible from seeds.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { generateWorld } from "../src/world.ts";
-import { renderHypsometric, renderGrayscale } from "../src/render.ts";
+import {
+  renderHypsometric,
+  renderGrayscale,
+  renderBiomes,
+  renderTemperature,
+  renderMoisture,
+  overlayRivers,
+} from "../src/render.ts";
 import { encodePNG } from "../src/png.ts";
 
 const OUT = join("docs", "samples");
-const SIZE = 320;
+const SIZE = 360;
 
 interface SampleSpec {
   seed: string;
@@ -24,60 +31,83 @@ const SAMPLES: SampleSpec[] = [
   { seed: "atlas", title: "Atlas", note: "A fragmented archipelago." },
   { seed: "borea", title: "Borea", note: "A broad northern continent." },
   { seed: "mistral", title: "Mistral", note: "Scattered coastal isles." },
-  { seed: "vahalia", title: "Vahalia", note: "A rugged mountainous land." },
+  { seed: "vahalia", title: "Vahalia", note: "A rugged, river-veined land." },
   { seed: "aurelia-9", title: "Aurelia IX", note: "A temperate heartland." },
 ];
 
-interface ManifestEntry {
-  seed: string;
-  title: string;
-  note: string;
-  map: string;
-  height: string;
-  landFraction: number;
-  contentHash: string;
-}
-
 function main(): void {
   mkdirSync(OUT, { recursive: true });
-  const manifest: ManifestEntry[] = [];
+  const worlds: unknown[] = [];
 
   for (const spec of SAMPLES) {
     const world = generateWorld({ seed: spec.seed, width: SIZE, height: SIZE });
     const base = spec.seed.replace(/[^a-z0-9]+/gi, "-").toLowerCase();
+    const w = SIZE;
+    const h = SIZE;
 
-    const mapFile = `${base}.map.png`;
-    const heightFile = `${base}.height.png`;
+    // Physical map with rivers.
+    const map = renderHypsometric(world.elevation, world.meta.seaLevel, {
+      water: world.water,
+    });
+    overlayRivers(map, world.rivers, w, h);
 
-    writeFileSync(
-      join(OUT, mapFile),
-      encodePNG(SIZE, SIZE, renderHypsometric(world.elevation, world.meta.seaLevel)),
-    );
-    writeFileSync(
-      join(OUT, heightFile),
-      encodePNG(SIZE, SIZE, renderGrayscale(world.elevation)),
-    );
+    // Biome atlas with rivers.
+    const biome = renderBiomes(world.biomes, world.elevation);
+    overlayRivers(biome, world.rivers, w, h);
 
-    manifest.push({
+    const layers: Record<string, Uint8Array> = {
+      map,
+      biome,
+      temperature: renderTemperature(world.temperature, world.water),
+      moisture: renderMoisture(world.moisture, world.water),
+      height: renderGrayscale(world.elevation),
+    };
+
+    const files: Record<string, string> = {};
+    for (const [layer, pixels] of Object.entries(layers)) {
+      const file = `${base}.${layer}.png`;
+      writeFileSync(join(OUT, file), encodePNG(w, h, pixels));
+      files[layer] = file;
+    }
+
+    worlds.push({
       seed: spec.seed,
       title: spec.title,
       note: spec.note,
-      map: mapFile,
-      height: heightFile,
-      landFraction: Number((world.meta.landFraction * 100).toFixed(1)),
+      files,
+      stats: {
+        landFraction: Number((world.meta.landFraction * 100).toFixed(1)),
+        oceanFraction: Number((world.meta.oceanFraction * 100).toFixed(1)),
+        lakeCount: world.meta.lakeCount,
+        riverFraction: Number((world.meta.riverFraction * 100).toFixed(2)),
+        mainRiverFlow: world.meta.mainRiverFlow,
+        biomeDiversity: world.meta.biomeDiversity,
+        dominantBiome: world.meta.dominantBiome,
+      },
       contentHash: world.meta.contentHash,
     });
 
     console.log(
-      `  ${spec.title.padEnd(14)} land ${manifest[manifest.length - 1].landFraction}%  hash ${world.meta.contentHash}`,
+      `  ${spec.title.padEnd(14)} land ${world.meta.landFraction.toFixed(2)} · ` +
+        `${world.meta.lakeCount} lakes · ${world.meta.biomeDiversity} biomes · ` +
+        `dominant ${world.meta.dominantBiome}`,
     );
   }
 
   writeFileSync(
     join(OUT, "manifest.json"),
-    JSON.stringify({ size: SIZE, generatedWith: "0.1.0", worlds: manifest }, null, 2),
+    JSON.stringify(
+      {
+        size: SIZE,
+        engineVersion: "0.5.0",
+        layers: ["map", "biome", "temperature", "moisture", "height"],
+        worlds,
+      },
+      null,
+      2,
+    ),
   );
-  console.log(`\nWrote ${SAMPLES.length} sample worlds + manifest to ${OUT}`);
+  console.log(`\nWrote ${SAMPLES.length} worlds x 5 layers + manifest to ${OUT}`);
 }
 
 main();
