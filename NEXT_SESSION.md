@@ -15,11 +15,17 @@
 
 ## Context: where the project is
 
-The world is now *simulated forward* — L16 produces emergent history (wars,
-conquests, rising and falling realms) and a final "Powers" map. But you only see
-the **end state**. The next big step is to make that history **watchable**: scrub
-through the centuries and see borders shift, realms rise and fall, and the
-chronicle advance.
+The world is *simulated forward* — L16 produces emergent history and a final
+"Powers" map. Session 9 closed four UX gaps from user feedback: features are now
+labeled on the map, resources have a legend + hover-ID (and are evenly
+distributed), Relief/Rainfall are shaded and readable, and the chronicle is
+clickable (flies the map to each event).
+
+**Priority note:** if the user gives new feedback, address that first — it beats
+any queued plan. Otherwise, the queued objective below still stands.
+
+The remaining big step on the simulation is to make history **watchable**: scrub
+through the centuries and see borders shift, realms rise and fall.
 
 ## This session's objective: **A temporal atlas (watch history unfold)**
 

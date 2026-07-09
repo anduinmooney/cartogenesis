@@ -6,6 +6,18 @@ old one — the history is the point.
 
 ---
 
+## D-017 — Resource deposits placed by spatial shuffle, not score order (2026-07-09, Session 9)
+**Decision:** For each resource kind, shuffle the suitable candidate cells
+deterministically before greedy min-distance placement, rather than sorting by
+score (with an index tiebreak).
+**Why:** The old order concentrated deposits in the map's north/low-index corner:
+with a per-kind count cap, greedy placement in score-then-index order exhausted
+the cap before ever considering the far side, so a measured 63–85% of deposits
+landed in the north (vs. ~50% of land). Shuffling first makes placement a
+uniform spatial sample (blue-noise via the spacing constraint) that tracks the
+land distribution. Richness still comes from the cell's suitability score, so
+rich terrain still yields rich deposits — only the *positions* are de-biased.
+
 ## D-016 — Simulation seeds petty realms from cities AND towns (2026-07-09, Session 8)
 **Decision:** The dynamic-history simulation starts one realm per region holding
 a city *or* town (not just the cities that seat `history.realms`), then lets them

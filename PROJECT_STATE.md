@@ -4,7 +4,7 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 8 · 2026-07-09
+- **As of:** Session 9 · 2026-07-09
 - **Engine version:** 0.11.0 (runs in Node **and** the browser)
 - **Health:** 🟢 Green. 117 tests pass (CI enforced); deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
@@ -24,9 +24,10 @@
   resources, temperature, rainfall, relief) + a labeled SVG poster + a Markdown
   gazetteer with an emergent chronicle.
 - An **interactive** in-browser generator (`docs/app/`) that generates in a **Web
-  Worker** (no UI freeze): pan, zoom, hover to inspect, click for details
-  (economy, faith, prose), instant layer switching, `?seed=` links, a "Today's
-  world" button.
+  Worker** (no UI freeze): pan, zoom, hover to inspect (incl. resource deposits),
+  click for details (economy, faith, prose), **feature + city labels on the map**,
+  a **per-layer legend**, a **clickable chronicle that flies to each event**,
+  instant layer switching, `?seed=` links, and a "Today's world" button.
 - Per world the CLI emits **7 artifacts**: terrain / biome / political map PNGs,
   a grayscale heightmap, a **labeled SVG poster**, a **Markdown gazetteer**, and
   JSON metadata with a `contentHash` fingerprint.

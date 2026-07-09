@@ -8,6 +8,52 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 9 — 2026-07-09 — Closing UX gaps (user feedback)
+
+**Theme:** Not a new layer — a focused pass on four real usability gaps the user
+called out. The world had all this depth but you couldn't *find* or *read* much
+of it.
+
+### Fixed
+1. **Findable features.** The app now draws feature markers + labels
+   (Mt. / Lake / R.) directly on the map canvas (view-transformed, always
+   visible), plus city/capital labels when zoomed in. Named features were in the
+   info panel but nowhere on the map.
+2. **Legible resources + a real bug.** Added a per-layer **legend**
+   (resources / biomes / faiths) under the map, and hovering the Resources layer
+   now **identifies the deposit** (kind + richness). Fixed a placement bug:
+   deposits were 63–85% in the north (score/index-ordered greedy placement hit
+   the count cap before reaching the south) — now candidates are shuffled before
+   greedy spacing, so deposits track the land distribution.
+3. **Readable Rainfall & Relief.** Relief is now **hillshaded** grayscale so
+   ridges, valleys, and the eroded drainage read clearly (was a flat gradient).
+   Rainfall is **contrast-stretched** to the land range **and terrain-shaded**
+   (new `renderThematic`) so it's a map, not a flat tan wash. Temperature shares
+   the same shading.
+4. **Clickable chronicle.** Every simulation event now carries a location; each
+   chronicle entry is clickable and **flies the map** to where it happened with a
+   highlight pulse. (Fixed a negative-radius `arc` crash in the pulse; the
+   animation is `setTimeout`-driven so it runs even when the tab isn't painting.)
+
+### Verified
+- `npm test` → **117 passing**; golden hash unchanged (`fb232cd94fe0face`).
+- In-browser: deposits spread evenly N/S; legends populate (15 resources / 13
+  biomes / 4 faiths); Relief 103 / Rainfall 291 distinct colors (were near-flat);
+  clicking a chronicle entry zooms the map to the event; no console errors.
+
+### Decided
+- D-017 (spatially-shuffled resource placement to avoid directional bias).
+
+### Metrics
+- Tests: 117. Deps: 0. Engine v0.11.0. (No engine version bump — presentation +
+  a placement fix.)
+
+### Left for next session
+- The queued **time scrubber** (watch borders shift through the centuries), or
+  more feedback-driven polish. See `NEXT_SESSION.md`.
+
+---
+
 ## Session 8 — 2026-07-09 — Dynamic history: the world simulated forward (L16)
 
 **Theme:** The biggest architectural step since the human world. History stops
