@@ -10,6 +10,8 @@ import type { WaterLayer } from "./hydrology.ts";
 import type { RiverLayer } from "./rivers.ts";
 import { BIOME_COLORS, type BiomeLayer } from "./biomes.ts";
 import type { RegionLayer } from "./regions.ts";
+import type { RoadLayer } from "./roads.ts";
+import type { Settlement } from "./settlements.ts";
 
 export type RGB = [number, number, number];
 
@@ -190,6 +192,78 @@ export function overlayRivers(
     rgba[j] = Math.round(rgba[j] * (1 - s) + RIVER_COLOR[0] * s);
     rgba[j + 1] = Math.round(rgba[j + 1] * (1 - s) + RIVER_COLOR[1] * s);
     rgba[j + 2] = Math.round(rgba[j + 2] * (1 - s) + RIVER_COLOR[2] * s);
+  }
+  return rgba;
+}
+
+const ROAD_COLOR: RGB = [92, 64, 38];
+
+/** Overlay roads onto an RGBA buffer in place. */
+export function overlayRoads(
+  rgba: Uint8Array,
+  roads: RoadLayer,
+): Uint8Array {
+  const mask = roads.roadMask;
+  for (let i = 0; i < mask.length; i++) {
+    if (mask[i] === 0) continue;
+    const j = i * 4;
+    rgba[j] = Math.round(rgba[j] * 0.25 + ROAD_COLOR[0] * 0.75);
+    rgba[j + 1] = Math.round(rgba[j + 1] * 0.25 + ROAD_COLOR[1] * 0.75);
+    rgba[j + 2] = Math.round(rgba[j + 2] * 0.25 + ROAD_COLOR[2] * 0.75);
+  }
+  return rgba;
+}
+
+function drawMarker(
+  rgba: Uint8Array,
+  width: number,
+  height: number,
+  cx: number,
+  cy: number,
+  r: number,
+  fill: RGB,
+  border: RGB,
+): void {
+  for (let dy = -r - 1; dy <= r + 1; dy++) {
+    for (let dx = -r - 1; dx <= r + 1; dx++) {
+      const x = cx + dx;
+      const y = cy + dy;
+      if (x < 0 || y < 0 || x >= width || y >= height) continue;
+      const d2 = dx * dx + dy * dy;
+      const j = (y * width + x) * 4;
+      if (d2 <= r * r) {
+        rgba[j] = fill[0];
+        rgba[j + 1] = fill[1];
+        rgba[j + 2] = fill[2];
+      } else if (d2 <= (r + 1) * (r + 1)) {
+        rgba[j] = border[0];
+        rgba[j + 1] = border[1];
+        rgba[j + 2] = border[2];
+      }
+    }
+  }
+}
+
+const TIER_STYLE: Record<string, { r: number; fill: RGB }> = {
+  village: { r: 1, fill: [235, 235, 240] },
+  town: { r: 2, fill: [245, 238, 210] },
+  city: { r: 3, fill: [255, 246, 224] },
+};
+const CAPITAL_FILL: RGB = [255, 208, 84];
+const MARKER_BORDER: RGB = [30, 26, 22];
+
+/** Overlay settlement markers (sized by tier; capital gold) in place. */
+export function overlaySettlements(
+  rgba: Uint8Array,
+  settlements: Settlement[],
+  width: number,
+  height: number,
+): Uint8Array {
+  for (const s of settlements) {
+    const style = TIER_STYLE[s.tier] ?? TIER_STYLE.village;
+    const fill = s.isCapital ? CAPITAL_FILL : style.fill;
+    const r = s.isCapital ? style.r + 1 : style.r;
+    drawMarker(rgba, width, height, s.x, s.y, r, fill, MARKER_BORDER);
   }
   return rgba;
 }

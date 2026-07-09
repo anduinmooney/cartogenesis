@@ -22,8 +22,13 @@ import {
   type Biome,
 } from "./biomes.ts";
 import { generateRegions, type RegionLayer } from "./regions.ts";
+import {
+  generateSettlements,
+  type SettlementLayer,
+} from "./settlements.ts";
+import { generateRoads, type RoadLayer } from "./roads.ts";
 
-export const ENGINE_VERSION = "0.6.0";
+export const ENGINE_VERSION = "0.7.0";
 
 export interface WorldConfig {
   seed: number | string;
@@ -52,6 +57,9 @@ export interface WorldMeta {
   dominantBiome: string;
   regionCount: number;
   largestRegion: string;
+  settlementCount: number;
+  capital: string;
+  roadLength: number;
   /** Content hash of the elevation field — a determinism fingerprint. */
   contentHash: string;
 }
@@ -65,6 +73,8 @@ export interface World {
   rivers: RiverLayer;
   biomes: BiomeLayer;
   regions: RegionLayer;
+  settlements: SettlementLayer;
+  roads: RoadLayer;
 }
 
 export function generateWorld(config: WorldConfig): World {
@@ -131,6 +141,30 @@ export function generateWorld(config: WorldConfig): World {
     regions.regions[0] ?? { name: "—", area: 0 },
   );
 
+  // L9 — Settlements: habitability-driven placement.
+  const settlementsRng = root.stream("settlements");
+  const settlements = generateSettlements(
+    elevation,
+    temperature,
+    moisture,
+    water,
+    rivers,
+    regions,
+    seaLevel,
+    { seed: settlementsRng.seed },
+  );
+  const capital = settlements.settlements.find((s) => s.isCapital);
+
+  // L10 — Roads: least-cost network connecting settlements.
+  root.stream("roads");
+  const roads = generateRoads(
+    elevation,
+    water,
+    rivers,
+    settlements.settlements,
+    {},
+  );
+
   const meta: WorldMeta = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -147,6 +181,9 @@ export function generateWorld(config: WorldConfig): World {
     dominantBiome: BIOME_NAMES[biomes.dominant as Biome],
     regionCount: regions.regions.length,
     largestRegion: largest.name,
+    settlementCount: settlements.settlements.length,
+    capital: capital?.name ?? "—",
+    roadLength: roads.length,
     contentHash: hashGrid(elevation),
   };
 
@@ -159,6 +196,8 @@ export function generateWorld(config: WorldConfig): World {
     rivers,
     biomes,
     regions,
+    settlements,
+    roads,
   };
 }
 

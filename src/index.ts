@@ -49,6 +49,18 @@ export {
   type RegionInfo,
   type RegionConfig,
 } from "./regions.ts";
+export {
+  generateSettlements,
+  habitabilityField,
+  type Settlement,
+  type SettlementLayer,
+  type SettlementTier,
+} from "./settlements.ts";
+export {
+  generateRoads,
+  type RoadLayer,
+  type RoadEdge,
+} from "./roads.ts";
 export { encodePNG } from "./png.ts";
 export {
   renderGrayscale,
@@ -60,6 +72,8 @@ export {
   renderRegions,
   regionColor,
   overlayRivers,
+  overlayRoads,
+  overlaySettlements,
   type RGB,
 } from "./render.ts";
 export {
