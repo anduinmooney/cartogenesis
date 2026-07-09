@@ -80,3 +80,53 @@ export function encodePNG(
     chunk("IEND", Buffer.alloc(0)),
   ]);
 }
+
+/**
+ * Encode a 16-bit grayscale PNG — the standard heightmap format that terrain
+ * tools (Blender, Unity, Godot, World Machine, …) import. `samples` are
+ * big-endian 16-bit height values, length width*height, 0 = lowest, 65535 =
+ * highest.
+ */
+export function encodePNGGray16(
+  width: number,
+  height: number,
+  samples: Uint16Array,
+): Buffer {
+  if (samples.length !== width * height) {
+    throw new Error(
+      `encodePNGGray16: expected ${width * height} samples, got ${samples.length}`,
+    );
+  }
+
+  const signature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
+
+  const ihdr = Buffer.alloc(13);
+  ihdr.writeUInt32BE(width, 0);
+  ihdr.writeUInt32BE(height, 4);
+  ihdr[8] = 16; // bit depth
+  ihdr[9] = 0; // color type: grayscale
+  ihdr[10] = 0;
+  ihdr[11] = 0;
+  ihdr[12] = 0;
+
+  const stride = width * 2;
+  const raw = Buffer.alloc((stride + 1) * height);
+  for (let y = 0; y < height; y++) {
+    const rowStart = y * (stride + 1);
+    raw[rowStart] = 0; // filter: None
+    for (let x = 0; x < width; x++) {
+      const v = samples[y * width + x];
+      const o = rowStart + 1 + x * 2;
+      raw[o] = (v >> 8) & 0xff; // big-endian
+      raw[o + 1] = v & 0xff;
+    }
+  }
+
+  const idat = deflateSync(raw, { level: 9 });
+  return Buffer.concat([
+    signature,
+    chunk("IHDR", ihdr),
+    chunk("IDAT", idat),
+    chunk("IEND", Buffer.alloc(0)),
+  ]);
+}

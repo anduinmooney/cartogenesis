@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { inflateSync } from "node:zlib";
-import { encodePNG } from "../src/png.ts";
+import { encodePNG, encodePNGGray16 } from "../src/png.ts";
 
 const SIGNATURE = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
 
@@ -64,4 +64,38 @@ test("pixel data round-trips through inflate", () => {
 
 test("encodePNG rejects mismatched buffer sizes", () => {
   assert.throws(() => encodePNG(2, 2, new Uint8Array(3)));
+});
+
+test("16-bit grayscale heightmap has correct IHDR and round-trips", () => {
+  const width = 3;
+  const height = 2;
+  const samples = new Uint16Array([0, 12345, 65535, 1, 40000, 258]);
+  const png = encodePNGGray16(width, height, samples);
+  assert.ok(png.subarray(0, 8).equals(SIGNATURE));
+
+  const ihdr = readChunks(png).find((c) => c.type === "IHDR")!.data;
+  assert.equal(ihdr.readUInt32BE(0), 3);
+  assert.equal(ihdr.readUInt32BE(4), 2);
+  assert.equal(ihdr[8], 16, "bit depth 16");
+  assert.equal(ihdr[9], 0, "color type grayscale");
+
+  const idat = Buffer.concat(
+    readChunks(png)
+      .filter((c) => c.type === "IDAT")
+      .map((c) => c.data),
+  );
+  const raw = inflateSync(idat);
+  const stride = width * 2;
+  for (let y = 0; y < height; y++) {
+    assert.equal(raw[y * (stride + 1)], 0, "filter byte 0");
+    for (let x = 0; x < width; x++) {
+      const o = y * (stride + 1) + 1 + x * 2;
+      const v = (raw[o] << 8) | raw[o + 1]; // big-endian
+      assert.equal(v, samples[y * width + x]);
+    }
+  }
+});
+
+test("encodePNGGray16 rejects mismatched sample counts", () => {
+  assert.throws(() => encodePNGGray16(2, 2, new Uint16Array(3)));
 });

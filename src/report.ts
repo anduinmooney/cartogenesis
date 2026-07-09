@@ -5,7 +5,7 @@
 // chronicle. It's the narrative counterpart to the maps — proof that all the
 // layers cohere into one place with a name and a story.
 
-import type { World } from "./world.ts";
+import { type World, elevationToMetres } from "./world.ts";
 import { BIOME_NAMES, type Biome } from "./biomes.ts";
 import { RESOURCE_NAMES } from "./resources.ts";
 
@@ -55,7 +55,26 @@ export function worldReportMarkdown(world: World): string {
     `- **Dominant power:** ${m.dominantPower} (of ${m.survivingRealms} surviving realm(s))`,
   );
   lines.push(`- **The present year:** ${h.presentYear} ${h.epoch}`);
+  lines.push(
+    `- **Highest peak:** ${m.highestPeakMetres.toLocaleString()} m · ` +
+      `**volcanoes:** ${m.volcanoCount} (${m.activeVolcanoes} active)`,
+  );
   lines.push("");
+
+  // Volcanoes
+  if (world.volcanoes.length) {
+    lines.push("## Volcanoes");
+    lines.push("");
+    const vs = [...world.volcanoes].sort((a, b) => b.summit - a.summit);
+    for (const v of vs) {
+      const metres = elevationToMetres(v.summit, m.seaLevel, m.maxAltitudeMetres);
+      lines.push(
+        `- **Mount ${v.name}** — ${v.type}, ${v.status}, summit ` +
+          `${metres.toLocaleString()} m`,
+      );
+    }
+    lines.push("");
+  }
 
   // Notable features
   if (h.features.length) {
@@ -232,6 +251,18 @@ export function worldReportMarkdown(world: World): string {
   for (const e of sim.events) {
     lines.push(`- **${e.year} ${h.epoch}** — ${e.text}`);
   }
+  lines.push("");
+
+  lines.push("## Heightmap");
+  lines.push("");
+  lines.push(
+    `A real ${m.width}×${m.height} 16-bit heightmap is exported alongside this ` +
+      `report (\`.heightmap16.png\` and raw \`.heightmap.r16\`). Import it into ` +
+      `Blender, Unity, Godot, or World Machine and scale the height to ` +
+      `**${m.maxAltitudeMetres.toLocaleString()} m** (value 65535 = ${m.maxAltitudeMetres.toLocaleString()} m ` +
+      `above the lowest point). The topographic contour map (\`.topo.png\`) shows ` +
+      `the same relief as isolines.`,
+  );
   lines.push("");
 
   lines.push("---");

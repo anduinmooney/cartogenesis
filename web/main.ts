@@ -32,6 +32,7 @@ const SIZE = 384;
 
 const LAYERS: Array<[string, string]> = [
   ["terrain", "Terrain"],
+  ["topographic", "Topo"],
   ["biome", "Biomes"],
   ["political", "Political"],
   ["powers", "Powers"],
@@ -154,6 +155,18 @@ function drawOverlays(): void {
     drawLabel(sx, sy - ffont * 1.15, prefix + f.name, "#eafcff", Math.round(ffont * 0.92));
   }
 
+  // Volcanoes — a triangle coloured by status, always visible.
+  const vfont = Math.round(12 * d);
+  for (const v of current.volcanoes) {
+    const sx = v.x * view.scale + view.ox;
+    const sy = v.y * view.scale + view.oy;
+    if (!inBounds(sx, sy)) continue;
+    const color =
+      v.status === "active" ? "#ff6a3d" : v.status === "dormant" ? "#ffb347" : "#c8ccd2";
+    drawLabel(sx, sy, "▲", color, vfont);
+    drawLabel(sx, sy - vfont * 1.15, `Mt. ${v.name}`, color, Math.round(vfont * 0.9));
+  }
+
   // City / capital labels — only when zoomed in enough to avoid clutter.
   const fitScale = canvas.width / current.elevation.width;
   if (view.scale > fitScale * 1.6) {
@@ -244,6 +257,13 @@ function nearestSettlement(wx: number, wy: number, maxCells: number): Settlement
   return best;
 }
 
+function metresOf(value: number): number {
+  if (!current) return 0;
+  const m = current.meta;
+  if (value <= m.seaLevel) return 0;
+  return Math.round(((value - m.seaLevel) / (1 - m.seaLevel)) * m.maxAltitudeMetres);
+}
+
 function nearestDeposit(wx: number, wy: number, maxCells: number) {
   if (!current) return null;
   let best = null;
@@ -296,7 +316,9 @@ function showTip(clientX: number, clientY: number): void {
   if (info.region && !info.isOcean) {
     rows.push(`<div class="trow">${info.region.languageLabel}</div>`);
   }
-  rows.push(`<div class="trow">${info.biome} · elev ${(info.elevation * 100).toFixed(0)}</div>`);
+  const metres = metresOf(info.elevation);
+  const elevText = info.isOcean || info.isLake ? "sea level" : `${metres.toLocaleString()} m`;
+  rows.push(`<div class="trow">${info.biome} · ${elevText}</div>`);
   if (info.settlement) {
     const s = info.settlement;
     const tags = [s.isCapital ? "capital" : s.tier, s.isPort ? "port" : ""]
@@ -451,6 +473,8 @@ function renderInfo(world: World): void {
 
   const stats: Array<[string, string]> = [
     ["Land", `${(m.landFraction * 100).toFixed(0)}%`],
+    ["Highest peak", `${m.highestPeakMetres.toLocaleString()} m`],
+    ["Volcanoes", `${m.volcanoCount} (${m.activeVolcanoes} active)`],
     ["Regions", String(m.regionCount)],
     ["Settlements", String(m.settlementCount)],
     ["Realms", String(m.realmCount)],
@@ -564,6 +588,93 @@ function todaySeed(): string {
   return `day-${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
 }
 
+// --- In-browser 16-bit heightmap PNG export (for Blender/Unity/Godot/…) ---
+const CRC_TABLE = (() => {
+  const t = new Uint32Array(256);
+  for (let n = 0; n < 256; n++) {
+    let c = n;
+    for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+    t[n] = c >>> 0;
+  }
+  return t;
+})();
+function crc32(buf: Uint8Array): number {
+  let c = 0xffffffff;
+  for (let i = 0; i < buf.length; i++) c = CRC_TABLE[(c ^ buf[i]) & 0xff] ^ (c >>> 8);
+  return (c ^ 0xffffffff) >>> 0;
+}
+function pngChunk(type: string, data: Uint8Array): Uint8Array {
+  const typeBytes = new TextEncoder().encode(type);
+  const body = new Uint8Array(typeBytes.length + data.length);
+  body.set(typeBytes, 0);
+  body.set(data, typeBytes.length);
+  const out = new Uint8Array(4 + body.length + 4);
+  const dv = new DataView(out.buffer);
+  dv.setUint32(0, data.length);
+  out.set(body, 4);
+  dv.setUint32(4 + body.length, crc32(body));
+  return out;
+}
+async function deflateZlib(data: Uint8Array): Promise<Uint8Array> {
+  const cs = new CompressionStream("deflate"); // zlib-wrapped, as PNG needs
+  const stream = new Blob([data]).stream().pipeThrough(cs);
+  return new Uint8Array(await new Response(stream).arrayBuffer());
+}
+async function heightmapPngBlob(
+  width: number,
+  height: number,
+  samples: Uint16Array,
+): Promise<Blob> {
+  const sig = new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]);
+  const ihdr = new Uint8Array(13);
+  const dv = new DataView(ihdr.buffer);
+  dv.setUint32(0, width);
+  dv.setUint32(4, height);
+  ihdr[8] = 16; // bit depth
+  ihdr[9] = 0; // grayscale
+  const stride = width * 2;
+  const raw = new Uint8Array((stride + 1) * height);
+  for (let y = 0; y < height; y++) {
+    const rs = y * (stride + 1);
+    raw[rs] = 0;
+    for (let x = 0; x < width; x++) {
+      const v = samples[y * width + x];
+      const o = rs + 1 + x * 2;
+      raw[o] = (v >> 8) & 0xff;
+      raw[o + 1] = v & 0xff;
+    }
+  }
+  const idat = await deflateZlib(raw);
+  return new Blob(
+    [sig, pngChunk("IHDR", ihdr), pngChunk("IDAT", idat), pngChunk("IEND", new Uint8Array(0))],
+    { type: "image/png" },
+  );
+}
+async function downloadHeightmap(): Promise<void> {
+  if (!current) return;
+  $("status").textContent = "Encoding 16-bit heightmap…";
+  const w = current.elevation.width;
+  const h = current.elevation.height;
+  const samples = new Uint16Array(w * h);
+  for (let i = 0; i < samples.length; i++) {
+    const v = Math.max(0, Math.min(1, current.elevation.data[i]));
+    samples[i] = Math.round(v * 65535);
+  }
+  const blob = await heightmapPngBlob(w, h, samples);
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `cartogenesis-${String(current.meta.seed)}-heightmap16.png`.replace(
+    /[^a-z0-9.\-]/gi,
+    "_",
+  );
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(a.href);
+  $("status").textContent =
+    `Heightmap downloaded — ${w}×${h}, 16-bit · scale height to ${current.meta.maxAltitudeMetres.toLocaleString()} m`;
+}
+
 function buildTabs(): void {
   const tabs = $("layertabs");
   for (const [key, label] of LAYERS) {
@@ -596,6 +707,11 @@ function init(): void {
   $("resetview").addEventListener("click", () => {
     fitView();
     redraw();
+  });
+  $("heightmap").addEventListener("click", () => {
+    downloadHeightmap().catch((e) => {
+      $("status").textContent = `Heightmap export failed: ${e.message}`;
+    });
   });
   $("copylink").addEventListener("click", async () => {
     try {

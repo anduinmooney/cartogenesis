@@ -12,6 +12,7 @@ import { Rng } from "./rng.js";
 import { hashQuantized } from "./hash.js";
 import { Grid } from "./grid.js";
 import { generateElevation, landFraction } from "./terrain.js";
+import { addVolcanoes,              } from "./volcanoes.js";
 import { erode } from "./erosion.js";
 import { analyzeWater,                 } from "./hydrology.js";
 import { generateTemperature, generateMoisture } from "./climate.js";
@@ -35,7 +36,7 @@ import { generateEconomy,                   } from "./economy.js";
 import { generateReligion,                    } from "./religion.js";
 import { generateSimulation,                      } from "./simulation.js";
 
-export const ENGINE_VERSION = "0.11.0";
+export const ENGINE_VERSION = "0.12.0";
 
                               
                         
@@ -48,6 +49,10 @@ export const ENGINE_VERSION = "0.11.0";
                    
                                                                 
                     
+                                                         
+                      
+                                                                          
+                             
  
 
                             
@@ -79,6 +84,12 @@ export const ENGINE_VERSION = "0.11.0";
                      
                           
                         
+                       
+                          
+                                                             
+                            
+                                                  
+                            
                                                                          
                       
  
@@ -100,7 +111,18 @@ export const ENGINE_VERSION = "0.11.0";
                         
                           
                               
+                       
  
+
+/** Convert a normalized elevation value to metres above sea level. */
+export function elevationToMetres(
+  value        ,
+  seaLevel        ,
+  maxAltitudeMetres        ,
+)         {
+  if (value <= seaLevel) return 0;
+  return Math.round(((value - seaLevel) / (1 - seaLevel)) * maxAltitudeMetres);
+}
 
 export function generateWorld(config             )        {
   const width = config.width ?? 512;
@@ -119,6 +141,16 @@ export function generateWorld(config             )        {
     octaves: config.octaves,
     island: config.island,
   });
+
+  // L1.6 — Volcanoes: build volcanic cones BEFORE erosion, so erosion carves
+  // realistic radial gullies down their flanks.
+  const volcanoRng = root.stream("volcanoes");
+  let volcanoes            = [];
+  if (config.volcanoes !== false) {
+    const built = addVolcanoes(elevation, { seed: volcanoRng.seed, seaLevel });
+    elevation = built.elevation;
+    volcanoes = built.volcanoes;
+  }
 
   // L1.5 — Hydraulic erosion (carves valleys so rivers follow them later).
   const erosionRng = root.stream("erosion");
@@ -249,6 +281,10 @@ export function generateWorld(config             )        {
     .filter((r) => r.status !== "extinct")
     .sort((a, b) => b.finalSize - a.finalSize)[0];
 
+  const maxAltitudeMetres = config.maxAltitudeMetres ?? 4500;
+  const peakValue = elevation.extent().max;
+  const highestPeakMetres = elevationToMetres(peakValue, seaLevel, maxAltitudeMetres);
+
   const meta            = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -278,6 +314,10 @@ export function generateWorld(config             )        {
     faithCount: religion.faiths.length,
     survivingRealms: simulation.survivingRealms,
     dominantPower: dominant?.name ?? "—",
+    volcanoCount: volcanoes.length,
+    activeVolcanoes: volcanoes.filter((v) => v.status === "active").length,
+    maxAltitudeMetres,
+    highestPeakMetres,
     contentHash: hashGrid(elevation),
   };
 
@@ -298,6 +338,7 @@ export function generateWorld(config             )        {
     economy,
     religion,
     simulation,
+    volcanoes,
   };
 }
 

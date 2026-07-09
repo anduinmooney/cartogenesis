@@ -99,9 +99,11 @@ export function generateReligion(
       origins.push(r);
     }
   }
-  while (origins.length < faithCount && byArea.length > origins.length) {
-    const r = byArea[origins.length];
-    if (!origins.includes(r)) origins.push(r);
+  // Backfill toward faithCount with the largest remaining regions. Iterate a
+  // monotonically increasing index — using origins.length as the index can spin
+  // forever when that element is already an origin.
+  for (let idx = 0; idx < byArea.length && origins.length < faithCount; idx++) {
+    if (!origins.includes(byArea[idx])) origins.push(byArea[idx]);
   }
 
   const usedDomains = rng.shuffle([...DOMAINS]);

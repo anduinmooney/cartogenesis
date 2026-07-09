@@ -20,6 +20,7 @@ const MODULES = [
   "noise",
   "grid",
   "terrain",
+  "volcanoes",
   "erosion",
   "hydrology",
   "climate",

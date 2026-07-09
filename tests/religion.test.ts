@@ -39,6 +39,15 @@ test("every region is assigned a valid faith", () => {
   }
 });
 
+test("origin backfill terminates (regression: infinite-loop guard)", () => {
+  // This seed+size once spun forever in the faith-origin backfill when the
+  // index was derived from origins.length. Must complete quickly.
+  const w = generateWorld({ seed: "cartogenesis", width: 360, height: 360 });
+  const rel = generateReligion(w.regions, w.history, { seed: 4 });
+  assert.ok(rel.faiths.length >= 1);
+  for (const r of w.regions.regions) assert.ok(r.id in rel.regionFaith);
+});
+
 test("follower regions partition the map among faiths", () => {
   const { w, rel } = build("followers", 200);
   const total = rel.faiths.reduce((s, f) => s + f.followerRegions.length, 0);

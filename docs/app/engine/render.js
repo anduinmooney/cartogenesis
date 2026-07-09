@@ -584,6 +584,64 @@ export function renderPowers(
   return out;
 }
 
+const TOPO_RAMP                       = [
+  [0.0, [126, 172, 96]], // lowland green
+  [0.18, [190, 200, 112]], // yellow-green
+  [0.36, [214, 192, 138]], // tan
+  [0.55, [176, 134, 92]], // brown
+  [0.72, [138, 100, 74]], // dark brown
+  [0.86, [180, 172, 166]], // grey rock
+  [1.0, [248, 248, 250]], // snow
+];
+
+/**
+ * Topographic map: hypsometric colour bands with darker contour isolines every
+ * (1/bands) of the land elevation range. Volcano craters read as concentric
+ * rings. `bands` maps to the metre interval = maxAltitude / bands.
+ */
+export function renderContours(
+  elevation      ,
+  seaLevel        ,
+  bands = 18,
+)             {
+  const { width, height, data } = elevation;
+  const out = new Uint8Array(width * height * 4);
+  const inv = 1 / (1 - seaLevel);
+  const bandOf = (i        ) => {
+    const t = (data[i] - seaLevel) * inv;
+    return Math.floor(t * bands);
+  };
+
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const i = y * width + x;
+      let color     ;
+      if (data[i] < seaLevel) {
+        color = ramp(OCEAN_RAMP, data[i] / seaLevel);
+      } else {
+        const t = (data[i] - seaLevel) * inv;
+        color = ramp(TOPO_RAMP, t);
+        const b = bandOf(i);
+        const rightDiff = x + 1 < width && data[i + 1] >= seaLevel && bandOf(i + 1) !== b;
+        const downDiff = y + 1 < height && data[i + width] >= seaLevel && bandOf(i + width) !== b;
+        if (rightDiff || downDiff) {
+          // Contour line — darken toward a topographic brown-black.
+          color = [
+            Math.round(color[0] * 0.45),
+            Math.round(color[1] * 0.42),
+            Math.round(color[2] * 0.4),
+          ];
+        }
+      }
+      out[i * 4] = color[0];
+      out[i * 4 + 1] = color[1];
+      out[i * 4 + 2] = color[2];
+      out[i * 4 + 3] = 255;
+    }
+  }
+  return out;
+}
+
 /** Render a biome map. Optional hillshade adds subtle relief from elevation. */
 export function renderBiomes(
   biomes            ,

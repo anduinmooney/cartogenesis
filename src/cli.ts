@@ -22,11 +22,12 @@ import {
   renderGrayscale,
   renderBiomes,
   renderRegions,
+  renderContours,
   overlayRivers,
   overlayRoads,
   overlaySettlements,
 } from "./render.ts";
-import { encodePNG } from "./png.ts";
+import { encodePNG, encodePNGGray16 } from "./png.ts";
 import { worldReportMarkdown } from "./report.ts";
 import { worldPosterSVG } from "./svgmap.ts";
 
@@ -123,6 +124,19 @@ function runGenerate(opts: CliOptions): void {
 
   const heightPng = encodePNG(W, H, renderGrayscale(world.elevation));
 
+  // Topographic contour map.
+  const topoPng = encodePNG(W, H, renderContours(world.elevation, world.meta.seaLevel));
+
+  // Real heightmap exports for 3D tools: a 16-bit grayscale PNG (Blender/
+  // Unity/Godot/World Machine) and a raw little-endian 16-bit .r16.
+  const samples = new Uint16Array(W * H);
+  for (let i = 0; i < samples.length; i++) {
+    samples[i] = Math.round(Math.max(0, Math.min(1, world.elevation.data[i])) * 65535);
+  }
+  const heightmap16 = encodePNGGray16(W, H, samples);
+  const r16 = Buffer.alloc(samples.length * 2);
+  for (let i = 0; i < samples.length; i++) r16.writeUInt16LE(samples[i], i * 2);
+
   // Labeled SVG poster over the political map + Markdown gazetteer.
   const posterSvg = worldPosterSVG(world, politicalPng);
   const reportMd = worldReportMarkdown(world);
@@ -131,6 +145,9 @@ function runGenerate(opts: CliOptions): void {
   const biomePath = join(opts.out, `${name}.biome.png`);
   const politicalPath = join(opts.out, `${name}.political.png`);
   const heightPath = join(opts.out, `${name}.height.png`);
+  const topoPath = join(opts.out, `${name}.topo.png`);
+  const heightmap16Path = join(opts.out, `${name}.heightmap16.png`);
+  const r16Path = join(opts.out, `${name}.heightmap.r16`);
   const posterPath = join(opts.out, `${name}.poster.svg`);
   const reportPath = join(opts.out, `${name}.report.md`);
   const metaPath = join(opts.out, `${name}.json`);
@@ -139,6 +156,9 @@ function runGenerate(opts: CliOptions): void {
   writeFileSync(biomePath, biomePng);
   writeFileSync(politicalPath, politicalPng);
   writeFileSync(heightPath, heightPng);
+  writeFileSync(topoPath, topoPng);
+  writeFileSync(heightmap16Path, heightmap16);
+  writeFileSync(r16Path, r16);
   writeFileSync(posterPath, posterSvg);
   writeFileSync(reportPath, reportMd);
   writeFileSync(metaPath, worldToJSON(world));
@@ -173,12 +193,21 @@ function runGenerate(opts: CliOptions): void {
     `  history:       ${world.meta.realmCount} realms, ${world.meta.eventCount} events, ` +
       `present year ${world.meta.presentYear}`,
   );
+  console.log(
+    `  volcanoes:     ${world.meta.volcanoCount} (${world.meta.activeVolcanoes} active)`,
+  );
+  console.log(
+    `  highest peak:  ${world.meta.highestPeakMetres} m (of ${world.meta.maxAltitudeMetres} m scale)`,
+  );
   console.log(`  content hash:  ${world.meta.contentHash}`);
   console.log(`  generated in:  ${ms} ms`);
   console.log(`  wrote:         ${mapPath}`);
   console.log(`                 ${biomePath}`);
   console.log(`                 ${politicalPath}`);
   console.log(`                 ${heightPath}`);
+  console.log(`                 ${topoPath}`);
+  console.log(`                 ${heightmap16Path}  (16-bit heightmap)`);
+  console.log(`                 ${r16Path}  (raw 16-bit)`);
   console.log(`                 ${posterPath}`);
   console.log(`                 ${reportPath}`);
   console.log(`                 ${metaPath}`);

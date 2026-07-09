@@ -14,6 +14,12 @@ export {
 } from "./terrain.ts";
 export { erode, type ErosionConfig } from "./erosion.ts";
 export {
+  addVolcanoes,
+  type Volcano,
+  type VolcanoType,
+  type VolcanoStatus,
+} from "./volcanoes.ts";
+export {
   analyzeWater,
   countComponents,
   type WaterLayer,
@@ -104,7 +110,7 @@ export {
 } from "./simulation.ts";
 export { worldReportMarkdown } from "./report.ts";
 export { worldPosterSVG, type PosterOptions } from "./svgmap.ts";
-export { encodePNG } from "./png.ts";
+export { encodePNG, encodePNGGray16 } from "./png.ts";
 export {
   renderGrayscale,
   renderHypsometric,
@@ -116,6 +122,7 @@ export {
   renderRegions,
   renderFaiths,
   renderPowers,
+  renderContours,
   regionColor,
   overlayRivers,
   overlayRoads,
@@ -127,6 +134,7 @@ export {
   generateWorld,
   hashGrid,
   worldToJSON,
+  elevationToMetres,
   ENGINE_VERSION,
   type World,
   type WorldConfig,

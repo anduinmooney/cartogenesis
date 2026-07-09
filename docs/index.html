@@ -383,6 +383,7 @@
       // Layer display order + labels shown on each plate's tab strip.
       const LAYERS = [
         ["map", "Terrain"],
+        ["topographic", "Topo"],
         ["biome", "Biomes"],
         ["political", "Political"],
         ["powers", "Powers"],
@@ -454,7 +455,8 @@
                   <span>towns <b>${s.settlementCount}</b></span>
                   <span>realms <b>${s.realmCount}</b></span>
                   <span>faiths <b>${s.faithCount ?? "—"}</b></span>
-                  <span>deposits <b>${s.resourceCount ?? "—"}</b></span>
+                  <span>peak <b>${s.highestPeakMetres ? s.highestPeakMetres.toLocaleString() + " m" : "—"}</b></span>
+                  <span>volcanoes <b>${s.volcanoCount ?? "—"}</b></span>
                   <span class="wide">capital <b>${s.capital}</b>, House ${s.capitalHouse ?? "—"}</span>
                   <span class="wide">dominant power <b>${s.dominantPower ?? "—"}</b> (${s.survivingRealms ?? "—"} survive)</span>
                   <span class="wide">exports: ${s.majorExports || "—"}</span>

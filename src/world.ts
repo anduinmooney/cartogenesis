@@ -12,6 +12,7 @@ import { Rng } from "./rng.ts";
 import { hashQuantized } from "./hash.ts";
 import { Grid } from "./grid.ts";
 import { generateElevation, landFraction } from "./terrain.ts";
+import { addVolcanoes, type Volcano } from "./volcanoes.ts";
 import { erode } from "./erosion.ts";
 import { analyzeWater, type WaterLayer } from "./hydrology.ts";
 import { generateTemperature, generateMoisture } from "./climate.ts";
@@ -35,7 +36,7 @@ import { generateEconomy, type EconomyLayer } from "./economy.ts";
 import { generateReligion, type ReligionLayer } from "./religion.ts";
 import { generateSimulation, type SimulationLayer } from "./simulation.ts";
 
-export const ENGINE_VERSION = "0.11.0";
+export const ENGINE_VERSION = "0.12.0";
 
 export interface WorldConfig {
   seed: number | string;
@@ -48,6 +49,10 @@ export interface WorldConfig {
   island?: boolean;
   /** Apply hydraulic erosion after elevation (default true). */
   erosion?: boolean;
+  /** Build volcanoes onto the terrain (default true). */
+  volcanoes?: boolean;
+  /** Elevation of a normalized value of 1.0, in metres (default 4500). */
+  maxAltitudeMetres?: number;
 }
 
 export interface WorldMeta {
@@ -79,6 +84,12 @@ export interface WorldMeta {
   faithCount: number;
   survivingRealms: number;
   dominantPower: string;
+  volcanoCount: number;
+  activeVolcanoes: number;
+  /** Metres represented by a normalized elevation of 1.0. */
+  maxAltitudeMetres: number;
+  /** Highest point above sea level, in metres. */
+  highestPeakMetres: number;
   /** Content hash of the elevation field — a determinism fingerprint. */
   contentHash: string;
 }
@@ -100,6 +111,17 @@ export interface World {
   economy: EconomyLayer;
   religion: ReligionLayer;
   simulation: SimulationLayer;
+  volcanoes: Volcano[];
+}
+
+/** Convert a normalized elevation value to metres above sea level. */
+export function elevationToMetres(
+  value: number,
+  seaLevel: number,
+  maxAltitudeMetres: number,
+): number {
+  if (value <= seaLevel) return 0;
+  return Math.round(((value - seaLevel) / (1 - seaLevel)) * maxAltitudeMetres);
 }
 
 export function generateWorld(config: WorldConfig): World {
@@ -119,6 +141,16 @@ export function generateWorld(config: WorldConfig): World {
     octaves: config.octaves,
     island: config.island,
   });
+
+  // L1.6 — Volcanoes: build volcanic cones BEFORE erosion, so erosion carves
+  // realistic radial gullies down their flanks.
+  const volcanoRng = root.stream("volcanoes");
+  let volcanoes: Volcano[] = [];
+  if (config.volcanoes !== false) {
+    const built = addVolcanoes(elevation, { seed: volcanoRng.seed, seaLevel });
+    elevation = built.elevation;
+    volcanoes = built.volcanoes;
+  }
 
   // L1.5 — Hydraulic erosion (carves valleys so rivers follow them later).
   const erosionRng = root.stream("erosion");
@@ -249,6 +281,10 @@ export function generateWorld(config: WorldConfig): World {
     .filter((r) => r.status !== "extinct")
     .sort((a, b) => b.finalSize - a.finalSize)[0];
 
+  const maxAltitudeMetres = config.maxAltitudeMetres ?? 4500;
+  const peakValue = elevation.extent().max;
+  const highestPeakMetres = elevationToMetres(peakValue, seaLevel, maxAltitudeMetres);
+
   const meta: WorldMeta = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -278,6 +314,10 @@ export function generateWorld(config: WorldConfig): World {
     faithCount: religion.faiths.length,
     survivingRealms: simulation.survivingRealms,
     dominantPower: dominant?.name ?? "—",
+    volcanoCount: volcanoes.length,
+    activeVolcanoes: volcanoes.filter((v) => v.status === "active").length,
+    maxAltitudeMetres,
+    highestPeakMetres,
     contentHash: hashGrid(elevation),
   };
 
@@ -298,6 +338,7 @@ export function generateWorld(config: WorldConfig): World {
     economy,
     religion,
     simulation,
+    volcanoes,
   };
 }
 

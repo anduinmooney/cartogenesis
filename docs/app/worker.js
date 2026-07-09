@@ -9,6 +9,7 @@ import { generateWorld,            } from "./engine/world.js";
 import {
   renderHypsometric,
   renderRelief,
+  renderContours,
   renderBiomes,
   renderRegions,
   renderFaiths,
@@ -23,6 +24,7 @@ import {
 
 const LAYER_NAMES = [
   "terrain",
+  "topographic",
   "biome",
   "political",
   "powers",
@@ -49,6 +51,8 @@ function layerPixels(world       , layer        )             {
       overlaySettlements(px, towns, w, h);
       return px;
     }
+    case "topographic":
+      return renderContours(world.elevation, world.meta.seaLevel);
     case "powers":
       return renderPowers(world.regions, world.simulation, world.water, world.elevation);
     case "faiths":

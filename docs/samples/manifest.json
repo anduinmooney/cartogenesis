@@ -1,8 +1,9 @@
 {
   "size": 360,
-  "engineVersion": "0.11.0",
+  "engineVersion": "0.12.0",
   "layers": [
     "map",
+    "topographic",
     "biome",
     "political",
     "powers",
@@ -19,6 +20,7 @@
       "note": "The canonical world.",
       "files": {
         "map": "cartogenesis.map.png",
+        "topographic": "cartogenesis.topographic.png",
         "biome": "cartogenesis.biome.png",
         "political": "cartogenesis.political.png",
         "powers": "cartogenesis.powers.png",
@@ -31,24 +33,26 @@
         "report": "cartogenesis.report.md"
       },
       "stats": {
-        "landFraction": 62.5,
-        "oceanFraction": 37.5,
-        "lakeCount": 2,
+        "landFraction": 63.8,
+        "oceanFraction": 36.2,
+        "lakeCount": 1,
         "biomeDiversity": 16,
         "dominantBiome": "Grassland",
-        "regionCount": 29,
-        "settlementCount": 25,
+        "regionCount": 28,
+        "settlementCount": 26,
         "capital": "Bee",
         "realmCount": 4,
         "presentYear": 826,
-        "capitalHouse": "Rimondoo",
+        "capitalHouse": "Cavonavea",
         "faithCount": 4,
-        "majorExports": "Livestock, Horses, Grain, Wine, Fish",
-        "resourceCount": 509,
-        "dominantPower": "Dillaaumar",
-        "survivingRealms": 2
+        "majorExports": "Livestock, Grain, Horses, Wine, Stone",
+        "resourceCount": 536,
+        "dominantPower": "Nopa",
+        "survivingRealms": 1,
+        "volcanoCount": 9,
+        "highestPeakMetres": 4500
       },
-      "contentHash": "559d5dff12de9384"
+      "contentHash": "e4eab76d1779c6d6"
     },
     {
       "seed": "atlas",
@@ -56,6 +60,7 @@
       "note": "A fragmented archipelago.",
       "files": {
         "map": "atlas.map.png",
+        "topographic": "atlas.topographic.png",
         "biome": "atlas.biome.png",
         "political": "atlas.political.png",
         "powers": "atlas.powers.png",
@@ -68,24 +73,26 @@
         "report": "atlas.report.md"
       },
       "stats": {
-        "landFraction": 37.4,
-        "oceanFraction": 62.6,
-        "lakeCount": 3,
-        "biomeDiversity": 14,
+        "landFraction": 38.4,
+        "oceanFraction": 61.6,
+        "lakeCount": 9,
+        "biomeDiversity": 15,
         "dominantBiome": "Savanna",
-        "regionCount": 28,
-        "settlementCount": 15,
+        "regionCount": 27,
+        "settlementCount": 16,
         "capital": "Bautossota",
         "realmCount": 2,
         "presentYear": 1049,
         "capitalHouse": "Velenmepia",
-        "faithCount": 4,
-        "majorExports": "Livestock, Horses, Grain, Fish, Wine",
-        "resourceCount": 312,
-        "dominantPower": "Taunabi",
-        "survivingRealms": 2
+        "faithCount": 3,
+        "majorExports": "Livestock, Horses, Grain, Wine, Fish",
+        "resourceCount": 314,
+        "dominantPower": "Raia",
+        "survivingRealms": 2,
+        "volcanoCount": 6,
+        "highestPeakMetres": 4500
       },
-      "contentHash": "32e3ceea2888730d"
+      "contentHash": "523b64b7df8e23a9"
     },
     {
       "seed": "borea",
@@ -93,6 +100,7 @@
       "note": "A broad northern continent.",
       "files": {
         "map": "borea.map.png",
+        "topographic": "borea.topographic.png",
         "biome": "borea.biome.png",
         "political": "borea.political.png",
         "powers": "borea.powers.png",
@@ -105,12 +113,12 @@
         "report": "borea.report.md"
       },
       "stats": {
-        "landFraction": 58.4,
-        "oceanFraction": 41.6,
+        "landFraction": 59.1,
+        "oceanFraction": 40.9,
         "lakeCount": 1,
         "biomeDiversity": 16,
         "dominantBiome": "Grassland",
-        "regionCount": 30,
+        "regionCount": 28,
         "settlementCount": 24,
         "capital": "Timortepimar",
         "realmCount": 4,
@@ -118,11 +126,13 @@
         "capitalHouse": "Beodaveo",
         "faithCount": 4,
         "majorExports": "Livestock, Grain, Horses, Wine, Fish",
-        "resourceCount": 495,
-        "dominantPower": "Tariamentetau",
-        "survivingRealms": 3
+        "resourceCount": 506,
+        "dominantPower": "Saudaura",
+        "survivingRealms": 1,
+        "volcanoCount": 9,
+        "highestPeakMetres": 4500
       },
-      "contentHash": "98f1434cf1dc7e4b"
+      "contentHash": "5711292ef44b48cf"
     },
     {
       "seed": "mistral",
@@ -130,6 +140,7 @@
       "note": "Scattered coastal isles.",
       "files": {
         "map": "mistral.map.png",
+        "topographic": "mistral.topographic.png",
         "biome": "mistral.biome.png",
         "political": "mistral.political.png",
         "powers": "mistral.powers.png",
@@ -142,24 +153,26 @@
         "report": "mistral.report.md"
       },
       "stats": {
-        "landFraction": 45.1,
-        "oceanFraction": 54.9,
-        "lakeCount": 2,
+        "landFraction": 46.3,
+        "oceanFraction": 53.7,
+        "lakeCount": 1,
         "biomeDiversity": 16,
         "dominantBiome": "Grassland",
-        "regionCount": 30,
-        "settlementCount": 18,
+        "regionCount": 27,
+        "settlementCount": 19,
         "capital": "Nasida",
         "realmCount": 3,
-        "presentYear": 1119,
-        "capitalHouse": "Redenabi",
-        "faithCount": 4,
-        "majorExports": "Grain, Livestock, Horses, Wine, Timber",
-        "resourceCount": 395,
-        "dominantPower": "Brabravo",
-        "survivingRealms": 3
+        "presentYear": 961,
+        "capitalHouse": "Ghairaru",
+        "faithCount": 3,
+        "majorExports": "Livestock, Grain, Horses, Wine, Fish",
+        "resourceCount": 426,
+        "dominantPower": "Tamorsenasiaa",
+        "survivingRealms": 1,
+        "volcanoCount": 7,
+        "highestPeakMetres": 4500
       },
-      "contentHash": "7dceb84630477830"
+      "contentHash": "7df4c38d80597825"
     },
     {
       "seed": "vahalia",
@@ -167,6 +180,7 @@
       "note": "A rugged, river-veined land.",
       "files": {
         "map": "vahalia.map.png",
+        "topographic": "vahalia.topographic.png",
         "biome": "vahalia.biome.png",
         "political": "vahalia.political.png",
         "powers": "vahalia.powers.png",
@@ -179,24 +193,26 @@
         "report": "vahalia.report.md"
       },
       "stats": {
-        "landFraction": 55.2,
-        "oceanFraction": 44.6,
-        "lakeCount": 8,
+        "landFraction": 57.4,
+        "oceanFraction": 42.5,
+        "lakeCount": 7,
         "biomeDiversity": 16,
         "dominantBiome": "Savanna",
         "regionCount": 33,
-        "settlementCount": 22,
+        "settlementCount": 23,
         "capital": "Monadianale",
         "realmCount": 3,
         "presentYear": 1174,
         "capitalHouse": "Osiriano",
         "faithCount": 4,
-        "majorExports": "Livestock, Horses, Grain, Timber, Fish",
-        "resourceCount": 432,
+        "majorExports": "Livestock, Horses, Grain, Fish, Wine",
+        "resourceCount": 468,
         "dominantPower": "Vobica",
-        "survivingRealms": 2
+        "survivingRealms": 5,
+        "volcanoCount": 9,
+        "highestPeakMetres": 4500
       },
-      "contentHash": "a300d4297c67661f"
+      "contentHash": "0a2d37a9a147b7a3"
     },
     {
       "seed": "aurelia-9",
@@ -204,6 +220,7 @@
       "note": "A temperate heartland.",
       "files": {
         "map": "aurelia-9.map.png",
+        "topographic": "aurelia-9.topographic.png",
         "biome": "aurelia-9.biome.png",
         "political": "aurelia-9.political.png",
         "powers": "aurelia-9.powers.png",
@@ -216,24 +233,26 @@
         "report": "aurelia-9.report.md"
       },
       "stats": {
-        "landFraction": 31.9,
-        "oceanFraction": 68.1,
+        "landFraction": 33.7,
+        "oceanFraction": 66.3,
         "lakeCount": 0,
-        "biomeDiversity": 14,
+        "biomeDiversity": 15,
         "dominantBiome": "Savanna",
-        "regionCount": 19,
-        "settlementCount": 13,
-        "capital": "Niniri",
+        "regionCount": 20,
+        "settlementCount": 14,
+        "capital": "Stasta",
         "realmCount": 2,
-        "presentYear": 1164,
-        "capitalHouse": "Popialenre",
-        "faithCount": 2,
-        "majorExports": "Livestock, Grain, Horses, Timber, Wine",
-        "resourceCount": 269,
+        "presentYear": 1025,
+        "capitalHouse": "Bungruheim",
+        "faithCount": 3,
+        "majorExports": "Livestock, Horses, Grain, Fish, Stone",
+        "resourceCount": 291,
         "dominantPower": "Neneo",
-        "survivingRealms": 1
+        "survivingRealms": 1,
+        "volcanoCount": 5,
+        "highestPeakMetres": 4500
       },
-      "contentHash": "3ecf069422de308c"
+      "contentHash": "a3caae9ac08d58c1"
     }
   ]
 }

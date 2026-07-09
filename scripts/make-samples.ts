@@ -11,6 +11,7 @@ import { generateWorld } from "../src/world.ts";
 import {
   renderHypsometric,
   renderRelief,
+  renderContours,
   renderBiomes,
   renderRegions,
   renderFaiths,
@@ -84,6 +85,7 @@ function main(): void {
 
     const layers: Record<string, Uint8Array> = {
       map,
+      topographic: renderContours(world.elevation, world.meta.seaLevel),
       biome,
       political,
       powers,
@@ -135,6 +137,8 @@ function main(): void {
         resourceCount: world.meta.resourceCount,
         dominantPower: world.meta.dominantPower,
         survivingRealms: world.meta.survivingRealms,
+        volcanoCount: world.meta.volcanoCount,
+        highestPeakMetres: world.meta.highestPeakMetres,
       },
       contentHash: world.meta.contentHash,
     });
@@ -151,8 +155,8 @@ function main(): void {
     JSON.stringify(
       {
         size: SIZE,
-        engineVersion: "0.11.0",
-        layers: ["map", "biome", "political", "powers", "faiths", "resources", "temperature", "moisture", "height"],
+        engineVersion: "0.12.0",
+        layers: ["map", "topographic", "biome", "political", "powers", "faiths", "resources", "temperature", "moisture", "height"],
         worlds,
       },
       null,
