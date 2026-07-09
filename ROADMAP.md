@@ -40,6 +40,8 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **L9 — Settlements.** Habitability scoring → cities/towns/ports + a capital.
 - ✅ **L10 — Roads & trade.** Least-cost Dijkstra + Kruskal MST road network.
 - ✅ **L11 — History.** Realms, wars, disasters, golden ages — a dated chronicle.
+- ✅ **L12 — Lore.** Ruling houses, ruler successions with epithets, notable
+  figures tied to places, and prose for every region.
 
 ### Presentation & platform
 - ✅ **P1 — SVG poster export.** Labeled maps with region/city/feature names.

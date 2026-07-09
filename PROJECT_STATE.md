@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 5 · 2026-07-09
-- **Engine version:** 0.8.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 92 tests pass (CI enforced); deterministic output.
+- **As of:** Session 6 · 2026-07-09
+- **Engine version:** 0.9.0 (runs in Node **and** the browser)
+- **Health:** 🟢 Green. 98 tests pass (CI enforced); deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 - **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
@@ -15,10 +15,12 @@
 
 - Seed → a full **physical AND human world**: elevation (hydraulically eroded),
   oceans/lakes/coasts, temperature, moisture, rivers, 16 biomes, named provinces
-  with cultures, cities/ports with a capital, a road network, and a written
-  history — all deterministic from the seed.
+  with cultures, cities/ports with a capital, a road network, a written history,
+  and **lore** (ruling houses, ruler successions, notable figures, region prose)
+  — all deterministic from the seed.
 - An **interactive** in-browser generator (`docs/app/`): pan, zoom, hover to
-  inspect any point, click to pin details, shareable `?seed=` links.
+  inspect any point, click to pin details (with region prose), shareable
+  `?seed=` links.
 - Per world the CLI emits **7 artifacts**: terrain / biome / political map PNGs,
   a grayscale heightmap, a **labeled SVG poster**, a **Markdown gazetteer**, and
   JSON metadata with a `contentHash` fingerprint.
@@ -37,6 +39,7 @@
 | L5 Rivers · L6 Biomes | ✅ done |
 | L7 Regions · L8 Naming | ✅ done |
 | L9 Settlements · L10 Roads · L11 History | ✅ done |
+| L12 Lore (houses, rulers, figures, prose) | ✅ done |
 | P1 SVG poster · P3 World report | ✅ done |
 | P2 Browser build · P4 interactive atlas | ✅ done |
 | CI (GitHub Actions) | ✅ done |

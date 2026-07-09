@@ -23,10 +23,11 @@ WorldConfig ─► generateWorld()
                  │     ├ .stream("regions")  ─► generateRegions()     ─► regions     ✅ L7 (+L8 names)
                  │     ├ .stream("settlements")─► generateSettlements()─► settlements ✅ L9
                  │     ├ .stream("roads")    ─► generateRoads()       ─► roads       ✅ L10
-                 │     └ .stream("history")  ─► generateHistory()     ─► history     ✅ L11
+                 │     ├ .stream("history")  ─► generateHistory()     ─► history     ✅ L11
+                 │     └ .stream("lore")     ─► generateLore()        ─► lore        ✅ L12
                  │
                  └─ World { meta, elevation, water, temperature, moisture, rivers,
-                            biomes, regions, settlements, roads, history }
+                            biomes, regions, settlements, roads, history, lore }
 
 Presentation (not part of generateWorld): report.ts → Markdown gazetteer,
 svgmap.ts → labeled SVG poster, render.ts → PNG layers.
@@ -104,9 +105,12 @@ svgmap.ts → labeled SVG poster, render.ts → PNG layers.
   cities/towns/villages, capital, ports. `generateRoads(...)` — territory-boundary
   Dijkstra + Kruskal MST road network.
 
-### `history.ts` (L11)
+### `history.ts` (L11) + `lore.ts` (L12)
 - `generateHistory(...)` — names notable features, forms realms, emits a dated
   chronicle (foundings, wars, disasters, golden ages).
+- `generateLore(...)` — ruling houses + ruler successions (reign years,
+  epithets), notable figures tied to places, and one-line prose per region.
+  Pure content on the `lore` stream; never touches the physical golden hash.
 
 ### `render.ts`, `svgmap.ts`, `report.ts`
 - `render.ts`: `renderGrayscale`, `renderHypsometric`, `renderScalarField` /

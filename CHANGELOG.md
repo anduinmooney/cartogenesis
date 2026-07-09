@@ -8,6 +8,40 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 6 — 2026-07-09 — Peoples & lore (L12)
+
+**Theme:** Give the world a human voice — dynasties, rulers, notable figures, and
+prose for every region — all downstream of geography, so the physical golden
+hash is untouched.
+
+### Added
+- **L12 — Lore** (`src/lore.ts`): per-realm **ruling houses** and **ruler
+  successions** (reign years + epithets like "the Navigator", "the Cursed"),
+  a handful of **notable figures** tied to real places (an explorer of the main
+  river, a heretic exiled from the capital, the architect of the great road…),
+  and a one-line **prose description for every region** from its climate, coast,
+  culture, and towns. Deterministic on a dedicated `lore` stream.
+- **Gazetteer** (`report.ts`): new "Ruling houses" and "Notable figures"
+  sections, region prose, and the capital's house in the overview.
+- **Live app**: a "Ruling house" stat, and region prose in the click detail card.
+- Added `lore` to the browser build (18 modules); rebuilt bundle + samples.
+
+### Verified
+- `npm test` → **98 passing** (6 new lore tests: determinism, houses+rulers per
+  realm, reign chronology, region prose, figures, capital house).
+- Elevation untouched → golden hash `fb232cd94fe0face` still green.
+- In-browser (live preview): app loads with lore, "Ruling house" stat shows,
+  clicking a region reveals its prose, no console errors.
+
+### Metrics
+- Source modules: 23 (+lore). Tests: 98. Runtime + build deps: 0. Engine v0.9.0.
+
+### Left for next session
+- Improve the flagship app's UX with a **Web Worker** (responsive generation +
+  progress), or deepen climate with **latitude wind belts**. See `NEXT_SESSION.md`.
+
+---
+
 ## Session 5 — 2026-07-09 — Interactive atlas, CI, and erosion
 
 **Theme:** Make the live map explorable, protect the project with CI, and deepen
