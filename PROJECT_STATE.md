@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 7 · 2026-07-09
-- **Engine version:** 0.10.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 112 tests pass (CI enforced); deterministic output.
+- **As of:** Session 8 · 2026-07-09
+- **Engine version:** 0.11.0 (runs in Node **and** the browser)
+- **Health:** 🟢 Green. 117 tests pass (CI enforced); deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 - **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
@@ -16,10 +16,13 @@
 - Seed → a full **physical AND human world**: elevation (hydraulically eroded),
   oceans/lakes/coasts, temperature, moisture, rivers, 16 biomes, named provinces
   with cultures, cities/ports with a capital, a road network, a written history,
-  lore (houses, rulers, figures, prose), **natural resources, an economy with
-  wealth & trade, and faiths with myths** — all deterministic from the seed.
-- Eight rendered map layers (terrain, biomes, political, faiths, resources,
-  temperature, rainfall, relief) + a labeled SVG poster + a Markdown gazetteer.
+  lore (houses, rulers, figures, prose), natural resources, an economy with
+  wealth & trade, faiths with myths, and a **dynamic simulated history** (the
+  world run forward over centuries — emergent wars, conquests, and rising and
+  falling realms) — all deterministic from the seed.
+- Nine rendered map layers (terrain, biomes, political, **powers**, faiths,
+  resources, temperature, rainfall, relief) + a labeled SVG poster + a Markdown
+  gazetteer with an emergent chronicle.
 - An **interactive** in-browser generator (`docs/app/`) that generates in a **Web
   Worker** (no UI freeze): pan, zoom, hover to inspect, click for details
   (economy, faith, prose), instant layer switching, `?seed=` links, a "Today's
@@ -44,10 +47,11 @@
 | L9 Settlements · L10 Roads · L11 History | ✅ done |
 | L12 Lore (houses, rulers, figures, prose) | ✅ done |
 | L13 Resources · L14 Economy · L15 Religion | ✅ done |
+| L16 Dynamic history (world simulation) | ✅ done |
 | P1 SVG poster · P3 World report | ✅ done |
 | P2 Browser build · P4 interactive atlas | ✅ done |
 | Web Worker (responsive app) · CI | ✅ done |
-| dynamic simulated history · in-app atlas · more | 🔜 the world keeps deepening |
+| time scrubber · languages · in-app atlas | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
@@ -73,12 +77,13 @@ No `npm install` is required — there are zero dependencies.
 
 - `docs/app/*.js` are **build artifacts** (type-stripped from `src/`). After any
   `src/` change, rerun `node scripts/build-web.ts` or the live app goes stale.
-- Generation is a static snapshot: history/lore/economy are generated, not
-  *simulated* turn by turn. A dynamic model (populations, shifting borders,
-  resolving wars over time) is a natural next big axis.
+- The simulation records emergent events + final borders but doesn't keep every
+  turn's snapshot, so the app can't yet *scrub* through history (store per-turn
+  control to animate the Powers map — a natural next step).
+- Simulation doesn't feed back into the settlement list (cities founded/lost in
+  the sim are events, not new markers on the map).
 - Tiny single-cell islands become their own 1-cell "regions" (coverage pass),
   cluttering gazetteers. Consider merging sub-threshold islets.
-- History wars need adjacent realms; small worlds (few cities) get few/no wars.
 - Moisture runs a single west→east prevailing wind; latitude wind belts would be
   more realistic (future tuning).
 - Cross-platform float determinism is assumed (V8 is consistent in practice);

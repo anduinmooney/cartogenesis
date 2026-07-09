@@ -6,6 +6,19 @@ old one — the history is the point.
 
 ---
 
+## D-016 — Simulation seeds petty realms from cities AND towns (2026-07-09, Session 8)
+**Decision:** The dynamic-history simulation starts one realm per region holding
+a city *or* town (not just the cities that seat `history.realms`), then lets them
+consolidate through war.
+**Why:** `history.realms` has one realm per city, and small/medium worlds often
+have a single city — a lone empire with no neighbours means no wars, no emergence
+(the first draft produced only plagues and golden ages). Seeding many petty
+realms guarantees rival polities on essentially every world, so conquest, falls,
+and breakaways actually happen and the chronicle becomes a real story of
+consolidation. City-seated realms keep their `history` names for continuity;
+town-seated ones get generated names. The simulation is downstream of geography,
+so this never affects the elevation golden hash.
+
 ## D-015 — Web Worker: pre-render + structured-clone the world (2026-07-09, Session 7)
 **Decision:** The live app generates in a module worker (`web/worker.ts`) that
 renders all layers to RGBA and posts back the layer buffers (transferred) plus

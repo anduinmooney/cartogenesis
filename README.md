@@ -5,8 +5,10 @@
 Cartogenesis turns a single seed into a whole world — **elevation, oceans and
 lakes, temperature, rainfall, rivers, biomes, named provinces with distinct
 cultures, cities and ports, a road network, a written history, lore (ruling
-houses, rulers, notable figures), natural resources, an economy with trade, and
-faiths with their own myths**. Same seed, same world, forever, on any machine. It has **zero runtime dependencies** and
+houses, rulers, notable figures), natural resources, an economy with trade,
+faiths with their own myths, and a dynamic simulated history — the world run
+forward over centuries into emergent wars and rising, falling realms**. Same
+seed, same world, forever, on any machine. It has **zero runtime dependencies** and
 runs directly on modern Node.js with no build step. Each world exports labeled
 map posters and a Markdown gazetteer.
 
@@ -109,6 +111,7 @@ seed ──► Rng ──► named sub-streams ──► subsystems ──► Wo
 | `src/resources.ts` | Natural resource deposits by terrain (L13) |
 | `src/economy.ts` | Production, wealth, trade hubs (L14) |
 | `src/religion.ts` | Faiths, deities, myths (L15) |
+| `src/simulation.ts` | Dynamic history — the world run forward (L16) |
 | `src/render.ts` | Layers → RGBA (terrain, biome, political, climate, overlays) |
 | `src/png.ts` | Dependency-free PNG encoder |
 | `src/svgmap.ts` | Labeled SVG poster export |

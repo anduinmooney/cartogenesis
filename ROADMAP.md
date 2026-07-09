@@ -54,6 +54,8 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **L13 — Resources.** ~15 resource kinds placed by terrain and biome.
 - ✅ **L14 — Economy.** Production, wealth, trade hubs, major exports.
 - ✅ **L15 — Religion.** Faiths, deities, myths, spread across regions.
+- ✅ **L16 — Dynamic history.** The world simulated forward over centuries:
+  emergent wars, conquests, famines, secessions, and rising/falling realms.
 
 ### Presentation & platform
 - ✅ **P1 — SVG poster export.** Labeled maps with region/city/feature names.
@@ -67,8 +69,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 ### Deeper simulation (the world keeps getting more alive)
 - ✅ Hydraulic erosion pass on elevation (droplet sim; carves valleys).
 - ✅ Web Worker so browser generation never freezes the UI.
-- ⬜ **Dynamic history** — simulate the world over turns (populations grow,
-  borders shift, wars resolve, cities rise and fall) instead of a snapshot.
+- ✅ **Dynamic history** — the world simulated over turns (L16).
+- ⬜ **Time scrubber** — keep per-turn control snapshots and animate the Powers
+  map so you can watch borders shift through the centuries.
 - ⬜ Latitude-varying wind belts for moisture (trade winds vs. westerlies).
 - ⬜ Lake outflow / river-into-lake-into-river continuity.
 - ⬜ Merge sub-threshold islet "regions".

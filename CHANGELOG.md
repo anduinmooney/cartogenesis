@@ -8,6 +8,55 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 8 — 2026-07-09 — Dynamic history: the world simulated forward (L16)
+
+**Theme:** The biggest architectural step since the human world. History stops
+being a template and becomes **emergent** — the world is simulated forward over
+centuries, and the chronicle, the borders, and each realm's fate all fall out of
+the run.
+
+### Added
+- **L16 — Simulation** (`src/simulation.ts`): a deterministic tick loop
+  (40 turns × 25 years by default). Every region holding a city/town begins as
+  a petty realm; across the run:
+  - populations grow toward carrying capacity (biome + resources + economy) and
+    crash in **famines**;
+  - stronger realms **conquer** weaker neighbours — borders shift, realms **fall**;
+  - overgrown empires shed **breakaway** states;
+  - **plagues/droughts** strike; **faiths spread**; **golden ages** dawn.
+  Outputs: the emergent event log, final region→realm control, populations, and
+  each realm's rise/peak/fall summary.
+- **Powers map** (`renderPowers`): the final political landscape after the
+  simulation — a new 9th layer in the gallery, app, and worker.
+- **Gazetteer**: static founding events reframed as "Legends of the founding
+  age"; a "Rise and fall of realms" table; the emergent chronicle; dominant
+  power in the overview.
+- **App**: a Powers tab, a "Dominant power" + "Surviving realms" stat, and the
+  chronicle now shows the emergent history.
+
+### Verified
+- `npm test` → **117 passing** (5 new: determinism, full control coverage,
+  emergence, chronology, consistent realm summaries).
+- Elevation untouched → golden hash `fb232cd94fe0face` still green.
+- In-browser: Powers layer renders, chronicle shows 70+ emergent events
+  (conquests, falls, secessions), dominant power + surviving realms shown, no
+  console errors. Example: one seed's Masemi consolidated a 26-region empire
+  while rivals rose and fell.
+
+### Decided
+- D-016 (petty-realm seeding: initial polities from cities *and* towns so the
+  simulation consolidates from many states, producing emergent wars).
+
+### Metrics
+- Source modules: 27 (+simulation). Tests: 117. Deps: 0. Engine v0.11.0.
+  9 map layers.
+
+### Left for next session
+- Keep going bigger — see `NEXT_SESSION.md` (a time scrubber to watch history
+  unfold; or per-culture languages/lexicons; or in-app gazetteer + exports).
+
+---
+
 ## Session 7 — 2026-07-09 — Civilization: resources, economy, faith + a Web Worker
 
 **Theme:** The biggest session yet — three new engine layers that turn the map

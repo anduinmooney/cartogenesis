@@ -27,10 +27,16 @@ WorldConfig ─► generateWorld()
                  │     ├ .stream("lore")     ─► generateLore()        ─► lore        ✅ L12
                  │     ├ .stream("resources")─► generateResources()   ─► resources   ✅ L13
                  │     ├ .stream("economy")  ─► generateEconomy()     ─► economy     ✅ L14
-                 │     └ .stream("religion") ─► generateReligion()    ─► religion    ✅ L15
+                 │     ├ .stream("religion") ─► generateReligion()    ─► religion    ✅ L15
+                 │     └ .stream("simulation")►generateSimulation()   ─► simulation  ✅ L16
                  │
                  └─ World { …, regions, settlements, roads, history, lore,
-                            resources, economy, religion }
+                            resources, economy, religion, simulation }
+
+The pipeline is now two-phase: static generation (a snapshot of the world at one
+moment) followed by SIMULATION (`simulation.ts` runs that snapshot forward over
+turns to produce emergent history). Static layers describe the world; the
+simulation evolves it.
 
 Presentation (not part of generateWorld): report.ts → Markdown gazetteer,
 svgmap.ts → labeled SVG poster, render.ts → PNG layers.

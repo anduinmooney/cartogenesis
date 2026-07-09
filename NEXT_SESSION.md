@@ -6,79 +6,77 @@
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm green **before** changing anything (baseline: **112**).
-3. Skim `CHANGELOG.md` (top, Session 7) and `ROADMAP.md`.
+2. `npm test` → confirm green **before** changing anything (baseline: **117**).
+3. Skim `CHANGELOG.md` (top, Session 8) and `ROADMAP.md`.
 4. Preview: `node scripts/serve-docs.ts` → `/` (atlas) and `/app/` (live).
 5. **After any `src/` change, rerun `node scripts/build-web.ts`** (CI enforces it;
-   it also fails if a browser module — engine, app, or worker — imports one you
-   forgot to add to the MODULES list).
+   it also fails if any browser module — engine/app/worker — imports a module
+   you forgot to add to the MODULES list).
 
 ## Context: where the project is
 
-The world is a rich static *snapshot*: geography, peoples, lore, resources,
-economy, and faith — 8 map layers, a gazetteer, and a responsive worker-driven
-app. Every layer so far describes the world *as it is at one moment*. The next
-big axis is **time**.
+The world is now *simulated forward* — L16 produces emergent history (wars,
+conquests, rising and falling realms) and a final "Powers" map. But you only see
+the **end state**. The next big step is to make that history **watchable**: scrub
+through the centuries and see borders shift, realms rise and fall, and the
+chronicle advance.
 
-## This session's objective: **L16 — Dynamic history (world simulation)**
+## This session's objective: **A temporal atlas (watch history unfold)**
 
-Make the world *evolve*. Instead of generating a single frozen present, simulate
-it forward over many turns so that history becomes **emergent** — borders shift,
-populations rise and crash, realms conquer and fragment, faiths spread, cities
-are founded and abandoned. This is the biggest architectural step since the
-human world: from generation to simulation. Aim high.
+Turn the simulation from a single end-state into an animated timeline the user
+can play and scrub. Big, visible payoff built directly on L16.
 
-### Design (a deterministic tick loop; new `src/simulation.ts`)
-Run T turns (each ~a generation/decade) over a mutable sim state seeded from the
-static world. Suggested state and rules:
-- **Per region:** population, controlling realm, prosperity, dominant faith.
-  Seed population from carrying capacity (biome + resources + economy wealth).
-- **Each turn (all deterministic, from a `simulation` stream):**
-  - *Growth*: population moves toward carrying capacity; over-capacity → famine
-    (population loss + a recorded event).
-  - *Expansion/war*: a strong realm may attack a weaker neighbor (compare
-    military = f(population, prosperity)); winner annexes the region, borders
-    change, an event is recorded. Realms can fragment when overextended.
-  - *Faith spread*: a region's faith can flip toward a wealthier/stronger
-    neighbor's faith with some probability.
-  - *Shocks*: plague/drought as occasional events reducing population, tied to
-    density or climate.
-  - *Cities*: high-population regions found or grow settlements; abandoned when
-    population collapses.
-- **Output** `SimulationLayer`: the emergent `events[]` (dated, referencing real
-  named realms/regions/features), the **final** political map (region→realm),
-  population by region, and a per-realm rise/peak/fall summary.
+### 1. Record the timeline (`src/simulation.ts`)
+- Keep a **per-turn snapshot** of region→realm control (and optionally
+  population). Add to `SimulationLayer`:
+  `snapshots: Array<{ year: number; control: Record<number, number> }>`
+  (or a compact `Int32Array` per turn indexed by a stable region order).
+- This is tiny (turns × regions). Add a test: snapshots.length === turns (+1 for
+  the initial state), and the last snapshot equals `finalControl`.
 
-### Integrate & surface
-- Wire into `world.ts` after lore (a `simulation` stream). It reads the static
-  layers; it must **not** alter elevation (golden hash stays `fb232cd94fe0face`).
-- Merge (or replace) the static chronicle in the gazetteer with the emergent
-  timeline; add a "Rise and fall of realms" section.
-- App: a **Final political** layer (realms after simulation) and/or a small
-  timeline scrubber; the info panel shows the surviving powers.
-- Regenerate samples + rebuild the worker/app bundle.
+### 2. Render frames by year (`src/render.ts`)
+- Generalize `renderPowers` (or add `renderPowersAt(regions, controlMap, water,
+  elevation)`) so it colors cells from an arbitrary control map, not just the
+  final one. The current `renderPowers` becomes "render the last snapshot".
 
-### Test (`tests/simulation.test.ts`)
-- Determinism (same seed → identical event sequence + final borders).
-- Conservation-ish sanity: population never negative; every region always has a
-  controlling realm.
-- Emergence: over a run, at least some borders change and some events fire.
-- Chronology: events are ordered; years within the simulated span.
+### 3. The scrubber UI (`web/main.ts` + app HTML)
+- The worker already posts the whole world (incl. `simulation.snapshots`) to the
+  main thread. Add a **timeline slider** + **play/pause** button under the map.
+- When the Powers layer is active, dragging the slider (or playing) renders the
+  Powers frame for that year **on the main thread** from
+  `simulation.snapshots[i].control` — you already have `regions.ids` and the
+  water masks in the cloned world, so import a light `renderPowersAt` and blit it
+  (≈5–10 ms/frame, smooth). Show the current year; highlight chronicle events at
+  or before it. Playing steps through snapshots on a timer.
+- Keep it clean: the slider only shows for the Powers layer (or repurpose it as a
+  general "history year" control).
+
+### 4. Surface + regenerate
+- Rebuild the worker/app bundle and regenerate samples. (The static Powers
+  sample image can stay as the final frame.)
+
+### Test
+- Engine: snapshot invariants above; determinism unchanged; golden hash stays
+  `fb232cd94fe0face` (simulation is downstream of elevation).
+- In-browser (`preview_eval`): generate, switch to Powers, move the slider to an
+  early year and assert the canvas differs from the final year; play advances the
+  year; no console errors.
 
 ### Guardrails
-- Deterministic: all randomness via the `simulation` stream; no `Math.random`,
-  no clock. No TS `enum`/namespaces/decorators. Keep `main` green + CI passing.
-- This is a *big* module — keep the tick rules readable and each one tested.
+- Deterministic engine; all randomness via streams; no clock in the engine (the
+  UI supplies any real-time timing for playback only).
+- Zero deps. No TS `enum`/namespaces/decorators. Keep `main` green + CI passing.
 
 ### Close out (do not skip)
 1. `node scripts/build-web.ts`; `node scripts/make-samples.ts`.
-2. Update `CHANGELOG.md` (Session 8), `PROJECT_STATE.md`, `ROADMAP.md`,
-   `DECISIONS.md`, and rewrite this file for the next (even bigger) theme.
+2. Update `CHANGELOG.md` (Session 9), `PROJECT_STATE.md`, `ROADMAP.md`,
+   `DECISIONS.md` if warranted, and rewrite this file for the next big theme.
 3. Commit per logical unit and push; confirm CI green and the live app works.
 
-## Companion / alternative directions (if you want a second big win)
-- **In-app atlas & client-side exports**: render the full gazetteer in a
-  readable in-app panel; a "Download poster (SVG)" and "Download report (MD)"
-  button generated in the browser (svgmap needs a Buffer-free base64 path).
-- **Languages**: turn the naming phonologies into small lexicons so places,
-  people, and faiths share a coherent vocabulary per culture.
+## Companion / alternative big directions
+- **Dynamic settlements**: let the simulation found/abandon cities over time and
+  show them appearing/disappearing as you scrub (ties L16 to the map).
+- **Per-culture languages**: turn the naming phonologies into small lexicons so
+  places, people, and faiths share a coherent vocabulary per culture.
+- **In-app gazetteer & client-side exports**: render the full report in the app;
+  "Download poster (SVG)" / "Download report (MD)" generated in the browser.
