@@ -6,6 +6,7 @@
 //                       blues, land shaded green→brown→white by altitude.
 
 import type { Grid } from "./grid.ts";
+import type { WaterLayer } from "./hydrology.ts";
 
 export type RGB = [number, number, number];
 
@@ -67,14 +68,17 @@ const LAND_RAMP: Array<[number, RGB]> = [
  * and land; each half is colored by its own ramp so the coastline reads
  * clearly. Optional hillshade adds a sense of relief.
  */
+const LAKE_COLOR: RGB = [70, 130, 165];
+
 export function renderHypsometric(
   elevation: Grid,
   seaLevel: number,
-  opts: { hillshade?: boolean } = {},
+  opts: { hillshade?: boolean; water?: WaterLayer } = {},
 ): Uint8Array {
   const { width, height, data } = elevation;
   const out = new Uint8Array(width * height * 4);
   const hillshade = opts.hillshade ?? true;
+  const water = opts.water;
 
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
@@ -82,7 +86,10 @@ export function renderHypsometric(
       const h = data[i];
       let color: RGB;
 
-      if (h < seaLevel) {
+      if (water && water.lakeMask[i] === 1) {
+        // Inland lake — a distinct, lighter blue than the ocean ramp.
+        color = LAKE_COLOR;
+      } else if (h < seaLevel) {
         color = ramp(OCEAN_RAMP, h / seaLevel);
       } else {
         const t = (h - seaLevel) / (1 - seaLevel);

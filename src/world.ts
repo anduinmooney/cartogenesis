@@ -1,16 +1,20 @@
 // world.ts — Top-level world assembly and serialization.
 //
 // A World bundles all generated layers plus reproducible metadata. Generation
-// is orchestrated here: each subsystem draws from its own named RNG stream so
-// the pipeline stays deterministic and extensible (future subsystems — rivers,
-// climate, biomes — slot in without disturbing existing output).
+// is a deterministic pipeline: each subsystem draws from its own named RNG
+// stream and reads the layers already produced, so new subsystems slot in
+// without disturbing existing output.
+//
+// Pipeline order (physical dependency order):
+//   elevation → water → temperature → moisture → rivers → biomes
 
 import { createHash } from "node:crypto";
 import { Rng } from "./rng.ts";
 import { Grid } from "./grid.ts";
 import { generateElevation, landFraction } from "./terrain.ts";
+import { analyzeWater, type WaterLayer } from "./hydrology.ts";
 
-export const ENGINE_VERSION = "0.1.0";
+export const ENGINE_VERSION = "0.2.0";
 
 export interface WorldConfig {
   seed: number | string;
@@ -30,6 +34,9 @@ export interface WorldMeta {
   height: number;
   seaLevel: number;
   landFraction: number;
+  oceanFraction: number;
+  lakeFraction: number;
+  lakeCount: number;
   /** Content hash of the elevation field — a determinism fingerprint. */
   contentHash: string;
 }
@@ -37,6 +44,7 @@ export interface WorldMeta {
 export interface World {
   meta: WorldMeta;
   elevation: Grid;
+  water: WaterLayer;
 }
 
 export function generateWorld(config: WorldConfig): World {
@@ -45,8 +53,9 @@ export function generateWorld(config: WorldConfig): World {
   const seaLevel = config.seaLevel ?? 0.42;
 
   const root = new Rng(config.seed);
-  const terrainRng = root.stream("terrain");
 
+  // L1 — Elevation.
+  const terrainRng = root.stream("terrain");
   const elevation = generateElevation({
     width,
     height,
@@ -56,6 +65,12 @@ export function generateWorld(config: WorldConfig): World {
     island: config.island,
   });
 
+  // L2 — Hydrology I: sea, coasts, lakes. (Reserve the stream even though the
+  // current analysis is deterministic, so future hydrology randomness stays
+  // isolated.)
+  root.stream("hydrology");
+  const water = analyzeWater(elevation, seaLevel);
+
   const meta: WorldMeta = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -63,10 +78,13 @@ export function generateWorld(config: WorldConfig): World {
     height,
     seaLevel,
     landFraction: landFraction(elevation, seaLevel),
+    oceanFraction: water.oceanFraction,
+    lakeFraction: water.lakeFraction,
+    lakeCount: water.lakeCount,
     contentHash: hashGrid(elevation),
   };
 
-  return { meta, elevation };
+  return { meta, elevation, water };
 }
 
 /** Stable content hash of a Grid (quantized to survive trivial float noise). */

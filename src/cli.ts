@@ -91,7 +91,9 @@ function runGenerate(opts: CliOptions): void {
   const mapPng = encodePNG(
     world.elevation.width,
     world.elevation.height,
-    renderHypsometric(world.elevation, world.meta.seaLevel),
+    renderHypsometric(world.elevation, world.meta.seaLevel, {
+      water: world.water,
+    }),
   );
   const heightPng = encodePNG(
     world.elevation.width,
@@ -114,6 +116,10 @@ function runGenerate(opts: CliOptions): void {
   console.log(`  sea level:     ${world.meta.seaLevel}`);
   console.log(
     `  land fraction: ${(world.meta.landFraction * 100).toFixed(1)}%`,
+  );
+  console.log(
+    `  ocean / lakes: ${(world.meta.oceanFraction * 100).toFixed(1)}% ocean, ` +
+      `${world.meta.lakeCount} lake(s) (${(world.meta.lakeFraction * 100).toFixed(1)}%)`,
   );
   console.log(`  content hash:  ${world.meta.contentHash}`);
   console.log(`  generated in:  ${ms} ms`);
