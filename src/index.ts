@@ -96,6 +96,12 @@ export {
   type ReligionLayer,
   type Faith,
 } from "./religion.ts";
+export {
+  generateSimulation,
+  type SimulationLayer,
+  type SimEvent,
+  type RealmSummary,
+} from "./simulation.ts";
 export { worldReportMarkdown } from "./report.ts";
 export { worldPosterSVG, type PosterOptions } from "./svgmap.ts";
 export { encodePNG } from "./png.ts";
@@ -108,6 +114,7 @@ export {
   renderBiomes,
   renderRegions,
   renderFaiths,
+  renderPowers,
   regionColor,
   overlayRivers,
   overlayRoads,

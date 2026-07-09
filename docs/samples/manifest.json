@@ -1,10 +1,11 @@
 {
   "size": 360,
-  "engineVersion": "0.10.0",
+  "engineVersion": "0.11.0",
   "layers": [
     "map",
     "biome",
     "political",
+    "powers",
     "faiths",
     "resources",
     "temperature",
@@ -20,6 +21,7 @@
         "map": "cartogenesis.map.png",
         "biome": "cartogenesis.biome.png",
         "political": "cartogenesis.political.png",
+        "powers": "cartogenesis.powers.png",
         "faiths": "cartogenesis.faiths.png",
         "resources": "cartogenesis.resources.png",
         "temperature": "cartogenesis.temperature.png",
@@ -42,7 +44,9 @@
         "capitalHouse": "Rimondoo",
         "faithCount": 4,
         "majorExports": "Horses, Grain, Livestock, Wine, Timber",
-        "resourceCount": 509
+        "resourceCount": 509,
+        "dominantPower": "Dillaaumar",
+        "survivingRealms": 2
       },
       "contentHash": "559d5dff12de9384"
     },
@@ -54,6 +58,7 @@
         "map": "atlas.map.png",
         "biome": "atlas.biome.png",
         "political": "atlas.political.png",
+        "powers": "atlas.powers.png",
         "faiths": "atlas.faiths.png",
         "resources": "atlas.resources.png",
         "temperature": "atlas.temperature.png",
@@ -76,7 +81,9 @@
         "capitalHouse": "Velenmepia",
         "faithCount": 4,
         "majorExports": "Horses, Grain, Livestock, Timber, Wine",
-        "resourceCount": 312
+        "resourceCount": 312,
+        "dominantPower": "Taunabi",
+        "survivingRealms": 2
       },
       "contentHash": "32e3ceea2888730d"
     },
@@ -88,6 +95,7 @@
         "map": "borea.map.png",
         "biome": "borea.biome.png",
         "political": "borea.political.png",
+        "powers": "borea.powers.png",
         "faiths": "borea.faiths.png",
         "resources": "borea.resources.png",
         "temperature": "borea.temperature.png",
@@ -110,7 +118,9 @@
         "capitalHouse": "Beodaveo",
         "faithCount": 4,
         "majorExports": "Grain, Horses, Livestock, Wine, Timber",
-        "resourceCount": 495
+        "resourceCount": 495,
+        "dominantPower": "Tariamentetau",
+        "survivingRealms": 2
       },
       "contentHash": "98f1434cf1dc7e4b"
     },
@@ -122,6 +132,7 @@
         "map": "mistral.map.png",
         "biome": "mistral.biome.png",
         "political": "mistral.political.png",
+        "powers": "mistral.powers.png",
         "faiths": "mistral.faiths.png",
         "resources": "mistral.resources.png",
         "temperature": "mistral.temperature.png",
@@ -144,7 +155,9 @@
         "capitalHouse": "Redenabi",
         "faithCount": 4,
         "majorExports": "Grain, Horses, Wine, Livestock, Timber",
-        "resourceCount": 395
+        "resourceCount": 395,
+        "dominantPower": "Ebalovento",
+        "survivingRealms": 4
       },
       "contentHash": "7dceb84630477830"
     },
@@ -156,6 +169,7 @@
         "map": "vahalia.map.png",
         "biome": "vahalia.biome.png",
         "political": "vahalia.political.png",
+        "powers": "vahalia.powers.png",
         "faiths": "vahalia.faiths.png",
         "resources": "vahalia.resources.png",
         "temperature": "vahalia.temperature.png",
@@ -178,7 +192,9 @@
         "capitalHouse": "Osiriano",
         "faithCount": 4,
         "majorExports": "Grain, Horses, Timber, Wine, Livestock",
-        "resourceCount": 432
+        "resourceCount": 432,
+        "dominantPower": "Vobica",
+        "survivingRealms": 2
       },
       "contentHash": "a300d4297c67661f"
     },
@@ -190,6 +206,7 @@
         "map": "aurelia-9.map.png",
         "biome": "aurelia-9.biome.png",
         "political": "aurelia-9.political.png",
+        "powers": "aurelia-9.powers.png",
         "faiths": "aurelia-9.faiths.png",
         "resources": "aurelia-9.resources.png",
         "temperature": "aurelia-9.temperature.png",
@@ -212,7 +229,9 @@
         "capitalHouse": "Popialenre",
         "faithCount": 2,
         "majorExports": "Grain, Horses, Livestock, Wine, Timber",
-        "resourceCount": 269
+        "resourceCount": 269,
+        "dominantPower": "Neneo",
+        "survivingRealms": 3
       },
       "contentHash": "3ecf069422de308c"
     }

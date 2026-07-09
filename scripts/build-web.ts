@@ -34,6 +34,7 @@ const MODULES = [
   "resources",
   "economy",
   "religion",
+  "simulation",
   "render",
   "world",
 ];

@@ -14,6 +14,7 @@ import { BIOME_COLORS,                 } from "./biomes.js";
                                                    
 import { RESOURCE_COLORS,              } from "./resources.js";
                                                    
+                                                       
 
                                            
 
@@ -435,6 +436,45 @@ export function renderFaiths(
       const rightDiff = x + 1 < width && ids[i + 1] >= 0 && rf(i + 1) !== here;
       const downDiff = y + 1 < height && ids[i + width] >= 0 && rf(i + width) !== here;
       if (rightDiff || downDiff) color = [28, 32, 40];
+    }
+    out[i * 4] = color[0];
+    out[i * 4 + 1] = color[1];
+    out[i * 4 + 2] = color[2];
+    out[i * 4 + 3] = 255;
+  }
+  return out;
+}
+
+/**
+ * Render the final political map after simulation: each region tinted by its
+ * controlling realm, with borders between realms.
+ */
+export function renderPowers(
+  regions             ,
+  simulation                 ,
+  water            ,
+  elevation      ,
+)             {
+  const ids = regions.ids;
+  const n = ids.length;
+  const width = elevation.width;
+  const height = elevation.height;
+  const out = new Uint8Array(n * 4);
+  const realmOf = (cellIdx        )         =>
+    ids[cellIdx] >= 0 ? (simulation.finalControl[ids[cellIdx]] ?? -1) : -2;
+
+  for (let i = 0; i < n; i++) {
+    let color     ;
+    if (water.oceanMask[i] === 1) color = [38, 58, 82];
+    else if (water.lakeMask[i] === 1) color = [70, 110, 140];
+    else {
+      const realm = realmOf(i);
+      color = realm < 0 ? [90, 90, 96] : regionColor(realm * 3 + 1);
+      const x = i % width;
+      const y = (i / width) | 0;
+      const rightDiff = x + 1 < width && ids[i + 1] >= 0 && realmOf(i + 1) !== realm;
+      const downDiff = y + 1 < height && ids[i + width] >= 0 && realmOf(i + width) !== realm;
+      if (rightDiff || downDiff) color = [24, 26, 32];
     }
     out[i * 4] = color[0];
     out[i * 4 + 1] = color[1];

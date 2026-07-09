@@ -12,6 +12,7 @@ import {
   renderBiomes,
   renderRegions,
   renderFaiths,
+  renderPowers,
   renderTemperature,
   renderMoisture,
   overlayRivers,
@@ -24,6 +25,7 @@ const LAYER_NAMES = [
   "terrain",
   "biome",
   "political",
+  "powers",
   "faiths",
   "resources",
   "temperature",
@@ -47,6 +49,8 @@ function layerPixels(world       , layer        )             {
       overlaySettlements(px, towns, w, h);
       return px;
     }
+    case "powers":
+      return renderPowers(world.regions, world.simulation, world.water, world.elevation);
     case "faiths":
       return renderFaiths(world.regions, world.religion, world.water, world.elevation);
     case "resources": {

@@ -25,6 +25,7 @@ const LAYERS: Array<[string, string]> = [
   ["terrain", "Terrain"],
   ["biome", "Biomes"],
   ["political", "Political"],
+  ["powers", "Powers"],
   ["faiths", "Faiths"],
   ["resources", "Resources"],
   ["temperature", "Temperature"],
@@ -315,8 +316,9 @@ function renderInfo(world: World): void {
     ["Capital", m.capital],
     ["Ruling house", m.capitalHouse],
     ["Faiths", String(m.faithCount)],
+    ["Dominant power", m.dominantPower],
+    ["Surviving realms", String(m.survivingRealms)],
     ["Exports", m.majorExports || "—"],
-    ["Year", `${m.presentYear} AR`],
   ];
   $("stats").innerHTML = stats
     .map(([k, v]) => `<div><span>${k}</span><b>${v}</b></div>`)
@@ -329,7 +331,8 @@ function renderInfo(world: World): void {
     })
     .join("");
 
-  $("chronicle").innerHTML = world.history.events
+  // The emergent chronicle from the simulation (the world's real history).
+  $("chronicle").innerHTML = world.simulation.events
     .map((e) => `<li><span class="yr">${e.year} AR</span> ${escapeHtml(e.text)}</li>`)
     .join("");
 }

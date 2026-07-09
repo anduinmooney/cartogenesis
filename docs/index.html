@@ -385,6 +385,7 @@
         ["map", "Terrain"],
         ["biome", "Biomes"],
         ["political", "Political"],
+        ["powers", "Powers"],
         ["faiths", "Faiths"],
         ["resources", "Resources"],
         ["temperature", "Temp"],
@@ -455,6 +456,7 @@
                   <span>faiths <b>${s.faithCount ?? "—"}</b></span>
                   <span>deposits <b>${s.resourceCount ?? "—"}</b></span>
                   <span class="wide">capital <b>${s.capital}</b>, House ${s.capitalHouse ?? "—"}</span>
+                  <span class="wide">dominant power <b>${s.dominantPower ?? "—"}</b> (${s.survivingRealms ?? "—"} survive)</span>
                   <span class="wide">exports: ${s.majorExports || "—"}</span>
                 </div>
                 <div class="links">

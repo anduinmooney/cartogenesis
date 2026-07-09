@@ -14,6 +14,7 @@ import {
   renderBiomes,
   renderRegions,
   renderFaiths,
+  renderPowers,
   renderTemperature,
   renderMoisture,
   overlayRivers,
@@ -79,10 +80,13 @@ function main(): void {
     });
     overlayResources(resources, world.resources.deposits, w, h);
 
+    const powers = renderPowers(world.regions, world.simulation, world.water, world.elevation);
+
     const layers: Record<string, Uint8Array> = {
       map,
       biome,
       political,
+      powers,
       faiths,
       resources,
       temperature: renderTemperature(world.temperature, world.water),
@@ -129,6 +133,8 @@ function main(): void {
         faithCount: world.meta.faithCount,
         majorExports: world.meta.majorExports,
         resourceCount: world.meta.resourceCount,
+        dominantPower: world.meta.dominantPower,
+        survivingRealms: world.meta.survivingRealms,
       },
       contentHash: world.meta.contentHash,
     });
@@ -145,8 +151,8 @@ function main(): void {
     JSON.stringify(
       {
         size: SIZE,
-        engineVersion: "0.10.0",
-        layers: ["map", "biome", "political", "faiths", "resources", "temperature", "moisture", "height"],
+        engineVersion: "0.11.0",
+        layers: ["map", "biome", "political", "powers", "faiths", "resources", "temperature", "moisture", "height"],
         worlds,
       },
       null,

@@ -33,8 +33,9 @@ import { generateLore,                } from "./lore.js";
 import { generateResources, RESOURCE_NAMES,                    } from "./resources.js";
 import { generateEconomy,                   } from "./economy.js";
 import { generateReligion,                    } from "./religion.js";
+import { generateSimulation,                      } from "./simulation.js";
 
-export const ENGINE_VERSION = "0.10.0";
+export const ENGINE_VERSION = "0.11.0";
 
                               
                         
@@ -76,6 +77,8 @@ export const ENGINE_VERSION = "0.10.0";
                         
                        
                      
+                          
+                        
                                                                          
                       
  
@@ -96,6 +99,7 @@ export const ENGINE_VERSION = "0.10.0";
                            
                         
                           
+                              
  
 
 export function generateWorld(config             )        {
@@ -231,6 +235,20 @@ export function generateWorld(config             )        {
   const religionRng = root.stream("religion");
   const religion = generateReligion(regions, history, { seed: religionRng.seed });
 
+  // L16 — Simulation: run the world forward; history becomes emergent.
+  const simulationRng = root.stream("simulation");
+  const simulation = generateSimulation(
+    regions,
+    history,
+    religion,
+    settlements.settlements,
+    economy,
+    { seed: simulationRng.seed },
+  );
+  const dominant = [...simulation.realms]
+    .filter((r) => r.status !== "extinct")
+    .sort((a, b) => b.finalSize - a.finalSize)[0];
+
   const meta            = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -258,6 +276,8 @@ export function generateWorld(config             )        {
     resourceCount: resources.deposits.length,
     majorExports: economy.majorExports.map((k) => RESOURCE_NAMES[k]).join(", "),
     faithCount: religion.faiths.length,
+    survivingRealms: simulation.survivingRealms,
+    dominantPower: dominant?.name ?? "—",
     contentHash: hashGrid(elevation),
   };
 
@@ -277,6 +297,7 @@ export function generateWorld(config             )        {
     resources,
     economy,
     religion,
+    simulation,
   };
 }
 

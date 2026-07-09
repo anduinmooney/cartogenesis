@@ -51,6 +51,9 @@ export function worldReportMarkdown(world: World): string {
       `${m.realmCount} realms`,
   );
   lines.push(`- **Capital:** ${m.capital}, seat of House ${m.capitalHouse}`);
+  lines.push(
+    `- **Dominant power:** ${m.dominantPower} (of ${m.survivingRealms} surviving realm(s))`,
+  );
   lines.push(`- **The present year:** ${h.presentYear} ${h.epoch}`);
   lines.push("");
 
@@ -191,10 +194,42 @@ export function worldReportMarkdown(world: World): string {
   if (depCounts.length) lines.push(`- **Deposits:** ${depCounts.join(", ")}`);
   lines.push("");
 
-  // Chronicle
-  lines.push("## Chronicle");
+  // Legends of the founding age (the static, mythic prehistory).
+  lines.push("## Legends of the founding age");
   lines.push("");
   for (const e of h.events) {
+    lines.push(`- **${e.year} ${h.epoch}** — ${e.text}`);
+  }
+  lines.push("");
+
+  // Rise and fall of realms (from the simulation).
+  const sim = world.simulation;
+  const notable = [...sim.realms]
+    .filter((r) => r.peakSize >= 2 || r.status !== "extinct")
+    .sort((a, b) => b.peakSize - a.peakSize || a.foundedYear - b.foundedYear);
+  if (notable.length) {
+    lines.push("## Rise and fall of realms");
+    lines.push("");
+    lines.push(
+      `*Simulated ${sim.startYear}–${sim.endYear} ${h.epoch}. ` +
+        `${sim.survivingRealms} realm(s) endured to the present.*`,
+    );
+    lines.push("");
+    lines.push("| Realm | Founded | Peak | Peak year | Final | Fate |");
+    lines.push("|-------|--------:|-----:|----------:|------:|------|");
+    for (const r of notable) {
+      lines.push(
+        `| ${r.name} | ${r.foundedYear} | ${r.peakSize} | ${r.peakYear} | ` +
+          `${r.finalSize} | ${r.status} |`,
+      );
+    }
+    lines.push("");
+  }
+
+  // The emergent chronicle (from the simulation).
+  lines.push("## Chronicle");
+  lines.push("");
+  for (const e of sim.events) {
     lines.push(`- **${e.year} ${h.epoch}** — ${e.text}`);
   }
   lines.push("");
