@@ -7,7 +7,7 @@
 
 1. `node --version` → confirm ≥ 22.6.
 2. `npm test` → confirm green **before** changing anything (baseline: **126**).
-3. Skim `CHANGELOG.md` (top, Session 8) and `ROADMAP.md`.
+3. Skim `CHANGELOG.md` (top, Session 10) and `ROADMAP.md`.
 4. Preview: `node scripts/serve-docs.ts` → `/` (atlas) and `/app/` (live).
 5. **After any `src/` change, rerun `node scripts/build-web.ts`** (CI enforces it;
    it also fails if any browser module — engine/app/worker — imports a module
@@ -72,7 +72,7 @@ can play and scrub. Big, visible payoff built directly on L16.
 
 ### Test
 - Engine: snapshot invariants above; determinism unchanged; golden hash stays
-  `fb232cd94fe0face` (simulation is downstream of elevation).
+  `74c67102ff7abf98` (simulation is downstream of elevation).
 - In-browser (`preview_eval`): generate, switch to Powers, move the slider to an
   early year and assert the canvas differs from the final year; play advances the
   year; no console errors.
@@ -84,7 +84,7 @@ can play and scrub. Big, visible payoff built directly on L16.
 
 ### Close out (do not skip)
 1. `node scripts/build-web.ts`; `node scripts/make-samples.ts`.
-2. Update `CHANGELOG.md` (Session 9), `PROJECT_STATE.md`, `ROADMAP.md`,
+2. Update `CHANGELOG.md` (Session 11), `PROJECT_STATE.md`, `ROADMAP.md`,
    `DECISIONS.md` if warranted, and rewrite this file for the next big theme.
 3. Commit per logical unit and push; confirm CI green and the live app works.
 
