@@ -131,6 +131,18 @@
       .meta-row a:hover {
         border-bottom-color: var(--accent);
       }
+      .cta {
+        display: inline-block;
+        background: var(--accent);
+        color: #04141a;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0.6rem 1.1rem;
+        border-radius: 7px;
+        font-size: 0.95rem;
+        transition: transform 0.12s;
+      }
+      .cta:hover { transform: translateY(-1px); }
 
       /* ---- Plate grid ---- */
       main {
@@ -350,6 +362,9 @@
           any with <code>node src/cli.ts generate --seed &lt;name&gt;</code>.
         </p>
         <div class="meta-row" id="meta"></div>
+        <p style="margin-top:1.4rem">
+          <a class="cta" href="app/">▶ Generate your own world, live in the browser →</a>
+        </p>
       </div>
     </header>
 

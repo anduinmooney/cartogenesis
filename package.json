@@ -9,7 +9,9 @@
   "scripts": {
     "generate": "node src/cli.ts generate",
     "test": "node --test \"tests/*.test.ts\"",
-    "sample": "node scripts/make-samples.ts"
+    "sample": "node scripts/make-samples.ts",
+    "build:web": "node scripts/build-web.ts",
+    "serve": "node scripts/serve-docs.ts"
   },
   "keywords": [
     "procedural-generation",

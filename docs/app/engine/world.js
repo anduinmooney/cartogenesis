@@ -8,81 +8,81 @@
 // Pipeline order (physical dependency order):
 //   elevation → water → temperature → moisture → rivers → biomes
 
-import { Rng } from "./rng.ts";
-import { hashQuantized } from "./hash.ts";
-import { Grid } from "./grid.ts";
-import { generateElevation, landFraction } from "./terrain.ts";
-import { analyzeWater, type WaterLayer } from "./hydrology.ts";
-import { generateTemperature, generateMoisture } from "./climate.ts";
-import { generateRivers, type RiverLayer } from "./rivers.ts";
+import { Rng } from "./rng.js";
+import { hashQuantized } from "./hash.js";
+import { Grid } from "./grid.js";
+import { generateElevation, landFraction } from "./terrain.js";
+import { analyzeWater,                 } from "./hydrology.js";
+import { generateTemperature, generateMoisture } from "./climate.js";
+import { generateRivers,                 } from "./rivers.js";
 import {
   classifyBiomes,
   BIOME_NAMES,
-  type BiomeLayer,
-  type Biome,
-} from "./biomes.ts";
-import { generateRegions, type RegionLayer } from "./regions.ts";
+                  
+             
+} from "./biomes.js";
+import { generateRegions,                  } from "./regions.js";
 import {
   generateSettlements,
-  type SettlementLayer,
-} from "./settlements.ts";
-import { generateRoads, type RoadLayer } from "./roads.ts";
-import { generateHistory, type HistoryLayer } from "./history.ts";
+                       
+} from "./settlements.js";
+import { generateRoads,                } from "./roads.js";
+import { generateHistory,                   } from "./history.js";
 
 export const ENGINE_VERSION = "0.8.0";
 
-export interface WorldConfig {
-  seed: number | string;
-  width?: number;
-  height?: number;
-  seaLevel?: number;
-  /** Passed through to terrain generation. */
-  frequency?: number;
-  octaves?: number;
-  island?: boolean;
-}
+                              
+                        
+                 
+                  
+                    
+                                              
+                     
+                   
+                   
+ 
 
-export interface WorldMeta {
-  engineVersion: string;
-  seed: number | string;
-  width: number;
-  height: number;
-  seaLevel: number;
-  landFraction: number;
-  oceanFraction: number;
-  lakeFraction: number;
-  lakeCount: number;
-  riverFraction: number;
-  mainRiverFlow: number;
-  biomeDiversity: number;
-  dominantBiome: string;
-  regionCount: number;
-  largestRegion: string;
-  settlementCount: number;
-  capital: string;
-  roadLength: number;
-  realmCount: number;
-  eventCount: number;
-  presentYear: number;
-  /** Content hash of the elevation field — a determinism fingerprint. */
-  contentHash: string;
-}
+                            
+                        
+                        
+                
+                 
+                   
+                       
+                        
+                       
+                    
+                        
+                        
+                         
+                        
+                      
+                        
+                          
+                  
+                     
+                     
+                     
+                      
+                                                                         
+                      
+ 
 
-export interface World {
-  meta: WorldMeta;
-  elevation: Grid;
-  water: WaterLayer;
-  temperature: Grid;
-  moisture: Grid;
-  rivers: RiverLayer;
-  biomes: BiomeLayer;
-  regions: RegionLayer;
-  settlements: SettlementLayer;
-  roads: RoadLayer;
-  history: HistoryLayer;
-}
+                        
+                  
+                  
+                    
+                    
+                 
+                     
+                     
+                       
+                               
+                   
+                        
+ 
 
-export function generateWorld(config: WorldConfig): World {
+export function generateWorld(config             )        {
   const width = config.width ?? 512;
   const height = config.height ?? 512;
   const seaLevel = config.seaLevel ?? 0.42;
@@ -181,7 +181,7 @@ export function generateWorld(config: WorldConfig): World {
     { seed: historyRng.seed },
   );
 
-  const meta: WorldMeta = {
+  const meta            = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
     width,
@@ -194,7 +194,7 @@ export function generateWorld(config: WorldConfig): World {
     riverFraction: rivers.riverFraction,
     mainRiverFlow: Math.round(rivers.maxFlow),
     biomeDiversity: biomes.diversity,
-    dominantBiome: BIOME_NAMES[biomes.dominant as Biome],
+    dominantBiome: BIOME_NAMES[biomes.dominant         ],
     regionCount: regions.regions.length,
     largestRegion: largest.name,
     settlementCount: settlements.settlements.length,
@@ -222,11 +222,11 @@ export function generateWorld(config: WorldConfig): World {
 }
 
 /** Stable content hash of a Grid (quantized to survive trivial float noise). */
-export function hashGrid(grid: Grid): string {
+export function hashGrid(grid      )         {
   return hashQuantized(grid.data);
 }
 
 /** Serialize world metadata (not the heavy grids) to a JSON string. */
-export function worldToJSON(world: World): string {
+export function worldToJSON(world       )         {
   return JSON.stringify(world.meta, null, 2);
 }

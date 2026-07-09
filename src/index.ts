@@ -4,6 +4,7 @@
 //   import { generateWorld, renderHypsometric, encodePNG } from "./src/index.ts";
 
 export { Rng, hashString, normalizeSeed } from "./rng.ts";
+export { hashQuantized } from "./hash.ts";
 export { valueNoise2D, fbm2D, ridge2D, type FbmOptions } from "./noise.ts";
 export { Grid } from "./grid.ts";
 export {

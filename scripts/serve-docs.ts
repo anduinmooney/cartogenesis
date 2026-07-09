@@ -21,11 +21,10 @@ const TYPES: Record<string, string> = {
 
 const server = createServer(async (req, res) => {
   try {
-    const url = decodeURIComponent((req.url ?? "/").split("?")[0]);
-    const rel = normalize(url === "/" ? "/index.html" : url).replace(
-      /^(\.\.[/\\])+/,
-      "",
-    );
+    let url = decodeURIComponent((req.url ?? "/").split("?")[0]);
+    // Serve index.html for the root and any directory path (trailing slash).
+    if (url.endsWith("/")) url += "index.html";
+    const rel = normalize(url).replace(/^(\.\.[/\\])+/, "");
     const path = join(ROOT, rel);
     const body = await readFile(path);
     res.writeHead(200, { "content-type": TYPES[extname(path)] ?? "application/octet-stream" });
