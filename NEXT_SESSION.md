@@ -7,83 +7,69 @@
 
 1. `node --version` → confirm ≥ 22.6.
 2. `npm test` → confirm green **before** changing anything (baseline: **87**).
-3. Skim `CHANGELOG.md` (top, Session 3) and `ROADMAP.md`.
-4. Preview the current atlas: `node scripts/serve-docs.ts` → http://localhost:8123.
+3. Skim `CHANGELOG.md` (top, Session 4) and `ROADMAP.md`.
+4. Preview: `node scripts/serve-docs.ts` → http://localhost:8123 (gallery) and
+   http://localhost:8123/app/ (live generator).
+5. **If you change any `src/` module, rerun `node scripts/build-web.ts`** or the
+   live app serves stale code. (Committed `docs/app/*.js` are build artifacts.)
 
 ## Context: where the project is
 
-The world is **complete end to end** — physical (L1–L6) and human (L7–L11) —
-plus labeled SVG posters and Markdown gazetteers. But it only runs in Node. The
-single biggest remaining milestone is making it **run live in the browser** so
-anyone can type a seed on the Pages site and watch a world generate.
+Essentially the whole original vision is done — physical world (L1–L6), human
+world (L7–L11), posters + gazetteers, and a **live in-browser generator**
+(`docs/app/`). The engine runs identically in Node and the browser, zero deps.
 
-## This session's objective: **P2 — Browser build (live generation)**
+## This session's objective: **P4 — Interactive atlas**
 
-Get the engine generating and rendering worlds in the browser, published on the
-Pages site.
+Make the live generator explorable, not just viewable. Turn the static canvas
+into something you can pan, zoom, and interrogate.
 
-### Key facts that make this feasible
-- Almost every module is pure TS with **no Node dependencies**. The only two
-  Node touchpoints are:
-  - `src/png.ts` → `node:zlib` (the browser won't need PNG — draw to a Canvas).
-  - `src/world.ts` `hashGrid()` → `node:crypto` (needs a pure-JS replacement).
-- **The render functions already return `Uint8Array` RGBA** — that is exactly
-  `ImageData.data`. So `ctx.putImageData(new ImageData(rgba, w, h), 0, 0)` draws
-  any layer with zero new rendering code. The overlays (`overlayRivers`, etc.)
-  mutate RGBA in place and work as-is.
+### Suggested build (pick the highest-value subset; commit per feature)
+1. **Pan & zoom** the canvas. Track a `{scale, offsetX, offsetY}` view; draw the
+   world to an *offscreen* canvas once per generation/layer, then blit it
+   transformed. Wheel to zoom (toward cursor), drag to pan, double-click to
+   reset. Respect device pixel ratio for crispness.
+2. **Hover to inspect.** On mousemove, map cursor → cell (invert the view
+   transform). Show a tooltip with: region name + culture, biome, elevation,
+   and — if over/near a settlement — its name/tier. You have `regions.ids`,
+   `biomes.ids`, and settlement coords in the `World` already; expose the world
+   globally in the app module so the handler can read them.
+3. **Click a settlement/region** → pin a detail card (region stats, or the
+   settlement's tier/port/capital flags). Use a small hit radius for towns.
+4. **Nice-to-haves:** a subtle cross-fade when switching layers; a "copy link"
+   button (URL already carries `?seed=`); keyboard `+`/`-`/arrows.
+5. Consider moving generation into a **Web Worker** so the UI never freezes
+   (the engine is pure and importable; post the seed in, post layer RGBA out).
+   Only do this if it stays clean — otherwise leave the ~300 ms sync generate.
 
-### Decisions to make first (record in DECISIONS.md)
-1. **Bundler.** Browsers can't run `.ts` (type-stripping is Node-only). Recommend
-   adding **esbuild as a dev-only dependency** to bundle `web/main.ts` →
-   `docs/app/bundle.js`. This keeps the *runtime* zero-dependency (esbuild is
-   build-time only, and the committed bundle means Pages needs no build). This is
-   a deliberate, documented exception to "no build step" — for the web target only;
-   Node dev stays build-free. (Alternative: hand-write a tiny concatenator — not
-   worth it. Decide and note it as D-012.)
-2. **Pure hash.** Replace `node:crypto` in `hashGrid` with a small pure-JS hash
-   (e.g. FNV-1a or cyrb over the quantized grid) so the engine is universal.
-   **This changes the golden `contentHash`** — regenerate it, update
-   `tests/world.test.ts`, and record the intentional change in DECISIONS (D-013).
-   Alternatively keep `node:crypto` for Node and branch — but a single universal
-   pure hash is cleaner.
+### Constraints specific to this session
+- All new code is browser code under `web/` (rebuild with `build:web`). Keep it
+  dependency-free and framework-free (vanilla DOM/Canvas), matching the app.
+- Don't regress determinism or the engine tests. The interactive layer is pure
+  presentation on top of the existing `World`.
 
-### Build steps
-1. Make the engine browser-safe: add `src/hash.ts` (pure), refactor `hashGrid`
-   to use it. Confirm `npm test` still green (with the updated golden hash).
-2. Add `web/main.ts`: a small app that reads a seed from an `<input>`, calls
-   `generateWorld`, and draws the selected layer to a `<canvas>` via `ImageData`.
-   Wire buttons for layers (terrain/biome/political/temp/rain) reusing the
-   existing renderers + overlays. Show the meta (capital, regions, etc.) and the
-   chronicle text beside it. Keep it dependency-free browser code.
-3. Add `scripts/build-web.ts` (or an npm script) that invokes esbuild to bundle
-   `web/main.ts` to `docs/app/bundle.js` (format=esm or iife, minify). Add
-   `esbuild` to `devDependencies` and an npm `build:web` script.
-4. Add `docs/app/index.html` (seed box, generate button, canvas, layer tabs,
-   info panel). Link to it from the main gallery (`docs/index.html`) — a "Generate
-   your own →" call to action in the masthead.
-5. **Commit the built `docs/app/bundle.js`** so Pages serves it with no build.
-6. Verify locally with `scripts/serve-docs.ts` and the browser preview; confirm
-   generating a couple of seeds renders on the canvas and layer switching works.
-
-### Test / verify
-- `npm test` stays green (87, adjusted golden hash).
-- A tiny node smoke test that `generateWorld` works without importing `png.ts`
-  (i.e. no `node:crypto`/`node:zlib` on the generation+meta path).
-- Manual: load `docs/app/` locally, generate seeds, switch layers.
+### Verify (screenshots can be flaky — prefer `preview_eval`)
+- Load `/app/`, generate, then via eval: simulate a wheel event and assert the
+  view scale changed; dispatch a mousemove and assert the tooltip populated;
+  confirm no console errors.
+- `npm test` stays green (engine untouched → golden hash `1b8c816c890e866c`).
 
 ### Close out (do not skip)
-1. Update `CHANGELOG.md` (Session 4), `PROJECT_STATE.md` (P2 done, version bump),
-   `ROADMAP.md` (tick P2, mark P4 🔜), `DECISIONS.md` (D-012/D-013), and rewrite
-   this file for **P4 — interactive atlas** (pan/zoom, clickable regions) or
-   deeper simulation (hydraulic erosion).
-2. Commit per logical unit and push. Verify the live site's new `/app/` page.
+1. `node scripts/build-web.ts` so the committed bundle is current.
+2. Update `CHANGELOG.md` (Session 5), `PROJECT_STATE.md`, `ROADMAP.md` (tick P4),
+   `DECISIONS.md` if you make a notable call, and rewrite this file for the next
+   target (deeper simulation: **hydraulic erosion**, or **CI via GitHub Actions**,
+   or latitude wind belts — all in ROADMAP).
+3. Commit per feature and push; verify the live `/app/` behaves.
 
 ## Guardrails
-- Runtime stays **zero-dependency**; esbuild is dev-only. All randomness via
-  `Rng` streams. No `Math.random`, no clock. No TS enums/namespaces/decorators.
-- Keep `main` green. Every new module gets a doc comment + determinism test.
+- Runtime + build stay **zero-dependency**. All randomness via `Rng` streams.
+- No TS `enum`/namespaces/decorators (Node strip-only). Keep `main` green.
+- After `src/` edits: **rebuild the web bundle** before committing.
 
-## Stretch goals (only if P2 is done, tested, committed)
-- Layer cross-fade animation as generation completes.
-- A "randomize seed" button; shareable `?seed=` URL param.
-- Begin P4: pan/zoom on the canvas; hover a region to show its name/stats.
+## Backlog (good alternatives if P4 feels done or you want variety)
+- **Hydraulic erosion**: a droplet/stream-power pass on elevation to carve
+  valleys along rivers (would change the golden hash — document it).
+- **CI**: `.github/workflows/ci.yml` running `npm test` + `build:web` on push.
+- **Merge sub-threshold islets** so 1-cell "regions" stop cluttering gazetteers.
+- **Latitude wind belts** in moisture (trade winds vs. westerlies).

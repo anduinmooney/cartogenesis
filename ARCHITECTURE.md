@@ -120,13 +120,25 @@ svgmap.ts → labeled SVG poster, render.ts → PNG layers.
 - `encodePNG(w, h, rgba)` — minimal PNG writer (zlib for DEFLATE, hand-rolled
   CRC-32 and chunk framing). No image dependencies.
 
-### `world.ts`
+### `world.ts` + `hash.ts`
 - `generateWorld(config)` — orchestrates subsystems, assembles `World`, computes
   `meta` including the `contentHash` fingerprint.
-- `hashGrid(grid)` — quantized SHA-256 fingerprint of a field.
+- `hashGrid(grid)` → `hashQuantized` (`src/hash.ts`) — a **pure-JS** quantized
+  fingerprint (no `node:crypto`), so the whole path runs in the browser too.
 
 ### `cli.ts`
-- Argument parsing and the `generate` command.
+- Argument parsing and the `generate` command (Node-only; uses `png.ts`).
+
+## Running in the browser (P2)
+
+The engine is universal: `generateWorld` and every renderer use only portable JS
+(no `node:*`). `scripts/build-web.ts` type-strips the browser-safe modules to
+`docs/app/engine/*.js` via Node's built-in `module.stripTypeScriptTypes` (zero
+deps) and `web/main.ts` → `docs/app/app.js`. The browser draws layers with
+`ctx.putImageData` — the renderers already return `Uint8Array` RGBA. Excluded
+from the browser graph: `png.ts` (node:zlib), `svgmap.ts` (Buffer), `cli.ts`,
+`index.ts`. **Rerun `npm run build:web` after any `src/` change** — the committed
+`docs/app/*.js` are build artifacts.
 
 ## How to add a subsystem (worked recipe)
 
@@ -146,7 +158,6 @@ Say you're adding **temperature**:
 
 ## Non-goals (for now)
 
-- Real-time / interactive generation in the browser (the engine is Node-first;
-  a browser port is a roadmap item, not a constraint on the core).
 - Physically accurate simulation. We favor *plausible and pretty* over correct.
-- Third-party libraries. Zero-dependency is a feature, not an accident.
+- Third-party libraries. Zero-dependency is a feature, not an accident — it holds
+  even at build time (the web build uses only a Node builtin).

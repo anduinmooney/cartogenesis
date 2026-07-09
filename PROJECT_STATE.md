@@ -4,11 +4,12 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 3 · 2026-07-08
-- **Engine version:** 0.8.0
+- **As of:** Session 4 · 2026-07-08
+- **Engine version:** 0.8.0 (runs in Node **and** the browser)
 - **Health:** 🟢 Green. 87 tests pass; engine produces valid, deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
+- **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
 
 ## What works today
 
@@ -35,8 +36,9 @@
 | L7 Regions · L8 Naming | ✅ done |
 | L9 Settlements · L10 Roads · L11 History | ✅ done |
 | P1 SVG poster · P3 World report | ✅ done |
-| P2 Browser build (live generation) | 🔜 next |
-| P4 interactive atlas · erosion · CI | ⬜ planned |
+| P2 Browser build (live generation) | ✅ done |
+| P4 interactive atlas (pan/zoom, hover) | 🔜 next |
+| erosion · CI · latitude wind belts | ⬜ planned |
 
 ## How to run (cold start)
 
@@ -45,7 +47,8 @@ node --version            # need ≥ 22.6
 npm test                  # 87 tests, all offline
 node src/cli.ts generate --seed hello   # writes 7 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
-node scripts/serve-docs.ts     # preview docs/ at http://localhost:8123
+node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)
+node scripts/serve-docs.ts     # preview docs/ + docs/app/ at http://localhost:8123
 ```
 
 No `npm install` is required — there are zero dependencies.
@@ -59,11 +62,12 @@ No `npm install` is required — there are zero dependencies.
 
 ## Known limitations / debt
 
-- The world is complete on paper but Node-only — it can't yet run in a browser
-  (that's P2, next). `png.ts` uses `node:zlib` and `world.ts` uses
-  `node:crypto`; a browser build must swap these (Canvas ImageData, a pure hash).
-- Tiny single-cell islands become their own 1-cell "regions" (from the coverage
-  pass), which clutters gazetteers. Consider merging sub-threshold islets.
+- `docs/app/*.js` are **build artifacts** (type-stripped from `src/`). After any
+  `src/` change, rerun `node scripts/build-web.ts` or the live app goes stale.
+- The browser app generates synchronously (~300 ms), briefly freezing the UI
+  thread. A Web Worker would keep it responsive (future).
+- Tiny single-cell islands become their own 1-cell "regions" (coverage pass),
+  cluttering gazetteers. Consider merging sub-threshold islets.
 - History wars need adjacent realms; small worlds (few cities) get few/no wars.
 - Moisture runs a single west→east prevailing wind; latitude wind belts would be
   more realistic (future tuning).

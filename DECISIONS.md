@@ -6,6 +6,32 @@ old one — the history is the point.
 
 ---
 
+## D-013 — Pure-JS content hash (drop node:crypto) (2026-07-08, Session 4)
+**Decision:** `hashGrid` now uses a pure-JS quantized hash (`src/hash.ts`,
+`hashQuantized`) instead of `node:crypto` SHA-256. The canonical golden hash
+changed from `54146be48037737d` to **`1b8c816c890e866c`** (values differ; the
+elevation field is byte-for-byte unchanged — only the hashing algorithm changed).
+**Why:** `node:crypto` doesn't exist in browsers. A pure hash makes the entire
+generation + metadata path universal (identical output in Node and the browser),
+which P2 requires. The hash is a determinism fingerprint, not a signature, so a
+non-cryptographic 2×32-bit fold is fine. This is an intentional golden-hash
+change (the only kind allowed) — the test was updated in the same commit.
+
+## D-012 — Zero-dependency browser build via Node type-stripping (2026-07-08, Session 4)
+**Decision:** Build the browser bundle with Node's built-in
+`module.stripTypeScriptTypes` (`scripts/build-web.ts`), NOT esbuild/tsc/webpack.
+It emits browser-safe engine modules as plain ES modules under `docs/app/engine/`
+plus `docs/app/app.js`, rewriting `.ts` import specifiers to `.js`. The output is
+committed so GitHub Pages serves it with no build.
+**Why:** NEXT_SESSION had planned esbuild as a dev-only dependency, but Node 24
+can strip types natively — so we keep the project **truly zero-dependency**, even
+build-time. Browsers can't run `.ts` (type-stripping is Node-only at runtime), so
+a build step is unavoidable for the web target; using a Node builtin makes that
+step dependency-free. `png.ts` (node:zlib), `svgmap.ts` (Buffer), `cli.ts`, and
+`index.ts` are excluded from the browser graph; the browser draws to a Canvas via
+`putImageData` instead of encoding PNGs. **Caveat:** committed `docs/app/*.js` are
+build artifacts — rerun `npm run build:web` after changing any `src/` module.
+
 ## D-011 — SVG (not PNG) for labeled map posters (2026-07-08, Session 3)
 **Decision:** Text-labeled maps are exported as SVG (`src/svgmap.ts`), embedding
 a rendered PNG as a base64 data-URI background with vector `<text>` labels on top.

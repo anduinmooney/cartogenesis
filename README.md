@@ -64,11 +64,18 @@ Each `generate` run writes three files:
 | `<name>.report.md` | Gazetteer: overview, regions, settlements, chronicle |
 | `<name>.json` | World metadata, including a determinism `contentHash` |
 
-## The gallery
+## The gallery & the live generator
 
-`docs/index.html` is a static, self-contained viewer for the committed sample
-worlds. It's designed to be served by **GitHub Pages** (from the `/docs`
-folder). Open it locally by serving the folder, or enable Pages to publish it.
+- **Sample atlas** — `docs/index.html`: a static viewer for the committed sample
+  worlds (six map layers each, plus a labeled poster and gazetteer).
+- **Live generator** — `docs/app/`: type any seed and the *entire engine runs in
+  your browser* (no server), drawing the world to a Canvas. Built with **zero
+  dependencies** — `scripts/build-web.ts` type-strips `src/` to plain ES modules
+  using Node's built-in `module.stripTypeScriptTypes` (rerun after editing `src/`
+  via `npm run build:web`).
+
+Both are served by **GitHub Pages** from `/docs`. Preview locally with
+`node scripts/serve-docs.ts`.
 
 ## Architecture
 

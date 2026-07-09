@@ -11,7 +11,7 @@ you can't have rivers before elevation, or forests before rainfall.
 | **1 day** (Session 1) | A working, tested, deterministic engine that turns a seed into a rendered elevation map. Continuity docs in place. On GitHub. ✅ |
 | **1 week** | Water and climate: coastlines, temperature, moisture, and rivers by flow accumulation. Maps look like *places*. ✅ **Reached in Session 2 — ahead of schedule.** |
 | **1 month** | A full physical world + named regions + labeled SVG posters. ✅ **All reached by Session 3.** |
-| **6 months** | A living world: settlements by habitability ✅, a procedural history ✅, place-name languages ✅, trade routes ✅, reproducible world reports ✅. **Core reached in Session 3 — far ahead of schedule.** Remaining: an *explorable, live, in-browser* atlas (P2/P4). |
+| **6 months** | A living world: settlements ✅, history ✅, languages ✅, trade routes ✅, world reports ✅, **and a live in-browser generator ✅ (Session 4)**. Essentially the entire original vision, reached in 4 sessions. Remaining polish: an *interactive* atlas (P4 pan/zoom/hover) and deeper simulation. |
 
 Success is **not** measured by lines of code but by: *does the latest layer make
 the world more coherent, and is it tested and reproducible?*
@@ -43,11 +43,12 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 
 ### Presentation & platform
 - ✅ **P1 — SVG poster export.** Labeled maps with region/city/feature names.
-- 🔜 **P2 — Browser engine.** Port the core to run in the Pages viewer so users
-  can type a seed and watch a world generate live on a Canvas. (Needs swapping
-  `node:zlib`/`node:crypto`; decide on a dev-only bundler — see NEXT_SESSION.)
+- ✅ **P2 — Browser engine.** The core runs live in the Pages app
+  (`/app/`) — type a seed, generate on a Canvas. Zero-dependency build via Node
+  type-stripping; pure-JS hash replaced `node:crypto`.
 - ✅ **P3 — World report.** Markdown gazetteer describing each world.
-- ⬜ **P4 — Interactive atlas.** Pan/zoom, layer toggles, clickable regions.
+- 🔜 **P4 — Interactive atlas.** Pan/zoom the canvas, hover a region for its
+  name/stats, click for detail; layer cross-fades; shareable seed links.
 
 ### Deeper simulation (optional polish)
 - ⬜ Hydraulic erosion pass on elevation (carve valleys along rivers).

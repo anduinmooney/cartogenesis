@@ -8,6 +8,46 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 4 — 2026-07-08 — Live in the browser (P2)
+
+**Theme:** Make the engine run in the browser so anyone can type a seed and
+watch a world generate live — with **zero dependencies**, even at build time.
+
+### Added
+- **`src/hash.ts`** — pure-JS content hash; `world.ts` drops `node:crypto`, so
+  the whole generation path is browser-safe. Golden hash → `1b8c816c890e866c`.
+- **`scripts/build-web.ts`** — zero-dependency browser build using Node's
+  built-in `module.stripTypeScriptTypes` (no esbuild/tsc). Emits browser-safe
+  engine modules + app to `docs/app/` (committed; Pages needs no build).
+- **`web/main.ts` + `docs/app/index.html`** — the live generator: seed input,
+  Random button, 6 layer tabs, Canvas rendering via `putImageData` (renderers
+  already return RGBA), an info panel with stats / notable features / chronicle,
+  and `?seed=` URL sync. Fully client-side; nothing leaves the browser.
+- `docs/index.html`: a "Generate your own" call-to-action to the live app.
+- npm scripts `build:web` and `serve`; `serve-docs.ts` now serves directory
+  index pages.
+
+### Verified
+- `npm test` → **87 passing** (golden hash updated, all else unchanged).
+- In-browser (via the live preview): seeds generate in ~270–300 ms, all six
+  layers switch correctly, `?seed=` URL updates, zero console errors. Confirmed
+  the emitted bundle has **no `node:` imports**.
+
+### Decided
+- D-012 (zero-dep browser build via Node type-stripping, not esbuild).
+- D-013 (pure-JS content hash; intentional golden-hash change).
+
+### Metrics
+- Source modules: 21 (+hash). Tests: 87. Runtime deps: 0 (build deps: 0 too).
+  Engine: v0.8.0 (browser + Node).
+
+### Left for next session
+- **P4 — Interactive atlas**: pan/zoom the canvas, hover a region for its
+  name/stats, click for details. Or deeper simulation (hydraulic erosion).
+  See `NEXT_SESSION.md`.
+
+---
+
 ## Session 3 — 2026-07-08 — The human world (L7–L11 + presentation)
 
 **Theme:** Populate and narrate the world. In one session: provinces, cultures,
