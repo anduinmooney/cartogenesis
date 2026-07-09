@@ -12,6 +12,7 @@ export {
   landFraction,
   type TerrainConfig,
 } from "./terrain.ts";
+export { erode, type ErosionConfig } from "./erosion.ts";
 export {
   analyzeWater,
   countComponents,

@@ -5,9 +5,9 @@
 ## Overview
 
 - **Extent:** 360 × 360 cells
-- **Land / ocean:** 63.5% land, 36.5% ocean, 0 lake(s)
-- **Climate & life:** dominant biome **Grassland**, 15 biomes in all
-- **Peoples:** 32 regions, 26 settlements, 4 realms
+- **Land / ocean:** 62.5% land, 37.5% ocean, 2 lake(s)
+- **Climate & life:** dominant biome **Grassland**, 16 biomes in all
+- **Peoples:** 29 regions, 25 settlements, 4 realms
 - **Capital:** Bee
 - **The present year:** 826 After Reckoning
 
@@ -15,95 +15,93 @@
 
 - **Mount Stonthuvik** — the highest peak
 - **The Reontepiceo** — the greatest river
+- **Lake Laussorero** — the largest inland water
 
 ## Regions
 
 | Region | Culture | Area | Dominant biome | Coast |
 |--------|---------|-----:|----------------|:-----:|
-| Elenpeosi | Meridian (southern) | 5722 | Alpine | — |
-| Khaikhai | Kesh (desert) | 5205 | Desert | — |
-| Ghenraaghi | Kesh (desert) | 4966 | Temperate Desert | — |
-| Daiamar | Meridian (southern) | 4391 | Shrubland | — |
-| Makha | Kesh (desert) | 4301 | Desert | — |
-| Tukhkhaa | Kesh (desert) | 3605 | Savanna | yes |
-| Dyvuvik | Auld (northern) | 3598 | Cold Desert | — |
-| Vollava | Meridian (southern) | 3474 | Grassland | yes |
-| Munqaiabad | Kesh (desert) | 3378 | Savanna | yes |
-| Skoveigrba | Auld (northern) | 3247 | Snow | — |
-| Idendorimar | Meridian (southern) | 3183 | Grassland | — |
-| Kusene | Kesh (desert) | 3127 | Savanna | yes |
-| Temmuzeesh | Kesh (desert) | 3075 | Temperate Desert | — |
-| Broststu | Auld (northern) | 2867 | Snow | — |
-| Thagra | Auld (northern) | 2754 | Tundra | — |
-| Greinfjyheim | Auld (northern) | 2718 | Tundra | yes |
-| Byfjei | Auld (northern) | 2507 | Shrubland | yes |
-| Cipillave | Meridian (southern) | 2477 | Grassland | yes |
-| Bialeondoi | Meridian (southern) | 2430 | Grassland | — |
-| Rolisau | Meridian (southern) | 2385 | Shrubland | yes |
-| Aasukha | Kesh (desert) | 2262 | Savanna | yes |
-| Riipi | Meridian (southern) | 2186 | Grassland | yes |
-| Rumjaikhjaa | Kesh (desert) | 1747 | Savanna | yes |
-| Dugruskaugard | Auld (northern) | 1744 | Shrubland | yes |
-| Vabo | Auld (northern) | 1579 | Grassland | yes |
-| Penalamar | Meridian (southern) | 1293 | Grassland | yes |
-| Lemallada | Meridian (southern) | 1249 | Grassland | yes |
-| Lamorria | Meridian (southern) | 870 | Grassland | yes |
-| Elyeoiel | Sylvan (woodland) | 4 | Tropical Rainforest | yes |
+| Mesiasi | Meridian (southern) | 5637 | Alpine | — |
+| Reuabad | Kesh (desert) | 5216 | Desert | — |
+| Lintenilensaumar | Meridian (southern) | 4630 | Grassland | yes |
+| Rumjaikhjaa | Kesh (desert) | 3924 | Desert | — |
+| Grobovik | Auld (northern) | 3663 | Shrubland | — |
+| Vabo | Auld (northern) | 3648 | Snow | — |
+| Braullau | Auld (northern) | 3617 | Shrubland | yes |
+| Kizka | Kesh (desert) | 3304 | Temperate Desert | — |
+| Aasukha | Kesh (desert) | 3217 | Savanna | yes |
+| Greinfjyheim | Auld (northern) | 3181 | Tundra | yes |
+| Idendorimar | Meridian (southern) | 3049 | Grassland | yes |
+| Aakhmasha | Kesh (desert) | 2940 | Savanna | — |
+| Rashiur | Kesh (desert) | 2871 | Cold Desert | — |
+| Rialenlelenme | Meridian (southern) | 2775 | Grassland | yes |
+| Brauskarndo | Auld (northern) | 2557 | Tundra | — |
+| Maghu | Kesh (desert) | 2550 | Savanna | — |
+| Kneibrynu | Auld (northern) | 2442 | Shrubland | yes |
+| Munqaiabad | Kesh (desert) | 2387 | Savanna | yes |
+| Hreibro | Auld (northern) | 2353 | Cold Desert | — |
+| Riipi | Meridian (southern) | 2235 | Grassland | yes |
+| Viamala | Meridian (southern) | 2220 | Grassland | — |
+| Kaza | Kesh (desert) | 2112 | Savanna | yes |
+| Makha | Kesh (desert) | 2028 | Savanna | yes |
+| Khadtu | Kesh (desert) | 1932 | Savanna | yes |
+| Penalamar | Meridian (southern) | 1843 | Grassland | yes |
+| Randopiacaa | Meridian (southern) | 1756 | Grassland | yes |
+| Dugruskaugard | Auld (northern) | 1719 | Shrubland | yes |
+| Tariadeti | Meridian (southern) | 1171 | Grassland | yes |
 | Elaeeleowynly | Sylvan (woodland) | 3 | Temperate Rainforest | yes |
-| Melereory | Sylvan (woodland) | 3 | Temperate Rainforest | yes |
-| Syeowynthiaee | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
 
 ## Settlements
 
 ### Cities
 
 - Bee (**capital**, port)
-- Miti (port)
+- Miti
 - Iabauti (port)
 - Siamordeco (port)
 
 ### Towns
 
-- Tidia (port)
+- Tidia
 - Raullaso (port)
 - Staaullu (port)
-- Khaqiabad
-- Qaiji (port)
+- Braknuheim
+- Knaustu (port)
 - Caulilenau (port)
-- Eondole
-- Nocibi (port)
+- Amkhaa
+- Jizaqa (port)
 
 ### Villages
 
-- Fjyrngryrnkno (port)
+- Teollacaullabe (port)
 - Maundoteoe
-- Pelauntecia
-- Shedkai
-- Knaustostu
-- Brundknovik (port)
-- Ia
-- Styskknau (port)
+- Maikhaiabad
+- Samorvecemar
+- Knaustostu (port)
+- Liriabavento (port)
+- Iiso
+- Jaqqai
 - Khakhsharta
 - Knostgrodavik (port)
 - Zasha
-- Ceme
-- Irkeqsu (port)
-- Beciame
+- Zese (port)
+- Urkthoskskei (port)
 
 ## Chronicle
 
 - **72 After Reckoning** — The city of Bee was founded on a sheltered harbour, destined to become the seat of power.
-- **94 After Reckoning** — The city of Miti was founded on a sheltered harbour.
+- **94 After Reckoning** — The city of Miti was founded amid good country.
 - **100 After Reckoning** — Bee rose to rule its hinterland, and the realm of Dillaaumar was proclaimed.
+- **116 After Reckoning** — The city of Iabauti was founded on a sheltered harbour.
 - **120 After Reckoning** — Miti rose to rule its hinterland, and the realm of Nomorindopiavento was proclaimed.
-- **121 After Reckoning** — The city of Iabauti was founded on a sheltered harbour.
-- **142 After Reckoning** — Iabauti rose to rule its hinterland, and the realm of Nopa was proclaimed.
-- **143 After Reckoning** — The city of Siamordeco was founded on a sheltered harbour.
-- **175 After Reckoning** — Siamordeco rose to rule its hinterland, and the realm of Neivia was proclaimed.
+- **128 After Reckoning** — The city of Siamordeco was founded on a sheltered harbour.
+- **137 After Reckoning** — Iabauti rose to rule its hinterland, and the realm of Nopa was proclaimed.
+- **160 After Reckoning** — Siamordeco rose to rule its hinterland, and the realm of Neivia was proclaimed.
+- **450 After Reckoning** — An academy founded on the shores of Laussorero gathered the age's finest cartographers.
 - **612 After Reckoning** — Stonthuvik woke in fire and ash; a hard winter followed, and harvests failed across the land.
 - **750 After Reckoning** — A great storm-tide flooded Bee; the lower quarters were lost to the sea.
-- **794 After Reckoning** — Under a long peace, Bee flourished; its libraries and roads became the wonder of the world.
+- **802 After Reckoning** — Under a long peace, Bee flourished; its libraries and roads became the wonder of the world.
 
 ---
 
-*Elevation fingerprint `57db9941130431a0`. This document and every map of Dillaaumar are pure functions of the seed — reproducible anywhere, forever.*
+*Elevation fingerprint `559d5dff12de9384`. This document and every map of Dillaaumar are pure functions of the seed — reproducible anywhere, forever.*

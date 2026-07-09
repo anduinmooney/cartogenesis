@@ -5,42 +5,40 @@
 ## Overview
 
 - **Extent:** 360 × 360 cells
-- **Land / ocean:** 32.9% land, 67.1% ocean, 1 lake(s)
-- **Climate & life:** dominant biome **Savanna**, 15 biomes in all
-- **Peoples:** 20 regions, 13 settlements, 2 realms
+- **Land / ocean:** 31.9% land, 68.1% ocean, 0 lake(s)
+- **Climate & life:** dominant biome **Savanna**, 14 biomes in all
+- **Peoples:** 19 regions, 13 settlements, 2 realms
 - **Capital:** Niniri
-- **The present year:** 991 After Reckoning
+- **The present year:** 1164 After Reckoning
 
 ## Notable features
 
 - **Mount Rasaumar** — the highest peak
-- **The Deihra** — the greatest river
-- **Lake Papiavau** — the largest inland water
+- **The Diare** — the greatest river
 
 ## Regions
 
 | Region | Culture | Area | Dominant biome | Coast |
 |--------|---------|-----:|----------------|:-----:|
-| Ghuzmama | Kesh (desert) | 3928 | Savanna | yes |
-| Sizqa | Kesh (desert) | 3282 | Savanna | — |
-| Benteciassovimar | Meridian (southern) | 2875 | Grassland | yes |
-| Sireovento | Meridian (southern) | 2733 | Shrubland | yes |
-| Ketaiqaaabad | Kesh (desert) | 2693 | Savanna | yes |
-| Lacaba | Meridian (southern) | 2593 | Shrubland | — |
-| Dausiame | Meridian (southern) | 2516 | Grassland | yes |
-| Sadqi | Kesh (desert) | 2511 | Savanna | yes |
-| Cicialennia | Meridian (southern) | 2413 | Alpine | yes |
-| Jaishghiabad | Kesh (desert) | 2402 | Savanna | yes |
-| Khekai | Kesh (desert) | 2360 | Savanna | yes |
-| Aagha | Kesh (desert) | 1875 | Savanna | yes |
-| Saqaesh | Kesh (desert) | 1843 | Temperate Desert | — |
-| Sinilenpia | Meridian (southern) | 1788 | Grassland | yes |
-| Hrostska | Auld (northern) | 1590 | Grassland | yes |
-| Styrksta | Auld (northern) | 1563 | Shrubland | — |
-| Lamorsale | Meridian (southern) | 1460 | Alpine | — |
-| Jishsaaesh | Kesh (desert) | 1426 | Savanna | yes |
-| Parabo | Meridian (southern) | 733 | Grassland | yes |
-| Pheosie | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
+| Eteossora | Meridian (southern) | 3567 | Alpine | — |
+| Saqaesh | Kesh (desert) | 3403 | Savanna | — |
+| Ghuzmama | Kesh (desert) | 2900 | Savanna | yes |
+| Ketaiqaaabad | Kesh (desert) | 2614 | Savanna | yes |
+| Jishsaaesh | Kesh (desert) | 2573 | Savanna | yes |
+| Mamorbinade | Meridian (southern) | 2524 | Shrubland | — |
+| Rantemapa | Meridian (southern) | 2473 | Grassland | yes |
+| Khekai | Kesh (desert) | 2403 | Savanna | yes |
+| Khadshekhaa | Kesh (desert) | 2364 | Savanna | yes |
+| Mollabide | Meridian (southern) | 2338 | Alpine | — |
+| Dygrgryrnkno | Auld (northern) | 2289 | Shrubland | — |
+| Jarja | Kesh (desert) | 2267 | Savanna | yes |
+| Sireovento | Meridian (southern) | 1669 | Grassland | yes |
+| Zazukhju | Kesh (desert) | 1642 | Savanna | yes |
+| Shaajakhmaaesh | Kesh (desert) | 1606 | Savanna | yes |
+| Parabo | Meridian (southern) | 1354 | Grassland | yes |
+| Jaishghiabad | Kesh (desert) | 1304 | Savanna | yes |
+| Khazeqa | Kesh (desert) | 1117 | Savanna | yes |
+| Qaishzuur | Kesh (desert) | 980 | Savanna | yes |
 
 ## Settlements
 
@@ -51,19 +49,19 @@
 
 ### Towns
 
-- Pauvassoca (port)
+- Pauvassoca
 - Naubatau (port)
-- Bantebe
-- Zadshe (port)
+- Qeshqaa (port)
+- Cimorse (port)
 
 ### Villages
 
-- Usky (port)
-- Nadenau
-- Lali (port)
-- Racisavento (port)
+- Isa
+- Jarai (port)
+- Khakha
+- Tezashaur
 - Aju
-- Sidau
+- Sidau (port)
 - Sekeri
 
 ## Chronicle
@@ -72,11 +70,11 @@
 - **69 After Reckoning** — The city of Dendomau was founded on a sheltered harbour.
 - **71 After Reckoning** — Niniri rose to rule its hinterland, and the realm of Retaa was proclaimed.
 - **81 After Reckoning** — Dendomau rose to rule its hinterland, and the realm of Seomorrauleo was proclaimed.
-- **476 After Reckoning** — Rasaumar woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **764 After Reckoning** — A great storm-tide flooded Niniri; the lower quarters were lost to the sea.
-- **809 After Reckoning** — Under a long peace, Niniri flourished; its libraries and roads became the wonder of the world.
-- **971 After Reckoning** — An academy founded on the shores of Papiavau gathered the age's finest cartographers.
+- **256 After Reckoning** — A great storm-tide flooded Niniri; the lower quarters were lost to the sea.
+- **354 After Reckoning** — Over the tolls of the Diare, Retaa and Seomorrauleo went to war; a marriage-pact bound Retaa and Seomorrauleo in uneasy peace.
+- **397 After Reckoning** — Rasaumar woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **1112 After Reckoning** — Under a long peace, Niniri flourished; its libraries and roads became the wonder of the world.
 
 ---
 
-*Elevation fingerprint `02f5fd230edc7e37`. This document and every map of Retaa are pure functions of the seed — reproducible anywhere, forever.*
+*Elevation fingerprint `3ecf069422de308c`. This document and every map of Retaa are pure functions of the seed — reproducible anywhere, forever.*

@@ -12,6 +12,7 @@ import { Rng } from "./rng.ts";
 import { hashQuantized } from "./hash.ts";
 import { Grid } from "./grid.ts";
 import { generateElevation, landFraction } from "./terrain.ts";
+import { erode } from "./erosion.ts";
 import { analyzeWater, type WaterLayer } from "./hydrology.ts";
 import { generateTemperature, generateMoisture } from "./climate.ts";
 import { generateRivers, type RiverLayer } from "./rivers.ts";
@@ -40,6 +41,8 @@ export interface WorldConfig {
   frequency?: number;
   octaves?: number;
   island?: boolean;
+  /** Apply hydraulic erosion after elevation (default true). */
+  erosion?: boolean;
 }
 
 export interface WorldMeta {
@@ -91,7 +94,7 @@ export function generateWorld(config: WorldConfig): World {
 
   // L1 — Elevation.
   const terrainRng = root.stream("terrain");
-  const elevation = generateElevation({
+  let elevation = generateElevation({
     width,
     height,
     seed: terrainRng.seed,
@@ -99,6 +102,12 @@ export function generateWorld(config: WorldConfig): World {
     octaves: config.octaves,
     island: config.island,
   });
+
+  // L1.5 — Hydraulic erosion (carves valleys so rivers follow them later).
+  const erosionRng = root.stream("erosion");
+  if (config.erosion !== false) {
+    elevation = erode(elevation, { seed: erosionRng.seed });
+  }
 
   // L2 — Hydrology I: sea, coasts, lakes. (Reserve the stream even though the
   // current analysis is deterministic, so future hydrology randomness stays

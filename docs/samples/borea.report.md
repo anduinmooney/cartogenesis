@@ -5,15 +5,15 @@
 ## Overview
 
 - **Extent:** 360 × 360 cells
-- **Land / ocean:** 59.5% land, 40.5% ocean, 2 lake(s)
+- **Land / ocean:** 58.4% land, 41.6% ocean, 1 lake(s)
 - **Climate & life:** dominant biome **Grassland**, 16 biomes in all
-- **Peoples:** 28 regions, 24 settlements, 4 realms
+- **Peoples:** 30 regions, 24 settlements, 4 realms
 - **Capital:** Timortepimar
-- **The present year:** 1075 After Reckoning
+- **The present year:** 927 After Reckoning
 
 ## Notable features
 
-- **Mount Fjyrkkno** — the highest peak
+- **Mount Teonabariaci** — the highest peak
 - **The Muqkaqa** — the greatest river
 - **Lake Benavia** — the largest inland water
 
@@ -21,34 +21,36 @@
 
 | Region | Culture | Area | Dominant biome | Coast |
 |--------|---------|-----:|----------------|:-----:|
-| Doe | Meridian (southern) | 4444 | Shrubland | — |
-| Illadaurialo | Meridian (southern) | 4067 | Alpine | — |
-| Khaaabad | Kesh (desert) | 3848 | Savanna | yes |
-| Dianaaumar | Meridian (southern) | 3650 | Grassland | yes |
-| Stallvufja | Auld (northern) | 3625 | Snow | — |
-| Kamaesh | Kesh (desert) | 3588 | Savanna | yes |
-| Zaishmiesh | Kesh (desert) | 3534 | Temperate Desert | — |
-| Pideonaco | Meridian (southern) | 3295 | Shrubland | — |
-| Desonia | Meridian (southern) | 3181 | Grassland | yes |
-| Khuza | Kesh (desert) | 3069 | Desert | — |
-| Sendomiandomo | Meridian (southern) | 3056 | Grassland | yes |
-| Diamorvea | Meridian (southern) | 2996 | Grassland | yes |
-| Bacida | Meridian (southern) | 2906 | Shrubland | — |
-| Thabo | Auld (northern) | 2793 | Alpine | — |
-| Khikheshi | Kesh (desert) | 2780 | Savanna | yes |
-| Breindhragrau | Auld (northern) | 2755 | Shrubland | yes |
-| Skafjo | Auld (northern) | 2610 | Shrubland | — |
-| Zaidghaidtaa | Kesh (desert) | 2557 | Savanna | — |
-| Saashzima | Kesh (desert) | 2493 | Desert | — |
-| Bokno | Auld (northern) | 2325 | Alpine | — |
-| Khikhizqaa | Kesh (desert) | 2131 | Savanna | yes |
-| Ghagha | Kesh (desert) | 2082 | Savanna | yes |
-| Beriarico | Meridian (southern) | 1908 | Grassland | yes |
-| Vandvovo | Auld (northern) | 1830 | Grassland | yes |
-| Raita | Kesh (desert) | 1668 | Desert | yes |
-| Fjeisky | Auld (northern) | 1400 | Grassland | yes |
-| Thausko | Auld (northern) | 1397 | Grassland | yes |
-| Kneirkstaudogard | Auld (northern) | 1163 | Tundra | yes |
+| Zaidghaidtaa | Kesh (desert) | 4871 | Desert | yes |
+| Dollva | Auld (northern) | 4841 | Shrubland | yes |
+| Khikheshi | Kesh (desert) | 4661 | Savanna | yes |
+| Graustbugard | Auld (northern) | 4299 | Snow | yes |
+| Liamar | Meridian (southern) | 4023 | Grassland | yes |
+| Kamaesh | Kesh (desert) | 3820 | Temperate Desert | — |
+| Beriarico | Meridian (southern) | 3721 | Alpine | — |
+| Rudkeesh | Kesh (desert) | 3582 | Temperate Desert | — |
+| Vaussoalea | Meridian (southern) | 3258 | Alpine | — |
+| Thabo | Auld (northern) | 2961 | Alpine | — |
+| Pabacamar | Meridian (southern) | 2725 | Grassland | — |
+| Saashzima | Kesh (desert) | 2690 | Savanna | yes |
+| Khikhizqaa | Kesh (desert) | 2676 | Savanna | yes |
+| Matemia | Meridian (southern) | 2633 | Shrubland | — |
+| Liallaa | Meridian (southern) | 2566 | Grassland | yes |
+| Khuntazai | Kesh (desert) | 2335 | Savanna | yes |
+| Dianaaumar | Meridian (southern) | 2236 | Shrubland | — |
+| Vandvovo | Auld (northern) | 2212 | Shrubland | yes |
+| Pideonaco | Meridian (southern) | 1933 | Grassland | yes |
+| Shemsumsi | Kesh (desert) | 1879 | Desert | — |
+| Qezire | Kesh (desert) | 1814 | Savanna | yes |
+| Nalensita | Meridian (southern) | 1720 | Grassland | yes |
+| Fjeisky | Auld (northern) | 1675 | Grassland | yes |
+| Tatamorcomar | Meridian (southern) | 1674 | Grassland | yes |
+| Doe | Meridian (southern) | 1425 | Grassland | yes |
+| Daura | Meridian (southern) | 1305 | Grassland | yes |
+| Kneirkstaudogard | Auld (northern) | 1202 | Tundra | yes |
+| Aazrai | Kesh (desert) | 945 | Savanna | yes |
+| Aene | Sylvan (woodland) | 8 | Tropical Rainforest | yes |
+| Aeyeela | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
 
 ## Settlements
 
@@ -56,7 +58,7 @@
 
 - Timortepimar (**capital**, port)
 - Liaca (port)
-- Dellaeollano
+- Dellaeollano (port)
 - Neollacissoboa (port)
 
 ### Towns
@@ -64,43 +66,43 @@
 - Vomemeo (port)
 - Nendorilivento (port)
 - Saumavau (port)
-- Vudyfjau (port)
+- Sodeote
 - Ciaudi (port)
-- Zuzsheabad
-- Tharkkna (port)
+- Collasamar
+- Karqa
 
 ### Villages
 
-- Sasa (port)
+- Skysky (port)
 - Greiskskustsky (port)
-- Sontere
+- Sontere (port)
 - Voici (port)
-- Fjogrhrei (port)
+- Tamorria
 - Jisaikaabad
 - Knaullbroskstaheim (port)
-- Taudolenvo
-- Bonstyndvei
-- Nisede
-- Zarsaiqra
-- Knabrabu (port)
-- Jazjansa (port)
+- Taudolenvo (port)
+- Memjanshu
+- Jaashaaqqa
+- Grarkskauskdy (port)
+- Qakhami (port)
+- Jazjansa
 
 ## Chronicle
 
 - **74 After Reckoning** — The city of Timortepimar was founded on a sheltered harbour, destined to become the seat of power.
+- **86 After Reckoning** — Timortepimar rose to rule its hinterland, and the realm of Bassomi was proclaimed.
 - **87 After Reckoning** — The city of Liaca was founded on a sheltered harbour.
-- **111 After Reckoning** — Timortepimar rose to rule its hinterland, and the realm of Bassomi was proclaimed.
-- **119 After Reckoning** — The city of Dellaeollano was founded along the Muqkaqa.
-- **122 After Reckoning** — Liaca rose to rule its hinterland, and the realm of Mane was proclaimed.
-- **131 After Reckoning** — The city of Neollacissoboa was founded on a sheltered harbour.
-- **141 After Reckoning** — Dellaeollano rose to rule its hinterland, and the realm of Rillasemorpau was proclaimed.
-- **163 After Reckoning** — Neollacissoboa rose to rule its hinterland, and the realm of Sade was proclaimed.
-- **360 After Reckoning** — An academy founded on the shores of Benavia gathered the age's finest cartographers.
-- **369 After Reckoning** — Over raids across the frontier, Bassomi and Rillasemorpau went to war; the war ended in exhausted stalemate, and the border with Rillasemorpau was fixed.
-- **622 After Reckoning** — Fjyrkkno woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **892 After Reckoning** — A great storm-tide flooded Timortepimar; the lower quarters were lost to the sea.
-- **1005 After Reckoning** — Under a long peace, Timortepimar flourished; its libraries and roads became the wonder of the world.
+- **119 After Reckoning** — The city of Dellaeollano was founded on a sheltered harbour.
+- **124 After Reckoning** — Liaca rose to rule its hinterland, and the realm of Mane was proclaimed.
+- **127 After Reckoning** — The city of Neollacissoboa was founded on a sheltered harbour.
+- **149 After Reckoning** — Neollacissoboa rose to rule its hinterland, and the realm of Sade was proclaimed.
+- **154 After Reckoning** — Dellaeollano rose to rule its hinterland, and the realm of Rillasemorpau was proclaimed.
+- **391 After Reckoning** — Over control of the Teonabariaci passes, Bassomi and Rillasemorpau went to war; a marriage-pact bound Bassomi and Rillasemorpau in uneasy peace.
+- **672 After Reckoning** — A great storm-tide flooded Timortepimar; the lower quarters were lost to the sea.
+- **729 After Reckoning** — Teonabariaci woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **737 After Reckoning** — Under a long peace, Timortepimar flourished; its libraries and roads became the wonder of the world.
+- **871 After Reckoning** — An academy founded on the shores of Benavia gathered the age's finest cartographers.
 
 ---
 
-*Elevation fingerprint `966ec0715564e087`. This document and every map of Bassomi are pure functions of the seed — reproducible anywhere, forever.*
+*Elevation fingerprint `98f1434cf1dc7e4b`. This document and every map of Bassomi are pure functions of the seed — reproducible anywhere, forever.*

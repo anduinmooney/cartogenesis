@@ -5,9 +5,9 @@
 ## Overview
 
 - **Extent:** 360 × 360 cells
-- **Land / ocean:** 38.5% land, 61.4% ocean, 5 lake(s)
+- **Land / ocean:** 37.4% land, 62.6% ocean, 3 lake(s)
 - **Climate & life:** dominant biome **Savanna**, 14 biomes in all
-- **Peoples:** 27 regions, 16 settlements, 2 realms
+- **Peoples:** 28 regions, 15 settlements, 2 realms
 - **Capital:** Bautossota
 - **The present year:** 1049 After Reckoning
 
@@ -21,40 +21,41 @@
 
 | Region | Culture | Area | Dominant biome | Coast |
 |--------|---------|-----:|----------------|:-----:|
-| Zekuqqaiur | Kesh (desert) | 3247 | Savanna | yes |
-| Adqaira | Kesh (desert) | 2880 | Savanna | — |
-| Abry | Auld (northern) | 2816 | Snow | — |
-| Baunstuheim | Auld (northern) | 2812 | Alpine | — |
-| Dellacamordamar | Meridian (southern) | 2772 | Shrubland | yes |
-| Poposia | Meridian (southern) | 2594 | Grassland | — |
-| Niania | Meridian (southern) | 2487 | Grassland | yes |
-| Qadre | Kesh (desert) | 2404 | Temperate Desert | — |
-| Jaziki | Kesh (desert) | 2313 | Savanna | yes |
-| Ceve | Meridian (southern) | 2264 | Grassland | yes |
-| Dapi | Meridian (southern) | 2251 | Grassland | — |
-| Doknaurkgrovik | Auld (northern) | 2196 | Alpine | — |
-| Raze | Kesh (desert) | 2188 | Savanna | yes |
-| Kaaqkhuur | Kesh (desert) | 2108 | Savanna | yes |
-| Qata | Kesh (desert) | 1965 | Savanna | yes |
-| Bemantepi | Meridian (southern) | 1948 | Grassland | yes |
-| Pideca | Meridian (southern) | 1935 | Grassland | yes |
-| Mukhuju | Kesh (desert) | 1612 | Savanna | yes |
-| Thusta | Auld (northern) | 1607 | Shrubland | — |
-| Zaizmu | Kesh (desert) | 1583 | Savanna | yes |
-| Akhqaa | Kesh (desert) | 1548 | Savanna | yes |
-| Urjai | Kesh (desert) | 1449 | Savanna | yes |
-| Meoriarialenneo | Meridian (southern) | 824 | Grassland | yes |
-| Theththiaphia | Sylvan (woodland) | 41 | Tropical Seasonal Forest | yes |
-| Niassiarnae | Sylvan (woodland) | 10 | Tropical Rainforest | yes |
-| Anaillae | Sylvan (woodland) | 6 | Tropical Rainforest | yes |
+| Jaziki | Kesh (desert) | 3190 | Savanna | yes |
+| Raze | Kesh (desert) | 3135 | Savanna | — |
+| Mukhuju | Kesh (desert) | 3066 | Savanna | yes |
+| Urjai | Kesh (desert) | 2730 | Savanna | yes |
+| Auceda | Meridian (southern) | 2644 | Alpine | — |
+| Skyndhrei | Auld (northern) | 2623 | Shrubland | yes |
+| Kija | Kesh (desert) | 2535 | Savanna | yes |
+| Dellacamordamar | Meridian (southern) | 2521 | Shrubland | yes |
+| Debevia | Meridian (southern) | 2499 | Grassland | — |
+| Knagrdo | Auld (northern) | 2313 | Snow | — |
+| Bemantepi | Meridian (southern) | 2283 | Grassland | yes |
+| Niania | Meridian (southern) | 2213 | Grassland | yes |
+| Zekuqqaiur | Kesh (desert) | 2159 | Savanna | yes |
+| Pideca | Meridian (southern) | 2145 | Grassland | yes |
+| Caubine | Meridian (southern) | 1846 | Grassland | — |
+| Remi | Kesh (desert) | 1842 | Temperate Desert | — |
+| Kaaqkhuur | Kesh (desert) | 1730 | Savanna | yes |
+| Zeka | Kesh (desert) | 1689 | Savanna | yes |
+| Akha | Kesh (desert) | 1648 | Temperate Desert | — |
+| Maimjiabad | Kesh (desert) | 1511 | Savanna | — |
+| Qata | Kesh (desert) | 1118 | Desert | yes |
+| Mimudma | Kesh (desert) | 1077 | Savanna | yes |
+| Sialthae | Sylvan (woodland) | 2 | Tropical Rainforest | yes |
+| Arsyi | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
+| Anaillae | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
 | Melersyy | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
+| Theththiaphia | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
+| Niassiarnae | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
 
 ## Settlements
 
 ### Cities
 
 - Bautossota (**capital**, port)
-- Nianata (port)
+- Nianata
 
 ### Towns
 
@@ -62,24 +63,23 @@
 - Aunellavi (port)
 - Daudamorbeo
 - Veocau
-- Kheshkhaiur
+- Lare
 
 ### Villages
 
-- Sheka (port)
-- Vemellaco (port)
-- Reensiaae (port)
-- Aidrenjaa
-- Ziqmi (port)
-- Kazkhu
-- Aumeomar
+- Savine (port)
+- Kesaizzi (port)
+- Ghezshau
+- Aidrenjaa (port)
+- Gruskbu
+- Kazkhu (port)
+- Aisaabad (port)
 - Qaqsaa (port)
-- Shishreshaiabad
 
 ## Chronicle
 
 - **58 After Reckoning** — The city of Bautossota was founded on a sheltered harbour, destined to become the seat of power.
-- **72 After Reckoning** — The city of Nianata was founded on a sheltered harbour.
+- **72 After Reckoning** — The city of Nianata was founded along the Semi.
 - **72 After Reckoning** — Bautossota rose to rule its hinterland, and the realm of Devoteo was proclaimed.
 - **103 After Reckoning** — Nianata rose to rule its hinterland, and the realm of Taunabi was proclaimed.
 - **793 After Reckoning** — A great storm-tide flooded Bautossota; the lower quarters were lost to the sea.
@@ -89,4 +89,4 @@
 
 ---
 
-*Elevation fingerprint `50b9759b8032afa8`. This document and every map of Devoteo are pure functions of the seed — reproducible anywhere, forever.*
+*Elevation fingerprint `32e3ceea2888730d`. This document and every map of Devoteo are pure functions of the seed — reproducible anywhere, forever.*

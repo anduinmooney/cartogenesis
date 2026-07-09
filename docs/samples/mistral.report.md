@@ -5,92 +5,95 @@
 ## Overview
 
 - **Extent:** 360 × 360 cells
-- **Land / ocean:** 46.3% land, 53.7% ocean, 0 lake(s)
-- **Climate & life:** dominant biome **Grassland**, 15 biomes in all
-- **Peoples:** 28 regions, 19 settlements, 3 realms
+- **Land / ocean:** 45.1% land, 54.9% ocean, 2 lake(s)
+- **Climate & life:** dominant biome **Grassland**, 16 biomes in all
+- **Peoples:** 30 regions, 18 settlements, 3 realms
 - **Capital:** Nasida
-- **The present year:** 992 After Reckoning
+- **The present year:** 1119 After Reckoning
 
 ## Notable features
 
-- **Mount Skauveivik** — the highest peak
+- **Mount Mausiassoau** — the highest peak
 - **The Vintememorbe** — the greatest river
+- **Lake Rabolenre** — the largest inland water
 
 ## Regions
 
 | Region | Culture | Area | Dominant biome | Coast |
 |--------|---------|-----:|----------------|:-----:|
-| Stagrstaurkthau | Auld (northern) | 3432 | Grassland | yes |
-| Baunia | Meridian (southern) | 3250 | Grassland | yes |
-| Egha | Kesh (desert) | 3092 | Savanna | yes |
-| Kaiqaqshe | Kesh (desert) | 3037 | Temperate Desert | — |
-| Jikhshi | Kesh (desert) | 2840 | Savanna | yes |
-| Vornthau | Auld (northern) | 2680 | Shrubland | — |
-| Vocabi | Meridian (southern) | 2608 | Grassland | yes |
-| Ghashaqai | Kesh (desert) | 2514 | Savanna | yes |
-| Auskstaugard | Auld (northern) | 2417 | Shrubland | yes |
-| Saqemmu | Kesh (desert) | 2411 | Savanna | — |
-| Larovento | Meridian (southern) | 2372 | Alpine | — |
-| Banaleome | Meridian (southern) | 2362 | Grassland | yes |
-| Vudy | Auld (northern) | 2255 | Tundra | — |
-| Shisuzu | Kesh (desert) | 2211 | Savanna | yes |
-| Brafju | Auld (northern) | 2141 | Alpine | — |
-| Yrnfjeiheim | Auld (northern) | 1939 | Shrubland | yes |
-| Siri | Meridian (southern) | 1902 | Grassland | — |
-| Miani | Meridian (southern) | 1845 | Grassland | yes |
-| Saiqme | Kesh (desert) | 1802 | Savanna | — |
-| Skostbry | Auld (northern) | 1801 | Snow | — |
-| Benteeoa | Meridian (southern) | 1801 | Grassland | — |
-| Barky | Auld (northern) | 1788 | Snow | — |
-| Taghe | Kesh (desert) | 1777 | Savanna | yes |
-| Kunqaa | Kesh (desert) | 1489 | Savanna | yes |
-| Teshzaa | Kesh (desert) | 1458 | Savanna | yes |
-| Emaumar | Meridian (southern) | 1398 | Grassland | yes |
-| Condodiamorrivento | Meridian (southern) | 1349 | Grassland | yes |
-| Melaaeia | Sylvan (woodland) | 2 | Temperate Rainforest | yes |
+| Thauknaskvo | Auld (northern) | 3476 | Shrubland | yes |
+| Egha | Kesh (desert) | 3307 | Temperate Desert | — |
+| Reriandovi | Meridian (southern) | 3060 | Grassland | — |
+| Aiqjaiesh | Kesh (desert) | 2864 | Temperate Desert | — |
+| Hryfjo | Auld (northern) | 2861 | Grassland | yes |
+| Jadjairkai | Kesh (desert) | 2800 | Savanna | yes |
+| Khatiur | Kesh (desert) | 2773 | Savanna | — |
+| Condodiamorrivento | Meridian (southern) | 2718 | Grassland | yes |
+| Seba | Meridian (southern) | 2634 | Grassland | — |
+| Mara | Kesh (desert) | 2574 | Savanna | yes |
+| Brafju | Auld (northern) | 2544 | Snow | — |
+| Baunia | Meridian (southern) | 2514 | Grassland | yes |
+| Emaumar | Meridian (southern) | 2445 | Alpine | — |
+| Vuskeigrei | Auld (northern) | 2261 | Alpine | — |
+| Mibandopia | Meridian (southern) | 1858 | Grassland | — |
+| Siri | Meridian (southern) | 1840 | Grassland | — |
+| Seshkha | Kesh (desert) | 1797 | Savanna | yes |
+| Qerkha | Kesh (desert) | 1773 | Savanna | yes |
+| Jikhshi | Kesh (desert) | 1749 | Savanna | — |
+| Ghashaqai | Kesh (desert) | 1612 | Savanna | yes |
+| Metimi | Meridian (southern) | 1471 | Grassland | yes |
+| Miani | Meridian (southern) | 1396 | Grassland | yes |
+| Thugra | Auld (northern) | 1325 | Grassland | yes |
+| Kunqaa | Kesh (desert) | 1323 | Savanna | yes |
+| Azghuabad | Kesh (desert) | 1296 | Savanna | yes |
+| Benteeoa | Meridian (southern) | 1170 | Grassland | yes |
+| Shira | Kesh (desert) | 1056 | Savanna | yes |
+| Yilnela | Sylvan (woodland) | 5 | Temperate Rainforest | yes |
+| Melaaeia | Sylvan (woodland) | 1 | Temperate Rainforest | yes |
+| Phianphaeenelawood | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
 
 ## Settlements
 
 ### Cities
 
-- Nasida (**capital**)
+- Nasida (**capital**, port)
 - Epavento (port)
-- Bybeigard (port)
+- Paupoa (port)
 
 ### Towns
 
 - Lentelo (port)
-- Ystthaubragard (port)
+- Ystthaubragard
 - Beollava (port)
-- Riacentee (port)
+- Riacentee
 - Mushamgha (port)
-- Mueur
 
 ### Villages
 
-- Karshai
+- Mueur (port)
+- Veonase
 - Dandodati (port)
-- Mipase
-- Fjeinbaubei (port)
-- Shaaqqaa
-- Vabausau
+- Sama
+- Ghummaimu
+- Siiilsyeaea (port)
+- Keqai
 - Thynbovik (port)
-- Pee
+- Maaai
 - Beirngrodo (port)
-- Shushjai (port)
 
 ## Chronicle
 
-- **41 After Reckoning** — The city of Nasida was founded amid good country, destined to become the seat of power.
-- **51 After Reckoning** — The city of Epavento was founded on a sheltered harbour.
-- **62 After Reckoning** — The city of Bybeigard was founded on a sheltered harbour.
-- **80 After Reckoning** — Nasida rose to rule its hinterland, and the realm of Tamorsenasiaa was proclaimed.
-- **82 After Reckoning** — Bybeigard rose to rule its hinterland, and the realm of Ballgravik was proclaimed.
-- **85 After Reckoning** — Epavento rose to rule its hinterland, and the realm of Econadau was proclaimed.
-- **330 After Reckoning** — A great storm-tide flooded Epavento; the lower quarters were lost to the sea.
-- **500 After Reckoning** — Skauveivik woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **932 After Reckoning** — Under a long peace, Nasida flourished; its libraries and roads became the wonder of the world.
+- **41 After Reckoning** — The city of Nasida was founded on a sheltered harbour, destined to become the seat of power.
+- **65 After Reckoning** — The city of Epavento was founded on a sheltered harbour.
+- **75 After Reckoning** — The city of Paupoa was founded on a sheltered harbour.
+- **76 After Reckoning** — Nasida rose to rule its hinterland, and the realm of Tamorsenasiaa was proclaimed.
+- **86 After Reckoning** — Epavento rose to rule its hinterland, and the realm of Econadau was proclaimed.
+- **114 After Reckoning** — Paupoa rose to rule its hinterland, and the realm of Pamialenbeomar was proclaimed.
+- **567 After Reckoning** — An academy founded on the shores of Rabolenre gathered the age's finest cartographers.
+- **744 After Reckoning** — Under a long peace, Nasida flourished; its libraries and roads became the wonder of the world.
+- **1064 After Reckoning** — Mausiassoau woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **1072 After Reckoning** — A great storm-tide flooded Nasida; the lower quarters were lost to the sea.
 
 ---
 
-*Elevation fingerprint `2f323980a7e3e56d`. This document and every map of Tamorsenasiaa are pure functions of the seed — reproducible anywhere, forever.*
+*Elevation fingerprint `7dceb84630477830`. This document and every map of Tamorsenasiaa are pure functions of the seed — reproducible anywhere, forever.*

@@ -12,6 +12,7 @@ import { Rng } from "./rng.js";
 import { hashQuantized } from "./hash.js";
 import { Grid } from "./grid.js";
 import { generateElevation, landFraction } from "./terrain.js";
+import { erode } from "./erosion.js";
 import { analyzeWater,                 } from "./hydrology.js";
 import { generateTemperature, generateMoisture } from "./climate.js";
 import { generateRivers,                 } from "./rivers.js";
@@ -40,6 +41,8 @@ export const ENGINE_VERSION = "0.8.0";
                      
                    
                    
+                                                                
+                    
  
 
                             
@@ -91,7 +94,7 @@ export function generateWorld(config             )        {
 
   // L1 — Elevation.
   const terrainRng = root.stream("terrain");
-  const elevation = generateElevation({
+  let elevation = generateElevation({
     width,
     height,
     seed: terrainRng.seed,
@@ -99,6 +102,12 @@ export function generateWorld(config             )        {
     octaves: config.octaves,
     island: config.island,
   });
+
+  // L1.5 — Hydraulic erosion (carves valleys so rivers follow them later).
+  const erosionRng = root.stream("erosion");
+  if (config.erosion !== false) {
+    elevation = erode(elevation, { seed: erosionRng.seed });
+  }
 
   // L2 — Hydrology I: sea, coasts, lakes. (Reserve the stream even though the
   // current analysis is deterministic, so future hydrology randomness stays

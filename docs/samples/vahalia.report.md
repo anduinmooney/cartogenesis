@@ -5,9 +5,9 @@
 ## Overview
 
 - **Extent:** 360 × 360 cells
-- **Land / ocean:** 56.5% land, 43.3% ocean, 3 lake(s)
+- **Land / ocean:** 55.2% land, 44.6% ocean, 8 lake(s)
 - **Climate & life:** dominant biome **Savanna**, 16 biomes in all
-- **Peoples:** 30 regions, 23 settlements, 3 realms
+- **Peoples:** 33 regions, 22 settlements, 3 realms
 - **Capital:** Monadianale
 - **The present year:** 1174 After Reckoning
 
@@ -21,84 +21,86 @@
 
 | Region | Culture | Area | Dominant biome | Coast |
 |--------|---------|-----:|----------------|:-----:|
-| Asaiabad | Kesh (desert) | 4503 | Savanna | yes |
-| Khakhja | Kesh (desert) | 4164 | Savanna | yes |
-| Bonthu | Auld (northern) | 3619 | Tundra | — |
-| Shesaabad | Kesh (desert) | 3530 | Savanna | yes |
-| Stohraubau | Auld (northern) | 3491 | Shrubland | yes |
-| Ofjygard | Auld (northern) | 3208 | Alpine | — |
-| Uhrogard | Auld (northern) | 3046 | Shrubland | yes |
-| Tantee | Meridian (southern) | 3003 | Grassland | — |
-| Starnbrondkno | Auld (northern) | 2872 | Snow | — |
-| Tadaa | Kesh (desert) | 2858 | Temperate Desert | — |
-| Zezu | Kesh (desert) | 2795 | Savanna | yes |
-| Maataesh | Kesh (desert) | 2787 | Savanna | — |
-| Khemazaa | Kesh (desert) | 2714 | Cold Desert | — |
-| Maanmu | Kesh (desert) | 2672 | Savanna | yes |
-| Vateveovento | Meridian (southern) | 2661 | Grassland | yes |
-| Retentese | Meridian (southern) | 2550 | Alpine | — |
-| Izkhu | Kesh (desert) | 2432 | Desert | — |
-| Thullgrei | Auld (northern) | 2322 | Snow | — |
-| Jekhaabad | Kesh (desert) | 2258 | Savanna | yes |
-| Ukha | Kesh (desert) | 2053 | Desert | yes |
-| Fjallbruvik | Auld (northern) | 2009 | Grassland | yes |
-| Greirnbei | Auld (northern) | 1964 | Shrubland | — |
-| Knausta | Auld (northern) | 1878 | Tundra | yes |
-| Thabru | Auld (northern) | 1697 | Tundra | yes |
-| Bogrknei | Auld (northern) | 1636 | Tundra | yes |
-| Rariaveole | Meridian (southern) | 1618 | Alpine | — |
-| Dyndbaundkno | Auld (northern) | 1531 | Shrubland | yes |
-| Panamaupi | Meridian (southern) | 1303 | Grassland | yes |
-| Thaewynaeassye | Sylvan (woodland) | 13 | Temperate Forest | yes |
-| Theenrameli | Sylvan (woodland) | 3 | Tropical Rainforest | yes |
+| Khemazaa | Kesh (desert) | 4212 | Savanna | yes |
+| Greirnbei | Auld (northern) | 3899 | Shrubland | — |
+| Deoriapauriabe | Meridian (southern) | 3735 | Grassland | yes |
+| Bohragard | Auld (northern) | 3708 | Tundra | yes |
+| Tenka | Kesh (desert) | 3642 | Desert | — |
+| Starnbrondkno | Auld (northern) | 3625 | Cold Desert | — |
+| Fjallbruvik | Auld (northern) | 3600 | Shrubland | — |
+| Askauheim | Auld (northern) | 3498 | Snow | yes |
+| Kikhzu | Kesh (desert) | 3296 | Temperate Desert | — |
+| Brallsta | Auld (northern) | 3225 | Shrubland | — |
+| Maanmu | Kesh (desert) | 2880 | Savanna | yes |
+| Nalaumorlia | Meridian (southern) | 2805 | Grassland | — |
+| Ialenisa | Meridian (southern) | 2692 | Grassland | yes |
+| Maamki | Kesh (desert) | 2499 | Cold Desert | — |
+| Ghashaa | Kesh (desert) | 2392 | Savanna | yes |
+| Iteesh | Kesh (desert) | 2354 | Savanna | yes |
+| Maadqu | Kesh (desert) | 2325 | Savanna | yes |
+| Tadaa | Kesh (desert) | 2197 | Savanna | — |
+| Izkhu | Kesh (desert) | 2189 | Savanna | yes |
+| Jetaimai | Kesh (desert) | 1909 | Savanna | — |
+| Ofjygard | Auld (northern) | 1859 | Tundra | yes |
+| Kaghe | Kesh (desert) | 1722 | Savanna | yes |
+| Samamar | Meridian (southern) | 1539 | Grassland | yes |
+| Hraufjauheim | Auld (northern) | 1376 | Tundra | yes |
+| Panamaupi | Meridian (southern) | 1358 | Grassland | yes |
+| Knausta | Auld (northern) | 1133 | Grassland | yes |
+| Zezu | Kesh (desert) | 1128 | Savanna | yes |
+| Kakhi | Kesh (desert) | 795 | Savanna | yes |
+| Elaennimela | Sylvan (woodland) | 2 | Temperate Rainforest | yes |
+| Eleillanaeae | Sylvan (woodland) | 2 | Temperate Rainforest | yes |
+| Theenrameli | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
+| Thaewynaeassye | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
+| Siansiinia | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
 
 ## Settlements
 
 ### Cities
 
-- Monadianale (**capital**, port)
-- Bysto (port)
-- Brufjo (port)
+- Monadianale (**capital**)
+- Peonimortia (port)
+- Loti (port)
 
 ### Towns
 
-- Maizka (port)
-- Pauleoo (port)
-- Fjusko (port)
-- Zukhjua (port)
-- Anataundoso
+- Paullaveo (port)
+- Maikhai (port)
+- Timaci (port)
+- Cialenniaa (port)
+- Arghamshi (port)
 - Sisuur (port)
-- Elalylaedell (port)
+- Bragraurkeigard
 
 ### Villages
 
-- Manapauea (port)
-- Tasipa (port)
-- Rukha (port)
-- Qiza
-- Taasha (port)
-- Sheshadaur
+- Skorkbyogard
+- Ghashi
+- Rukha
+- Qiza (port)
+- Nesia (port)
+- Sasimorivento
 - Jasha
-- Fjybo (port)
+- Teopepau (port)
 - Knastbornbau (port)
-- Knaugry (port)
+- Qaiza
 - Taamiti
-- Ciaeo
-- Aghaur
+- Zua
 
 ## Chronicle
 
-- **31 After Reckoning** — The city of Monadianale was founded on a sheltered harbour, destined to become the seat of power.
-- **54 After Reckoning** — The city of Bysto was founded on a sheltered harbour.
+- **31 After Reckoning** — The city of Monadianale was founded amid good country, destined to become the seat of power.
+- **38 After Reckoning** — The city of Peonimortia was founded on a sheltered harbour.
 - **60 After Reckoning** — Monadianale rose to rule its hinterland, and the realm of Masemi was proclaimed.
-- **61 After Reckoning** — The city of Brufjo was founded on a sheltered harbour.
-- **85 After Reckoning** — Bysto rose to rule its hinterland, and the realm of Thuknugra was proclaimed.
-- **87 After Reckoning** — Brufjo rose to rule its hinterland, and the realm of Daullgra was proclaimed.
+- **65 After Reckoning** — The city of Loti was founded on a sheltered harbour.
+- **69 After Reckoning** — Peonimortia rose to rule its hinterland, and the realm of Vobica was proclaimed.
+- **91 After Reckoning** — Loti rose to rule its hinterland, and the realm of Delenca was proclaimed.
 - **545 After Reckoning** — Stobrabrau woke in fire and ash; a hard winter followed, and harvests failed across the land.
 - **585 After Reckoning** — An academy founded on the shores of Miti gathered the age's finest cartographers.
-- **940 After Reckoning** — A great storm-tide flooded Monadianale; the lower quarters were lost to the sea.
+- **940 After Reckoning** — A great storm-tide flooded Peonimortia; the lower quarters were lost to the sea.
 - **1112 After Reckoning** — Under a long peace, Monadianale flourished; its libraries and roads became the wonder of the world.
 
 ---
 
-*Elevation fingerprint `6f614fac67002553`. This document and every map of Masemi are pure functions of the seed — reproducible anywhere, forever.*
+*Elevation fingerprint `a300d4297c67661f`. This document and every map of Masemi are pure functions of the seed — reproducible anywhere, forever.*

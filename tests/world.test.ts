@@ -47,5 +47,5 @@ test("island worlds have less land than non-island worlds", () => {
 // changed — update intentionally and note it in DECISIONS.md / CHANGELOG.md.
 test("golden content hash for the canonical world is stable", () => {
   const w = generateWorld({ seed: "cartogenesis", width: 256, height: 256 });
-  assert.equal(w.meta.contentHash, "1b8c816c890e866c");
+  assert.equal(w.meta.contentHash, "fb232cd94fe0face");
 });
