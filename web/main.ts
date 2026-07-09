@@ -7,23 +7,17 @@
 // back the underlying World (regions, biomes, elevation, settlements) to inspect
 // any point; clicking pins a detail card.
 
-import { generateWorld, type World } from "./engine/world.ts";
+import type { World } from "./engine/world.ts";
 import { BIOME_NAMES } from "./engine/biomes.ts";
 import { RESOURCE_NAMES } from "./engine/resources.ts";
 import type { Settlement } from "./engine/settlements.ts";
-import {
-  renderHypsometric,
-  renderGrayscale,
-  renderBiomes,
-  renderRegions,
-  renderFaiths,
-  renderTemperature,
-  renderMoisture,
-  overlayRivers,
-  overlayRoads,
-  overlaySettlements,
-  overlayResources,
-} from "./engine/render.ts";
+
+// Generation runs in a module worker so the UI never freezes.
+const worker = new Worker(new URL("./worker.js", import.meta.url), {
+  type: "module",
+});
+let layerBuffers: Record<string, Uint8Array> = {};
+let genStart = 0;
 
 const SIZE = 384;
 
@@ -56,58 +50,15 @@ offscreen.width = SIZE;
 offscreen.height = SIZE;
 const offCtx = offscreen.getContext("2d")!;
 
-function layerPixels(world: World, layer: string): Uint8Array {
-  const w = world.elevation.width;
-  const h = world.elevation.height;
-  const towns = world.settlements.settlements;
-  switch (layer) {
-    case "biome": {
-      const px = renderBiomes(world.biomes, world.elevation);
-      overlayRivers(px, world.rivers, w, h);
-      return px;
-    }
-    case "political": {
-      const px = renderRegions(world.regions, world.water, world.elevation);
-      overlayRoads(px, world.roads);
-      overlaySettlements(px, towns, w, h);
-      return px;
-    }
-    case "faiths":
-      return renderFaiths(world.regions, world.religion, world.water, world.elevation);
-    case "resources": {
-      const px = renderHypsometric(world.elevation, world.meta.seaLevel, {
-        water: world.water,
-      });
-      overlayResources(px, world.resources.deposits, w, h);
-      return px;
-    }
-    case "temperature":
-      return renderTemperature(world.temperature, world.water);
-    case "moisture":
-      return renderMoisture(world.moisture, world.water);
-    case "height":
-      return renderGrayscale(world.elevation);
-    case "terrain":
-    default: {
-      const px = renderHypsometric(world.elevation, world.meta.seaLevel, {
-        water: world.water,
-      });
-      overlayRivers(px, world.rivers, w, h);
-      overlayRoads(px, world.roads);
-      overlaySettlements(px, towns, w, h);
-      return px;
-    }
-  }
-}
-
-/** Rasterize the active layer into the offscreen buffer. */
+/** Blit the active layer's pre-rendered buffer into the offscreen canvas. */
 function renderOffscreen(): void {
   if (!current) return;
   const w = current.elevation.width;
   const h = current.elevation.height;
+  const rgba = layerBuffers[activeLayer];
+  if (!rgba) return;
   offscreen.width = w;
   offscreen.height = h;
-  const rgba = layerPixels(current, activeLayer);
   offCtx.putImageData(new ImageData(new Uint8ClampedArray(rgba), w, h), 0, 0);
 }
 
@@ -385,21 +336,36 @@ function renderInfo(world: World): void {
 
 function generate(seed: string): void {
   $("status").textContent = "Generating…";
-  setTimeout(() => {
-    const t0 = performance.now();
-    current = generateWorld({ seed, width: SIZE, height: SIZE });
-    const ms = Math.round(performance.now() - t0);
-    renderInfo(current);
-    renderOffscreen();
-    sizeCanvas();
-    fitView();
-    redraw();
-    $("status").textContent = `Generated in ${ms} ms · drag to pan, scroll to zoom`;
-    const url = new URL(location.href);
-    url.searchParams.set("seed", seed);
-    history.replaceState(null, "", url);
-  }, 15);
+  canvas.classList.add("busy");
+  genStart = performance.now();
+  worker.postMessage({ seed, size: SIZE });
 }
+
+worker.onmessage = (e: MessageEvent) => {
+  const { world, layers, seed } = e.data as {
+    world: World;
+    layers: Record<string, Uint8Array>;
+    seed: string;
+  };
+  const ms = Math.round(performance.now() - genStart);
+  current = world;
+  layerBuffers = layers;
+  renderInfo(world);
+  renderOffscreen();
+  sizeCanvas();
+  fitView();
+  redraw();
+  canvas.classList.remove("busy");
+  $("status").textContent = `Generated in ${ms} ms · drag to pan, scroll to zoom, hover to inspect`;
+  const url = new URL(location.href);
+  url.searchParams.set("seed", seed);
+  history.replaceState(null, "", url);
+};
+
+worker.onerror = (e) => {
+  $("status").textContent = `Generation failed: ${e.message}`;
+  canvas.classList.remove("busy");
+};
 
 function randomSeed(): string {
   const syl = ["ka", "mor", "el", "th", "an", "ra", "ver", "sol", "ny", "dra", "is", "or"];
@@ -407,6 +373,12 @@ function randomSeed(): string {
   const n = 2 + Math.floor(Math.random() * 2);
   for (let i = 0; i < n; i++) s += syl[Math.floor(Math.random() * syl.length)];
   return s;
+}
+
+// The engine never reads the clock; the UI derives a date seed and passes it in.
+function todaySeed(): string {
+  const d = new Date();
+  return `day-${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
 }
 
 function buildTabs(): void {
@@ -431,6 +403,10 @@ function init(): void {
   $("generate").addEventListener("click", () => generate(seedInput.value || "cartogenesis"));
   $("random").addEventListener("click", () => {
     seedInput.value = randomSeed();
+    generate(seedInput.value);
+  });
+  $("today").addEventListener("click", () => {
+    seedInput.value = todaySeed();
     generate(seedInput.value);
   });
   $("resetview").addEventListener("click", () => {

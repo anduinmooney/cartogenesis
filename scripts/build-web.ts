@@ -60,6 +60,10 @@ function main(): void {
   const appJs = toBrowserJs(appSrc);
   writeFileSync(join(APP_DIR, "app.js"), appJs);
 
+  const workerSrc = readFileSync(join("web", "worker.ts"), "utf8");
+  const workerJs = toBrowserJs(workerSrc);
+  writeFileSync(join(APP_DIR, "worker.js"), workerJs);
+
   // Completeness check: every ./engine/*.js an emitted file imports must exist,
   // so a missing module fails the build instead of 404-ing in the browser.
   const emitted = new Set(MODULES);
@@ -68,6 +72,7 @@ function main(): void {
     code: readFileSync(join(ENGINE_DIR, `${m}.js`), "utf8"),
   }));
   engineFiles.push({ name: "app", code: appJs });
+  engineFiles.push({ name: "worker", code: workerJs });
   for (const { name, code } of engineFiles) {
     for (const match of code.matchAll(/from\s+["'](?:\.\/engine\/|\.\/)([\w-]+)\.js["']/g)) {
       const dep = match[1];
@@ -81,7 +86,7 @@ function main(): void {
   }
 
   console.log(
-    `Built ${MODULES.length} engine modules + app.js → ${APP_DIR}/ (zero deps)`,
+    `Built ${MODULES.length} engine modules + app.js + worker.js → ${APP_DIR}/ (zero deps)`,
   );
 }
 
