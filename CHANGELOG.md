@@ -8,6 +8,44 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 5 — 2026-07-09 — Interactive atlas, CI, and erosion
+
+**Theme:** Make the live map explorable, protect the project with CI, and deepen
+the simulation with hydraulic erosion. Three milestones in one session.
+
+### Added
+- **P4 — Interactive atlas** (`web/main.ts`): the live generator now supports
+  scroll-to-zoom (toward the cursor), drag-to-pan (clamped to the world),
+  double-click / "Reset view", a hover tooltip (region + culture, biome,
+  elevation, nearest settlement), click-to-pin a detail card, a "Copy link"
+  button, and DPR-aware crisp rendering — built on an offscreen buffer + view
+  transform.
+- **CI** (`.github/workflows/ci.yml`): runs `node --test` on Node 24 and rebuilds
+  the browser bundle, failing if the committed `docs/app` is stale. No install
+  (zero deps). First run green in 17 s.
+- **L1.5 — Hydraulic erosion** (`src/erosion.ts`): deterministic droplet
+  simulation carving dendritic valleys, run before hydrology so rivers follow
+  them. On by default (`erosion: false` to skip).
+
+### Verified
+- `npm test` → **92 passing** (added 5 erosion tests; golden hash → `fb232cd94fe0face`).
+- In-browser (live preview eval): zoom/pan redraw correctly, drag suppresses the
+  click-pin, hover + click show correct region/settlement data, no console errors.
+- CI first run: success (17 s). Regenerated samples + web bundle with eroded terrain.
+
+### Decided
+- D-014 (hydraulic erosion on by default; intentional golden-hash change).
+
+### Metrics
+- Source modules: 22 (+erosion). Tests: 92. Runtime + build deps: 0. Engine v0.8.0.
+
+### Left for next session
+- Deeper simulation or polish — see `NEXT_SESSION.md` (options: latitude wind
+  belts, merge islet regions, world-history depth, or a shareable "world of the
+  day"). CI + interactivity + erosion are done.
+
+---
+
 ## Session 4 — 2026-07-08 — Live in the browser (P2)
 
 **Theme:** Make the engine run in the browser so anyone can type a seed and

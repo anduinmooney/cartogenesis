@@ -6,70 +6,71 @@
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm green **before** changing anything (baseline: **87**).
-3. Skim `CHANGELOG.md` (top, Session 4) and `ROADMAP.md`.
-4. Preview: `node scripts/serve-docs.ts` → http://localhost:8123 (gallery) and
-   http://localhost:8123/app/ (live generator).
-5. **If you change any `src/` module, rerun `node scripts/build-web.ts`** or the
-   live app serves stale code. (Committed `docs/app/*.js` are build artifacts.)
+2. `npm test` → confirm green **before** changing anything (baseline: **92**).
+3. Skim `CHANGELOG.md` (top, Session 5) and `ROADMAP.md`.
+4. Preview: `node scripts/serve-docs.ts` → `/` (atlas) and `/app/` (live).
+5. **After any `src/` change, rerun `node scripts/build-web.ts`** — CI fails if
+   the committed `docs/app` is stale.
 
 ## Context: where the project is
 
-Essentially the whole original vision is done — physical world (L1–L6), human
-world (L7–L11), posters + gazetteers, and a **live in-browser generator**
-(`docs/app/`). The engine runs identically in Node and the browser, zero deps.
+The entire original vision is **done** — physical + human world, posters,
+gazetteers, a live *interactive* browser generator, hydraulic erosion, and CI.
+From here the work is enrichment and depth, not core scope. Pick a substantial
+theme and go deep; keep the "one real milestone, fully finished" cadence.
 
-## This session's objective: **P4 — Interactive atlas**
+## This session's objective: **L12 — Peoples & lore**
 
-Make the live generator explorable, not just viewable. Turn the static canvas
-into something you can pan, zoom, and interrogate.
+Right now history has realms, wars, and disasters but no *people*. Give the world
+rulers, dynasties, and notable figures, and turn the flat region/settlement data
+into readable lore. This makes the gazetteer and the app's info panel far richer
+with zero risk to the physical golden hash (it all lives on the `history`/naming
+streams).
 
-### Suggested build (pick the highest-value subset; commit per feature)
-1. **Pan & zoom** the canvas. Track a `{scale, offsetX, offsetY}` view; draw the
-   world to an *offscreen* canvas once per generation/layer, then blit it
-   transformed. Wheel to zoom (toward cursor), drag to pan, double-click to
-   reset. Respect device pixel ratio for crispness.
-2. **Hover to inspect.** On mousemove, map cursor → cell (invert the view
-   transform). Show a tooltip with: region name + culture, biome, elevation,
-   and — if over/near a settlement — its name/tier. You have `regions.ids`,
-   `biomes.ids`, and settlement coords in the `World` already; expose the world
-   globally in the app module so the handler can read them.
-3. **Click a settlement/region** → pin a detail card (region stats, or the
-   settlement's tier/port/capital flags). Use a small hit radius for towns.
-4. **Nice-to-haves:** a subtle cross-fade when switching layers; a "copy link"
-   button (URL already carries `?seed=`); keyboard `+`/`-`/arrows.
-5. Consider moving generation into a **Web Worker** so the UI never freezes
-   (the engine is pure and importable; post the seed in, post layer RGBA out).
-   Only do this if it stays clean — otherwise leave the ~300 ms sync generate.
+### Build (in `src/history.ts` + a new `src/lore.ts` if it gets big)
+1. **Dynasties & rulers.** Each realm gets a ruling house (a surname in the
+   region's language) and a succession of rulers with names, reign years, and an
+   epithet ("the Navigator", "the Cruel", "the Lawgiver"). Weave a few ruler-
+   driven events into the chronicle (a conqueror-king, a boy-king, a usurpation).
+2. **Notable figures.** Generate a handful of non-royal figures tied to places:
+   an explorer who charted the coast, a heretic exiled from the capital, an
+   architect of the great road, a scholar of Lake X. Each references real named
+   entities.
+3. **Region prose.** A one/two-sentence generated description per region from its
+   traits (biome, coast, culture, dominant settlements) — e.g. "A wind-scoured
+   coast of fishing towns under the house of …". Deterministic from the seed.
+4. **Richer event types.** Add founding-of-institutions, plagues, migrations,
+   discoveries, successions — templated with entity substitution as today.
 
-### Constraints specific to this session
-- All new code is browser code under `web/` (rebuild with `build:web`). Keep it
-  dependency-free and framework-free (vanilla DOM/Canvas), matching the app.
-- Don't regress determinism or the engine tests. The interactive layer is pure
-  presentation on top of the existing `World`.
+### Surface it
+- **Report** (`src/report.ts`): add a "Rulers & houses" section and per-region
+  descriptions; expand the chronicle. Keep it valid Markdown.
+- **SVG poster / app**: optional — show the capital's ruling house; the app's
+  detail card could show a region's prose on click.
+- Regenerate `docs/` samples + rebuild the web bundle.
 
-### Verify (screenshots can be flaky — prefer `preview_eval`)
-- Load `/app/`, generate, then via eval: simulate a wheel event and assert the
-  view scale changed; dispatch a mousemove and assert the tooltip populated;
-  confirm no console errors.
-- `npm test` stays green (engine untouched → golden hash `1b8c816c890e866c`).
+### Test (`tests/lore.test.ts` or extend `history.test.ts`)
+- Determinism (same seed → identical rulers/figures/descriptions).
+- Every realm has a house + ≥1 ruler; reign years are chronological & sane.
+- Region descriptions are non-empty and reference the region's real culture/biome.
+- Names use the region's language (culture consistency).
+
+### Guardrails
+- All randomness from `Rng` streams (reuse/extend `history`/`names`; add a
+  `lore` stream if needed). This must **not** change the elevation golden hash
+  `fb232cd94fe0face` — lore is downstream of geography, not part of it.
+- Zero deps. No TS enums/namespaces. Keep `main` green and CI passing.
 
 ### Close out (do not skip)
-1. `node scripts/build-web.ts` so the committed bundle is current.
-2. Update `CHANGELOG.md` (Session 5), `PROJECT_STATE.md`, `ROADMAP.md` (tick P4),
-   `DECISIONS.md` if you make a notable call, and rewrite this file for the next
-   target (deeper simulation: **hydraulic erosion**, or **CI via GitHub Actions**,
-   or latitude wind belts — all in ROADMAP).
-3. Commit per feature and push; verify the live `/app/` behaves.
+1. `npm test` green; `node scripts/make-samples.ts`; `node scripts/build-web.ts`.
+2. Update `CHANGELOG.md` (Session 6), `PROJECT_STATE.md`, `ROADMAP.md`,
+   `DECISIONS.md` if warranted, and rewrite this file for the next theme.
+3. Commit per logical unit and push; confirm CI goes green.
 
-## Guardrails
-- Runtime + build stay **zero-dependency**. All randomness via `Rng` streams.
-- No TS `enum`/namespaces/decorators (Node strip-only). Keep `main` green.
-- After `src/` edits: **rebuild the web bundle** before committing.
-
-## Backlog (good alternatives if P4 feels done or you want variety)
-- **Hydraulic erosion**: a droplet/stream-power pass on elevation to carve
-  valleys along rivers (would change the golden hash — document it).
-- **CI**: `.github/workflows/ci.yml` running `npm test` + `build:web` on push.
-- **Merge sub-threshold islets** so 1-cell "regions" stop cluttering gazetteers.
-- **Latitude wind belts** in moisture (trade winds vs. westerlies).
+## Backlog (good alternatives / stretch)
+- **Latitude wind belts** in moisture (trade winds vs. westerlies) — climate
+  realism (changes golden hash; document).
+- **Web Worker** so browser generation never freezes the UI (+ a progress bar).
+- **Merge sub-threshold islet regions** so 1-cell "regions" stop cluttering.
+- **"World of the day"**: the site seeds a daily world from the date.
+- **Benchmark script** tracking per-layer generation time.

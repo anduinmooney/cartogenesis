@@ -6,6 +6,17 @@ old one — the history is the point.
 
 ---
 
+## D-014 — Hydraulic erosion on by default (2026-07-09, Session 5)
+**Decision:** A droplet-based hydraulic erosion pass (`src/erosion.ts`) runs
+between elevation and hydrology by default (opt out with `erosion: false`). The
+golden hash changed to **`fb232cd94fe0face`** (intentional — terrain output
+changed; all samples + the web bundle were regenerated).
+**Why:** Smooth fractal terrain lacks the dendritic valleys real landscapes have.
+Eroding *before* hydrology means rivers then follow the carved valleys, so the
+whole map reads as more coherent. It's deterministic (seeded droplets) and cheap
+(~95 ms at 400²). Default-on because the improvement is worth the one-time golden
+change; `erosion: false` remains for anyone who wants the raw fractal terrain.
+
 ## D-013 — Pure-JS content hash (drop node:crypto) (2026-07-08, Session 4)
 **Decision:** `hashGrid` now uses a pure-JS quantized hash (`src/hash.ts`,
 `hashQuantized`) instead of `node:crypto` SHA-256. The canonical golden hash

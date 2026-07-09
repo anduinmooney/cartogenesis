@@ -11,7 +11,7 @@ you can't have rivers before elevation, or forests before rainfall.
 | **1 day** (Session 1) | A working, tested, deterministic engine that turns a seed into a rendered elevation map. Continuity docs in place. On GitHub. ✅ |
 | **1 week** | Water and climate: coastlines, temperature, moisture, and rivers by flow accumulation. Maps look like *places*. ✅ **Reached in Session 2 — ahead of schedule.** |
 | **1 month** | A full physical world + named regions + labeled SVG posters. ✅ **All reached by Session 3.** |
-| **6 months** | A living world: settlements ✅, history ✅, languages ✅, trade routes ✅, world reports ✅, **and a live in-browser generator ✅ (Session 4)**. Essentially the entire original vision, reached in 4 sessions. Remaining polish: an *interactive* atlas (P4 pan/zoom/hover) and deeper simulation. |
+| **6 months** | A living world: settlements ✅, history ✅, languages ✅, trade routes ✅, world reports ✅, live in-browser generator ✅, **interactive atlas ✅ + hydraulic erosion ✅ + CI ✅ (Session 5)**. The entire original vision is met in 5 sessions. What's left is optional depth (climate realism, world lore, performance), not core scope. |
 
 Success is **not** measured by lines of code but by: *does the latest layer make
 the world more coherent, and is it tested and reproducible?*
@@ -47,17 +47,18 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   (`/app/`) — type a seed, generate on a Canvas. Zero-dependency build via Node
   type-stripping; pure-JS hash replaced `node:crypto`.
 - ✅ **P3 — World report.** Markdown gazetteer describing each world.
-- 🔜 **P4 — Interactive atlas.** Pan/zoom the canvas, hover a region for its
-  name/stats, click for detail; layer cross-fades; shareable seed links.
+- ✅ **P4 — Interactive atlas.** Pan/zoom, hover-to-inspect, click-to-pin,
+  shareable seed links in the live app.
 
 ### Deeper simulation (optional polish)
-- ⬜ Hydraulic erosion pass on elevation (carve valleys along rivers).
+- ✅ Hydraulic erosion pass on elevation (droplet sim; carves valleys).
 - ⬜ Latitude-varying wind belts for moisture (trade winds vs. westerlies).
 - ⬜ Lake outflow / river-into-lake-into-river continuity.
 - ⬜ Merge sub-threshold islet "regions".
+- ⬜ Web Worker so browser generation never freezes the UI.
 
 ### Engineering hygiene (ongoing)
-- ⬜ CI via GitHub Actions (run `npm test` on push).
+- ✅ CI via GitHub Actions (`node --test` + web-bundle freshness on push).
 - ⬜ Performance budget + a `benchmark` script per layer.
 
 ## Guiding principles

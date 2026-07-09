@@ -4,19 +4,21 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 4 · 2026-07-08
+- **As of:** Session 5 · 2026-07-09
 - **Engine version:** 0.8.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 87 tests pass; engine produces valid, deterministic output.
+- **Health:** 🟢 Green. 92 tests pass (CI enforced); deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 - **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
 
 ## What works today
 
-- Seed → a full **physical AND human world**: elevation, oceans/lakes/coasts,
-  temperature, moisture, rivers, 16 biomes, named provinces with cultures,
-  cities/ports with a capital, a road network, and a written history — all
-  deterministic from the seed.
+- Seed → a full **physical AND human world**: elevation (hydraulically eroded),
+  oceans/lakes/coasts, temperature, moisture, rivers, 16 biomes, named provinces
+  with cultures, cities/ports with a capital, a road network, and a written
+  history — all deterministic from the seed.
+- An **interactive** in-browser generator (`docs/app/`): pan, zoom, hover to
+  inspect any point, click to pin details, shareable `?seed=` links.
 - Per world the CLI emits **7 artifacts**: terrain / biome / political map PNGs,
   a grayscale heightmap, a **labeled SVG poster**, a **Markdown gazetteer**, and
   JSON metadata with a `contentHash` fingerprint.
@@ -30,15 +32,15 @@
 
 | Layer | Status |
 |-------|--------|
-| L0 RNG & noise · L1 Elevation | ✅ done |
+| L0 RNG & noise · L1 Elevation · L1.5 Erosion | ✅ done |
 | L2 Hydrology · L3 Temp · L4 Moisture | ✅ done |
 | L5 Rivers · L6 Biomes | ✅ done |
 | L7 Regions · L8 Naming | ✅ done |
 | L9 Settlements · L10 Roads · L11 History | ✅ done |
 | P1 SVG poster · P3 World report | ✅ done |
-| P2 Browser build (live generation) | ✅ done |
-| P4 interactive atlas (pan/zoom, hover) | 🔜 next |
-| erosion · CI · latitude wind belts | ⬜ planned |
+| P2 Browser build · P4 interactive atlas | ✅ done |
+| CI (GitHub Actions) | ✅ done |
+| latitude wind belts · islet merge · more | ⬜ optional polish |
 
 ## How to run (cold start)
 
@@ -64,17 +66,17 @@ No `npm install` is required — there are zero dependencies.
 
 - `docs/app/*.js` are **build artifacts** (type-stripped from `src/`). After any
   `src/` change, rerun `node scripts/build-web.ts` or the live app goes stale.
-- The browser app generates synchronously (~300 ms), briefly freezing the UI
-  thread. A Web Worker would keep it responsive (future).
+- The browser app generates synchronously (~300–800 ms with erosion), briefly
+  freezing the UI thread. A Web Worker would keep it responsive (future).
 - Tiny single-cell islands become their own 1-cell "regions" (coverage pass),
   cluttering gazetteers. Consider merging sub-threshold islets.
 - History wars need adjacent realms; small worlds (few cities) get few/no wars.
 - Moisture runs a single west→east prevailing wind; latitude wind belts would be
   more realistic (future tuning).
-- No CI yet (planned). Tests are run manually via `npm test`.
 - Cross-platform float determinism is assumed (V8 is consistent in practice);
-  guarded by the golden hash but not formally proven across architectures.
+  guarded by the golden hash + CI, but not formally proven across architectures.
 - No TS `enum`/namespaces/decorators — Node strip-only mode rejects them.
+- Remember: after any `src/` change, rerun `build:web` (CI now enforces this).
 
 ## Pointers
 
