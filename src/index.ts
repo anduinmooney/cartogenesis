@@ -23,6 +23,11 @@ export {
   type TemperatureConfig,
   type MoistureConfig,
 } from "./climate.ts";
+export {
+  generateRivers,
+  type RiverLayer,
+  type RiverConfig,
+} from "./rivers.ts";
 export { encodePNG } from "./png.ts";
 export {
   renderGrayscale,
@@ -30,6 +35,7 @@ export {
   renderScalarField,
   renderTemperature,
   renderMoisture,
+  overlayRivers,
   type RGB,
 } from "./render.ts";
 export {

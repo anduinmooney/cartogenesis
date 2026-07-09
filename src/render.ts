@@ -7,6 +7,7 @@
 
 import type { Grid } from "./grid.ts";
 import type { WaterLayer } from "./hydrology.ts";
+import type { RiverLayer } from "./rivers.ts";
 
 export type RGB = [number, number, number];
 
@@ -160,6 +161,35 @@ export function renderScalarField(
     out[i * 4 + 3] = 255;
   }
   return out;
+}
+
+const RIVER_COLOR: RGB = [58, 110, 165];
+
+/**
+ * Overlay rivers onto an existing RGBA buffer, in place. River color is blended
+ * by strength so major rivers read darker/bluer than trickles. Returns the same
+ * buffer for chaining.
+ */
+export function overlayRivers(
+  rgba: Uint8Array,
+  rivers: RiverLayer,
+  width: number,
+  height: number,
+): Uint8Array {
+  const { riverMask, flowAccum, maxFlow } = rivers;
+  const accum = flowAccum.data;
+  const logMax = Math.log1p(maxFlow) || 1;
+  for (let i = 0; i < riverMask.length; i++) {
+    if (riverMask[i] === 0) continue;
+    // Strength 0..1 by log-scaled flow, floored so small rivers stay visible.
+    const strength = 0.45 + 0.55 * (Math.log1p(accum[i]) / logMax);
+    const s = Math.max(0.45, Math.min(1, strength));
+    const j = i * 4;
+    rgba[j] = Math.round(rgba[j] * (1 - s) + RIVER_COLOR[0] * s);
+    rgba[j + 1] = Math.round(rgba[j + 1] * (1 - s) + RIVER_COLOR[1] * s);
+    rgba[j + 2] = Math.round(rgba[j + 2] * (1 - s) + RIVER_COLOR[2] * s);
+  }
+  return rgba;
 }
 
 export function renderTemperature(temperature: Grid, water?: WaterLayer): Uint8Array {

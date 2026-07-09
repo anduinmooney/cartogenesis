@@ -17,7 +17,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { generateWorld, worldToJSON, type WorldConfig } from "./world.ts";
-import { renderHypsometric, renderGrayscale } from "./render.ts";
+import {
+  renderHypsometric,
+  renderGrayscale,
+  overlayRivers,
+} from "./render.ts";
 import { encodePNG } from "./png.ts";
 
 interface CliOptions extends WorldConfig {
@@ -88,12 +92,19 @@ function runGenerate(opts: CliOptions): void {
 
   mkdirSync(opts.out, { recursive: true });
 
+  const mapPixels = renderHypsometric(world.elevation, world.meta.seaLevel, {
+    water: world.water,
+  });
+  overlayRivers(
+    mapPixels,
+    world.rivers,
+    world.elevation.width,
+    world.elevation.height,
+  );
   const mapPng = encodePNG(
     world.elevation.width,
     world.elevation.height,
-    renderHypsometric(world.elevation, world.meta.seaLevel, {
-      water: world.water,
-    }),
+    mapPixels,
   );
   const heightPng = encodePNG(
     world.elevation.width,
