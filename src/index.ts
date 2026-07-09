@@ -36,6 +36,19 @@ export {
   classifyBiomes,
   type BiomeLayer,
 } from "./biomes.ts";
+export {
+  LANGUAGES,
+  languageById,
+  makeName,
+  makeNamer,
+  type Language,
+} from "./names.ts";
+export {
+  generateRegions,
+  type RegionLayer,
+  type RegionInfo,
+  type RegionConfig,
+} from "./regions.ts";
 export { encodePNG } from "./png.ts";
 export {
   renderGrayscale,
@@ -44,6 +57,8 @@ export {
   renderTemperature,
   renderMoisture,
   renderBiomes,
+  renderRegions,
+  regionColor,
   overlayRivers,
   type RGB,
 } from "./render.ts";

@@ -21,8 +21,9 @@ import {
   type BiomeLayer,
   type Biome,
 } from "./biomes.ts";
+import { generateRegions, type RegionLayer } from "./regions.ts";
 
-export const ENGINE_VERSION = "0.5.0";
+export const ENGINE_VERSION = "0.6.0";
 
 export interface WorldConfig {
   seed: number | string;
@@ -49,6 +50,8 @@ export interface WorldMeta {
   mainRiverFlow: number;
   biomeDiversity: number;
   dominantBiome: string;
+  regionCount: number;
+  largestRegion: string;
   /** Content hash of the elevation field — a determinism fingerprint. */
   contentHash: string;
 }
@@ -61,6 +64,7 @@ export interface World {
   moisture: Grid;
   rivers: RiverLayer;
   biomes: BiomeLayer;
+  regions: RegionLayer;
 }
 
 export function generateWorld(config: WorldConfig): World {
@@ -112,6 +116,21 @@ export function generateWorld(config: WorldConfig): World {
     seaLevel,
   );
 
+  // L7 — Regions: partition land into named provinces.
+  const regionsRng = root.stream("regions");
+  const regions = generateRegions(
+    elevation,
+    temperature,
+    moisture,
+    water,
+    biomes,
+    { seed: regionsRng.seed },
+  );
+  const largest = regions.regions.reduce(
+    (a, b) => (b.area > a.area ? b : a),
+    regions.regions[0] ?? { name: "—", area: 0 },
+  );
+
   const meta: WorldMeta = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -126,10 +145,21 @@ export function generateWorld(config: WorldConfig): World {
     mainRiverFlow: Math.round(rivers.maxFlow),
     biomeDiversity: biomes.diversity,
     dominantBiome: BIOME_NAMES[biomes.dominant as Biome],
+    regionCount: regions.regions.length,
+    largestRegion: largest.name,
     contentHash: hashGrid(elevation),
   };
 
-  return { meta, elevation, water, temperature, moisture, rivers, biomes };
+  return {
+    meta,
+    elevation,
+    water,
+    temperature,
+    moisture,
+    rivers,
+    biomes,
+    regions,
+  };
 }
 
 /** Stable content hash of a Grid (quantized to survive trivial float noise). */

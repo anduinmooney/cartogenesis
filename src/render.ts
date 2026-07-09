@@ -9,6 +9,7 @@ import type { Grid } from "./grid.ts";
 import type { WaterLayer } from "./hydrology.ts";
 import type { RiverLayer } from "./rivers.ts";
 import { BIOME_COLORS, type BiomeLayer } from "./biomes.ts";
+import type { RegionLayer } from "./regions.ts";
 
 export type RGB = [number, number, number];
 
@@ -199,6 +200,91 @@ export function renderTemperature(temperature: Grid, water?: WaterLayer): Uint8A
 
 export function renderMoisture(moisture: Grid, water?: WaterLayer): Uint8Array {
   return renderScalarField(moisture, MOIST_RAMP, water);
+}
+
+function hslToRgb(h: number, s: number, l: number): RGB {
+  const c = (1 - Math.abs(2 * l - 1)) * s;
+  const hp = (h % 360) / 60;
+  const x = c * (1 - Math.abs((hp % 2) - 1));
+  let r = 0;
+  let g = 0;
+  let b = 0;
+  if (hp < 1) [r, g, b] = [c, x, 0];
+  else if (hp < 2) [r, g, b] = [x, c, 0];
+  else if (hp < 3) [r, g, b] = [0, c, x];
+  else if (hp < 4) [r, g, b] = [0, x, c];
+  else if (hp < 5) [r, g, b] = [x, 0, c];
+  else [r, g, b] = [c, 0, x];
+  const m = l - c / 2;
+  return [
+    Math.round((r + m) * 255),
+    Math.round((g + m) * 255),
+    Math.round((b + m) * 255),
+  ];
+}
+
+/** Stable, well-spread color for a region id (golden-angle hue rotation). */
+export function regionColor(id: number): RGB {
+  const hue = (id * 137.508) % 360;
+  const sat = 0.42 + ((id * 47) % 100) / 400; // 0.42–0.67
+  const lig = 0.58 + ((id * 29) % 100) / 500; // 0.58–0.78
+  return hslToRgb(hue, sat, lig);
+}
+
+const REGION_OCEAN: RGB = [38, 58, 82];
+const REGION_LAKE: RGB = [70, 110, 140];
+const REGION_BORDER: RGB = [28, 32, 40];
+
+/**
+ * Political map: each region a distinct tint, ocean/lake neutral, thin borders
+ * between adjacent regions. Optional hillshade grounds it to the terrain.
+ */
+export function renderRegions(
+  regions: RegionLayer,
+  water: WaterLayer,
+  elevation?: Grid,
+): Uint8Array {
+  const ids = regions.ids;
+  const n = ids.length;
+  const width = elevation?.width ?? Math.round(Math.sqrt(n));
+  const height = elevation?.height ?? Math.round(n / width);
+  const out = new Uint8Array(n * 4);
+
+  for (let i = 0; i < n; i++) {
+    let color: RGB;
+    if (water.oceanMask[i] === 1) color = REGION_OCEAN;
+    else if (water.lakeMask[i] === 1) color = REGION_LAKE;
+    else {
+      color = regionColor(ids[i]);
+      if (elevation) {
+        const x = i % width;
+        const y = (i / width) | 0;
+        const slope =
+          (elevation.getClamped(x + 1, y) - elevation.getClamped(x - 1, y)) *
+            0.5 +
+          (elevation.getClamped(x, y + 1) - elevation.getClamped(x, y - 1)) *
+            0.5;
+        const f = 1 + Math.max(-0.22, Math.min(0.22, -slope * 5));
+        color = [
+          Math.max(0, Math.min(255, Math.round(color[0] * f))),
+          Math.max(0, Math.min(255, Math.round(color[1] * f))),
+          Math.max(0, Math.min(255, Math.round(color[2] * f))),
+        ];
+      }
+      // Draw a border where a right/down neighbor is a different region.
+      const x = i % width;
+      const y = (i / width) | 0;
+      const rightDiff = x + 1 < width && ids[i + 1] >= 0 && ids[i + 1] !== ids[i];
+      const downDiff =
+        y + 1 < height && ids[i + width] >= 0 && ids[i + width] !== ids[i];
+      if (rightDiff || downDiff) color = REGION_BORDER;
+    }
+    out[i * 4] = color[0];
+    out[i * 4 + 1] = color[1];
+    out[i * 4 + 2] = color[2];
+    out[i * 4 + 3] = 255;
+  }
+  return out;
 }
 
 /** Render a biome map. Optional hillshade adds subtle relief from elevation. */
