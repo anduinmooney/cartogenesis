@@ -1,0 +1,26 @@
+{
+  "name": "cartogenesis",
+  "version": "0.1.0",
+  "description": "A deterministic, dependency-free procedural world generation engine.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "generate": "node src/cli.ts generate",
+    "test": "node --test \"tests/*.test.ts\"",
+    "sample": "node scripts/make-samples.ts"
+  },
+  "keywords": [
+    "procedural-generation",
+    "worldgen",
+    "terrain",
+    "noise",
+    "deterministic",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Cartogenesis (autonomous build)",
+  "dependencies": {},
+  "devDependencies": {}
+}

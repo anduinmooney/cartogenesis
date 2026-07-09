@@ -1,0 +1,14 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Ad-hoc CLI output. Everything is regenerable from seeds; committed sample
+# artifacts live under docs/samples/ instead.
+/output/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

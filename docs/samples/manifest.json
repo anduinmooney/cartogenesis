@@ -1,0 +1,60 @@
+{
+  "size": 320,
+  "generatedWith": "0.1.0",
+  "worlds": [
+    {
+      "seed": "cartogenesis",
+      "title": "Cartogenesis",
+      "note": "The canonical world.",
+      "map": "cartogenesis.map.png",
+      "height": "cartogenesis.height.png",
+      "landFraction": 63.6,
+      "contentHash": "4144b83d27b73844"
+    },
+    {
+      "seed": "atlas",
+      "title": "Atlas",
+      "note": "A fragmented archipelago.",
+      "map": "atlas.map.png",
+      "height": "atlas.height.png",
+      "landFraction": 38.4,
+      "contentHash": "181a40fba0557631"
+    },
+    {
+      "seed": "borea",
+      "title": "Borea",
+      "note": "A broad northern continent.",
+      "map": "borea.map.png",
+      "height": "borea.height.png",
+      "landFraction": 59.4,
+      "contentHash": "f0aacd6006ffe347"
+    },
+    {
+      "seed": "mistral",
+      "title": "Mistral",
+      "note": "Scattered coastal isles.",
+      "map": "mistral.map.png",
+      "height": "mistral.height.png",
+      "landFraction": 46.3,
+      "contentHash": "2c9614eb17adc489"
+    },
+    {
+      "seed": "vahalia",
+      "title": "Vahalia",
+      "note": "A rugged mountainous land.",
+      "map": "vahalia.map.png",
+      "height": "vahalia.height.png",
+      "landFraction": 56.4,
+      "contentHash": "d13574ec32e8c9b8"
+    },
+    {
+      "seed": "aurelia-9",
+      "title": "Aurelia IX",
+      "note": "A temperate heartland.",
+      "map": "aurelia-9.map.png",
+      "height": "aurelia-9.height.png",
+      "landFraction": 32.9,
+      "contentHash": "645870f7b00c2a03"
+    }
+  ]
+}

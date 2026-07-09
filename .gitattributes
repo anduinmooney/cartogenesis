@@ -1,0 +1,5 @@
+# Normalize all text to LF in the repo for cross-platform reproducibility.
+* text=auto eol=lf
+
+# Binary assets — never touch line endings.
+*.png binary

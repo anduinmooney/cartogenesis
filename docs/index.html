@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cartogenesis — Procedural World Gallery</title>
+    <style>
+      :root {
+        --bg: #0d1117;
+        --panel: #161b22;
+        --border: #2a3038;
+        --ink: #e6edf3;
+        --muted: #8b949e;
+        --accent: #5a9bc8;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.5;
+      }
+      header {
+        padding: 2.5rem 1.5rem 1.5rem;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      h1 {
+        margin: 0 0 0.25rem;
+        font-size: 1.9rem;
+        letter-spacing: -0.02em;
+      }
+      .tagline { color: var(--muted); margin: 0 0 1rem; }
+      .meta { color: var(--muted); font-size: 0.85rem; }
+      .meta code {
+        background: var(--panel);
+        padding: 0.1rem 0.4rem;
+        border-radius: 4px;
+        border: 1px solid var(--border);
+      }
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 1.5rem 3rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.25rem;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .card figure { margin: 0; position: relative; background: #05070d; }
+      .card img {
+        display: block;
+        width: 100%;
+        image-rendering: auto;
+        aspect-ratio: 1 / 1;
+      }
+      .card .body { padding: 0.85rem 1rem 1rem; }
+      .card h2 { margin: 0; font-size: 1.05rem; }
+      .card .note { color: var(--muted); font-size: 0.88rem; margin: 0.15rem 0 0.6rem; }
+      .stats {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.78rem;
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+      }
+      .toggle {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        display: flex;
+        gap: 2px;
+        background: rgba(13, 17, 23, 0.8);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 2px;
+      }
+      .toggle button {
+        border: 0;
+        background: transparent;
+        color: var(--muted);
+        font-size: 0.72rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .toggle button.active { background: var(--accent); color: #041018; }
+      footer {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.5rem;
+        color: var(--muted);
+        font-size: 0.82rem;
+        border-top: 1px solid var(--border);
+      }
+      a { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cartogenesis</h1>
+      <p class="tagline">A deterministic, dependency-free procedural world generation engine.</p>
+      <p class="meta">
+        Every map below is generated purely from its <em>seed</em>. Same seed,
+        same world — forever. Regenerate any of them with
+        <code>node src/cli.ts generate --seed &lt;name&gt;</code>.
+      </p>
+    </header>
+    <main>
+      <div class="grid" id="gallery"></div>
+    </main>
+    <footer id="footer"></footer>
+
+    <script>
+      const gallery = document.getElementById("gallery");
+      const footer = document.getElementById("footer");
+
+      fetch("samples/manifest.json")
+        .then((r) => r.json())
+        .then((data) => {
+          footer.innerHTML =
+            `${data.worlds.length} worlds · rendered at ${data.size}×${data.size} · ` +
+            `engine v${data.generatedWith} · ` +
+            `<a href="https://github.com/anduinmooney/cartogenesis">source on GitHub</a>`;
+
+          for (const w of data.worlds) {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+              <figure>
+                <img src="samples/${w.map}" alt="${w.title} map" data-map="samples/${w.map}" data-height="samples/${w.height}" loading="lazy" />
+                <div class="toggle">
+                  <button class="active" data-mode="map">Map</button>
+                  <button data-mode="height">Relief</button>
+                </div>
+              </figure>
+              <div class="body">
+                <h2>${w.title}</h2>
+                <p class="note">${w.note}</p>
+                <div class="stats">
+                  <span>seed: ${w.seed}</span>
+                  <span>land: ${w.landFraction}%</span>
+                </div>
+              </div>`;
+            const img = card.querySelector("img");
+            card.querySelectorAll(".toggle button").forEach((b) => {
+              b.addEventListener("click", () => {
+                card.querySelectorAll(".toggle button").forEach((x) =>
+                  x.classList.remove("active"),
+                );
+                b.classList.add("active");
+                img.src = b.dataset.mode === "map" ? img.dataset.map : img.dataset.height;
+              });
+            });
+            gallery.appendChild(card);
+          }
+        })
+        .catch((e) => {
+          gallery.innerHTML =
+            '<p style="color:#8b949e">Could not load samples/manifest.json — run <code>node scripts/make-samples.ts</code>.</p>';
+        });
+    </script>
+  </body>
+</html>
