@@ -4,17 +4,26 @@ Cartogenesis grows one **layer** at a time. Each layer is a self-contained
 subsystem that builds on the ones beneath it. The ordering is roughly physical:
 you can't have rivers before elevation, or forests before rainfall.
 
-## Definition of success
+## What "success" means
 
-| Horizon | What "success" looks like |
-|--------|----------------------------|
-| **1 day** (Session 1) | A working, tested, deterministic engine that turns a seed into a rendered elevation map. Continuity docs in place. On GitHub. ✅ |
-| **1 week** | Water and climate: coastlines, temperature, moisture, and rivers by flow accumulation. Maps look like *places*. ✅ **Reached in Session 2 — ahead of schedule.** |
-| **1 month** | A full physical world + named regions + labeled SVG posters. ✅ **All reached by Session 3.** |
-| **6 months** | A living world: settlements ✅, history ✅, languages ✅, trade routes ✅, world reports ✅, live in-browser generator ✅, **interactive atlas ✅ + hydraulic erosion ✅ + CI ✅ (Session 5)**. The entire original vision is met in 5 sessions. What's left is optional depth (climate realism, world lore, performance), not core scope. |
+There is **no finish line**. Cartogenesis is an open-ended world: every session
+should make it meaningfully deeper — a new subsystem, a richer simulation, or a
+better way to explore it — and each session's work should be *larger and more
+ambitious than the last*. The measure is never a calendar or a line count; it is:
 
-Success is **not** measured by lines of code but by: *does the latest layer make
-the world more coherent, and is it tested and reproducible?*
+> *Is the world more alive, more coherent, and more explorable than it was — and
+> is the new work tested and reproducible?*
+
+The layers below are a **living backlog**, not a countdown. Finishing one opens
+three more. The world can always be deeper: more simulation (climate, ecology,
+population dynamics over time), more meaning (economy, faith, language, myth),
+and better ways to see and share it (worker-driven UI, in-app atlas, exports).
+
+Foundations reached so far: a deterministic engine (S1); the physical world —
+water, climate, rivers, biomes, erosion (S2, S5); the human world — regions,
+naming, settlements, roads, history, lore (S3, S6); and the platform — live
+in-browser generation, an interactive atlas, and CI (S4, S5). Each of those was
+a base to build higher on, not a box to check off.
 
 ## Layer backlog (ordered)
 

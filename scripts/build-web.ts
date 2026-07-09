@@ -31,6 +31,9 @@ const MODULES = [
   "roads",
   "history",
   "lore",
+  "resources",
+  "economy",
+  "religion",
   "render",
   "world",
 ];

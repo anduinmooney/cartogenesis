@@ -30,8 +30,11 @@ import {
 import { generateRoads, type RoadLayer } from "./roads.ts";
 import { generateHistory, type HistoryLayer } from "./history.ts";
 import { generateLore, type LoreLayer } from "./lore.ts";
+import { generateResources, RESOURCE_NAMES, type ResourceLayer } from "./resources.ts";
+import { generateEconomy, type EconomyLayer } from "./economy.ts";
+import { generateReligion, type ReligionLayer } from "./religion.ts";
 
-export const ENGINE_VERSION = "0.9.0";
+export const ENGINE_VERSION = "0.10.0";
 
 export interface WorldConfig {
   seed: number | string;
@@ -70,6 +73,9 @@ export interface WorldMeta {
   presentYear: number;
   capitalHouse: string;
   rulerCount: number;
+  resourceCount: number;
+  majorExports: string;
+  faithCount: number;
   /** Content hash of the elevation field — a determinism fingerprint. */
   contentHash: string;
 }
@@ -87,6 +93,9 @@ export interface World {
   roads: RoadLayer;
   history: HistoryLayer;
   lore: LoreLayer;
+  resources: ResourceLayer;
+  economy: EconomyLayer;
+  religion: ReligionLayer;
 }
 
 export function generateWorld(config: WorldConfig): World {
@@ -200,6 +209,28 @@ export function generateWorld(config: WorldConfig): World {
     seed: loreRng.seed,
   });
 
+  // L13 — Resources: natural deposits by terrain and biome.
+  const resourcesRng = root.stream("resources");
+  const resources = generateResources(
+    elevation,
+    biomes,
+    water,
+    temperature,
+    moisture,
+    seaLevel,
+    { seed: resourcesRng.seed },
+  );
+
+  // L14 — Economy: production, wealth, and trade over resources + roads.
+  const economyRng = root.stream("economy");
+  const economy = generateEconomy(settlements.settlements, roads, resources, {
+    seed: economyRng.seed,
+  });
+
+  // L15 — Religion: faiths, deities, and myths, spread across regions.
+  const religionRng = root.stream("religion");
+  const religion = generateReligion(regions, history, { seed: religionRng.seed });
+
   const meta: WorldMeta = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -224,6 +255,9 @@ export function generateWorld(config: WorldConfig): World {
     presentYear: history.presentYear,
     capitalHouse: lore.capitalHouse,
     rulerCount: lore.rulers.length,
+    resourceCount: resources.deposits.length,
+    majorExports: economy.majorExports.map((k) => RESOURCE_NAMES[k]).join(", "),
+    faithCount: religion.faiths.length,
     contentHash: hashGrid(elevation),
   };
 
@@ -240,6 +274,9 @@ export function generateWorld(config: WorldConfig): World {
     roads,
     history,
     lore,
+    resources,
+    economy,
+    religion,
   };
 }
 

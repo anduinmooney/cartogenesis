@@ -12,6 +12,8 @@ import { BIOME_COLORS, type BiomeLayer } from "./biomes.ts";
 import type { RegionLayer } from "./regions.ts";
 import type { RoadLayer } from "./roads.ts";
 import type { Settlement } from "./settlements.ts";
+import { RESOURCE_COLORS, type Deposit } from "./resources.ts";
+import type { ReligionLayer } from "./religion.ts";
 
 export type RGB = [number, number, number];
 
@@ -352,6 +354,87 @@ export function renderRegions(
       const downDiff =
         y + 1 < height && ids[i + width] >= 0 && ids[i + width] !== ids[i];
       if (rightDiff || downDiff) color = REGION_BORDER;
+    }
+    out[i * 4] = color[0];
+    out[i * 4 + 1] = color[1];
+    out[i * 4 + 2] = color[2];
+    out[i * 4 + 3] = 255;
+  }
+  return out;
+}
+
+/** Overlay resource deposits as small colored squares (by kind) in place. */
+export function overlayResources(
+  rgba: Uint8Array,
+  deposits: Deposit[],
+  width: number,
+  height: number,
+): Uint8Array {
+  for (const d of deposits) {
+    const c = RESOURCE_COLORS[d.kind] ?? [255, 255, 255];
+    for (let dy = -1; dy <= 1; dy++) {
+      for (let dx = -1; dx <= 1; dx++) {
+        const x = d.x + dx;
+        const y = d.y + dy;
+        if (x < 0 || y < 0 || x >= width || y >= height) continue;
+        const j = (y * width + x) * 4;
+        const edge = Math.abs(dx) === 1 || Math.abs(dy) === 1;
+        if (edge) {
+          // dark outline
+          rgba[j] = 20;
+          rgba[j + 1] = 18;
+          rgba[j + 2] = 16;
+        } else {
+          rgba[j] = c[0];
+          rgba[j + 1] = c[1];
+          rgba[j + 2] = c[2];
+        }
+      }
+    }
+    // center pixel = bright color
+    const j = (d.y * width + d.x) * 4;
+    rgba[j] = c[0];
+    rgba[j + 1] = c[1];
+    rgba[j + 2] = c[2];
+  }
+  return rgba;
+}
+
+const FAITH_PALETTE: RGB[] = [
+  [196, 120, 90],
+  [96, 150, 180],
+  [150, 170, 100],
+  [170, 110, 170],
+  [200, 175, 90],
+];
+
+/** Render a faiths map: each region tinted by its dominant faith. */
+export function renderFaiths(
+  regions: RegionLayer,
+  religion: ReligionLayer,
+  water: WaterLayer,
+  elevation: Grid,
+): Uint8Array {
+  const ids = regions.ids;
+  const n = ids.length;
+  const width = elevation.width;
+  const height = elevation.height;
+  const out = new Uint8Array(n * 4);
+  for (let i = 0; i < n; i++) {
+    let color: RGB;
+    if (water.oceanMask[i] === 1) color = [38, 58, 82];
+    else if (water.lakeMask[i] === 1) color = [70, 110, 140];
+    else {
+      const faithId = religion.regionFaith[ids[i]] ?? 0;
+      color = FAITH_PALETTE[faithId % FAITH_PALETTE.length];
+      // Border between different faiths.
+      const x = i % width;
+      const y = (i / width) | 0;
+      const rf = (j: number) => religion.regionFaith[ids[j]] ?? -1;
+      const here = religion.regionFaith[ids[i]] ?? -1;
+      const rightDiff = x + 1 < width && ids[i + 1] >= 0 && rf(i + 1) !== here;
+      const downDiff = y + 1 < height && ids[i + width] >= 0 && rf(i + width) !== here;
+      if (rightDiff || downDiff) color = [28, 32, 40];
     }
     out[i * 4] = color[0];
     out[i * 4 + 1] = color[1];

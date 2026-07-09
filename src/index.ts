@@ -77,6 +77,25 @@ export {
   type Ruler,
   type Figure,
 } from "./lore.ts";
+export {
+  generateResources,
+  Resource,
+  RESOURCE_NAMES,
+  RESOURCE_COLORS,
+  type ResourceLayer,
+  type Deposit,
+} from "./resources.ts";
+export {
+  generateEconomy,
+  productList,
+  type EconomyLayer,
+  type SettlementEconomy,
+} from "./economy.ts";
+export {
+  generateReligion,
+  type ReligionLayer,
+  type Faith,
+} from "./religion.ts";
 export { worldReportMarkdown } from "./report.ts";
 export { worldPosterSVG, type PosterOptions } from "./svgmap.ts";
 export { encodePNG } from "./png.ts";
@@ -88,10 +107,12 @@ export {
   renderMoisture,
   renderBiomes,
   renderRegions,
+  renderFaiths,
   regionColor,
   overlayRivers,
   overlayRoads,
   overlaySettlements,
+  overlayResources,
   type RGB,
 } from "./render.ts";
 export {
