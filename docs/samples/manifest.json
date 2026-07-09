@@ -43,7 +43,7 @@
         "presentYear": 826,
         "capitalHouse": "Rimondoo",
         "faithCount": 4,
-        "majorExports": "Horses, Grain, Livestock, Wine, Timber",
+        "majorExports": "Livestock, Horses, Grain, Wine, Fish",
         "resourceCount": 509,
         "dominantPower": "Dillaaumar",
         "survivingRealms": 2
@@ -80,7 +80,7 @@
         "presentYear": 1049,
         "capitalHouse": "Velenmepia",
         "faithCount": 4,
-        "majorExports": "Horses, Grain, Livestock, Timber, Wine",
+        "majorExports": "Livestock, Horses, Grain, Fish, Wine",
         "resourceCount": 312,
         "dominantPower": "Taunabi",
         "survivingRealms": 2
@@ -117,10 +117,10 @@
         "presentYear": 927,
         "capitalHouse": "Beodaveo",
         "faithCount": 4,
-        "majorExports": "Grain, Horses, Livestock, Wine, Timber",
+        "majorExports": "Livestock, Grain, Horses, Wine, Fish",
         "resourceCount": 495,
         "dominantPower": "Tariamentetau",
-        "survivingRealms": 2
+        "survivingRealms": 3
       },
       "contentHash": "98f1434cf1dc7e4b"
     },
@@ -154,10 +154,10 @@
         "presentYear": 1119,
         "capitalHouse": "Redenabi",
         "faithCount": 4,
-        "majorExports": "Grain, Horses, Wine, Livestock, Timber",
+        "majorExports": "Grain, Livestock, Horses, Wine, Timber",
         "resourceCount": 395,
-        "dominantPower": "Ebalovento",
-        "survivingRealms": 4
+        "dominantPower": "Brabravo",
+        "survivingRealms": 3
       },
       "contentHash": "7dceb84630477830"
     },
@@ -191,7 +191,7 @@
         "presentYear": 1174,
         "capitalHouse": "Osiriano",
         "faithCount": 4,
-        "majorExports": "Grain, Horses, Timber, Wine, Livestock",
+        "majorExports": "Livestock, Horses, Grain, Timber, Fish",
         "resourceCount": 432,
         "dominantPower": "Vobica",
         "survivingRealms": 2
@@ -228,10 +228,10 @@
         "presentYear": 1164,
         "capitalHouse": "Popialenre",
         "faithCount": 2,
-        "majorExports": "Grain, Horses, Livestock, Wine, Timber",
+        "majorExports": "Livestock, Grain, Horses, Timber, Wine",
         "resourceCount": 269,
         "dominantPower": "Neneo",
-        "survivingRealms": 3
+        "survivingRealms": 1
       },
       "contentHash": "3ecf069422de308c"
     }

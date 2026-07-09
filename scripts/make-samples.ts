@@ -10,7 +10,7 @@ import { join } from "node:path";
 import { generateWorld } from "../src/world.ts";
 import {
   renderHypsometric,
-  renderGrayscale,
+  renderRelief,
   renderBiomes,
   renderRegions,
   renderFaiths,
@@ -89,9 +89,9 @@ function main(): void {
       powers,
       faiths,
       resources,
-      temperature: renderTemperature(world.temperature, world.water),
-      moisture: renderMoisture(world.moisture, world.water),
-      height: renderGrayscale(world.elevation),
+      temperature: renderTemperature(world.temperature, world.water, world.elevation),
+      moisture: renderMoisture(world.moisture, world.water, world.elevation),
+      height: renderRelief(world.elevation, world.water),
     };
 
     const files: Record<string, string> = {};

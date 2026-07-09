@@ -202,7 +202,7 @@ export function generateResources(
   const counts: Record<number, number> = {};
 
   for (const def of DEFS) {
-    // Score every land cell for this kind.
+    // Score every suitable land cell for this kind.
     const cand: Array<{ i: number; s: number }> = [];
     for (let i = 0; i < n; i++) {
       if (water.oceanMask[i] || water.lakeMask[i]) continue;
@@ -217,7 +217,11 @@ export function generateResources(
       const s = def.score(ctx);
       if (s > 0.45) cand.push({ i, s });
     }
-    cand.sort((a, b) => b.s - a.s || a.i - b.i);
+
+    // Shuffle before greedy spacing so placement is spatially UNIFORM. (Sorting
+    // by score/index concentrated deposits in one corner of the map — the count
+    // cap was reached before the far side was ever considered.)
+    rng.shuffle(cand);
 
     const spacing = def.spacing / Math.sqrt(density);
     const spacing2 = spacing * spacing;

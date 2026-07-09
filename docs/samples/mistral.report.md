@@ -9,7 +9,7 @@
 - **Climate & life:** dominant biome **Grassland**, 16 biomes in all
 - **Peoples:** 30 regions, 18 settlements, 3 realms
 - **Capital:** Nasida, seat of House Redenabi
-- **Dominant power:** Ebalovento (of 4 surviving realm(s))
+- **Dominant power:** Brabravo (of 3 surviving realm(s))
 - **The present year:** 1119 After Reckoning
 
 ## Notable features
@@ -131,30 +131,30 @@
 
 ### Cities
 
-- Nasida (**capital**, port, trade hub, rich) — Grain, Livestock, Horses, Wine
-- Epavento (port, prosperous) — Grain, Wine, Timber, Horses
-- Paupoa (port, prosperous) — Grain, Horses, Wine
+- Nasida (**capital**, port, trade hub, rich) — Grain, Livestock, Fish, Wine
+- Epavento (port, trade hub, rich) — Timber, Grain, Livestock, Fish
+- Paupoa (port, prosperous) — Livestock, Grain, Wine
 
 ### Towns
 
-- Lentelo (port, prosperous) — Grain, Horses, Wine
-- Ystthaubragard (prosperous) — Grain, Timber
-- Beollava (port, trade hub, rich) — Grain, Livestock, Horses, Wine
-- Riacentee (rich) — Livestock, Grain, Wine, Timber
-- Mushamgha (port, prosperous) — Grain, Horses, Wine
+- Lentelo (port, trade hub, rich) — Grain, Livestock, Wine, Horses
+- Ystthaubragard (prosperous) — Grain, Wine, Timber, Horses
+- Beollava (port, prosperous) — Livestock, Grain, Horses, Wine
+- Riacentee (rich) — Livestock, Horses, Wine, Fish
+- Mushamgha (port, prosperous) — Livestock, Horses
 
 ### Villages
 
-- Mueur (port, prosperous) — Livestock, Spices, Wine, Grain
-- Veonase (prosperous) — Livestock, Grain, Fish, Horses
-- Dandodati (port, rich) — Grain, Livestock, Fish, Horses
-- Sama (prosperous) — Wine, Grain, Timber, Horses
-- Ghummaimu (modest) — Wine, Timber, Grain
-- Siiilsyeaea (port, poor) — Grain, Timber
-- Keqai (modest) — Wine, Horses
-- Thynbovik (port, prosperous) — Horses, Grain
-- Maaai (modest) — Livestock, Timber, Horses
-- Beirngrodo (port, trade hub, rich) — Livestock, Grain, Fish, Horses
+- Mueur (port, prosperous) — Grain, Horses, Wine, Livestock
+- Veonase (rich) — Grain, Livestock, Timber, Horses
+- Dandodati (port, prosperous) — Grain, Livestock, Horses, Wine
+- Sama (prosperous) — Livestock, Wine, Grain, Timber
+- Ghummaimu (prosperous) — Livestock, Grain, Horses, Fish
+- Siiilsyeaea (port, poor) — Timber, Grain
+- Keqai (prosperous) — Livestock, Grain, Wine, Horses
+- Thynbovik (port, rich) — Timber, Horses, Fish, Grain
+- Maaai (modest) — Horses, Livestock
+- Beirngrodo (port, prosperous) — Grain, Livestock, Horses
 
 ## Faiths
 
@@ -184,9 +184,9 @@ Followed across 1 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Grain, Horses, Wine, Livestock, Timber
+- **Major exports:** Grain, Livestock, Horses, Wine, Timber
 - **Wealthiest settlement:** Nasida
-- **Trade hubs:** Nasida, Beollava, Beirngrodo
+- **Trade hubs:** Nasida, Epavento, Lentelo
 - **Deposits:** Iron ×26, Copper ×19, Gold ×8, Gems ×5, Stone ×51, Coal ×19, Timber ×12, Grain ×45, Livestock ×123, Fish ×11, Furs ×3, Spices ×3, Salt ×10, Horses ×38, Wine ×22
 
 ## Legends of the founding age
@@ -204,72 +204,75 @@ Followed across 1 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 4 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 3 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Ebalovento | 100 | 27 | 275 | 27 | ascendant |
-| Brabravo | 100 | 8 | 125 | 1 | diminished |
-| Econadau | 100 | 7 | 100 | 0 | extinct |
-| Tamorsenasiaa | 100 | 5 | 100 | 1 | diminished |
+| Brabravo | 100 | 28 | 625 | 28 | ascendant |
+| Ebalovento | 100 | 9 | 475 | 0 | extinct |
+| Econadau | 100 | 6 | 100 | 0 | extinct |
+| Tamorsenasiaa | 100 | 6 | 100 | 1 | diminished |
 | Pamialenbeomar | 100 | 3 | 100 | 1 | diminished |
 
 ## Chronicle
 
-- **100 After Reckoning** — Econadau seized Egha from Zadkhai.
 - **100 After Reckoning** — Econadau seized Kunqaa from Zadkhai.
+- **100 After Reckoning** — Tamorsenasiaa seized Egha from Zadkhai.
 - **100 After Reckoning** — The realm of Zadkhai was extinguished.
 - **100 After Reckoning** — Brabravo seized Qerkha from Pamialenbeomar.
 - **125 After Reckoning** — Brabravo seized Ghashaqai from Pamialenbeomar.
 - **125 After Reckoning** — Brabravo seized Metimi from Pamialenbeomar.
-- **125 After Reckoning** — Ebalovento seized Qerkha from Brabravo.
-- **150 After Reckoning** — Ebalovento seized Seba from Tamorsenasiaa.
-- **150 After Reckoning** — Ebalovento seized Baunia from Tamorsenasiaa.
-- **150 After Reckoning** — Ebalovento seized Siri from Brabravo.
-- **150 After Reckoning** — Ebalovento seized Vuskeigrei from Brabravo.
-- **175 After Reckoning** — Ebalovento seized Mara from Tamorsenasiaa.
-- **175 After Reckoning** — Ebalovento seized Benteeoa from Tamorsenasiaa.
-- **175 After Reckoning** — Ebalovento seized Mibandopia from Brabravo.
-- **175 After Reckoning** — Ebalovento seized Ghashaqai from Brabravo.
-- **175 After Reckoning** — A golden age dawned over Brabravo; its cities flourished as never before.
-- **200 After Reckoning** — Ebalovento seized Hryfjo from Brabravo.
-- **200 After Reckoning** — Ebalovento seized Seshkha from Brabravo.
-- **225 After Reckoning** — Ebalovento seized Metimi from Brabravo.
-- **225 After Reckoning** — Ebalovento seized Shira from Econadau.
-- **225 After Reckoning** — Ebalovento seized Egha from Econadau.
-- **225 After Reckoning** — Ebalovento seized Kunqaa from Econadau.
-- **250 After Reckoning** — Ebalovento seized Khatiur from Econadau.
-- **250 After Reckoning** — Ebalovento seized Jikhshi from Econadau.
-- **250 After Reckoning** — Ghashaqai turned from the Way of Dariamiabau to the Way of Temi.
-- **275 After Reckoning** — Ebalovento seized Condodiamorrivento from Econadau.
-- **275 After Reckoning** — Ebalovento seized Azghuabad from Econadau.
-- **275 After Reckoning** — The realm of Econadau was extinguished.
-- **325 After Reckoning** — A long drought gripped Thugra; many perished.
-- **350 After Reckoning** — A long drought gripped Seshkha; many perished.
-- **400 After Reckoning** — A golden age dawned over Ebalovento; its cities flourished as never before.
-- **450 After Reckoning** — A golden age dawned over Ebalovento; its cities flourished as never before.
-- **475 After Reckoning** — A golden age dawned over Ebalovento; its cities flourished as never before.
-- **500 After Reckoning** — A golden age dawned over Ebalovento; its cities flourished as never before.
-- **525 After Reckoning** — Seba broke away from Ebalovento to found the realm of Iandobiavo.
-- **550 After Reckoning** — Ebalovento seized Seba from Iandobiavo.
-- **550 After Reckoning** — The realm of Iandobiavo was extinguished.
-- **550 After Reckoning** — Seba broke away from Ebalovento to found the realm of Pemorliandoceo.
-- **550 After Reckoning** — A plague swept Egha; many perished.
-- **575 After Reckoning** — Ebalovento seized Seba from Pemorliandoceo.
-- **575 After Reckoning** — The realm of Pemorliandoceo was extinguished.
-- **650 After Reckoning** — A plague swept Phianphaeenelawood; many perished.
-- **725 After Reckoning** — A long drought gripped Yilnela; many perished.
-- **800 After Reckoning** — Seba broke away from Ebalovento to found the realm of Vemiandope.
-- **825 After Reckoning** — Ebalovento seized Seba from Vemiandope.
-- **825 After Reckoning** — The realm of Vemiandope was extinguished.
-- **850 After Reckoning** — A golden age dawned over Ebalovento; its cities flourished as never before.
-- **875 After Reckoning** — A long drought gripped Siri; many perished.
-- **975 After Reckoning** — Seba broke away from Ebalovento to found the realm of Diabopemar.
-- **1000 After Reckoning** — Ebalovento seized Seba from Diabopemar.
+- **200 After Reckoning** — A plague swept Siri; many perished.
+- **225 After Reckoning** — Ghashaqai turned from the Way of Dariamiabau to the Way of Temi.
+- **325 After Reckoning** — A long drought gripped Benteeoa; many perished.
+- **375 After Reckoning** — A golden age dawned over Econadau; its cities flourished as never before.
+- **400 After Reckoning** — A plague swept Seba; many perished.
+- **400 After Reckoning** — A golden age dawned over Econadau; its cities flourished as never before.
+- **425 After Reckoning** — Brabravo seized Egha from Tamorsenasiaa.
+- **450 After Reckoning** — Brabravo seized Mara from Tamorsenasiaa.
+- **475 After Reckoning** — Brabravo seized Seba from Tamorsenasiaa.
+- **475 After Reckoning** — Ebalovento seized Baunia from Tamorsenasiaa.
+- **475 After Reckoning** — Brabravo seized Khatiur from Econadau.
+- **500 After Reckoning** — Brabravo seized Benteeoa from Tamorsenasiaa.
+- **500 After Reckoning** — Brabravo seized Shira from Econadau.
+- **500 After Reckoning** — Seba broke away from Brabravo to found the realm of Lonavonape.
+- **525 After Reckoning** — Brabravo seized Seba from Lonavonape.
+- **525 After Reckoning** — The realm of Lonavonape was extinguished.
+- **525 After Reckoning** — Brabravo seized Jikhshi from Econadau.
+- **525 After Reckoning** — Brabravo seized Kunqaa from Econadau.
+- **525 After Reckoning** — A golden age dawned over Ebalovento; its cities flourished as never before.
+- **550 After Reckoning** — Brabravo seized Condodiamorrivento from Econadau.
+- **550 After Reckoning** — Brabravo seized Azghuabad from Econadau.
+- **550 After Reckoning** — The realm of Econadau was extinguished.
+- **550 After Reckoning** — Brabravo seized Brafju from Ebalovento.
+- **550 After Reckoning** — A golden age dawned over Brabravo; its cities flourished as never before.
+- **575 After Reckoning** — Brabravo seized Thauknaskvo from Ebalovento.
+- **575 After Reckoning** — Brabravo seized Baunia from Ebalovento.
+- **575 After Reckoning** — Brabravo seized Aiqjaiesh from Ebalovento.
+- **600 After Reckoning** — Brabravo seized Miani from Ebalovento.
+- **600 After Reckoning** — Brabravo seized Jadjairkai from Ebalovento.
+- **600 After Reckoning** — Brabravo seized Reriandovi from Ebalovento.
+- **600 After Reckoning** — Siri broke away from Brabravo to found the realm of Taumoralenra.
+- **600 After Reckoning** — A golden age dawned over Brabravo; its cities flourished as never before.
+- **625 After Reckoning** — Brabravo seized Siri from Taumoralenra.
+- **625 After Reckoning** — The realm of Taumoralenra was extinguished.
+- **625 After Reckoning** — Brabravo seized Thugra from Ebalovento.
+- **625 After Reckoning** — Brabravo seized Emaumar from Ebalovento.
+- **625 After Reckoning** — The realm of Ebalovento was extinguished.
+- **650 After Reckoning** — A golden age dawned over Brabravo; its cities flourished as never before.
+- **700 After Reckoning** — Seba broke away from Brabravo to found the realm of Reopaulenceo.
+- **725 After Reckoning** — Brabravo seized Seba from Reopaulenceo.
+- **725 After Reckoning** — The realm of Reopaulenceo was extinguished.
+- **750 After Reckoning** — Seba broke away from Brabravo to found the realm of Nentenemi.
+- **775 After Reckoning** — Brabravo seized Seba from Nentenemi.
+- **775 After Reckoning** — The realm of Nentenemi was extinguished.
+- **950 After Reckoning** — A golden age dawned over Brabravo; its cities flourished as never before.
+- **975 After Reckoning** — Seba broke away from Brabravo to found the realm of Diabopemar.
+- **1000 After Reckoning** — Brabravo seized Seba from Diabopemar.
 - **1000 After Reckoning** — The realm of Diabopemar was extinguished.
-- **1000 After Reckoning** — A golden age dawned over Ebalovento; its cities flourished as never before.
-- **1025 After Reckoning** — A long drought gripped Emaumar; many perished.
-- **1075 After Reckoning** — A long drought gripped Thugra; many perished.
+- **1025 After Reckoning** — Seba broke away from Brabravo to found the realm of Macirea.
+- **1050 After Reckoning** — Brabravo seized Seba from Macirea.
+- **1050 After Reckoning** — The realm of Macirea was extinguished.
 
 ---
 

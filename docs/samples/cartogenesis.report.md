@@ -142,37 +142,37 @@
 
 ### Cities
 
-- Bee (**capital**, port, trade hub, rich) — Grain, Wine, Horses
-- Miti (trade hub, prosperous) — Grain, Wine, Horses
-- Iabauti (port, trade hub, rich) — Grain, Livestock, Wine, Horses
-- Siamordeco (port, trade hub, rich) — Grain, Livestock, Horses, Wine
+- Bee (**capital**, port, trade hub, rich) — Grain, Wine, Livestock, Horses
+- Miti (trade hub, rich) — Grain, Livestock, Horses, Wine
+- Iabauti (port, trade hub, rich) — Grain, Livestock, Fish, Wine
+- Siamordeco (port, rich) — Livestock, Grain, Wine, Timber
 
 ### Towns
 
-- Tidia (prosperous) — Livestock, Grain, Horses, Timber
-- Raullaso (port, rich) — Livestock, Grain, Fish, Horses
-- Staaullu (port, prosperous) — Livestock, Grain, Horses
-- Braknuheim (modest) — Grain, Timber, Horses
-- Knaustu (port, rich) — Livestock, Grain, Fish, Horses
-- Caulilenau (port, rich) — Fish, Livestock, Grain, Horses
-- Amkhaa (modest) — Livestock, Timber, Horses
-- Jizaqa (port, modest) — Wine, Grain
+- Tidia (prosperous) — Grain, Livestock, Fish, Horses
+- Raullaso (port, prosperous) — Livestock, Grain, Horses, Wine
+- Staaullu (port, trade hub, rich) — Livestock, Grain, Horses, Wine
+- Braknuheim (prosperous) — Grain, Wine, Timber, Horses
+- Knaustu (port, prosperous) — Grain, Livestock, Fish, Horses
+- Caulilenau (port, prosperous) — Grain, Livestock, Timber, Horses
+- Amkhaa (prosperous) — Horses, Livestock, Timber, Fish
+- Jizaqa (port, prosperous) — Livestock, Fish, Horses
 
 ### Villages
 
-- Teollacaullabe (port, prosperous) — Horses, Wine, Grain
-- Maundoteoe (prosperous) — Livestock, Grain, Wine, Horses
-- Maikhaiabad (modest) — Livestock, Wine, Grain
-- Samorvecemar (modest) — Grain, Wine
-- Knaustostu (port, modest) — Grain, Horses
-- Liriabavento (port, prosperous) — Grain, Horses
-- Iiso (poor) — Grain, Wine
-- Jaqqai (modest) — Livestock, Horses, Salt
-- Khakhsharta (modest) — Timber, Wine, Horses
-- Knostgrodavik (port, modest) — Grain, Horses
-- Zasha (prosperous) — Livestock, Wine, Stone, Coal
-- Zese (port, modest) — Horses
-- Urkthoskskei (port, modest) — Horses
+- Teollacaullabe (port, prosperous) — Livestock, Timber, Horses
+- Maundoteoe (prosperous) — Livestock, Fish, Wine, Horses
+- Maikhaiabad (prosperous) — Grain, Livestock, Horses, Wine
+- Samorvecemar (prosperous) — Livestock, Grain, Wine, Horses
+- Knaustostu (port, prosperous) — Grain, Horses, Livestock
+- Liriabavento (port, prosperous) — Grain, Livestock, Fish, Horses
+- Iiso (prosperous) — Grain, Livestock, Horses, Salt
+- Jaqqai (modest) — Livestock, Timber, Horses
+- Khakhsharta (prosperous) — Livestock, Timber, Horses
+- Knostgrodavik (port, prosperous) — Horses, Grain, Fish, Livestock
+- Zasha (prosperous) — Livestock, Coal, Stone, Wine
+- Zese (port, modest) — Livestock, Fish, Salt
+- Urkthoskskei (port, modest) — Livestock
 
 ## Faiths
 
@@ -202,9 +202,9 @@ Followed across 1 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Horses, Grain, Livestock, Wine, Timber
+- **Major exports:** Livestock, Horses, Grain, Wine, Fish
 - **Wealthiest settlement:** Iabauti
-- **Trade hubs:** Bee, Miti, Iabauti, Siamordeco
+- **Trade hubs:** Bee, Miti, Iabauti, Staaullu
 - **Deposits:** Iron ×34, Copper ×26, Gold ×11, Gems ×7, Stone ×79, Coal ×34, Timber ×10, Grain ×51, Livestock ×141, Fish ×11, Furs ×9, Spices ×2, Salt ×32, Horses ×39, Wine ×23
 
 ## Legends of the founding age
@@ -229,9 +229,9 @@ Followed across 1 region(s).
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
 | Dillaaumar | 100 | 28 | 275 | 28 | ascendant |
-| Ghaimru | 100 | 8 | 150 | 0 | extinct |
-| Nomorindopiavento | 100 | 5 | 100 | 0 | extinct |
-| Nopa | 100 | 4 | 100 | 1 | diminished |
+| Nomorindopiavento | 100 | 6 | 125 | 0 | extinct |
+| Ghaimru | 100 | 4 | 100 | 0 | extinct |
+| Nopa | 100 | 3 | 100 | 1 | diminished |
 | Neivia | 100 | 3 | 100 | 0 | extinct |
 | Vauvo | 100 | 2 | 100 | 0 | extinct |
 | Daurnbra | 100 | 2 | 100 | 0 | extinct |
@@ -239,52 +239,60 @@ Followed across 1 region(s).
 ## Chronicle
 
 - **100 After Reckoning** — Dillaaumar seized Greinfjyheim from Daurnbra.
-- **100 After Reckoning** — Ghaimru seized Munqaiabad from Zuse.
-- **100 After Reckoning** — The realm of Zuse was extinguished.
+- **100 After Reckoning** — Dillaaumar seized Mesiasi from Nopa.
 - **125 After Reckoning** — Dillaaumar seized Brauskarndo from Daurnbra.
 - **125 After Reckoning** — Dillaaumar seized Kneibrynu from Daurnbra.
 - **125 After Reckoning** — The realm of Daurnbra was extinguished.
-- **125 After Reckoning** — Dillaaumar seized Mesiasi from Nopa.
-- **125 After Reckoning** — Ghaimru seized Reuabad from Nopa.
+- **125 After Reckoning** — Dillaaumar seized Grobovik from Vauvo.
+- **125 After Reckoning** — Nomorindopiavento seized Munqaiabad from Zuse.
+- **125 After Reckoning** — The realm of Zuse was extinguished.
 - **125 After Reckoning** — A long drought gripped Rumjaikhjaa; many perished.
-- **150 After Reckoning** — Dillaaumar seized Grobovik from Vauvo.
-- **150 After Reckoning** — Ghaimru seized Randopiacaa from Cibia.
-- **150 After Reckoning** — The realm of Cibia was extinguished.
-- **150 After Reckoning** — Ghaimru seized Penalamar from Nopa.
-- **175 After Reckoning** — Dillaaumar seized Dugruskaugard from Vauvo.
-- **175 After Reckoning** — The realm of Vauvo was extinguished.
-- **175 After Reckoning** — Dillaaumar seized Kizka from Nomorindopiavento.
-- **175 After Reckoning** — Dillaaumar seized Rashiur from Nomorindopiavento.
-- **175 After Reckoning** — Dillaaumar seized Rumjaikhjaa from Nomorindopiavento.
+- **150 After Reckoning** — Dillaaumar seized Dugruskaugard from Vauvo.
+- **150 After Reckoning** — The realm of Vauvo was extinguished.
+- **150 After Reckoning** — Dillaaumar seized Reuabad from Nopa.
+- **150 After Reckoning** — Dillaaumar seized Rialenlelenme from Neivia.
+- **150 After Reckoning** — A plague swept Khadtu; many perished.
+- **175 After Reckoning** — Dillaaumar seized Randopiacaa from Cibia.
+- **175 After Reckoning** — The realm of Cibia was extinguished.
+- **175 After Reckoning** — Dillaaumar seized Tariadeti from Neivia.
+- **175 After Reckoning** — Dillaaumar seized Khadtu from Neivia.
+- **175 After Reckoning** — The realm of Neivia was extinguished.
 - **175 After Reckoning** — Grobovik turned from the Faith of Dogrbavik to the Way of Nicaudi.
-- **200 After Reckoning** — Dillaaumar seized Riipi from Nomorindopiavento.
-- **200 After Reckoning** — Dillaaumar seized Viamala from Nomorindopiavento.
-- **200 After Reckoning** — The realm of Nomorindopiavento was extinguished.
-- **200 After Reckoning** — Dillaaumar seized Rialenlelenme from Neivia.
+- **175 After Reckoning** — Tariadeti turned from the Faith of Dogrbavik to the Way of Nicaudi.
+- **200 After Reckoning** — Dillaaumar seized Penalamar from Nopa.
+- **200 After Reckoning** — Dillaaumar seized Aakhmasha from Ghaimru.
+- **200 After Reckoning** — Dillaaumar seized Aasukha from Ghaimru.
 - **200 After Reckoning** — A long drought gripped Reuabad; many perished.
-- **225 After Reckoning** — Dillaaumar seized Tariadeti from Neivia.
-- **225 After Reckoning** — Dillaaumar seized Khadtu from Neivia.
-- **225 After Reckoning** — The realm of Neivia was extinguished.
-- **225 After Reckoning** — Dillaaumar seized Reuabad from Ghaimru.
-- **225 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
-- **250 After Reckoning** — Dillaaumar seized Penalamar from Ghaimru.
-- **250 After Reckoning** — Dillaaumar seized Aakhmasha from Ghaimru.
+- **225 After Reckoning** — Dillaaumar seized Makha from Ghaimru.
+- **225 After Reckoning** — Dillaaumar seized Kizka from Nomorindopiavento.
+- **225 After Reckoning** — Dillaaumar seized Rashiur from Nomorindopiavento.
+- **225 After Reckoning** — A long drought gripped Greinfjyheim; many perished.
+- **225 After Reckoning** — A golden age dawned over Nomorindopiavento; its cities flourished as never before.
 - **250 After Reckoning** — Dillaaumar seized Maghu from Ghaimru.
-- **250 After Reckoning** — Dillaaumar seized Aasukha from Ghaimru.
-- **275 After Reckoning** — Dillaaumar seized Makha from Ghaimru.
-- **275 After Reckoning** — Dillaaumar seized Munqaiabad from Ghaimru.
-- **275 After Reckoning** — Dillaaumar seized Randopiacaa from Ghaimru.
-- **275 After Reckoning** — The realm of Ghaimru was extinguished.
-- **375 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
-- **600 After Reckoning** — A plague swept Makha; many perished.
-- **750 After Reckoning** — A plague swept Lintenilensaumar; many perished.
-- **775 After Reckoning** — Tariadeti turned from the Faith of Dogrbavik to the Way of Nicaudi.
-- **800 After Reckoning** — Maghu turned from the Rite of Umerreabad to the Way of Nicaudi.
-- **800 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
-- **850 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
-- **900 After Reckoning** — A plague swept Aakhmasha; many perished.
-- **925 After Reckoning** — A plague swept Elaeeleowynly; many perished.
+- **250 After Reckoning** — The realm of Ghaimru was extinguished.
+- **250 After Reckoning** — Dillaaumar seized Viamala from Nomorindopiavento.
+- **250 After Reckoning** — Dillaaumar seized Rumjaikhjaa from Nomorindopiavento.
+- **250 After Reckoning** — A long drought gripped Rialenlelenme; many perished.
+- **275 After Reckoning** — Dillaaumar seized Riipi from Nomorindopiavento.
+- **275 After Reckoning** — Dillaaumar seized Munqaiabad from Nomorindopiavento.
+- **275 After Reckoning** — The realm of Nomorindopiavento was extinguished.
+- **325 After Reckoning** — A long drought gripped Tariadeti; many perished.
+- **375 After Reckoning** — A plague swept Lintenilensaumar; many perished.
+- **425 After Reckoning** — A long drought gripped Khadtu; many perished.
+- **450 After Reckoning** — A long drought gripped Reuabad; many perished.
+- **475 After Reckoning** — A long drought gripped Greinfjyheim; many perished.
+- **525 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
+- **725 After Reckoning** — A plague swept Greinfjyheim; many perished.
+- **750 After Reckoning** — A plague swept Aakhmasha; many perished.
+- **825 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
+- **875 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
+- **900 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
+- **975 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
+- **1000 After Reckoning** — A plague swept Vabo; many perished.
+- **1025 After Reckoning** — A plague swept Vabo; many perished.
 - **1025 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
+- **1050 After Reckoning** — A plague swept Vabo; many perished.
+- **1075 After Reckoning** — A long drought gripped Khadtu; many perished.
 
 ---
 

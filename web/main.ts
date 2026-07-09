@@ -8,9 +8,18 @@
 // any point; clicking pins a detail card.
 
 import type { World } from "./engine/world.ts";
-import { BIOME_NAMES } from "./engine/biomes.ts";
-import { RESOURCE_NAMES } from "./engine/resources.ts";
+import { BIOME_NAMES, BIOME_COLORS } from "./engine/biomes.ts";
+import { RESOURCE_NAMES, RESOURCE_COLORS } from "./engine/resources.ts";
 import type { Settlement } from "./engine/settlements.ts";
+
+// Faith tint palette — mirrors FAITH_PALETTE in src/render.ts.
+const FAITH_PALETTE = [
+  [196, 120, 90],
+  [96, 150, 180],
+  [150, 170, 100],
+  [170, 110, 170],
+  [200, 175, 90],
+];
 
 // Generation runs in a module worker so the UI never freezes.
 const worker = new Worker(new URL("./worker.js", import.meta.url), {
@@ -92,6 +101,8 @@ function clampView(): void {
   view.oy = Math.min(0, Math.max(minOff, view.oy));
 }
 
+let highlight: { x: number; y: number; start: number } | null = null;
+
 function redraw(): void {
   if (!current) return;
   clampView();
@@ -101,6 +112,112 @@ function redraw(): void {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.imageSmoothingEnabled = view.scale < 2.5;
   ctx.drawImage(offscreen, 0, 0, w, h, view.ox, view.oy, w * view.scale, h * view.scale);
+  drawOverlays();
+}
+
+function dpr(): number {
+  return canvas.width / Math.max(1, canvas.getBoundingClientRect().width);
+}
+
+function drawLabel(sx: number, sy: number, text: string, color: string, font: number): void {
+  ctx.font = `600 ${font}px Georgia, "Times New Roman", serif`;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.lineWidth = Math.max(2, font / 4.5);
+  ctx.strokeStyle = "rgba(8,10,14,0.92)";
+  ctx.lineJoin = "round";
+  ctx.strokeText(text, sx, sy);
+  ctx.fillStyle = color;
+  ctx.fillText(text, sx, sy);
+}
+
+/** Draw feature labels, city labels (when zoomed), and any fly-to highlight. */
+function drawOverlays(): void {
+  if (!current) return;
+  const d = dpr();
+  const inBounds = (sx: number, sy: number) =>
+    sx > -80 && sy > -20 && sx < canvas.width + 80 && sy < canvas.height + 20;
+
+  // Named features — always visible so they're findable.
+  const ffont = Math.round(12 * d);
+  for (const f of current.history.features) {
+    const sx = f.x * view.scale + view.ox;
+    const sy = f.y * view.scale + view.oy;
+    if (!inBounds(sx, sy)) continue;
+    const glyph = f.kind === "peak" ? "▲" : f.kind === "lake" ? "◆" : "≈";
+    const prefix = f.kind === "peak" ? "Mt. " : f.kind === "lake" ? "Lake " : "R. ";
+    // Marker
+    ctx.fillStyle = "#eafcff";
+    ctx.strokeStyle = "rgba(8,10,14,0.92)";
+    ctx.lineWidth = 2;
+    drawLabel(sx, sy, glyph, "#eafcff", ffont);
+    drawLabel(sx, sy - ffont * 1.15, prefix + f.name, "#eafcff", Math.round(ffont * 0.92));
+  }
+
+  // City / capital labels — only when zoomed in enough to avoid clutter.
+  const fitScale = canvas.width / current.elevation.width;
+  if (view.scale > fitScale * 1.6) {
+    const cfont = Math.round(11 * d);
+    for (const s of current.settlements.settlements) {
+      if (s.tier === "village") continue;
+      if (s.tier === "town" && view.scale < fitScale * 2.4) continue;
+      const sx = s.x * view.scale + view.ox;
+      const sy = s.y * view.scale + view.oy;
+      if (!inBounds(sx, sy)) continue;
+      drawLabel(sx, sy - cfont, s.name, s.isCapital ? "#ffd24a" : "#fff4dc", cfont);
+    }
+  }
+
+  // Fly-to highlight ring (pulses once the camera arrives, then fades out).
+  if (highlight) {
+    const age = performance.now() - highlight.start;
+    if (age < 0) {
+      // Camera still flying — check back soon (start is in the future).
+      setTimeout(() => redraw(), 60);
+    } else if (age < 1600) {
+      const sx = highlight.x * view.scale + view.ox;
+      const sy = highlight.y * view.scale + view.oy;
+      const p = age / 1600; // 0..1, always non-negative here
+      ctx.beginPath();
+      ctx.arc(sx, sy, (7 + p * 26) * d, 0, Math.PI * 2);
+      ctx.strokeStyle = `rgba(255,210,90,${(1 - p) * 0.95})`;
+      ctx.lineWidth = 3 * d;
+      ctx.stroke();
+      setTimeout(() => redraw(), 60);
+    } else {
+      highlight = null;
+    }
+  }
+}
+
+/**
+ * Smoothly pan+zoom so the world point (wx,wy) is centered, then pulse it.
+ * Driven by setTimeout (not rAF) and stepped synchronously first, so it applies
+ * even when the tab isn't actively painting.
+ */
+function flyTo(wx: number, wy: number): void {
+  if (!current) return;
+  const fitScale = canvas.width / current.elevation.width;
+  const targetScale = Math.max(view.scale, fitScale * 2.6);
+  const from = { scale: view.scale, ox: view.ox, oy: view.oy };
+  const to = {
+    scale: targetScale,
+    ox: canvas.width / 2 - wx * targetScale,
+    oy: canvas.height / 2 - wy * targetScale,
+  };
+  const t0 = performance.now();
+  const dur = 600;
+  highlight = { x: wx, y: wy, start: t0 + dur };
+  const step = () => {
+    const t = Math.min(1, (performance.now() - t0) / dur);
+    const e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    view.scale = from.scale + (to.scale - from.scale) * e;
+    view.ox = from.ox + (to.ox - from.ox) * e;
+    view.oy = from.oy + (to.oy - from.oy) * e;
+    redraw();
+    if (t < 1) setTimeout(step, 16);
+  };
+  step();
 }
 
 // --- Coordinate mapping: client (mouse) → world cell. ---
@@ -122,6 +239,22 @@ function nearestSettlement(wx: number, wy: number, maxCells: number): Settlement
     if (d < bestD) {
       bestD = d;
       best = s;
+    }
+  }
+  return best;
+}
+
+function nearestDeposit(wx: number, wy: number, maxCells: number) {
+  if (!current) return null;
+  let best = null;
+  let bestD = maxCells * maxCells;
+  for (const dep of current.resources.deposits) {
+    const dx = dep.x - wx;
+    const dy = dep.y - wy;
+    const d = dx * dx + dy * dy;
+    if (d < bestD) {
+      bestD = d;
+      best = dep;
     }
   }
   return best;
@@ -170,6 +303,15 @@ function showTip(clientX: number, clientY: number): void {
       .filter(Boolean)
       .join(", ");
     rows.push(`<div class="trow cap">${s.name} — ${tags}</div>`);
+  }
+  // On the Resources layer, identify the deposit under the cursor.
+  if (activeLayer === "resources") {
+    const dep = nearestDeposit(world.x, world.y, 3);
+    if (dep) {
+      rows.push(
+        `<div class="trow cap">${RESOURCE_NAMES[dep.kind]} deposit (richness ${(dep.richness * 100).toFixed(0)})</div>`,
+      );
+    }
   }
   tip.innerHTML = `<div class="tname">${place}</div>${rows.join("")}`;
   tip.hidden = false;
@@ -332,8 +474,45 @@ function renderInfo(world: World): void {
     .join("");
 
   // The emergent chronicle from the simulation (the world's real history).
+  // Each entry is clickable — it flies the map to where the event happened.
   $("chronicle").innerHTML = world.simulation.events
-    .map((e) => `<li><span class="yr">${e.year} AR</span> ${escapeHtml(e.text)}</li>`)
+    .map(
+      (e) =>
+        `<li class="ev" data-x="${e.x}" data-y="${e.y}" title="Find on map">` +
+        `<span class="yr">${e.year} AR</span> ${escapeHtml(e.text)}</li>`,
+    )
+    .join("");
+}
+
+/** A legend keyed to the active thematic layer (resources / biomes / faiths). */
+function updateLegend(): void {
+  const el = $("legend");
+  if (!current) {
+    el.innerHTML = "";
+    return;
+  }
+  let items: Array<[string, number[]]> = [];
+  if (activeLayer === "resources") {
+    const kinds = [...new Set(current.resources.deposits.map((d) => d.kind))].sort((a, b) => a - b);
+    items = kinds.map((k) => [RESOURCE_NAMES[k], RESOURCE_COLORS[k]]);
+  } else if (activeLayer === "biome") {
+    const bset = new Set<number>();
+    for (let i = 0; i < current.biomes.ids.length; i++) bset.add(current.biomes.ids[i]);
+    items = [...bset]
+      .filter((b) => b > 1)
+      .sort((a, b) => a - b)
+      .map((b) => [BIOME_NAMES[b as keyof typeof BIOME_NAMES], BIOME_COLORS[b as keyof typeof BIOME_COLORS]]);
+  } else if (activeLayer === "faiths") {
+    items = current.religion.faiths.map((f, i) => [
+      `${f.name} — ${f.deity.domain}`,
+      FAITH_PALETTE[i % FAITH_PALETTE.length],
+    ]);
+  }
+  el.innerHTML = items
+    .map(
+      ([name, c]) =>
+        `<span class="lg"><i style="background:rgb(${c[0]},${c[1]},${c[2]})"></i>${name}</span>`,
+    )
     .join("");
 }
 
@@ -358,6 +537,7 @@ worker.onmessage = (e: MessageEvent) => {
   sizeCanvas();
   fitView();
   redraw();
+  updateLegend();
   canvas.classList.remove("busy");
   $("status").textContent = `Generated in ${ms} ms · drag to pan, scroll to zoom, hover to inspect`;
   const url = new URL(location.href);
@@ -396,6 +576,7 @@ function buildTabs(): void {
       b.setAttribute("aria-pressed", "true");
       renderOffscreen();
       redraw();
+      updateLegend();
     });
     tabs.appendChild(b);
   }
@@ -432,6 +613,14 @@ function init(): void {
     sizeCanvas();
     clampView();
     redraw();
+  });
+  // Click a chronicle entry → fly the map to where it happened.
+  $("chronicle").addEventListener("click", (ev) => {
+    const li = (ev.target as HTMLElement).closest("li.ev") as HTMLElement | null;
+    if (!li) return;
+    const x = Number(li.getAttribute("data-x"));
+    const y = Number(li.getAttribute("data-y"));
+    if (Number.isFinite(x) && Number.isFinite(y)) flyTo(x, y);
   });
 
   const urlSeed = new URL(location.href).searchParams.get("seed");

@@ -9,7 +9,7 @@
 - **Climate & life:** dominant biome **Savanna**, 14 biomes in all
 - **Peoples:** 19 regions, 13 settlements, 2 realms
 - **Capital:** Niniri, seat of House Popialenre
-- **Dominant power:** Neneo (of 3 surviving realm(s))
+- **Dominant power:** Neneo (of 1 surviving realm(s))
 - **The present year:** 1164 After Reckoning
 
 ## Notable features
@@ -99,25 +99,25 @@
 
 ### Cities
 
-- Niniri (**capital**, port, trade hub, rich) — Livestock, Grain, Horses, Wine
-- Dendomau (port, prosperous) — Livestock, Grain, Spices, Timber
+- Niniri (**capital**, port, trade hub, rich) — Grain, Horses, Livestock, Fish
+- Dendomau (port, prosperous) — Grain, Livestock, Timber, Wine
 
 ### Towns
 
-- Pauvassoca (modest) — Grain, Timber, Horses
-- Naubatau (port, trade hub, prosperous) — Grain, Horses, Wine
-- Qeshqaa (port, modest) — Horses, Grain, Wine
-- Cimorse (port, rich) — Livestock, Grain, Fish, Horses
+- Pauvassoca (prosperous) — Grain, Timber, Livestock, Wine
+- Naubatau (port, trade hub, prosperous) — Grain, Livestock, Wine, Timber
+- Qeshqaa (port, modest) — Livestock, Horses
+- Cimorse (port, prosperous) — Livestock, Grain, Fish, Timber
 
 ### Villages
 
-- Isa (modest) — Livestock, Timber
-- Jarai (port, prosperous) — Livestock, Horses
-- Khakha (modest) — Timber, Grain, Wine
-- Tezashaur (modest) — Wine
-- Aju (modest) — Wine, Timber, Horses
-- Sidau (port, rich) — Fish, Livestock, Grain, Horses
-- Sekeri (poor)
+- Isa (modest) — Livestock, Horses, Spices
+- Jarai (port, modest) — Livestock, Fish
+- Khakha (prosperous) — Timber, Horses, Fish, Wine
+- Tezashaur (prosperous) — Livestock, Horses
+- Aju (poor) — Livestock
+- Sidau (port, modest) — Horses, Livestock, Grain
+- Sekeri (prosperous) — Grain, Wine, Livestock
 
 ## Faiths
 
@@ -135,7 +135,7 @@ Followed across 6 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Grain, Horses, Livestock, Wine, Timber
+- **Major exports:** Livestock, Grain, Horses, Timber, Wine
 - **Wealthiest settlement:** Niniri
 - **Trade hubs:** Niniri, Naubatau
 - **Deposits:** Iron ×15, Copper ×11, Gold ×4, Gems ×3, Stone ×35, Coal ×15, Timber ×9, Grain ×23, Livestock ×92, Fish ×10, Furs ×1, Spices ×2, Salt ×6, Horses ×31, Wine ×12
@@ -153,13 +153,13 @@ Followed across 6 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 3 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 1 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Neneo | 100 | 9 | 150 | 9 | ascendant |
-| Retaa | 100 | 5 | 100 | 5 | ascendant |
-| Seomorrauleo | 100 | 5 | 100 | 5 | ascendant |
+| Neneo | 100 | 19 | 250 | 19 | ascendant |
+| Retaa | 100 | 5 | 100 | 0 | extinct |
+| Seomorrauleo | 100 | 5 | 100 | 0 | extinct |
 | Saimkhe | 100 | 2 | 100 | 0 | extinct |
 
 ## Chronicle
@@ -168,20 +168,38 @@ Followed across 6 region(s).
 - **125 After Reckoning** — Neneo seized Shaajakhmaaesh from Saimkhe.
 - **150 After Reckoning** — Neneo seized Qaishzuur from Saimkhe.
 - **150 After Reckoning** — The realm of Saimkhe was extinguished.
-- **200 After Reckoning** — A plague swept Qaishzuur; many perished.
-- **200 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
-- **250 After Reckoning** — A long drought gripped Khazeqa; many perished.
-- **350 After Reckoning** — A plague swept Khazeqa; many perished.
-- **450 After Reckoning** — A plague swept Sireovento; many perished.
-- **500 After Reckoning** — A long drought gripped Mamorbinade; many perished.
-- **625 After Reckoning** — A plague swept Eteossora; many perished.
-- **650 After Reckoning** — A golden age dawned over Retaa; its cities flourished as never before.
-- **825 After Reckoning** — A long drought gripped Jishsaaesh; many perished.
-- **850 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
-- **900 After Reckoning** — A plague swept Khekai; many perished.
-- **1000 After Reckoning** — A plague swept Qaishzuur; many perished.
-- **1000 After Reckoning** — A golden age dawned over Seomorrauleo; its cities flourished as never before.
-- **1075 After Reckoning** — A golden age dawned over Retaa; its cities flourished as never before.
+- **150 After Reckoning** — Neneo seized Khadshekhaa from Retaa.
+- **150 After Reckoning** — Neneo seized Mollabide from Retaa.
+- **175 After Reckoning** — Neneo seized Dygrgryrnkno from Retaa.
+- **175 After Reckoning** — Neneo seized Saqaesh from Seomorrauleo.
+- **200 After Reckoning** — Neneo seized Rantemapa from Retaa.
+- **200 After Reckoning** — Neneo seized Jaishghiabad from Retaa.
+- **200 After Reckoning** — The realm of Retaa was extinguished.
+- **200 After Reckoning** — Neneo seized Ketaiqaaabad from Seomorrauleo.
+- **200 After Reckoning** — A plague swept Dygrgryrnkno; many perished.
+- **225 After Reckoning** — Neneo seized Mamorbinade from Seomorrauleo.
+- **225 After Reckoning** — Neneo seized Sireovento from Seomorrauleo.
+- **250 After Reckoning** — Neneo seized Jarja from Seomorrauleo.
+- **250 After Reckoning** — The realm of Seomorrauleo was extinguished.
+- **250 After Reckoning** — Mollabide turned from the Rite of Peonabeteo to the Cult of Jimakhiur.
+- **250 After Reckoning** — A long drought gripped Eteossora; many perished.
+- **275 After Reckoning** — A long drought gripped Khadshekhaa; many perished.
+- **325 After Reckoning** — A long drought gripped Sireovento; many perished.
+- **325 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
+- **350 After Reckoning** — Jarja turned from the Cult of Jimakhiur to the Rite of Peonabeteo.
+- **425 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
+- **475 After Reckoning** — A long drought gripped Mamorbinade; many perished.
+- **600 After Reckoning** — A long drought gripped Eteossora; many perished.
+- **625 After Reckoning** — A plague swept Jarja; many perished.
+- **650 After Reckoning** — A plague swept Mollabide; many perished.
+- **675 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
+- **800 After Reckoning** — A plague swept Khadshekhaa; many perished.
+- **800 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
+- **875 After Reckoning** — Mamorbinade turned from the Cult of Jimakhiur to the Rite of Peonabeteo.
+- **925 After Reckoning** — A long drought gripped Sireovento; many perished.
+- **1000 After Reckoning** — A plague swept Dygrgryrnkno; many perished.
+- **1050 After Reckoning** — A long drought gripped Qaishzuur; many perished.
+- **1050 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
 
 ---
 

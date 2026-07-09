@@ -9,7 +9,7 @@
 - **Climate & life:** dominant biome **Grassland**, 16 biomes in all
 - **Peoples:** 30 regions, 24 settlements, 4 realms
 - **Capital:** Timortepimar, seat of House Beodaveo
-- **Dominant power:** Tariamentetau (of 2 surviving realm(s))
+- **Dominant power:** Tariamentetau (of 3 surviving realm(s))
 - **The present year:** 927 After Reckoning
 
 ## Notable features
@@ -144,36 +144,36 @@
 
 ### Cities
 
-- Timortepimar (**capital**, port, trade hub, rich) — Grain, Livestock, Wine, Horses
-- Liaca (port, trade hub, prosperous) — Grain, Horses, Wine
-- Dellaeollano (port, prosperous) — Grain, Livestock, Spices, Horses
-- Neollacissoboa (port, prosperous) — Grain, Livestock, Horses, Wine
+- Timortepimar (**capital**, port, trade hub, rich) — Livestock, Grain, Wine, Horses
+- Liaca (port, trade hub, prosperous) — Grain, Livestock, Horses, Wine
+- Dellaeollano (port, prosperous) — Horses, Wine, Livestock
+- Neollacissoboa (port, prosperous) — Horses, Grain, Livestock
 
 ### Towns
 
-- Vomemeo (port, modest) — Grain, Horses
-- Nendorilivento (port, prosperous) — Livestock, Grain, Horses
-- Saumavau (port, modest) — Grain, Timber, Wine
-- Sodeote (modest) — Livestock, Grain, Horses
-- Ciaudi (port, prosperous) — Livestock, Timber, Grain, Horses
-- Collasamar (prosperous) — Livestock, Grain, Wine, Horses
-- Karqa (prosperous) — Livestock, Grain, Wine, Horses
+- Vomemeo (port, trade hub, rich) — Grain, Livestock, Wine, Fish
+- Nendorilivento (port, prosperous) — Grain, Livestock, Horses, Wine
+- Saumavau (port, prosperous) — Grain, Livestock, Timber, Spices
+- Sodeote (prosperous) — Livestock, Grain, Timber, Wine
+- Ciaudi (port, prosperous) — Livestock, Horses, Fish, Grain
+- Collasamar (prosperous) — Grain, Livestock, Wine, Horses
+- Karqa (prosperous) — Horses, Livestock, Grain, Wine
 
 ### Villages
 
-- Skysky (port, modest) — Grain, Horses
-- Greiskskustsky (port, prosperous) — Grain, Horses, Timber
-- Sontere (port, modest) — Grain, Horses
-- Voici (port, modest) — Horses
-- Tamorria (modest) — Grain, Wine, Stone
-- Jisaikaabad (modest) — Livestock, Wine, Grain
-- Knaullbroskstaheim (port, modest) — Grain, Horses
-- Taudolenvo (port, trade hub, prosperous) — Livestock, Fish, Grain, Horses
-- Memjanshu (poor)
-- Jaashaaqqa (modest) — Timber, Wine
-- Grarkskauskdy (port, trade hub, prosperous) — Fish, Livestock, Timber, Grain
-- Qakhami (port, modest) — Livestock, Horses, Salt
-- Jazjansa (modest) — Horses, Livestock
+- Skysky (port, prosperous) — Livestock, Grain, Timber, Fish
+- Greiskskustsky (port, trade hub, prosperous) — Grain, Livestock, Fish, Horses
+- Sontere (port, prosperous) — Grain, Livestock, Fish, Horses
+- Voici (port, modest) — Livestock, Fish, Grain, Horses
+- Tamorria (prosperous) — Grain, Livestock, Wine, Stone
+- Jisaikaabad (prosperous) — Livestock, Horses, Wine, Stone
+- Knaullbroskstaheim (port, prosperous) — Grain, Livestock, Timber, Horses
+- Taudolenvo (port, prosperous) — Grain, Livestock, Horses
+- Memjanshu (prosperous) — Livestock, Grain, Wine, Horses
+- Jaashaaqqa (modest) — Livestock
+- Grarkskauskdy (port, prosperous) — Livestock, Grain, Timber, Horses
+- Qakhami (port, modest) — Fish, Livestock, Horses
+- Jazjansa (modest) — Horses, Spices, Livestock
 
 ## Faiths
 
@@ -203,9 +203,9 @@ Followed across 2 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Grain, Horses, Livestock, Wine, Timber
+- **Major exports:** Livestock, Grain, Horses, Wine, Fish
 - **Wealthiest settlement:** Timortepimar
-- **Trade hubs:** Timortepimar, Liaca, Taudolenvo, Grarkskauskdy
+- **Trade hubs:** Timortepimar, Liaca, Vomemeo, Greiskskustsky
 - **Deposits:** Iron ×45, Copper ×34, Gold ×13, Gems ×8, Stone ×72, Coal ×30, Timber ×10, Grain ×48, Livestock ×135, Fish ×12, Furs ×4, Spices ×2, Salt ×24, Horses ×39, Wine ×19
 
 ## Legends of the founding age
@@ -226,17 +226,17 @@ Followed across 2 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 2 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 3 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Tariamentetau | 100 | 28 | 350 | 28 | ascendant |
-| Benaveo | 100 | 7 | 225 | 0 | extinct |
+| Tariamentetau | 100 | 16 | 250 | 16 | ascendant |
+| Benaveo | 100 | 12 | 200 | 12 | ascendant |
 | Sakhjaur | 100 | 5 | 100 | 2 | diminished |
 | Sade | 100 | 4 | 100 | 0 | extinct |
-| Diratau | 100 | 4 | 100 | 0 | extinct |
+| Diratau | 100 | 3 | 100 | 0 | extinct |
+| Mane | 100 | 3 | 100 | 0 | extinct |
 | Parallalia | 100 | 3 | 100 | 0 | extinct |
-| Mane | 100 | 2 | 100 | 0 | extinct |
 
 ## Chronicle
 
@@ -245,65 +245,43 @@ Followed across 2 region(s).
 - **100 After Reckoning** — Benaveo seized Pideonaco from Bassomi.
 - **100 After Reckoning** — The realm of Bassomi was extinguished.
 - **100 After Reckoning** — Tariamentetau seized Rudkeesh from Sakhjaur.
-- **100 After Reckoning** — Tariamentetau seized Khikheshi from Mane.
-- **100 After Reckoning** — A plague swept Liallaa; many perished.
-- **125 After Reckoning** — Tariamentetau seized Daura from Mane.
-- **125 After Reckoning** — Tariamentetau seized Zaidghaidtaa from Sakhjaur.
-- **125 After Reckoning** — Benaveo seized Aazrai from Diratau.
-- **150 After Reckoning** — Tariamentetau seized Vandvovo from Mane.
-- **150 After Reckoning** — The realm of Mane was extinguished.
-- **150 After Reckoning** — Tariamentetau seized Khikhizqaa from Sakhjaur.
-- **150 After Reckoning** — A plague swept Pideonaco; many perished.
-- **175 After Reckoning** — Tariamentetau seized Qezire from Sakhjaur.
-- **175 After Reckoning** — Tariamentetau seized Liallaa from Diratau.
-- **175 After Reckoning** — Tariamentetau seized Vaussoalea from Diratau.
-- **175 After Reckoning** — A long drought gripped Graustbugard; many perished.
-- **200 After Reckoning** — Tariamentetau seized Saashzima from Diratau.
+- **100 After Reckoning** — Tariamentetau seized Vaussoalea from Diratau.
+- **125 After Reckoning** — Tariamentetau seized Matemia from Sade.
+- **125 After Reckoning** — Benaveo seized Dianaaumar from Parallalia.
+- **125 After Reckoning** — Benaveo seized Doe from Parallalia.
+- **150 After Reckoning** — Benaveo seized Fjeisky from Parallalia.
+- **150 After Reckoning** — The realm of Parallalia was extinguished.
+- **150 After Reckoning** — Benaveo seized Shemsumsi from Sade.
+- **150 After Reckoning** — Tariamentetau seized Kneirkstaudogard from Sade.
+- **150 After Reckoning** — Tariamentetau seized Nalensita from Sade.
+- **150 After Reckoning** — The realm of Sade was extinguished.
+- **150 After Reckoning** — A long drought gripped Kamaesh; many perished.
+- **175 After Reckoning** — Tariamentetau seized Zaidghaidtaa from Sakhjaur.
+- **175 After Reckoning** — Tariamentetau seized Khikhizqaa from Sakhjaur.
+- **175 After Reckoning** — Benaveo seized Saashzima from Diratau.
+- **175 After Reckoning** — A golden age dawned over Benaveo; its cities flourished as never before.
+- **200 After Reckoning** — Tariamentetau seized Qezire from Sakhjaur.
+- **200 After Reckoning** — Benaveo seized Liallaa from Diratau.
+- **200 After Reckoning** — Benaveo seized Aazrai from Diratau.
 - **200 After Reckoning** — The realm of Diratau was extinguished.
-- **200 After Reckoning** — Tariamentetau seized Matemia from Sade.
-- **200 After Reckoning** — Thabo broke away from Tariamentetau to found the realm of Dallgro.
-- **225 After Reckoning** — Tariamentetau seized Thabo from Dallgro.
-- **225 After Reckoning** — The realm of Dallgro was extinguished.
-- **225 After Reckoning** — Tariamentetau seized Fjeisky from Parallalia.
-- **225 After Reckoning** — Benaveo seized Dianaaumar from Parallalia.
-- **225 After Reckoning** — A long drought gripped Dollva; many perished.
-- **250 After Reckoning** — Tariamentetau seized Doe from Parallalia.
-- **250 After Reckoning** — The realm of Parallalia was extinguished.
-- **250 After Reckoning** — Tariamentetau seized Kneirkstaudogard from Sade.
-- **250 After Reckoning** — Thabo broke away from Tariamentetau to found the realm of Arkknurnu.
-- **250 After Reckoning** — A long drought gripped Kneirkstaudogard; many perished.
-- **275 After Reckoning** — Tariamentetau seized Thabo from Arkknurnu.
-- **275 After Reckoning** — The realm of Arkknurnu was extinguished.
-- **275 After Reckoning** — Tariamentetau seized Nalensita from Sade.
-- **300 After Reckoning** — Tariamentetau seized Shemsumsi from Sade.
-- **300 After Reckoning** — The realm of Sade was extinguished.
-- **300 After Reckoning** — Tariamentetau seized Kamaesh from Benaveo.
-- **300 After Reckoning** — Tariamentetau seized Pabacamar from Benaveo.
-- **300 After Reckoning** — Tariamentetau seized Khuntazai from Benaveo.
-- **325 After Reckoning** — Tariamentetau seized Aazrai from Benaveo.
-- **325 After Reckoning** — Tariamentetau seized Dianaaumar from Benaveo.
-- **350 After Reckoning** — Tariamentetau seized Pideonaco from Benaveo.
-- **350 After Reckoning** — Tariamentetau seized Tatamorcomar from Benaveo.
-- **350 After Reckoning** — The realm of Benaveo was extinguished.
-- **350 After Reckoning** — A plague swept Liamar; many perished.
-- **350 After Reckoning** — A golden age dawned over Tariamentetau; its cities flourished as never before.
-- **400 After Reckoning** — A long drought gripped Shemsumsi; many perished.
-- **450 After Reckoning** — A plague swept Vaussoalea; many perished.
-- **475 After Reckoning** — A golden age dawned over Tariamentetau; its cities flourished as never before.
-- **550 After Reckoning** — A plague swept Doe; many perished.
-- **575 After Reckoning** — Aazrai turned from the Faith of Notiare to the Faith of Maajai.
-- **600 After Reckoning** — A long drought gripped Matemia; many perished.
-- **650 After Reckoning** — A long drought gripped Aazrai; many perished.
-- **650 After Reckoning** — A golden age dawned over Tariamentetau; its cities flourished as never before.
-- **725 After Reckoning** — A long drought gripped Liallaa; many perished.
+- **200 After Reckoning** — Tariamentetau seized Vandvovo from Mane.
+- **225 After Reckoning** — Tariamentetau seized Khikheshi from Mane.
+- **225 After Reckoning** — A plague swept Shemsumsi; many perished.
+- **250 After Reckoning** — Tariamentetau seized Daura from Mane.
+- **250 After Reckoning** — The realm of Mane was extinguished.
+- **250 After Reckoning** — Graustbugard turned from the Way of Starnhry to the Faith of Notiare.
+- **350 After Reckoning** — A long drought gripped Saashzima; many perished.
+- **550 After Reckoning** — A plague swept Pabacamar; many perished.
+- **675 After Reckoning** — A long drought gripped Khuntazai; many perished.
+- **675 After Reckoning** — A golden age dawned over Tariamentetau; its cities flourished as never before.
 - **725 After Reckoning** — A golden age dawned over Tariamentetau; its cities flourished as never before.
 - **750 After Reckoning** — A golden age dawned over Tariamentetau; its cities flourished as never before.
-- **850 After Reckoning** — A plague swept Zaidghaidtaa; many perished.
-- **850 After Reckoning** — A golden age dawned over Tariamentetau; its cities flourished as never before.
-- **900 After Reckoning** — A plague swept Doe; many perished.
-- **925 After Reckoning** — A long drought gripped Beriarico; many perished.
-- **950 After Reckoning** — A plague swept Khuntazai; many perished.
-- **950 After Reckoning** — A golden age dawned over Tariamentetau; its cities flourished as never before.
+- **900 After Reckoning** — A golden age dawned over Benaveo; its cities flourished as never before.
+- **925 After Reckoning** — A golden age dawned over Tariamentetau; its cities flourished as never before.
+- **950 After Reckoning** — A long drought gripped Kamaesh; many perished.
+- **975 After Reckoning** — A golden age dawned over Tariamentetau; its cities flourished as never before.
+- **1000 After Reckoning** — A plague swept Pideonaco; many perished.
+- **1025 After Reckoning** — A plague swept Matemia; many perished.
 
 ---
 

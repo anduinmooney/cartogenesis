@@ -42,6 +42,9 @@ import { makeName, languageById } from "./names.js";
                   
                   
                
+                                                                            
+            
+            
  
 
                                   
@@ -260,7 +263,7 @@ export function generateSimulation(
       if (pop > cap * 1.15) {
         pop *= 0.82;
         if (rng.next() < 0.15) {
-          events.push({ year, type: "famine", text: `Famine struck ${r.name}; the fields could not feed its people.` });
+          events.push({ year, type: "famine", text: `Famine struck ${r.name}; the fields could not feed its people.`, x: r.cx, y: r.cy });
         }
       }
       population[r.id] = Math.max(0, pop);
@@ -299,14 +302,17 @@ export function generateSimulation(
         population[op.region] *= 0.9;
         grabbed.add(op.region);
         conquests++;
+        const cr = byId.get(op.region) ;
         events.push({
           year,
           type: "conquest",
-          text: `${attacker.name} seized ${byId.get(op.region) .name} from ${defender.name}.`,
+          text: `${attacker.name} seized ${cr.name} from ${defender.name}.`,
+          x: cr.cx,
+          y: cr.cy,
         });
         if (defender.regions.size === 0 && defender.alive) {
           defender.alive = false;
-          events.push({ year, type: "fall", text: `The realm of ${defender.name} was extinguished.` });
+          events.push({ year, type: "fall", text: `The realm of ${defender.name} was extinguished.`, x: cr.cx, y: cr.cy });
         }
       }
     }
@@ -341,6 +347,8 @@ export function generateSimulation(
           year,
           type: "secession",
           text: `${reg.name} broke away from ${realm.name} to found the realm of ${newRealm.name}.`,
+          x: reg.cx,
+          y: reg.cy,
         });
       }
     }
@@ -365,6 +373,8 @@ export function generateSimulation(
             year,
             type: "conversion",
             text: `${r.name} turned from ${faithName(from)} to ${faithName(faith[bestNb])}.`,
+            x: r.cx,
+            y: r.cy,
           });
         }
       }
@@ -375,7 +385,7 @@ export function generateSimulation(
       const r = regs[rng.int(0, regs.length)];
       population[r.id] *= 0.6;
       const kind = rng.bool() ? "A plague swept" : "A long drought gripped";
-      events.push({ year, type: "plague", text: `${kind} ${r.name}; many perished.` });
+      events.push({ year, type: "plague", text: `${kind} ${r.name}; many perished.`, x: r.cx, y: r.cy });
     }
 
     // 6) Golden ages for large, prosperous realms.
@@ -383,10 +393,13 @@ export function generateSimulation(
       const strong = aliveRealms.filter((r) => r.regions.size >= 3);
       if (strong.length) {
         const r = strong[rng.int(0, strong.length)];
+        const seat = byId.get(r.seatRegion);
         events.push({
           year,
           type: "goldenage",
           text: `A golden age dawned over ${r.name}; its cities flourished as never before.`,
+          x: seat?.cx ?? 0,
+          y: seat?.cy ?? 0,
         });
       }
     }

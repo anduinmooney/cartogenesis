@@ -112,27 +112,27 @@
 
 ### Cities
 
-- Bautossota (**capital**, port, trade hub, rich) — Livestock, Grain, Horses, Timber
-- Nianata (modest) — Grain, Timber
+- Bautossota (**capital**, port, trade hub, rich) — Livestock, Grain, Horses, Wine
+- Nianata (trade hub, rich) — Livestock, Timber, Grain, Wine
 
 ### Towns
 
-- Bassoleda (port, prosperous) — Grain, Horses, Wine
-- Aunellavi (port, rich) — Livestock, Horses, Grain, Wine
-- Daudamorbeo (prosperous) — Livestock, Timber, Grain, Horses
-- Veocau (rich) — Grain, Livestock, Wine, Timber
-- Lare (prosperous) — Grain, Wine, Timber, Horses
+- Bassoleda (port, rich) — Grain, Livestock, Horses, Wine
+- Aunellavi (port, rich) — Livestock, Grain, Fish, Horses
+- Daudamorbeo (prosperous) — Grain, Livestock, Wine, Horses
+- Veocau (rich) — Grain, Livestock, Horses, Wine
+- Lare (rich) — Livestock, Timber, Grain, Horses
 
 ### Villages
 
-- Savine (port, trade hub, rich) — Livestock, Fish, Grain, Horses
-- Kesaizzi (port, modest) — Horses
-- Ghezshau (modest) — Horses
-- Aidrenjaa (port, prosperous) — Livestock, Wine, Horses
-- Gruskbu (rich) — Livestock, Fish, Grain, Horses
-- Kazkhu (port, prosperous) — Livestock, Timber
-- Aisaabad (port, modest) — Horses
-- Qaqsaa (port, modest) — Livestock, Horses, Salt
+- Savine (port, rich) — Grain, Livestock, Fish, Horses
+- Kesaizzi (port, modest) — Livestock, Horses, Fish
+- Ghezshau (modest) — Livestock
+- Aidrenjaa (port, prosperous) — Livestock, Horses
+- Gruskbu (prosperous) — Grain, Livestock, Fish
+- Kazkhu (port, rich) — Timber, Livestock, Horses
+- Aisaabad (port, prosperous) — Livestock
+- Qaqsaa (port, modest) — Fish, Horses
 
 ## Faiths
 
@@ -162,9 +162,9 @@ Followed across 1 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Horses, Grain, Livestock, Timber, Wine
+- **Major exports:** Livestock, Horses, Grain, Fish, Wine
 - **Wealthiest settlement:** Bautossota
-- **Trade hubs:** Bautossota, Savine
+- **Trade hubs:** Bautossota, Nianata
 - **Deposits:** Iron ×21, Copper ×15, Gold ×6, Gems ×4, Stone ×38, Coal ×16, Timber ×11, Grain ×27, Livestock ×102, Fish ×11, Spices ×3, Salt ×8, Horses ×35, Wine ×15
 
 ## Legends of the founding age
@@ -184,56 +184,56 @@ Followed across 1 region(s).
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Taunabi | 100 | 23 | 300 | 23 | ascendant |
-| Ireopa | 100 | 16 | 150 | 5 | diminished |
+| Taunabi | 100 | 23 | 275 | 23 | ascendant |
+| Ireopa | 100 | 17 | 150 | 5 | diminished |
 | Ciali | 100 | 4 | 100 | 0 | extinct |
 | Devoteo | 100 | 3 | 100 | 0 | extinct |
 
 ## Chronicle
 
-- **100 After Reckoning** — Ireopa seized Knagrdo from Ciali.
-- **100 After Reckoning** — Taunabi seized Raze from Ciali.
+- **100 After Reckoning** — Taunabi seized Auceda from Ciali.
+- **100 After Reckoning** — Ireopa seized Akha from Ciali.
 - **100 After Reckoning** — A plague swept Akha; many perished.
-- **125 After Reckoning** — Taunabi seized Debevia from Ciali.
-- **125 After Reckoning** — Taunabi seized Auceda from Ciali.
-- **125 After Reckoning** — Ireopa seized Akha from Ciali.
-- **150 After Reckoning** — Ireopa seized Dellacamordamar from Ciali.
+- **125 After Reckoning** — Taunabi seized Raze from Ciali.
+- **125 After Reckoning** — Ireopa seized Knagrdo from Ciali.
+- **125 After Reckoning** — Ireopa seized Dellacamordamar from Ciali.
+- **125 After Reckoning** — Maimjiabad broke away from Ireopa to found the realm of Taakhakhse.
+- **150 After Reckoning** — Ireopa seized Maimjiabad from Taakhakhse.
+- **150 After Reckoning** — The realm of Taakhakhse was extinguished.
+- **150 After Reckoning** — Ireopa seized Debevia from Ciali.
 - **150 After Reckoning** — The realm of Ciali was extinguished.
 - **150 After Reckoning** — Taunabi seized Jaziki from Devoteo.
-- **150 After Reckoning** — Taunabi seized Niania from Devoteo.
+- **175 After Reckoning** — Taunabi seized Niania from Devoteo.
 - **175 After Reckoning** — Taunabi seized Urjai from Devoteo.
 - **175 After Reckoning** — The realm of Devoteo was extinguished.
-- **175 After Reckoning** — Taunabi seized Knagrdo from Ireopa.
-- **175 After Reckoning** — Taunabi seized Dellacamordamar from Ireopa.
-- **200 After Reckoning** — Taunabi seized Akha from Ireopa.
-- **200 After Reckoning** — Taunabi seized Remi from Ireopa.
-- **225 After Reckoning** — Taunabi seized Skyndhrei from Ireopa.
-- **250 After Reckoning** — Taunabi seized Caubine from Ireopa.
-- **250 After Reckoning** — Taunabi seized Maimjiabad from Ireopa.
-- **250 After Reckoning** — Taunabi seized Mimudma from Ireopa.
-- **250 After Reckoning** — A plague swept Sialthae; many perished.
-- **250 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
-- **275 After Reckoning** — Taunabi seized Qata from Ireopa.
-- **300 After Reckoning** — Taunabi seized Kaaqkhuur from Ireopa.
-- **300 After Reckoning** — Taunabi seized Pideca from Ireopa.
-- **325 After Reckoning** — A plague swept Auceda; many perished.
-- **325 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
-- **400 After Reckoning** — A plague swept Urjai; many perished.
-- **425 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
-- **450 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
-- **475 After Reckoning** — A plague swept Niania; many perished.
-- **500 After Reckoning** — A long drought gripped Kaaqkhuur; many perished.
-- **500 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
-- **700 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
-- **725 After Reckoning** — A plague swept Qata; many perished.
-- **750 After Reckoning** — A golden age dawned over Taunabi; its cities flourished as never before.
-- **775 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
-- **800 After Reckoning** — A long drought gripped Debevia; many perished.
-- **800 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
-- **875 After Reckoning** — A plague swept Jaziki; many perished.
-- **900 After Reckoning** — A long drought gripped Auceda; many perished.
-- **975 After Reckoning** — A long drought gripped Dellacamordamar; many perished.
-- **1075 After Reckoning** — A golden age dawned over Taunabi; its cities flourished as never before.
+- **200 After Reckoning** — Taunabi seized Maimjiabad from Ireopa.
+- **200 After Reckoning** — Taunabi seized Knagrdo from Ireopa.
+- **200 After Reckoning** — Taunabi seized Debevia from Ireopa.
+- **225 After Reckoning** — Taunabi seized Caubine from Ireopa.
+- **225 After Reckoning** — Taunabi seized Akha from Ireopa.
+- **225 After Reckoning** — Taunabi seized Mimudma from Ireopa.
+- **225 After Reckoning** — A long drought gripped Zekuqqaiur; many perished.
+- **250 After Reckoning** — Taunabi seized Pideca from Ireopa.
+- **250 After Reckoning** — Taunabi seized Dellacamordamar from Ireopa.
+- **250 After Reckoning** — Taunabi seized Remi from Ireopa.
+- **250 After Reckoning** — Taunabi seized Qata from Ireopa.
+- **250 After Reckoning** — A golden age dawned over Taunabi; its cities flourished as never before.
+- **275 After Reckoning** — Taunabi seized Kaaqkhuur from Ireopa.
+- **275 After Reckoning** — Taunabi seized Skyndhrei from Ireopa.
+- **300 After Reckoning** — A long drought gripped Raze; many perished.
+- **425 After Reckoning** — A plague swept Anaillae; many perished.
+- **450 After Reckoning** — A golden age dawned over Taunabi; its cities flourished as never before.
+- **575 After Reckoning** — A long drought gripped Raze; many perished.
+- **700 After Reckoning** — A golden age dawned over Taunabi; its cities flourished as never before.
+- **725 After Reckoning** — A plague swept Niania; many perished.
+- **725 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
+- **925 After Reckoning** — A golden age dawned over Taunabi; its cities flourished as never before.
+- **950 After Reckoning** — A long drought gripped Bemantepi; many perished.
+- **950 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
+- **1000 After Reckoning** — A plague swept Pideca; many perished.
+- **1025 After Reckoning** — A long drought gripped Remi; many perished.
+- **1050 After Reckoning** — A long drought gripped Dellacamordamar; many perished.
+- **1050 After Reckoning** — A golden age dawned over Ireopa; its cities flourished as never before.
 
 ---
 

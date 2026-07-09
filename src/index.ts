@@ -111,6 +111,7 @@ export {
   renderScalarField,
   renderTemperature,
   renderMoisture,
+  renderRelief,
   renderBiomes,
   renderRegions,
   renderFaiths,

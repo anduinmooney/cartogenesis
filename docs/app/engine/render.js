@@ -271,12 +271,112 @@ export function overlaySettlements(
   return rgba;
 }
 
-export function renderTemperature(temperature      , water             )             {
-  return renderScalarField(temperature, TEMP_RAMP, water);
+/** Hillshade factor at a cell from the local elevation gradient (NW light). */
+function hillshadeFactor(elevation      , x        , y        )         {
+  const hl = elevation.getClamped(x - 1, y);
+  const hr = elevation.getClamped(x + 1, y);
+  const hu = elevation.getClamped(x, y - 1);
+  const hd = elevation.getClamped(x, y + 1);
+  const slope = (hr - hl) * 0.5 + (hd - hu) * 0.5;
+  return 1 + Math.max(-0.3, Math.min(0.3, -slope * 6));
 }
 
-export function renderMoisture(moisture      , water             )             {
-  return renderScalarField(moisture, MOIST_RAMP, water);
+/**
+ * Render a [0,1] scalar over land through a ramp, contrast-stretched to the
+ * land range and shaded by terrain so it reads as a map, not a flat blob.
+ */
+function renderThematic(
+  field      ,
+  stops                      ,
+  water                        ,
+  elevation       ,
+)             {
+  const { width, height, data } = field;
+  const out = new Uint8Array(width * height * 4);
+  const isWater = (i        ) =>
+    !!water && (water.oceanMask[i] === 1 || water.lakeMask[i] === 1);
+  let min = Infinity;
+  let max = -Infinity;
+  for (let i = 0; i < data.length; i++) {
+    if (isWater(i)) continue;
+    if (data[i] < min) min = data[i];
+    if (data[i] > max) max = data[i];
+  }
+  const span = max - min || 1;
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const i = y * width + x;
+      if (isWater(i)) {
+        out[i * 4] = WATER_NEUTRAL[0];
+        out[i * 4 + 1] = WATER_NEUTRAL[1];
+        out[i * 4 + 2] = WATER_NEUTRAL[2];
+        out[i * 4 + 3] = 255;
+        continue;
+      }
+      const c = ramp(stops, (data[i] - min) / span);
+      const f = elevation ? hillshadeFactor(elevation, x, y) : 1;
+      out[i * 4] = Math.max(0, Math.min(255, Math.round(c[0] * f)));
+      out[i * 4 + 1] = Math.max(0, Math.min(255, Math.round(c[1] * f)));
+      out[i * 4 + 2] = Math.max(0, Math.min(255, Math.round(c[2] * f)));
+      out[i * 4 + 3] = 255;
+    }
+  }
+  return out;
+}
+
+export function renderTemperature(
+  temperature      ,
+  water             ,
+  elevation       ,
+)             {
+  return renderThematic(temperature, TEMP_RAMP, water, elevation);
+}
+
+/**
+ * Rainfall map: contrast-stretched to the land range (the interior's real
+ * variation instead of a flat wash) and terrain-shaded so it reads as a map.
+ */
+export function renderMoisture(
+  moisture      ,
+  water             ,
+  elevation       ,
+)             {
+  return renderThematic(moisture, MOIST_RAMP, water, elevation);
+}
+
+/**
+ * Hillshaded grayscale relief. Unlike the raw grayscale heightmap, this lights
+ * the terrain from the northwest so ridges, valleys, and the eroded drainage
+ * texture read clearly. Water renders as a flat dark tone.
+ */
+export function renderRelief(elevation      , water             )             {
+  const { width, height, data } = elevation;
+  const out = new Uint8Array(width * height * 4);
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const i = y * width + x;
+      if (water && (water.oceanMask[i] === 1 || water.lakeMask[i] === 1)) {
+        out[i * 4] = 18;
+        out[i * 4 + 1] = 26;
+        out[i * 4 + 2] = 40;
+        out[i * 4 + 3] = 255;
+        continue;
+      }
+      let lum = 45 + data[i] * 195;
+      const hl = elevation.getClamped(x - 1, y);
+      const hr = elevation.getClamped(x + 1, y);
+      const hu = elevation.getClamped(x, y - 1);
+      const hd = elevation.getClamped(x, y + 1);
+      const slope = (hr - hl) * 0.5 + (hd - hu) * 0.5;
+      lum *= 1 + Math.max(-0.5, Math.min(0.5, -slope * 9));
+      const v = Math.max(0, Math.min(255, Math.round(lum)));
+      out[i * 4] = v;
+      out[i * 4 + 1] = v;
+      out[i * 4 + 2] = v;
+      out[i * 4 + 3] = 255;
+    }
+  }
+  return out;
 }
 
 function hslToRgb(h        , s        , l        )      {

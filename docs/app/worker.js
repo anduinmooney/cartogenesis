@@ -8,7 +8,7 @@
 import { generateWorld,            } from "./engine/world.js";
 import {
   renderHypsometric,
-  renderGrayscale,
+  renderRelief,
   renderBiomes,
   renderRegions,
   renderFaiths,
@@ -61,11 +61,11 @@ function layerPixels(world       , layer        )             {
       return px;
     }
     case "temperature":
-      return renderTemperature(world.temperature, world.water);
+      return renderTemperature(world.temperature, world.water, world.elevation);
     case "moisture":
-      return renderMoisture(world.moisture, world.water);
+      return renderMoisture(world.moisture, world.water, world.elevation);
     case "height":
-      return renderGrayscale(world.elevation);
+      return renderRelief(world.elevation, world.water);
     case "terrain":
     default: {
       const px = renderHypsometric(world.elevation, world.meta.seaLevel, {

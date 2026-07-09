@@ -135,34 +135,34 @@
 
 ### Cities
 
-- Monadianale (**capital**, trade hub, rich) — Grain, Livestock, Horses, Timber
-- Peonimortia (port, trade hub, rich) — Grain, Horses, Wine
-- Loti (port, trade hub, rich) — Livestock, Grain, Horses, Wine
+- Monadianale (**capital**, rich) — Grain, Timber, Livestock, Horses
+- Peonimortia (port, rich) — Grain, Timber, Wine, Livestock
+- Loti (port, trade hub, rich) — Livestock, Grain, Wine, Fish
 
 ### Towns
 
-- Paullaveo (port, prosperous) — Grain, Timber
-- Maikhai (port, prosperous) — Grain, Horses, Timber, Wine
-- Timaci (port, prosperous) — Grain, Horses
-- Cialenniaa (port, prosperous) — Livestock, Horses
-- Arghamshi (port, prosperous) — Wine, Grain, Horses
-- Sisuur (port, modest) — Timber, Horses
-- Bragraurkeigard (prosperous) — Livestock, Grain, Horses
+- Paullaveo (port, rich) — Timber, Grain, Fish, Horses
+- Maikhai (port, prosperous) — Livestock, Grain, Fish, Horses
+- Timaci (port, rich) — Grain, Horses, Livestock, Timber
+- Cialenniaa (port, rich) — Fish, Livestock, Horses
+- Arghamshi (port, prosperous) — Livestock, Horses, Grain
+- Sisuur (port, prosperous) — Fish, Timber
+- Bragraurkeigard (prosperous) — Livestock, Fish, Grain, Horses
 
 ### Villages
 
-- Skorkbyogard (prosperous) — Grain, Wine, Timber
-- Ghashi (modest) — Grain, Horses
-- Rukha (rich) — Livestock, Wine, Grain
-- Qiza (port, prosperous) — Timber, Grain, Wine, Horses
-- Nesia (port, poor) — Timber
-- Sasimorivento (prosperous) — Livestock, Horses, Wine, Grain
-- Jasha (modest) — Horses
-- Teopepau (port, rich) — Livestock, Grain, Horses, Fish
-- Knastbornbau (port, modest) — Timber, Grain
-- Qaiza (modest) — Timber
-- Taamiti (prosperous) — Livestock, Timber, Horses
-- Zua (modest) — Wine
+- Skorkbyogard (trade hub, rich) — Timber, Livestock, Wine, Stone
+- Ghashi (prosperous) — Timber, Livestock, Horses
+- Rukha (rich) — Livestock, Grain, Horses, Wine
+- Qiza (port, prosperous) — Livestock, Horses, Fish
+- Nesia (port, poor)
+- Sasimorivento (rich) — Livestock, Grain, Horses, Fish
+- Jasha (trade hub, prosperous) — Livestock, Horses
+- Teopepau (port, modest) — Grain, Livestock
+- Knastbornbau (port, rich) — Grain, Livestock, Timber, Fish
+- Qaiza (prosperous) — Livestock, Timber, Horses
+- Taamiti (prosperous) — Livestock, Horses
+- Zua (prosperous) — Livestock, Grain, Horses
 
 ## Faiths
 
@@ -192,9 +192,9 @@ Followed across 5 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Grain, Horses, Timber, Wine, Livestock
-- **Wealthiest settlement:** Monadianale
-- **Trade hubs:** Monadianale, Peonimortia, Loti
+- **Major exports:** Livestock, Horses, Grain, Timber, Fish
+- **Wealthiest settlement:** Skorkbyogard
+- **Trade hubs:** Loti, Skorkbyogard, Jasha
 - **Deposits:** Iron ×26, Copper ×19, Gold ×8, Gems ×5, Stone ×51, Coal ×22, Timber ×12, Grain ×36, Livestock ×138, Fish ×14, Furs ×14, Spices ×2, Salt ×22, Horses ×48, Wine ×15
 
 ## Legends of the founding age
@@ -216,11 +216,11 @@ Followed across 5 region(s).
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Vobica | 100 | 27 | 375 | 27 | ascendant |
-| Delenca | 100 | 10 | 200 | 0 | extinct |
+| Vobica | 100 | 28 | 350 | 28 | ascendant |
+| Delenca | 100 | 7 | 100 | 0 | extinct |
 | Mammaiur | 100 | 7 | 100 | 5 | diminished |
 | Taakhre | 100 | 6 | 100 | 0 | extinct |
-| Masemi | 100 | 6 | 225 | 0 | extinct |
+| Masemi | 100 | 6 | 200 | 0 | extinct |
 | Kaatu | 100 | 3 | 100 | 0 | extinct |
 
 ## Chronicle
@@ -233,52 +233,54 @@ Followed across 5 region(s).
 - **100 After Reckoning** — Kikhzu turned from the Cult of Qanqa to the Rite of Fjaagard.
 - **125 After Reckoning** — Vobica seized Panamaupi from Neori.
 - **125 After Reckoning** — The realm of Neori was extinguished.
-- **125 After Reckoning** — A golden age dawned over Kaatu; its cities flourished as never before.
-- **150 After Reckoning** — Delenca seized Tenka from Kaatu.
-- **150 After Reckoning** — Vobica seized Khemazaa from Kaatu.
-- **150 After Reckoning** — Nalaumorlia turned from the Cult of Qanqa to the Faith of Raramorra.
+- **125 After Reckoning** — Vobica seized Khemazaa from Kaatu.
+- **125 After Reckoning** — A long drought gripped Maanmu; many perished.
+- **150 After Reckoning** — Vobica seized Tenka from Kaatu.
+- **150 After Reckoning** — Vobica seized Izkhu from Taakhre.
+- **150 After Reckoning** — Vobica seized Kikhzu from Taakhre.
 - **175 After Reckoning** — Vobica seized Maadqu from Kaatu.
 - **175 After Reckoning** — The realm of Kaatu was extinguished.
-- **175 After Reckoning** — Taakhre seized Maanmu from Mammaiur.
-- **175 After Reckoning** — Delenca seized Kikhzu from Taakhre.
-- **175 After Reckoning** — Vobica seized Izkhu from Taakhre.
-- **175 After Reckoning** — A golden age dawned over Delenca; its cities flourished as never before.
-- **200 After Reckoning** — Vobica seized Ghashaa from Taakhre.
-- **200 After Reckoning** — Delenca seized Jetaimai from Taakhre.
-- **225 After Reckoning** — Vobica seized Maanmu from Taakhre.
-- **225 After Reckoning** — Vobica seized Tadaa from Taakhre.
-- **225 After Reckoning** — Masemi seized Kakhi from Taakhre.
-- **225 After Reckoning** — The realm of Taakhre was extinguished.
-- **250 After Reckoning** — Vobica seized Zezu from Mammaiur.
+- **175 After Reckoning** — Vobica seized Ghashaa from Taakhre.
+- **175 After Reckoning** — Vobica seized Tadaa from Taakhre.
+- **175 After Reckoning** — Vobica seized Jetaimai from Taakhre.
+- **200 After Reckoning** — Masemi seized Kakhi from Taakhre.
+- **200 After Reckoning** — The realm of Taakhre was extinguished.
+- **200 After Reckoning** — Vobica seized Maamki from Delenca.
+- **225 After Reckoning** — Vobica seized Maanmu from Mammaiur.
+- **225 After Reckoning** — Vobica seized Nalaumorlia from Masemi.
+- **225 After Reckoning** — Vobica seized Iteesh from Delenca.
+- **225 After Reckoning** — Vobica seized Deoriapauriabe from Delenca.
+- **250 After Reckoning** — Vobica seized Fjallbruvik from Delenca.
+- **250 After Reckoning** — Vobica seized Kaghe from Masemi.
 - **250 After Reckoning** — Vobica seized Kakhi from Masemi.
-- **250 After Reckoning** — Vobica seized Iteesh from Delenca.
-- **250 After Reckoning** — Vobica seized Jetaimai from Delenca.
-- **275 After Reckoning** — Vobica seized Nalaumorlia from Masemi.
-- **275 After Reckoning** — Vobica seized Tenka from Delenca.
-- **275 After Reckoning** — Vobica seized Kikhzu from Delenca.
-- **275 After Reckoning** — A long drought gripped Jetaimai; many perished.
-- **300 After Reckoning** — Vobica seized Brallsta from Masemi.
-- **300 After Reckoning** — Vobica seized Kaghe from Masemi.
-- **325 After Reckoning** — Vobica seized Maamki from Delenca.
-- **325 After Reckoning** — Vobica seized Deoriapauriabe from Delenca.
-- **325 After Reckoning** — Vobica seized Starnbrondkno from Delenca.
-- **350 After Reckoning** — Vobica seized Ofjygard from Delenca.
-- **350 After Reckoning** — Vobica seized Samamar from Masemi.
-- **350 After Reckoning** — Vobica seized Knausta from Masemi.
-- **350 After Reckoning** — The realm of Masemi was extinguished.
-- **350 After Reckoning** — Ofjygard broke away from Vobica to found the realm of Hrollbau.
-- **375 After Reckoning** — Vobica seized Hraufjauheim from Delenca.
-- **375 After Reckoning** — Vobica seized Fjallbruvik from Delenca.
-- **375 After Reckoning** — The realm of Delenca was extinguished.
-- **375 After Reckoning** — Delenca seized Ofjygard from Hrollbau.
-- **375 After Reckoning** — The realm of Hrollbau was extinguished.
-- **525 After Reckoning** — A long drought gripped Ofjygard; many perished.
-- **625 After Reckoning** — A plague swept Starnbrondkno; many perished.
-- **650 After Reckoning** — A plague swept Samamar; many perished.
-- **675 After Reckoning** — A long drought gripped Bohragard; many perished.
-- **700 After Reckoning** — A plague swept Kaghe; many perished.
-- **750 After Reckoning** — A golden age dawned over Mammaiur; its cities flourished as never before.
-- **775 After Reckoning** — A long drought gripped Panamaupi; many perished.
+- **250 After Reckoning** — Maanmu broke away from Vobica to found the realm of Raisha.
+- **250 After Reckoning** — A long drought gripped Kikhzu; many perished.
+- **275 After Reckoning** — Vobica seized Ofjygard from Delenca.
+- **275 After Reckoning** — Vobica seized Hraufjauheim from Delenca.
+- **275 After Reckoning** — Maamki broke away from Vobica to found the realm of Zujaasa.
+- **300 After Reckoning** — Vobica seized Maamki from Zujaasa.
+- **300 After Reckoning** — The realm of Zujaasa was extinguished.
+- **300 After Reckoning** — Vobica seized Starnbrondkno from Delenca.
+- **300 After Reckoning** — The realm of Delenca was extinguished.
+- **300 After Reckoning** — Vobica seized Maanmu from Raisha.
+- **300 After Reckoning** — The realm of Raisha was extinguished.
+- **300 After Reckoning** — A long drought gripped Ghashaa; many perished.
+- **325 After Reckoning** — Vobica seized Brallsta from Masemi.
+- **325 After Reckoning** — Vobica seized Samamar from Masemi.
+- **325 After Reckoning** — Vobica seized Knausta from Masemi.
+- **325 After Reckoning** — The realm of Masemi was extinguished.
+- **350 After Reckoning** — Vobica seized Zezu from Mammaiur.
+- **375 After Reckoning** — Iteesh turned from the Cult of Qanqa to the Faith of Raramorra.
+- **400 After Reckoning** — A long drought gripped Deoriapauriabe; many perished.
+- **525 After Reckoning** — A plague swept Starnbrondkno; many perished.
+- **525 After Reckoning** — A golden age dawned over Vobica; its cities flourished as never before.
+- **550 After Reckoning** — A plague swept Hraufjauheim; many perished.
+- **650 After Reckoning** — A golden age dawned over Mammaiur; its cities flourished as never before.
+- **675 After Reckoning** — A golden age dawned over Mammaiur; its cities flourished as never before.
+- **700 After Reckoning** — A golden age dawned over Mammaiur; its cities flourished as never before.
+- **725 After Reckoning** — A long drought gripped Greirnbei; many perished.
+- **775 After Reckoning** — A plague swept Deoriapauriabe; many perished.
+- **900 After Reckoning** — A long drought gripped Maadqu; many perished.
 - **925 After Reckoning** — A golden age dawned over Mammaiur; its cities flourished as never before.
 
 ---

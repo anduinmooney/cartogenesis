@@ -295,6 +295,46 @@
         margin-right: 0.4rem;
         white-space: nowrap;
       }
+      #chronicle li.ev {
+        cursor: pointer;
+        border-radius: 4px;
+        padding-left: 0.35rem;
+        margin-left: -0.35rem;
+        transition: background 0.12s;
+      }
+      #chronicle li.ev:hover {
+        background: color-mix(in srgb, var(--accent) 16%, transparent);
+      }
+      #chronicle li.ev::after {
+        content: " ⟶ find";
+        font-family: var(--mono);
+        font-size: 0.66rem;
+        color: var(--faint);
+        opacity: 0;
+        transition: opacity 0.12s;
+      }
+      #chronicle li.ev:hover::after { opacity: 1; }
+      .maplegend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem 0.8rem;
+        margin-top: 0.5rem;
+        min-height: 1em;
+      }
+      .maplegend .lg {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+      .maplegend .lg i {
+        width: 11px;
+        height: 11px;
+        border-radius: 2px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        flex: none;
+      }
       @media (prefers-reduced-motion: reduce) {
         * { transition: none !important; }
       }
@@ -334,6 +374,7 @@
             <canvas id="map" width="384" height="384"></canvas>
           </div>
           <div id="status"></div>
+          <div id="legend" class="maplegend"></div>
         </section>
 
         <aside class="info">
