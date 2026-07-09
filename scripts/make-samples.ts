@@ -1,8 +1,9 @@
 // make-samples.ts — Regenerate the committed sample atlas.
 //
-// For each curated world it renders five layers (physical map, biomes,
-// temperature, moisture, relief) and writes a manifest.json the viewer reads.
-// Everything is reproducible from seeds.
+// For each curated world it renders map layers (terrain, biomes, political,
+// temperature, moisture, relief), writes a labeled SVG poster and a Markdown
+// gazetteer, and records everything in manifest.json for the viewer. All
+// reproducible from seeds.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -11,11 +12,16 @@ import {
   renderHypsometric,
   renderGrayscale,
   renderBiomes,
+  renderRegions,
   renderTemperature,
   renderMoisture,
   overlayRivers,
+  overlayRoads,
+  overlaySettlements,
 } from "../src/render.ts";
 import { encodePNG } from "../src/png.ts";
+import { worldReportMarkdown } from "../src/report.ts";
+import { worldPosterSVG } from "../src/svgmap.ts";
 
 const OUT = join("docs", "samples");
 const SIZE = 360;
@@ -44,20 +50,30 @@ function main(): void {
     const base = spec.seed.replace(/[^a-z0-9]+/gi, "-").toLowerCase();
     const w = SIZE;
     const h = SIZE;
+    const towns = world.settlements.settlements;
 
-    // Physical map with rivers.
+    // Terrain atlas: hypsometric + rivers + roads + settlements.
     const map = renderHypsometric(world.elevation, world.meta.seaLevel, {
       water: world.water,
     });
     overlayRivers(map, world.rivers, w, h);
+    overlayRoads(map, world.roads);
+    overlaySettlements(map, towns, w, h);
 
     // Biome atlas with rivers.
     const biome = renderBiomes(world.biomes, world.elevation);
     overlayRivers(biome, world.rivers, w, h);
 
+    // Political map: regions + roads + settlements.
+    const political = renderRegions(world.regions, world.water, world.elevation);
+    overlayRoads(political, world.roads);
+    const politicalBare = political.slice(); // poster background w/o town dots
+    overlaySettlements(political, towns, w, h);
+
     const layers: Record<string, Uint8Array> = {
       map,
       biome,
+      political,
       temperature: renderTemperature(world.temperature, world.water),
       moisture: renderMoisture(world.moisture, world.water),
       height: renderGrayscale(world.elevation),
@@ -70,6 +86,18 @@ function main(): void {
       files[layer] = file;
     }
 
+    // Labeled SVG poster (over the political map) + Markdown gazetteer.
+    const posterFile = `${base}.poster.svg`;
+    writeFileSync(
+      join(OUT, posterFile),
+      worldPosterSVG(world, encodePNG(w, h, politicalBare)),
+    );
+    files.poster = posterFile;
+
+    const reportFile = `${base}.report.md`;
+    writeFileSync(join(OUT, reportFile), worldReportMarkdown(world));
+    files.report = reportFile;
+
     worlds.push({
       seed: spec.seed,
       title: spec.title,
@@ -79,18 +107,21 @@ function main(): void {
         landFraction: Number((world.meta.landFraction * 100).toFixed(1)),
         oceanFraction: Number((world.meta.oceanFraction * 100).toFixed(1)),
         lakeCount: world.meta.lakeCount,
-        riverFraction: Number((world.meta.riverFraction * 100).toFixed(2)),
-        mainRiverFlow: world.meta.mainRiverFlow,
         biomeDiversity: world.meta.biomeDiversity,
         dominantBiome: world.meta.dominantBiome,
+        regionCount: world.meta.regionCount,
+        settlementCount: world.meta.settlementCount,
+        capital: world.meta.capital,
+        realmCount: world.meta.realmCount,
+        presentYear: world.meta.presentYear,
       },
       contentHash: world.meta.contentHash,
     });
 
     console.log(
-      `  ${spec.title.padEnd(14)} land ${world.meta.landFraction.toFixed(2)} · ` +
-        `${world.meta.lakeCount} lakes · ${world.meta.biomeDiversity} biomes · ` +
-        `dominant ${world.meta.dominantBiome}`,
+      `  ${spec.title.padEnd(14)} ${world.meta.regionCount} regions · ` +
+        `${world.meta.settlementCount} towns · cap ${world.meta.capital} · ` +
+        `${world.meta.eventCount} events`,
     );
   }
 
@@ -99,15 +130,15 @@ function main(): void {
     JSON.stringify(
       {
         size: SIZE,
-        engineVersion: "0.5.0",
-        layers: ["map", "biome", "temperature", "moisture", "height"],
+        engineVersion: "0.8.0",
+        layers: ["map", "biome", "political", "temperature", "moisture", "height"],
         worlds,
       },
       null,
       2,
     ),
   );
-  console.log(`\nWrote ${SAMPLES.length} worlds x 5 layers + manifest to ${OUT}`);
+  console.log(`\nWrote ${SAMPLES.length} worlds (6 layers + poster + report) to ${OUT}`);
 }
 
 main();

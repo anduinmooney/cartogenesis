@@ -262,6 +262,21 @@
       .stats .wide {
         grid-column: 1 / -1;
       }
+      .links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.2rem;
+        font-family: var(--mono);
+        font-size: 0.76rem;
+      }
+      .links a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+      .links a:hover {
+        border-bottom-color: var(--accent);
+      }
 
       /* ---- Legend ---- */
       .legend {
@@ -324,14 +339,15 @@
   <body>
     <header>
       <div class="masthead">
-        <p class="eyebrow">Procedural World Engine · v0.5</p>
+        <p class="eyebrow">Procedural World Engine · v0.8</p>
         <h1>Cartogenesis</h1>
         <p class="lede">
-          An atlas of worlds grown from single seeds. Terrain, seas and lakes,
-          climate, rivers, and biomes — each layer derived, in order, by a
-          deterministic engine with zero dependencies. Same seed,
-          <span class="amp">&amp;</span> same world, forever. Regenerate any
-          plate below with <code>node src/cli.ts generate --seed &lt;name&gt;</code>.
+          An atlas of worlds grown from single seeds. Terrain, seas, climate,
+          rivers, biomes, provinces, cities, roads, and a written history — each
+          layer derived, in order, by a deterministic engine with zero
+          dependencies. Same seed, <span class="amp">&amp;</span> same world,
+          forever. Every plate has a labeled poster and a gazetteer; regenerate
+          any with <code>node src/cli.ts generate --seed &lt;name&gt;</code>.
         </p>
         <div class="meta-row" id="meta"></div>
       </div>
@@ -353,6 +369,7 @@
       const LAYERS = [
         ["map", "Terrain"],
         ["biome", "Biomes"],
+        ["political", "Political"],
         ["temperature", "Temp"],
         ["moisture", "Rain"],
         ["height", "Relief"],
@@ -415,12 +432,16 @@
                 <p class="note">${w.note}</p>
                 <div class="stats">
                   <span>land <b>${s.landFraction}%</b></span>
-                  <span>ocean <b>${s.oceanFraction}%</b></span>
                   <span>lakes <b>${s.lakeCount}</b></span>
-                  <span>rivers <b>${s.riverFraction}%</b></span>
+                  <span>regions <b>${s.regionCount}</b></span>
+                  <span>towns <b>${s.settlementCount}</b></span>
+                  <span>realms <b>${s.realmCount}</b></span>
                   <span>biomes <b>${s.biomeDiversity}</b></span>
-                  <span>main river <b>${s.mainRiverFlow}</b></span>
-                  <span class="wide">dominant <b>${s.dominantBiome}</b></span>
+                  <span class="wide">capital <b>${s.capital}</b> · yr ${s.presentYear}</span>
+                </div>
+                <div class="links">
+                  <a href="samples/${w.files.poster}" target="_blank" rel="noopener">Labeled poster ↗</a>
+                  <a href="samples/${w.files.report}" target="_blank" rel="noopener">Gazetteer ↗</a>
                 </div>
               </div>`;
 
