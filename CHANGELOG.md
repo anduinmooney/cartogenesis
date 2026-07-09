@@ -46,5 +46,10 @@ project's "releases" are work sessions.
 ### Metrics
 - Files: ~20. Tests: 34. Runtime deps: 0. Golden hash: `54146be48037737d`.
 
+### Shipped / live
+- Repo published: https://github.com/anduinmooney/cartogenesis (public, `main`).
+- GitHub Pages enabled from `/docs`; gallery live and verified (HTTP 200 on
+  page, manifest, and images): https://anduinmooney.github.io/cartogenesis/
+
 ### Left for next session
 - Begin **L2 — Hydrology I (sea & coasts)**. See `NEXT_SESSION.md`.

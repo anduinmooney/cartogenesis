@@ -7,7 +7,8 @@
 - **As of:** Session 1 · 2026-07-08
 - **Engine version:** 0.1.0
 - **Health:** 🟢 Green. All tests pass; engine produces valid, deterministic output.
-- **Repo:** local git repo; being published to GitHub (`anduinmooney/cartogenesis`).
+- **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
+- **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 
 ## What works today
 
