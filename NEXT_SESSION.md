@@ -6,7 +6,7 @@
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm green **before** changing anything (baseline: **117**).
+2. `npm test` → confirm green **before** changing anything (baseline: **126**).
 3. Skim `CHANGELOG.md` (top, Session 8) and `ROADMAP.md`.
 4. Preview: `node scripts/serve-docs.ts` → `/` (atlas) and `/app/` (live).
 5. **After any `src/` change, rerun `node scripts/build-web.ts`** (CI enforces it;
@@ -15,17 +15,26 @@
 
 ## Context: where the project is
 
-The world is *simulated forward* — L16 produces emergent history and a final
-"Powers" map. Session 9 closed four UX gaps from user feedback: features are now
-labeled on the map, resources have a legend + hover-ID (and are evenly
-distributed), Relief/Rainfall are shaded and readable, and the chronicle is
-clickable (flies the map to each event).
+Session 10 added real **volcanoes** (cones with craters, carved by erosion), a
+**topographic** layer, **elevation in metres**, and **real 16-bit heightmap
+exports** (PNG + `.r16`) for 3D tools — plus fixed a latent infinite loop in
+`generateReligion`. Baseline is now **126** tests.
 
-**Priority note:** if the user gives new feedback, address that first — it beats
-any queued plan. Otherwise, the queued objective below still stands.
+**FIRST THING THIS SESSION — verify the live app.** Session 10 could NOT confirm
+the app end-to-end because the preview browser's module worker got wedged (I
+leaked `new Worker` instances in `preview_eval` without `.terminate()`). The
+engine + the worker's full 10-layer render are verified in Node, but do a clean
+in-browser check: `node scripts/serve-docs.ts`, load `/app/`, wait, and via
+`preview_eval` confirm generation completes, the Topo layer + volcano markers
+render, elevation shows in metres, and the "↓ Heightmap" button downloads. If the
+worker still hangs in-browser, THAT is the bug to fix before anything else
+(compare against the S7–S9 worker, which worked). **Terminate any test workers.**
 
-The remaining big step on the simulation is to make history **watchable**: scrub
-through the centuries and see borders shift, realms rise and fall.
+**Priority note:** if the user gives new feedback, address that first.
+
+After verification, the queued big step is to make history **watchable**: a time
+scrubber to see borders shift through the centuries (see below). Or go deeper on
+terrain (lava fields, calderas, island-arc seamounts).
 
 ## This session's objective: **A temporal atlas (watch history unfold)**
 

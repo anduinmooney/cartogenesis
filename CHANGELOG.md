@@ -8,6 +8,57 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 10 — 2026-07-09 — Volcanoes & real heightmaps (user request)
+
+**Theme:** For a friend whose special interest is mountains and volcanoes. Honest
+answer up front: the terrain is *plausible*, not geologically simulated — so
+instead of faking accuracy, this adds the things that genuinely serve that
+interest: real volcanoes, real heightmap exports, and elevation in metres.
+
+### Added
+- **L1.6 — Volcanoes** (`src/volcanoes.ts`): stratovolcanoes, shield volcanoes,
+  and cinder cones with summit craters, built onto the terrain **before**
+  erosion so it carves realistic radial gullies down their flanks. Each is
+  placed, sized, named, and flagged active / dormant / extinct.
+- **Real 16-bit heightmap exports** (`encodePNGGray16`): the CLI writes a true
+  16-bit grayscale heightmap PNG (importable into Blender / Unity / Godot /
+  World Machine) plus a raw `.r16`. The app has a **"↓ Heightmap"** button that
+  encodes a 16-bit PNG in-browser (via `CompressionStream`).
+- **Topographic contour layer** (`renderContours`): hypsometric bands + isolines;
+  volcanoes read as concentric rings. New "Topo" layer in the gallery and app.
+- **Elevation in metres**: `elevationToMetres`; the meta carries
+  `highestPeakMetres` and volcano counts; hover/info/report show heights in m and
+  a note on scaling the heightmap.
+- **Readability (carried from S9 method):** rainfall/temperature are now
+  contrast-stretched *and* terrain-shaded (`renderThematic`).
+
+### Fixed (critical)
+- A **latent infinite loop** in `generateReligion`'s origin backfill (it used
+  `origins.length` as the loop index, so it could spin forever when that element
+  was already an origin). It hung 360px worlds. Now index-based; regression test
+  added. This bug predated this session and could have bitten other seeds.
+
+### Verified
+- `npm test` → **126 passing** (volcano determinism/placement/crater, 16-bit PNG
+  round-trip, religion-loop regression). Golden hash → `74c67102ff7abf98`
+  (intentional — terrain changed; samples + bundle regenerated).
+- The worker's full 10-layer render pipeline verified in Node (402 ms at 384px).
+  *Caveat:* the preview browser's module worker was wedged this session (leaked
+  diagnostic workers + tooling flakiness), so end-to-end app confirmation is via
+  Node + the unchanged S7–S9 worker architecture, not a live screenshot.
+
+### Decided
+- D-018 (volcanoes before erosion; real 16-bit heightmap exports).
+
+### Metrics
+- Source modules: 28 (+volcanoes). Tests: 126. Deps: 0. Engine v0.12.0. 10 layers.
+
+### Left for next session
+- Confirm the live app in a fresh browser; the queued time scrubber; or more
+  volcano/terrain depth (lava fields, calderas, seamount island-arcs).
+
+---
+
 ## Session 9 — 2026-07-09 — Closing UX gaps (user feedback)
 
 **Theme:** Not a new layer — a focused pass on four real usability gaps the user

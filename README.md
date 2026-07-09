@@ -62,10 +62,18 @@ Each `generate` run writes three files:
 | `<name>.map.png` | Terrain map: hypsometric + rivers + roads + settlements |
 | `<name>.biome.png` | Biome atlas (16 biomes) with rivers |
 | `<name>.political.png` | Political map: provinces + roads + settlements |
-| `<name>.height.png` | Raw grayscale elevation (heightmap) |
+| `<name>.topo.png` | Topographic contour map (volcanoes read as rings) |
+| `<name>.height.png` | 8-bit grayscale relief preview |
+| `<name>.heightmap16.png` | **Real 16-bit heightmap** for Blender/Unity/Godot |
+| `<name>.heightmap.r16` | Raw little-endian 16-bit heightmap |
 | `<name>.poster.svg` | Labeled poster: named regions, cities, and features |
-| `<name>.report.md` | Gazetteer: overview, regions, settlements, chronicle |
+| `<name>.report.md` | Gazetteer: overview, volcanoes, regions, chronicle |
 | `<name>.json` | World metadata, including a determinism `contentHash` |
+
+> **On accuracy:** the terrain is *procedurally plausible* — fractal noise,
+> hydraulic erosion, and procedural volcanoes — not a geological simulation. The
+> 16-bit heightmaps are real, importable files (scale height to
+> `maxAltitudeMetres`), but the landforms are invented, not Earth data.
 
 ## The gallery & the live generator
 
@@ -98,6 +106,7 @@ seed ──► Rng ──► named sub-streams ──► subsystems ──► Wo
 | `src/noise.ts` | Value noise, fBm, ridged multifractal |
 | `src/grid.ts` | Shared 2D scalar-field type |
 | `src/terrain.ts` | Elevation generation (L1) |
+| `src/volcanoes.ts` | Volcanic landforms with craters (L1.6) |
 | `src/hydrology.ts` | Oceans, lakes, coasts, distance-to-ocean (L2) |
 | `src/climate.ts` | Temperature + moisture fields (L3, L4) |
 | `src/rivers.ts` | Priority-Flood drainage + rivers (L5) |

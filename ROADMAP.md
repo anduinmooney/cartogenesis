@@ -66,6 +66,13 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **P4 — Interactive atlas.** Pan/zoom, hover-to-inspect, click-to-pin,
   shareable seed links in the live app.
 
+### Terrain & export
+- ✅ **Volcanoes** — stratovolcano/shield/cinder cones with craters (L1.6).
+- ✅ **Real 16-bit heightmap exports** (PNG + raw `.r16`) for 3D tools; a
+  topographic contour layer; elevation in metres.
+- ⬜ Lava fields, calderas, seamount island-arcs; per-region metre-accurate
+  contour intervals.
+
 ### Deeper simulation (the world keeps getting more alive)
 - ✅ Hydraulic erosion pass on elevation (droplet sim; carves valleys).
 - ✅ Web Worker so browser generation never freezes the UI.

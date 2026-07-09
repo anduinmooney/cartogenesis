@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 9 · 2026-07-09
-- **Engine version:** 0.11.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 117 tests pass (CI enforced); deterministic output.
+- **As of:** Session 10 · 2026-07-09
+- **Engine version:** 0.12.0 (runs in Node **and** the browser)
+- **Health:** 🟢 Green. 126 tests pass (CI enforced); deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 - **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
@@ -20,9 +20,11 @@
   wealth & trade, faiths with myths, and a **dynamic simulated history** (the
   world run forward over centuries — emergent wars, conquests, and rising and
   falling realms) — all deterministic from the seed.
-- Nine rendered map layers (terrain, biomes, political, **powers**, faiths,
-  resources, temperature, rainfall, relief) + a labeled SVG poster + a Markdown
-  gazetteer with an emergent chronicle.
+- Ten rendered map layers (terrain, **topographic**, biomes, political, powers,
+  faiths, resources, temperature, rainfall, relief) + a labeled SVG poster + a
+  Markdown gazetteer with an emergent chronicle.
+- **Real volcanoes** (with craters, named, active/dormant/extinct) and **real
+  16-bit heightmap exports** (PNG + raw `.r16`) for 3D tools; elevation in metres.
 - An **interactive** in-browser generator (`docs/app/`) that generates in a **Web
   Worker** (no UI freeze): pan, zoom, hover to inspect (incl. resource deposits),
   click for details (economy, faith, prose), **feature + city labels on the map**,
@@ -41,7 +43,7 @@
 
 | Layer | Status |
 |-------|--------|
-| L0 RNG & noise · L1 Elevation · L1.5 Erosion | ✅ done |
+| L0 RNG & noise · L1 Elevation · L1.5 Erosion · L1.6 Volcanoes | ✅ done |
 | L2 Hydrology · L3 Temp · L4 Moisture | ✅ done |
 | L5 Rivers · L6 Biomes | ✅ done |
 | L7 Regions · L8 Naming | ✅ done |
@@ -78,6 +80,12 @@ No `npm install` is required — there are zero dependencies.
 
 - `docs/app/*.js` are **build artifacts** (type-stripped from `src/`). After any
   `src/` change, rerun `node scripts/build-web.ts` or the live app goes stale.
+- **Terrain is plausible, not geologically accurate** — fractal noise + hydraulic
+  erosion + procedural volcanoes; no tectonics/real volcanism. The heightmap
+  exports are real 16-bit files, but the *shapes* are invented, not Earth data.
+- The preview browser's module worker got wedged in Session 10 (leaked test
+  workers via eval). Verify the live app in a fresh browser next session — and
+  don't leak `new Worker` instances in `preview_eval` (call `.terminate()`).
 - The simulation records emergent events + final borders but doesn't keep every
   turn's snapshot, so the app can't yet *scrub* through history (store per-turn
   control to animate the Powers map — a natural next step).

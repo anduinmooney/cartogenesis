@@ -6,6 +6,21 @@ old one — the history is the point.
 
 ---
 
+## D-018 — Volcanoes before erosion; real 16-bit heightmap exports (2026-07-09, Session 10)
+**Decision:** Volcanoes are built onto the elevation field *before* the hydraulic
+erosion pass, and the project exports genuine 16-bit heightmaps (a grayscale PNG
+via `encodePNGGray16` and a raw `.r16`), plus a topographic contour render.
+**Why:** A user asked for accurate heightmaps for a mountain/volcano enthusiast.
+The honest position (recorded here): the terrain is *procedurally plausible*, not
+geologically simulated — there is no tectonics or real volcanism, so "perfectly
+accurate" is not on offer. What genuinely serves that interest is (a) real
+volcanic landforms — and placing them before erosion means the droplet sim carves
+authentic radial gullies down their flanks, exactly like an eroded stratovolcano;
+and (b) real, importable heightmaps in the 16-bit format 3D tools expect, with a
+stated metre scale (value 65535 = `maxAltitudeMetres`). This is more useful than
+faking geological accuracy. Volcanoes change the terrain, so the golden hash was
+updated to `74c67102ff7abf98`.
+
 ## D-017 — Resource deposits placed by spatial shuffle, not score order (2026-07-09, Session 9)
 **Decision:** For each resource kind, shuffle the suitable candidate cells
 deterministically before greedy min-distance placement, rather than sorting by

@@ -78,10 +78,15 @@ svgmap.ts → labeled SVG poster, render.ts → PNG layers.
 - `Grid` — the universal 2D scalar field (`Float64Array` + width/height).
   Every spatial layer is a `Grid`, so renderers and analyzers are layer-agnostic.
 
-### `terrain.ts` (L1)
+### `terrain.ts` (L1) + `volcanoes.ts` (L1.6)
 - `generateElevation(cfg)` — fBm + ridged noise, optional radial "continent
   mask", normalized to [0,1].
+- `addVolcanoes(elevation, cfg)` — builds stratovolcano/shield/cinder cones with
+  summit craters onto the terrain **before** erosion (so erosion carves radial
+  gullies). Returns a new grid + the named volcano list.
 - `landFraction(grid, seaLevel)` — a quick sanity metric.
+- Heightmap exports: `png.encodePNGGray16` (16-bit) + a raw `.r16` (CLI);
+  `world.elevationToMetres` maps [0,1] → metres.
 
 ### `hydrology.ts` (L2)
 - `analyzeWater(elevation, seaLevel)` — flood-fills connected ocean vs. enclosed
