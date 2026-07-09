@@ -77,8 +77,10 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ Hydraulic erosion pass on elevation (droplet sim; carves valleys).
 - ✅ Web Worker so browser generation never freezes the UI.
 - ✅ **Dynamic history** — the world simulated over turns (L16).
-- ⬜ **Time scrubber** — keep per-turn control snapshots and animate the Powers
-  map so you can watch borders shift through the centuries.
+- ✅ **Time scrubber** — per-turn snapshots animate the Powers map; play/scrub
+  the centuries and watch borders shift (Session 11).
+- ⬜ **Dynamic settlements** — cities founded/abandoned over time, appearing and
+  vanishing as you scrub.
 - ⬜ Latitude-varying wind belts for moisture (trade winds vs. westerlies).
 - ⬜ Lake outflow / river-into-lake-into-river continuity.
 - ⬜ Merge sub-threshold islet "regions".

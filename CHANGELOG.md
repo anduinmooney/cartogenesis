@@ -8,6 +8,44 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 11 — 2026-07-09 — Temporal atlas (watch history unfold)
+
+**Theme:** First verified Session 10's work live (the preview browser was fine on
+a fresh start — it was just wedged last session by leaked test workers), then
+built the queued time scrubber.
+
+### Verified (Session 10, live)
+- Volcanoes render and are labeled on the map, the Topo layer shows contours,
+  hover shows elevation in metres ("Snow · 4,500 m"), and the **"↓ Heightmap"**
+  button downloads a real 16-bit PNG in-browser. All confirmed with a screenshot.
+
+### Added — the time scrubber
+- **`src/simulation.ts`**: records a per-turn `ControlSnapshot` (region→realm
+  borders) after every turn plus the initial state (turns + 1 total); the last
+  equals `finalControl`.
+- **`src/render.ts`**: `renderPowersAt(regions, control, …)` renders any control
+  map; `renderPowers` now wraps it with the final one.
+- **App**: on the **Powers** layer, a timeline **slider + play/pause** appears
+  under the map. Dragging or playing renders that year's borders on the main
+  thread (~5–10 ms/frame) and shows the year (100 → 1,100 AR); hidden on other
+  layers. You can watch realms rise, conquer, and fall across the centuries.
+
+### Verified
+- `npm test` → **127 passing** (new: snapshot count/order, last == final, borders
+  change). Golden hash unchanged (`74c67102ff7abf98`; simulation is downstream).
+- In-browser: scrubber shows only on Powers, 41 frames, scrubbing to 100 AR
+  changes the borders vs. 1,100 AR, play advances the timeline; screenshot at
+  450 AR shows two rival realms mid-consolidation. No leaked workers this time.
+
+### Metrics
+- Source modules: 28. Tests: 127. Deps: 0. Engine v0.12.0. 10 map layers.
+
+### Left for next session
+- Dynamic settlements (found/abandon over time, animated with the scrubber);
+  per-culture languages/lexicons; or in-app gazetteer + client-side exports.
+
+---
+
 ## Session 10 — 2026-07-09 — Volcanoes & real heightmaps (user request)
 
 **Theme:** For a friend whose special interest is mountains and volcanoes. Honest

@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 10 · 2026-07-09
+- **As of:** Session 11 · 2026-07-09
 - **Engine version:** 0.12.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 126 tests pass (CI enforced); deterministic output.
+- **Health:** 🟢 Green. 127 tests pass (CI enforced); deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 - **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
@@ -26,10 +26,11 @@
 - **Real volcanoes** (with craters, named, active/dormant/extinct) and **real
   16-bit heightmap exports** (PNG + raw `.r16`) for 3D tools; elevation in metres.
 - An **interactive** in-browser generator (`docs/app/`) that generates in a **Web
-  Worker** (no UI freeze): pan, zoom, hover to inspect (incl. resource deposits),
-  click for details (economy, faith, prose), **feature + city labels on the map**,
-  a **per-layer legend**, a **clickable chronicle that flies to each event**,
-  instant layer switching, `?seed=` links, and a "Today's world" button.
+  Worker** (no UI freeze): pan, zoom, hover to inspect (incl. resource deposits +
+  elevation in metres), click for details, feature/volcano/city labels on the
+  map, a per-layer legend, a clickable chronicle that flies to each event, a
+  **time scrubber on the Powers layer** (play/scrub 100→1,100 AR to watch borders
+  shift), a 16-bit **heightmap download**, `?seed=` links, and "Today's world".
 - Per world the CLI emits **7 artifacts**: terrain / biome / political map PNGs,
   a grayscale heightmap, a **labeled SVG poster**, a **Markdown gazetteer**, and
   JSON metadata with a `contentHash` fingerprint.
@@ -83,14 +84,12 @@ No `npm install` is required — there are zero dependencies.
 - **Terrain is plausible, not geologically accurate** — fractal noise + hydraulic
   erosion + procedural volcanoes; no tectonics/real volcanism. The heightmap
   exports are real 16-bit files, but the *shapes* are invented, not Earth data.
-- The preview browser's module worker got wedged in Session 10 (leaked test
-  workers via eval). Verify the live app in a fresh browser next session — and
-  don't leak `new Worker` instances in `preview_eval` (call `.terminate()`).
-- The simulation records emergent events + final borders but doesn't keep every
-  turn's snapshot, so the app can't yet *scrub* through history (store per-turn
-  control to animate the Powers map — a natural next step).
+- Don't create `new Worker` in `preview_eval` without `.terminate()` — leaked
+  workers wedge the whole preview browser (this bit Session 10; a fresh start
+  fixed it in Session 11).
 - Simulation doesn't feed back into the settlement list (cities founded/lost in
-  the sim are events, not new markers on the map).
+  the sim are chronicle events, not markers that appear/vanish as you scrub —
+  a natural next step now that the scrubber exists).
 - Tiny single-cell islands become their own 1-cell "regions" (coverage pass),
   cluttering gazetteers. Consider merging sub-threshold islets.
 - Moisture runs a single west→east prevailing wind; latitude wind belts would be
