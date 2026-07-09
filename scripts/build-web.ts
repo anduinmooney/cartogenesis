@@ -20,6 +20,7 @@ const MODULES = [
   "noise",
   "grid",
   "terrain",
+  "erosion",
   "hydrology",
   "climate",
   "rivers",
@@ -52,7 +53,28 @@ function main(): void {
   }
 
   const appSrc = readFileSync(join("web", "main.ts"), "utf8");
-  writeFileSync(join(APP_DIR, "app.js"), toBrowserJs(appSrc));
+  const appJs = toBrowserJs(appSrc);
+  writeFileSync(join(APP_DIR, "app.js"), appJs);
+
+  // Completeness check: every ./engine/*.js an emitted file imports must exist,
+  // so a missing module fails the build instead of 404-ing in the browser.
+  const emitted = new Set(MODULES);
+  const engineFiles = MODULES.map((m) => ({
+    name: m,
+    code: readFileSync(join(ENGINE_DIR, `${m}.js`), "utf8"),
+  }));
+  engineFiles.push({ name: "app", code: appJs });
+  for (const { name, code } of engineFiles) {
+    for (const match of code.matchAll(/from\s+["'](?:\.\/engine\/|\.\/)([\w-]+)\.js["']/g)) {
+      const dep = match[1];
+      if (!emitted.has(dep)) {
+        throw new Error(
+          `build-web: "${name}" imports "${dep}" which is not in the browser ` +
+            `module list. Add it to MODULES (and confirm it has no node: imports).`,
+        );
+      }
+    }
+  }
 
   console.log(
     `Built ${MODULES.length} engine modules + app.js → ${APP_DIR}/ (zero deps)`,
