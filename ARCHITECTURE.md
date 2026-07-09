@@ -24,10 +24,13 @@ WorldConfig ─► generateWorld()
                  │     ├ .stream("settlements")─► generateSettlements()─► settlements ✅ L9
                  │     ├ .stream("roads")    ─► generateRoads()       ─► roads       ✅ L10
                  │     ├ .stream("history")  ─► generateHistory()     ─► history     ✅ L11
-                 │     └ .stream("lore")     ─► generateLore()        ─► lore        ✅ L12
+                 │     ├ .stream("lore")     ─► generateLore()        ─► lore        ✅ L12
+                 │     ├ .stream("resources")─► generateResources()   ─► resources   ✅ L13
+                 │     ├ .stream("economy")  ─► generateEconomy()     ─► economy     ✅ L14
+                 │     └ .stream("religion") ─► generateReligion()    ─► religion    ✅ L15
                  │
-                 └─ World { meta, elevation, water, temperature, moisture, rivers,
-                            biomes, regions, settlements, roads, history, lore }
+                 └─ World { …, regions, settlements, roads, history, lore,
+                            resources, economy, religion }
 
 Presentation (not part of generateWorld): report.ts → Markdown gazetteer,
 svgmap.ts → labeled SVG poster, render.ts → PNG layers.

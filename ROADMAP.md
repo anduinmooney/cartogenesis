@@ -51,6 +51,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **L11 — History.** Realms, wars, disasters, golden ages — a dated chronicle.
 - ✅ **L12 — Lore.** Ruling houses, ruler successions with epithets, notable
   figures tied to places, and prose for every region.
+- ✅ **L13 — Resources.** ~15 resource kinds placed by terrain and biome.
+- ✅ **L14 — Economy.** Production, wealth, trade hubs, major exports.
+- ✅ **L15 — Religion.** Faiths, deities, myths, spread across regions.
 
 ### Presentation & platform
 - ✅ **P1 — SVG poster export.** Labeled maps with region/city/feature names.
@@ -61,12 +64,14 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **P4 — Interactive atlas.** Pan/zoom, hover-to-inspect, click-to-pin,
   shareable seed links in the live app.
 
-### Deeper simulation (optional polish)
+### Deeper simulation (the world keeps getting more alive)
 - ✅ Hydraulic erosion pass on elevation (droplet sim; carves valleys).
+- ✅ Web Worker so browser generation never freezes the UI.
+- ⬜ **Dynamic history** — simulate the world over turns (populations grow,
+  borders shift, wars resolve, cities rise and fall) instead of a snapshot.
 - ⬜ Latitude-varying wind belts for moisture (trade winds vs. westerlies).
 - ⬜ Lake outflow / river-into-lake-into-river continuity.
 - ⬜ Merge sub-threshold islet "regions".
-- ⬜ Web Worker so browser generation never freezes the UI.
 
 ### Engineering hygiene (ongoing)
 - ✅ CI via GitHub Actions (`node --test` + web-bundle freshness on push).

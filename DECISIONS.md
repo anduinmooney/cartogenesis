@@ -6,6 +6,19 @@ old one — the history is the point.
 
 ---
 
+## D-015 — Web Worker: pre-render + structured-clone the world (2026-07-09, Session 7)
+**Decision:** The live app generates in a module worker (`web/worker.ts`) that
+renders all layers to RGBA and posts back the layer buffers (transferred) plus
+the entire `World` (structured-cloned). The main thread blits the pre-rendered
+buffers and reads the cloned world for hover/click.
+**Why:** Generation grew to ~2 s (erosion + a dozen layers), freezing the UI.
+Moving it off-thread fixes that, and pre-rendering every layer makes layer
+switching an instant blit instead of a re-render. Structured clone works because
+the interaction code only reads *data* (typed arrays, plain objects) — it never
+calls `Grid` methods — so the cloned world (methods lost) is sufficient. The
+engine stays deterministic and **clock-free**: "Today's world" is seeded by the
+UI computing the date and passing it in, never by the engine reading time.
+
 ## D-014 — Hydraulic erosion on by default (2026-07-09, Session 5)
 **Decision:** A droplet-based hydraulic erosion pass (`src/erosion.ts`) runs
 between elevation and hydrology by default (opt out with `erosion: false`). The

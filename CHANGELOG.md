@@ -8,6 +8,58 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 7 — 2026-07-09 — Civilization: resources, economy, faith + a Web Worker
+
+**Theme:** The biggest session yet — three new engine layers that turn the map
+into a *civilization*, all surfaced everywhere, plus a platform upgrade so the
+live app generates without freezing.
+
+### Added — engine (all downstream of geography; golden hash unchanged)
+- **L13 — Resources** (`src/resources.ts`): ~15 resource kinds placed by
+  terrain and biome (ore & gems in mountains, timber in forests, grain on
+  lowlands, fish on coasts, furs in taiga, spices in jungle, salt in deserts…)
+  via per-kind suitability scoring and spaced placement.
+- **L14 — Economy** (`src/economy.ts`): each settlement gathers its hinterland's
+  deposits to decide what it produces; wealth from production + road
+  connectivity + port + capital; trade hubs and the world's major exports.
+- **L15 — Religion** (`src/religion.ts`): faiths born in large regions, each with
+  a deity, a domain, and a creation myth naming real features; spread across the
+  region-adjacency graph so every region has a dominant faith.
+
+### Added — presentation & platform
+- **Maps:** two new layers — a **Faiths** map (regions tinted by faith) and a
+  **Resources** map (deposit markers) — in the gallery (8 layers/world) and app.
+- **Gazetteer:** "Faiths" (deity, domain, myth) and "Resources & trade" (exports,
+  wealthiest town, trade hubs, deposit tallies) sections; settlements list wealth
+  tier + products.
+- **App:** Faiths + Resources tabs; info panel adds Faiths + Exports; click
+  detail shows a settlement's wealth/products and a region's faith.
+- **Web Worker** (`web/worker.ts`): generation + all-layer rendering run off the
+  main thread; the UI never freezes. Layer switching is now an instant buffer
+  blit (~2 ms). Added a **"Today's world"** button (date-seeded) and a busy state.
+
+### Verified
+- `npm test` → **112 passing** (14 new: resources, economy, religion — placement
+  realism, wealth bounds, faith coverage, determinism).
+- Elevation untouched → golden hash `fb232cd94fe0face` still green.
+- In-browser: worker generates off-thread (status updates immediately), hover/
+  click/chronicle work on the structured-cloned world, layer switch instant,
+  "Today's world" seeds from the date, no console errors.
+
+### Decided
+- D-015 (Web Worker: pre-render layers + structured-clone the world for
+  interaction; the engine stays clock-free, the UI supplies dates).
+
+### Metrics
+- Source modules: 26 (+resources, economy, religion). Tests: 112. Deps: 0.
+  Engine v0.10.0. Live app now 8 map layers.
+
+### Left for next session
+- Keep going bigger — see `NEXT_SESSION.md` (a dynamic *simulated* history over
+  turns, or an in-app atlas/gazetteer + client-side poster download).
+
+---
+
 ## Session 6 — 2026-07-09 — Peoples & lore (L12)
 
 **Theme:** Give the world a human voice — dynasties, rulers, notable figures, and

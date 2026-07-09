@@ -6,79 +6,79 @@
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm green **before** changing anything (baseline: **98**).
-3. Skim `CHANGELOG.md` (top, Session 6) and `ROADMAP.md`.
+2. `npm test` → confirm green **before** changing anything (baseline: **112**).
+3. Skim `CHANGELOG.md` (top, Session 7) and `ROADMAP.md`.
 4. Preview: `node scripts/serve-docs.ts` → `/` (atlas) and `/app/` (live).
 5. **After any `src/` change, rerun `node scripts/build-web.ts`** (CI enforces it;
-   the build also fails if a browser module imports one you forgot to emit).
+   it also fails if a browser module — engine, app, or worker — imports one you
+   forgot to add to the MODULES list).
 
 ## Context: where the project is
 
-The world is content-complete: physical + human geography, history, and lore,
-with a live interactive browser generator. The one rough edge is that generation
-now takes ~1–2 s (erosion + all layers) and **freezes the UI thread** while it
-runs. That's the highest-value fix.
+The world is a rich static *snapshot*: geography, peoples, lore, resources,
+economy, and faith — 8 map layers, a gazetteer, and a responsive worker-driven
+app. Every layer so far describes the world *as it is at one moment*. The next
+big axis is **time**.
 
-## This session's objective: **Responsive generation via a Web Worker**
+## This session's objective: **L16 — Dynamic history (world simulation)**
 
-Move world generation off the main thread so the app stays smooth, with a real
-progress/loading state — then a couple of UX wins on top.
+Make the world *evolve*. Instead of generating a single frozen present, simulate
+it forward over many turns so that history becomes **emergent** — borders shift,
+populations rise and crash, realms conquer and fragment, faiths spread, cities
+are founded and abandoned. This is the biggest architectural step since the
+human world: from generation to simulation. Aim high.
 
-### Design (clean split)
-1. **`web/worker.ts`** — a module worker (`new Worker(url, { type: "module" })`).
-   It imports the engine, receives `{ seed, size }`, runs `generateWorld`, then
-   **renders all six layers to RGBA once** and posts back a payload:
-   - the six layer `Uint8Array`s (transfer their buffers — zero-copy),
-   - an "interactive" slice the main thread needs for hover/click:
-     `regions.ids`, `biomes.ids`, `elevation.data`, `water.oceanMask/lakeMask`,
-     the `settlements` array, region metadata, `lore.regionDescriptions`, and
-     `meta` + `history` for the info panel.
-   Build it into `docs/app/worker.js` (extend `scripts/build-web.ts` to emit a
-   second entry; keep the engine modules shared).
-2. **`web/main.ts`** — replace the inline `generateWorld` call with a worker
-   round-trip. Show a "Generating…" overlay / progress affordance while waiting.
-   Keep the received interactive slice for hover/click; layer switch just swaps
-   the pre-rendered buffer (no re-render, no engine on the main thread).
-3. Because the worker pre-renders every layer, the main thread no longer imports
-   the renderers for generation — but hover/click still read the interactive
-   slice. Make sure the slice has everything `inspect()` needs.
+### Design (a deterministic tick loop; new `src/simulation.ts`)
+Run T turns (each ~a generation/decade) over a mutable sim state seeded from the
+static world. Suggested state and rules:
+- **Per region:** population, controlling realm, prosperity, dominant faith.
+  Seed population from carrying capacity (biome + resources + economy wealth).
+- **Each turn (all deterministic, from a `simulation` stream):**
+  - *Growth*: population moves toward carrying capacity; over-capacity → famine
+    (population loss + a recorded event).
+  - *Expansion/war*: a strong realm may attack a weaker neighbor (compare
+    military = f(population, prosperity)); winner annexes the region, borders
+    change, an event is recorded. Realms can fragment when overextended.
+  - *Faith spread*: a region's faith can flip toward a wealthier/stronger
+    neighbor's faith with some probability.
+  - *Shocks*: plague/drought as occasional events reducing population, tied to
+    density or climate.
+  - *Cities*: high-population regions found or grow settlements; abandoned when
+    population collapses.
+- **Output** `SimulationLayer`: the emergent `events[]` (dated, referencing real
+  named realms/regions/features), the **final** political map (region→realm),
+  population by region, and a per-realm rise/peak/fall summary.
 
-### UX wins to add (if the worker lands cleanly)
-- A progress bar or spinner during generation (the freeze is gone, so this is
-  honest feedback, not a lie).
-- **"World of the day"** button: seed from today's date (pass the date in — the
-  engine can't read the clock). Deterministic per day.
-- A tiny "generating…" → fade-in of the map.
+### Integrate & surface
+- Wire into `world.ts` after lore (a `simulation` stream). It reads the static
+  layers; it must **not** alter elevation (golden hash stays `fb232cd94fe0face`).
+- Merge (or replace) the static chronicle in the gazetteer with the emergent
+  timeline; add a "Rise and fall of realms" section.
+- App: a **Final political** layer (realms after simulation) and/or a small
+  timeline scrubber; the info panel shows the surviving powers.
+- Regenerate samples + rebuild the worker/app bundle.
 
-### Alternative objective (if you'd rather deepen simulation)
-**Latitude wind belts** in `src/climate.ts`: replace the single west→east wind
-with banded prevailing winds (polar easterlies / mid-latitude westerlies / trade
-winds) so rain shadows flip by latitude. Visible in the rainfall + biome layers.
-**Changes the golden hash** — regenerate it, update `tests/world.test.ts`,
-regenerate samples + web bundle, and document as a new DECISIONS entry.
+### Test (`tests/simulation.test.ts`)
+- Determinism (same seed → identical event sequence + final borders).
+- Conservation-ish sanity: population never negative; every region always has a
+  controlling realm.
+- Emergence: over a run, at least some borders change and some events fire.
+- Chronology: events are ordered; years within the simulated span.
 
-### Test / verify
-- Engine tests stay green (98). If you did wind belts, update the golden hash.
-- Worker path: via `preview_eval`, generate a seed and assert the canvas fills +
-  the info panel populates + hover/click still work (the interactive slice is
-  wired) + no console errors. Confirm the main thread didn't freeze (the status
-  updates before the map appears).
+### Guardrails
+- Deterministic: all randomness via the `simulation` stream; no `Math.random`,
+  no clock. No TS `enum`/namespaces/decorators. Keep `main` green + CI passing.
+- This is a *big* module — keep the tick rules readable and each one tested.
 
 ### Close out (do not skip)
-1. `node scripts/build-web.ts` (now emits app.js **and** worker.js) so the
-   committed bundle is current; `node scripts/make-samples.ts` if engine changed.
-2. Update `CHANGELOG.md` (Session 7), `PROJECT_STATE.md`, `ROADMAP.md`,
-   `DECISIONS.md` (worker architecture, or wind-belt golden change), and rewrite
-   this file for the next theme.
-3. Commit per logical unit and push; confirm CI green and the live `/app/` works.
+1. `node scripts/build-web.ts`; `node scripts/make-samples.ts`.
+2. Update `CHANGELOG.md` (Session 8), `PROJECT_STATE.md`, `ROADMAP.md`,
+   `DECISIONS.md`, and rewrite this file for the next (even bigger) theme.
+3. Commit per logical unit and push; confirm CI green and the live app works.
 
-## Guardrails
-- Runtime + build stay **zero-dependency**. All randomness via `Rng` streams.
-- No TS `enum`/namespaces/decorators. Keep `main` green and CI passing.
-- The engine must not read the clock — pass dates in (world-of-the-day).
-
-## Backlog (good alternatives / stretch)
-- Merge sub-threshold islet regions (1-cell "regions" clutter gazetteers).
-- Lake outflow / river-into-lake continuity.
-- Benchmark script tracking per-layer generation time.
-- Religions/myths as another lore layer (deterministic, downstream).
+## Companion / alternative directions (if you want a second big win)
+- **In-app atlas & client-side exports**: render the full gazetteer in a
+  readable in-app panel; a "Download poster (SVG)" and "Download report (MD)"
+  button generated in the browser (svgmap needs a Buffer-free base64 path).
+- **Languages**: turn the naming phonologies into small lexicons so places,
+  people, and faiths share a coherent vocabulary per culture.
