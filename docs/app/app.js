@@ -10,6 +10,7 @@
                                                
 import { BIOME_NAMES, BIOME_COLORS } from "./engine/biomes.js";
 import { RESOURCE_NAMES, RESOURCE_COLORS } from "./engine/resources.js";
+import { renderPowersAt } from "./engine/render.js";
                                                           
 
 // Faith tint palette — mirrors FAITH_PALETTE in src/render.ts.
@@ -71,6 +72,69 @@ function renderOffscreen()       {
   offscreen.width = w;
   offscreen.height = h;
   offCtx.putImageData(new ImageData(new Uint8ClampedArray(rgba), w, h), 0, 0);
+}
+
+// --- Time scrubber (Powers layer): watch borders shift through the centuries ---
+let playTimer = 0;
+
+/** Draw the Powers map for snapshot index i (a year's borders). */
+function renderPowersFrame(i        )       {
+  if (!current) return;
+  const snaps = current.simulation.snapshots;
+  const snap = snaps && snaps[i];
+  if (!snap) return;
+  const w = current.elevation.width;
+  const h = current.elevation.height;
+  const rgba = renderPowersAt(current.regions, snap.control, current.water, current.elevation);
+  offscreen.width = w;
+  offscreen.height = h;
+  offCtx.putImageData(new ImageData(new Uint8ClampedArray(rgba), w, h), 0, 0);
+  redraw();
+  $("yearlabel").textContent = `${snap.year.toLocaleString()} AR`;
+}
+
+function stopPlay()       {
+  if (playTimer) {
+    clearInterval(playTimer);
+    playTimer = 0;
+  }
+  $("playbtn").textContent = "▶";
+}
+
+/** Show the scrubber only on the Powers layer; reset it to the final year. */
+function updateScrubber()       {
+  const snaps = current?.simulation?.snapshots;
+  const on = activeLayer === "powers" && !!snaps && snaps.length > 1;
+  $("scrubber").hidden = !on;
+  if (!on) {
+    stopPlay();
+    return;
+  }
+  const slider = $("timeslider")                    ;
+  slider.max = String(snaps .length - 1);
+  slider.value = String(snaps .length - 1);
+  renderPowersFrame(snaps .length - 1);
+}
+
+function togglePlay()       {
+  const snaps = current?.simulation?.snapshots;
+  if (!snaps) return;
+  const slider = $("timeslider")                    ;
+  if (playTimer) {
+    stopPlay();
+    return;
+  }
+  if (Number(slider.value) >= snaps.length - 1) slider.value = "0";
+  $("playbtn").textContent = "⏸";
+  playTimer = window.setInterval(() => {
+    const i = Number(slider.value) + 1;
+    if (i >= snaps.length) {
+      stopPlay();
+      return;
+    }
+    slider.value = String(i);
+    renderPowersFrame(i);
+  }, 90);
 }
 
 /** Size the visible canvas to its box (× devicePixelRatio) for crisp output. */
@@ -562,6 +626,7 @@ worker.onmessage = (e              ) => {
   fitView();
   redraw();
   updateLegend();
+  updateScrubber();
   canvas.classList.remove("busy");
   $("status").textContent = `Generated in ${ms} ms · drag to pan, scroll to zoom, hover to inspect`;
   const url = new URL(location.href);
@@ -688,6 +753,7 @@ function buildTabs()       {
       renderOffscreen();
       redraw();
       updateLegend();
+      updateScrubber();
     });
     tabs.appendChild(b);
   }
@@ -712,6 +778,11 @@ function init()       {
     downloadHeightmap().catch((e) => {
       $("status").textContent = `Heightmap export failed: ${e.message}`;
     });
+  });
+  $("playbtn").addEventListener("click", togglePlay);
+  $("timeslider").addEventListener("input", () => {
+    stopPlay();
+    renderPowersFrame(Number(($("timeslider")                    ).value));
   });
   $("copylink").addEventListener("click", async () => {
     try {

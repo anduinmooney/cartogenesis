@@ -47,11 +47,20 @@ export interface SimEvent {
   y: number;
 }
 
+export interface ControlSnapshot {
+  year: number;
+  /** Region id → controlling realm id at this moment. */
+  control: Record<number, number>;
+}
+
 export interface SimulationLayer {
   turns: number;
   startYear: number;
   endYear: number;
   events: SimEvent[];
+  /** Region→realm control after each turn (plus the initial state). Lets the
+   *  app scrub through history and watch borders shift. */
+  snapshots: ControlSnapshot[];
   /** Region id → controlling realm id (-1 if uncontrolled). */
   finalControl: Record<number, number>;
   /** Region id → final population. */
@@ -121,6 +130,7 @@ export function generateSimulation(
       startYear,
       endYear: startYear + turns * yearsPerTurn,
       events,
+      snapshots: [],
       finalControl: {},
       population: {},
       realms: [],
@@ -251,7 +261,8 @@ export function generateSimulation(
     return s;
   };
 
-  // --- The tick loop. ---
+  // --- The tick loop. Record borders after every turn (plus the initial). ---
+  const snapshots: ControlSnapshot[] = [{ year: startYear, control: { ...control } }];
   for (let t = 0; t < turns; t++) {
     const year = startYear + t * yearsPerTurn;
 
@@ -411,6 +422,9 @@ export function generateSimulation(
         realm.peakYear = year;
       }
     }
+
+    // Record this turn's borders.
+    snapshots.push({ year: year + yearsPerTurn, control: { ...control } });
   }
 
   const endYear = startYear + turns * yearsPerTurn;
@@ -439,6 +453,7 @@ export function generateSimulation(
     startYear,
     endYear,
     events,
+    snapshots,
     finalControl: control,
     population,
     realms: summaries,

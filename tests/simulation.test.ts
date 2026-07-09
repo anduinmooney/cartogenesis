@@ -62,6 +62,23 @@ test("events are chronological and within the simulated span", () => {
   }
 });
 
+test("snapshots record every turn plus the initial state; last equals final", () => {
+  const { sim } = build("scrub", 200);
+  assert.equal(sim.snapshots.length, sim.turns + 1, "expected turns+1 snapshots");
+  assert.equal(sim.snapshots[0].year, sim.startYear);
+  assert.equal(sim.snapshots[sim.snapshots.length - 1].year, sim.endYear);
+  // Years are strictly increasing.
+  for (let i = 1; i < sim.snapshots.length; i++) {
+    assert.ok(sim.snapshots[i].year > sim.snapshots[i - 1].year);
+  }
+  // The final snapshot matches finalControl exactly.
+  assert.deepEqual(sim.snapshots[sim.snapshots.length - 1].control, sim.finalControl);
+  // Borders actually change across the run (the whole point).
+  const first = JSON.stringify(sim.snapshots[0].control);
+  const last = JSON.stringify(sim.snapshots[sim.snapshots.length - 1].control);
+  assert.notEqual(first, last, "borders never changed");
+});
+
 test("realm summaries are consistent (peak >= final, statuses valid)", () => {
   const { sim } = build("realms", 200);
   assert.ok(sim.realms.length >= 1);

@@ -48,10 +48,19 @@ import { makeName, languageById } from "./names.js";
  
 
                                   
+               
+                                                         
+                                  
+ 
+
+                                  
                 
                     
                   
                      
+                                                                             
+                                                           
+                               
                                                                
                                        
                                       
@@ -121,6 +130,7 @@ export function generateSimulation(
       startYear,
       endYear: startYear + turns * yearsPerTurn,
       events,
+      snapshots: [],
       finalControl: {},
       population: {},
       realms: [],
@@ -251,7 +261,8 @@ export function generateSimulation(
     return s;
   };
 
-  // --- The tick loop. ---
+  // --- The tick loop. Record borders after every turn (plus the initial). ---
+  const snapshots                    = [{ year: startYear, control: { ...control } }];
   for (let t = 0; t < turns; t++) {
     const year = startYear + t * yearsPerTurn;
 
@@ -411,6 +422,9 @@ export function generateSimulation(
         realm.peakYear = year;
       }
     }
+
+    // Record this turn's borders.
+    snapshots.push({ year: year + yearsPerTurn, control: { ...control } });
   }
 
   const endYear = startYear + turns * yearsPerTurn;
@@ -439,6 +453,7 @@ export function generateSimulation(
     startYear,
     endYear,
     events,
+    snapshots,
     finalControl: control,
     population,
     realms: summaries,

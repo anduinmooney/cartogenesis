@@ -555,13 +555,26 @@ export function renderPowers(
   water            ,
   elevation      ,
 )             {
+  return renderPowersAt(regions, simulation.finalControl, water, elevation);
+}
+
+/**
+ * Political map from an arbitrary region→realm control map — used by the time
+ * scrubber to render any turn's borders, and by `renderPowers` for the final one.
+ */
+export function renderPowersAt(
+  regions             ,
+  control                        ,
+  water            ,
+  elevation      ,
+)             {
   const ids = regions.ids;
   const n = ids.length;
   const width = elevation.width;
   const height = elevation.height;
   const out = new Uint8Array(n * 4);
   const realmOf = (cellIdx        )         =>
-    ids[cellIdx] >= 0 ? (simulation.finalControl[ids[cellIdx]] ?? -1) : -2;
+    ids[cellIdx] >= 0 ? (control[ids[cellIdx]] ?? -1) : -2;
 
   for (let i = 0; i < n; i++) {
     let color     ;
