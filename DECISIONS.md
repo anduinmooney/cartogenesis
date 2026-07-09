@@ -6,6 +6,39 @@ old one — the history is the point.
 
 ---
 
+## D-008 — Fixed physical pipeline order (2026-07-08, Session 2)
+**Decision:** Generation runs in strict physical-dependency order:
+elevation → water → temperature → moisture → rivers → biomes. Each subsystem
+reads finished layers and draws from its own named RNG stream.
+**Why:** Later layers genuinely depend on earlier ones (rivers need moisture and
+filled terrain; biomes need temperature × moisture). A fixed order keeps the
+pipeline a clear DAG and makes adding L7+ a matter of appending a stage. Streams
+stay named/independent so order changes among *independent* systems wouldn't
+perturb output — but the physical order is the natural one.
+
+## D-007 — Priority-Flood+ε for river drainage (2026-07-08, Session 2)
+**Decision:** Rivers use Priority-Flood+ε (a min-heap flood from the ocean
+upward) to fill depressions AND build the drainage tree in the same pass: each
+cell drains to the cell it was reached from. A tiny ε on filled elevations
+guarantees a strictly downhill path with no flats.
+**Why:** Naïve D8 flow direction stalls in pits and flat filled regions, needing
+a separate depression-fill and flat-resolution pass. Priority-Flood+ε solves
+all three at once, is O(n log n), fully deterministic, and yields guaranteed
+connected drainage to the sea — verified by a mass-conservation test (rain in =
+flow out) and a no-cycles test. Alternative (iterative pit filling) is simpler
+but slower and can leave flats.
+
+## D-006 — No TypeScript `enum` (Node strip-only mode) (2026-07-08, Session 2)
+**Decision:** Use `const` objects (`export const Biome = {...} as const`) plus a
+derived value type instead of TS `enum`.
+**Why:** Node's native TypeScript execution ("type stripping") is *strip-only* —
+it removes type syntax but does not transform code. `enum` compiles to a runtime
+object, so it's rejected with `ERR_UNSUPPORTED_TYPESCRIPT_SYNTAX`. Const objects
+give the same ergonomics (`Biome.Ocean`, a union type) with zero codegen. This
+constraint applies project-wide: **no enums, no namespaces, no parameter
+properties, no decorators** — anything requiring emit is off-limits while we run
+build-free on Node.
+
 ## D-005 — Sample gallery lives under `docs/` (2026-07-08, Session 1)
 **Decision:** Committed sample PNGs and the viewer live in `docs/`; ad-hoc CLI
 output goes to `output/` and is gitignored.

@@ -14,13 +14,16 @@ function of the seed and config.
 WorldConfig ─► generateWorld()
                  │
                  ├─ root Rng (from seed)
-                 │     └─ .stream("terrain")  ─► generateElevation() ─► elevation: Grid
-                 │     └─ .stream("climate")  ─► (future) temperature, moisture
-                 │     └─ .stream("hydrology")─► (future) rivers, lakes
-                 │     └─ .stream("biomes")   ─► (future) biome classification
-                 │     └─ .stream("history")  ─► (future) settlements, events
+                 │     ├ .stream("terrain")  ─► generateElevation()   ─► elevation   ✅ L1
+                 │     ├ .stream("hydrology")─► analyzeWater()         ─► water       ✅ L2
+                 │     ├ .stream("climate")  ─► generateTemperature() ─► temperature ✅ L3
+                 │     │                      └► generateMoisture()   ─► moisture    ✅ L4
+                 │     ├ .stream("rivers")   ─► generateRivers()      ─► rivers      ✅ L5
+                 │     ├ .stream("biomes")   ─► classifyBiomes()      ─► biomes      ✅ L6
+                 │     ├ .stream("regions")  ─► (next) region partition            🔜 L7
+                 │     └ .stream("history")  ─► (future) settlements, events        ⬜
                  │
-                 └─ World { meta, elevation, … }
+                 └─ World { meta, elevation, water, temperature, moisture, rivers, biomes }
 ```
 
 ## Determinism rules (do not violate)
@@ -59,14 +62,36 @@ WorldConfig ─► generateWorld()
 - `Grid` — the universal 2D scalar field (`Float64Array` + width/height).
   Every spatial layer is a `Grid`, so renderers and analyzers are layer-agnostic.
 
-### `terrain.ts`
-- `generateElevation(cfg)` — the first subsystem. fBm + ridged noise, optional
-  radial "continent mask", normalized to [0,1].
+### `terrain.ts` (L1)
+- `generateElevation(cfg)` — fBm + ridged noise, optional radial "continent
+  mask", normalized to [0,1].
 - `landFraction(grid, seaLevel)` — a quick sanity metric.
 
+### `hydrology.ts` (L2)
+- `analyzeWater(elevation, seaLevel)` — flood-fills connected ocean vs. enclosed
+  lakes, extracts coastline, and computes a distance-to-ocean field via
+  multi-source BFS. `countComponents` labels connected blobs.
+
+### `climate.ts` (L3, L4)
+- `generateTemperature(elevation, water, cfg)` — latitude + elevation lapse +
+  maritime moderation + noise.
+- `generateMoisture(elevation, temperature, water, cfg)` — prevailing-wind rain
+  shadow blended with maritime proximity.
+
+### `rivers.ts` (L5)
+- `generateRivers(elevation, water, moisture, cfg)` — Priority-Flood+ε builds a
+  drainage tree (every land cell drains to the sea); flow accumulation of
+  rainfall carves rivers. Contains an inline binary min-heap.
+
+### `biomes.ts` (L6)
+- `classifyBiomes(...)` / `classifyCell(...)` — Whittaker temperature × moisture
+  matrix + alpine/snow elevation overrides. `Biome` is a **const object, not an
+  enum** (Node strip-only mode — see D-006). `BIOME_NAMES`, `BIOME_COLORS`.
+
 ### `render.ts`
-- `renderGrayscale(grid)` — elevation as luminance.
-- `renderHypsometric(grid, seaLevel, opts)` — ocean/land color ramps + hillshade.
+- `renderGrayscale`, `renderHypsometric` (ocean/lake/hillshade),
+  `renderScalarField` / `renderTemperature` / `renderMoisture`, `renderBiomes`,
+  and `overlayRivers` (in-place river overlay, width by log-flow).
 
 ### `png.ts`
 - `encodePNG(w, h, rgba)` — minimal PNG writer (zlib for DEFLATE, hand-rolled

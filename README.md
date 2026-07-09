@@ -2,10 +2,11 @@
 
 **A deterministic, dependency-free procedural world generation engine.**
 
-Cartogenesis turns a single seed into a whole world — terrain today; climate,
-rivers, biomes, civilizations, and history over time. Same seed, same world,
-forever, on any machine. It has **zero runtime dependencies** and runs directly
-on modern Node.js with no build step.
+Cartogenesis turns a single seed into a whole world — **elevation, oceans and
+lakes, temperature, rainfall, rivers, and biomes today**; regions, settlements,
+and history over time. Same seed, same world, forever, on any machine. It has
+**zero runtime dependencies** and runs directly on modern Node.js with no build
+step.
 
 ![A generated island world](docs/samples/cartogenesis.map.png)
 
@@ -54,7 +55,8 @@ Each `generate` run writes three files:
 
 | File | Contents |
 |------|----------|
-| `<name>.map.png` | Hypsometric-tinted, hill-shaded color map |
+| `<name>.map.png` | Hypsometric-tinted, hill-shaded terrain map with rivers |
+| `<name>.biome.png` | Biome atlas (16 biomes) with rivers |
 | `<name>.height.png` | Raw grayscale elevation (heightmap) |
 | `<name>.json` | World metadata, including a determinism `contentHash` |
 
@@ -81,8 +83,12 @@ seed ──► Rng ──► named sub-streams ──► subsystems ──► Wo
 | `src/rng.ts` | Deterministic PRNG + independent named streams |
 | `src/noise.ts` | Value noise, fBm, ridged multifractal |
 | `src/grid.ts` | Shared 2D scalar-field type |
-| `src/terrain.ts` | Elevation generation |
-| `src/render.ts` | Grid → RGBA (grayscale + hypsometric) |
+| `src/terrain.ts` | Elevation generation (L1) |
+| `src/hydrology.ts` | Oceans, lakes, coasts, distance-to-ocean (L2) |
+| `src/climate.ts` | Temperature + moisture fields (L3, L4) |
+| `src/rivers.ts` | Priority-Flood drainage + rivers (L5) |
+| `src/biomes.ts` | Whittaker biome classification (L6) |
+| `src/render.ts` | Grids/layers → RGBA (terrain, biome, climate, rivers) |
 | `src/png.ts` | Dependency-free PNG encoder |
 | `src/world.ts` | Orchestration, metadata, content hashing |
 | `src/cli.ts` | Command-line interface |

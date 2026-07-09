@@ -8,9 +8,9 @@ you can't have rivers before elevation, or forests before rainfall.
 
 | Horizon | What "success" looks like |
 |--------|----------------------------|
-| **1 day** (this session) | A working, tested, deterministic engine that turns a seed into a rendered elevation map. Continuity docs in place. On GitHub. ✅ |
-| **1 week** | Water and climate: sea level → coastlines, a temperature field, a moisture/rainfall field, and rivers carved by flow accumulation. Maps look like *places*. |
-| **1 month** | A full physical world: biome classification (desert/forest/tundra/…), named regions, and a labeled poster-quality map export (SVG). A browser build so worlds render live on the Pages site. |
+| **1 day** (Session 1) | A working, tested, deterministic engine that turns a seed into a rendered elevation map. Continuity docs in place. On GitHub. ✅ |
+| **1 week** | Water and climate: coastlines, temperature, moisture, and rivers by flow accumulation. Maps look like *places*. ✅ **Reached in Session 2 — ahead of schedule.** |
+| **1 month** | A full physical world: biome classification ✅ (Session 2). Still ahead: named regions, a labeled poster-quality SVG export, and a browser build so worlds render live on the Pages site. |
 | **6 months** | A living world: settlements placed by habitability, a procedural history/timeline, cultures and place-name languages, trade routes, and an explorable web atlas. Reproducible "world reports." |
 
 Success is **not** measured by lines of code but by: *does the latest layer make
@@ -20,21 +20,22 @@ the world more coherent, and is it tested and reproducible?*
 
 Legend: ✅ done · 🔜 next · ⬜ planned
 
-### Physical foundation
+### Physical foundation ✅ COMPLETE (Sessions 1–2)
 - ✅ **L0 — RNG & noise.** Deterministic streams, value/fBm/ridged noise.
 - ✅ **L1 — Elevation.** fBm + ridged + continent mask; hypsometric render.
-- 🔜 **L2 — Hydrology I: sea & coasts.** Ocean fill from sea level, coastline
-  extraction, distance-to-coast field, lake detection in basins.
-- ⬜ **L3 — Climate: temperature.** Latitude + elevation lapse rate + noise.
-- ⬜ **L4 — Climate: moisture.** Prevailing winds, orographic rainfall / rain
-  shadows behind mountains, evaporation over ocean.
-- ⬜ **L5 — Hydrology II: rivers.** Flow-direction (D8), flow accumulation,
-  river networks from rainfall, optional hydraulic erosion pass.
-- ⬜ **L6 — Biomes.** Whittaker-style classification from temperature × moisture;
-  biome color renderer.
+- ✅ **L2 — Hydrology I: sea & coasts.** Ocean vs. lake flood-fill, coastlines,
+  distance-to-ocean field.
+- ✅ **L3 — Climate: temperature.** Latitude + elevation lapse + maritime + noise.
+- ✅ **L4 — Climate: moisture.** Prevailing-wind rain shadow + orographic +
+  maritime proximity.
+- ✅ **L5 — Hydrology II: rivers.** Priority-Flood+ε drainage tree + flow
+  accumulation → river networks. (Hydraulic erosion pass still optional/future.)
+- ✅ **L6 — Biomes.** 16-biome Whittaker classification (temperature × moisture)
+  + alpine/snow overrides; biome atlas renderer.
 
 ### Structure & meaning
-- ⬜ **L7 — Regions.** Segment the world into named landmasses/regions.
+- 🔜 **L7 — Regions.** Segment the world into named landmasses/regions; a
+  distance/flood partition of the land into provinces.
 - ⬜ **L8 — Naming languages.** Per-culture phonologies → coherent place names.
 - ⬜ **L9 — Settlements.** Habitability scoring → cities/towns near water & good land.
 - ⬜ **L10 — Roads & trade.** Least-cost paths between settlements over terrain.

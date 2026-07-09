@@ -4,19 +4,23 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 1 · 2026-07-08
-- **Engine version:** 0.1.0
-- **Health:** 🟢 Green. All tests pass; engine produces valid, deterministic output.
+- **As of:** Session 2 · 2026-07-08
+- **Engine version:** 0.5.0
+- **Health:** 🟢 Green. 59 tests pass; engine produces valid, deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 
 ## What works today
 
-- Seed → deterministic elevation field → rendered PNG map (hypsometric + relief)
-  and grayscale heightmap, plus JSON metadata with a determinism `contentHash`.
-- CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
-- 34 passing tests, including a golden-hash determinism guard.
-- A 6-world sample gallery + static viewer under `docs/` (GitHub Pages ready).
+- Seed → a full **physical world**: elevation, oceans/lakes/coasts, temperature,
+  moisture, rivers (real drainage networks), and 16 biomes — all deterministic.
+- Five rendered layers per world (terrain, biomes, temperature, moisture,
+  relief) as PNGs + JSON metadata with a `contentHash` determinism fingerprint.
+- CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`
+  writes `.map.png`, `.biome.png`, `.height.png`, `.json`.
+- 59 passing tests, including a golden-hash guard and river mass-conservation.
+- A 6-world **multi-layer atlas** + static viewer under `docs/`; local preview
+  via `node scripts/serve-docs.ts`.
 
 ## Current layers (see ROADMAP.md for the full plan)
 
@@ -24,16 +28,22 @@
 |-------|--------|
 | L0 RNG & noise | ✅ done |
 | L1 Elevation | ✅ done |
-| L2 Hydrology I (sea & coasts) | 🔜 next |
-| L3+ climate, rivers, biomes, society | ⬜ planned |
+| L2 Hydrology I (sea, coasts, lakes) | ✅ done |
+| L3 Temperature | ✅ done |
+| L4 Moisture | ✅ done |
+| L5 Rivers (drainage) | ✅ done |
+| L6 Biomes | ✅ done |
+| L7 Regions & naming | 🔜 next |
+| L8+ settlements, roads, history | ⬜ planned |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 34 tests, all offline
+npm test                  # 59 tests, all offline
 node src/cli.ts generate --seed hello
-node scripts/make-samples.ts   # rebuild docs/ gallery
+node scripts/make-samples.ts   # rebuild docs/ atlas
+node scripts/serve-docs.ts     # preview docs/ at http://localhost:8123
 ```
 
 No `npm install` is required — there are zero dependencies.
@@ -47,12 +57,17 @@ No `npm install` is required — there are zero dependencies.
 
 ## Known limitations / debt
 
-- Only elevation exists; no water simulation, climate, or biomes yet.
-- The continent mask is a simple radial falloff — fine for now, will be revisited
-  when coastlines/regions arrive.
+- The physical world is complete, but nothing *lives* on it yet — no regions,
+  settlements, roads, or history (that's L7+).
+- Moisture runs a single west→east prevailing wind; latitude-varying wind belts
+  (trade winds vs. westerlies) would be more realistic (future tuning).
+- Rivers fill enclosed basins over lakes rather than modeling lake outflow/
+  overflow explicitly — fine visually, revisit if lakes become important.
+- The continent mask is a simple radial falloff; revisit when regions arrive.
 - No CI yet (planned). Tests are run manually via `npm test`.
 - Cross-platform float determinism is assumed (V8 is consistent in practice);
   guarded by the golden hash but not formally proven across architectures.
+- No TS `enum` anywhere — Node strip-only mode rejects them; use const objects.
 
 ## Pointers
 

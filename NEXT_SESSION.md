@@ -6,76 +6,87 @@
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm the suite is green **before** you change anything
-   (baseline: 34 passing).
-3. Skim `CHANGELOG.md` (top entry) and `ROADMAP.md` (layer backlog).
+2. `npm test` → confirm green **before** changing anything (baseline: **59**).
+3. Skim `CHANGELOG.md` (top entry, Session 2) and `ROADMAP.md`.
 4. Read `ARCHITECTURE.md` → "How to add a subsystem" before writing code.
+5. Preview the current atlas if useful: `node scripts/serve-docs.ts` →
+   http://localhost:8123.
 
-## This session's objective: **L2 — Hydrology I (sea & coasts)**
+## Context: where the project is
 
-Give the world real water structure. Elevation already exists; now interpret it.
+The **entire physical foundation is done** (L1–L6): elevation, water, climate,
+rivers, biomes — all tested and rendered. The world is physically complete but
+**nothing lives on it or is named yet**. Session 3 begins the "structure &
+meaning" arc.
 
-### Build `src/hydrology.ts` with:
+## This session's objective: **L7 — Regions & naming**
 
-1. **Ocean fill.** A boolean/int `Grid` (or `Uint8Array` mask) marking cells as
-   ocean vs land at `seaLevel`. Distinguish **connected ocean** (flood-fill from
-   the map border through sub-sea-level cells) from **inland basins** (sub-sea-
-   level cells NOT reachable from the border) — those become **lakes**.
-   - Use a flood fill (BFS/DFS or scanline) starting from all border cells that
-     are below sea level. Everything filled = ocean. Sub-sea-level and unfilled =
-     lake.
+Partition the land into coherent, named regions and name notable features. This
+is the bridge from *physical* to *human* geography.
 
-2. **Coastline extraction.** Mark land cells that are 4-neighbor-adjacent to
-   ocean as coast. Useful later for beaches, ports, labels.
+### 1. Build `src/regions.ts`
+- Partition all land cells into N contiguous **regions**. Recommended approach:
+  scatter `regionCount` seed points on land using a `regions` RNG stream
+  (rejection-sample points where `elevation >= seaLevel` and not lake), then
+  **multi-source BFS over land only** (4-connectivity, never crossing
+  ocean/lake) so each land cell is labeled with its nearest seed. Contiguous by
+  construction. Scale `regionCount` with land area (e.g. ~1 per 1500 land cells,
+  min 4).
+- Alternative worth considering: regions = **river basins** (group land by the
+  ocean/lake cell each cell ultimately drains to — you already have `flowTo`).
+  This is elegant and physical. Pick one; note the choice in `DECISIONS.md`.
+- Per region compute: cell count (area), centroid (x,y), mean elevation, mean
+  temperature, dominant biome, `coastal` flag (touches ocean), and the region's
+  id. Return `{ ids: Uint8Array|Int32Array, regions: RegionInfo[] }`.
 
-3. **Distance-to-coast field.** A `Grid` of (approximate) distance from each land
-   cell to the nearest ocean. A multi-source BFS from all coast cells is simplest
-   and deterministic. This feeds temperature/moisture later (maritime climate).
+### 2. Build `src/names.ts`
+- A deterministic procedural name generator. Suggested design: a small
+  syllable-based phonology (onsets, vowels, codas) with a few "language" presets
+  chosen per region so neighboring regions can share a naming style. Seed each
+  name from a `names` stream + the region id so names are stable.
+- Expose `makeNamer(seed)` → `() => string`, plus helpers to name regions and
+  notable features (the main river = highest `maxFlow` outlet, largest lake,
+  highest peak). Keep names pronounceable (alternate consonant/vowel).
 
-### Wire it into `world.ts`
-- Add `const hydroRng = root.stream("hydrology");` (even if unused now — reserve
-  the stream so later hydrology randomness stays isolated).
-- Compute the ocean/lake mask and distance field; attach to the `World` object
-  (e.g. `world.water = { oceanMask, lakeMask, coast, distToCoast }`).
-- Add useful metrics to `meta`: `lakeCount`, `oceanFraction`.
+### 3. Wire into `world.ts`
+- Add `root.stream("regions")` and `root.stream("names")`. Compute regions, then
+  names. Attach `world.regions` (+ names). Add to `meta`: `regionCount`, and
+  maybe a `featured` object (largest region name, main river name).
 
-### Render it
-- Add `renderWater()` or extend `renderHypsometric` so **lakes render distinctly**
-  from ocean (e.g. a lighter, greener blue), and coastlines optionally get a thin
-  outline. Regenerate the sample gallery so the improvement is visible.
+### 4. Render
+- `renderRegions(regionLayer, ...)`: give each region a distinct, stable color
+  (hash region id → hue, or a fixed palette cycled). Add subtle coastlines.
+- Add a **"Regions"** layer to `scripts/make-samples.ts` and the `LAYERS` array
+  in `docs/index.html`. Regenerate samples.
+- NOTE: text labels *on* the PNG need a bitmap font (hard). For now, expose
+  region names in metadata / console; on-map labels are a future SVG-export job
+  (roadmap P1). Don't rat-hole on text rendering this session.
 
-### Test it (`tests/hydrology.test.ts`)
-- Determinism: same seed → identical masks.
-- Invariant: every border ocean cell is connected ocean (no border lakes).
-- Invariant: `oceanFraction + landFraction ≈ 1` (minus lakes).
-- Invariant: `distToCoast` is 0 on coast cells and > 0 inland.
-- Sanity: at least one seed produces ≥ 1 lake (search a few seeds; pick a fixed
-  one that does and assert it, to keep the test deterministic).
+### 5. Test (`tests/regions.test.ts`, `tests/names.test.ts`)
+- Determinism: same seed → identical region ids and names.
+- Partition: every land cell belongs to exactly one region; no ocean/lake cell
+  has a region; region cell counts sum to land cell count.
+- Contiguity (if BFS approach): each region is 4-connected (spot-check).
+- Names: non-empty, deterministic, reasonably varied across regions.
 
-### Close out (do not skip — this is what makes the study work)
-1. Run `npm test`; keep everything green. If you changed elevation output,
-   update the golden hash **and** add a `DECISIONS.md` entry.
-2. `node scripts/make-samples.ts` to refresh `docs/` with water rendering.
-3. Update `CHANGELOG.md` (new session entry), `PROJECT_STATE.md` (layer table +
-   date), `ROADMAP.md` (tick L2, mark L3 as 🔜), and rewrite this file for L3.
-4. Commit with a clear message and push. If GitHub Pages isn't enabled yet, see
-   "Handoff notes" below.
+### Close out (do not skip)
+1. `npm test` green. Elevation is untouched, so the golden hash
+   `54146be48037737d` must stay green — if it changes you broke terrain.
+2. `node scripts/make-samples.ts` to refresh `docs/` with the Regions layer.
+3. Update `CHANGELOG.md` (Session 3 entry), `PROJECT_STATE.md` (layer table +
+   date + version bump to 0.6.0), `ROADMAP.md` (tick L7, mark L8 🔜),
+   `DECISIONS.md` (region-partition choice), and rewrite this file for **L8 —
+   Naming languages / L9 — Settlements**.
+4. Commit per logical unit and push. Verify the live site updated.
 
 ## Guardrails
-- Zero new dependencies.
-- All randomness via `Rng` streams; no `Math.random`, no clock, no ambient state.
-- Prefer clarity over cleverness; every public function gets a doc comment.
-- Ship something that runs and is tested — don't leave half-built code on main.
+- Zero new dependencies. All randomness via `Rng` streams. No `Math.random`,
+  no clock, no ambient state.
+- **No TS `enum`s / namespaces / decorators** (Node strip-only mode — see D-006).
+- Every public function gets a doc comment; every subsystem gets a determinism
+  test. Keep `main` always green.
 
-## Handoff notes / possible blockers
-- **GitHub Pages:** To make the gallery public, the repo owner may need to enable
-  Pages (Settings → Pages → deploy from `main` / `/docs`). This is optional and
-  doesn't block engine work. If `gh` is authenticated you can try enabling it via
-  the API; otherwise leave a note for the user. The site URL will be
-  `https://anduinmooney.github.io/cartogenesis/`.
-- If `npm test`'s directory glob misbehaves on a shell, run
-  `node --test "tests/*.test.ts"` directly.
-
-## Stretch goals (only if time remains after L2 is done, tested, committed)
-- Add a `--layer water` option to the CLI to export the water mask as its own PNG.
-- Start L3 (temperature) scaffolding: latitude + elevation lapse rate.
+## Stretch goals (only if L7 is done, tested, committed)
+- Begin L9 settlement scoring: a habitability field (near fresh water + mild
+  climate + not too high) → candidate city sites via non-maximum suppression.
+- Add a `regionCount` CLI flag.
