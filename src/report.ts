@@ -7,6 +7,7 @@
 
 import type { World } from "./world.ts";
 import { BIOME_NAMES, type Biome } from "./biomes.ts";
+import { RESOURCE_NAMES } from "./resources.ts";
 
 function pct(x: number): string {
   return `${(x * 100).toFixed(1)}%`;
@@ -138,16 +139,57 @@ export function worldReportMarkdown(world: World): string {
     lines.push(`### ${heading}`);
     lines.push("");
     for (const s of list) {
+      const eco = world.economy.economies.find((e) => e.settlementId === s.id);
       const tags = [
         s.isCapital ? "**capital**" : "",
         s.isPort ? "port" : "",
+        eco?.isTradeHub ? "trade hub" : "",
+        eco ? eco.tier : "",
       ]
         .filter(Boolean)
         .join(", ");
-      lines.push(`- ${s.name}${tags ? ` (${tags})` : ""}`);
+      const goods = eco && eco.produces.length
+        ? ` — ${eco.produces.map((k) => RESOURCE_NAMES[k]).join(", ")}`
+        : "";
+      lines.push(`- ${s.name}${tags ? ` (${tags})` : ""}${goods}`);
     }
     lines.push("");
   }
+
+  // Faiths
+  if (world.religion.faiths.length) {
+    lines.push("## Faiths");
+    lines.push("");
+    for (const f of world.religion.faiths) {
+      lines.push(
+        `### ${f.name} — ${f.deity.name}, god of ${f.deity.domain}`,
+      );
+      lines.push("");
+      lines.push(`> ${f.myth}`);
+      lines.push("");
+      lines.push(`Followed across ${f.followerRegions.length} region(s).`);
+      lines.push("");
+    }
+  }
+
+  // Resources & trade
+  lines.push("## Resources & trade");
+  lines.push("");
+  if (m.majorExports) lines.push(`- **Major exports:** ${m.majorExports}`);
+  const richestTown = world.settlements.settlements.find(
+    (s) => s.id === world.economy.richest,
+  );
+  if (richestTown) lines.push(`- **Wealthiest settlement:** ${richestTown.name}`);
+  const hubs = world.economy.economies
+    .filter((e) => e.isTradeHub)
+    .map((e) => world.settlements.settlements.find((s) => s.id === e.settlementId)?.name)
+    .filter(Boolean);
+  if (hubs.length) lines.push(`- **Trade hubs:** ${hubs.join(", ")}`);
+  const depCounts = Object.entries(world.resources.counts)
+    .filter(([, c]) => (c as number) > 0)
+    .map(([k, c]) => `${RESOURCE_NAMES[Number(k)]} ×${c}`);
+  if (depCounts.length) lines.push(`- **Deposits:** ${depCounts.join(", ")}`);
+  lines.push("");
 
   // Chronicle
   lines.push("## Chronicle");

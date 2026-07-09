@@ -385,6 +385,8 @@
         ["map", "Terrain"],
         ["biome", "Biomes"],
         ["political", "Political"],
+        ["faiths", "Faiths"],
+        ["resources", "Resources"],
         ["temperature", "Temp"],
         ["moisture", "Rain"],
         ["height", "Relief"],
@@ -447,12 +449,13 @@
                 <p class="note">${w.note}</p>
                 <div class="stats">
                   <span>land <b>${s.landFraction}%</b></span>
-                  <span>lakes <b>${s.lakeCount}</b></span>
                   <span>regions <b>${s.regionCount}</b></span>
                   <span>towns <b>${s.settlementCount}</b></span>
                   <span>realms <b>${s.realmCount}</b></span>
-                  <span>biomes <b>${s.biomeDiversity}</b></span>
-                  <span class="wide">capital <b>${s.capital}</b> · yr ${s.presentYear}</span>
+                  <span>faiths <b>${s.faithCount ?? "—"}</b></span>
+                  <span>deposits <b>${s.resourceCount ?? "—"}</b></span>
+                  <span class="wide">capital <b>${s.capital}</b>, House ${s.capitalHouse ?? "—"}</span>
+                  <span class="wide">exports: ${s.majorExports || "—"}</span>
                 </div>
                 <div class="links">
                   <a href="samples/${w.files.poster}" target="_blank" rel="noopener">Labeled poster ↗</a>

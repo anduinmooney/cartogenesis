@@ -9,17 +9,20 @@
 
 import { generateWorld,            } from "./engine/world.js";
 import { BIOME_NAMES } from "./engine/biomes.js";
+import { RESOURCE_NAMES } from "./engine/resources.js";
                                                           
 import {
   renderHypsometric,
   renderGrayscale,
   renderBiomes,
   renderRegions,
+  renderFaiths,
   renderTemperature,
   renderMoisture,
   overlayRivers,
   overlayRoads,
   overlaySettlements,
+  overlayResources,
 } from "./engine/render.js";
 
 const SIZE = 384;
@@ -28,6 +31,8 @@ const LAYERS                          = [
   ["terrain", "Terrain"],
   ["biome", "Biomes"],
   ["political", "Political"],
+  ["faiths", "Faiths"],
+  ["resources", "Resources"],
   ["temperature", "Temperature"],
   ["moisture", "Rainfall"],
   ["height", "Relief"],
@@ -65,6 +70,15 @@ function layerPixels(world       , layer        )             {
       const px = renderRegions(world.regions, world.water, world.elevation);
       overlayRoads(px, world.roads);
       overlaySettlements(px, towns, w, h);
+      return px;
+    }
+    case "faiths":
+      return renderFaiths(world.regions, world.religion, world.water, world.elevation);
+    case "resources": {
+      const px = renderHypsometric(world.elevation, world.meta.seaLevel, {
+        water: world.water,
+      });
+      overlayResources(px, world.resources.deposits, w, h);
       return px;
     }
     case "temperature":
@@ -229,14 +243,22 @@ function pinDetail(clientX        , clientY        )       {
   if (info.settlement) {
     const s = info.settlement;
     parts.push(`<div class="dh">${s.name}</div>`);
+    const eco = current.economy.economies.find((e) => e.settlementId === s.id);
     const tags = [
       s.isCapital ? "Capital" : s.tier[0].toUpperCase() + s.tier.slice(1),
       s.isPort ? "port" : "",
+      eco?.isTradeHub ? "trade hub" : "",
+      eco ? eco.tier : "",
     ]
       .filter(Boolean)
       .join(" · ");
     parts.push(`<div class="drow">${tags}</div>`);
     if (info.region) parts.push(`<div class="drow">in ${info.region.name} (${info.region.languageLabel})</div>`);
+    if (eco && eco.produces.length) {
+      parts.push(
+        `<div class="drow">produces ${eco.produces.map((k) => RESOURCE_NAMES[k]).join(", ")}</div>`,
+      );
+    }
   } else if (info.region) {
     const r = info.region;
     parts.push(`<div class="dh">${r.name}</div>`);
@@ -245,6 +267,9 @@ function pinDetail(clientX        , clientY        )       {
       `<div class="drow">area ${r.area} cells · ${r.coastal ? "coastal" : "inland"} · ` +
         `mean elev ${(r.meanElevation * 100).toFixed(0)}</div>`,
     );
+    const faithId = current.religion.regionFaith[r.id];
+    const faith = current.religion.faiths.find((f) => f.id === faithId);
+    if (faith) parts.push(`<div class="drow">faith: ${faith.name}</div>`);
     const prose = current.lore.regionDescriptions[r.id];
     if (prose) parts.push(`<div class="dprose">${escapeHtml(prose)}</div>`);
   }
@@ -338,6 +363,8 @@ function renderInfo(world       )       {
     ["Biomes", String(m.biomeDiversity)],
     ["Capital", m.capital],
     ["Ruling house", m.capitalHouse],
+    ["Faiths", String(m.faithCount)],
+    ["Exports", m.majorExports || "—"],
     ["Year", `${m.presentYear} AR`],
   ];
   $("stats").innerHTML = stats

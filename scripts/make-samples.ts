@@ -13,11 +13,13 @@ import {
   renderGrayscale,
   renderBiomes,
   renderRegions,
+  renderFaiths,
   renderTemperature,
   renderMoisture,
   overlayRivers,
   overlayRoads,
   overlaySettlements,
+  overlayResources,
 } from "../src/render.ts";
 import { encodePNG } from "../src/png.ts";
 import { worldReportMarkdown } from "../src/report.ts";
@@ -70,10 +72,19 @@ function main(): void {
     const politicalBare = political.slice(); // poster background w/o town dots
     overlaySettlements(political, towns, w, h);
 
+    // Faiths map + resources overlay on terrain.
+    const faiths = renderFaiths(world.regions, world.religion, world.water, world.elevation);
+    const resources = renderHypsometric(world.elevation, world.meta.seaLevel, {
+      water: world.water,
+    });
+    overlayResources(resources, world.resources.deposits, w, h);
+
     const layers: Record<string, Uint8Array> = {
       map,
       biome,
       political,
+      faiths,
+      resources,
       temperature: renderTemperature(world.temperature, world.water),
       moisture: renderMoisture(world.moisture, world.water),
       height: renderGrayscale(world.elevation),
@@ -114,6 +125,10 @@ function main(): void {
         capital: world.meta.capital,
         realmCount: world.meta.realmCount,
         presentYear: world.meta.presentYear,
+        capitalHouse: world.meta.capitalHouse,
+        faithCount: world.meta.faithCount,
+        majorExports: world.meta.majorExports,
+        resourceCount: world.meta.resourceCount,
       },
       contentHash: world.meta.contentHash,
     });
@@ -130,8 +145,8 @@ function main(): void {
     JSON.stringify(
       {
         size: SIZE,
-        engineVersion: "0.8.0",
-        layers: ["map", "biome", "political", "temperature", "moisture", "height"],
+        engineVersion: "0.10.0",
+        layers: ["map", "biome", "political", "faiths", "resources", "temperature", "moisture", "height"],
         worlds,
       },
       null,

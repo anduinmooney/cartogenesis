@@ -222,7 +222,7 @@ export function generateResources(
     const spacing = def.spacing / Math.sqrt(density);
     const spacing2 = spacing * spacing;
     const placed                                  = [];
-    const cap = Math.max(1, Math.round((cand.length / (spacing * spacing)) * 1.2));
+    const cap = Math.max(1, Math.round((cand.length / (spacing * spacing)) * 0.5));
     for (const { i, s } of cand) {
       if (placed.length >= cap) break;
       const x = i % width;
