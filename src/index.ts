@@ -61,6 +61,13 @@ export {
   type RoadLayer,
   type RoadEdge,
 } from "./roads.ts";
+export {
+  generateHistory,
+  type HistoryLayer,
+  type HistoryEvent,
+  type Realm,
+  type NamedFeature,
+} from "./history.ts";
 export { encodePNG } from "./png.ts";
 export {
   renderGrayscale,
