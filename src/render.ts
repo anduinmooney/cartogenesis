@@ -8,6 +8,7 @@
 import type { Grid } from "./grid.ts";
 import type { WaterLayer } from "./hydrology.ts";
 import type { RiverLayer } from "./rivers.ts";
+import { BIOME_COLORS, type BiomeLayer } from "./biomes.ts";
 
 export type RGB = [number, number, number];
 
@@ -198,4 +199,37 @@ export function renderTemperature(temperature: Grid, water?: WaterLayer): Uint8A
 
 export function renderMoisture(moisture: Grid, water?: WaterLayer): Uint8Array {
   return renderScalarField(moisture, MOIST_RAMP, water);
+}
+
+/** Render a biome map. Optional hillshade adds subtle relief from elevation. */
+export function renderBiomes(
+  biomes: BiomeLayer,
+  elevation?: Grid,
+): Uint8Array {
+  const { ids } = biomes;
+  const out = new Uint8Array(ids.length * 4);
+  for (let i = 0; i < ids.length; i++) {
+    const c = BIOME_COLORS[ids[i] as keyof typeof BIOME_COLORS] ?? [0, 0, 0];
+    let r = c[0];
+    let g = c[1];
+    let b = c[2];
+    if (elevation) {
+      const x = i % elevation.width;
+      const y = (i / elevation.width) | 0;
+      const hl = elevation.getClamped(x - 1, y);
+      const hr = elevation.getClamped(x + 1, y);
+      const hu = elevation.getClamped(x, y - 1);
+      const hd = elevation.getClamped(x, y + 1);
+      const slope = (hr - hl) * 0.5 + (hd - hu) * 0.5;
+      const f = 1 + Math.max(-0.25, Math.min(0.25, -slope * 5));
+      r = Math.max(0, Math.min(255, Math.round(r * f)));
+      g = Math.max(0, Math.min(255, Math.round(g * f)));
+      b = Math.max(0, Math.min(255, Math.round(b * f)));
+    }
+    out[i * 4] = r;
+    out[i * 4 + 1] = g;
+    out[i * 4 + 2] = b;
+    out[i * 4 + 3] = 255;
+  }
+  return out;
 }

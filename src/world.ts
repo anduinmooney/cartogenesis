@@ -15,8 +15,14 @@ import { generateElevation, landFraction } from "./terrain.ts";
 import { analyzeWater, type WaterLayer } from "./hydrology.ts";
 import { generateTemperature, generateMoisture } from "./climate.ts";
 import { generateRivers, type RiverLayer } from "./rivers.ts";
+import {
+  classifyBiomes,
+  BIOME_NAMES,
+  type BiomeLayer,
+  type Biome,
+} from "./biomes.ts";
 
-export const ENGINE_VERSION = "0.4.0";
+export const ENGINE_VERSION = "0.5.0";
 
 export interface WorldConfig {
   seed: number | string;
@@ -39,6 +45,10 @@ export interface WorldMeta {
   oceanFraction: number;
   lakeFraction: number;
   lakeCount: number;
+  riverFraction: number;
+  mainRiverFlow: number;
+  biomeDiversity: number;
+  dominantBiome: string;
   /** Content hash of the elevation field — a determinism fingerprint. */
   contentHash: string;
 }
@@ -50,6 +60,7 @@ export interface World {
   temperature: Grid;
   moisture: Grid;
   rivers: RiverLayer;
+  biomes: BiomeLayer;
 }
 
 export function generateWorld(config: WorldConfig): World {
@@ -91,6 +102,16 @@ export function generateWorld(config: WorldConfig): World {
   root.stream("rivers");
   const rivers = generateRivers(elevation, water, moisture, {});
 
+  // L6 — Biomes: classify each cell from the fields above.
+  root.stream("biomes");
+  const biomes = classifyBiomes(
+    elevation,
+    temperature,
+    moisture,
+    water,
+    seaLevel,
+  );
+
   const meta: WorldMeta = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -101,10 +122,14 @@ export function generateWorld(config: WorldConfig): World {
     oceanFraction: water.oceanFraction,
     lakeFraction: water.lakeFraction,
     lakeCount: water.lakeCount,
+    riverFraction: rivers.riverFraction,
+    mainRiverFlow: Math.round(rivers.maxFlow),
+    biomeDiversity: biomes.diversity,
+    dominantBiome: BIOME_NAMES[biomes.dominant as Biome],
     contentHash: hashGrid(elevation),
   };
 
-  return { meta, elevation, water, temperature, moisture, rivers };
+  return { meta, elevation, water, temperature, moisture, rivers, biomes };
 }
 
 /** Stable content hash of a Grid (quantized to survive trivial float noise). */

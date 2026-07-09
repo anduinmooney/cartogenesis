@@ -28,6 +28,14 @@ export {
   type RiverLayer,
   type RiverConfig,
 } from "./rivers.ts";
+export {
+  Biome,
+  BIOME_NAMES,
+  BIOME_COLORS,
+  classifyCell,
+  classifyBiomes,
+  type BiomeLayer,
+} from "./biomes.ts";
 export { encodePNG } from "./png.ts";
 export {
   renderGrayscale,
@@ -35,6 +43,7 @@ export {
   renderScalarField,
   renderTemperature,
   renderMoisture,
+  renderBiomes,
   overlayRivers,
   type RGB,
 } from "./render.ts";

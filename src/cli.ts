@@ -20,6 +20,7 @@ import { generateWorld, worldToJSON, type WorldConfig } from "./world.ts";
 import {
   renderHypsometric,
   renderGrayscale,
+  renderBiomes,
   overlayRivers,
 } from "./render.ts";
 import { encodePNG } from "./png.ts";
@@ -112,11 +113,26 @@ function runGenerate(opts: CliOptions): void {
     renderGrayscale(world.elevation),
   );
 
+  const biomePixels = renderBiomes(world.biomes, world.elevation);
+  overlayRivers(
+    biomePixels,
+    world.rivers,
+    world.elevation.width,
+    world.elevation.height,
+  );
+  const biomePng = encodePNG(
+    world.elevation.width,
+    world.elevation.height,
+    biomePixels,
+  );
+
   const mapPath = join(opts.out, `${name}.map.png`);
+  const biomePath = join(opts.out, `${name}.biome.png`);
   const heightPath = join(opts.out, `${name}.height.png`);
   const metaPath = join(opts.out, `${name}.json`);
 
   writeFileSync(mapPath, mapPng);
+  writeFileSync(biomePath, biomePng);
   writeFileSync(heightPath, heightPng);
   writeFileSync(metaPath, worldToJSON(world));
 
@@ -132,9 +148,18 @@ function runGenerate(opts: CliOptions): void {
     `  ocean / lakes: ${(world.meta.oceanFraction * 100).toFixed(1)}% ocean, ` +
       `${world.meta.lakeCount} lake(s) (${(world.meta.lakeFraction * 100).toFixed(1)}%)`,
   );
+  console.log(
+    `  rivers:        ${(world.meta.riverFraction * 100).toFixed(1)}% of map, ` +
+      `main flow ${world.meta.mainRiverFlow}`,
+  );
+  console.log(
+    `  biomes:        ${world.meta.biomeDiversity} types, ` +
+      `dominant: ${world.meta.dominantBiome}`,
+  );
   console.log(`  content hash:  ${world.meta.contentHash}`);
   console.log(`  generated in:  ${ms} ms`);
   console.log(`  wrote:         ${mapPath}`);
+  console.log(`                 ${biomePath}`);
   console.log(`                 ${heightPath}`);
   console.log(`                 ${metaPath}`);
 }
