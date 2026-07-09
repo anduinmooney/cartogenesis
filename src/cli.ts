@@ -21,9 +21,14 @@ import {
   renderHypsometric,
   renderGrayscale,
   renderBiomes,
+  renderRegions,
   overlayRivers,
+  overlayRoads,
+  overlaySettlements,
 } from "./render.ts";
 import { encodePNG } from "./png.ts";
+import { worldReportMarkdown } from "./report.ts";
+import { worldPosterSVG } from "./svgmap.ts";
 
 interface CliOptions extends WorldConfig {
   out: string;
@@ -92,48 +97,50 @@ function runGenerate(opts: CliOptions): void {
   const name = opts.name || slugify(opts.seed);
 
   mkdirSync(opts.out, { recursive: true });
+  const W = world.elevation.width;
+  const H = world.elevation.height;
+  const towns = world.settlements.settlements;
 
+  // Terrain atlas: hypsometric + rivers + roads + settlements.
   const mapPixels = renderHypsometric(world.elevation, world.meta.seaLevel, {
     water: world.water,
   });
-  overlayRivers(
-    mapPixels,
-    world.rivers,
-    world.elevation.width,
-    world.elevation.height,
-  );
-  const mapPng = encodePNG(
-    world.elevation.width,
-    world.elevation.height,
-    mapPixels,
-  );
-  const heightPng = encodePNG(
-    world.elevation.width,
-    world.elevation.height,
-    renderGrayscale(world.elevation),
-  );
+  overlayRivers(mapPixels, world.rivers, W, H);
+  overlayRoads(mapPixels, world.roads);
+  overlaySettlements(mapPixels, towns, W, H);
+  const mapPng = encodePNG(W, H, mapPixels);
 
+  // Biome atlas: biomes + rivers.
   const biomePixels = renderBiomes(world.biomes, world.elevation);
-  overlayRivers(
-    biomePixels,
-    world.rivers,
-    world.elevation.width,
-    world.elevation.height,
-  );
-  const biomePng = encodePNG(
-    world.elevation.width,
-    world.elevation.height,
-    biomePixels,
-  );
+  overlayRivers(biomePixels, world.rivers, W, H);
+  const biomePng = encodePNG(W, H, biomePixels);
+
+  // Political map: regions + roads + settlements.
+  const polPixels = renderRegions(world.regions, world.water, world.elevation);
+  overlayRoads(polPixels, world.roads);
+  overlaySettlements(polPixels, towns, W, H);
+  const politicalPng = encodePNG(W, H, polPixels);
+
+  const heightPng = encodePNG(W, H, renderGrayscale(world.elevation));
+
+  // Labeled SVG poster over the political map + Markdown gazetteer.
+  const posterSvg = worldPosterSVG(world, politicalPng);
+  const reportMd = worldReportMarkdown(world);
 
   const mapPath = join(opts.out, `${name}.map.png`);
   const biomePath = join(opts.out, `${name}.biome.png`);
+  const politicalPath = join(opts.out, `${name}.political.png`);
   const heightPath = join(opts.out, `${name}.height.png`);
+  const posterPath = join(opts.out, `${name}.poster.svg`);
+  const reportPath = join(opts.out, `${name}.report.md`);
   const metaPath = join(opts.out, `${name}.json`);
 
   writeFileSync(mapPath, mapPng);
   writeFileSync(biomePath, biomePng);
+  writeFileSync(politicalPath, politicalPng);
   writeFileSync(heightPath, heightPng);
+  writeFileSync(posterPath, posterSvg);
+  writeFileSync(reportPath, reportMd);
   writeFileSync(metaPath, worldToJSON(world));
 
   const ms = Date.now() - started;
@@ -156,11 +163,24 @@ function runGenerate(opts: CliOptions): void {
     `  biomes:        ${world.meta.biomeDiversity} types, ` +
       `dominant: ${world.meta.dominantBiome}`,
   );
+  console.log(
+    `  regions:       ${world.meta.regionCount} (largest: ${world.meta.largestRegion})`,
+  );
+  console.log(
+    `  settlements:   ${world.meta.settlementCount}, capital: ${world.meta.capital}`,
+  );
+  console.log(
+    `  history:       ${world.meta.realmCount} realms, ${world.meta.eventCount} events, ` +
+      `present year ${world.meta.presentYear}`,
+  );
   console.log(`  content hash:  ${world.meta.contentHash}`);
   console.log(`  generated in:  ${ms} ms`);
   console.log(`  wrote:         ${mapPath}`);
   console.log(`                 ${biomePath}`);
+  console.log(`                 ${politicalPath}`);
   console.log(`                 ${heightPath}`);
+  console.log(`                 ${posterPath}`);
+  console.log(`                 ${reportPath}`);
   console.log(`                 ${metaPath}`);
 }
 

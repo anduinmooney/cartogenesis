@@ -68,6 +68,8 @@ export {
   type Realm,
   type NamedFeature,
 } from "./history.ts";
+export { worldReportMarkdown } from "./report.ts";
+export { worldPosterSVG, type PosterOptions } from "./svgmap.ts";
 export { encodePNG } from "./png.ts";
 export {
   renderGrayscale,
