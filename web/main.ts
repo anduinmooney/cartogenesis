@@ -245,6 +245,8 @@ function pinDetail(clientX: number, clientY: number): void {
       `<div class="drow">area ${r.area} cells · ${r.coastal ? "coastal" : "inland"} · ` +
         `mean elev ${(r.meanElevation * 100).toFixed(0)}</div>`,
     );
+    const prose = current.lore.regionDescriptions[r.id];
+    if (prose) parts.push(`<div class="dprose">${escapeHtml(prose)}</div>`);
   }
   detail.innerHTML = parts.join("");
   detail.hidden = false;
@@ -335,7 +337,7 @@ function renderInfo(world: World): void {
     ["Realms", String(m.realmCount)],
     ["Biomes", String(m.biomeDiversity)],
     ["Capital", m.capital],
-    ["Dominant", m.dominantBiome],
+    ["Ruling house", m.capitalHouse],
     ["Year", `${m.presentYear} AR`],
   ];
   $("stats").innerHTML = stats

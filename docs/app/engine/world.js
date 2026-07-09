@@ -29,8 +29,9 @@ import {
 } from "./settlements.js";
 import { generateRoads,                } from "./roads.js";
 import { generateHistory,                   } from "./history.js";
+import { generateLore,                } from "./lore.js";
 
-export const ENGINE_VERSION = "0.8.0";
+export const ENGINE_VERSION = "0.9.0";
 
                               
                         
@@ -67,6 +68,8 @@ export const ENGINE_VERSION = "0.8.0";
                      
                      
                       
+                       
+                     
                                                                          
                       
  
@@ -83,6 +86,7 @@ export const ENGINE_VERSION = "0.8.0";
                                
                    
                         
+                  
  
 
 export function generateWorld(config             )        {
@@ -190,6 +194,12 @@ export function generateWorld(config             )        {
     { seed: historyRng.seed },
   );
 
+  // L12 — Lore: houses, rulers, figures, and region prose.
+  const loreRng = root.stream("lore");
+  const lore = generateLore(regions, settlements.settlements, history, {
+    seed: loreRng.seed,
+  });
+
   const meta            = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -212,6 +222,8 @@ export function generateWorld(config             )        {
     realmCount: history.realms.length,
     eventCount: history.events.length,
     presentYear: history.presentYear,
+    capitalHouse: lore.capitalHouse,
+    rulerCount: lore.rulers.length,
     contentHash: hashGrid(elevation),
   };
 
@@ -227,6 +239,7 @@ export function generateWorld(config             )        {
     settlements,
     roads,
     history,
+    lore,
   };
 }
 

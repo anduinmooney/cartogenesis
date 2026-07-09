@@ -49,7 +49,7 @@ export function worldReportMarkdown(world: World): string {
     `- **Peoples:** ${m.regionCount} regions, ${m.settlementCount} settlements, ` +
       `${m.realmCount} realms`,
   );
-  lines.push(`- **Capital:** ${m.capital}`);
+  lines.push(`- **Capital:** ${m.capital}, seat of House ${m.capitalHouse}`);
   lines.push(`- **The present year:** ${h.presentYear} ${h.epoch}`);
   lines.push("");
 
@@ -82,6 +82,47 @@ export function worldReportMarkdown(world: World): string {
     );
   }
   lines.push("");
+
+  // Region descriptions (prose), skipping tiny islets.
+  const described = regions.filter((r) => r.area >= 30);
+  if (described.length) {
+    for (const r of described) {
+      lines.push(`- ${world.lore.regionDescriptions[r.id]}`);
+    }
+    lines.push("");
+  }
+
+  // Ruling houses & rulers
+  if (world.lore.houses.length) {
+    lines.push("## Ruling houses");
+    lines.push("");
+    const realmsByFounding = [...world.history.realms].sort(
+      (a, b) => a.foundedYear - b.foundedYear,
+    );
+    for (const realm of realmsByFounding) {
+      const house = world.lore.houses.find((x) => x.realmId === realm.id);
+      if (!house) continue;
+      lines.push(`### House ${house.name} — realm of ${realm.name}`);
+      lines.push("");
+      const line = world.lore.rulers
+        .filter((x) => x.realmId === realm.id)
+        .sort((a, b) => a.startYear - b.startYear);
+      for (const ruler of line) {
+        lines.push(`- **${ruler.startYear}–${ruler.endYear}** ${ruler.name}`);
+      }
+      lines.push("");
+    }
+  }
+
+  // Notable figures
+  if (world.lore.figures.length) {
+    lines.push("## Notable figures");
+    lines.push("");
+    for (const f of world.lore.figures) {
+      lines.push(`- **${f.name}** — ${f.description}`);
+    }
+    lines.push("");
+  }
 
   // Settlements
   lines.push("## Settlements");

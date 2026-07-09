@@ -70,6 +70,13 @@ export {
   type Realm,
   type NamedFeature,
 } from "./history.ts";
+export {
+  generateLore,
+  type LoreLayer,
+  type House,
+  type Ruler,
+  type Figure,
+} from "./lore.ts";
 export { worldReportMarkdown } from "./report.ts";
 export { worldPosterSVG, type PosterOptions } from "./svgmap.ts";
 export { encodePNG } from "./png.ts";

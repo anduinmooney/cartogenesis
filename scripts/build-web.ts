@@ -30,6 +30,7 @@ const MODULES = [
   "settlements",
   "roads",
   "history",
+  "lore",
   "render",
   "world",
 ];

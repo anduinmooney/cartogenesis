@@ -29,8 +29,9 @@ import {
 } from "./settlements.ts";
 import { generateRoads, type RoadLayer } from "./roads.ts";
 import { generateHistory, type HistoryLayer } from "./history.ts";
+import { generateLore, type LoreLayer } from "./lore.ts";
 
-export const ENGINE_VERSION = "0.8.0";
+export const ENGINE_VERSION = "0.9.0";
 
 export interface WorldConfig {
   seed: number | string;
@@ -67,6 +68,8 @@ export interface WorldMeta {
   realmCount: number;
   eventCount: number;
   presentYear: number;
+  capitalHouse: string;
+  rulerCount: number;
   /** Content hash of the elevation field — a determinism fingerprint. */
   contentHash: string;
 }
@@ -83,6 +86,7 @@ export interface World {
   settlements: SettlementLayer;
   roads: RoadLayer;
   history: HistoryLayer;
+  lore: LoreLayer;
 }
 
 export function generateWorld(config: WorldConfig): World {
@@ -190,6 +194,12 @@ export function generateWorld(config: WorldConfig): World {
     { seed: historyRng.seed },
   );
 
+  // L12 — Lore: houses, rulers, figures, and region prose.
+  const loreRng = root.stream("lore");
+  const lore = generateLore(regions, settlements.settlements, history, {
+    seed: loreRng.seed,
+  });
+
   const meta: WorldMeta = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -212,6 +222,8 @@ export function generateWorld(config: WorldConfig): World {
     realmCount: history.realms.length,
     eventCount: history.events.length,
     presentYear: history.presentYear,
+    capitalHouse: lore.capitalHouse,
+    rulerCount: lore.rulers.length,
     contentHash: hashGrid(elevation),
   };
 
@@ -227,6 +239,7 @@ export function generateWorld(config: WorldConfig): World {
     settlements,
     roads,
     history,
+    lore,
   };
 }
 
