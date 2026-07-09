@@ -120,3 +120,52 @@ export function renderHypsometric(
   }
   return out;
 }
+
+const TEMP_RAMP: Array<[number, RGB]> = [
+  [0.0, [48, 70, 150]], // frigid
+  [0.3, [80, 150, 205]],
+  [0.5, [235, 228, 150]], // temperate
+  [0.72, [225, 135, 60]],
+  [1.0, [165, 30, 30]], // torrid
+];
+
+const MOIST_RAMP: Array<[number, RGB]> = [
+  [0.0, [196, 166, 104]], // arid
+  [0.35, [214, 206, 128]],
+  [0.6, [120, 182, 100]],
+  [1.0, [28, 112, 150]], // saturated
+];
+
+const WATER_NEUTRAL: RGB = [34, 40, 50];
+
+/**
+ * Render any [0,1] scalar field through a color ramp. If a water layer is
+ * given, ocean/lake cells render as a neutral dark tone so land data reads
+ * clearly on thematic maps.
+ */
+export function renderScalarField(
+  field: Grid,
+  stops: Array<[number, RGB]>,
+  water?: WaterLayer,
+): Uint8Array {
+  const { width, height, data } = field;
+  const out = new Uint8Array(width * height * 4);
+  for (let i = 0; i < data.length; i++) {
+    const isWater =
+      water && (water.oceanMask[i] === 1 || water.lakeMask[i] === 1);
+    const c = isWater ? WATER_NEUTRAL : ramp(stops, data[i]);
+    out[i * 4] = c[0];
+    out[i * 4 + 1] = c[1];
+    out[i * 4 + 2] = c[2];
+    out[i * 4 + 3] = 255;
+  }
+  return out;
+}
+
+export function renderTemperature(temperature: Grid, water?: WaterLayer): Uint8Array {
+  return renderScalarField(temperature, TEMP_RAMP, water);
+}
+
+export function renderMoisture(moisture: Grid, water?: WaterLayer): Uint8Array {
+  return renderScalarField(moisture, MOIST_RAMP, water);
+}

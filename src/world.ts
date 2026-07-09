@@ -13,8 +13,9 @@ import { Rng } from "./rng.ts";
 import { Grid } from "./grid.ts";
 import { generateElevation, landFraction } from "./terrain.ts";
 import { analyzeWater, type WaterLayer } from "./hydrology.ts";
+import { generateTemperature, generateMoisture } from "./climate.ts";
 
-export const ENGINE_VERSION = "0.2.0";
+export const ENGINE_VERSION = "0.3.0";
 
 export interface WorldConfig {
   seed: number | string;
@@ -45,6 +46,8 @@ export interface World {
   meta: WorldMeta;
   elevation: Grid;
   water: WaterLayer;
+  temperature: Grid;
+  moisture: Grid;
 }
 
 export function generateWorld(config: WorldConfig): World {
@@ -71,6 +74,17 @@ export function generateWorld(config: WorldConfig): World {
   root.stream("hydrology");
   const water = analyzeWater(elevation, seaLevel);
 
+  // L3 — Temperature; L4 — Moisture. Both draw from the climate stream.
+  const climateRng = root.stream("climate");
+  const temperature = generateTemperature(elevation, water, {
+    seed: climateRng.stream("temperature").seed,
+    seaLevel,
+  });
+  const moisture = generateMoisture(elevation, temperature, water, {
+    seed: climateRng.stream("moisture").seed,
+    seaLevel,
+  });
+
   const meta: WorldMeta = {
     engineVersion: ENGINE_VERSION,
     seed: config.seed,
@@ -84,7 +98,7 @@ export function generateWorld(config: WorldConfig): World {
     contentHash: hashGrid(elevation),
   };
 
-  return { meta, elevation, water };
+  return { meta, elevation, water, temperature, moisture };
 }
 
 /** Stable content hash of a Grid (quantized to survive trivial float noise). */

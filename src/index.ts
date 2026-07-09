@@ -11,10 +11,25 @@ export {
   landFraction,
   type TerrainConfig,
 } from "./terrain.ts";
+export {
+  analyzeWater,
+  countComponents,
+  type WaterLayer,
+} from "./hydrology.ts";
+export {
+  generateTemperature,
+  generateMoisture,
+  latitudeBand,
+  type TemperatureConfig,
+  type MoistureConfig,
+} from "./climate.ts";
 export { encodePNG } from "./png.ts";
 export {
   renderGrayscale,
   renderHypsometric,
+  renderScalarField,
+  renderTemperature,
+  renderMoisture,
   type RGB,
 } from "./render.ts";
 export {
