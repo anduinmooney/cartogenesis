@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      # Zero dependencies — nothing to install.
+      - name: Run tests
+        run: node --test "tests/*.test.ts"
+
+      - name: Rebuild browser bundle
+        run: node scripts/build-web.ts
+
+      - name: Verify committed web bundle is up to date
+        run: |
+          if ! git diff --quiet docs/app; then
+            echo "::error::docs/app is stale — run 'npm run build:web' and commit the result."
+            git diff --stat docs/app
+            exit 1
+          fi
