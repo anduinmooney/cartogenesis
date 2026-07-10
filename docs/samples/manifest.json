@@ -48,7 +48,7 @@
         "majorExports": "Livestock, Grain, Horses, Wine, Stone",
         "resourceCount": 536,
         "dominantPower": "Nopa",
-        "survivingRealms": 1,
+        "survivingRealms": 5,
         "volcanoCount": 9,
         "highestPeakMetres": 4500
       },
@@ -87,8 +87,8 @@
         "faithCount": 3,
         "majorExports": "Livestock, Horses, Grain, Wine, Fish",
         "resourceCount": 314,
-        "dominantPower": "Raia",
-        "survivingRealms": 2,
+        "dominantPower": "Taunabi",
+        "survivingRealms": 10,
         "volcanoCount": 6,
         "highestPeakMetres": 4500
       },
@@ -127,8 +127,8 @@
         "faithCount": 4,
         "majorExports": "Livestock, Grain, Horses, Wine, Fish",
         "resourceCount": 506,
-        "dominantPower": "Saudaura",
-        "survivingRealms": 1,
+        "dominantPower": "Sade",
+        "survivingRealms": 3,
         "volcanoCount": 9,
         "highestPeakMetres": 4500
       },
@@ -168,7 +168,7 @@
         "majorExports": "Livestock, Grain, Horses, Wine, Fish",
         "resourceCount": 426,
         "dominantPower": "Tamorsenasiaa",
-        "survivingRealms": 1,
+        "survivingRealms": 5,
         "volcanoCount": 7,
         "highestPeakMetres": 4500
       },
@@ -207,8 +207,8 @@
         "faithCount": 4,
         "majorExports": "Livestock, Horses, Grain, Fish, Wine",
         "resourceCount": 468,
-        "dominantPower": "Vobica",
-        "survivingRealms": 5,
+        "dominantPower": "Sike",
+        "survivingRealms": 6,
         "volcanoCount": 9,
         "highestPeakMetres": 4500
       },
@@ -248,7 +248,7 @@
         "majorExports": "Livestock, Horses, Grain, Fish, Stone",
         "resourceCount": 291,
         "dominantPower": "Neneo",
-        "survivingRealms": 1,
+        "survivingRealms": 2,
         "volcanoCount": 5,
         "highestPeakMetres": 4500
       },

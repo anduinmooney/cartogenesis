@@ -9,7 +9,7 @@
 - **Climate & life:** dominant biome **Grassland**, 16 biomes in all
 - **Peoples:** 28 regions, 24 settlements, 4 realms
 - **Capital:** Timortepimar, seat of House Beodaveo
-- **Dominant power:** Saudaura (of 1 surviving realm(s))
+- **Dominant power:** Sade (of 3 surviving realm(s))
 - **The present year:** 927 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 9 (3 active)
 
@@ -237,70 +237,106 @@ Followed across 4 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 1 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 3 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Saudaura | 100 | 28 | 300 | 28 | ascendant |
-| Sade | 100 | 12 | 175 | 0 | extinct |
+| Sade | 100 | 12 | 800 | 12 | ascendant |
+| Saudaura | 100 | 9 | 375 | 7 | diminished |
+| Knorkthy | 100 | 9 | 875 | 9 | ascendant |
 | Baubano | 100 | 6 | 100 | 0 | extinct |
 | Mane | 100 | 3 | 100 | 0 | extinct |
-| Knorkthy | 100 | 2 | 100 | 0 | extinct |
 
 ## Chronicle
 
-- **100 After Reckoning** — Sade seized Beriarico from Sipebo.
-- **100 After Reckoning** — The realm of Sipebo was extinguished.
-- **100 After Reckoning** — Saudaura seized Sendomiandomo from Bassomi.
-- **100 After Reckoning** — The realm of Bassomi was extinguished.
-- **100 After Reckoning** — Saudaura seized Tiameo from Teollapano.
-- **100 After Reckoning** — The realm of Teollapano was extinguished.
-- **100 After Reckoning** — Orndau turned from the Faith of Maajai to the Rite of Senanaba.
-- **125 After Reckoning** — Saudaura seized Knogrudo from Baubano.
-- **125 After Reckoning** — Sade seized Kaiqe from Baubano.
-- **125 After Reckoning** — Sade seized Saashzima from Mane.
-- **125 After Reckoning** — Sade seized Ria from Mane.
-- **150 After Reckoning** — Sade seized Khikheshi from Baubano.
-- **150 After Reckoning** — Saudaura seized Vandvovo from Baubano.
-- **150 After Reckoning** — Saudaura seized Graugrfjaugrhro from Baubano.
-- **150 After Reckoning** — A long drought gripped Zaishmiesh; many perished.
-- **175 After Reckoning** — Saudaura seized Breindhragrau from Baubano.
-- **175 After Reckoning** — The realm of Baubano was extinguished.
-- **175 After Reckoning** — Sade seized Liallaa from Mane.
-- **175 After Reckoning** — The realm of Mane was extinguished.
-- **175 After Reckoning** — Saudaura seized Nalensita from Knorkthy.
-- **200 After Reckoning** — Saudaura seized Bokno from Knorkthy.
-- **200 After Reckoning** — The realm of Knorkthy was extinguished.
-- **200 After Reckoning** — Saashzima turned from the Faith of Maajai to the Faith of Stuskvo.
-- **225 After Reckoning** — Saudaura seized Beriarico from Sade.
-- **225 After Reckoning** — Saudaura seized Khikheshi from Sade.
-- **225 After Reckoning** — Saudaura seized Raita from Sade.
-- **225 After Reckoning** — Saudaura seized Kaiqe from Sade.
-- **250 After Reckoning** — Saudaura seized Matemia from Sade.
-- **250 After Reckoning** — Saudaura seized Liallaa from Sade.
-- **250 After Reckoning** — Saudaura seized Saashzima from Sade.
-- **250 After Reckoning** — Saudaura seized Banhreiheim from Sade.
-- **250 After Reckoning** — Rushraizku turned from the Faith of Maajai to the Way of Nallarau.
-- **250 After Reckoning** — A plague swept Khikheshi; many perished.
-- **275 After Reckoning** — Saudaura seized Rushraizku from Sade.
-- **275 After Reckoning** — Saudaura seized Ria from Sade.
-- **300 After Reckoning** — Saudaura seized Kneirkstaudogard from Sade.
-- **300 After Reckoning** — Saudaura seized Ghagha from Sade.
-- **300 After Reckoning** — The realm of Sade was extinguished.
-- **375 After Reckoning** — A long drought gripped Kneirkstaudogard; many perished.
-- **500 After Reckoning** — A long drought gripped Vandvovo; many perished.
-- **525 After Reckoning** — A long drought gripped Tiameo; many perished.
-- **550 After Reckoning** — A long drought gripped Sendomiandomo; many perished.
-- **600 After Reckoning** — A golden age dawned over Saudaura; its cities flourished as never before.
-- **700 After Reckoning** — A long drought gripped Kaiqe; many perished.
-- **700 After Reckoning** — A golden age dawned over Saudaura; its cities flourished as never before.
-- **725 After Reckoning** — A plague swept Liallaa; many perished.
-- **725 After Reckoning** — A golden age dawned over Saudaura; its cities flourished as never before.
-- **825 After Reckoning** — A long drought gripped Kneirkstaudogard; many perished.
-- **900 After Reckoning** — A plague swept Ghagha; many perished.
-- **900 After Reckoning** — A golden age dawned over Saudaura; its cities flourished as never before.
-- **950 After Reckoning** — A plague swept Ria; many perished.
-- **975 After Reckoning** — A long drought gripped Tiameo; many perished.
+- **100 After Reckoning** — Sade's invasion of Beriarico was thrown back by Sipebo.
+- **100 After Reckoning** — A long drought gripped Brubrurnkno; many perished.
+- **125 After Reckoning** — Knorkthy seized Graugrfjaugrhro from Baubano.
+- **125 After Reckoning** — Saudaura's invasion of Tiameo was thrown back by Teollapano.
+- **125 After Reckoning** — A long drought gripped Kamaa; many perished.
+- **125 After Reckoning** — A golden age dawned over Mane; its cities flourished as never before.
+- **150 After Reckoning** — Sade seized Beriarico from Sipebo.
+- **150 After Reckoning** — The realm of Sipebo was extinguished.
+- **175 After Reckoning** — Sade seized Tiameo from Teollapano.
+- **175 After Reckoning** — The realm of Teollapano was extinguished.
+- **175 After Reckoning** — A plague swept Ghagha; many perished.
+- **200 After Reckoning** — Sade's invasion of Kaiqe was thrown back by Baubano.
+- **200 After Reckoning** — Knorkthy's invasion of Knogrudo was thrown back by Baubano.
+- **225 After Reckoning** — Saudaura's invasion of Sendomiandomo was thrown back by Bassomi.
+- **225 After Reckoning** — Raita turned from the Faith of Maajai to the Way of Nallarau.
+- **225 After Reckoning** — A plague swept Beriarico; many perished.
+- **225 After Reckoning** — A golden age dawned over Sade; its cities flourished as never before.
+- **250 After Reckoning** — Sade's invasion of Kaiqe was thrown back by Baubano.
+- **250 After Reckoning** — Ria turned from the Way of Nallarau to the Faith of Stuskvo.
+- **275 After Reckoning** — Knorkthy seized Knogrudo from Baubano.
+- **275 After Reckoning** — A long drought gripped Vandvovo; many perished.
+- **275 After Reckoning** — A golden age dawned over Baubano; its cities flourished as never before.
+- **300 After Reckoning** — Sade seized Kaiqe from Baubano.
+- **300 After Reckoning** — Knorkthy seized Vandvovo from Baubano.
+- **325 After Reckoning** — Sade seized Khikheshi from Baubano.
+- **325 After Reckoning** — Knorkthy seized Breindhragrau from Baubano.
+- **325 After Reckoning** — The realm of Baubano was extinguished.
+- **350 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
+- **350 After Reckoning** — Liamar turned from the Faith of Stuskvo to the Faith of Maajai.
+- **350 After Reckoning** — A long drought gripped Vipaua; many perished.
+- **375 After Reckoning** — Saudaura seized Sendomiandomo from Bassomi.
+- **375 After Reckoning** — The realm of Bassomi was extinguished.
+- **375 After Reckoning** — Sade's invasion of Saashzima was thrown back by Mane.
+- **375 After Reckoning** — Dollva turned from the Faith of Stuskvo to the Rite of Senanaba.
+- **400 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
+- **400 After Reckoning** — A plague swept Deigrthogard; many perished.
+- **425 After Reckoning** — Sade seized Saashzima from Mane.
+- **450 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
+- **475 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
+- **475 After Reckoning** — Saashzima rose against Sade and declared the free realm of Quzkukhka.
+- **475 After Reckoning** — A long drought gripped Graugrfjaugrhro; many perished.
+- **500 After Reckoning** — Mane seized Saashzima from Quzkukhka.
+- **500 After Reckoning** — The realm of Quzkukhka was extinguished.
+- **500 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
+- **525 After Reckoning** — Sade's invasion of Saashzima was thrown back by Mane.
+- **525 After Reckoning** — A plague swept Rushraizku; many perished.
+- **525 After Reckoning** — A golden age dawned over Saudaura; its cities flourished as never before.
+- **550 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
+- **575 After Reckoning** — Sade seized Saashzima from Mane.
+- **600 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
+- **600 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
+- **600 After Reckoning** — Saashzima rose against Sade and declared the free realm of Kizsi.
+- **625 After Reckoning** — Mane seized Saashzima from Kizsi.
+- **625 After Reckoning** — The realm of Kizsi was extinguished.
+- **625 After Reckoning** — Kaiqe turned from the Rite of Senanaba to the Way of Nallarau.
+- **650 After Reckoning** — Sade's invasion of Saashzima was thrown back by Mane.
+- **650 After Reckoning** — A golden age dawned over Knorkthy; its cities flourished as never before.
+- **675 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
+- **700 After Reckoning** — Sade seized Saashzima from Mane.
+- **725 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
+- **725 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
+- **725 After Reckoning** — A long drought gripped Kneirkstaudogard; many perished.
+- **750 After Reckoning** — Saashzima rose against Sade and declared the free realm of Khaakhzughu.
+- **775 After Reckoning** — Sade seized Saashzima from Khaakhzughu.
+- **775 After Reckoning** — The realm of Khaakhzughu was extinguished.
+- **775 After Reckoning** — A plague swept Liallaa; many perished.
+- **800 After Reckoning** — Sade seized Ria from Mane.
+- **825 After Reckoning** — Knorkthy seized Liallaa from Mane.
+- **825 After Reckoning** — The realm of Mane was extinguished.
+- **825 After Reckoning** — Sade's invasion of Liamar was thrown back by Saudaura.
+- **825 After Reckoning** — Ria rose against Sade and declared the free realm of Zaqshai.
+- **850 After Reckoning** — Knorkthy seized Ria from Zaqshai.
+- **850 After Reckoning** — The realm of Zaqshai was extinguished.
+- **850 After Reckoning** — A plague swept Brubrurnkno; many perished.
+- **875 After Reckoning** — Knorkthy seized Dollva from Saudaura.
+- **875 After Reckoning** — Sade's invasion of Liamar was thrown back by Saudaura.
+- **900 After Reckoning** — Knorkthy's invasion of Kamaa was thrown back by Saudaura.
+- **900 After Reckoning** — A golden age dawned over Sade; its cities flourished as never before.
+- **925 After Reckoning** — Sade's invasion of Liamar was thrown back by Saudaura.
+- **950 After Reckoning** — Knorkthy's invasion of Kamaa was thrown back by Saudaura.
+- **975 After Reckoning** — Sade's invasion of Liamar was thrown back by Saudaura.
+- **1000 After Reckoning** — Knorkthy's invasion of Liamar was thrown back by Saudaura.
+- **1025 After Reckoning** — Sade's invasion of Liamar was thrown back by Saudaura.
+- **1025 After Reckoning** — A long drought gripped Deigrthogard; many perished.
+- **1025 After Reckoning** — A golden age dawned over Knorkthy; its cities flourished as never before.
+- **1050 After Reckoning** — Knorkthy's invasion of Kamaa was thrown back by Saudaura.
+- **1050 After Reckoning** — A golden age dawned over Knorkthy; its cities flourished as never before.
+- **1075 After Reckoning** — Sade seized Liamar from Saudaura.
 
 ## Heightmap
 

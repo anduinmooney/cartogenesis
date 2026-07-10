@@ -79,6 +79,42 @@ test("snapshots record every turn plus the initial state; last equals final", ()
   assert.notEqual(first, last, "borders never changed");
 });
 
+/**
+ * Regression guard: the simulation once produced a single hegemon on virtually
+ * every world (mean top-power share ~94%, 75% of worlds >90% unified), which
+ * made every history read the same. Outcomes must stay varied — some worlds
+ * unify, many end divided among rival powers.
+ */
+test("histories vary: not every world collapses into one power", () => {
+  const seeds = ["alpha", "gamma", "juno", "orion", "pyxis", "rhea", "sirius", "vahalia"];
+  const shares: number[] = [];
+  for (const seed of seeds) {
+    const w = generateWorld({ seed, width: 160, height: 160 });
+    const total = w.regions.regions.length;
+    const counts = new Map<number, number>();
+    for (const rid of Object.keys(w.simulation.finalControl)) {
+      const realm = w.simulation.finalControl[Number(rid)];
+      counts.set(realm, (counts.get(realm) ?? 0) + 1);
+    }
+    shares.push(Math.max(...counts.values()) / total);
+  }
+  const mean = shares.reduce((a, b) => a + b, 0) / shares.length;
+
+  assert.ok(
+    shares.some((s) => s < 0.9),
+    "every world unified under one power — the snowball is back",
+  );
+  assert.ok(
+    mean < 0.85,
+    `mean top-power share ${(mean * 100).toFixed(0)}% is too concentrated`,
+  );
+  // And the reverse failure: conquest must still be possible somewhere.
+  assert.ok(
+    shares.some((s) => s > 0.6),
+    "no world produced a dominant power — wars are too hard to win",
+  );
+});
+
 test("realm summaries are consistent (peak >= final, statuses valid)", () => {
   const { sim } = build("realms", 200);
   assert.ok(sim.realms.length >= 1);

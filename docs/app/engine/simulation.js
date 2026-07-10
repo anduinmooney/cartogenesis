@@ -35,8 +35,10 @@ import { makeName, languageById } from "./names.js";
        
                 
                 
+                
             
                  
+              
               
               
                   
@@ -98,6 +100,8 @@ const BIOME_CAPACITY                         = {
                  
              
                
+                     
+                                                                                   
                      
                      
                        
@@ -186,6 +190,7 @@ export function generateSimulation(
       id: nextRealmId++,
       name: hist ? hist.name : makeName(lang, new Rng(`${cfg.seed}:realm:${regionId}`)),
       languageId: reg.languageId,
+      aggression: 0.6 + rng.next() * 1.2,
       seatRegion: regionId,
       regions: new Set        (),
       alive: true,
@@ -204,6 +209,7 @@ export function generateSimulation(
       id: nextRealmId++,
       name: makeName(lang, new Rng(`${cfg.seed}:realm:${biggest.id}`)),
       languageId: biggest.languageId,
+      aggression: 0.6 + rng.next() * 1.2,
       seatRegion: biggest.id,
       regions: new Set        (),
       alive: true,
@@ -213,6 +219,14 @@ export function generateSimulation(
     };
     realms.push(realm);
     realmById.set(realm.id, realm);
+  }
+
+  // Every world gets at least one would-be conqueror. Without this, a map of
+  // uniformly timid realms simply never goes to war and the chronicle is empty.
+  if (realms.length > 1) {
+    let boldest = realms[0];
+    for (const r of realms) if (r.aggression > boldest.aggression) boldest = r;
+    if (boldest.aggression < 1.35) boldest.aggression = 1.35 + rng.next() * 0.25;
   }
 
   const queue           = [];
@@ -261,6 +275,72 @@ export function generateSimulation(
     return s;
   };
 
+  // --- Balance of power ---------------------------------------------------
+  // Raw strength grows with every conquest, which alone produces a runaway
+  // empire on every world. Three counter-forces keep outcomes varied:
+  //   1. OVEREXTENSION — a sprawling realm projects less force per front.
+  //   2. DISTANCE — armies weaken far from their capital.
+  //   3. HOME GROUND — defenders fight harder on their own soil.
+  // Plus war exhaustion (cooldowns) and unrest/revolt in freshly taken land.
+  const DISTANCE_PENALTY = 2.0; // beyond the free radius, per map-diagonal
+  const FREE_RADIUS = 0.18; // neighbouring wars cost no distance penalty
+  const DEFENDER_BONUS = 1.15;
+  const HOME_GROUND = 0.3; // extra weight on the defended region's own people
+  const ATTACK_RATIO = 0.8; // bold realms will gamble on losing odds
+  const CONQUEST_COOLDOWN = 1; // turns a realm must rest after taking land
+  const UNREST_TURNS = 3;
+
+  // Each world has its own temperament. Low cohesion → unruly peoples, empires
+  // fray and fragment. High cohesion → conquests stick and a great power can
+  // unify the map. This is what makes outcomes differ from world to world
+  // instead of every history ending the same way.
+  const cohesion = 0.6 + rng.next() * 0.9; // 0.6 unruly … 1.5 cohesive
+  const OVEREXTENSION = 0.1 / cohesion; // per region beyond the first
+  const REVOLT_CHANCE = 0.1 / cohesion; // scaled up again for overextended empires
+  const SECESSION_RATE = 0.06 / cohesion;
+
+  // Scale for distance penalties: the diagonal of the region-centroid bounds.
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  for (const r of regs) {
+    if (r.cx < minX) minX = r.cx;
+    if (r.cx > maxX) maxX = r.cx;
+    if (r.cy < minY) minY = r.cy;
+    if (r.cy > maxY) maxY = r.cy;
+  }
+  const mapDiag = Math.max(1, Math.hypot(maxX - minX, maxY - minY));
+
+  /** Force a realm can actually bring to bear on `target`. */
+  const projectedStrength = (realm       , targetId        )         => {
+    const raw = strengthOf(realm);
+    const overext = 1 + OVEREXTENSION * (realm.regions.size - 1);
+    const seat = byId.get(realm.seatRegion);
+    const target = byId.get(targetId);
+    let dist = 0;
+    if (seat && target) dist = Math.hypot(seat.cx - target.cx, seat.cy - target.cy) / mapDiag;
+    const far = Math.max(0, dist - FREE_RADIUS); // border wars aren't penalised
+    return raw / (overext * (1 + DISTANCE_PENALTY * far));
+  };
+
+  /** Force a realm musters defending `target` — home ground counts extra. */
+  const defenceOf = (realm       , targetId        )         => {
+    const raw = strengthOf(realm);
+    const overext = 1 + OVEREXTENSION * 0.5 * (realm.regions.size - 1);
+    const local = (population[targetId] ?? 0) * (0.5 + 0.5 * (prosperity[targetId] ?? 0));
+    return (raw / overext) * DEFENDER_BONUS + HOME_GROUND * local;
+  };
+
+  /** Keep a realm's seat inside its own territory (capitals get conquered). */
+  const ensureSeat = (realm       )       => {
+    if (realm.regions.has(realm.seatRegion)) return;
+    const next = [...realm.regions].sort((a, b) => a - b)[0];
+    if (next !== undefined) realm.seatRegion = next;
+  };
+
+  /** Turn index until which a realm is exhausted from its last conquest. */
+  const cooldown = new Map                ();
+  /** Region id → turns of unrest remaining after being conquered. */
+  const unrest = new Map                ();
+
   // --- The tick loop. Record borders after every turn (plus the initial). ---
   const snapshots                    = [{ year: startYear, control: { ...control } }];
   for (let t = 0; t < turns; t++) {
@@ -280,88 +360,193 @@ export function generateSimulation(
       population[r.id] = Math.max(0, pop);
     }
 
-    // 2) Wars — the strongest realms press their weaker neighbours.
+    // 2) Wars — a realm presses a neighbour only where it can actually project
+    // more force than the defender musters on home ground.
     const opportunities                                                                 = [];
     for (const r of regs) {
       const owner = control[r.id];
       const ownerRealm = realmById.get(owner);
       if (!ownerRealm?.alive) continue;
+      if ((cooldown.get(owner) ?? -1) > t) continue; // war-weary
       for (const nb of r.neighbors) {
         const other = control[nb];
         if (other === undefined || other === owner) continue;
         const otherRealm = realmById.get(other);
         if (!otherRealm?.alive) continue;
-        const sa = strengthOf(ownerRealm);
-        const sb = strengthOf(otherRealm);
-        if (sa > sb) opportunities.push({ a: owner, b: other, region: nb, ratio: sa / (sb + 1) });
+        const attack = projectedStrength(ownerRealm, nb);
+        const defend = defenceOf(otherRealm, nb);
+        const ratio = attack / (defend + 1);
+        // A warlike realm marches on far thinner odds than a cautious one —
+        // sometimes on odds so poor the invasion is thrown straight back.
+        if (ratio > ATTACK_RATIO / Math.pow(ownerRealm.aggression, 1.6)) {
+          opportunities.push({ a: owner, b: other, region: nb, ratio });
+        }
       }
     }
     opportunities.sort((p, q) => q.ratio - p.ratio || p.region - q.region);
     let conquests = 0;
-    const maxConquests = 2 + rng.int(0, 3);
+    const maxConquests = 1 + rng.int(0, 2);
     const grabbed = new Set        ();
     for (const op of opportunities) {
       if (conquests >= maxConquests) break;
       if (grabbed.has(op.region)) continue;
       if (control[op.region] !== op.b) continue; // may have changed
-      if (op.ratio > 1.3 && rng.next() < 0.5) {
-        const attacker = realmById.get(op.a) ;
-        const defender = realmById.get(op.b) ;
-        defender.regions.delete(op.region);
-        attacker.regions.add(op.region);
-        control[op.region] = op.a;
-        population[op.region] *= 0.9;
-        grabbed.add(op.region);
-        conquests++;
-        const cr = byId.get(op.region) ;
+      if ((cooldown.get(op.a) ?? -1) > t) continue;
+      const attacker = realmById.get(op.a) ;
+      const defender = realmById.get(op.b) ;
+      if (rng.next() >= 0.3 + 0.3 * attacker.aggression) continue; // no march this turn
+      conquests++;
+      grabbed.add(op.region);
+      const cr = byId.get(op.region) ;
+
+      // Favourable odds are not certain ones — invasions can be thrown back.
+      const successProb = Math.max(0.2, Math.min(0.9, (op.ratio - 0.7) / 1.3));
+      if (rng.next() >= successProb) {
+        population[op.region] *= 0.96; // the border bleeds either way
+        cooldown.set(op.a, t + CONQUEST_COOLDOWN + 1); // a costly failure
         events.push({
           year,
-          type: "conquest",
-          text: `${attacker.name} seized ${cr.name} from ${defender.name}.`,
+          type: "repulsed",
+          text: `${attacker.name}'s invasion of ${cr.name} was thrown back by ${defender.name}.`,
           x: cr.cx,
           y: cr.cy,
         });
-        if (defender.regions.size === 0 && defender.alive) {
-          defender.alive = false;
-          events.push({ year, type: "fall", text: `The realm of ${defender.name} was extinguished.`, x: cr.cx, y: cr.cy });
-        }
+        continue;
+      }
+
+      defender.regions.delete(op.region);
+      attacker.regions.add(op.region);
+      control[op.region] = op.a;
+      population[op.region] *= 0.85; // the war costs lives
+      unrest.set(op.region, UNREST_TURNS); // conquered land seethes
+      cooldown.set(op.a, t + CONQUEST_COOLDOWN); // and the victor must rest
+      ensureSeat(defender);
+      ensureSeat(attacker);
+      events.push({
+        year,
+        type: "conquest",
+        text: `${attacker.name} seized ${cr.name} from ${defender.name}.`,
+        x: cr.cx,
+        y: cr.cy,
+      });
+      if (defender.regions.size === 0 && defender.alive) {
+        defender.alive = false;
+        events.push({ year, type: "fall", text: `The realm of ${defender.name} was extinguished.`, x: cr.cx, y: cr.cy });
       }
     }
 
-    // 3) Fragmentation — overgrown realms shed a breakaway state.
     const aliveRealms = realms.filter((r) => r.alive);
-    const avgSize = aliveRealms.reduce((s, r) => s + r.regions.size, 0) / Math.max(1, aliveRealms.length);
-    for (const realm of aliveRealms) {
-      if (realm.regions.size > Math.max(4, avgSize * 2.2) && rng.next() < 0.2) {
-        // A border region breaks away under a new house.
-        const border = [...realm.regions].sort((a, b) => a - b).find((rid) =>
-          (byId.get(rid)?.neighbors ?? []).some((nb) => control[nb] !== realm.id),
-        );
-        const rid = border ?? [...realm.regions].sort((a, b) => a - b)[0];
-        const reg = byId.get(rid) ;
-        const lang = languageById(reg.languageId);
-        const newRealm        = {
-          id: nextRealmId++,
-          name: makeName(lang, new Rng(`${cfg.seed}:breakaway:${rid}:${t}`)),
-          languageId: reg.languageId,
-          regions: new Set([rid]),
-          alive: true,
-          foundedYear: year,
-          peakSize: 1,
-          peakYear: year,
-        };
-        realm.regions.delete(rid);
-        realms.push(newRealm);
-        realmById.set(newRealm.id, newRealm);
-        control[rid] = newRealm.id;
-        events.push({
-          year,
-          type: "secession",
-          text: `${reg.name} broke away from ${realm.name} to found the realm of ${newRealm.name}.`,
-          x: reg.cx,
-          y: reg.cy,
-        });
+    const avgSize =
+      aliveRealms.reduce((s, r) => s + r.regions.size, 0) / Math.max(1, aliveRealms.length);
+
+    // 2b) Revolts — freshly conquered land throws off its new masters, and the
+    // more overextended the empire, the likelier the province rises.
+    for (const rid of [...unrest.keys()].sort((a, b) => a - b)) {
+      const left = unrest.get(rid) ;
+      if (left <= 0) {
+        unrest.delete(rid);
+        continue;
       }
+      unrest.set(rid, left - 1);
+      const owner = realmById.get(control[rid]);
+      if (!owner?.alive || owner.regions.size <= 1) continue;
+      const strain = Math.max(0.5, Math.min(2.5, owner.regions.size / Math.max(1, avgSize)));
+      if (rng.next() >= REVOLT_CHANCE * strain) continue;
+      const reg = byId.get(rid) ;
+      const lang = languageById(reg.languageId);
+      const rebel        = {
+        id: nextRealmId++,
+        name: makeName(lang, new Rng(`${cfg.seed}:revolt:${rid}:${t}`)),
+        languageId: reg.languageId,
+        aggression: 0.6 + rng.next() * 1.2,
+        seatRegion: rid,
+        regions: new Set([rid]),
+        alive: true,
+        foundedYear: year,
+        peakSize: 1,
+        peakYear: year,
+      };
+      owner.regions.delete(rid);
+      control[rid] = rebel.id;
+      realms.push(rebel);
+      realmById.set(rebel.id, rebel);
+      unrest.delete(rid);
+      ensureSeat(owner);
+      events.push({
+        year,
+        type: "revolt",
+        text: `${reg.name} rose against ${owner.name} and declared the free realm of ${rebel.name}.`,
+        x: reg.cx,
+        y: reg.cy,
+      });
+    }
+
+    // 3) Fragmentation — overgrown realms shed a breakaway state.
+    for (const realm of aliveRealms) {
+      if (realm.regions.size < 4) continue;
+      // The more a realm outgrows its rivals, the harder it is to hold together.
+      const strain = realm.regions.size / Math.max(1, avgSize);
+      if (strain < 1.5) continue;
+      if (rng.next() > Math.min(0.3, SECESSION_RATE * strain)) continue;
+
+      const owned = [...realm.regions].sort((a, b) => a - b);
+      const border = owned.find(
+        (rid) =>
+          rid !== realm.seatRegion &&
+          (byId.get(rid)?.neighbors ?? []).some((nb) => control[nb] !== realm.id),
+      );
+      const startId = border ?? owned.find((rid) => rid !== realm.seatRegion);
+      if (startId === undefined) continue;
+
+      // Grow a contiguous cluster inside the realm — a breakaway with enough
+      // land to actually survive as a rival.
+      const clusterMax = Math.max(1, Math.min(3, Math.floor(realm.regions.size / 3)));
+      const cluster           = [startId];
+      const queue           = [startId];
+      while (queue.length > 0 && cluster.length < clusterMax) {
+        const cur = queue.shift() ;
+        for (const nb of byId.get(cur)?.neighbors ?? []) {
+          if (cluster.length >= clusterMax) break;
+          if (realm.regions.has(nb) && nb !== realm.seatRegion && !cluster.includes(nb)) {
+            cluster.push(nb);
+            queue.push(nb);
+          }
+        }
+      }
+      if (cluster.length >= realm.regions.size) continue; // never secede the whole realm
+
+      const reg = byId.get(startId) ;
+      const lang = languageById(reg.languageId);
+      const newRealm        = {
+        id: nextRealmId++,
+        name: makeName(lang, new Rng(`${cfg.seed}:breakaway:${startId}:${t}`)),
+        languageId: reg.languageId,
+        aggression: 0.6 + rng.next() * 1.2,
+        seatRegion: startId,
+        regions: new Set(cluster),
+        alive: true,
+        foundedYear: year,
+        peakSize: cluster.length,
+        peakYear: year,
+      };
+      for (const rid of cluster) {
+        realm.regions.delete(rid);
+        control[rid] = newRealm.id;
+        unrest.delete(rid);
+      }
+      realms.push(newRealm);
+      realmById.set(newRealm.id, newRealm);
+      ensureSeat(realm);
+      events.push({
+        year,
+        type: "secession",
+        text:
+          cluster.length > 1
+            ? `${reg.name} and ${cluster.length - 1} neighbouring province(s) broke away from ${realm.name} to found the realm of ${newRealm.name}.`
+            : `${reg.name} broke away from ${realm.name} to found the realm of ${newRealm.name}.`,
+        x: reg.cx,
+        y: reg.cy,
+      });
     }
 
     // 4) Faith spread — regions drift toward a stronger neighbour's faith.
