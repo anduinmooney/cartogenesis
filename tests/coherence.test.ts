@@ -8,11 +8,29 @@ import { ruinedSettlementIds } from "../src/simulation.ts";
 // The world the simulation ran on had every settlement standing. The world we
 // draw and describe does not. These tests guard the seam between the two.
 
-// Seeds chosen because they actually produce ruins at this size — the tests
-// below assert non-vacuity, so a change to the simulation that stops producing
-// ruins will fail here loudly rather than passing on an empty set.
-const SEEDS = ["s1", "s3", "s10", "s14", "s15"];
 const SIZE = 260;
+const SEEDS = ["s0", "s1", "s3", "s5", "s10", "s13", "s14", "s15"];
+
+// Which seeds produce ruins is NOT stable across V8 versions: the simulation is
+// chaotic with respect to last-bit float noise, and Math.hypot/pow/cos are
+// "implementation-approximated" by the spec (see D-022). So never hard-code
+// "seed X has ruins" — discover one at run time, and fail loudly if none does.
+function firstWorldWithRuins(seeds: string[] = SEEDS) {
+  for (const seed of seeds) {
+    const w = generateWorld({ seed, width: SIZE, height: SIZE });
+    const ruined = ruinedSettlementIds(w.simulation.settlementTimeline);
+    if (ruined.size > 0) return { seed, w, ruined };
+  }
+  throw new Error(`no seed of [${seeds.join(", ")}] produced any ruins`);
+}
+
+function firstWorldWithoutRuins(seeds: string[] = SEEDS) {
+  for (const seed of seeds) {
+    const w = generateWorld({ seed, width: SIZE, height: SIZE });
+    if (ruinedSettlementIds(w.simulation.settlementTimeline).size === 0) return { seed, w };
+  }
+  throw new Error(`every seed of [${seeds.join(", ")}] produced ruins`);
+}
 
 test("the present-day economy never trades with a ruin", () => {
   let sawRuins = false;
@@ -54,9 +72,7 @@ test("roads are rebuilt on the survivors, not on the founding-age towns", () => 
   // A world with ruins must have a road network that differs from the one you
   // would get by connecting every settlement ever founded. (It is not always
   // *shorter*: removing a well-placed hub can force longer detours.)
-  const w = generateWorld({ seed: "s10", width: SIZE, height: SIZE });
-  const ruined = ruinedSettlementIds(w.simulation.settlementTimeline);
-  assert.ok(ruined.size >= 2, "seed no longer produces ruins — pick another");
+  const { w, ruined } = firstWorldWithRuins();
 
   const naive = generateRoads(
     w.elevation,
@@ -80,33 +96,24 @@ test("roads are rebuilt on the survivors, not on the founding-age towns", () => 
 test("a world without ruins keeps its original roads and economy", () => {
   // The two-pass rebuild must be a no-op when nothing fell — otherwise it is a
   // silent source of drift.
-  let sawIntact = false;
-  for (const seed of ["s0", "s4", "s6", "s8", "s11"]) {
-    const w = generateWorld({ seed, width: SIZE, height: SIZE });
-    const ruined = ruinedSettlementIds(w.simulation.settlementTimeline);
-    if (ruined.size) continue;
-    sawIntact = true;
-    const roads = generateRoads(
-      w.elevation,
-      w.water,
-      w.rivers,
-      w.settlements.settlements,
-      {},
-    );
-    assert.equal(w.roads.length, roads.length, `${seed}: roads drifted`);
-    assert.equal(
-      w.economy.economies.length,
-      w.settlements.settlements.length,
-      `${seed}: economy drifted`,
-    );
-  }
-  assert.ok(sawIntact, "test is vacuous — every seed produced ruins");
+  const { seed, w } = firstWorldWithoutRuins();
+  const roads = generateRoads(
+    w.elevation,
+    w.water,
+    w.rivers,
+    w.settlements.settlements,
+    {},
+  );
+  assert.equal(w.roads.length, roads.length, `${seed}: roads drifted`);
+  assert.equal(
+    w.economy.economies.length,
+    w.settlements.settlements.length,
+    `${seed}: economy drifted`,
+  );
 });
 
 test("the gazetteer's exports come from towns that still stand", () => {
-  const w = generateWorld({ seed: "s10", width: SIZE, height: SIZE });
-  const ruined = ruinedSettlementIds(w.simulation.settlementTimeline);
-  assert.ok(ruined.size > 0);
+  const { w, ruined } = firstWorldWithRuins();
   // meta.majorExports is derived from the present-day economy.
   assert.ok(w.meta.majorExports.length > 0);
   const rebuilt = generateEconomy(

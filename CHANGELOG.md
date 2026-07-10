@@ -60,10 +60,31 @@ A nine-volcano island raised **three peaks all named Mt. Brogravra**: the volcan
 template was 5 modifiers × 2 heads and had no avoid-set. Widened to 12 × 4 and
 given one. Caught by looking at a screenshot, then locked down by a test.
 
+### A determinism defect, found by CI (D-022)
+Two new tests hard-coded "seed `s10` produces ruins". They passed locally and
+**failed on CI** — while the elevation golden hash stayed green on both. The
+cause is not the tests:
+
+- CI runs Node **v24.18.0**; the dev box runs **v24.16.0**.
+- The pipeline uses `Math.hypot`, `Math.pow`, and `Math.cos`, which ECMAScript
+  leaves **implementation-approximated** — only `+ - * /` and `Math.sqrt` are
+  pinned to exact IEEE-754 results.
+- The simulation is **chaotic in the last bit**. Measured: swapping
+  `Math.hypot(x, y)` for the mathematically identical `Math.sqrt(x*x + y*y)`
+  (they disagree in the final ulp on 926k of 2.1M calls) moves ruin counts across
+  five seeds from `2,2,3,2,2` to `1,0,1,0,0`.
+- The golden hash never caught it because `hashGrid` **quantizes** before hashing.
+
+So "same seed, same world, every time" has only ever been true *for a given V8
+build*. Fixed this session: the coherence tests now discover a ruin-producing
+seed at run time and fail loudly if none of eight does — no test may hard-code a
+simulated outcome. Recorded as **D-022**, and purging the approximated math (plus
+an *exact* determinism guard) is Session 16's headline objective.
+
 ### Verification
 - **155 tests** pass (21 new, in `tests/language.test.ts` and
   `tests/coherence.test.ts`), incl. non-vacuity guards: the ruin tests fail
-  loudly if a seed stops producing ruins.
+  loudly if no seed produces ruins.
 - Elevation golden hash **`74c67102ff7abf98` unchanged** — naming is downstream
   of geography.
 - Simulation structure proved **byte-identical** across five seeds before/after

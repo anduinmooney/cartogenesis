@@ -6,6 +6,64 @@ old one — the history is the point.
 
 ---
 
+## D-022 — Determinism is only as strong as the arithmetic underneath it (2026-07-10, Session 15)
+**Status:** finding + plan. The fix is Session 16's headline objective.
+
+**What happened.** CI (Node v24.18.0) and the dev machine (Node v24.16.0)
+disagreed about whether seed `s10` produces any ruins. Two tests that hard-coded
+"this seed has ruins" failed on CI and passed locally. The elevation golden hash
+was green on both.
+
+**Why the golden hash missed it.** `hashGrid` is `hashQuantized` — it rounds
+before hashing, explicitly "to survive trivial float noise". It therefore cannot
+detect the very thing that was happening.
+
+**The real defect.** The pipeline uses `Math.hypot` (erosion, simulation),
+`Math.pow` (terrain, volcanoes, simulation), and `Math.cos` (climate). ECMAScript
+specifies these as **implementation-approximated**: an implementation may return
+any value within an implementation-defined tolerance. Only `+ - * /` and
+`Math.sqrt` are pinned to IEEE-754 exact results.
+
+And the simulation is **chaotic with respect to the last bit**. Measured: replace
+`Math.hypot(x, y)` with the mathematically identical `Math.sqrt(x*x + y*y)` —
+they disagree in the final ulp on 926k of 2.1M calls — and the ruin counts across
+five seeds go `2,2,3,2,2` → `1,0,1,0,0`. A one-ulp difference reroutes history.
+Borderline comparisons (`ratio > ATTACK_RATIO / …`) amplify it.
+
+So "same seed, same world, every time" is currently true *for a given V8 build*,
+and was never true across them. The samples in `docs/` were generated on one
+machine; a reader regenerating them on another Node may get a different history
+from the same seed.
+
+**Decision.** Do not paper over this by loosening tests. Two changes, in order:
+
+1. **Tests must never hard-code a simulated outcome for a seed.**
+   `tests/coherence.test.ts` now *discovers* a ruin-producing seed at run time and
+   fails loudly if none of eight produce one. Done this session — it is the right
+   test design independent of the bug.
+
+2. **Purge implementation-approximated math from the generation pipeline.**
+   Replace with exactly-specified operations:
+   - `Math.hypot(a, b)` → `Math.sqrt(a*a + b*b)` (sqrt *is* exact).
+   - `Math.pow(x, k)` → exact forms for the exponents we actually use, or a
+     `powExact` restricted to integers and halves.
+   - `Math.cos` in `climate.ts` → a polynomial in `+ - * /`.
+   - Rendering may keep `Math.log1p` — it is display, not world state.
+
+   Then make the determinism guard **exact**: hash the raw bits of the elevation
+   field (and a simulation fingerprint: realm years, sizes, fates), not a
+   quantized version. A guard that rounds away the failure mode is not a guard.
+
+**Consequence.** Step 2 changes every world (elevation shifts in the last bits,
+and the simulation is chaotic), so the golden hash and all samples must be
+regenerated in the same commit, with this entry cited.
+
+**Honest framing to keep:** until step 2 lands, do not claim cross-platform or
+cross-version reproducibility. Claim reproducibility *on a given Node build*,
+which is what we actually have.
+
+---
+
 ## D-021 — A lexicon belongs to the culture, not the world (2026-07-09, Session 15)
 **Decision:** Each language's word-roots are derived from its **id alone**
 (`new Rng("lexicon:auld")`), memoized, and identical in every world. `vyvask`

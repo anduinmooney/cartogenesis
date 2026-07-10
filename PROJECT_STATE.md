@@ -90,7 +90,8 @@ No `npm install` is required — there are zero dependencies.
 1. Generation is a pure function of seed + config. No `Math.random`, no clock.
 2. Subsystems use `root.stream("name")` for randomness (order-independent).
 3. The golden hash in `tests/world.test.ts` must stay green, or be updated with
-   a `DECISIONS.md` entry explaining the intentional change.
+   a `DECISIONS.md` entry explaining the intentional change. (Note: it is
+   *quantized*, so it does not catch last-bit drift — see D-022.)
 4. Anything dated derives its years from `meta.presentYear`. Never invent a
    second "present".
 5. `CONCEPTS` in `src/language.ts` is **append-only**. Inserting a concept
@@ -110,8 +111,17 @@ No `npm install` is required — there are zero dependencies.
   cluttering gazetteers. Consider merging sub-threshold islets.
 - Moisture runs a single west→east prevailing wind; latitude wind belts would be
   more realistic (future tuning).
-- Cross-platform float determinism is assumed (V8 is consistent in practice);
-  guarded by the golden hash + CI, but not formally proven across architectures.
+- **Reproducibility holds per Node build, NOT across them (D-022).** Confirmed
+  Session 15: CI (v24.18.0) and the dev box (v24.16.0) disagree on whether a
+  given seed produces ruins. The pipeline uses `Math.hypot`/`Math.pow`/`Math.cos`,
+  which the spec leaves *implementation-approximated*, and the simulation is
+  chaotic in the last bit — swapping `Math.hypot(x,y)` for the identical
+  `Math.sqrt(x*x+y*y)` flips ruin counts from 2,2,3,2,2 to 1,0,1,0,0. The golden
+  hash misses it because it quantizes before hashing. **Fixing this is Session
+  16's objective.** Until then, don't claim cross-version reproducibility.
+- Tests must never hard-code a *simulated* outcome for a seed (which seed has
+  ruins is not stable across V8 builds). Discover one at run time; fail loudly if
+  none does. `tests/coherence.test.ts` shows the pattern.
 - No TS `enum`/namespaces/decorators — Node strip-only mode rejects them.
 - Remember: after any `src/` change, rerun `build:web` (CI now enforces this).
 
