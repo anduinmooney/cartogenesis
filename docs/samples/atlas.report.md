@@ -176,6 +176,15 @@
 
 - **Deolamor** (city) — founded 134, stormed and left a ruin in 225
 
+## Names remade by conquest
+
+*Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
+
+- **Stagrba** → **Stagrdemor** *(the sea home)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Ghashzaa** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Khirqe** → **Khirlamor** *(the sea hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Niantetomor** → **Nianteshu** *(the green fort)* — Meridian (southern) land under Kesh (desert) rule, c. 225
+
 ## Faiths
 
 ### the Cult of Vaskyvastall — Vaskyvastall, god of War

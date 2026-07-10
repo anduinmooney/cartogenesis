@@ -204,6 +204,18 @@
 - **Storkba** (village) — founded 650, stormed and left a ruin in 825
 - **Stagragrull** (town) — founded 210, stormed and left a ruin in 1025
 
+## Names remade by conquest
+
+*Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
+
+- **Knyrkbust** → **Knyrktomor** *(the wild fort)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Storkba** → **Storkashu** *(the white fort)* — Auld (northern) land under Kesh (desert) rule, c. 150
+- **Pananelen** → **Panadund** *(the field haven)* — Meridian (southern) land under Auld (northern) rule, c. 150
+- **Belladinte** → **Bellafjysk** *(the river home)* — Meridian (southern) land under Auld (northern) rule, c. 150
+- **Bellatomor** → **Bellamakh** *(the river hall)* — Meridian (southern) land under Kesh (desert) rule, c. 325
+- **Khirmakh** → **Khirciamor** *(the sea gate)* — Kesh (desert) land under Meridian (southern) rule, c. 775
+- **Ghashakhukha** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 775
+
 ## Faiths
 
 ### the Way of Vaghimzizam — Vaghimzizam, god of the Sun

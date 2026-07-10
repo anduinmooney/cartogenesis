@@ -143,6 +143,20 @@
 
 - **Stagrba** (village) — founded 396, stormed and left a ruin in 700
 
+## Names remade by conquest
+
+*Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
+
+- **Ghashakhukha** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Ghashkai** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Khirqe** → **Khirdund** *(the sea haven)* — Kesh (desert) land under Auld (northern) rule, c. 150
+- **Ghashqe** → **Ghashliria** *(the river haven)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Mairqe** → **Mairciamor** *(the mountain gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Ghashashu** → **Ghashciamor** *(the river gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Knyrkathu** → **Knyrkciamor** *(the wild gate)* — Auld (northern) land under Meridian (southern) rule, c. 800
+- **Vondund** → **Vondemor** *(the green home)* — Auld (northern) land under Meridian (southern) rule, c. 950
+- **Stagragrull** → **Stagrdemor** *(the sea home)* — Auld (northern) land under Meridian (southern) rule, c. 950
+
 ## Faiths
 
 ### the Rite of Vavomortindo — Vavomortindo, god of the Harvest

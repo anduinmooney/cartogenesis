@@ -188,6 +188,19 @@
 
 - **Stagrafjysk** (village) — founded 650, stormed and left a ruin in 875
 
+## Names remade by conquest
+
+*Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
+
+- **Ghashzaa** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Stagrafjysk** → **Stagrlamor** *(the sea hall)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Hrathu** → **Hrademor** *(the river home)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Rairqe** → **Rairciamor** *(the gold gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Ghashashu** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Thaurnagrull** → **Thaurntomor** *(the grass fort)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Panatelen** → **Panakad** *(the field haven)* — Meridian (southern) land under Kesh (desert) rule, c. 1050
+- **Deonelen** → **Deoshu** *(the sea fort)* — Meridian (southern) land under Kesh (desert) rule, c. 1050
+
 ## Faiths
 
 ### the Cult of Vaveillvoll — Vaveillvoll, god of the Sun

@@ -184,6 +184,20 @@
 
 - **Ghashriz** (town) — founded 344, stormed and left a ruin in 1000
 
+## Names remade by conquest
+
+*Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
+
+- **Ghashqe** → **Ghashro** *(the river hall)* — Kesh (desert) land under Auld (northern) rule, c. 150
+- **Knyrkagrull** → **Knyrktomor** *(the wild fort)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Thaurnagrull** → **Thaurnliria** *(the grass haven)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Panadinte** → **Panaba** *(the field spring)* — Meridian (southern) land under Auld (northern) rule, c. 150
+- **Khirkhukha** → **Khirpana** *(the sea field)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Bellanelen** → **Bellakad** *(the river haven)* — Meridian (southern) land under Kesh (desert) rule, c. 175
+- **Ghashriz** → **Ghashathu** *(the river fort)* — Kesh (desert) land under Auld (northern) rule, c. 200
+- **Ghashakhukha** → **Ghashro** *(the river hall)* — Kesh (desert) land under Auld (northern) rule, c. 200
+- **Shinghekh** → **Shinbust** *(the wild gate)* — Kesh (desert) land under Auld (northern) rule, c. 400
+
 ## Faiths
 
 ### the Faith of Vathorkveill — Vathorkveill, god of the Forest

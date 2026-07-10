@@ -201,6 +201,21 @@
 
 - **Senatomor** (town) — founded 220, stormed and left a ruin in 575
 
+## Names remade by conquest
+
+*Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
+
+- **Rairshu** → **Rairciamor** *(the gold gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Stagrafjan** → **Stagrdemor** *(the sea home)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Knyrkba** → **Knyrkliria** *(the wild haven)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Knyrkafjan** → **Knyrktomor** *(the wild fort)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Stagrba** → **Stagrciamor** *(the sea gate)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Khirkhukha** → **Khirciamor** *(the sea gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Storkafjan** → **Storkliria** *(the white haven)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Thaurnafjan** → **Thaurnliria** *(the grass haven)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Ghashzaa** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 275
+- **Rairqe** → **Rairtomor** *(the gold fort)* — Kesh (desert) land under Meridian (southern) rule, c. 275
+
 ## Faiths
 
 ### the Faith of Varondotindo — Varondotindo, god of the Harvest

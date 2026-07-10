@@ -239,6 +239,26 @@ export function worldReportMarkdown(world       )         {
     lines.push("");
   }
 
+  // Names remade by conquest — where a foreign power ruled long enough to leave
+  // its tongue on the map.
+  const remade = [...world.simulation.renamings].sort((a, b) => a.year - b.year);
+  if (remade.length) {
+    lines.push("## Names remade by conquest");
+    lines.push("");
+    lines.push(
+      "*Where a foreign power held a land long enough, its towns took new names — " +
+        "the old land-word kept, the settlement re-said in the ruler's tongue.*",
+    );
+    lines.push("");
+    for (const r of remade) {
+      lines.push(
+        `- **${r.formerName}** → **${r.name}** *(${glossPhrase(r.gloss)})* — ` +
+          `${r.fromCulture} land under ${r.toCulture} rule, c. ${r.year}`,
+      );
+    }
+    lines.push("");
+  }
+
   // Faiths
   if (world.religion.faiths.length) {
     lines.push("## Faiths");
