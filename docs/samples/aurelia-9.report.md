@@ -305,7 +305,7 @@ In 675, a great drought lay upon Khirarer; the rivers shrank and the wells soure
 
 All the while the land was filling: 4 settlements were raised in these years, Knyrkathu and Ghashqe among them.
 
-### IV. The Age of Blood and Banners, 700–900
+### IV. The Contested Years, 700–900
 
 In the year 700, Redemor marched on Midrarer, and by winter the province had fallen to it; Caudente was the poorer. And in that year too, the assault Caudente loosed upon Braknaurk broke against Qidkaghen's spears and came to nothing. That same year, in Peonariando the bells rang without ceasing; a third of its people were laid in the ground.
 

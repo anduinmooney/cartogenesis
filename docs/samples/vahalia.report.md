@@ -361,7 +361,7 @@ In the year 750, the assault Jaqe loosed upon Storkafjan broke against Mantebint
 
 About the year 850, the assault Jaqe loosed upon Storkafjan broke against Mantebinte's spears and came to nothing. Before long, Mantebinte held Stagrdaurk against Rairkaasi, whose army went home leaner and wiser. In the same season, in Brastausk the bells rang without ceasing; a third of its people were laid in the ground.
 
-### V. The Marching Years, 900–1100
+### V. The Age of Blood and Banners, 900–1100
 
 In 900, Jaqe moved against Rairshid, but Mantebinte threw the invaders back over the border. Hard on its heels, the assault Rairkaasi loosed upon Stagrdaurk broke against Mantebinte's spears and came to nothing. That same year, a pestilence swept Stagrabry and carried off more than any war had. Before long, Mantebinte held Rairshid against Jaqe, whose army went home leaner and wiser.
 

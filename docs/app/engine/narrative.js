@@ -336,20 +336,28 @@ export function generateNarrative(
     const upheaval = n(["revolt", "secession"]);
     const misery = n(["famine", "plague", "ruin"]);
     const grace = n(["goldenage", "conversion"]);
+    // Banks are keyed by CATEGORY, not chapter index, so back-to-back chapters
+    // of the same tenor rotate their titles instead of repeating one.
+    let cat        ;
     let bank                   ;
     if (index === 0) {
+      cat = "founding";
       bank = ["The Age of Foundations", "The First Banners", "The Shaping Years"];
     } else if (war >= upheaval && war >= misery && war >= grace && war > 0) {
+      cat = "war";
       bank = ["The Age of Blood and Banners", "The Contested Years", "The Marching Years"];
     } else if (upheaval >= misery && upheaval >= grace && upheaval > 0) {
+      cat = "upheaval";
       bank = ["The Breaking of Realms", "The Age of Risings", "The Unquiet Provinces"];
     } else if (misery >= grace && misery > 0) {
+      cat = "misery";
       bank = ["The Hungry Years", "The Years the Bells Rang", "The Lean Age"];
     } else {
+      cat = "quiet";
       bank = ["The Quiet Years", "The Long Peace", "The Age of Temples"];
     }
     const roman = ["I", "II", "III", "IV", "V"][index] ?? String(index + 1);
-    return `${roman}. ${pick(`title.${index}`, bank)}, ${startYear}–${endYear}`;
+    return `${roman}. ${pick(`title.${cat}`, bank)}, ${startYear}–${endYear}`;
   };
 
   const chapters                     = [];

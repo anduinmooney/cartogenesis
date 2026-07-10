@@ -366,7 +366,7 @@ In 825, no rain came to Khirsham for two years together; many perished. In the s
 
 About the year 850, Rena held Beossoveolla against Tariana, whose army went home leaner and wiser. Before long, Remeonte moved against Beossoneosso, but Thorkdaurk threw the invaders back over the border.
 
-### V. The Age of Blood and Banners, 900–1100
+### V. The Contested Years, 900–1100
 
 In 900, what had once broken against Beossoveolla's defences now carried them: Tariana took the province, and Rena's pride with it. That same year, Tariana held Midshaa against Rena, whose army went home leaner and wiser. Hard on its heels, what had once broken against Beossoneosso's defences now carried them: Remeonte took the province, and Thorkdaurk's pride with it. In the same season, Tariana moved against Mairkhaim, but Rena threw the invaders back over the border.
 

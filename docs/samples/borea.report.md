@@ -359,7 +359,7 @@ In the year 450, the realm of Steirkathon was carved whole out of Tariademor's f
 
 These years also built more than they burned — 8 new settlements, of which Ghashashu would become the best known.
 
-### III. The Age of Blood and Banners, 500–700
+### III. The Contested Years, 500–700
 
 About the year 500, Beossoveolla passed by force from Steirkathon to Tariademor; the tax rolls were rewritten before the dead were counted. It was the end of Steirkathon: 50 years of banners, done in a single season. Before long, what had once broken against Qukhukha's defences now carried them: Tariademor took the province, and Jaghen's pride with it.
 
