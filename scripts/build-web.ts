@@ -39,6 +39,7 @@ const MODULES = [
   "religion",
   "simulation",
   "render",
+  "report",
   "world",
 ];
 
@@ -60,6 +61,14 @@ function main(): void {
     writeFileSync(join(ENGINE_DIR, `${m}.js`), toBrowserJs(src));
   }
 
+  // Web-side helper modules (not engine): they live in web/ and are emitted to
+  // docs/app/ next to app.js, which imports them as "./name.js".
+  const WEB_MODULES = ["markdown"];
+  for (const m of WEB_MODULES) {
+    const src = readFileSync(join("web", `${m}.ts`), "utf8");
+    writeFileSync(join(APP_DIR, `${m}.js`), toBrowserJs(src));
+  }
+
   const appSrc = readFileSync(join("web", "main.ts"), "utf8");
   const appJs = toBrowserJs(appSrc);
   writeFileSync(join(APP_DIR, "app.js"), appJs);
@@ -70,7 +79,7 @@ function main(): void {
 
   // Completeness check: every ./engine/*.js an emitted file imports must exist,
   // so a missing module fails the build instead of 404-ing in the browser.
-  const emitted = new Set(MODULES);
+  const emitted = new Set([...MODULES, ...WEB_MODULES]);
   const engineFiles = MODULES.map((m) => ({
     name: m,
     code: readFileSync(join(ENGINE_DIR, `${m}.js`), "utf8"),

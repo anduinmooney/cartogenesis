@@ -15,6 +15,8 @@ import { settlementsAt, ruinedSettlementIds } from "./engine/simulation.js";
                                                           
 import { glossPhrase, glossary } from "./engine/language.js";
 import { languageById } from "./engine/names.js";
+import { worldReportMarkdown } from "./engine/report.js";
+import { renderMarkdown } from "./markdown.js";
 
 // Faith tint palette — mirrors FAITH_PALETTE in src/render.ts.
 const FAITH_PALETTE = [
@@ -671,6 +673,7 @@ worker.onmessage = (e              ) => {
   ruinedIds = ruinedSettlementIds(world.simulation.settlementTimeline);
   scrubYear = null;
   renderInfo(world);
+  buildGazetteer(world);
   renderOffscreen();
   sizeCanvas();
   fitView();
@@ -860,6 +863,8 @@ function init()       {
     if (Number.isFinite(x) && Number.isFinite(y)) flyTo(x, y);
   });
 
+  wireGazetteer();
+
   const urlSeed = new URL(location.href).searchParams.get("seed");
   seedInput.value = urlSeed ?? "cartogenesis";
   generate(seedInput.value);
@@ -893,4 +898,133 @@ function renderLanguages(world       )       {
       );
     })
     .join("");
+}
+
+// --- Gazetteer overlay: the full written dossier, in the app ---------------
+
+/** The current world's report Markdown, kept for the download button. */
+let gazetteerMd = "";
+
+/** name → world coordinates, so a name in the prose can fly the map. */
+function placeIndex(world       )                                        {
+  const idx = new Map                                  ();
+  const add = (name        , x        , y        ) => {
+    if (name && name.length >= 3 && !idx.has(name)) idx.set(name, { x, y });
+  };
+  for (const s of world.settlements.settlements) add(s.name, s.x, s.y);
+  for (const r of world.regions.regions) add(r.name, r.cx, r.cy);
+  for (const v of world.volcanoes) add(v.name, v.x, v.y);
+  for (const f of world.history.features) add(f.name, f.x, f.y);
+  return idx;
+}
+
+/** Regex-escape a place name for the linkifier. */
+function reEsc(s        )         {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
+ * Wrap every occurrence of a known place name (in a text node) with a clickable
+ * span carrying its coordinates. Works on the DOM, not the HTML string, so it
+ * can never break tags or match inside attributes.
+ */
+function linkifyPlaces(root             , idx                                       )       {
+  if (idx.size === 0) return;
+  const names = [...idx.keys()].sort((a, b) => b.length - a.length);
+  const re = new RegExp(`\\b(${names.map(reEsc).join("|")})\\b`, "g");
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  const targets         = [];
+  for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+    const t = n        ;
+    if ((t.parentElement?.className ?? "").includes("place")) continue;
+    if (re.test(t.data)) targets.push(t);
+  }
+  for (const t of targets) {
+    re.lastIndex = 0;
+    const frag = document.createDocumentFragment();
+    let last = 0;
+    let m                        ;
+    while ((m = re.exec(t.data))) {
+      if (m.index > last) frag.appendChild(document.createTextNode(t.data.slice(last, m.index)));
+      const coords = idx.get(m[1]) ;
+      const span = document.createElement("span");
+      span.className = "place";
+      span.textContent = m[1];
+      span.dataset.x = String(coords.x);
+      span.dataset.y = String(coords.y);
+      span.title = "Find on the map";
+      frag.appendChild(span);
+      last = m.index + m[1].length;
+    }
+    if (last < t.data.length) frag.appendChild(document.createTextNode(t.data.slice(last)));
+    t.parentNode?.replaceChild(frag, t);
+  }
+}
+
+/** Build the gazetteer panel for a world (does not open it). */
+function buildGazetteer(world       )       {
+  gazetteerMd = worldReportMarkdown(world);
+  const { html, headings } = renderMarkdown(gazetteerMd);
+  const content = $("gaz-content");
+  content.innerHTML = html;
+  linkifyPlaces(content, placeIndex(world));
+
+  $("gaz-toc").innerHTML = headings
+    .map(
+      (h) =>
+        `<a data-goto="${h.id}" class="${h.level === 3 ? "sub" : ""}">${escapeHtml(h.text)}</a>`,
+    )
+    .join("");
+
+  const title = world.history.realms[0]?.name ?? world.meta.capital ?? "Gazetteer";
+  $("gaz-title").textContent = `${title} — a gazetteer`;
+}
+
+function openGazetteer()       {
+  $("gazovl").hidden = false;
+}
+function closeGazetteer()       {
+  $("gazovl").hidden = true;
+}
+
+function downloadText(filename        , text        , mime        )       {
+  const blob = new Blob([text], { type: mime });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function wireGazetteer()       {
+  $("gazetteer").addEventListener("click", openGazetteer);
+  $("gaz-close").addEventListener("click", closeGazetteer);
+  $("gazovl").addEventListener("click", (e) => {
+    if ((e.target               ).id === "gazovl") closeGazetteer(); // click backdrop
+  });
+  document.addEventListener("keydown", (e) => {
+    if ((e                 ).key === "Escape" && !$("gazovl").hidden) closeGazetteer();
+  });
+  $("gaz-toc").addEventListener("click", (e) => {
+    const id = (e.target               ).dataset?.goto;
+    if (!id) return;
+    const target = document.getElementById(id);
+    const content = $("gaz-content");
+    if (target) content.scrollTop = target.offsetTop - content.offsetTop;
+  });
+  $("gaz-content").addEventListener("click", (e) => {
+    const el = e.target               ;
+    if (!el.classList.contains("place")) return;
+    const x = Number(el.dataset.x);
+    const y = Number(el.dataset.y);
+    if (Number.isFinite(x) && Number.isFinite(y)) {
+      closeGazetteer();
+      flyTo(x, y);
+    }
+  });
+  $("gaz-dl-md").addEventListener("click", () => {
+    const seed = current ? String(current.meta.seed) : "world";
+    downloadText(`cartogenesis-${seed}.md`, gazetteerMd, "text/markdown");
+  });
 }

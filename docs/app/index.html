@@ -399,6 +399,112 @@
       @media (prefers-reduced-motion: reduce) {
         * { transition: none !important; }
       }
+
+      /* --- Gazetteer overlay --- */
+      #gazovl {
+        position: fixed;
+        inset: 0;
+        z-index: 50;
+        background: rgba(4, 8, 12, 0.62);
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        padding: 3vh 2vw;
+      }
+      .gaz-panel {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        width: min(1040px, 96vw);
+        height: 94vh; /* explicit, so the flex/grid children never collapse */
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+      .gaz-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.8rem 1.1rem;
+        border-bottom: 1px solid var(--border);
+        font-family: var(--serif);
+        font-size: 1.15rem;
+      }
+      .gaz-actions { display: flex; gap: 0.5rem; }
+      .gaz-body {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        min-height: 0;
+        flex: 1;
+      }
+      #gaz-toc {
+        border-right: 1px solid var(--border);
+        overflow-y: auto;
+        padding: 1rem 0.6rem;
+      }
+      #gaz-toc a {
+        display: block;
+        padding: 0.24rem 0.5rem;
+        border-radius: 5px;
+        font-size: 0.82rem;
+        color: var(--muted);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      #gaz-toc a.sub { padding-left: 1.3rem; font-size: 0.78rem; color: var(--faint); }
+      #gaz-toc a:hover { background: var(--panel-2); color: var(--ink); }
+      #gaz-content {
+        overflow-y: auto;
+        padding: 1.4rem 1.8rem 3rem;
+        line-height: 1.55;
+      }
+      #gaz-content h1 { font-family: var(--serif); font-size: 1.9rem; margin: 0 0 0.4rem; }
+      #gaz-content h2 {
+        font-family: var(--serif);
+        font-size: 1.35rem;
+        margin: 1.8rem 0 0.6rem;
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid var(--border-soft);
+        scroll-margin-top: 1rem;
+      }
+      #gaz-content h3 { font-family: var(--serif); font-size: 1.08rem; margin: 1.1rem 0 0.4rem; scroll-margin-top: 1rem; }
+      #gaz-content p { margin: 0.5rem 0; }
+      #gaz-content ul { margin: 0.4rem 0; padding-left: 1.3rem; }
+      #gaz-content li { margin: 0.15rem 0; }
+      #gaz-content hr { border: none; border-top: 1px solid var(--border-soft); margin: 1.4rem 0; }
+      #gaz-content blockquote {
+        margin: 0.6rem 0;
+        padding-left: 0.9rem;
+        border-left: 3px solid var(--border);
+        color: var(--faint);
+        font-style: italic;
+      }
+      #gaz-content table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0.7rem 0;
+        font-size: 0.84rem;
+        display: block;
+        overflow-x: auto;
+      }
+      #gaz-content th, #gaz-content td {
+        border: 1px solid var(--border-soft);
+        padding: 0.28rem 0.55rem;
+        text-align: left;
+        white-space: nowrap;
+      }
+      #gaz-content th { background: var(--panel-2); font-weight: 600; }
+      #gaz-content .place {
+        color: var(--accent);
+        cursor: pointer;
+        border-bottom: 1px dotted var(--accent);
+      }
+      #gaz-content .place:hover { background: var(--panel-2); }
+      @media (max-width: 680px) {
+        .gaz-body { grid-template-columns: 1fr; }
+        #gaz-toc { display: none; }
+      }
     </style>
   </head>
   <body>
@@ -429,6 +535,7 @@
           <div class="viewbar">
             <button id="resetview" title="Reset pan &amp; zoom">Reset view</button>
             <button id="copylink" title="Copy a shareable link to this seed">Copy link</button>
+            <button id="gazetteer" title="Read the full gazetteer for this world">📖 Gazetteer</button>
             <button id="heightmap" title="Download a 16-bit heightmap PNG for Blender/Unity/Godot">↓ Heightmap</button>
             <span class="hint">scroll to zoom · drag to pan · hover to inspect · click to pin</span>
           </div>
@@ -459,6 +566,21 @@
       </div>
     </div>
 
+    <div id="gazovl" hidden>
+      <div class="gaz-panel" role="dialog" aria-label="Gazetteer" aria-modal="true">
+        <header class="gaz-head">
+          <strong id="gaz-title">Gazetteer</strong>
+          <div class="gaz-actions">
+            <button id="gaz-dl-md" title="Download this gazetteer as Markdown">↓ .md</button>
+            <button id="gaz-close" title="Close">✕</button>
+          </div>
+        </header>
+        <div class="gaz-body">
+          <nav id="gaz-toc" aria-label="Table of contents"></nav>
+          <article id="gaz-content"></article>
+        </div>
+      </div>
+    </div>
     <div id="tip" role="tooltip" hidden></div>
     <script type="module" src="app.js"></script>
   </body>
