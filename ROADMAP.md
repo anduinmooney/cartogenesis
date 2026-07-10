@@ -83,8 +83,8 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   revolts, cluster secessions, per-realm ambition + per-world cohesion, and
   repulsed invasions. Histories now vary instead of always ending in one empire
   (Session 12).
-- ⬜ **Dynamic settlements** — cities founded/abandoned over time, appearing and
-  vanishing as you scrub.
+- ✅ **Dynamic settlements** — founding years, sacked/abandoned ruins; cities
+  appear and vanish as you scrub (Session 13).
 - ⬜ Latitude-varying wind belts for moisture (trade winds vs. westerlies).
 - ⬜ Lake outflow / river-into-lake-into-river continuity.
 - ⬜ Merge sub-threshold islet "regions".

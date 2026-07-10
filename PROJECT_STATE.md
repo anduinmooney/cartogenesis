@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 12 · 2026-07-09
+- **As of:** Session 13 · 2026-07-09
 - **Engine version:** 0.12.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 128 tests pass (CI enforced); deterministic output.
+- **Health:** 🟢 Green. 131 tests pass (CI enforced); deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 - **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
@@ -30,7 +30,11 @@
   elevation in metres), click for details, feature/volcano/city labels on the
   map, a per-layer legend, a clickable chronicle that flies to each event, a
   **time scrubber on the Powers layer** (play/scrub 100→1,100 AR to watch borders
-  shift), a 16-bit **heightmap download**, `?seed=` links, and "Today's world".
+  shift **and cities rise and fall**), a 16-bit **heightmap download**, `?seed=`
+  links, and "Today's world".
+- **Dynamic settlements:** every town has a founding year; some are sacked or
+  abandoned into **ruins**. Present-day maps show exactly the survivors, and the
+  gazetteer records what history swallowed.
 - Per world the CLI emits **10 artifacts**: terrain / biome / political /
   topographic map PNGs, a relief preview, a **real 16-bit heightmap** (PNG + raw
   `.r16`), a **labeled SVG poster**, a **Markdown gazetteer**, and JSON metadata
@@ -38,7 +42,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 128 passing tests, incl. golden-hash guard, river mass-conservation, road
+- 131 passing tests, incl. golden-hash guard, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
   under `docs/`; local preview via `node scripts/serve-docs.ts`.
@@ -59,13 +63,14 @@
 | P2 Browser build · P4 interactive atlas | ✅ done |
 | Web Worker (responsive app) · CI | ✅ done |
 | Time scrubber (temporal atlas) · balance of power | ✅ done |
-| dynamic settlements · languages · in-app atlas | 🔜 the world keeps deepening |
+| Dynamic settlements (foundings, ruins) | ✅ done |
+| languages/lexicons · in-app atlas · more | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 128 tests, all offline
+npm test                  # 131 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)
@@ -91,9 +96,9 @@ No `npm install` is required — there are zero dependencies.
 - Don't create `new Worker` in `preview_eval` without `.terminate()` — leaked
   workers wedge the whole preview browser (this bit Session 10; a fresh start
   fixed it in Session 11).
-- Simulation doesn't feed back into the settlement list (cities founded/lost in
-  the sim are chronicle events, not markers that appear/vanish as you scrub —
-  a natural next step now that the scrubber exists).
+- Roads and the economy are computed on the full L9 settlement set, so a road can
+  lead to a town the simulation later ruined. (Charming, arguably — roads outlive
+  cities — but the gazetteer's economy can still cite a ruin.)
 - Tiny single-cell islands become their own 1-cell "regions" (coverage pass),
   cluttering gazetteers. Consider merging sub-threshold islets.
 - Moisture runs a single west→east prevailing wind; latitude wind belts would be

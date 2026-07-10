@@ -8,6 +8,47 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 13 — 2026-07-09 — Dynamic settlements (cities rise and fall)
+
+**Theme:** The scrubber showed borders shifting, but the cities were timeless —
+the same dots at 100 AR as at 1,100 AR. Now settlements have lifespans.
+
+### Added
+- **`settlementTimeline`** (`src/simulation.ts`): every town gets a **founding
+  year** (best sites are oldest; all founded in the first half of the span).
+  During the run a town may be **sacked** when its region is conquered, or
+  **abandoned** when its country empties out. New `ruin` events.
+  - The **capital never falls** (the present-day metadata names it), and at most
+    35% of towns can be lost.
+  - Plagues made properly devastating (×0.45, was ×0.6) so a country *can*
+    actually empty — otherwise `abandoned` was dead code that never fired.
+  - Helpers: `settlementsAt(year)`, `ruinedSettlementIds()`.
+- **Coherence:** "present day" is now *exactly* the survivors. The worker,
+  sample generator, and CLI overlay only surviving towns; hovering a ruin no
+  longer names a town that no longer exists.
+- **Gazetteer:** settlements show their founding year; a new **Ruins** section
+  records what history swallowed (*"Baubryu (town) — founded 200, stormed and
+  left a ruin in 525"*).
+- **App:** on the Powers layer, markers are drawn from the timeline for the
+  scrubbed year, so cities visibly appear and vanish as the history plays.
+  New **Ruins** stat. `meta.ruinCount`.
+
+### Fixed (found while verifying)
+- A town could be sacked in the very year it was founded (*"founded 375, ruined
+  375"*) — it violated an invariant my own test asserted, but the single test
+  seed happened not to hit it. Ruin now requires the town to have stood at least
+  a turn; the test was widened to six seeds.
+
+### Verified
+- `npm test` → **131 passing** (timeline invariants, determinism, the same-year
+  regression, capital survives, present-day == survivors).
+- In-browser marker-pixel counts on the Powers map: **100 AR = capital only,
+  350 AR = towns appearing, 1,100 AR = all survivors.**
+- Balance re-checked over 30 seeds after the plague change: mean top-power share
+  **58%**, 2/30 unified, 7/30 fragmented — unchanged. Golden hash unchanged.
+
+---
+
 ## Session 12 — 2026-07-09 — Balance of power (user feedback)
 
 **Theme:** "Powers and regions always nail down to one power by the end." True,

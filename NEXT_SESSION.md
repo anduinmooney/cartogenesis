@@ -6,80 +6,80 @@
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm green **before** changing anything (baseline: **128**).
-3. Skim `CHANGELOG.md` (top, Session 12) and `ROADMAP.md`.
+2. `npm test` → confirm green **before** changing anything (baseline: **131**).
+3. Skim `CHANGELOG.md` (top, Session 13) and `ROADMAP.md`.
 4. Preview: `node scripts/serve-docs.ts` → `/` (atlas) and `/app/` (live).
 5. **After any `src/` change, rerun `node scripts/build-web.ts`** (CI enforces
    it; it also fails if a browser module — engine/app/worker — imports one you
    forgot to add to the MODULES list).
 6. **Preview discipline:** never create `new Worker` in `preview_eval` without
-   `.terminate()` — a leaked worker wedges the whole preview browser.
+   `.terminate()` — a leaked worker wedges the whole Browser pane.
+7. **If you touch `src/simulation.ts` war/revolt/plague logic**, re-run a ~30-seed
+   distribution check (mean top-power share should stay ~55–60%, with a few
+   worlds unified and several fragmented). The regression test only catches gross
+   failures, not drift.
 
 ## Context: where the project is
 
-Session 11 shipped the **time scrubber** (play/scrub 100→1,100 AR on the Powers
-layer). Session 12 fixed a serious balance flaw the user spotted — every world
-used to collapse into a single hegemon; now overextension, distance, revolts,
-ambition and per-world cohesion make outcomes **vary** (mean top-power share
-94% → 59%). A regression test guards both failure modes.
+The simulation is now genuinely alive: balanced rival powers (S12) whose borders
+you can scrub through the centuries (S11), with cities that are founded, sacked,
+and abandoned as you watch (S13). Present-day maps show exactly the survivors;
+the gazetteer records the ruins.
 
-The *cities* on the map are still static — present-day settlements, unchanged as
-you scrub. The simulation narrates foundings and falls in the chronicle; the next
-step makes them **show on the map**.
+**Priority note:** if the user gives new feedback, address that first — it beats
+any queued plan.
 
-**Balance note:** if you touch `src/simulation.ts` war/revolt logic, re-run the
-distribution check (generate ~30 seeds, measure top-power share) — the regression
-test only catches gross failures, not drift.
+## This session's objective: **Per-culture languages (lexicons)**
 
-**Priority note:** if the user gives new feedback, address that first.
+Right now each culture has a *phonology* (Auld, Meridian, Kesh, Sylvan) so names
+*sound* related, but they share no **vocabulary**. Names are pure syllable soup.
+Give each culture a small lexicon so places, people, and faiths of one culture
+visibly share roots — the single biggest step in making the world feel authored.
 
-## This session's objective: **Dynamic settlements over time**
+### Design (`src/names.ts`, or a new `src/language.ts`)
+1. Give each language a **root lexicon**: a handful of meaningful morphemes
+   generated deterministically from the culture (not hand-written English), e.g.
+   roots for `water`, `stone`, `high`, `dark`, `holy`, `river`, `fort`, `people`.
+   Each root is a syllable cluster in that language's phonology.
+2. Give each language **affixes/patterns** for place kinds: `-<fort>` for towns,
+   `<high>-<stone>` for peaks, `<holy>-<x>` for temples, etc.
+3. Compose names from roots + affixes instead of random syllables, so a coastal
+   Auld region reliably yields names sharing the "sea" root, and a peak in Kesh
+   territory shares the "high" root with other Kesh peaks.
+4. Expose a **glossary** per culture (root → gloss) so the gazetteer can print
+   *"Vask-heim: 'sea-home'"* — this is the payoff that makes it legible.
 
-Make cities appear and disappear as history unfolds, so the scrubber shows not
-just borders but the growth and collapse of urban life.
-
-### Design
-1. **`src/simulation.ts`**: give each settlement a *founding year* and possibly a
-   *fall year*. Simplest first cut: seed each existing settlement with a founding
-   year (capitals/cities early, villages later — reuse the pattern from
-   `history.ts`), and let the simulation *found new settlements* in high-
-   population regions and *abandon* ones whose region population collapses (tie to
-   the famine/plague/conquest logic already there). Record per-settlement
-   `{ x, y, name, tier, foundedYear, fellYear? }` in a `settlementTimeline` on the
-   `SimulationLayer` (keep the static `settlements` layer as "present day").
-   - Keep it deterministic (the `simulation` stream) and bounded.
-2. **App**: when scrubbing, draw only settlements that exist at the current year
-   (`foundedYear <= year && (fellYear == null || year < fellYear)`). The overlay
-   already draws settlement markers/labels in `drawOverlays` — filter by the
-   scrubber's current year when on the Powers layer. Show founded/abandoned
-   moments (a brief marker pulse is a nice touch).
-3. Optionally surface founding/fall years in the click-detail and gazetteer.
+### Integrate & surface
+- Keep `makeName(lang, rng)` as the entry point so callers don't change; add
+  `makeName(lang, rng, { kind: "town" | "peak" | "river" | "realm" | "deity" })`.
+- Gazetteer: a **Languages** section listing each culture's glossary, and gloss
+  the notable features ("Mount X — 'the high stone'").
+- Determinism: all roots derived from the seed + culture id.
 
 ### Test
-- Determinism unchanged; golden hash stays `74c67102ff7abf98`.
-- Timeline invariants: every settlement has a foundingYear within the sim span;
-  `fellYear` (if set) > `foundedYear`; present-day settlements are those alive at
-  `endYear`.
-- In-browser (`preview_eval`, no worker leaks): on Powers, scrub to an early year
-  and assert fewer settlement markers than at the end; play advances; no errors.
+- Determinism; every language has a full root set; names of a given kind contain
+  that kind's root; glosses are non-empty; names stay pronounceable and bounded
+  in length.
+- **This will change many names** but must NOT change the elevation golden hash
+  (`74c67102ff7abf98`) — naming is downstream of geography. Regenerate samples.
 
 ### Guardrails
-- Deterministic engine; randomness via streams; no clock in the engine. Zero
-  deps. No TS `enum`/namespaces/decorators. Keep `main` green + CI passing.
+- Deterministic; randomness via streams; zero deps; no TS enums/namespaces.
+- Keep names short and readable — the current generator can produce mouthfuls
+  ("Leolenvabauvento"); the lexicon is a chance to fix that.
 
 ### Close out (do not skip)
-1. `node scripts/build-web.ts`; `node scripts/make-samples.ts` if needed.
-2. Update `CHANGELOG.md` (Session 12), `PROJECT_STATE.md`, `ROADMAP.md`,
+1. `node scripts/build-web.ts`; `node scripts/make-samples.ts`.
+2. Update `CHANGELOG.md` (Session 14), `PROJECT_STATE.md`, `ROADMAP.md`,
    `DECISIONS.md` if warranted, and rewrite this file for the next theme.
-3. Commit per logical unit and push; confirm CI green and the live app works
-   (verify on a FRESH preview; terminate any test workers).
+3. Commit per logical unit and push; confirm CI green and verify the live app on
+   a FRESH preview.
 
-## Alternative big directions (if you'd rather)
-- **Per-culture languages**: turn the naming phonologies into small lexicons so
-  places, people, and faiths share a coherent vocabulary per culture (a "Sea"
-  root recurring in Auld coastal names, etc.).
+## Alternative big directions
 - **In-app gazetteer & client-side exports**: render the full report in a
   readable in-app panel; "Download poster (SVG)" / "Download report (MD)"
   generated in the browser.
-- **Deeper terrain**: lava fields / calderas / island-arc seamounts around the
-  volcanoes; per-region metre-accurate contour intervals on the Topo layer.
+- **Roads/economy vs. ruins**: recompute roads and the economy on the surviving
+  settlements so a highway doesn't run to a dead city (see PROJECT_STATE debt).
+- **Deeper terrain**: lava fields, calderas, island-arc seamounts; per-region
+  metre-accurate contour intervals on the Topo layer.
