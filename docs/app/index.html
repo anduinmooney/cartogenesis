@@ -351,6 +351,11 @@
         transition: opacity 0.12s;
       }
       #chronicle li.ev:hover::after { opacity: 1; }
+      /* Same guard as #gazovl: the id selector's display would override the
+         `hidden` attribute, leaving the scrubber visible on non-Powers layers. */
+      #scrubber[hidden] {
+        display: none;
+      }
       #scrubber {
         display: flex;
         align-items: center;
@@ -401,6 +406,12 @@
       }
 
       /* --- Gazetteer overlay --- */
+      /* The `hidden` attribute must win over the `display:flex` below — an ID
+         selector otherwise overrides the UA's [hidden]{display:none}, and the
+         overlay can never be closed. This higher-specificity rule fixes that. */
+      #gazovl[hidden] {
+        display: none;
+      }
       #gazovl {
         position: fixed;
         inset: 0;
