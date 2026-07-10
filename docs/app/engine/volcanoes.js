@@ -10,7 +10,8 @@
 
 import { Grid } from "./grid.js";
 import { Rng } from "./rng.js";
-import { makeName, languageById } from "./names.js";
+import { languageById } from "./names.js";
+import { composeName } from "./language.js";
 
                                                                      
                                                              
@@ -21,6 +22,8 @@ import { makeName, languageById } from "./names.js";
                  
                     
                
+                                                             
+                
                         
                                                                              
                  
@@ -150,7 +153,12 @@ export function addVolcanoes(
       y: cy,
       radius,
       type,
-      name: makeName(lang, new Rng(`${cfg.seed}:volcano:${placed.length}`)),
+      ...(() => {
+        const c = composeName(lang, new Rng(`${cfg.seed}:volcano:${placed.length}`), {
+          kind: "volcano",
+        });
+        return { name: c.name, gloss: c.gloss };
+      })(),
       status: pickStatus(rng),
       summit,
     });

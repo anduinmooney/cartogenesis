@@ -13,11 +13,14 @@ import { Rng } from "./rng.js";
                                               
                                                 
                                                    
-import { makeName, languageById } from "./names.js";
+import { languageById } from "./names.js";
+import { composeName,               } from "./language.js";
 
                         
              
                
+                                                         
+                
                                   
                    
                       
@@ -26,6 +29,8 @@ import { makeName, languageById } from "./names.js";
                                
                                   
                
+                                                              
+                
             
             
  
@@ -51,15 +56,18 @@ import { makeName, languageById } from "./names.js";
                        
  
 
+/** Name a feature in the language of whoever lives around it. */
 function nameAtCell(
   regions             ,
   cell        ,
   key        ,
-)         {
+  kind          ,
+)                                  {
   const rid = regions.ids[cell];
   const region = regions.regions.find((r) => r.id === rid);
   const lang = languageById(region?.languageId ?? "meridian");
-  return makeName(lang, new Rng(key));
+  const c = composeName(lang, new Rng(key), { kind });
+  return { name: c.name, gloss: c.gloss };
 }
 
 /** Locate and name the world's most notable physical features. */
@@ -86,7 +94,7 @@ function findFeatures(
   if (peakI >= 0) {
     features.push({
       kind: "peak",
-      name: nameAtCell(regions, peakI, `${seed}:peak`),
+      ...nameAtCell(regions, peakI, `${seed}:peak`, "peak"),
       x: peakI % width,
       y: (peakI / width) | 0,
     });
@@ -104,7 +112,7 @@ function findFeatures(
   if (mouthI >= 0) {
     features.push({
       kind: "river",
-      name: nameAtCell(regions, mouthI, `${seed}:river`),
+      ...nameAtCell(regions, mouthI, `${seed}:river`, "river"),
       x: mouthI % width,
       y: (mouthI / width) | 0,
     });
@@ -121,7 +129,7 @@ function findFeatures(
   if (lakeI >= 0) {
     features.push({
       kind: "lake",
-      name: nameAtCell(regions, lakeI, `${seed}:lake`),
+      ...nameAtCell(regions, lakeI, `${seed}:lake`, "lake"),
       x: lakeI % width,
       y: (lakeI / width) | 0,
     });
@@ -176,14 +184,16 @@ export function generateHistory(
     const region = regions.regions.find((r) => r.id === c.regionId);
     const lang = languageById(region?.languageId ?? "meridian");
     const founded = (foundYear.get(c.id) ?? 100) + rng.int(10, 40);
-    const name = makeName(lang, new Rng(`${cfg.seed}:realm:${i}`));
+    const { name, gloss } = composeName(lang, new Rng(`${cfg.seed}:realm:${i}`), {
+      kind: "realm",
+    });
     events.push({
       year: founded,
       type: "realm",
       title: `The ${name} proclaimed`,
       text: `${c.name} rose to rule its hinterland, and the realm of ${name} was proclaimed.`,
     });
-    return { id: i, name, seat: c.name, regionId: c.regionId, foundedYear: founded };
+    return { id: i, name, gloss, seat: c.name, regionId: c.regionId, foundedYear: founded };
   });
 
   // Realm adjacency (their seat-regions border each other).

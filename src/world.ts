@@ -36,7 +36,7 @@ import { generateEconomy, type EconomyLayer } from "./economy.ts";
 import { generateReligion, type ReligionLayer } from "./religion.ts";
 import { generateSimulation, type SimulationLayer } from "./simulation.ts";
 
-export const ENGINE_VERSION = "0.12.0";
+export const ENGINE_VERSION = "0.13.0";
 
 export interface WorldConfig {
   seed: number | string;

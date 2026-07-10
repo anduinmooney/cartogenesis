@@ -8,6 +8,8 @@
 import { type World, elevationToMetres } from "./world.ts";
 import { BIOME_NAMES, type Biome } from "./biomes.ts";
 import { RESOURCE_NAMES } from "./resources.ts";
+import { glossPhrase, glossary } from "./language.ts";
+import { languageById } from "./names.ts";
 
 function pct(x: number): string {
   return `${(x * 100).toFixed(1)}%`;
@@ -69,8 +71,8 @@ export function worldReportMarkdown(world: World): string {
     for (const v of vs) {
       const metres = elevationToMetres(v.summit, m.seaLevel, m.maxAltitudeMetres);
       lines.push(
-        `- **Mount ${v.name}** — ${v.type}, ${v.status}, summit ` +
-          `${metres.toLocaleString()} m`,
+        `- **Mount ${v.name}** — *${glossPhrase(v.gloss)}* — ${v.type}, ${v.status}, ` +
+          `summit ${metres.toLocaleString()} m`,
       );
     }
     lines.push("");
@@ -87,7 +89,7 @@ export function worldReportMarkdown(world: World): string {
           : f.kind === "river"
             ? `**The ${f.name}** — the greatest river`
             : `**Lake ${f.name}** — the largest inland water`;
-      lines.push(`- ${label}`);
+      lines.push(`- ${label}, *${glossPhrase(f.gloss)}*`);
     }
     lines.push("");
   }
@@ -95,12 +97,12 @@ export function worldReportMarkdown(world: World): string {
   // Regions table
   lines.push("## Regions");
   lines.push("");
-  lines.push("| Region | Culture | Area | Dominant biome | Coast |");
-  lines.push("|--------|---------|-----:|----------------|:-----:|");
+  lines.push("| Region | Meaning | Culture | Area | Dominant biome | Coast |");
+  lines.push("|--------|---------|---------|-----:|----------------|:-----:|");
   const regions = [...world.regions.regions].sort((a, b) => b.area - a.area);
   for (const r of regions) {
     lines.push(
-      `| ${r.name} | ${r.languageLabel} | ${r.area} | ` +
+      `| ${r.name} | *${glossPhrase(r.gloss)}* | ${r.languageLabel} | ${r.area} | ` +
         `${BIOME_NAMES[r.dominantBiome as Biome]} | ${r.coastal ? "yes" : "—"} |`,
     );
   }
@@ -125,7 +127,14 @@ export function worldReportMarkdown(world: World): string {
     for (const realm of realmsByFounding) {
       const house = world.lore.houses.find((x) => x.realmId === realm.id);
       if (!house) continue;
-      lines.push(`### House ${house.name} — realm of ${realm.name}`);
+      lines.push(
+        `### House ${house.name} — realm of ${realm.name}`,
+      );
+      lines.push("");
+      lines.push(
+        `*${house.name}, ${glossPhrase(house.gloss)}; ${realm.name}, ` +
+          `${glossPhrase(realm.gloss)}.*`,
+      );
       lines.push("");
       const line = world.lore.rulers
         .filter((x) => x.realmId === realm.id)
@@ -188,7 +197,10 @@ export function worldReportMarkdown(world: World): string {
         : "";
       const founded = timeline.get(s.id)?.foundedYear;
       const age = founded !== undefined ? ` *(founded ${founded})*` : "";
-      lines.push(`- ${s.name}${tags ? ` (${tags})` : ""}${goods}${age}`);
+      lines.push(
+        `- **${s.name}**, *${glossPhrase(s.gloss)}*` +
+          `${tags ? ` (${tags})` : ""}${goods}${age}`,
+      );
     }
     lines.push("");
   }
@@ -220,6 +232,10 @@ export function worldReportMarkdown(world: World): string {
         `### ${f.name} — ${f.deity.name}, god of ${f.deity.domain}`,
       );
       lines.push("");
+      lines.push(
+        `*${f.deity.name}: ${glossPhrase(f.deity.gloss)}.*`,
+      );
+      lines.push("");
       lines.push(`> ${f.myth}`);
       lines.push("");
       lines.push(`Followed across ${f.followerRegions.length} region(s).`);
@@ -245,6 +261,37 @@ export function worldReportMarkdown(world: World): string {
     .map(([k, c]) => `${RESOURCE_NAMES[Number(k)]} ×${c}`);
   if (depCounts.length) lines.push(`- **Deposits:** ${depCounts.join(", ")}`);
   lines.push("");
+
+  // Languages — the vocabulary behind every name above. Only the cultures that
+  // actually live here; an unspoken glossary is noise.
+  const spoken = [...new Set(world.regions.regions.map((r) => r.languageId))];
+  if (spoken.length) {
+    lines.push("## Languages");
+    lines.push("");
+    lines.push(
+      "*Every place-name in this world is a compound of the roots below. " +
+        "Read them and the map reads back.*",
+    );
+    lines.push("");
+    for (const id of spoken) {
+      const lang = languageById(id);
+      const spokenIn = world.regions.regions
+        .filter((r) => r.languageId === id)
+        .sort((a, b) => b.area - a.area)
+        .slice(0, 3)
+        .map((r) => r.name);
+      lines.push(`### ${lang.label}`);
+      lines.push("");
+      lines.push(`*Spoken in ${spokenIn.join(", ")}.*`);
+      lines.push("");
+      lines.push(
+        glossary(lang)
+          .map((g) => `**${g.root}** ${g.gloss}`)
+          .join(" · "),
+      );
+      lines.push("");
+    }
+  }
 
   // Legends of the founding age (the static, mythic prehistory).
   lines.push("## Legends of the founding age");

@@ -230,7 +230,9 @@ export function generateSimulation(
     const lang = languageById(reg.languageId);
     const realm: Realm = {
       id: nextRealmId++,
-      name: hist ? hist.name : makeName(lang, new Rng(`${cfg.seed}:realm:${regionId}`)),
+      name: hist
+        ? hist.name
+        : makeName(lang, new Rng(`${cfg.seed}:realm:${regionId}`), { kind: "realm" }),
       languageId: reg.languageId,
       aggression: 0.6 + rng.next() * 1.2,
       seatRegion: regionId,
@@ -249,7 +251,7 @@ export function generateSimulation(
     const lang = languageById(biggest.languageId);
     const realm: Realm = {
       id: nextRealmId++,
-      name: makeName(lang, new Rng(`${cfg.seed}:realm:${biggest.id}`)),
+      name: makeName(lang, new Rng(`${cfg.seed}:realm:${biggest.id}`), { kind: "realm" }),
       languageId: biggest.languageId,
       aggression: 0.6 + rng.next() * 1.2,
       seatRegion: biggest.id,
@@ -565,7 +567,7 @@ export function generateSimulation(
       const lang = languageById(reg.languageId);
       const rebel: Realm = {
         id: nextRealmId++,
-        name: makeName(lang, new Rng(`${cfg.seed}:revolt:${rid}:${t}`)),
+        name: makeName(lang, new Rng(`${cfg.seed}:revolt:${rid}:${t}`), { kind: "realm" }),
         languageId: reg.languageId,
         aggression: 0.6 + rng.next() * 1.2,
         seatRegion: rid,
@@ -628,7 +630,7 @@ export function generateSimulation(
       const lang = languageById(reg.languageId);
       const newRealm: Realm = {
         id: nextRealmId++,
-        name: makeName(lang, new Rng(`${cfg.seed}:breakaway:${startId}:${t}`)),
+        name: makeName(lang, new Rng(`${cfg.seed}:breakaway:${startId}:${t}`), { kind: "realm" }),
         languageId: reg.languageId,
         aggression: 0.6 + rng.next() * 1.2,
         seatRegion: startId,

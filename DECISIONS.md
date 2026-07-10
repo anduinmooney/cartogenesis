@@ -6,6 +6,56 @@ old one — the history is the point.
 
 ---
 
+## D-021 — A lexicon belongs to the culture, not the world (2026-07-09, Session 15)
+**Decision:** Each language's word-roots are derived from its **id alone**
+(`new Rng("lexicon:auld")`), memoized, and identical in every world. `vyvask`
+means *water* in Auld in seed `atlas` and in seed `borea` alike.
+
+**Why:** The obvious alternative — derive the lexicon from the world seed — makes
+every world's vocabulary novel, which sounds richer and is in fact worse. A
+reader who learns a dozen roots can then read *every* map we generate; a
+per-world lexicon resets that knowledge each time and reduces the glossary to
+decoration. Cultures are also older than any one map: Auld is a people, not a
+property of a coastline. Practically, it also keeps `makeName(lang, rng)` free of
+world-seed plumbing — the subsystems each hold a *stream* seed, not the world
+seed, so a per-world lexicon would have to thread the seed through six modules.
+
+**Consequence:** Adding a concept to `CONCEPTS` re-rolls every root after it in
+the list (the coining loop is sequential), which renames every world. Concepts
+must therefore be **appended, never inserted**. That constraint is written into
+the `CONCEPTS` doc comment.
+
+---
+
+## D-020 — Names are compounds with meaning, and the terrain steers them (2026-07-09, Session 15)
+**Decision:** Names are no longer syllable soup. Every name is a compound of two
+roots chosen by a per-kind template (`peak` = a quality + stone/mountain; `town`
+= a modifier + a work of hands), joined by real morphophonology (elision,
+degemination, epenthesis). Callers pass **hints** — `["sea"]` for a port,
+`["sand"]` for a desert region — and the composer prefers the most salient hint
+its template can use, 60% of the time.
+
+**Why:** A name that means something is the cheapest way to make a generated
+world feel authored. `Deoliria` is noise; *Deoliria, the sea haven*, sitting on a
+harbour, is a place. The 60% (rather than 100%) hint weight is deliberate: real
+maps have inland-sounding names on the coast, and a rule with no exceptions reads
+as a rule.
+
+**Rejected:** Hand-written English-ish roots per culture. Shorter to write, but
+they would make Auld sound like bad Norse and Kesh like bad Arabic — borrowing
+the *sound* of real peoples while inventing their history. Coining every root
+from the language's own phonology keeps the cultures invented.
+
+**Consequence:** Two invariants, both tested. A hint the template cannot use must
+be *ignored*, never emitted — there is no "sea peak". And nothing is ever named
+"stone-stone": the head is re-drawn if it equals the modifier.
+
+**Also:** roots must begin with a consonant. A vowel-initial root turns every
+compound that heads it into mush (`cau` + `au` → `caau`), because the seam is
+always a hiatus. Affixes may start with vowels; roots may not.
+
+---
+
 ## D-019 — Balance of power: projected strength, not raw sum (2026-07-09, Session 12)
 **Decision:** War resolution uses a realm's *projected* strength at the target
 (raw strength ÷ overextension ÷ distance-from-capital) against the defender's

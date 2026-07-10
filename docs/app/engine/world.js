@@ -36,7 +36,7 @@ import { generateEconomy,                   } from "./economy.js";
 import { generateReligion,                    } from "./religion.js";
 import { generateSimulation,                      } from "./simulation.js";
 
-export const ENGINE_VERSION = "0.12.0";
+export const ENGINE_VERSION = "0.13.0";
 
                               
                         

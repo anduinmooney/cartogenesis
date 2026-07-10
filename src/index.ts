@@ -52,6 +52,18 @@ export {
   type Language,
 } from "./names.ts";
 export {
+  CONCEPTS,
+  composeName,
+  glossary,
+  glossPhrase,
+  hintsForBiome,
+  lexiconOf,
+  type ComposedName,
+  type Lexicon,
+  type NameKind,
+  type NameOptions,
+} from "./language.ts";
+export {
   generateRegions,
   type RegionLayer,
   type RegionInfo,

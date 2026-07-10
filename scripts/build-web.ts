@@ -26,6 +26,7 @@ const MODULES = [
   "climate",
   "rivers",
   "biomes",
+  "language",
   "names",
   "regions",
   "settlements",

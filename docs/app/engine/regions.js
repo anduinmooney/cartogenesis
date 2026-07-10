@@ -12,11 +12,14 @@ import { Rng } from "./rng.js";
                                                  
                                               
 import { Biome } from "./biomes.js";
-import { languageById, makeName,               } from "./names.js";
+import { languageById,               } from "./names.js";
+import { composeName, hintsForBiome } from "./language.js";
 
                              
              
                
+                                                         
+                
                      
                         
                              
@@ -226,6 +229,7 @@ export function generateRegions(
   }
 
   const regions               = [];
+  const usedNames = new Set        ();
   for (let r = 0; r < count; r++) {
     if (area[r] === 0) continue;
     let dominant = Biome.Grassland;
@@ -240,16 +244,30 @@ export function generateRegions(
     const meanTemperature = sumT[r] / area[r];
     const lang = cultureFor(meanTemperature, dominant);
     const nameRng = new Rng(`${cfg.seed}:region:${r}`);
+
+    // Name the province after the land it actually is: its biome, its coast,
+    // its highlands. `composeName` takes the first hint its template can use.
+    const meanElevation = sumE[r] / area[r];
+    const hints = [...hintsForBiome(dominant)];
+    if (coastal[r] === 1) hints.unshift("sea");
+    if (meanElevation > 0.62) hints.unshift("mountain", "high");
+    const named = composeName(lang, nameRng, {
+      kind: "region",
+      hints,
+      avoid: usedNames,
+    });
+
     regions.push({
       id: r,
-      name: makeName(lang, nameRng),
+      name: named.name,
+      gloss: named.gloss,
       languageId: lang.id,
       languageLabel: lang.label,
       area: area[r],
       cx: Math.round(sumX[r] / area[r]),
       cy: Math.round(sumY[r] / area[r]),
       coastal: coastal[r] === 1,
-      meanElevation: sumE[r] / area[r],
+      meanElevation,
       meanTemperature,
       meanMoisture: sumM[r] / area[r],
       dominantBiome: dominant,

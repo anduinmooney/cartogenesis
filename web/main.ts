@@ -13,6 +13,8 @@ import { RESOURCE_NAMES, RESOURCE_COLORS } from "./engine/resources.ts";
 import { renderPowersAt } from "./engine/render.ts";
 import { settlementsAt, ruinedSettlementIds } from "./engine/simulation.ts";
 import type { Settlement } from "./engine/settlements.ts";
+import { glossPhrase, glossary } from "./engine/language.ts";
+import { languageById } from "./engine/names.ts";
 
 // Faith tint palette — mirrors FAITH_PALETTE in src/render.ts.
 const FAITH_PALETTE = [
@@ -419,7 +421,10 @@ function showTip(clientX: number, clientY: number): void {
     const tags = [s.isCapital ? "capital" : s.tier, s.isPort ? "port" : ""]
       .filter(Boolean)
       .join(", ");
-    rows.push(`<div class="trow cap">${s.name} — ${tags}</div>`);
+    rows.push(
+      `<div class="trow cap">${s.name} — ${tags}</div>` +
+        `<div class="tgloss">${glossPhrase(s.gloss)}</div>`,
+    );
   }
   // On the Resources layer, identify the deposit under the cursor.
   if (activeLayer === "resources") {
@@ -430,7 +435,12 @@ function showTip(clientX: number, clientY: number): void {
       );
     }
   }
-  tip.innerHTML = `<div class="tname">${place}</div>${rows.join("")}`;
+  const placeGloss =
+    !info.isOcean && !info.isLake && info.region ? info.region.gloss : "";
+  const glossLine = placeGloss
+    ? `<div class="tgloss">${glossPhrase(placeGloss)}</div>`
+    : "";
+  tip.innerHTML = `<div class="tname">${place}</div>${glossLine}${rows.join("")}`;
   tip.hidden = false;
   const pad = 14;
   let left = clientX + pad;
@@ -454,6 +464,7 @@ function pinDetail(clientX: number, clientY: number): void {
   if (info.settlement) {
     const s = info.settlement;
     parts.push(`<div class="dh">${s.name}</div>`);
+    parts.push(`<div class="dgloss">${glossPhrase(s.gloss)}</div>`);
     const eco = current.economy.economies.find((e) => e.settlementId === s.id);
     const tags = [
       s.isCapital ? "Capital" : s.tier[0].toUpperCase() + s.tier.slice(1),
@@ -473,6 +484,7 @@ function pinDetail(clientX: number, clientY: number): void {
   } else if (info.region) {
     const r = info.region;
     parts.push(`<div class="dh">${r.name}</div>`);
+    parts.push(`<div class="dgloss">${glossPhrase(r.gloss)}</div>`);
     parts.push(`<div class="drow">${r.languageLabel} · ${info.biome}</div>`);
     parts.push(
       `<div class="drow">area ${r.area} cells · ${r.coastal ? "coastal" : "inland"} · ` +
@@ -589,9 +601,13 @@ function renderInfo(world: World): void {
   $("features").innerHTML = world.history.features
     .map((f) => {
       const label = f.kind === "peak" ? "Mount" : f.kind === "lake" ? "Lake" : "River";
-      return `<li>${label} <b>${f.name}</b></li>`;
+      return (
+        `<li>${label} <b>${f.name}</b> <span class="gl">— ${glossPhrase(f.gloss)}</span></li>`
+      );
     })
     .join("");
+
+  renderLanguages(world);
 
   // The emergent chronicle from the simulation (the world's real history).
   // Each entry is clickable — it flies the map to where the event happened.
@@ -850,3 +866,31 @@ function init(): void {
 }
 
 init();
+
+/**
+ * The phrasebook. Every name on the map is a compound of these roots, so the
+ * panel is what turns "Vaskhold" from noise into "sea-fort". Only the cultures
+ * that actually live in this world are listed.
+ */
+function renderLanguages(world: World): void {
+  const spoken = [...new Set(world.regions.regions.map((r) => r.languageId))];
+  $("languages").innerHTML = spoken
+    .map((id) => {
+      const lang = languageById(id);
+      const where = world.regions.regions
+        .filter((r) => r.languageId === id)
+        .sort((a, b) => b.area - a.area)
+        .slice(0, 2)
+        .map((r) => r.name)
+        .join(", ");
+      const roots = glossary(lang)
+        .map((g) => `<span><b>${g.root}</b> ${g.gloss}</span>`)
+        .join("");
+      return (
+        `<details><summary>${escapeHtml(lang.label)} ` +
+        `<span class="spoken">— ${escapeHtml(where)}</span></summary>` +
+        `<div class="lex">${roots}</div></details>`
+      );
+    })
+    .join("");
+}

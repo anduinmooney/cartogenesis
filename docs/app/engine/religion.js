@@ -7,12 +7,15 @@
 // dominant faith. Pure content on a `religion` stream, downstream of geography.
 
 import { Rng } from "./rng.js";
-import { makeName, languageById } from "./names.js";
+import { languageById } from "./names.js";
+import { composeName } from "./language.js";
                                                 
                                                  
 
                         
                
+                                                                
+                
                  
  
 
@@ -109,7 +112,10 @@ export function generateReligion(
   const usedDomains = rng.shuffle([...DOMAINS]);
   const faiths          = origins.map((region, i) => {
     const lang = languageById(region.languageId);
-    const deityName = makeName(lang, new Rng(`${cfg.seed}:deity:${i}`));
+    const deityWord = composeName(lang, new Rng(`${cfg.seed}:deity:${i}`), {
+      kind: "deity",
+    });
+    const deityName = deityWord.name;
     const domain = usedDomains[i % usedDomains.length];
     const faithName =
       rng.pick(FAITH_FORMS) + deityName;
@@ -117,7 +123,7 @@ export function generateReligion(
       id: i,
       name: faithName,
       originRegionId: region.id,
-      deity: { name: deityName, domain },
+      deity: { name: deityName, gloss: deityWord.gloss, domain },
       myth: mythFor(domain, deityName, region.name, peak, river, lake),
       followerRegions: [],
     };

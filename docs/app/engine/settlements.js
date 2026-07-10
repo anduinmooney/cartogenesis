@@ -11,7 +11,8 @@ import { Grid } from "./grid.js";
                                                  
                                               
                                                 
-import { makeName, languageById } from "./names.js";
+import { languageById } from "./names.js";
+import { composeName, hintsForBiome } from "./language.js";
 
                                                          
 
@@ -20,6 +21,8 @@ import { makeName, languageById } from "./names.js";
             
             
                
+                                                         
+                
                    
                        
                   
@@ -203,6 +206,7 @@ export function generateSettlements(
     return false;
   };
 
+  const usedNames = new Set        ();
   const settlements               = placed.map((p, rank) => {
     const regionId = regions.ids[p.i];
     const region = regions.regions.find((r) => r.id === regionId);
@@ -210,14 +214,26 @@ export function generateSettlements(
     const nameRng = new Rng(`${cfg.seed}:town:${rank}`);
     const tier                 =
       rank < cityCut ? "city" : rank < townCut ? "town" : "village";
+    const port = isPort(p.x, p.y);
+
+    // Name the town for what a traveller would notice first — the harbour, the
+    // river it fords, the mountain above it — and only then the countryside.
+    const hints           = [];
+    if (port) hints.push("sea");
+    if (rivers.riverMask[p.i] === 1) hints.push("river");
+    if (elevation.data[p.i] > 0.66) hints.push("mountain", "stone");
+    if (region) hints.push(...hintsForBiome(region.dominantBiome));
+    const named = composeName(lang, nameRng, { kind: tier, hints, avoid: usedNames });
+
     return {
       id: rank,
       x: p.x,
       y: p.y,
-      name: makeName(lang, nameRng),
+      name: named.name,
+      gloss: named.gloss,
       regionId,
       tier,
-      isPort: isPort(p.x, p.y),
+      isPort: port,
       isCapital: rank === 0,
       score: p.score,
     };

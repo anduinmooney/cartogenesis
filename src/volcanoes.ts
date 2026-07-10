@@ -10,7 +10,8 @@
 
 import { Grid } from "./grid.ts";
 import { Rng } from "./rng.ts";
-import { makeName, languageById } from "./names.ts";
+import { languageById } from "./names.ts";
+import { composeName } from "./language.ts";
 
 export type VolcanoType = "stratovolcano" | "shield" | "cinder cone";
 export type VolcanoStatus = "active" | "dormant" | "extinct";
@@ -21,6 +22,8 @@ export interface Volcano {
   radius: number;
   type: VolcanoType;
   name: string;
+  /** Literal reading of the name, e.g. `"fire-mountain"`. */
+  gloss: string;
   status: VolcanoStatus;
   /** Summit (crater-rim) elevation as a [0,1] field value after building. */
   summit: number;
@@ -150,7 +153,12 @@ export function addVolcanoes(
       y: cy,
       radius,
       type,
-      name: makeName(lang, new Rng(`${cfg.seed}:volcano:${placed.length}`)),
+      ...(() => {
+        const c = composeName(lang, new Rng(`${cfg.seed}:volcano:${placed.length}`), {
+          kind: "volcano",
+        });
+        return { name: c.name, gloss: c.gloss };
+      })(),
       status: pickStatus(rng),
       summit,
     });

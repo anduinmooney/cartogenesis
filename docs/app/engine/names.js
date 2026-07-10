@@ -6,6 +6,7 @@
 // culture. Everything is a pure function of a seed, so names are stable.
 
 import { Rng } from "./rng.js";
+import { composeName,                  } from "./language.js";
 
                            
              
@@ -70,28 +71,15 @@ export function languageById(id        )           {
   return LANGUAGES.find((l) => l.id === id) ?? LANGUAGES[0];
 }
 
-function titleCase(s        )         {
-  return s.charAt(0).toUpperCase() + s.slice(1);
-}
-
-/** Generate one name in the given language from a private Rng. */
-export function makeName(lang          , rng     )         {
-  const syllables = rng.pick(lang.sylCounts);
-  let out = "";
-  for (let i = 0; i < syllables; i++) {
-    const onset = rng.pick(lang.onsets);
-    const nucleus = rng.pick(lang.nuclei);
-    let syl = onset + nucleus;
-    // Avoid three-vowel pileups when an onset is itself vowel-like.
-    if (i < syllables - 1 && rng.next() < lang.codaChance) {
-      syl += rng.pick(lang.codas);
-    }
-    out += syl;
-  }
-  if (rng.next() < 0.35) out += rng.pick(lang.suffixes);
-  // Clean up doubled separators/vowels a touch.
-  out = out.replace(/-{2,}/g, "-").replace(/^-|-$/g, "");
-  return titleCase(out);
+/**
+ * Generate one name in the given language. Names are compounded from the
+ * culture's own word-roots (see `language.ts`), so a name can be translated:
+ * `makeName` gives you the word, `composeName` gives you the word *and* what it
+ * means. Pass `opts.kind` to name a thing after what it is, and `opts.hints` to
+ * name it after where it stands.
+ */
+export function makeName(lang          , rng     , opts              )         {
+  return composeName(lang, rng, opts).name;
 }
 
 /**
@@ -102,9 +90,10 @@ export function makeName(lang          , rng     )         {
 export function makeNamer(
   baseSeed        ,
   lang          ,
+  opts              ,
 )                                   {
   return (key) => {
     const rng = new Rng(`${baseSeed}:${key}`);
-    return makeName(lang, rng);
+    return makeName(lang, rng, opts);
   };
 }

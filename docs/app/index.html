@@ -275,6 +275,43 @@
       }
       #features { list-style: none; padding: 0; margin: 0; }
       #features li { font-size: 0.9rem; color: var(--muted); padding: 0.1rem 0; }
+      #features .gl, .tgloss, .dgloss {
+        font-family: var(--serif);
+        font-style: italic;
+        color: var(--faint);
+      }
+      .tgloss { font-size: 0.76rem; margin-top: 0.1rem; }
+      .dgloss { font-size: 0.88rem; margin-bottom: 0.35rem; }
+
+      #languages details {
+        border-bottom: 1px solid var(--border-soft);
+        padding: 0.35rem 0;
+      }
+      #languages summary {
+        cursor: pointer;
+        font-size: 0.86rem;
+        color: var(--ink);
+      }
+      #languages summary .spoken {
+        color: var(--faint);
+        font-size: 0.74rem;
+      }
+      #languages .lex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem 0.55rem;
+        margin: 0.5rem 0 0.3rem;
+      }
+      #languages .lex span {
+        font-size: 0.76rem;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+      #languages .lex b {
+        font-family: var(--mono);
+        color: var(--accent-2);
+        font-weight: 600;
+      }
       #chronicle {
         list-style: none;
         padding: 0;
@@ -416,6 +453,8 @@
           <ul id="features"></ul>
           <h3>Chronicle</h3>
           <ul id="chronicle"></ul>
+          <h3>Languages</h3>
+          <div id="languages"></div>
         </aside>
       </div>
     </div>

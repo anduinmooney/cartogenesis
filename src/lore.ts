@@ -10,7 +10,8 @@
 
 import { Rng } from "./rng.ts";
 import { Biome } from "./biomes.ts";
-import { makeName, languageById } from "./names.ts";
+import { languageById } from "./names.ts";
+import { composeName } from "./language.ts";
 import type { RegionLayer, RegionInfo } from "./regions.ts";
 import type { Settlement } from "./settlements.ts";
 import type { HistoryLayer } from "./history.ts";
@@ -19,6 +20,8 @@ export interface House {
   realmId: number;
   realmName: string;
   name: string; // surname of the ruling house
+  /** Literal reading of the surname, e.g. `"old-blood"`. */
+  gloss: string;
 }
 
 export interface Ruler {
@@ -118,8 +121,16 @@ export function generateLore(
   for (const realm of history.realms) {
     const region = regions.regions.find((r) => r.id === realm.regionId);
     const lang = languageById(region?.languageId ?? "meridian");
-    const houseName = makeName(lang, new Rng(`${cfg.seed}:house:${realm.id}`));
-    houses.push({ realmId: realm.id, realmName: realm.name, name: houseName });
+    const houseWord = composeName(lang, new Rng(`${cfg.seed}:house:${realm.id}`), {
+      kind: "house",
+    });
+    const houseName = houseWord.name;
+    houses.push({
+      realmId: realm.id,
+      realmName: realm.name,
+      name: houseName,
+      gloss: houseWord.gloss,
+    });
 
     // The house reigns from its founding right up to the present day. (It used
     // to stop after nine rulers, leaving centuries of the chronicle kingless.)
@@ -128,7 +139,9 @@ export function generateLore(
     let n = 0;
     while (year < present && n < 80) {
       const reign = rng.int(12, 42);
-      const given = makeName(lang, new Rng(`${cfg.seed}:ruler:${realm.id}:${n}`));
+      const given = composeName(lang, new Rng(`${cfg.seed}:ruler:${realm.id}:${n}`), {
+        kind: "person",
+      }).name;
       const epithet = rng.bool(0.4) ? ` ${rng.pick(EPITHETS)}` : "";
       const endYear = Math.min(year + reign, present);
       rulers.push({
@@ -228,7 +241,9 @@ function makeFigures(
 
   const chosen = rng.shuffle(specs.filter((s) => s.ok)).slice(0, 4 + rng.int(0, 2));
   for (const spec of chosen) {
-    const name = makeName(langFor(spec.region), new Rng(`${rng.next()}`));
+    const name = composeName(langFor(spec.region), new Rng(`${rng.next()}`), {
+      kind: "person",
+    }).name;
     figures.push({
       name: `${name}, ${spec.role}`,
       role: spec.role,
