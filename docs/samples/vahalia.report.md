@@ -275,6 +275,72 @@ Followed across 1 region(s).
 
 **syys** water · **syaeen** sea · **melyn** river · **syes** lake · **siaen** spring · **ne** stone · **thaeen** mountain · **melia** hill · **siien** field · **reth** vale · **sier** isle · **theo** cliff · **nil** marsh · **melen** land · **mela** wood · **phae** tree · **le** thorn · **phi** grass · **laeen** fire · **sieen** ash · **reo** ice · **melir** sand · **thiail** salt · **phyil** iron · **sial** gold · **syeo** high · **siael** deep · **nas** dark · **rien** bright · **ly** old · **thil** new · **rywyn** red · **syeil** white · **syia** black · **ril** green · **rith** cold · **this** wild · **phes** fort · **siy** hall · **phawyn** gate · **siawyn** bridge · **raeth** haven · **sieos** home · **nywyn** market · **thyth** folk · **lia** king · **siany** blood · **meler** war · **thaen** peace · **syith** holy · **syaen** dread · **lith** dawn · **theen** dusk · **phen** star · **nar** moon · **thas** sun · **rias** sky · **nana** wind · **reil** storm
 
+## Sagas of the Peoples
+
+*One saga per culture — the founding as its own singers keep it. The facts are the world's facts; the pride is their own.*
+
+### The Saga of Rairkaasi (Kesh (desert))
+
+> Out of the singing sands came the desert folk,
+> and the land they found they would not leave.
+> Mairkhidku they named it — the mountain hill —
+> for they were a people who named things truly.
+> Khirghekh they built first, the sea gate,
+> its harbour open like a hand.
+> Over it they set Vaghazazizam, the sky storm,
+> whose dominion is the sun;
+> and the Cult of Vaghazazizam keeps that fire yet.
+> In their tongue, maad is king and khaim is stone;
+> so read their map: every name a small song.
+> Rairkaasi endures, lesser than its songs —
+> as all things are, that last long enough to be sung of.
+
+### The Saga of Storkdaurk (Auld (northern))
+
+> Out of the grey water came the northern folk,
+> and the shore they found they would not leave.
+> Braba they named it — the mountain spring —
+> and the name has outlived every wall they raised.
+> Thaurndund they built first, the grass haven,
+> its walls set square against the weather.
+> (The maps write it Thaurnciamor now. The saga does not.)
+> Over it they set Vakneirkveill, the dusk sky,
+> whose dominion is the hearth;
+> and the Rite of Vakneirkveill remembers.
+> In their tongue, thygr is fire and bry is stone;
+> so read their map: every name a small song.
+> Of Storkdaurk their singers made much, once.
+> It rose to 3 provinces and it fell, and the saga does not say so —
+> but the chronicle does.
+
+### The Saga of Peoriana (Meridian (southern))
+
+> Out of the warm sea came the southern folk,
+> and the shore they found they would not leave.
+> Peonacaria they named it — the grass land —
+> and the name has outlived every wall they raised.
+> Deociamor they built first, the sea gate,
+> its harbour open like a hand.
+> Over it they set Varaullacomor, the moon fire,
+> whose dominion is the storm;
+> and the Faith of Varaullacomor remembers.
+> In their tongue, demor is home and neosso is stone;
+> so read their map: every name a small song.
+> And of Peoriana the singers still sing,
+> for its banners stand as high as ever they did.
+
+### How the Woodland Folk Came to Melatheo (Sylvan (woodland))
+
+> First came the woodland folk over the deep wood,
+> and the land they found they would not leave.
+> Melatheo they named it — the wood cliff —
+> for they were a people who named things truly.
+> Over it they set Vananalia, the wind king,
+> whose dominion is the harvest;
+> and the Rite of Vananalia keeps that fire yet.
+> In their tongue, phen is star and ne is stone;
+> so read their map: every name a small song.
+
 ## Legends of the founding age
 
 - **31 After Reckoning** — The city of Deociamor was founded on a sheltered harbour, destined to become the seat of power.

@@ -45,6 +45,7 @@ import {
   type SimulationLayer,
 } from "./simulation.ts";
 import { generateNarrative, type NarrativeLayer } from "./narrative.ts";
+import { generateSagas, type Saga } from "./saga.ts";
 
 export const ENGINE_VERSION = "0.13.0";
 
@@ -129,6 +130,8 @@ export interface World {
   simulation: SimulationLayer;
   /** L17 — the chronicle told as prose, by an in-world chronicler. */
   narrative: NarrativeLayer;
+  /** L17b — one founding saga per culture, in verse. */
+  sagas: Saga[];
   volcanoes: Volcano[];
 }
 
@@ -361,6 +364,12 @@ export function generateWorld(config: WorldConfig): World {
     capital: capital?.name ?? "—",
     capitalHouse: lore.capitalHouse,
   });
+  // L17b — Sagas: what each people believes about itself. Same rules: own
+  // stream, reads only, cannot perturb anything upstream.
+  const sagaRng = root.stream("saga");
+  const sagas = generateSagas(regions, settlements.settlements, religion, simulation, {
+    seed: sagaRng.seed,
+  });
 
   const maxAltitudeMetres = config.maxAltitudeMetres ?? 4500;
   const peakValue = elevation.extent().max;
@@ -424,6 +433,7 @@ export function generateWorld(config: WorldConfig): World {
     religion,
     simulation,
     narrative,
+    sagas,
     volcanoes,
   };
 }

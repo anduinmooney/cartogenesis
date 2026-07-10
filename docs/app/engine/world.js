@@ -45,6 +45,7 @@ import {
                        
 } from "./simulation.js";
 import { generateNarrative,                     } from "./narrative.js";
+import { generateSagas,           } from "./saga.js";
 
 export const ENGINE_VERSION = "0.13.0";
 
@@ -129,6 +130,8 @@ export const ENGINE_VERSION = "0.13.0";
                               
                                                                       
                             
+                                                        
+                
                        
  
 
@@ -361,6 +364,12 @@ export function generateWorld(config             )        {
     capital: capital?.name ?? "—",
     capitalHouse: lore.capitalHouse,
   });
+  // L17b — Sagas: what each people believes about itself. Same rules: own
+  // stream, reads only, cannot perturb anything upstream.
+  const sagaRng = root.stream("saga");
+  const sagas = generateSagas(regions, settlements.settlements, religion, simulation, {
+    seed: sagaRng.seed,
+  });
 
   const maxAltitudeMetres = config.maxAltitudeMetres ?? 4500;
   const peakValue = elevation.extent().max;
@@ -424,6 +433,7 @@ export function generateWorld(config             )        {
     religion,
     simulation,
     narrative,
+    sagas,
     volcanoes,
   };
 }

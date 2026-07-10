@@ -276,6 +276,60 @@ Followed across 9 region(s).
 
 **milen** water · **deo** sea · **bella** river · **si** lake · **dinte** spring · **neosso** stone · **beosso** mountain · **cina** hill · **pana** field · **riando** vale · **doria** isle · **laria** cliff · **po** marsh · **caria** land · **veolla** wood · **baria** tree · **sena** thorn · **peona** grass · **comor** fire · **le** ash · **vi** ice · **da** sand · **maria** salt · **re** iron · **taria** gold · **rauria** high · **sauna** deep · **semor** dark · **peoria** bright · **cau** old · **belen** new · **vasso** red · **mante** white · **dona** black · **niante** green · **vau** cold · **varia** wild · **tomor** fort · **lamor** hall · **ciamor** gate · **nelen** bridge · **liria** haven · **demor** home · **telen** market · **binte** folk · **na** king · **tindo** blood · **meonte** war · **dente** peace · **tena** holy · **losso** dread · **mau** dawn · **bamor** dusk · **selen** star · **raulla** moon · **rondo** sun · **vomor** sky · **lolla** wind · **momor** storm
 
+## Sagas of the Peoples
+
+*One saga per culture — the founding as its own singers keep it. The facts are the world's facts; the pride is their own.*
+
+### The Saga of Fjeiskno (Auld (northern))
+
+> First came the northern folk over the grey water,
+> and the land they found they would not leave.
+> Storkno they named it — the white land —
+> and the name has outlived every wall they raised.
+> Knyrkagry they built first, the wild market,
+> its harbour open like a hand.
+> (The maps write it Knyrkaghekh now. The saga does not.)
+> Over it they set Vathostvoll, the dawn storm,
+> whose dominion is the hearth;
+> and the Way of Vathostvoll keeps that fire yet.
+> In their tongue, stall is king and fjull is star;
+> so read their map: every name a small song.
+> Fjeiskno endures, lesser than its songs —
+> as all things are, that last long enough to be sung of.
+
+### The Saga of Jaghen (Kesh (desert))
+
+> First came the desert folk over the singing sands,
+> and the land they found they would not leave.
+> Rarerkhaim they named it — the sand stone —
+> for they were a people who named things truly.
+> Ghashzaa they built first, the river bridge,
+> its walls set square against the weather.
+> (The maps write it Ghashdemor now. The saga does not.)
+> Over it they set Vaghimzizam, the sun storm,
+> whose dominion is the sea;
+> and the Faith of Vaghimzizam remembers.
+> In their tongue, qe is home and sagha is star;
+> so read their map: every name a small song.
+> Jaghen endures, lesser than its songs —
+> as all things are, that last long enough to be sung of.
+
+### The Saga of Mantemeonte (Meridian (southern))
+
+> First came the southern folk over the warm sea,
+> and the land they found they would not leave.
+> Niantecaria they named it — the green land —
+> and the name has outlived every wall they raised.
+> Niantetomor they built first, the green fort,
+> its harbour open like a hand.
+> Over it they set Varondotindo, the sun blood,
+> whose dominion is the harvest;
+> and the Faith of Varondotindo keeps that fire yet.
+> In their tongue, comor is fire and na is king;
+> so read their map: every name a small song.
+> Mantemeonte endures, lesser than its songs —
+> as all things are, that last long enough to be sung of.
+
 ## Legends of the founding age
 
 - **74 After Reckoning** — The city of Niantetomor was founded on a sheltered harbour, destined to become the seat of power.

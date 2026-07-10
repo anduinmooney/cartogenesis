@@ -262,6 +262,73 @@ Followed across 1 region(s).
 
 **syys** water · **syaeen** sea · **melyn** river · **syes** lake · **siaen** spring · **ne** stone · **thaeen** mountain · **melia** hill · **siien** field · **reth** vale · **sier** isle · **theo** cliff · **nil** marsh · **melen** land · **mela** wood · **phae** tree · **le** thorn · **phi** grass · **laeen** fire · **sieen** ash · **reo** ice · **melir** sand · **thiail** salt · **phyil** iron · **sial** gold · **syeo** high · **siael** deep · **nas** dark · **rien** bright · **ly** old · **thil** new · **rywyn** red · **syeil** white · **syia** black · **ril** green · **rith** cold · **this** wild · **phes** fort · **siy** hall · **phawyn** gate · **siawyn** bridge · **raeth** haven · **sieos** home · **nywyn** market · **thyth** folk · **lia** king · **siany** blood · **meler** war · **thaen** peace · **syith** holy · **syaen** dread · **lith** dawn · **theen** dusk · **phen** star · **nar** moon · **thas** sun · **rias** sky · **nana** wind · **reil** storm
 
+## Sagas of the Peoples
+
+*One saga per culture — the founding as its own singers keep it. The facts are the world's facts; the pride is their own.*
+
+### The Saga of Remeonte (Meridian (southern))
+
+> Out of the warm sea came the southern folk,
+> and the shore they found they would not leave.
+> Beossodoria they named it — the mountain isle —
+> and the name has outlived every wall they raised.
+> Deoliria they built first, the sea haven,
+> its harbour open like a hand.
+> Over it they set Vamaucomor, the dawn fire,
+> whose dominion is the storm;
+> and the Way of Vamaucomor keeps that fire yet.
+> In their tongue, comor is fire and selen is star;
+> so read their map: every name a small song.
+> And of Remeonte the singers still sing,
+> for its banners stand as high as ever they did.
+
+### The Saga of Thorkdaurk (Auld (northern))
+
+> First came the northern folk over the grey water,
+> and the land they found they would not leave.
+> Brafjan they named it — the mountain field —
+> for they were a people who named things truly.
+> Stagrahro they built first, the sea hall,
+> its harbour open like a hand.
+> (The maps write it Stagrlamor now. The saga does not.)
+> Over it they set Vathorkveill, the holy sky,
+> whose dominion is the forest;
+> and the Faith of Vathorkveill keeps that fire yet.
+> In their tongue, stall is king and stagr is sea;
+> so read their map: every name a small song.
+> Thorkdaurk endures, lesser than its songs —
+> as all things are, that last long enough to be sung of.
+
+### The Saga of Jumaad (Kesh (desert))
+
+> Out of the singing sands came the desert folk,
+> and the shore they found they would not leave.
+> Khirsham they named it — the sea cliff —
+> and the name has outlived every wall they raised.
+> Shinghekh they built first, the wild gate,
+> its harbour open like a hand.
+> (The maps write it Shinliria now. The saga does not.)
+> Over it they set Vaghimghaza, the sun sky,
+> whose dominion is war;
+> and the Way of Vaghimghaza keeps that fire yet.
+> In their tongue, qe is home and maad is king;
+> so read their map: every name a small song.
+> Of Jumaad their singers made much, once.
+> It rose to 2 provinces and it fell, and the saga does not say so —
+> but the chronicle does.
+
+### How the Woodland Folk Came to Syaeenmelir (Sylvan (woodland))
+
+> First came the woodland folk over the deep wood,
+> and the shore they found they would not leave.
+> Syaeenmelir they named it — the sea sand —
+> and the name has outlived every wall they raised.
+> Over it they set Vareilthas, the storm sun,
+> whose dominion is the sun;
+> and the Cult of Vareilthas keeps that fire yet.
+> In their tongue, lia is king and phen is star;
+> so read their map: every name a small song.
+
 ## Legends of the founding age
 
 - **41 After Reckoning** — The city of Deoliria was founded on a sheltered harbour, destined to become the seat of power.

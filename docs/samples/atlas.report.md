@@ -246,6 +246,70 @@ Followed across 8 region(s).
 
 **syys** water · **syaeen** sea · **melyn** river · **syes** lake · **siaen** spring · **ne** stone · **thaeen** mountain · **melia** hill · **siien** field · **reth** vale · **sier** isle · **theo** cliff · **nil** marsh · **melen** land · **mela** wood · **phae** tree · **le** thorn · **phi** grass · **laeen** fire · **sieen** ash · **reo** ice · **melir** sand · **thiail** salt · **phyil** iron · **sial** gold · **syeo** high · **siael** deep · **nas** dark · **rien** bright · **ly** old · **thil** new · **rywyn** red · **syeil** white · **syia** black · **ril** green · **rith** cold · **this** wild · **phes** fort · **siy** hall · **phawyn** gate · **siawyn** bridge · **raeth** haven · **sieos** home · **nywyn** market · **thyth** folk · **lia** king · **siany** blood · **meler** war · **thaen** peace · **syith** holy · **syaen** dread · **lith** dawn · **theen** dusk · **phen** star · **nar** moon · **thas** sun · **rias** sky · **nana** wind · **reil** storm
 
+## Sagas of the Peoples
+
+*One saga per culture — the founding as its own singers keep it. The facts are the world's facts; the pride is their own.*
+
+### The Saga of Qidkakaasi (Kesh (desert))
+
+> First came the desert folk over the singing sands,
+> and the land they found they would not leave.
+> Mairghen they named it — the mountain land —
+> for they were a people who named things truly.
+> Rairshu they built first, the gold fort,
+> its harbour open like a hand.
+> (The maps write it Rairdemor now. The saga does not.)
+> Over it they set Vaghisaaju, the dusk holy,
+> whose dominion is the sea;
+> and the Faith of Vaghisaaju keeps that fire yet.
+> In their tongue, zajiq is fire and khaim is stone;
+> so read their map: every name a small song.
+> And of Qidkakaasi the singers still sing,
+> for its banners stand as high as ever they did.
+
+### The Saga of Caudente (Meridian (southern))
+
+> Out of the warm sea came the southern folk,
+> and the shore they found they would not leave.
+> Peonaveolla they named it — the grass wood —
+> and the name has outlived every wall they raised.
+> Deoliria they built first, the sea haven,
+> its harbour open like a hand.
+> Over it they set Valossocomor, the dread fire,
+> whose dominion is the forest;
+> and the Rite of Valossocomor remembers.
+> In their tongue, demor is home and na is king;
+> so read their map: every name a small song.
+> And of Caudente the singers still sing,
+> for its banners stand as high as ever they did.
+
+### The Saga of Thorkastall (Auld (northern))
+
+> Out of the grey water came the northern folk,
+> and the land they found they would not leave.
+> Brahrei they named it — the mountain hill —
+> and the name has outlived every wall they raised.
+> Thaurndund they built first, the grass haven,
+> its walls set square against the weather.
+> (The maps write it Thaurnliria now. The saga does not.)
+> Over it they set Vaskyvastall, the wind king,
+> whose dominion is war;
+> and the Cult of Vaskyvastall remembers.
+> In their tongue, fjull is star and bry is stone;
+> so read their map: every name a small song.
+> Of Thorkastall their singers made much, once.
+> It rose to 4 provinces and it fell, and the saga does not say so —
+> but the chronicle does.
+
+### How the Woodland Folk Came to Syaeenmelen (Sylvan (woodland))
+
+> Out of the deep wood came the woodland folk,
+> and the shore they found they would not leave.
+> Syaeenmelen they named it — the sea land —
+> for they were a people who named things truly.
+> In their tongue, syaeen is sea and ne is stone;
+> so read their map: every name a small song.
+
 ## Legends of the founding age
 
 - **58 After Reckoning** — The city of Deoliria was founded on a sheltered harbour, destined to become the seat of power.

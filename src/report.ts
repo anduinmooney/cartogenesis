@@ -340,6 +340,23 @@ export function worldReportMarkdown(world: World): string {
     }
   }
 
+  // Sagas — what each people believes about itself, in verse.
+  if (world.sagas.length) {
+    lines.push("## Sagas of the Peoples");
+    lines.push("");
+    lines.push(
+      "*One saga per culture — the founding as its own singers keep it. The " +
+        "facts are the world's facts; the pride is their own.*",
+    );
+    lines.push("");
+    for (const saga of world.sagas) {
+      lines.push(`### ${saga.title} (${saga.cultureLabel})`);
+      lines.push("");
+      for (const line of saga.lines) lines.push(`> ${line}`);
+      lines.push("");
+    }
+  }
+
   // Legends of the founding age (the static, mythic prehistory).
   lines.push("## Legends of the founding age");
   lines.push("");

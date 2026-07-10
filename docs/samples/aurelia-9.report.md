@@ -212,6 +212,69 @@ Followed across 3 region(s).
 
 **syys** water · **syaeen** sea · **melyn** river · **syes** lake · **siaen** spring · **ne** stone · **thaeen** mountain · **melia** hill · **siien** field · **reth** vale · **sier** isle · **theo** cliff · **nil** marsh · **melen** land · **mela** wood · **phae** tree · **le** thorn · **phi** grass · **laeen** fire · **sieen** ash · **reo** ice · **melir** sand · **thiail** salt · **phyil** iron · **sial** gold · **syeo** high · **siael** deep · **nas** dark · **rien** bright · **ly** old · **thil** new · **rywyn** red · **syeil** white · **syia** black · **ril** green · **rith** cold · **this** wild · **phes** fort · **siy** hall · **phawyn** gate · **siawyn** bridge · **raeth** haven · **sieos** home · **nywyn** market · **thyth** folk · **lia** king · **siany** blood · **meler** war · **thaen** peace · **syith** holy · **syaen** dread · **lith** dawn · **theen** dusk · **phen** star · **nar** moon · **thas** sun · **rias** sky · **nana** wind · **reil** storm
 
+## Sagas of the Peoples
+
+*One saga per culture — the founding as its own singers keep it. The facts are the world's facts; the pride is their own.*
+
+### The Saga of Qidkaghen (Kesh (desert))
+
+> Out of the singing sands came the desert folk,
+> and the shore they found they would not leave.
+> Mairkhaim they named it — the mountain stone —
+> for they were a people who named things truly.
+> Khirshu they built first, the sea fort,
+> its harbour open like a hand.
+> Over it they set Vaghazasaid, the sky blood,
+> whose dominion is the harvest;
+> and the Rite of Vaghazasaid remembers.
+> In their tongue, zajiq is fire and khaim is stone;
+> so read their map: every name a small song.
+> Qidkaghen endures, lesser than its songs —
+> as all things are, that last long enough to be sung of.
+
+### The Saga of Fjeiskaskei (Auld (northern))
+
+> First came the northern folk over the grey water,
+> and the shore they found they would not leave.
+> Brabei they named it — the mountain wood —
+> and the name has outlived every wall they raised.
+> Stagrafjysk they built first, the sea home,
+> its harbour open like a hand.
+> (The maps write it Stagrliria now. The saga does not.)
+> Over it they set Vavollvyrk, the storm sun,
+> whose dominion is the hearth;
+> and the Cult of Vavollvyrk keeps that fire yet.
+> In their tongue, thygr is fire and stall is king;
+> so read their map: every name a small song.
+> Of Fjeiskaskei their singers made much, once.
+> It rose to 2 provinces and it fell, and the saga does not say so —
+> but the chronicle does.
+
+### The Saga of Redemor (Meridian (southern))
+
+> First came the southern folk over the warm sea,
+> and the shore they found they would not leave.
+> Peonabinte they named it — the grass folk —
+> and the name has outlived every wall they raised.
+> Niantetomor they built first, the green fort,
+> its harbour open like a hand.
+> Over it they set Vavomorselen, the sky star,
+> whose dominion is the sun;
+> and the Rite of Vavomorselen remembers.
+> In their tongue, na is king and neosso is stone;
+> so read their map: every name a small song.
+> And of Redemor the singers still sing,
+> for its banners stand as high as ever they did.
+
+### How the Woodland Folk Came to Melamelen (Sylvan (woodland))
+
+> First came the woodland folk over the deep wood,
+> and the shore they found they would not leave.
+> Melamelen they named it — the wood land —
+> and the name has outlived every wall they raised.
+> In their tongue, sieos is home and syaeen is sea;
+> so read their map: every name a small song.
+
 ## Legends of the founding age
 
 - **55 After Reckoning** — The city of Niantetomor was founded on a sheltered harbour, destined to become the seat of power.
