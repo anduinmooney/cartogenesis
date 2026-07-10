@@ -6,7 +6,7 @@
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
 - **As of:** Session 16 · 2026-07-10
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 163 tests pass (CI enforced). **Reproducible across
+- **Health:** 🟢 Green. 176 tests pass (CI enforced). **Reproducible across
   Node builds and platforms** — the engine uses only exactly-specified
   arithmetic, guarded by an exact bit-level hash (D-022 resolved, Session 16).
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
@@ -26,6 +26,11 @@
   in its own phonology); every name is a compound of two of them, glossed. The
   terrain steers the naming, so a port is *the sea haven* and an alpine province
   is *the mountain land*. The gazetteer and the app both print the glossary.
+- **The whole gazetteer, in the app.** A 📖 Gazetteer view renders the full
+  written dossier (languages, houses, ruins, faiths, trade) with a table of
+  contents, and every place-name in it is clickable and flies the map there. Plus
+  **client-side exports**: download the current map (PNG), a labeled poster
+  (SVG), the report (Markdown), or the 16-bit heightmap — all built in-browser.
 - Ten rendered map layers (terrain, **topographic**, biomes, political, powers,
   faiths, resources, temperature, rainfall, relief) + a labeled SVG poster + a
   Markdown gazetteer with an emergent chronicle.
@@ -48,7 +53,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 163 passing tests, incl. exact + simulation determinism guards, an
+- 176 passing tests, incl. exact + simulation determinism guards, an
   approximated-math lint, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
@@ -73,13 +78,15 @@
 | Dynamic settlements (foundings, ruins) · one timeline | ✅ done |
 | L8.5 Languages (lexicons, glosses, phrasebook) | ✅ done |
 | Present-day roads & economy (survivors only) | ✅ done |
-| in-app gazetteer · deeper terrain · more | 🔜 the world keeps deepening |
+| In-app gazetteer · client-side exports (PNG/SVG/MD) | ✅ done |
+| Exact cross-engine determinism (D-022) | ✅ done |
+| deeper terrain · language contact · more | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 163 tests, all offline
+npm test                  # 176 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)

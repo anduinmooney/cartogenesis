@@ -8,6 +8,62 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 16 — 2026-07-10 — The overhaul: exact arithmetic, the gazetteer in-app, and exports
+
+**Theme:** the user asked for the biggest session yet with the most features.
+Three phases, each committed and verified: a correctness foundation fix, then two
+substantial feature sets. (Two more — deeper terrain, language contact — are
+planned and queued; see `NEXT_SESSION.md`.)
+
+### Phase 0 — Exact arithmetic: same seed, same world, on every engine (D-022)
+Session 15's CI failure was a real bug. ECMAScript leaves `Math.hypot`/`pow`/
+`cos`/`exp`/`log` and the `**` operator **implementation-approximated** — only
+`+ - * /` and `Math.sqrt` are exact — and world generation is chaotic in the last
+bit, so two V8 builds diverge. "Same seed, same world" was only ever true per
+engine.
+- New `src/exact.ts`: `dist`/`dist2` (from `sqrt`), `powExact` (integer and
+  quarter-integer exponents via `sqrt` + binary exponentiation; throws rather
+  than fall back to `Math.pow`), `cosQuarterTurn` (a 9-term Taylor cosine).
+- Every pipeline call routes through it. Non-quarter exponents snapped and noted:
+  island `1.2→1.25`, volcano flanks `1.7→1.75` / `1.05→1.0`, aggression
+  `1.6→1.5` (`a·√a`). The 30-seed balance distribution is unchanged (mean 62%,
+  which the old code also gave on those seeds).
+- The guard is now exact: `hashExact` (raw Float64 bits) and a
+  `simulationFingerprint` (realm arcs, dated events, settlement fates) on
+  `meta.exactHash` / `meta.simulationHash`, pinned in `tests/world.test.ts`, with
+  a test proving the exact hash catches a one-ulp change the quantized hash
+  rounds away. `tests/exact.test.ts` greps `src/` and fails if approximated math
+  reappears outside `render.ts`, so it cannot silently regress.
+- **CI confirms it:** the pinned fingerprints pass on CI's Node 24.18.0 and the
+  dev box's 24.16.0 alike. D-022 resolved; the per-build-only caveat is gone.
+
+### Phase 1 — The gazetteer, in the browser
+The engine always knew more about a world than the app showed. Now a **📖
+Gazetteer** button opens the full dossier — `report.ts` runs unchanged in the
+bundle behind a new dependency-free Markdown renderer (`web/markdown.ts`, escapes
+HTML before formatting). A table of contents from the headings; every place-name
+linkified against the world's settlements/regions/volcanoes/features so a click
+flies the map there. Verified live: 28 ToC entries, 14 sections, 187 clickable
+places for seed atlas.
+
+### Phase 2 — Client-side exports
+Everything the CLI writes, the app now downloads, computed in-browser:
+- **↓ Map** — the current layer as a full-resolution PNG.
+- **↓ Poster** — the labeled SVG poster over the political map.
+- **↓ .md** — the full gazetteer as Markdown.
+
+`worldPosterSVG` took a Node `Buffer`; changed it to a data URI so both Node
+(`encodePNG`) and the browser (`canvas.toDataURL`) can feed it. Verified live:
+all three download with the right MIME type and non-empty content.
+
+### Verification
+- **176 tests** (up from 155): 21 new across `exact`, `markdown`, and `exports`.
+- Golden fingerprints regenerated (quantized `623e773a881f55b0`, exact
+  `d3db452f2c2e4472`, sim `329a34e3d0463789`); samples rebuilt.
+- Live app checked on a fresh preview after each phase; no console errors.
+
+---
+
 ## Session 15 — 2026-07-10 — Languages, and a world you can read
 
 **Theme:** give every culture real *vocabulary*, so a name can be translated —

@@ -49,6 +49,12 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **L8.5 — Lexicons.** Each culture has 59 word-roots coined in its own
   phonology; names are glossed compounds steered by the terrain, and the
   gazetteer prints the glossary (Session 15).
+- ✅ **In-app gazetteer + exports.** The full dossier renders in the app with a
+  clickable table of contents and place-names that fly the map; download the map
+  (PNG), poster (SVG), report (MD), or heightmap, all in-browser (Session 16).
+- ✅ **Exact cross-engine determinism.** The pipeline uses only exactly-specified
+  arithmetic (`src/exact.ts`), guarded by a bit-level hash and a simulation
+  fingerprint — same seed, same world, on any conforming engine (Session 16, D-022).
 - ✅ **L9 — Settlements.** Habitability scoring → cities/towns/ports + a capital.
 - ✅ **L10 — Roads & trade.** Least-cost Dijkstra + Kruskal MST road network.
 - ✅ **L11 — History.** Realms, wars, disasters, golden ages — a dated chronicle.
@@ -100,6 +106,8 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 
 ### Engineering hygiene (ongoing)
 - ✅ CI via GitHub Actions (`node --test` + web-bundle freshness on push).
+- ✅ Exact-arithmetic lint: a test fails the build if implementation-approximated
+  math (`Math.hypot/pow/cos`, `**`) appears in the engine (Session 16).
 - ⬜ Performance budget + a `benchmark` script per layer.
 
 ## Guiding principles
