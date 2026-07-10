@@ -313,7 +313,105 @@ Followed across 9 region(s).
 | Thorkno | 975 | 2 | 975 | 1 | diminished |
 | Kaartaitan | 1075 | 1 | 1075 | 1 | ascendant |
 
-## Chronicle
+## The Chronicle of Mantemeonte
+
+*I write in Niantetomor, under the patronage of House Caumeonte, in the year 1100. The legends of the founding age are kept elsewhere in this book; here is only what happened, year upon year, for 1000 years.*
+
+*The world it happened in is quickly drawn: Mount Vynsturn in the high places, and the Rairkai running to the sea, and between them every road this chronicle walks.*
+
+### I. The First Banners, 100–300
+
+In the year 100, the southern realm of Tariademor marched on Khirghen, and by winter the province had fallen to it; the desert realm of Kaarkaasi was the poorer. It was the end of Kaarkaasi; its lands were divided among its enemies. And in that year too, Brakno passed by force from Fjeiskno to Knauskathon; the tax rolls were rewritten before the dead were counted. With that, the realm of Fjeiskno was extinguished; its name passes from the roll of the powers.
+
+About the year 100, word came from Brakno that it would be governed from within: thus Steirkastall, born in a single furious season. In the same season, a great drought lay upon Stagrastausk; the rivers shrank and the wells soured. Hard on its heels, the banners of Rauriabinte entered Stagrastausk, and what Thorkdaurk had held it held no longer. It was the end of Thorkdaurk: 25 years of banners, done in a single season.
+
+In 125, Steirkastall held Brakno against Knauskathon, whose army went home leaner and wiser. Soon after, Brakno passed by force from Steirkastall to Jaghen; the tax rolls were rewritten before the dead were counted. With that, the realm of Steirkastall was extinguished; its name passes from the roll of the powers. And in that year too, the banners of Rauriabinte entered Khirkhukha, and what Jaghen had held it held no longer.
+
+In the year 150, no rain came to Fjeiskagra for two years together; many perished. Hard on its heels, Rauriabinte, whose appetite grew with the eating, took Rarerkhaim next. In the same season, the realm of Fjeiskastall was carved whole out of Mantemeonte's flank, with Brafjan at its heart. Before long, Tariademor seized Brafjan from Fjeiskastall, and the border stones were moved in the night.
+
+About the year 200, Mantemeonte marched on Fjeiskagra, and by winter the province had fallen to it; Fjeiskastall was the poorer. It was the end of Fjeiskastall: 25 years of banners, done in a single season. That same year, not all was iron: a golden age dawned over Tariademor, and its cities flourished as never before. Soon after, Rauriabinte moved against Qukhukha, but Jaghen threw the invaders back over the border.
+
+In the year 225, Fjeiskagra rose against Mantemeonte, and out of the rising was proclaimed the free realm of Thorkafjysk. Before long, Mantemeonte seized Fjeiskagra from Thorkafjysk, and the border stones were moved in the night. With that, the realm of Thorkafjysk was extinguished; its name passes from the roll of the powers.
+
+About the year 250, the assault Tariademor loosed upon Qukhukha broke against Jaghen's spears and came to nothing. Soon after, what had once broken against Khirshid's defences now carried them: Rauriabinte took the province, and Jaghen's pride with it. And in that year too, Jaghen held Brakno against Knauskathon, whose army went home leaner and wiser.
+
+In 275, Rauriabinte had grown past its own strength: Grakno and its neighbours broke away to found Fjeiskno.
+
+All the while the land was filling: 8 settlements were raised in these years, Deociamor and Panalamor among them.
+
+The occupiers kept the land-words and changed the rest, and so Stagrafjan is written Stagrciamor in every ledger since — and 10 other names with it.
+
+### II. The Age of Blood and Banners, 300–500
+
+In the year 300, Tariademor moved against Thaurndaurk, but the young southern realm of Tariadente threw the invaders back over the border. That same year, the assault Rauriabinte loosed upon Qukhukha broke against Jaghen's spears and came to nothing. Before long, Fjeiskno moved against Storkno, but Mantemeonte threw the invaders back over the border.
+
+About the year 325, the assault Knauskathon loosed upon Brakno broke against Jaghen's spears and came to nothing. And in that year too, word came from Khirshid that it would be governed from within: thus Rairkaasi, born in a single furious season. Hard on its heels, Rauriabinte marched on Khirshid, and by winter the province had fallen to it; the desert realm of Rairkaasi was the poorer. It was the end of Rairkaasi: 25 years of banners, done in a single season.
+
+In the year 350, Tariadente held Thaurndaurk against Tariademor, whose army went home leaner and wiser. And in that year too, a great drought lay upon Fjeiskabry; the rivers shrank and the wells soured. Soon after, Fjeiskno moved against Storkno, but Mantemeonte threw the invaders back over the border.
+
+About the year 375, the assault Rauriabinte loosed upon Qukhukha broke against Jaghen's spears and came to nothing. Before long, Tariademor moved against Qukhukha, but Jaghen threw the invaders back over the border. In the same season, Jaghen held Brakno against Knauskathon, whose army went home leaner and wiser.
+
+In the year 400, Khirshid rose against Rauriabinte, and out of the rising was proclaimed the free realm of Kheqghen. And in that year too, a pestilence swept Khirghen and carried off more than any war had. Soon after, Khirshid passed by force from Kheqghen to Rauriabinte; the tax rolls were rewritten before the dead were counted. With that, the realm of Kheqghen was extinguished; its name passes from the roll of the powers.
+
+About the year 425, no rain came to Fjeiskabry for two years together; many perished. Hard on its heels, the assault Tariademor loosed upon Thaurndaurk broke against Tariadente's spears and came to nothing. In the same season, Mantemeonte held Storkno against Fjeiskno, whose army went home leaner and wiser.
+
+In the year 450, the realm of Steirkathon was carved whole out of Tariademor's flank, with Brafjan at its heart. Soon after, the banners of Mantemeonte entered Brafjan, and what Steirkathon had held it held no longer.
+
+These years also built more than they burned — 8 new settlements, of which Ghashashu would become the best known.
+
+### III. The Age of Blood and Banners, 500–700
+
+About the year 500, Beossoveolla passed by force from Steirkathon to Tariademor; the tax rolls were rewritten before the dead were counted. It was the end of Steirkathon: 50 years of banners, done in a single season. Before long, what had once broken against Qukhukha's defences now carried them: Tariademor took the province, and Jaghen's pride with it.
+
+In 525, the people of Brafjan drove out Mantemeonte's governors and took for themselves the name Knauskno. In the same season, Beossoveolla rose against Tariademor, and out of the rising was proclaimed the free realm of Tariameonte. Hard on its heels, there was no halting Mantemeonte that season: Brafjan fell to it while Knauskno looked on. With that, the realm of Knauskno was extinguished; its name passes from the roll of the powers.
+
+About the year 550, the assault Tariademor loosed upon Beossoveolla broke against Tariameonte's spears and came to nothing. In the same season, these were the high years of Knauskathon — its markets loud, its walls, for a while, unneeded. Before long, Tariadente marched on Beossoveolla, and by winter the province had fallen to it; Tariameonte was the poorer. It was the end of Tariameonte: 50 years of banners, done in a single season.
+
+In 575, Fjeiskno moved against Storkno, but Mantemeonte threw the invaders back over the border. That same year, the people of Brafjan drove out Mantemeonte's governors and took for themselves the name Steirkafjysk. And in that year too, the shrines of the Faith of Varondotindo in Khirshid emptied, and those of the Faith of Vaghimzizam filled.
+
+About the year 600, Tariademor, whose appetite grew with the eating, took Brafjan next. With that, the realm of Steirkafjysk was extinguished; its name passes from the roll of the powers. In the same season, the assault Knauskathon loosed upon Brakno broke against Jaghen's spears and came to nothing. And in that year too, word came from Brafjan that it would be governed from within: thus Storkathon, born in a single furious season.
+
+In 625, Storkathon held Brafjan against Mantemeonte, whose army went home leaner and wiser. In the same season, Tariademor moved against Brastausk, but Knauskathon threw the invaders back over the border. That same year, Beossoveolla rose against Tariadente, and out of the rising was proclaimed the free realm of Tariadente. Soon after, Beossoveolla passed by force from Tariadente to Tariadente; the tax rolls were rewritten before the dead were counted. It was the end of Tariadente: 25 years of banners, done in a single season.
+
+In the year 650, what had once broken against Storkno's defences now carried them: Fjeiskno took the province, and Mantemeonte's pride with it. Before long, there was no halting Tariademor that season: Brafjan fell to it while Storkathon looked on. With that, the realm of Storkathon was extinguished; its name passes from the roll of the powers.
+
+In 675, Rauriabinte had grown past its own strength: Khirsham and its neighbours broke away to found Jamaad. And in that year too, the realm of Knauskaskei was carved whole out of Tariademor's flank, with Brafjan at its heart.
+
+All the while the land was filling: 7 settlements were raised in these years, Knyrkba and Shinshu among them.
+
+### IV. The Age of Blood and Banners, 700–900
+
+In the year 700, Fjeiskno marched on Khirkhukha, and by winter the province had fallen to it; the young desert realm of Jamaad was the poorer. That same year, the assault Mantemeonte loosed upon Brafjan broke against Knauskaskei's spears and came to nothing. Soon after, swollen with victories, Rauriabinte pressed on into Khirsham, and Jamaad could not hold it. It was the end of Jamaad: 50 years of banners, done in a single season.
+
+About the year 725, Tariademor, whose appetite grew with the eating, took Mairkhukha next. Hard on its heels, Brafjan passed by force from Knauskaskei to Tariademor; the tax rolls were rewritten before the dead were counted. With that, the realm of Knauskaskei was extinguished; its name passes from the roll of the powers.
+
+In the year 750, Jaghen moved against Stagrba, but Knauskathon threw the invaders back over the border. That same year, the people of Brafjan drove out Tariademor's governors and took for themselves the name Fjeiskno. Soon after, Tariademor marched on Brafjan, and by winter the province had fallen to it; Fjeiskno was the poorer. It was the end of Fjeiskno: 25 years of banners, done in a single season.
+
+In 800, Tariadente held Beossoveolla against Tariademor, whose army went home leaner and wiser. That same year, in Storkno the bells rang without ceasing; a third of its people were laid in the ground. Before long, Jaghen moved against Stagrba, but Knauskathon threw the invaders back over the border.
+
+In the year 850, Knauskathon held Brastausk against Tariademor, whose army went home leaner and wiser. And in that year too, there was no halting Rauriabinte that season: Grakno fell to it while Fjeiskno looked on. That same year, word came from Grakno that it would be governed from within: thus Vynfjysk, born in a single furious season. In the same season, Tariademor had grown past its own strength: Brafjan and its neighbours broke away to found Brograskei.
+
+About the year 850, a great drought lay upon Deoriando; the rivers shrank and the wells soured. Hard on its heels, swollen with victories, Rauriabinte pressed on into Grakno, and the young northern realm of Vynfjysk could not hold it. With that, the realm of Vynfjysk was extinguished; its name passes from the roll of the powers.
+
+### V. The Marching Years, 900–1100
+
+In 900, Rauriabinte moved against Khirkhukha, but Fjeiskno threw the invaders back over the border. Soon after, the assault Tariademor loosed upon Fjeiskabry broke against Mantemeonte's spears and came to nothing. In the same season, Brograskei held Brafjan against Mantemeonte, whose army went home leaner and wiser. Before long, Rauriabinte moved against Khirkhukha, but Fjeiskno threw the invaders back over the border.
+
+About the year 975, the assault Tariademor loosed upon Mairkhukha broke against Brograskei's spears and came to nothing. That same year, the realm of Thorkno was carved whole out of Rauriabinte's flank, with Grakno at its heart. In the same season, no rain came to Khirghen for two years together; many perished. And in that year too, not all was iron: a golden age dawned over Tariadente, and its cities flourished as never before.
+
+In 1000, Fjeiskno held Storkno against Thorkno, whose army went home leaner and wiser. In the same season, a great drought lay upon Stagrastausk; the rivers shrank and the wells soured. Hard on its heels, Rauriabinte moved against Grakno, but Thorkno threw the invaders back over the border. Soon after, the assault Mantemeonte loosed upon Stagrastausk broke against Thorkno's spears and came to nothing.
+
+In the year 1050, Fjeiskno held Khirkhukha against Jaghen, whose army went home leaner and wiser. And in that year too, a pestilence swept Brafjan and carried off more than any war had. In the same season, these were the high years of Tariadente — its markets loud, its walls, for a while, unneeded. Hard on its heels, what had once broken against Grakno's defences now carried them: Rauriabinte took the province, and Thorkno's pride with it.
+
+In 1075, Mantemeonte had grown past its own strength: Jakai and its neighbours broke away to found Kaartaitan.
+
+*So the matter stands in 1100: 10 realms endure, and Rauriabinte is mightiest among them, holding 5 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
+
+*Saunan Caumeonte the Unlucky reigns in Niantetomor. Let whoever comes after me write the next page better than I have written this one.*
+
+## Annals
+
+*The ledger behind the chronicle: every event, dated, unadorned.*
 
 - **100 After Reckoning** — Tariademor seized Khirghen from Kaarkaasi.
 - **100 After Reckoning** — The realm of Kaarkaasi was extinguished.

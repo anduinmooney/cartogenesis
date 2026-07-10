@@ -39,6 +39,7 @@ const MODULES = [
   "religion",
   "simulation",
   "render",
+  "narrative",
   "report",
   "svgmap",
   "world",

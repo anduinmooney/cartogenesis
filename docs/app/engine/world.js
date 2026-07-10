@@ -44,6 +44,7 @@ import {
   ruinedSettlementIds,
                        
 } from "./simulation.js";
+import { generateNarrative,                     } from "./narrative.js";
 
 export const ENGINE_VERSION = "0.13.0";
 
@@ -126,6 +127,8 @@ export const ENGINE_VERSION = "0.13.0";
                         
                           
                               
+                                                                      
+                            
                        
  
 
@@ -348,6 +351,17 @@ export function generateWorld(config             )        {
     .filter((r) => r.status !== "extinct")
     .sort((a, b) => b.finalSize - a.finalSize)[0];
 
+  // L17 — Narrative: the chronicle told as a story. Strictly downstream of the
+  // simulation (its own stream; reads events, never writes them), so the
+  // simulation fingerprint is identical with or without it.
+  const narrativeRng = root.stream("narrative");
+  const narrative = generateNarrative(history, lore, simulation, {
+    seed: narrativeRng.seed,
+    presentYear: simulation.endYear,
+    capital: capital?.name ?? "—",
+    capitalHouse: lore.capitalHouse,
+  });
+
   const maxAltitudeMetres = config.maxAltitudeMetres ?? 4500;
   const peakValue = elevation.extent().max;
   const highestPeakMetres = elevationToMetres(peakValue, seaLevel, maxAltitudeMetres);
@@ -409,6 +423,7 @@ export function generateWorld(config             )        {
     economy: economyNow,
     religion,
     simulation,
+    narrative,
     volcanoes,
   };
 }

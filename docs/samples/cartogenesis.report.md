@@ -316,7 +316,95 @@ Followed across 1 region(s).
 | Peoriademor | 150 | 2 | 150 | 1 | diminished |
 | Rairmaad | 775 | 2 | 775 | 0 | extinct |
 
-## Chronicle
+## The Chronicle of Tariademor
+
+*Set down in Deoliria, in the year 1100 After Reckoning, by a servant of House Belentaria. What follows is not legend — of the founding age the legends tell enough — but the plain record of 1000 years, as well as one hand could gather it.*
+
+*The world it happened in is quickly drawn: Mount Dobra in the high places, and the Mishkan running to the sea, and between them every road this chronicle walks.*
+
+### I. The First Banners, 100–300
+
+About the year 100, the banners of Tariademor entered Stagrathaugr, and what Brograskei had held it held no longer. It was the end of Brograskei; its lands were divided among its enemies. In the same season, Brathaurn passed by force from Tharnathon to Peoriademor; the tax rolls were rewritten before the dead were counted.
+
+In 125, Peoriademor marched on Stagrakno, and by winter the province had fallen to it; Tharnathon was the poorer. That same year, Tariademor seized Rarerkhash from Knauskafjysk, and the border stones were moved in the night. In the same season, the people of Stagrathaugr drove out Tariademor's governors and took for themselves the name Steirkastall. Hard on its heels, Peoriademor and Tharnathon met over Breistakno yet again, and yet again it was Peoriademor that kept the field.
+
+In the year 150, Stagrathaugr passed by force from Steirkastall to Tariademor; the tax rolls were rewritten before the dead were counted. With that, the realm of Steirkastall was extinguished; its name passes from the roll of the powers. In the same season, the realm of Peoriademor was carved whole out of Rauriameonte's flank, with Panadoria at its heart. Soon after, Peoriademor and Tharnathon met over Stagrafjan yet again, and yet again it was Peoriademor that kept the field. It was the end of Tharnathon: 75 years of banners, done in a single season.
+
+In 175, these were the high years of Knauskafjysk — its markets loud, its walls, for a while, unneeded. Hard on its heels, Storkno held Stagrdaurk against Tariademor, whose army went home leaner and wiser. Soon after, the assault Peoriademor loosed upon Rarerkhajez broke against Knauskafjysk's spears and came to nothing. That same year, Juqe seized Mairshaa from Knauskafjysk, and the border stones were moved in the night.
+
+In the year 225, a great drought lay upon Syaeentheo; the rivers shrank and the wells soured. Before long, what had once broken against Stagrdaurk's defences now carried them: Tariademor took the province, and Storkno's pride with it. With that, the realm of Storkno was extinguished; its name passes from the roll of the powers.
+
+In 250, Juqe moved against Brakno, but Knauskafjysk threw the invaders back over the border. Hard on its heels, Brafjan passed by force from Peoriademor to Tariademor; the tax rolls were rewritten before the dead were counted. In the same season, the assault Peoriademor loosed upon Rarerghen broke against Knauskafjysk's spears and came to nothing. And in that year too, in Rarerkhash the bells rang without ceasing; a third of its people were laid in the ground.
+
+All the while the land was filling: 8 settlements were raised in these years, Khirghekh and Deotelen among them.
+
+The occupiers kept the land-words and changed the rest, and so Khirkhukha is written Khirtomor in every ledger since — and 7 other names with it.
+
+### II. The Age of Blood and Banners, 300–500
+
+About the year 300, Juqe moved against Rarerkhajez, but Knauskafjysk threw the invaders back over the border. In the same season, the assault Knauskafjysk loosed upon Mairshaa broke against Juqe's spears and came to nothing. That same year, Brafjan rose against Tariademor, and out of the rising was proclaimed the free realm of Thorkaskei. Soon after, Tariademor marched on Brafjan, and by winter the province had fallen to it; the northern realm of Thorkaskei was the poorer. It was the end of Thorkaskei: 25 years of banners, done in a single season.
+
+In 325, Peoriademor moved against Skakno, but Rauriameonte threw the invaders back over the border. That same year, not all was iron: a golden age dawned over Peoriademor, and its cities flourished as never before. Before long, Knauskafjysk held Rarerkhajez against Juqe, whose army went home leaner and wiser.
+
+In the year 350, a pestilence swept Stagrakno and carried off more than any war had. Hard on its heels, Peoriademor moved against Rarerghen, but Knauskafjysk threw the invaders back over the border. Before long, what had once broken against Rarerkhajez's defences now carried them: Juqe took the province, and Knauskafjysk's pride with it.
+
+About the year 400, no rain came to Shinsham for two years together; many perished. Hard on its heels, the assault Peoriademor loosed upon Shinsham broke against Juqe's spears and came to nothing. In the same season, Knauskafjysk and Juqe met over Mairshaa yet again, and yet again it was Knauskafjysk that kept the field. And in that year too, a great drought lay upon Khirzash; the rivers shrank and the wells soured.
+
+In 450, Juqe moved against Mairshaa, but Knauskafjysk threw the invaders back over the border. That same year, Juqe held Rarerkhajez against Knauskafjysk, whose army went home leaner and wiser. Before long, Peoriademor moved against Rarerkhajez, but Juqe threw the invaders back over the border.
+
+These years also built more than they burned — 9 new settlements, of which Gradund would become the best known.
+
+Conquest re-said the very map: Knyrkathu became Knyrktomor on its new masters' tongues — and 1 other name with it.
+
+### III. The Contested Years, 500–700
+
+In the year 500, Knauskafjysk held Mairshaa against Juqe, whose army went home leaner and wiser. In the same season, the assault Knauskafjysk loosed upon Rarerkhajez broke against Juqe's spears and came to nothing. Soon after, Peoriademor moved against Rarerghen, but Knauskafjysk threw the invaders back over the border. Before long, the assault Juqe loosed upon Mairshaa broke against Knauskafjysk's spears and came to nothing.
+
+About the year 550, no rain came to Mairshaa for two years together; many perished. That same year, these were the high years of Juqe — its markets loud, its walls, for a while, unneeded. Soon after, Peoriademor moved against Rarerghen, but Knauskafjysk threw the invaders back over the border.
+
+In 575, Juqe held Khirkai against Knauskafjysk, whose army went home leaner and wiser. And in that year too, a great drought lay upon Deopo; the rivers shrank and the wells soured. Hard on its heels, Tariademor seized Peonasena from Rauriameonte, and the border stones were moved in the night. That same year, what had once broken against Mairshaa's defences now carried them: Juqe took the province, and Knauskafjysk's pride with it.
+
+About the year 625, Brasturn passed by force from Rauriameonte to Tariademor; the tax rolls were rewritten before the dead were counted. Soon after, the assault Tariademor loosed upon Deopo broke against Rauriameonte's spears and came to nothing. Before long, what had once broken against Skakno's defences now carried them: Peoriademor took the province, and Rauriameonte's pride with it. And in that year too, in Niantepo the bells rang without ceasing; a third of its people were laid in the ground.
+
+All the while the land was filling: 7 settlements were raised in these years, Hrafjysk and Khirzaa among them.
+
+### IV. The Marching Years, 700–900
+
+In 700, Peoriademor moved against Stagrabry, but Rauriameonte threw the invaders back over the border. That same year, Knauskafjysk held Rarerghen against Peoriademor, whose army went home leaner and wiser. In the same season, Tariademor had grown past its own strength: Stagrdaurk and its neighbours broke away to found Steirkdaurk. Soon after, Juqe and Knauskafjysk met over Brakno yet again, and yet again it was Juqe that kept the field.
+
+In the year 725, a pestilence swept Brathaurn and carried off more than any war had. Before long, Juqe and Knauskafjysk met over Rarerghen yet again, and yet again it was Juqe that kept the field. With that, the realm of Knauskafjysk was extinguished; its name passes from the roll of the powers. That same year, in Stagrdaurk the bells rang without ceasing; a third of its people were laid in the ground.
+
+About the year 775, the banners of Tariademor entered Stagrathaugr, and what Steirkdaurk had held it held no longer. And in that year too, Juqe, whose appetite grew with the eating, took Rarerkhash next. That same year, the people of Rarerkhash drove out Juqe's governors and took for themselves the name Mishkaasi.
+
+In 775, the realm of Rairmaad was carved whole out of Peoriademor's flank, with Khirzash at its heart. In the same season, the shrines of the Rite of Varikhaaju in Brafjan emptied, and those of the Way of Varondomomor filled. That same year, a pestilence swept Syaeentheo and carried off more than any war had.
+
+In the year 800, there was no halting Tariademor that season: Rarerkhash fell to it while Mishkaasi looked on. It was the end of Mishkaasi: 25 years of banners, done in a single season. That same year, Juqe seized Stagrdaurk from Steirkdaurk, and the border stones were moved in the night. With that, the realm of Steirkdaurk was extinguished; its name passes from the roll of the powers.
+
+About the year 800, word came from Rarerkhash that it would be governed from within: thus Rairmaad, born in a single furious season. Soon after, the banners of Tariademor entered Rarerkhash, and what Rairmaad had held it held no longer. It was the end of Rairmaad: 25 years of banners, done in a single season.
+
+In the year 825, Khirzash passed by force from Rairmaad to Juqe; the tax rolls were rewritten before the dead were counted. Hard on its heels, Juqe marched on Mairghen, and by winter the province had fallen to it; Rairmaad was the poorer. With that, the realm of Rairmaad was extinguished; its name passes from the roll of the powers. In the same season, Peoriademor moved against Stagrabry, but Rauriameonte threw the invaders back over the border.
+
+In 850, no rain came to Stagrathaugr for two years together; many perished. Soon after, the assault Juqe loosed upon Breistakno broke against Peoriademor's spears and came to nothing. That same year, Juqe had grown past its own strength: Brakno and its neighbours broke away to found Tharnastall.
+
+The occupiers kept the land-words and changed the rest, and so Stagrafjysk is written Stagrkad in every ledger since.
+
+### V. The Age of Blood and Banners, 900–1100
+
+About the year 900, what had once broken against Stagrabry's defences now carried them: Peoriademor took the province, and Rauriameonte's pride with it. In the same season, a great drought lay upon Brathaurn; the rivers shrank and the wells soured. Before long, Rauriameonte held Deopo against Peoriademor, whose army went home leaner and wiser. And in that year too, Juqe moved against Mairshaa, but the young northern realm of Tharnastall threw the invaders back over the border.
+
+In 925, Stagrabry rose against Peoriademor, and out of the rising was proclaimed the free realm of Tharnakno. That same year, not all was iron: a golden age dawned over Juqe, and its cities flourished as never before. Hard on its heels, Peoriademor seized Stagrabry from Tharnakno, and the border stones were moved in the night. It was the end of Tharnakno: 25 years of banners, done in a single season.
+
+About the year 950, these were the high years of Peoriademor — its markets loud, its walls, for a while, unneeded. Before long, what had once broken against Deopo's defences now carried them: Tariademor took the province, and Rauriameonte's pride with it. That same year, the assault Juqe loosed upon Mairshaa broke against Tharnastall's spears and came to nothing. And in that year too, not all was iron: a golden age dawned over Juqe, and its cities flourished as never before.
+
+In the year 1025, what had once broken against Mairshaa's defences now carried them: Juqe took the province, and Tharnastall's pride with it. Soon after, Tharnastall held Brakno against Juqe, whose army went home leaner and wiser. That same year, no rain came to Skakno for two years together; many perished.
+
+*So the matter stands in 1100: 6 realms endure, and Tariademor is mightiest among them, holding 11 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
+
+*In Deoliria, Semorai Belentaria the Silent holds the throne. Here the record rests — not because history has, but because ink runs out before it does.*
+
+## Annals
+
+*The ledger behind the chronicle: every event, dated, unadorned.*
 
 - **100 After Reckoning** — Tariademor seized Stagrathaugr from Brograskei.
 - **100 After Reckoning** — The realm of Brograskei was extinguished.

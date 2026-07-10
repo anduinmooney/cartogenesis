@@ -44,6 +44,7 @@ import {
   ruinedSettlementIds,
   type SimulationLayer,
 } from "./simulation.ts";
+import { generateNarrative, type NarrativeLayer } from "./narrative.ts";
 
 export const ENGINE_VERSION = "0.13.0";
 
@@ -126,6 +127,8 @@ export interface World {
   economy: EconomyLayer;
   religion: ReligionLayer;
   simulation: SimulationLayer;
+  /** L17 — the chronicle told as prose, by an in-world chronicler. */
+  narrative: NarrativeLayer;
   volcanoes: Volcano[];
 }
 
@@ -348,6 +351,17 @@ export function generateWorld(config: WorldConfig): World {
     .filter((r) => r.status !== "extinct")
     .sort((a, b) => b.finalSize - a.finalSize)[0];
 
+  // L17 — Narrative: the chronicle told as a story. Strictly downstream of the
+  // simulation (its own stream; reads events, never writes them), so the
+  // simulation fingerprint is identical with or without it.
+  const narrativeRng = root.stream("narrative");
+  const narrative = generateNarrative(history, lore, simulation, {
+    seed: narrativeRng.seed,
+    presentYear: simulation.endYear,
+    capital: capital?.name ?? "—",
+    capitalHouse: lore.capitalHouse,
+  });
+
   const maxAltitudeMetres = config.maxAltitudeMetres ?? 4500;
   const peakValue = elevation.extent().max;
   const highestPeakMetres = elevationToMetres(peakValue, seaLevel, maxAltitudeMetres);
@@ -409,6 +423,7 @@ export function generateWorld(config: WorldConfig): World {
     economy: economyNow,
     religion,
     simulation,
+    narrative,
     volcanoes,
   };
 }

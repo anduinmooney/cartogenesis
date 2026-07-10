@@ -372,8 +372,31 @@ export function worldReportMarkdown(world       )         {
     lines.push("");
   }
 
-  // The emergent chronicle (from the simulation).
-  lines.push("## Chronicle");
+  // The chronicle, told — L17's narrated history, in an in-world voice.
+  const nar = world.narrative;
+  lines.push(`## ${nar.title}`);
+  lines.push("");
+  for (const p of nar.opening) {
+    lines.push(`*${p}*`);
+    lines.push("");
+  }
+  for (const ch of nar.chapters) {
+    lines.push(`### ${ch.title}`);
+    lines.push("");
+    for (const p of ch.paragraphs) {
+      lines.push(p);
+      lines.push("");
+    }
+  }
+  for (const p of nar.closing) {
+    lines.push(`*${p}*`);
+    lines.push("");
+  }
+
+  // The raw dated record the chronicle above was told from.
+  lines.push("## Annals");
+  lines.push("");
+  lines.push("*The ledger behind the chronicle: every event, dated, unadorned.*");
   lines.push("");
   for (const e of sim.events) {
     lines.push(`- **${e.year} ${h.epoch}** — ${e.text}`);

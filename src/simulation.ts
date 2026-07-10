@@ -25,6 +25,8 @@ export type RealmStatus = "ascendant" | "diminished" | "extinct";
 export interface RealmSummary {
   id: number;
   name: string;
+  /** Naming culture of the realm's founding seat (auld/meridian/kesh/sylvan). */
+  languageId: string;
   foundedYear: number;
   peakSize: number;
   peakYear: number;
@@ -34,6 +36,12 @@ export interface RealmSummary {
 
 export interface SimEvent {
   year: number;
+  /**
+   * Who did what to whom, structurally — so downstream narrators can retell the
+   * event instead of re-parsing its prebaked sentence. Optional; the
+   * fingerprint hashes year+type only, so these fields cannot perturb it.
+   */
+  actors?: { subject?: string; object?: string; place?: string };
   type:
     | "founding"
     | "conquest"
@@ -455,6 +463,7 @@ export function generateSimulation(
     events.push({
       year,
       type: "ruin",
+      actors: { place: ts.name },
       text:
         fate === "sacked"
           ? `${ts.name} was stormed and left a ruin.`
@@ -488,7 +497,7 @@ export function generateSimulation(
       if (pop > cap * 1.15) {
         pop *= 0.82;
         if (rng.next() < 0.15) {
-          events.push({ year, type: "famine", text: `Famine struck ${r.name}; the fields could not feed its people.`, x: r.cx, y: r.cy });
+          events.push({ year, type: "famine", actors: { place: r.name }, text: `Famine struck ${r.name}; the fields could not feed its people.`, x: r.cx, y: r.cy });
         }
       }
       population[r.id] = Math.max(0, pop);
@@ -550,6 +559,7 @@ export function generateSimulation(
         events.push({
           year,
           type: "repulsed",
+          actors: { subject: attacker.name, object: defender.name, place: cr.name },
           text: `${attacker.name}'s invasion of ${cr.name} was thrown back by ${defender.name}.`,
           x: cr.cx,
           y: cr.cy,
@@ -574,13 +584,14 @@ export function generateSimulation(
       events.push({
         year,
         type: "conquest",
+        actors: { subject: attacker.name, object: defender.name, place: cr.name },
         text: `${attacker.name} seized ${cr.name} from ${defender.name}.`,
         x: cr.cx,
         y: cr.cy,
       });
       if (defender.regions.size === 0 && defender.alive) {
         defender.alive = false;
-        events.push({ year, type: "fall", text: `The realm of ${defender.name} was extinguished.`, x: cr.cx, y: cr.cy });
+        events.push({ year, type: "fall", actors: { subject: defender.name, place: cr.name }, text: `The realm of ${defender.name} was extinguished.`, x: cr.cx, y: cr.cy });
       }
     }
 
@@ -624,6 +635,7 @@ export function generateSimulation(
       events.push({
         year,
         type: "revolt",
+        actors: { subject: rebel.name, object: owner.name, place: reg.name },
         text: `${reg.name} rose against ${owner.name} and declared the free realm of ${rebel.name}.`,
         x: reg.cx,
         y: reg.cy,
@@ -689,6 +701,7 @@ export function generateSimulation(
       events.push({
         year,
         type: "secession",
+        actors: { subject: newRealm.name, object: realm.name, place: reg.name },
         text:
           cluster.length > 1
             ? `${reg.name} and ${cluster.length - 1} neighbouring province(s) broke away from ${realm.name} to found the realm of ${newRealm.name}.`
@@ -717,6 +730,7 @@ export function generateSimulation(
           events.push({
             year,
             type: "conversion",
+            actors: { subject: faithName(faith[bestNb]), object: faithName(from), place: r.name },
             text: `${r.name} turned from ${faithName(from)} to ${faithName(faith[bestNb])}.`,
             x: r.cx,
             y: r.cy,
@@ -730,7 +744,7 @@ export function generateSimulation(
       const r = regs[rng.int(0, regs.length)];
       population[r.id] *= 0.45; // a true pestilence carries off a third or more
       const kind = rng.bool() ? "A plague swept" : "A long drought gripped";
-      events.push({ year, type: "plague", text: `${kind} ${r.name}; many perished.`, x: r.cx, y: r.cy });
+      events.push({ year, type: "plague", actors: { place: r.name }, text: `${kind} ${r.name}; many perished.`, x: r.cx, y: r.cy });
     }
 
     // 6) Golden ages for large, prosperous realms.
@@ -742,6 +756,7 @@ export function generateSimulation(
         events.push({
           year,
           type: "goldenage",
+          actors: { subject: r.name },
           text: `A golden age dawned over ${r.name}; its cities flourished as never before.`,
           x: seat?.cx ?? 0,
           y: seat?.cy ?? 0,
@@ -809,6 +824,7 @@ export function generateSimulation(
     return {
       id: r.id,
       name: r.name,
+      languageId: r.languageId,
       foundedYear: r.foundedYear,
       peakSize: r.peakSize,
       peakYear: r.peakYear,

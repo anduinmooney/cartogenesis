@@ -290,7 +290,101 @@ Followed across 1 region(s).
 | Storkdaurk | 100 | 2 | 100 | 0 | extinct |
 | Jumaad | 100 | 2 | 100 | 0 | extinct |
 
-## Chronicle
+## The Chronicle of Thorkdaurk
+
+*I write in Deoliria, under the patronage of House Belentaria, in the year 1100. The legends of the founding age are kept elsewhere in this book; here is only what happened, year upon year, for 1000 years.*
+
+*The world it happened in is quickly drawn: Mount Semorneosso in the high places, and the Belenbella running to the sea, and between them every road this chronicle walks.*
+
+### I. The Age of Foundations, 100–300
+
+About the year 100, Redente held Deocina against Tariana, whose army went home leaner and wiser. And in that year too, quieter conquests were made as well: Brabrein turned from the Faith of Vathorkveill to the Way of Vamaucomor. Before long, the southern realm of Rena marched on Neossodoria, and by winter the province had fallen to it; the desert realm of Jumaad was the poorer. Hard on its heels, what had once broken against Deocina's defences now carried them: Tariana took the province, and Redente's pride with it. It was the end of Redente: 50 years of banners, done in a single season.
+
+In the year 150, Khirghen passed by force from Jumaad to Rena; the tax rolls were rewritten before the dead were counted. With that, the realm of Jumaad was extinguished; its name passes from the roll of the powers. And in that year too, the people of Neossodoria drove out Rena's governors and took for themselves the name Tariana.
+
+In 175, the banners of Rena entered Neossodoria, and what Tariana had held it held no longer. It was the end of Tariana: 25 years of banners, done in a single season. And in that year too, the realm of Fjeiskafjysk was carved whole out of Thorkdaurk's flank, with Brafjan at its heart.
+
+In the year 200, the southern realm of Remeonte moved against Brabrein, but the northern realm of Fjeiskafjysk threw the invaders back over the border. In the same season, the assault Tariana loosed upon Brafjan broke against Fjeiskafjysk's spears and came to nothing. That same year, word came from Khirghen that it would be governed from within: thus Jaqe, born in a single furious season. In the same season, the shrines of the Faith of Vathorkveill in Beossoveolla emptied, and those of the Way of Vaghimghaza filled.
+
+In 200, a pestilence swept Khirkhukha and carried off more than any war had. Before long, Khirghen passed by force from Jaqe to Rena; the tax rolls were rewritten before the dead were counted. With that, the realm of Jaqe was extinguished; its name passes from the roll of the powers.
+
+In the year 225, Fjeiskafjysk held Brafjan against Thorkdaurk, whose army went home leaner and wiser. That same year, quieter conquests were made as well: Deoveolla turned from the Faith of Vathorkveill to the Way of Vaghimghaza. Hard on its heels, Tariana moved against Brafjan, but Fjeiskafjysk threw the invaders back over the border. Before long, what had once broken against Brabrein's defences now carried them: Remeonte took the province, and Fjeiskafjysk's pride with it.
+
+In 275, what had once broken against Brafjan's defences now carried them: Thorkdaurk took the province, and Fjeiskafjysk's pride with it. In the same season, the people of Khirghen drove out Rena's governors and took for themselves the name Rairghen. And in that year too, these were the high years of Tariana — its markets loud, its walls, for a while, unneeded.
+
+These years also built more than they burned — 6 new settlements, of which Bellalamor would become the best known.
+
+Conquest re-said the very map: Ghashzaa became Ghashliria on its new masters' tongues — and 3 other names with it.
+
+### II. The Age of Blood and Banners, 300–500
+
+In the year 300, Rena marched on Khirghen, and by winter the province had fallen to it; the desert realm of Rairghen was the poorer. It was the end of Rairghen: 25 years of banners, done in a single season. In the same season, in Stagrastausk the bells rang without ceasing; a third of its people were laid in the ground.
+
+About the year 325, Tariana seized Stagrastausk from Storkdaurk, and the border stones were moved in the night. And in that year too, a pestilence swept Neossodoria and carried off more than any war had. That same year, not all was iron: a golden age dawned over Thorkdaurk, and its cities flourished as never before. Soon after, Tariana, whose appetite grew with the eating, took Stagrba next. With that, the realm of Storkdaurk was extinguished; its name passes from the roll of the powers.
+
+In 350, Thorkdaurk had grown past its own strength: Brafjan and its neighbours broke away to found Steirkafjysk. Before long, Mairkhaim passed by force from Steirkafjysk to Tariana; the tax rolls were rewritten before the dead were counted. In the same season, the banners of Thorkdaurk entered Staunthaurn, and what Steirkafjysk had held it held no longer.
+
+In the year 375, a great drought lay upon Deoveolla; the rivers shrank and the wells soured. Soon after, Tariana seized Brafjan from Steirkafjysk, and the border stones were moved in the night. It was the end of Steirkafjysk: 50 years of banners, done in a single season. That same year, Stagrdaurk passed by force from Vynthon to Remeonte; the tax rolls were rewritten before the dead were counted. With that, the realm of Vynthon was extinguished; its name passes from the roll of the powers.
+
+About the year 400, in Mairkhaim the bells rang without ceasing; a third of its people were laid in the ground. Before long, Thorkdaurk and Fjeiskafjysk met over Braba yet again, and yet again it was Thorkdaurk that kept the field. It was the end of Fjeiskafjysk: 250 years of banners, done in a single season. That same year, word came from Brafjan that it would be governed from within: thus Vynstall, born in a single furious season.
+
+In the year 425, a pestilence swept Panabinte and carried off more than any war had. In the same season, these were the high years of Thorkdaurk — its markets loud, its walls, for a while, unneeded. Hard on its heels, there was no halting Tariana that season: Brafjan fell to it while Vynstall looked on. With that, the realm of Vynstall was extinguished; its name passes from the roll of the powers.
+
+About the year 475, the assault Remeonte loosed upon Neossocaria broke against Thorkdaurk's spears and came to nothing. That same year, Thorkdaurk held Staunthaurn against Tariana, whose army went home leaner and wiser.
+
+All the while the land was filling: 7 settlements were raised in these years, Shinghekh and Stagragry among them.
+
+The occupiers kept the land-words and changed the rest, and so Shinghekh is written Shinliria in every ledger since — and 4 other names with it.
+
+### III. The Marching Years, 500–700
+
+In the year 500, Rena, whose appetite grew with the eating, took Mairkhaim next. In the same season, in Stagrabry the bells rang without ceasing; a third of its people were laid in the ground. Soon after, what had once broken against Neossocaria's defences now carried them: Remeonte took the province, and Thorkdaurk's pride with it.
+
+About the year 525, Tariana moved against Mairkhaim, but Rena threw the invaders back over the border. And in that year too, Neossocaria rose against Remeonte, and out of the rising was proclaimed the free realm of Mantedemor. That same year, not all was iron: a golden age dawned over Tariana, and its cities flourished as never before.
+
+In 550, there was no halting Remeonte that season: Neossocaria fell to it while Mantedemor looked on. It was the end of Mantedemor: 25 years of banners, done in a single season. And in that year too, Tariana held Beossoveolla against Rena, whose army went home leaner and wiser. Before long, Remeonte moved against Beossoneosso, but Thorkdaurk threw the invaders back over the border.
+
+In the year 575, Rena held Mairkhaim against Tariana, whose army went home leaner and wiser. That same year, the people of Neossocaria drove out Remeonte's governors and took for themselves the name Peoriana. In the same season, no rain came to Khirkhidku for two years together; many perished.
+
+About the year 600, Thorkdaurk, whose appetite grew with the eating, took Neossocaria next. With that, the realm of Peoriana was extinguished; its name passes from the roll of the powers. And in that year too, what had once broken against Beossoveolla's defences now carried them: Rena took the province, and Tariana's pride with it. Hard on its heels, Remeonte moved against Neossocaria, but Thorkdaurk threw the invaders back over the border.
+
+In 625, Thorkdaurk held Staunthaurn against Tariana, whose army went home leaner and wiser. Soon after, Rena moved against Midshaa, but Tariana threw the invaders back over the border. Before long, Thorkdaurk held Beossoneosso against Remeonte, whose army went home leaner and wiser.
+
+These years also built more than they burned — 5 new settlements, of which Fjanba would become the best known.
+
+### IV. The Age of Blood and Banners, 700–900
+
+About the year 700, the assault Tariana loosed upon Staunthaurn broke against Thorkdaurk's spears and came to nothing. That same year, Tariana held Midshaa against Rena, whose army went home leaner and wiser. And in that year too, a pestilence swept Braba and carried off more than any war had.
+
+In 700, these were the high years of Rena — its markets loud, its walls, for a while, unneeded. Soon after, the assault Remeonte loosed upon Neossocaria broke against Thorkdaurk's spears and came to nothing. Before long, what had once broken against Staunthaurn's defences now carried them: Tariana took the province, and Thorkdaurk's pride with it.
+
+In the year 750, a great drought lay upon Deocina; the rivers shrank and the wells soured. Soon after, Remeonte moved against Neossocaria, but Thorkdaurk threw the invaders back over the border. That same year, Tariana held Midshaa against Rena, whose army went home leaner and wiser.
+
+About the year 800, Tariana moved against Beossoveolla, but Rena threw the invaders back over the border. Before long, what had once broken against Neossocaria's defences now carried them: Remeonte took the province, and Thorkdaurk's pride with it. In the same season, the assault Rena loosed upon Midshaa broke against Tariana's spears and came to nothing. And in that year too, word came from Neossocaria that it would be governed from within: thus Cauna, born in a single furious season.
+
+In 825, no rain came to Khirsham for two years together; many perished. In the same season, not all was iron: a golden age dawned over Tariana, and its cities flourished as never before. Hard on its heels, the banners of Remeonte entered Neossocaria, and what Cauna had held it held no longer. It was the end of Cauna: 25 years of banners, done in a single season.
+
+About the year 850, Rena held Beossoveolla against Tariana, whose army went home leaner and wiser. Before long, Remeonte moved against Beossoneosso, but Thorkdaurk threw the invaders back over the border.
+
+### V. The Age of Blood and Banners, 900–1100
+
+In 900, what had once broken against Beossoveolla's defences now carried them: Tariana took the province, and Rena's pride with it. That same year, Tariana held Midshaa against Rena, whose army went home leaner and wiser. Hard on its heels, what had once broken against Beossoneosso's defences now carried them: Remeonte took the province, and Thorkdaurk's pride with it. In the same season, Tariana moved against Mairkhaim, but Rena threw the invaders back over the border.
+
+In the year 950, Remeonte and Thorkdaurk met over Panabinte yet again, and yet again it was Remeonte that kept the field. And in that year too, the assault Rena loosed upon Beossoveolla broke against Tariana's spears and came to nothing. Before long, Thorkdaurk held Khirkhidku against Remeonte, whose army went home leaner and wiser. That same year, Tariana moved against Mairkhaim, but Rena threw the invaders back over the border.
+
+About the year 975, in Khirkhidku the bells rang without ceasing; a third of its people were laid in the ground. Hard on its heels, the assault Rena loosed upon Beossoveolla broke against Tariana's spears and came to nothing. In the same season, these were the high years of Tariana — its markets loud, its walls, for a while, unneeded.
+
+In 1025, Thorkdaurk held Khirkhidku against Remeonte, whose army went home leaner and wiser. That same year, Tariana moved against Mairkhaim, but Rena threw the invaders back over the border. Soon after, the assault Rena loosed upon Beossoveolla broke against Tariana's spears and came to nothing. Before long, Thorkdaurk held Khirkhidku against Remeonte, whose army went home leaner and wiser.
+
+In the year 1075, a pestilence swept Khirsham and carried off more than any war had.
+
+*So the matter stands in 1100: 4 realms endure, and Remeonte is mightiest among them, holding 10 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
+
+*In Deoliria, Veollai Belentaria holds the throne. Here the record rests — not because history has, but because ink runs out before it does.*
+
+## Annals
+
+*The ledger behind the chronicle: every event, dated, unadorned.*
 
 - **100 After Reckoning** — Tariana's invasion of Deocina was thrown back by Redente.
 - **100 After Reckoning** — Brabrein turned from the Faith of Vathorkveill to the Way of Vamaucomor.

@@ -15,7 +15,8 @@ test("world report is deterministic and contains the key sections", () => {
     "## Overview",
     "## Regions",
     "## Settlements",
-    "## Chronicle",
+    "## The Chronicle of ", // the narrated history (L17)
+    "## Annals", // the raw dated record behind it
   ]) {
     assert.ok(a.includes(section), `missing ${section}`);
   }

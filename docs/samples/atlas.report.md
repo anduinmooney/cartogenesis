@@ -271,7 +271,69 @@ Followed across 8 region(s).
 | Thorkastall | 100 | 4 | 100 | 0 | extinct |
 | Cauna | 100 | 3 | 100 | 3 | ascendant |
 
-## Chronicle
+## The Chronicle of Qidkakaasi
+
+*I write in Deoliria, under the patronage of House Niantetindo, in the year 1100. The legends of the founding age are kept elsewhere in this book; here is only what happened, year upon year, for 1000 years.*
+
+*The world it happened in is quickly drawn: Mount Vynbra in the high places, and the Qishaghash running to the sea, and between them every road this chronicle walks.*
+
+### I. The First Banners, 100–350
+
+In the year 100, the assault Tenameonte loosed upon Staunkno broke against Thorkastall's spears and came to nothing. That same year, the young southern realm of Cauna marched on Khirshaa, and by winter the province had fallen to it; the desert realm of Rairghen was the poorer. And in that year too, in Melareth the bells rang without ceasing; a third of its people were laid in the ground.
+
+In 125, Khirarer passed by force from Rairghen to Qidkakaasi; the tax rolls were rewritten before the dead were counted. With that, the realm of Rairghen was extinguished; its name passes from the roll of the powers. In the same season, the people of Khirarer drove out Qidkakaasi's governors and took for themselves the name Meqe. Hard on its heels, Qidkakaasi marched on Khirarer, and by winter the province had fallen to it; the desert realm of Meqe was the poorer. It was the end of Meqe: 25 years of banners, done in a single season.
+
+In the year 150, these were the high years of Tenameonte — its markets loud, its walls, for a while, unneeded. Soon after, what had once broken against Staunkno's defences now carried them: Tenameonte took the province, and Thorkastall's pride with it. Before long, Thorkastall held Skafjan against Caudente, whose army went home leaner and wiser.
+
+About the year 200, not all was iron: a golden age dawned over Qidkakaasi, and its cities flourished as never before. Soon after, a great drought lay upon Staunkno; the rivers shrank and the wells soured. Before long, the assault Caudente loosed upon Peonaveolla broke against Thorkastall's spears and came to nothing. By 300, Thorkastall held Peonaveolla against Caudente, whose army went home leaner and wiser.
+
+In the year 325, no rain came to Khirkhajez for two years together; many perished.
+
+These years also built more than they burned — 7 new settlements, of which Deolamor would become the best known.
+
+Conquest re-said the very map: Shinkai became Shinliria on its new masters' tongues — and 5 other names with it.
+
+### II. The Age of Blood and Banners, 350–600
+
+About the year 350, Caudente moved against Peonaveolla, but Thorkastall threw the invaders back over the border. Soon after, a pestilence swept Khirzash and carried off more than any war had. Before long, the assault Caudente loosed upon Peonaveolla broke against Thorkastall's spears and came to nothing. In the same season, these were the high years of Cauna — its markets loud, its walls, for a while, unneeded.
+
+In the year 450, Thorkastall held Peonaveolla against Caudente, whose army went home leaner and wiser. A generation on, Deodinte did not survive its conquerors; what stands of it stands empty. And in that year too, what had once broken against Peonaveolla's defences now carried them: Caudente took the province, and Thorkastall's pride with it. That same year, word came from Peonaveolla that it would be governed from within: thus Peoriabinte, born in a single furious season.
+
+About the year 525, Tenameonte and Thorkastall met over Skafjan yet again, and yet again it was Tenameonte that kept the field. In the same season, Caudente moved against Peonaveolla, but the young southern realm of Peoriabinte threw the invaders back over the border. That same year, Skafjan rose against Tenameonte, and out of the rising was proclaimed the free realm of Vynstall.
+
+In 550, swollen with victories, Tenameonte pressed on into Skafjan, and the young northern realm of Vynstall could not hold it. With that, the realm of Vynstall was extinguished; its name passes from the roll of the powers. In the same season, in Peonaveolla the bells rang without ceasing; a third of its people were laid in the ground. Hard on its heels, Peonaveolla passed by force from Peoriabinte to Tenameonte; the tax rolls were rewritten before the dead were counted. It was the end of Peoriabinte: 75 years of banners, done in a single season.
+
+About the year 575, word came from Peonaveolla that it would be governed from within: thus Cauna, born in a single furious season.
+
+All the while the land was filling: 7 settlements were raised in these years, Deodinte and Shinkai among them.
+
+### III. The Marching Years, 600–850
+
+In 600, Caudente marched on Peonaveolla, and by winter the province had fallen to it; Cauna was the poorer. With that, the realm of Cauna was extinguished; its name passes from the roll of the powers. And in that year too, the assault Tenameonte loosed upon Stagrdaurk broke against Thorkastall's spears and came to nothing.
+
+In the year 600, a great drought lay upon Staunkno; the rivers shrank and the wells soured. In the years that followed, what had once broken against Stagrdaurk's defences now carried them: Tenameonte took the province, and Thorkastall's pride with it. It was the end of Thorkastall: 550 years of banners, done in a single season.
+
+About the year 700, no rain came to Rairghen for two years together; many perished. A generation on, a great drought lay upon Shinkhukha; the rivers shrank and the wells soured. Soon after, a pestilence swept Khirkhash and carried off more than any war had.
+
+In 800, in Mairghen the bells rang without ceasing; a third of its people were laid in the ground.
+
+These years also built more than they burned — 2 new settlements, of which Ghashakhukha would become the best known.
+
+The occupiers kept the land-words and changed the rest, and so Thaurndund is written Thaurnliria in every ledger since — and 1 other name with it.
+
+### IV. The Years the Bells Rang, 850–1100
+
+In the year 875, no rain came to Khirzash for two years together; many perished. In the years that followed, not all was iron: a golden age dawned over Qidkakaasi, and its cities flourished as never before. The chronicle is silent until 1000, when a great drought lay upon Brahrei; the rivers shrank and the wells soured.
+
+About the year 1000, these were the high years of Qidkakaasi — its markets loud, its walls, for a while, unneeded. Before long, no rain came to Deocina for two years together; many perished. A generation on, not all was iron: a golden age dawned over Caudente, and its cities flourished as never before.
+
+*So the matter stands in 1100: 4 realms endure, and Qidkakaasi is mightiest among them, holding 8 provinces. 1 town lies in ruins; their names are kept in this book, which is more than their walls kept.*
+
+*Here the record rests — not because history has, but because ink runs out before it does.*
+
+## Annals
+
+*The ledger behind the chronicle: every event, dated, unadorned.*
 
 - **100 After Reckoning** — Tenameonte's invasion of Staunkno was thrown back by Thorkastall.
 - **100 After Reckoning** — Cauna seized Khirshaa from Rairghen.

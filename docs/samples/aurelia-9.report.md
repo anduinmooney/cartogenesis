@@ -243,7 +243,107 @@ Followed across 3 region(s).
 | Caudente | 650 | 2 | 650 | 0 | extinct |
 | Steirkno | 1050 | 1 | 1050 | 1 | ascendant |
 
-## Chronicle
+## The Chronicle of Redemor
+
+*I write in Niantetomor, under the patronage of House Kheqsaid, in the year 1100. The legends of the founding age are kept elsewhere in this book; here is only what happened, year upon year, for 1000 years.*
+
+*The world it happened in is quickly drawn: Mount Storkabra in the high places, and the Mekai running to the sea, and between them every road this chronicle walks.*
+
+### I. The Shaping Years, 100–300
+
+In 100, the banners of Rauriabinte entered Khirsham, and what Rairqe had held it held no longer. It was the end of Rairqe; its lands were divided among its enemies. In the same season, Qidkaghen held Braknaurk against Redemor, whose army went home leaner and wiser.
+
+In the year 100, these were the high years of Tariademor — its markets loud, its walls, for a while, unneeded. Before long, the assault Tariademor loosed upon Shinrarer broke against Rauriabinte's spears and came to nothing. Soon after, Redemor moved against Brathaugr, but Qidkaghen threw the invaders back over the border. That same year, Tariademor held Khirarer against Qidkaghen, whose army went home leaner and wiser.
+
+About the year 175, Tariademor moved against Shinrarer, but Rauriabinte threw the invaders back over the border. In the same season, not all was iron: a golden age dawned over Redemor, and its cities flourished as never before. Before long, Qidkaghen held Braknaurk against Redemor, whose army went home leaner and wiser.
+
+In 200, in Staunkno the bells rang without ceasing; a third of its people were laid in the ground. Soon after, the assault Tariademor loosed upon Shinrarer broke against Rauriabinte's spears and came to nothing. That same year, what had once broken against Khirarer's defences now carried them: Qidkaghen took the province, and Tariademor's pride with it.
+
+In the year 225, the realm of Fjeiskaskei was carved whole out of Qidkaghen's flank, with Braknaurk at its heart. Hard on its heels, Redemor seized Braknaurk from Fjeiskaskei, and the border stones were moved in the night. And in that year too, the banners of Qidkaghen entered Mairkhaim, and what Fjeiskaskei had held it held no longer. With that, the realm of Fjeiskaskei was extinguished; its name passes from the roll of the powers.
+
+About the year 250, these were the high years of Rauriabinte — its markets loud, its walls, for a while, unneeded. Before long, Qidkaghen and Tariademor met over Shinsham yet again, and yet again it was Qidkaghen that kept the field. And in that year too, Qidkaghen held Brathaugr against Redemor, whose army went home leaner and wiser.
+
+In 275, Mairkhaim rose against Qidkaghen, and out of the rising was proclaimed the free realm of Kheqkaasi. In the same season, the people of Shinsham drove out Qidkaghen's governors and took for themselves the name Kheqkaasi. And in that year too, a pestilence swept Shinrarer and carried off more than any war had.
+
+All the while the land was filling: 4 settlements were raised in these years, Khirshu and Deotelen among them.
+
+Conquest re-said the very map: Stagrafjysk became Stagrliria on its new masters' tongues — and 5 other names with it.
+
+### II. The Marching Years, 300–500
+
+About the year 300, Qidkaghen moved against Shinsham, but the desert realm of Kheqkaasi threw the invaders back over the border. That same year, Redemor had grown past its own strength: Raurianeosso and its neighbours broke away to found Caumeonte. Hard on its heels, Redemor seized Raurianeosso from Caumeonte, and the border stones were moved in the night.
+
+In 325, Raurianeosso rose against Redemor, and out of the rising was proclaimed the free realm of Rebinte. Before long, the assault Redemor loosed upon Braknaurk broke against Caumeonte's spears and came to nothing. And in that year too, not all was iron: a golden age dawned over Redemor, and its cities flourished as never before.
+
+In the year 375, Qidkaghen marched on Braknaurk, and by winter the province had fallen to it; Caumeonte was the poorer. It was the end of Caumeonte: 75 years of banners, done in a single season. Hard on its heels, there was no halting Redemor that season: Raurianeosso fell to it while Rebinte looked on. With that, the realm of Rebinte was extinguished; its name passes from the roll of the powers.
+
+About the year 400, Rauriabinte seized Shinsham from Kheqkaasi, and the border stones were moved in the night. It was the end of Kheqkaasi: 125 years of banners, done in a single season. In the same season, the realm of Thorkaskei was carved whole out of Qidkaghen's flank, with Braknaurk at its heart.
+
+In 425, the banners of Redemor entered Braknaurk, and what Thorkaskei had held it held no longer. That same year, Redemor had grown past its own strength: Raurianeosso and its neighbours broke away to found Tenadente. And in that year too, a great drought lay upon Khirzash; the rivers shrank and the wells soured. Soon after, Qidkaghen marched on Brathaugr, and by winter the province had fallen to it; Thorkaskei was the poorer. With that, the realm of Thorkaskei was extinguished; its name passes from the roll of the powers.
+
+In the year 475, Redemor seized Raurianeosso from Tenadente, and the border stones were moved in the night.
+
+These years also built more than they burned — 4 new settlements, of which Deonelen would become the best known.
+
+### III. The Age of Blood and Banners, 500–700
+
+In 500, Braknaurk passed by force from Tenadente to Redemor; the tax rolls were rewritten before the dead were counted. It was the end of Tenadente: 75 years of banners, done in a single season. That same year, the realm of Lossodente was carved whole out of Redemor's flank, with Raurianeosso at its heart.
+
+In the year 525, Redemor marched on Raurianeosso, and by winter the province had fallen to it; the young southern realm of Lossodente was the poorer. In the same season, Braknaurk passed by force from Lossodente to Qidkaghen; the tax rolls were rewritten before the dead were counted. With that, the realm of Lossodente was extinguished; its name passes from the roll of the powers.
+
+About the year 550, Kheqkaasi held Mairkhaim against Qidkaghen, whose army went home leaner and wiser. That same year, Redemor moved against Braknaurk, but Qidkaghen threw the invaders back over the border. And in that year too, in Brabei the bells rang without ceasing; a third of its people were laid in the ground.
+
+In 575, the assault Tariademor loosed upon Shinrarer broke against Rauriabinte's spears and came to nothing. That same year, Qidkaghen had grown past its own strength: Braknaurk and its neighbours broke away to found Tharnastall. In the same season, no rain came to Staunkno for two years together; many perished. Hard on its heels, Tharnastall held Braknaurk against Redemor, whose army went home leaner and wiser.
+
+In the year 600, swollen with victories, Qidkaghen pressed on into Brathaugr, and Tharnastall could not hold it. And in that year too, the realm of Jushaa was carved whole out of Qidkaghen's flank, with Khirarer at its heart. Before long, Qidkaghen seized Braknaurk from Tharnastall, and the border stones were moved in the night. It was the end of Tharnastall: 50 years of banners, done in a single season.
+
+About the year 625, Tariademor moved against Peonariando, but Rauriabinte threw the invaders back over the border. And in that year too, these were the high years of Rauriabinte — its markets loud, its walls, for a while, unneeded. Soon after, the assault Redemor loosed upon Braknaurk broke against Qidkaghen's spears and came to nothing.
+
+In the year 650, Redemor had grown past its own strength: Raurianeosso and its neighbours broke away to found Caudente. That same year, a pestilence swept Khirsham and carried off more than any war had. Hard on its heels, Caudente held Raurianeosso against Qidkaghen, whose army went home leaner and wiser. In the same season, Tariademor moved against Khirarer, but the young desert realm of Jushaa threw the invaders back over the border.
+
+In 675, a great drought lay upon Khirarer; the rivers shrank and the wells soured.
+
+All the while the land was filling: 4 settlements were raised in these years, Knyrkathu and Ghashqe among them.
+
+### IV. The Age of Blood and Banners, 700–900
+
+In the year 700, Redemor marched on Midrarer, and by winter the province had fallen to it; Caudente was the poorer. And in that year too, the assault Caudente loosed upon Braknaurk broke against Qidkaghen's spears and came to nothing. That same year, in Peonariando the bells rang without ceasing; a third of its people were laid in the ground.
+
+About the year 725, the banners of Redemor entered Raurianeosso, and what Caudente had held it held no longer. With that, the realm of Caudente was extinguished; its name passes from the roll of the powers. That same year, Jushaa held Khirarer against Tariademor, whose army went home leaner and wiser.
+
+In 725, no rain came to Pananeosso for two years together; many perished. Soon after, there was no halting Redemor that season: Khirarer fell to it while Jushaa looked on. And in that year too, the assault Qidkaghen loosed upon Khirmid broke against Jushaa's spears and came to nothing.
+
+About the year 775, Redemor, whose appetite grew with the eating, took Khirmid next. It was the end of Jushaa: 175 years of banners, done in a single season. Before long, Qidkaghen held Braknaurk against Redemor, whose army went home leaner and wiser. And in that year too, the people of Khirmid drove out Redemor's governors and took for themselves the name Jumaad.
+
+In 825, Khirmid passed by force from Jumaad to Qidkaghen; the tax rolls were rewritten before the dead were counted. With that, the realm of Jumaad was extinguished; its name passes from the roll of the powers. In the same season, Tariademor moved against Shinrarer, but Rauriabinte threw the invaders back over the border.
+
+In the year 850, the assault Redemor loosed upon Deodinte broke against Tariademor's spears and came to nothing. Hard on its heels, Kheqkaasi held Mairkhaim against Qidkaghen, whose army went home leaner and wiser. That same year, what had once broken against Shinrarer's defences now carried them: Tariademor took the province, and Rauriabinte's pride with it.
+
+About the year 875, word came from Khirmid that it would be governed from within: thus Mishaghen, born in a single furious season.
+
+### V. The Age of Blood and Banners, 900–1100
+
+In 900, there was no halting Redemor that season: Khirmid fell to it while Mishaghen looked on. It was the end of Mishaghen: 25 years of banners, done in a single season. Before long, what had once broken against Braknaurk's defences now carried them: Redemor took the province, and Qidkaghen's pride with it.
+
+In the year 925, Qidkaghen moved against Mairkhaim, but Kheqkaasi threw the invaders back over the border. That same year, Shinrarer rose against Tariademor, and out of the rising was proclaimed the free realm of Qidkaqe. Hard on its heels, swollen with victories, Rauriabinte pressed on into Shinrarer, and the young desert realm of Qidkaqe could not hold it. With that, the realm of Qidkaqe was extinguished; its name passes from the roll of the powers.
+
+About the year 950, Redemor, whose appetite grew with the eating, took Mairkhaim next. It was the end of Kheqkaasi: 675 years of banners, done in a single season. In the same season, the people of Mairkhaim drove out Redemor's governors and took for themselves the name Rairghen. And in that year too, Khirmid rose against Redemor, and out of the rising was proclaimed the free realm of Kaartaitan.
+
+In the year 950, a great drought lay upon Shinsham; the rivers shrank and the wells soured. In the same season, not all was iron: a golden age dawned over Rauriabinte, and its cities flourished as never before. Soon after, the banners of Redemor entered Khirmid, and what Kaartaitan had held it held no longer. With that, the realm of Kaartaitan was extinguished; its name passes from the roll of the powers.
+
+About the year 1000, swollen with victories, Redemor pressed on into Mairkhaim, and the young desert realm of Rairghen could not hold it. It was the end of Rairghen: 50 years of banners, done in a single season. And in that year too, the assault Tariademor loosed upon Peonariando broke against Rauriabinte's spears and came to nothing.
+
+In 1000, a pestilence swept Raurianeosso and carried off more than any war had. Hard on its heels, Redemor and Qidkaghen met over Brathaugr yet again, and yet again it was Redemor that kept the field. Soon after, Tariademor held Deodinte against Redemor, whose army went home leaner and wiser. In the same season, Tariademor moved against Shinrarer, but Rauriabinte threw the invaders back over the border.
+
+About the year 1050, word came from Brathaugr that it would be governed from within: thus Steirkno, born in a single furious season. And in that year too, no rain came to Melamelen for two years together; many perished. Hard on its heels, a great drought lay upon Raurianeosso; the rivers shrank and the wells soured.
+
+*So the matter stands in 1100: 5 realms endure, and Redemor is mightiest among them, holding 11 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
+
+*In Niantetomor, Saunai Vassosena holds the throne. Here the record rests — not because history has, but because ink runs out before it does.*
+
+## Annals
+
+*The ledger behind the chronicle: every event, dated, unadorned.*
 
 - **100 After Reckoning** — Rauriabinte seized Khirsham from Rairqe.
 - **100 After Reckoning** — The realm of Rairqe was extinguished.

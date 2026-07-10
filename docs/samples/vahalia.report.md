@@ -303,7 +303,79 @@ Followed across 1 region(s).
 | Thorkastall | 100 | 2 | 100 | 0 | extinct |
 | Lossomeonte | 100 | 1 | 100 | 1 | ascendant |
 
-## Chronicle
+## The Chronicle of Rairkaasi
+
+*I write in Deociamor, under the patronage of House Variatindo, in the year 1100. The legends of the founding age are kept elsewhere in this book; here is only what happened, year upon year, for 1000 years.*
+
+*The world it happened in is quickly drawn: Mount Dobra in the high places, and the Mishkai running to the sea, and between them every road this chronicle walks.*
+
+### I. The Age of Foundations, 100–300
+
+About the year 100, Thorkastall held Brastausk against Peoriana, whose army went home leaner and wiser. And in that year too, the desert realm of Jaqe marched on Braba, and by winter the province had fallen to it; Thorkastall was the poorer. That same year, the shrines of the Cult of Vaghazazizam in Khirmid emptied, and those of the Rite of Vakneirkveill filled. Soon after, Stagraknaurk passed by force from Thorkastall to Jaqe; the tax rolls were rewritten before the dead were counted.
+
+In the year 125, the desert realm of Rairkaasi moved against Stagrdaurk, but the southern realm of Mantebinte threw the invaders back over the border. Hard on its heels, the assault Jaqe loosed upon Khirshaa broke against Mishkaasi's spears and came to nothing. In the same season, Stagraknaurk rose against Jaqe, and out of the rising was proclaimed the free realm of Fjeiskdaurk. Soon after, what had once broken against Brastausk's defences now carried them: Peoriana took the province, and Thorkastall's pride with it. It was the end of Thorkastall: 75 years of banners, done in a single season.
+
+In 175, Mantebinte held Stagrdaurk against Rairkaasi, whose army went home leaner and wiser. Before long, Jaqe moved against Khirshaa, but Mishkaasi threw the invaders back over the border. Hard on its heels, Peoriana seized Stagraknaurk from Fjeiskdaurk, and the border stones were moved in the night. With that, the realm of Fjeiskdaurk was extinguished; its name passes from the roll of the powers.
+
+In the year 250, Rairkaasi held Mairmid against Jaqe, whose army went home leaner and wiser. In the same season, Rairkaasi moved against Stagrdaurk, but Mantebinte threw the invaders back over the border.
+
+All the while the land was filling: 7 settlements were raised in these years, Panatelen and Khirghekh among them.
+
+The occupiers kept the land-words and changed the rest, and so Knyrkathu is written Knyrkmakh in every ledger since — and 8 other names with it.
+
+### II. The Marching Years, 300–500
+
+About the year 300, what had once broken against Khirshaa's defences now carried them: Jaqe took the province, and Mishkaasi's pride with it. That same year, the assault Rairkaasi loosed upon Stagrdaurk broke against Mantebinte's spears and came to nothing. And in that year too, not all was iron: a golden age dawned over Peoriana, and its cities flourished as never before.
+
+In the year 325, Jaqe moved against Khirkhaim, but Mishkaasi threw the invaders back over the border. Soon after, the assault Rairkaasi loosed upon Stagrdaurk broke against Mantebinte's spears and came to nothing. Before long, Khiriz was stormed and left a ruin; travellers still point out its broken walls.
+
+In 375, what had once broken against Khirkhaim's defences now carried them: Jaqe took the province, and Mishkaasi's pride with it. It was the end of Mishkaasi: 275 years of banners, done in a single season. Soon after, Rairkaasi held Mairmid against Jaqe, whose army went home leaner and wiser.
+
+In the year 400, what had once broken against Stagrdaurk's defences now carried them: Rairkaasi took the province, and Mantebinte's pride with it. Hard on its heels, Mantebinte and Rairkaasi met over Stagrdaurk yet again, and yet again it was Mantebinte that kept the field. And in that year too, a great drought lay upon Mairkhidku; the rivers shrank and the wells soured.
+
+In 450, Peoriana moved against Khirzash, but Rairkaasi threw the invaders back over the border. Soon after, what had once broken against Mairmid's defences now carried them: Jaqe took the province, and Rairkaasi's pride with it. That same year, Rairkaasi had grown past its own strength: Brakno and its neighbours broke away to found Storkdaurk.
+
+These years also built more than they burned — 8 new settlements, of which Peonaciamor would become the best known.
+
+### III. The Age of Blood and Banners, 500–700
+
+In the year 500, Jaqe, whose appetite grew with the eating, took Brakno next. And in that year too, quieter conquests were made as well: Peonacaria turned from the Faith of Varaullacomor to the Rite of Vakneirkveill. Hard on its heels, there was no halting Jaqe that season: Brahrei fell to it while Storkdaurk looked on.
+
+About the year 525, Storkdaurk held Stagrabry against Rairkaasi, whose army went home leaner and wiser. In the same season, the people of Brakno drove out Jaqe's governors and took for themselves the name Thorkno. That same year, these were the high years of Jaqe — its markets loud, its walls, for a while, unneeded.
+
+In 550, swollen with victories, Jaqe pressed on into Brakno, and the young northern realm of Thorkno could not hold it. With that, the realm of Thorkno was extinguished; its name passes from the roll of the powers. And in that year too, word came from Brakno that it would be governed from within: thus Brograstall, born in a single furious season. That same year, no rain came to Khirkhukha for two years together; many perished.
+
+In the year 575, Mantebinte marched on Brakno, and by winter the province had fallen to it; the young northern realm of Brograstall was the poorer. It was the end of Brograstall: 25 years of banners, done in a single season. In the same season, what had once broken against Stagrabry's defences now carried them: Rairkaasi took the province, and Storkdaurk's pride with it. With that, the realm of Storkdaurk was extinguished; its name passes from the roll of the powers.
+
+About the year 575, in Shinmid the bells rang without ceasing; a third of its people were laid in the ground. Soon after, Rairkaasi moved against Brakno, but Mantebinte threw the invaders back over the border. Before long, Mantebinte held Rairshid against Jaqe, whose army went home leaner and wiser. Soon after, the assault Rairkaasi loosed upon Brakno broke against Mantebinte's spears and came to nothing.
+
+In the year 650, a great drought lay upon Khirkhaim; the rivers shrank and the wells soured. Before long, what had once broken against Brakno's defences now carried them: Jaqe took the province, and Mantebinte's pride with it. That same year, a pestilence swept Brahrei and carried off more than any war had.
+
+All the while the land was filling: 7 settlements were raised in these years, Khirkai and Stagrba among them.
+
+### IV. The Marching Years, 700–900
+
+About the year 700, what had once broken against Khirzash's defences now carried them: Peoriana took the province, and Rairkaasi's pride with it. And in that year too, Mantebinte held Storkafjan against Jaqe, whose army went home leaner and wiser. Hard on its heels, Rairkaasi moved against Stagrdaurk, but Mantebinte threw the invaders back over the border.
+
+In the year 750, the assault Jaqe loosed upon Storkafjan broke against Mantebinte's spears and came to nothing. In the years that followed, Mantebinte held Storkafjan against Jaqe, whose army went home leaner and wiser. Soon after, Rairkaasi moved against Stagrdaurk, but Mantebinte threw the invaders back over the border.
+
+About the year 850, the assault Jaqe loosed upon Storkafjan broke against Mantebinte's spears and came to nothing. Before long, Mantebinte held Stagrdaurk against Rairkaasi, whose army went home leaner and wiser. In the same season, in Brastausk the bells rang without ceasing; a third of its people were laid in the ground.
+
+### V. The Marching Years, 900–1100
+
+In 900, Jaqe moved against Rairshid, but Mantebinte threw the invaders back over the border. Hard on its heels, the assault Rairkaasi loosed upon Stagrdaurk broke against Mantebinte's spears and came to nothing. That same year, a pestilence swept Stagrabry and carried off more than any war had. Before long, Mantebinte held Rairshid against Jaqe, whose army went home leaner and wiser.
+
+In the year 975, Rairkaasi moved against Stagrdaurk, but Mantebinte threw the invaders back over the border. Soon after, Mantebinte held Storkafjan against Jaqe, whose army went home leaner and wiser. Hard on its heels, Rairkaasi moved against Stagrdaurk, but Mantebinte threw the invaders back over the border.
+
+About the year 1025, not all was iron: a golden age dawned over Rairkaasi, and its cities flourished as never before. Soon after, the assault Jaqe loosed upon Storkafjan broke against Mantebinte's spears and came to nothing. Before long, Rairkaasi moved against Stagrdaurk, but Mantebinte threw the invaders back over the border.
+
+*So the matter stands in 1100: 5 realms endure, and Jaqe is mightiest among them, holding 11 provinces. 1 town lies in ruins; their names are kept in this book, which is more than their walls kept.*
+
+*In Deociamor, Niantan Variatindo holds the throne. Here the record rests — not because history has, but because ink runs out before it does.*
+
+## Annals
+
+*The ledger behind the chronicle: every event, dated, unadorned.*
 
 - **100 After Reckoning** — Peoriana's invasion of Brastausk was thrown back by Thorkastall.
 - **100 After Reckoning** — Jaqe seized Braba from Thorkastall.
