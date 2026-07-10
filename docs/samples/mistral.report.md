@@ -139,31 +139,36 @@
 
 ### Cities
 
-- Nasida (**capital**, port, trade hub, rich) — Grain, Wine, Livestock, Horses
-- Aamaur (port, prosperous) — Livestock, Wine, Fish, Grain
-- Mamuesh (port, trade hub, rich) — Grain, Livestock, Wine, Timber
+- Nasida (**capital**, port, trade hub, rich) — Grain, Wine, Livestock, Horses *(founded 100)*
+- Aamaur (port, prosperous) — Livestock, Wine, Fish, Grain *(founded 131)*
 
 ### Towns
 
-- Lentelo (port, prosperous) — Grain, Wine, Livestock
-- Eontevelia (modest) — Livestock, Grain, Timber, Coal
-- Knyrntha (port, prosperous) — Livestock, Grain, Coal, Horses
-- Riacentee (prosperous) — Livestock, Horses, Grain, Timber
-- Mushamgha (port, prosperous) — Livestock, Horses, Fish
-- Poavento (port, modest) — Grain, Timber, Wine, Livestock
+- Lentelo (port, prosperous) — Grain, Wine, Livestock *(founded 192)*
+- Eontevelia (modest) — Livestock, Grain, Timber, Coal *(founded 222)*
+- Knyrntha (port, prosperous) — Livestock, Grain, Coal, Horses *(founded 253)*
+- Riacentee (prosperous) — Livestock, Horses, Grain, Timber *(founded 283)*
+- Mushamgha (port, prosperous) — Livestock, Horses, Fish *(founded 314)*
+- Poavento (port, modest) — Grain, Timber, Wine, Livestock *(founded 344)*
 
 ### Villages
 
-- Veonase (port, prosperous) — Livestock, Fish, Horses, Grain
-- Dandodati (modest) — Livestock, Grain, Horses, Wine
-- Sama (modest) — Livestock, Wine, Horses
-- Fjeinbaubei (port, prosperous) — Grain, Livestock, Fish, Horses
-- Shaaqqaa (trade hub, modest) — Horses, Livestock
-- Thoknau (port, modest) — Fish, Grain, Livestock
-- Kammeur (modest) — Livestock, Horses
-- Pee (port, prosperous) — Livestock, Grain
-- Piabiassoda (prosperous) — Livestock, Iron, Grain, Stone
-- Siantenaudevento (port, prosperous) — Grain, Livestock, Horses, Stone
+- Veonase (port, prosperous) — Livestock, Fish, Horses, Grain *(founded 375)*
+- Dandodati (modest) — Livestock, Grain, Horses, Wine *(founded 406)*
+- Sama (modest) — Livestock, Wine, Horses *(founded 436)*
+- Fjeinbaubei (port, prosperous) — Grain, Livestock, Fish, Horses *(founded 467)*
+- Shaaqqaa (trade hub, modest) — Horses, Livestock *(founded 497)*
+- Thoknau (port, modest) — Fish, Grain, Livestock *(founded 528)*
+- Kammeur (modest) — Livestock, Horses *(founded 558)*
+- Pee (port, prosperous) — Livestock, Grain *(founded 589)*
+- Piabiassoda (prosperous) — Livestock, Iron, Grain, Stone *(founded 619)*
+- Siantenaudevento (port, prosperous) — Grain, Livestock, Horses, Stone *(founded 650)*
+
+## Ruins
+
+*Settlements that did not survive to the present day.*
+
+- **Mamuesh** (city) — founded 161, stormed and left a ruin in 475
 
 ## Faiths
 
@@ -212,15 +217,13 @@ Followed across 6 region(s).
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Tamorsenasiaa | 100 | 11 | 675 | 9 | ascendant |
-| Biba | 100 | 9 | 275 | 4 | diminished |
-| Edshiesh | 100 | 8 | 1025 | 8 | ascendant |
-| Brabravo | 100 | 7 | 725 | 5 | diminished |
-| Jaanka | 825 | 3 | 825 | 0 | extinct |
-| Shaaajiabad | 950 | 3 | 950 | 0 | extinct |
+| Tamorsenasiaa | 100 | 11 | 825 | 11 | ascendant |
+| Biba | 100 | 9 | 275 | 5 | diminished |
+| Brabravo | 100 | 7 | 850 | 7 | ascendant |
+| Edshiesh | 100 | 6 | 350 | 3 | diminished |
 | Laundomeo | 100 | 2 | 100 | 0 | extinct |
 | Divoi | 100 | 2 | 100 | 0 | extinct |
-| Rarrai | 1075 | 1 | 1075 | 1 | ascendant |
+| Quesha | 1075 | 1 | 1075 | 1 | ascendant |
 
 ## Chronicle
 
@@ -255,82 +258,75 @@ Followed across 6 region(s).
 - **300 After Reckoning** — Tamorsenasiaa's invasion of Jadjairkai was thrown back by Edshiesh.
 - **300 After Reckoning** — Edshiesh's invasion of Azghuabad was thrown back by Brabravo.
 - **325 After Reckoning** — Brabravo's invasion of Khaghi was thrown back by Biba.
-- **350 After Reckoning** — Tamorsenasiaa's invasion of Greindeiheim was thrown back by Biba.
+- **350 After Reckoning** — Tamorsenasiaa's invasion of Jadjairkai was thrown back by Edshiesh.
 - **350 After Reckoning** — Edshiesh seized Azghuabad from Brabravo.
 - **350 After Reckoning** — A golden age dawned over Tamorsenasiaa; its cities flourished as never before.
 - **375 After Reckoning** — Brabravo's invasion of Azghuabad was thrown back by Edshiesh.
 - **400 After Reckoning** — Tamorsenasiaa seized Greindeiheim from Biba.
 - **425 After Reckoning** — Tamorsenasiaa's invasion of Auskstaugard was thrown back by Biba.
-- **425 After Reckoning** — Brabravo seized Khaghi from Biba.
-- **425 After Reckoning** — A long drought gripped Greindeiheim; many perished.
-- **450 After Reckoning** — Brabravo seized Atiteo from Biba.
-- **450 After Reckoning** — Edshiesh's invasion of Merina was thrown back by Brabravo.
-- **475 After Reckoning** — Tamorsenasiaa's invasion of Barky was thrown back by Biba.
-- **475 After Reckoning** — Khaghi rose against Brabravo and declared the free realm of Mesa.
-- **500 After Reckoning** — Brabravo seized Khaghi from Mesa.
-- **500 After Reckoning** — The realm of Mesa was extinguished.
-- **500 After Reckoning** — Khaghi rose against Brabravo and declared the free realm of Jaakhaur.
-- **525 After Reckoning** — Brabravo seized Khaghi from Jaakhaur.
-- **525 After Reckoning** — The realm of Jaakhaur was extinguished.
+- **425 After Reckoning** — Brabravo seized Azghuabad from Edshiesh.
+- **425 After Reckoning** — Azghuabad rose against Brabravo and declared the free realm of Kashaimjaa.
+- **425 After Reckoning** — Sodeoe turned from the Way of Dariamiabau to the Faith of Rajaa.
+- **450 After Reckoning** — Brabravo's invasion of Azghuabad was thrown back by Kashaimjaa.
+- **475 After Reckoning** — Mamuesh was stormed and left a ruin.
+- **475 After Reckoning** — Edshiesh seized Azghuabad from Kashaimjaa.
+- **475 After Reckoning** — The realm of Kashaimjaa was extinguished.
+- **475 After Reckoning** — A long drought gripped Banaleome; many perished.
+- **500 After Reckoning** — Brabravo's invasion of Azghuabad was thrown back by Edshiesh.
+- **525 After Reckoning** — Tamorsenasiaa's invasion of Jadjairkai was thrown back by Edshiesh.
+- **525 After Reckoning** — Edshiesh's invasion of Merina was thrown back by Brabravo.
 - **525 After Reckoning** — A long drought gripped Vialevento; many perished.
-- **550 After Reckoning** — Tamorsenasiaa seized Barky from Biba.
-- **575 After Reckoning** — Tamorsenasiaa seized Auskstaugard from Biba.
-- **575 After Reckoning** — Auskstaugard rose against Tamorsenasiaa and declared the free realm of Hrarkskuskthu.
-- **600 After Reckoning** — Tamorsenasiaa's invasion of Auskstaugard was thrown back by Hrarkskuskthu.
-- **600 After Reckoning** — Barky rose against Tamorsenasiaa and declared the free realm of Skoskbrei.
-- **625 After Reckoning** — Brabravo's invasion of Saiqme was thrown back by Biba.
-- **625 After Reckoning** — Edshiesh's invasion of Merina was thrown back by Brabravo.
-- **650 After Reckoning** — Tamorsenasiaa seized Barky from Skoskbrei.
-- **650 After Reckoning** — The realm of Skoskbrei was extinguished.
-- **675 After Reckoning** — Tamorsenasiaa seized Auskstaugard from Hrarkskuskthu.
-- **675 After Reckoning** — The realm of Hrarkskuskthu was extinguished.
-- **675 After Reckoning** — A plague swept Jadjairkai; many perished.
-- **700 After Reckoning** — Tamorsenasiaa's invasion of Simiacia was thrown back by Biba.
-- **700 After Reckoning** — A plague swept Hryfjo; many perished.
-- **725 After Reckoning** — Edshiesh's invasion of Merina was thrown back by Brabravo.
-- **725 After Reckoning** — Brabravo seized Azghuabad from Edshiesh.
-- **750 After Reckoning** — Tamorsenasiaa's invasion of Jadjairkai was thrown back by Edshiesh.
-- **750 After Reckoning** — Brabravo's invasion of Saiqme was thrown back by Biba.
-- **750 After Reckoning** — Azghuabad rose against Brabravo and declared the free realm of Khadta.
-- **775 After Reckoning** — Edshiesh seized Azghuabad from Khadta.
-- **775 After Reckoning** — The realm of Khadta was extinguished.
-- **800 After Reckoning** — Tamorsenasiaa's invasion of Simiacia was thrown back by Biba.
-- **800 After Reckoning** — Brabravo's invasion of Saiqme was thrown back by Biba.
-- **825 After Reckoning** — Edshiesh seized Merina from Brabravo.
-- **825 After Reckoning** — Shezkai and 2 neighbouring province(s) broke away from Tamorsenasiaa to found the realm of Jaanka.
-- **825 After Reckoning** — A long drought gripped Emaumar; many perished.
-- **850 After Reckoning** — Tamorsenasiaa seized Shezkai from Jaanka.
-- **875 After Reckoning** — Tamorsenasiaa seized Greindeiheim from Jaanka.
-- **875 After Reckoning** — A long drought gripped Shaata; many perished.
-- **875 After Reckoning** — A golden age dawned over Edshiesh; its cities flourished as never before.
-- **900 After Reckoning** — Tamorsenasiaa seized Sodeoe from Jaanka.
-- **900 After Reckoning** — The realm of Jaanka was extinguished.
-- **900 After Reckoning** — Brabravo's invasion of Azghuabad was thrown back by Edshiesh.
-- **900 After Reckoning** — Sodeoe rose against Tamorsenasiaa and declared the free realm of Vissomeli.
-- **900 After Reckoning** — A plague swept Simiacia; many perished.
-- **925 After Reckoning** — Tamorsenasiaa seized Sodeoe from Vissomeli.
-- **925 After Reckoning** — The realm of Vissomeli was extinguished.
-- **925 After Reckoning** — Edshiesh's invasion of Nolenso was thrown back by Brabravo.
-- **950 After Reckoning** — Brabravo's invasion of Saiqme was thrown back by Biba.
-- **950 After Reckoning** — Tamorsenasiaa's invasion of Simiacia was thrown back by Biba.
-- **950 After Reckoning** — Shezkai and 2 neighbouring province(s) broke away from Tamorsenasiaa to found the realm of Shaaajiabad.
-- **950 After Reckoning** — A long drought gripped Jadjairkai; many perished.
-- **975 After Reckoning** — Edshiesh seized Sodeoe from Shaaajiabad.
-- **975 After Reckoning** — Sodeoe rose against Edshiesh and declared the free realm of Beobontesa.
-- **1000 After Reckoning** — Tamorsenasiaa seized Shezkai from Shaaajiabad.
-- **1000 After Reckoning** — A golden age dawned over Brabravo; its cities flourished as never before.
-- **1025 After Reckoning** — Tamorsenasiaa seized Greindeiheim from Shaaajiabad.
-- **1025 After Reckoning** — The realm of Shaaajiabad was extinguished.
-- **1025 After Reckoning** — Edshiesh seized Sodeoe from Beobontesa.
-- **1025 After Reckoning** — The realm of Beobontesa was extinguished.
-- **1025 After Reckoning** — Shezkai rose against Tamorsenasiaa and declared the free realm of Qekha.
-- **1050 After Reckoning** — Tamorsenasiaa seized Shezkai from Qekha.
-- **1050 After Reckoning** — The realm of Qekha was extinguished.
-- **1050 After Reckoning** — Greindeiheim rose against Tamorsenasiaa and declared the free realm of Bodauskskavik.
-- **1075 After Reckoning** — Tamorsenasiaa seized Greindeiheim from Bodauskskavik.
-- **1075 After Reckoning** — The realm of Bodauskskavik was extinguished.
-- **1075 After Reckoning** — Shezkai rose against Tamorsenasiaa and declared the free realm of Rarrai.
-- **1075 After Reckoning** — A plague swept Azghuabad; many perished.
+- **550 After Reckoning** — Brabravo's invasion of Azghuabad was thrown back by Edshiesh.
+- **575 After Reckoning** — Tamorsenasiaa's invasion of Barky was thrown back by Biba.
+- **575 After Reckoning** — A golden age dawned over Tamorsenasiaa; its cities flourished as never before.
+- **600 After Reckoning** — Brabravo seized Azghuabad from Edshiesh.
+- **625 After Reckoning** — Tamorsenasiaa's invasion of Jadjairkai was thrown back by Edshiesh.
+- **625 After Reckoning** — A plague swept Fjastaknau; many perished.
+- **650 After Reckoning** — Brabravo's invasion of Khaghi was thrown back by Biba.
+- **675 After Reckoning** — Tamorsenasiaa seized Jadjairkai from Edshiesh.
+- **675 After Reckoning** — Edshiesh seized Azghuabad from Brabravo.
+- **675 After Reckoning** — Azghuabad rose against Edshiesh and declared the free realm of Kitaa.
+- **675 After Reckoning** — A plague swept Qaizzi; many perished.
+- **700 After Reckoning** — Brabravo seized Azghuabad from Kitaa.
+- **700 After Reckoning** — The realm of Kitaa was extinguished.
+- **725 After Reckoning** — Tamorsenasiaa's invasion of Barky was thrown back by Biba.
+- **725 After Reckoning** — A long drought gripped Banaleome; many perished.
+- **725 After Reckoning** — A golden age dawned over Edshiesh; its cities flourished as never before.
+- **750 After Reckoning** — Brabravo's invasion of Kaiqaqshe was thrown back by Edshiesh.
+- **775 After Reckoning** — Tamorsenasiaa's invasion of Qaizzi was thrown back by Edshiesh.
+- **800 After Reckoning** — Brabravo seized Khaghi from Biba.
+- **825 After Reckoning** — Tamorsenasiaa seized Barky from Biba.
+- **850 After Reckoning** — Tamorsenasiaa's invasion of Auskstaugard was thrown back by Biba.
+- **850 After Reckoning** — Brabravo seized Atiteo from Biba.
+- **850 After Reckoning** — A golden age dawned over Brabravo; its cities flourished as never before.
+- **875 After Reckoning** — Brabravo's invasion of Saiqme was thrown back by Biba.
+- **875 After Reckoning** — Atiteo rose against Brabravo and declared the free realm of Cibauo.
+- **900 After Reckoning** — Tamorsenasiaa seized Atiteo from Cibauo.
+- **900 After Reckoning** — The realm of Cibauo was extinguished.
+- **900 After Reckoning** — Edshiesh seized Jadjairkai from Tamorsenasiaa.
+- **900 After Reckoning** — A plague swept Kaiqaqshe; many perished.
+- **925 After Reckoning** — Tamorsenasiaa's invasion of Jadjairkai was thrown back by Edshiesh.
+- **925 After Reckoning** — Brabravo's invasion of Kaiqaqshe was thrown back by Edshiesh.
+- **950 After Reckoning** — Edshiesh seized Azghuabad from Brabravo.
+- **950 After Reckoning** — Atiteo rose against Tamorsenasiaa and declared the free realm of Icebevento.
+- **950 After Reckoning** — Azghuabad rose against Edshiesh and declared the free realm of Shasha.
+- **975 After Reckoning** — Brabravo seized Atiteo from Icebevento.
+- **975 After Reckoning** — The realm of Icebevento was extinguished.
+- **1000 After Reckoning** — Brabravo seized Azghuabad from Shasha.
+- **1000 After Reckoning** — The realm of Shasha was extinguished.
+- **1000 After Reckoning** — Azghuabad rose against Brabravo and declared the free realm of Gheqghe.
+- **1025 After Reckoning** — Brabravo seized Azghuabad from Gheqghe.
+- **1025 After Reckoning** — The realm of Gheqghe was extinguished.
+- **1025 After Reckoning** — Tamorsenasiaa seized Jadjairkai from Edshiesh.
+- **1025 After Reckoning** — Azghuabad rose against Brabravo and declared the free realm of Aza.
+- **1025 After Reckoning** — A plague swept Banaleome; many perished.
+- **1050 After Reckoning** — Brabravo seized Azghuabad from Aza.
+- **1050 After Reckoning** — The realm of Aza was extinguished.
+- **1075 After Reckoning** — Tamorsenasiaa seized Qaizzi from Edshiesh.
+- **1075 After Reckoning** — Brabravo's invasion of Kaiqaqshe was thrown back by Edshiesh.
+- **1075 After Reckoning** — Jadjairkai rose against Tamorsenasiaa and declared the free realm of Quesha.
+- **1075 After Reckoning** — A long drought gripped Kiza; many perished.
+- **1075 After Reckoning** — A golden age dawned over Edshiesh; its cities flourished as never before.
 
 ## Heightmap
 

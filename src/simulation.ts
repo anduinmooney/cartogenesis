@@ -36,6 +36,7 @@ export interface SimEvent {
     | "founding"
     | "conquest"
     | "repulsed"
+    | "ruin"
     | "fall"
     | "secession"
     | "revolt"
@@ -55,6 +56,27 @@ export interface ControlSnapshot {
   control: Record<number, number>;
 }
 
+/**
+ * A settlement's life across the simulated centuries. The world's settlements
+ * (from L9) are not all as old as each other, and not all of them survive: a
+ * city can be sacked in a conquest or abandoned when its country empties out.
+ * `fellYear === undefined` means it stands to the present day — so the
+ * present-day maps are exactly the survivors, and the fallen become ruins.
+ */
+export interface TimedSettlement {
+  id: number; // matches Settlement.id
+  x: number;
+  y: number;
+  name: string;
+  tier: string;
+  regionId: number;
+  isCapital: boolean;
+  foundedYear: number;
+  fellYear?: number;
+  /** How it ended, when it ended. */
+  fate?: "sacked" | "abandoned";
+}
+
 export interface SimulationLayer {
   turns: number;
   startYear: number;
@@ -63,12 +85,31 @@ export interface SimulationLayer {
   /** Region→realm control after each turn (plus the initial state). Lets the
    *  app scrub through history and watch borders shift. */
   snapshots: ControlSnapshot[];
+  /** Every settlement's founding (and, for ruins, its fall). */
+  settlementTimeline: TimedSettlement[];
   /** Region id → controlling realm id (-1 if uncontrolled). */
   finalControl: Record<number, number>;
   /** Region id → final population. */
   population: Record<number, number>;
   realms: RealmSummary[];
   survivingRealms: number;
+}
+
+/** Settlements standing in a given year. */
+export function settlementsAt(
+  timeline: TimedSettlement[],
+  year: number,
+): TimedSettlement[] {
+  return timeline.filter(
+    (s) => s.foundedYear <= year && (s.fellYear === undefined || year < s.fellYear),
+  );
+}
+
+/** Ids of settlements that did NOT survive to the present day. */
+export function ruinedSettlementIds(timeline: TimedSettlement[]): Set<number> {
+  const out = new Set<number>();
+  for (const s of timeline) if (s.fellYear !== undefined) out.add(s.id);
+  return out;
 }
 
 export interface SimulationConfig {
@@ -135,6 +176,7 @@ export function generateSimulation(
       endYear: startYear + turns * yearsPerTurn,
       events,
       snapshots: [],
+      settlementTimeline: [],
       finalControl: {},
       population: {},
       realms: [],
@@ -341,6 +383,58 @@ export function generateSimulation(
   /** Region id → turns of unrest remaining after being conquered. */
   const unrest = new Map<number, number>();
 
+  // --- Settlement timeline. The best sites are the oldest; every town is
+  // founded within the first half of the span so the present-day map is settled.
+  const spanEnd = startYear + turns * yearsPerTurn;
+  const byScore = [...settlements].sort((a, b) => b.score - a.score || a.id - b.id);
+  const foundSpan = (spanEnd - startYear) * 0.55;
+  const settlementTimeline: TimedSettlement[] = byScore.map((s, i) => ({
+    id: s.id,
+    x: s.x,
+    y: s.y,
+    name: s.name,
+    tier: s.tier,
+    regionId: s.regionId,
+    isCapital: s.isCapital,
+    foundedYear: Math.round(
+      startYear + (i / Math.max(1, byScore.length - 1)) * foundSpan,
+    ),
+  }));
+  const townsByRegion = new Map<number, TimedSettlement[]>();
+  for (const ts of settlementTimeline) {
+    const list = townsByRegion.get(ts.regionId) ?? [];
+    list.push(ts);
+    townsByRegion.set(ts.regionId, list);
+  }
+  // Never let the whole map turn to ruins — and never the capital, which the
+  // present-day metadata names.
+  const maxRuins = Math.floor(settlementTimeline.length * 0.35);
+  let ruinCount = 0;
+  const canRuin = (ts: TimedSettlement, year: number): boolean =>
+    !ts.isCapital &&
+    ts.fellYear === undefined &&
+    ts.foundedYear < year && // a town must actually stand before it can fall
+    ruinCount < maxRuins;
+  const ruinSettlement = (
+    ts: TimedSettlement,
+    year: number,
+    fate: "sacked" | "abandoned",
+  ): void => {
+    ts.fellYear = year;
+    ts.fate = fate;
+    ruinCount++;
+    events.push({
+      year,
+      type: "ruin",
+      text:
+        fate === "sacked"
+          ? `${ts.name} was stormed and left a ruin.`
+          : `${ts.name} was abandoned; its people drifted away.`,
+      x: ts.x,
+      y: ts.y,
+    });
+  };
+
   // --- The tick loop. Record borders after every turn (plus the initial). ---
   const snapshots: ControlSnapshot[] = [{ year: startYear, control: { ...control } }];
   for (let t = 0; t < turns; t++) {
@@ -358,6 +452,15 @@ export function generateSimulation(
         }
       }
       population[r.id] = Math.max(0, pop);
+
+      // A country that empties out cannot hold its towns.
+      if (population[r.id] < capacity[r.id] * 0.2) {
+        for (const ts of townsByRegion.get(r.id) ?? []) {
+          if (canRuin(ts, year) && rng.next() < 0.3) {
+            ruinSettlement(ts, year, "abandoned");
+          }
+        }
+      }
     }
 
     // 2) Wars — a realm presses a neighbour only where it can actually project
@@ -422,6 +525,12 @@ export function generateSimulation(
       cooldown.set(op.a, t + CONQUEST_COOLDOWN); // and the victor must rest
       ensureSeat(defender);
       ensureSeat(attacker);
+      // Some cities do not survive their conquest.
+      for (const ts of townsByRegion.get(op.region) ?? []) {
+        if (canRuin(ts, year) && rng.next() < 0.15) {
+          ruinSettlement(ts, year, "sacked");
+        }
+      }
       events.push({
         year,
         type: "conquest",
@@ -579,7 +688,7 @@ export function generateSimulation(
     // 5) Shocks — a plague or drought now and then.
     if (rng.next() < 0.25) {
       const r = regs[rng.int(0, regs.length)];
-      population[r.id] *= 0.6;
+      population[r.id] *= 0.45; // a true pestilence carries off a third or more
       const kind = rng.bool() ? "A plague swept" : "A long drought gripped";
       events.push({ year, type: "plague", text: `${kind} ${r.name}; many perished.`, x: r.cx, y: r.cy });
     }
@@ -639,6 +748,7 @@ export function generateSimulation(
     endYear,
     events,
     snapshots,
+    settlementTimeline,
     finalControl: control,
     population,
     realms: summaries,

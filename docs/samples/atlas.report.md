@@ -9,7 +9,7 @@
 - **Climate & life:** dominant biome **Savanna**, 15 biomes in all
 - **Peoples:** 27 regions, 16 settlements, 2 realms
 - **Capital:** Bautossota, seat of House Velenmepia
-- **Dominant power:** Taunabi (of 10 surviving realm(s))
+- **Dominant power:** Devoteo (of 5 surviving realm(s))
 - **The present year:** 1049 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 6 (1 active)
 
@@ -122,28 +122,33 @@
 
 ### Cities
 
-- Bautossota (**capital**, port, rich) — Grain, Wine, Livestock, Horses
-- Nianata (port, rich) — Horses, Livestock, Fish, Grain
+- Bautossota (**capital**, port, rich) — Grain, Wine, Livestock, Horses *(founded 100)*
+- Nianata (port, rich) — Horses, Livestock, Fish, Grain *(founded 137)*
 
 ### Towns
 
-- Bassoleda (port, trade hub, rich) — Grain, Livestock, Fish, Wine
-- Aunellavi (port, rich) — Grain, Wine, Livestock, Horses
-- Daudamorbeo (port, prosperous) — Grain, Timber, Wine, Horses
-- Veocau (port, rich) — Grain, Livestock, Fish, Gold
-- Kheshkhaiur (rich) — Livestock, Grain, Horses, Fish
+- Bassoleda (port, trade hub, rich) — Grain, Livestock, Fish, Wine *(founded 173)*
+- Daudamorbeo (port, prosperous) — Grain, Timber, Wine, Horses *(founded 247)*
+- Veocau (port, rich) — Grain, Livestock, Fish, Gold *(founded 283)*
+- Kheshkhaiur (rich) — Livestock, Grain, Horses, Fish *(founded 320)*
 
 ### Villages
 
-- Savine (port, prosperous) — Livestock, Wine, Horses, Grain
-- Kesaizzi (port, prosperous) — Livestock, Horses
-- Ghezshau (modest) — Horses, Grain, Wine, Livestock
-- Aidrenjaa (rich) — Wine, Stone, Livestock, Grain
-- Gruskbu (prosperous) — Grain, Livestock, Horses
-- Kazkhu (port, trade hub, rich) — Livestock, Horses, Timber, Wine
-- Eothiaiel (port, poor)
-- Qaqsaa (port, modest) — Fish, Horses, Livestock
-- Shishreshaiabad (port, rich) — Livestock, Horses, Timber
+- Savine (port, prosperous) — Livestock, Wine, Horses, Grain *(founded 357)*
+- Kesaizzi (port, prosperous) — Livestock, Horses *(founded 393)*
+- Ghezshau (modest) — Horses, Grain, Wine, Livestock *(founded 430)*
+- Aidrenjaa (rich) — Wine, Stone, Livestock, Grain *(founded 467)*
+- Gruskbu (prosperous) — Grain, Livestock, Horses *(founded 503)*
+- Kazkhu (port, trade hub, rich) — Livestock, Horses, Timber, Wine *(founded 540)*
+- Eothiaiel (port, poor) *(founded 577)*
+- Qaqsaa (port, modest) — Fish, Horses, Livestock *(founded 613)*
+- Shishreshaiabad (port, rich) — Livestock, Horses, Timber *(founded 650)*
+
+## Ruins
+
+*Settlements that did not survive to the present day.*
+
+- **Aunellavi** (town) — founded 210, stormed and left a ruin in 350
 
 ## Faiths
 
@@ -185,26 +190,17 @@ Followed across 7 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 10 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 5 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Raia | 100 | 9 | 100 | 3 | diminished |
-| Taunabi | 100 | 9 | 100 | 5 | diminished |
-| Devoteo | 100 | 7 | 250 | 5 | diminished |
-| Dariane | 100 | 7 | 900 | 4 | diminished |
-| Khazze | 150 | 3 | 150 | 0 | extinct |
+| Raia | 100 | 9 | 100 | 4 | diminished |
+| Taunabi | 100 | 9 | 100 | 6 | diminished |
+| Devoteo | 100 | 9 | 550 | 8 | ascendant |
+| Dariane | 100 | 6 | 775 | 6 | ascendant |
+| Khazze | 150 | 5 | 425 | 0 | extinct |
 | Bafjyheim | 350 | 3 | 350 | 0 | extinct |
-| Zikhaa | 600 | 3 | 625 | 0 | extinct |
-| Dorkhro | 625 | 3 | 725 | 3 | ascendant |
-| Badoda | 450 | 2 | 450 | 0 | extinct |
-| Shedkhu | 475 | 2 | 475 | 0 | extinct |
-| Majatu | 475 | 2 | 475 | 0 | extinct |
-| Oa | 825 | 2 | 825 | 1 | diminished |
-| Sajaabad | 925 | 2 | 925 | 2 | ascendant |
-| Aanghaa | 1025 | 2 | 1025 | 2 | ascendant |
-| Qimaesh | 825 | 1 | 825 | 1 | ascendant |
-| Stollfjaugard | 1025 | 1 | 1025 | 1 | ascendant |
+| Durkstoyvik | 600 | 3 | 600 | 3 | ascendant |
 
 ## Chronicle
 
@@ -220,122 +216,99 @@ Followed across 7 region(s).
 - **225 After Reckoning** — Dariane's invasion of Zeka was thrown back by Khazze.
 - **250 After Reckoning** — Devoteo seized Meoriarialenneo from Dado.
 - **250 After Reckoning** — The realm of Dado was extinguished.
-- **250 After Reckoning** — A golden age dawned over Raia; its cities flourished as never before.
-- **275 After Reckoning** — Dariane seized Zeka from Khazze.
-- **275 After Reckoning** — Devoteo's invasion of Ygrknauda was thrown back by Raia.
+- **250 After Reckoning** — A long drought gripped Zekuqqaiur; many perished.
+- **275 After Reckoning** — Dariane's invasion of Zekuqqaiur was thrown back by Raia.
+- **275 After Reckoning** — Meoriarialenneo rose against Devoteo and declared the free realm of Paullatau.
 - **275 After Reckoning** — A golden age dawned over Devoteo; its cities flourished as never before.
-- **300 After Reckoning** — Dariane's invasion of Dellacamordamar was thrown back by Khazze.
-- **300 After Reckoning** — Meoriarialenneo rose against Devoteo and declared the free realm of Rai.
+- **300 After Reckoning** — Devoteo's invasion of Meoriarialenneo was thrown back by Paullatau.
+- **300 After Reckoning** — Khazze seized Ygrknauda from Raia.
 - **300 After Reckoning** — A golden age dawned over Raia; its cities flourished as never before.
-- **325 After Reckoning** — Devoteo's invasion of Ygrknauda was thrown back by Raia.
-- **325 After Reckoning** — A golden age dawned over Devoteo; its cities flourished as never before.
-- **350 After Reckoning** — Dariane seized Dellacamordamar from Khazze.
+- **325 After Reckoning** — Dariane's invasion of Zekuqqaiur was thrown back by Raia.
+- **350 After Reckoning** — Aunellavi was stormed and left a ruin.
+- **350 After Reckoning** — Devoteo seized Meoriarialenneo from Paullatau.
+- **350 After Reckoning** — The realm of Paullatau was extinguished.
 - **350 After Reckoning** — Thoskbreivik and 2 neighbouring province(s) broke away from Taunabi to found the realm of Bafjyheim.
-- **350 After Reckoning** — A golden age dawned over Dariane; its cities flourished as never before.
+- **350 After Reckoning** — A golden age dawned over Khazze; its cities flourished as never before.
+- **375 After Reckoning** — Devoteo seized Thoskbreivik from Bafjyheim.
 - **375 After Reckoning** — Taunabi seized Pialeniania from Bafjyheim.
-- **375 After Reckoning** — Dariane seized Qadre from Khazze.
-- **375 After Reckoning** — The realm of Khazze was extinguished.
-- **400 After Reckoning** — Taunabi's invasion of Thoskbreivik was thrown back by Bafjyheim.
-- **400 After Reckoning** — Devoteo's invasion of Meoriarialenneo was thrown back by Rai.
-- **400 After Reckoning** — Ygrknauda turned from the Rite of Hragrknyvik to the Cult of Kimuma.
-- **425 After Reckoning** — Dariane seized Thoskbreivik from Bafjyheim.
-- **425 After Reckoning** — Thoskbreivik rose against Dariane and declared the free realm of Baugrhra.
-- **425 After Reckoning** — A plague swept Debevia; many perished.
-- **425 After Reckoning** — A golden age dawned over Dariane; its cities flourished as never before.
-- **450 After Reckoning** — Taunabi seized Thoskbreivik from Baugrhra.
-- **450 After Reckoning** — The realm of Baugrhra was extinguished.
-- **450 After Reckoning** — Thoskbreivik and 1 neighbouring province(s) broke away from Taunabi to found the realm of Badoda.
-- **475 After Reckoning** — Taunabi seized Pialeniania from Badoda.
-- **475 After Reckoning** — Maimjiabad and 1 neighbouring province(s) broke away from Taunabi to found the realm of Shedkhu.
-- **475 After Reckoning** — Zaizmu and 1 neighbouring province(s) broke away from Devoteo to found the realm of Majatu.
-- **475 After Reckoning** — A long drought gripped Qadre; many perished.
-- **500 After Reckoning** — Taunabi seized Thoskbreivik from Badoda.
-- **500 After Reckoning** — The realm of Badoda was extinguished.
-- **500 After Reckoning** — Dariane seized Pialeniania from Shedkhu.
-- **500 After Reckoning** — Thoskbreivik rose against Taunabi and declared the free realm of Hrarnhraunstei.
-- **500 After Reckoning** — Pialeniania rose against Dariane and declared the free realm of Lassomavia.
-- **525 After Reckoning** — Taunabi seized Pialeniania from Lassomavia.
-- **525 After Reckoning** — The realm of Lassomavia was extinguished.
-- **525 After Reckoning** — A golden age dawned over Raia; its cities flourished as never before.
-- **550 After Reckoning** — Taunabi seized Thoskbreivik from Hrarnhraunstei.
-- **550 After Reckoning** — The realm of Hrarnhraunstei was extinguished.
-- **550 After Reckoning** — Dariane seized Maimjiabad from Shedkhu.
-- **550 After Reckoning** — The realm of Shedkhu was extinguished.
-- **550 After Reckoning** — Thoskbreivik rose against Taunabi and declared the free realm of Dyllskaurkgra.
-- **550 After Reckoning** — A long drought gripped Theththiaphia; many perished.
-- **575 After Reckoning** — Taunabi seized Thoskbreivik from Dyllskaurkgra.
-- **575 After Reckoning** — The realm of Dyllskaurkgra was extinguished.
-- **600 After Reckoning** — Rai's invasion of Bodau was thrown back by Bafjyheim.
-- **600 After Reckoning** — Dariane's invasion of Zekuqqaiur was thrown back by Raia.
-- **600 After Reckoning** — Maimjiabad and 1 neighbouring province(s) broke away from Dariane to found the realm of Zikhaa.
+- **400 After Reckoning** — Taunabi's invasion of Bodau was thrown back by Bafjyheim.
+- **400 After Reckoning** — Devoteo's invasion of Ygrknauda was thrown back by Khazze.
+- **400 After Reckoning** — Thoskbreivik rose against Devoteo and declared the free realm of Hrustygrgra.
+- **400 After Reckoning** — A plague swept Eirkstau; many perished.
+- **425 After Reckoning** — Khazze seized Thoskbreivik from Hrustygrgra.
+- **425 After Reckoning** — The realm of Hrustygrgra was extinguished.
+- **425 After Reckoning** — Dariane's invasion of Zekuqqaiur was thrown back by Raia.
+- **425 After Reckoning** — A plague swept Qata; many perished.
+- **450 After Reckoning** — Taunabi's invasion of Bodau was thrown back by Bafjyheim.
+- **450 After Reckoning** — Thoskbreivik rose against Khazze and declared the free realm of Fjyskknei.
+- **450 After Reckoning** — A plague swept Pialeniania; many perished.
+- **475 After Reckoning** — Devoteo seized Thoskbreivik from Fjyskknei.
+- **475 After Reckoning** — The realm of Fjyskknei was extinguished.
+- **475 After Reckoning** — Thoskbreivik rose against Devoteo and declared the free realm of Vullbruskhru.
+- **475 After Reckoning** — Allkno turned from the Rite of Hragrknyvik to the Cult of Kimuma.
+- **475 After Reckoning** — A plague swept Theththiaphia; many perished.
+- **475 After Reckoning** — A golden age dawned over Devoteo; its cities flourished as never before.
+- **500 After Reckoning** — Devoteo seized Thoskbreivik from Vullbruskhru.
+- **500 After Reckoning** — The realm of Vullbruskhru was extinguished.
+- **500 After Reckoning** — Taunabi's invasion of Bodau was thrown back by Bafjyheim.
+- **500 After Reckoning** — Thoskbreivik rose against Devoteo and declared the free realm of Hrarnhraunstei.
+- **500 After Reckoning** — A long drought gripped Bemantepi; many perished.
+- **525 After Reckoning** — Devoteo seized Thoskbreivik from Hrarnhraunstei.
+- **525 After Reckoning** — The realm of Hrarnhraunstei was extinguished.
+- **525 After Reckoning** — Dariane seized Zeka from Khazze.
+- **525 After Reckoning** — A plague swept Raze; many perished.
+- **525 After Reckoning** — A golden age dawned over Dariane; its cities flourished as never before.
+- **550 After Reckoning** — Devoteo seized Bodau from Bafjyheim.
+- **550 After Reckoning** — The realm of Bafjyheim was extinguished.
+- **550 After Reckoning** — A long drought gripped Maimjiabad; many perished.
+- **575 After Reckoning** — Devoteo's invasion of Dellacamordamar was thrown back by Khazze.
+- **575 After Reckoning** — Dariane's invasion of Zekuqqaiur was thrown back by Raia.
+- **600 After Reckoning** — Thoskbreivik and 2 neighbouring province(s) broke away from Devoteo to found the realm of Durkstoyvik.
 - **600 After Reckoning** — A long drought gripped Zeka; many perished.
-- **625 After Reckoning** — Devoteo seized Meoriarialenneo from Rai.
-- **625 After Reckoning** — The realm of Rai was extinguished.
-- **625 After Reckoning** — Zikhaa seized Pialeniania from Taunabi.
-- **625 After Reckoning** — Meoriarialenneo rose against Devoteo and declared the free realm of Mivi.
-- **625 After Reckoning** — Ygrknauda and 1 neighbouring province(s) broke away from Raia to found the realm of Dorkhro.
-- **650 After Reckoning** — Taunabi seized Bodau from Bafjyheim.
-- **650 After Reckoning** — The realm of Bafjyheim was extinguished.
-- **650 After Reckoning** — A long drought gripped Zekuqqaiur; many perished.
-- **675 After Reckoning** — Dariane seized Zekuqqaiur from Raia.
-- **675 After Reckoning** — Devoteo seized Meoriarialenneo from Mivi.
-- **675 After Reckoning** — The realm of Mivi was extinguished.
-- **700 After Reckoning** — Dariane's invasion of Jaziki was thrown back by Zikhaa.
-- **700 After Reckoning** — Devoteo's invasion of Zaizmu was thrown back by Majatu.
-- **700 After Reckoning** — A golden age dawned over Raia; its cities flourished as never before.
-- **725 After Reckoning** — Dorkhro seized Zaizmu from Majatu.
-- **725 After Reckoning** — Zikhaa seized Qata from Taunabi.
-- **725 After Reckoning** — Zekuqqaiur rose against Dariane and declared the free realm of Ramkha.
-- **725 After Reckoning** — Qata rose against Zikhaa and declared the free realm of Ghutaaesh.
-- **725 After Reckoning** — A plague swept Meoriarialenneo; many perished.
-- **750 After Reckoning** — Taunabi seized Qata from Ghutaaesh.
-- **750 After Reckoning** — The realm of Ghutaaesh was extinguished.
-- **750 After Reckoning** — Dariane seized Zekuqqaiur from Ramkha.
-- **750 After Reckoning** — The realm of Ramkha was extinguished.
-- **775 After Reckoning** — Dariane seized Jaziki from Zikhaa.
-- **775 After Reckoning** — Devoteo seized Akha from Majatu.
-- **775 After Reckoning** — The realm of Majatu was extinguished.
-- **800 After Reckoning** — Taunabi's invasion of Pialeniania was thrown back by Zikhaa.
-- **825 After Reckoning** — Dariane seized Pialeniania from Zikhaa.
-- **825 After Reckoning** — Akha rose against Devoteo and declared the free realm of Qimaesh.
-- **825 After Reckoning** — Pialeniania rose against Dariane and declared the free realm of Tidasevento.
-- **825 After Reckoning** — Thoskbreivik and 1 neighbouring province(s) broke away from Taunabi to found the realm of Oa.
-- **850 After Reckoning** — Taunabi seized Pialeniania from Tidasevento.
-- **850 After Reckoning** — The realm of Tidasevento was extinguished.
-- **850 After Reckoning** — Dariane's invasion of Maimjiabad was thrown back by Zikhaa.
-- **850 After Reckoning** — A plague swept Meoriarialenneo; many perished.
-- **875 After Reckoning** — Taunabi seized Maimjiabad from Zikhaa.
-- **875 After Reckoning** — The realm of Zikhaa was extinguished.
-- **875 After Reckoning** — Devoteo's invasion of Thoskbreivik was thrown back by Oa.
-- **875 After Reckoning** — Pialeniania rose against Taunabi and declared the free realm of Baba.
-- **900 After Reckoning** — Taunabi seized Pialeniania from Baba.
-- **900 After Reckoning** — The realm of Baba was extinguished.
-- **900 After Reckoning** — Dariane seized Thoskbreivik from Oa.
-- **900 After Reckoning** — Maimjiabad rose against Taunabi and declared the free realm of Ukhqaza.
-- **900 After Reckoning** — A golden age dawned over Taunabi; its cities flourished as never before.
-- **925 After Reckoning** — Dariane seized Maimjiabad from Ukhqaza.
-- **925 After Reckoning** — The realm of Ukhqaza was extinguished.
-- **925 After Reckoning** — Thoskbreivik rose against Dariane and declared the free realm of Dubou.
-- **925 After Reckoning** — Maimjiabad and 1 neighbouring province(s) broke away from Dariane to found the realm of Sajaabad.
-- **950 After Reckoning** — Taunabi's invasion of Thoskbreivik was thrown back by Dubou.
-- **950 After Reckoning** — Pialeniania rose against Taunabi and declared the free realm of Rebi.
-- **950 After Reckoning** — Juju broke away from Taunabi to found the realm of Maa.
-- **950 After Reckoning** — A long drought gripped Dapi; many perished.
-- **975 After Reckoning** — Dariane seized Pialeniania from Rebi.
-- **975 After Reckoning** — The realm of Rebi was extinguished.
-- **975 After Reckoning** — Devoteo seized Thoskbreivik from Dubou.
-- **975 After Reckoning** — The realm of Dubou was extinguished.
-- **1000 After Reckoning** — Taunabi seized Juju from Maa.
-- **1000 After Reckoning** — The realm of Maa was extinguished.
-- **1000 After Reckoning** — Dariane's invasion of Jaziki was thrown back by Sajaabad.
-- **1025 After Reckoning** — Taunabi's invasion of Bodau was thrown back by Oa.
-- **1025 After Reckoning** — Devoteo's invasion of Zaizmu was thrown back by Dorkhro.
-- **1025 After Reckoning** — Thoskbreivik rose against Devoteo and declared the free realm of Stollfjaugard.
-- **1025 After Reckoning** — Zekuqqaiur and 1 neighbouring province(s) broke away from Dariane to found the realm of Aanghaa.
-- **1025 After Reckoning** — A plague swept Debevia; many perished.
-- **1050 After Reckoning** — Dariane's invasion of Thoskbreivik was thrown back by Stollfjaugard.
-- **1050 After Reckoning** — A long drought gripped Zekuqqaiur; many perished.
-- **1075 After Reckoning** — Taunabi's invasion of Thoskbreivik was thrown back by Stollfjaugard.
+- **625 After Reckoning** — Durkstoyvik seized Ygrknauda from Khazze.
+- **625 After Reckoning** — Devoteo seized Thoskbreivik from Durkstoyvik.
+- **650 After Reckoning** — Dariane's invasion of Dellacamordamar was thrown back by Khazze.
+- **650 After Reckoning** — Devoteo's invasion of Meoriarialenneo was thrown back by Durkstoyvik.
+- **650 After Reckoning** — Thoskbreivik rose against Devoteo and declared the free realm of Thynhreinddu.
+- **650 After Reckoning** — A plague swept Dapi; many perished.
+- **675 After Reckoning** — Taunabi seized Thoskbreivik from Thynhreinddu.
+- **675 After Reckoning** — The realm of Thynhreinddu was extinguished.
+- **675 After Reckoning** — Khazze seized Ygrknauda from Durkstoyvik.
+- **700 After Reckoning** — Devoteo's invasion of Ygrknauda was thrown back by Khazze.
+- **700 After Reckoning** — A plague swept Debevia; many perished.
+- **700 After Reckoning** — A golden age dawned over Khazze; its cities flourished as never before.
+- **725 After Reckoning** — Dariane seized Dellacamordamar from Khazze.
+- **750 After Reckoning** — Dariane seized Ygrknauda from Khazze.
+- **750 After Reckoning** — A golden age dawned over Dariane; its cities flourished as never before.
+- **775 After Reckoning** — Dariane seized Qadre from Khazze.
+- **775 After Reckoning** — The realm of Khazze was extinguished.
+- **800 After Reckoning** — Dariane's invasion of Zekuqqaiur was thrown back by Raia.
+- **800 After Reckoning** — Ygrknauda rose against Dariane and declared the free realm of Vastbei.
+- **825 After Reckoning** — Devoteo seized Ygrknauda from Vastbei.
+- **825 After Reckoning** — The realm of Vastbei was extinguished.
+- **825 After Reckoning** — A long drought gripped Poposia; many perished.
+- **850 After Reckoning** — Durkstoyvik's invasion of Thoskbreivik was thrown back by Taunabi.
+- **850 After Reckoning** — Dariane's invasion of Pialeniania was thrown back by Taunabi.
+- **875 After Reckoning** — Devoteo's invasion of Allkno was thrown back by Taunabi.
+- **900 After Reckoning** — Durkstoyvik's invasion of Thoskbreivik was thrown back by Taunabi.
+- **925 After Reckoning** — Dariane's invasion of Zekuqqaiur was thrown back by Raia.
+- **925 After Reckoning** — Devoteo seized Allkno from Taunabi.
+- **925 After Reckoning** — Allkno rose against Devoteo and declared the free realm of Thystauheim.
+- **950 After Reckoning** — Devoteo seized Allkno from Thystauheim.
+- **950 After Reckoning** — The realm of Thystauheim was extinguished.
+- **950 After Reckoning** — Durkstoyvik seized Thoskbreivik from Taunabi.
+- **975 After Reckoning** — Dariane seized Zekuqqaiur from Raia.
+- **975 After Reckoning** — Devoteo seized Thoskbreivik from Durkstoyvik.
+- **1000 After Reckoning** — Dariane's invasion of Kija was thrown back by Raia.
+- **1000 After Reckoning** — Durkstoyvik seized Thoskbreivik from Devoteo.
+- **1000 After Reckoning** — Thoskbreivik rose against Durkstoyvik and declared the free realm of Obyna.
+- **1025 After Reckoning** — Durkstoyvik seized Thoskbreivik from Obyna.
+- **1025 After Reckoning** — The realm of Obyna was extinguished.
+- **1025 After Reckoning** — A golden age dawned over Dariane; its cities flourished as never before.
+- **1050 After Reckoning** — Dariane's invasion of Kija was thrown back by Raia.
+- **1050 After Reckoning** — Devoteo's invasion of Thoskbreivik was thrown back by Durkstoyvik.
+- **1075 After Reckoning** — Durkstoyvik's invasion of Pialeniania was thrown back by Taunabi.
+- **1075 After Reckoning** — A golden age dawned over Raia; its cities flourished as never before.
 
 ## Heightmap
 

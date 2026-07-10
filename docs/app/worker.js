@@ -6,6 +6,7 @@
 // on hover/click. Keeping generation here means the UI never freezes.
 
 import { generateWorld,            } from "./engine/world.js";
+import { ruinedSettlementIds } from "./engine/simulation.js";
 import {
   renderHypsometric,
   renderRelief,
@@ -38,7 +39,9 @@ const LAYER_NAMES = [
 function layerPixels(world       , layer        )             {
   const w = world.elevation.width;
   const h = world.elevation.height;
-  const towns = world.settlements.settlements;
+  // Present-day maps show the settlements that survived history, not its ruins.
+  const ruined = ruinedSettlementIds(world.simulation.settlementTimeline);
+  const towns = world.settlements.settlements.filter((s) => !ruined.has(s.id));
   switch (layer) {
     case "biome": {
       const px = renderBiomes(world.biomes, world.elevation);

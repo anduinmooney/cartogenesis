@@ -87,8 +87,8 @@
         "faithCount": 3,
         "majorExports": "Livestock, Horses, Grain, Wine, Fish",
         "resourceCount": 314,
-        "dominantPower": "Taunabi",
-        "survivingRealms": 10,
+        "dominantPower": "Devoteo",
+        "survivingRealms": 5,
         "volcanoCount": 6,
         "highestPeakMetres": 4500
       },
@@ -127,7 +127,7 @@
         "faithCount": 4,
         "majorExports": "Livestock, Grain, Horses, Wine, Fish",
         "resourceCount": 506,
-        "dominantPower": "Sade",
+        "dominantPower": "Knorkthy",
         "survivingRealms": 3,
         "volcanoCount": 9,
         "highestPeakMetres": 4500
@@ -207,8 +207,8 @@
         "faithCount": 4,
         "majorExports": "Livestock, Horses, Grain, Fish, Wine",
         "resourceCount": 468,
-        "dominantPower": "Sike",
-        "survivingRealms": 6,
+        "dominantPower": "Vobica",
+        "survivingRealms": 9,
         "volcanoCount": 9,
         "highestPeakMetres": 4500
       },

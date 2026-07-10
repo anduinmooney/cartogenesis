@@ -9,7 +9,7 @@
 - **Climate & life:** dominant biome **Grassland**, 16 biomes in all
 - **Peoples:** 28 regions, 24 settlements, 4 realms
 - **Capital:** Timortepimar, seat of House Beodaveo
-- **Dominant power:** Sade (of 3 surviving realm(s))
+- **Dominant power:** Knorkthy (of 3 surviving realm(s))
 - **The present year:** 927 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 9 (3 active)
 
@@ -155,36 +155,41 @@
 
 ### Cities
 
-- Timortepimar (**capital**, port, trade hub, rich) — Grain, Livestock
-- Liaca (port, prosperous) — Grain, Horses, Livestock, Wine
-- Dellaeollano (port, prosperous) — Wine, Livestock, Timber, Grain
-- Neollacissoboa (port, rich) — Grain, Horses, Livestock, Fish
+- Timortepimar (**capital**, port, trade hub, rich) — Grain, Livestock *(founded 100)*
+- Liaca (port, prosperous) — Grain, Horses, Livestock, Wine *(founded 124)*
+- Dellaeollano (port, prosperous) — Wine, Livestock, Timber, Grain *(founded 148)*
+- Neollacissoboa (port, rich) — Grain, Horses, Livestock, Fish *(founded 172)*
 
 ### Towns
 
-- Theiskau (port, trade hub, rich) — Wine, Timber, Livestock, Grain
-- Nendorilivento (port, rich) — Grain, Horses, Livestock, Fish
-- Saumavau (prosperous) — Livestock, Grain, Wine, Horses
-- Sodeote (prosperous) — Grain, Livestock, Wine, Copper
-- Groau (port, rich) — Livestock, Grain, Horses, Timber
-- Greirnvoheim (port, rich) — Grain, Livestock, Copper, Furs
-- Vanaba (trade hub, rich) — Grain, Wine, Livestock, Horses
+- Theiskau (port, trade hub, rich) — Wine, Timber, Livestock, Grain *(founded 196)*
+- Nendorilivento (port, rich) — Grain, Horses, Livestock, Fish *(founded 220)*
+- Saumavau (prosperous) — Livestock, Grain, Wine, Horses *(founded 243)*
+- Groau (port, rich) — Livestock, Grain, Horses, Timber *(founded 291)*
+- Greirnvoheim (port, rich) — Grain, Livestock, Copper, Furs *(founded 315)*
+- Vanaba (trade hub, rich) — Grain, Wine, Livestock, Horses *(founded 339)*
 
 ### Villages
 
-- Skysky (port, prosperous) — Horses, Livestock, Grain, Fish
-- Ciassomintemeo (rich) — Livestock, Grain, Horses, Timber
-- Shishtaa (port, prosperous) — Livestock, Horses, Fish
-- Thuogru (port, prosperous) — Livestock, Grain, Fish
-- Tamorria (rich) — Livestock, Grain, Horses, Wine
-- Stuskauthaheim (port, prosperous) — Livestock, Horses, Grain, Wine
-- Qaikhkhaaqjaabad (rich) — Livestock, Stone, Coal, Iron
-- Taudolenvo (prosperous) — Livestock, Wine, Grain, Salt
-- Bonstyndvei (prosperous) — Livestock, Grain, Horses
-- Jaashaaqqa (modest) — Livestock, Fish, Horses
-- Grarkskauskdy (prosperous) — Livestock, Grain, Horses
-- Qakhami (port, modest) — Timber, Fish, Livestock, Horses
-- Starnstandsky (port, trade hub, rich) — Livestock, Grain, Copper, Stone
+- Skysky (port, prosperous) — Horses, Livestock, Grain, Fish *(founded 363)*
+- Ciassomintemeo (rich) — Livestock, Grain, Horses, Timber *(founded 387)*
+- Shishtaa (port, prosperous) — Livestock, Horses, Fish *(founded 411)*
+- Thuogru (port, prosperous) — Livestock, Grain, Fish *(founded 435)*
+- Tamorria (rich) — Livestock, Grain, Horses, Wine *(founded 459)*
+- Stuskauthaheim (port, prosperous) — Livestock, Horses, Grain, Wine *(founded 483)*
+- Qaikhkhaaqjaabad (rich) — Livestock, Stone, Coal, Iron *(founded 507)*
+- Taudolenvo (prosperous) — Livestock, Wine, Grain, Salt *(founded 530)*
+- Bonstyndvei (prosperous) — Livestock, Grain, Horses *(founded 554)*
+- Jaashaaqqa (modest) — Livestock, Fish, Horses *(founded 578)*
+- Grarkskauskdy (prosperous) — Livestock, Grain, Horses *(founded 602)*
+- Qakhami (port, modest) — Timber, Fish, Livestock, Horses *(founded 626)*
+- Starnstandsky (port, trade hub, rich) — Livestock, Grain, Copper, Stone *(founded 650)*
+
+## Ruins
+
+*Settlements that did not survive to the present day.*
+
+- **Sodeote** (town) — founded 267, stormed and left a ruin in 575
 
 ## Faiths
 
@@ -241,11 +246,12 @@ Followed across 4 region(s).
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Sade | 100 | 12 | 800 | 12 | ascendant |
-| Saudaura | 100 | 9 | 375 | 7 | diminished |
-| Knorkthy | 100 | 9 | 875 | 9 | ascendant |
+| Knorkthy | 100 | 15 | 1000 | 14 | ascendant |
+| Sade | 100 | 14 | 575 | 13 | ascendant |
+| Saudaura | 100 | 8 | 100 | 0 | extinct |
 | Baubano | 100 | 6 | 100 | 0 | extinct |
 | Mane | 100 | 3 | 100 | 0 | extinct |
+| Nevissoro | 1025 | 1 | 1025 | 1 | ascendant |
 
 ## Chronicle
 
@@ -261,7 +267,7 @@ Followed across 4 region(s).
 - **175 After Reckoning** — The realm of Teollapano was extinguished.
 - **175 After Reckoning** — A plague swept Ghagha; many perished.
 - **200 After Reckoning** — Sade's invasion of Kaiqe was thrown back by Baubano.
-- **200 After Reckoning** — Knorkthy's invasion of Knogrudo was thrown back by Baubano.
+- **200 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
 - **225 After Reckoning** — Saudaura's invasion of Sendomiandomo was thrown back by Bassomi.
 - **225 After Reckoning** — Raita turned from the Faith of Maajai to the Way of Nallarau.
 - **225 After Reckoning** — A plague swept Beriarico; many perished.
@@ -276,67 +282,70 @@ Followed across 4 region(s).
 - **325 After Reckoning** — Sade seized Khikheshi from Baubano.
 - **325 After Reckoning** — Knorkthy seized Breindhragrau from Baubano.
 - **325 After Reckoning** — The realm of Baubano was extinguished.
-- **350 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
+- **350 After Reckoning** — Knorkthy seized Dollva from Saudaura.
 - **350 After Reckoning** — Liamar turned from the Faith of Stuskvo to the Faith of Maajai.
 - **350 After Reckoning** — A long drought gripped Vipaua; many perished.
 - **375 After Reckoning** — Saudaura seized Sendomiandomo from Bassomi.
 - **375 After Reckoning** — The realm of Bassomi was extinguished.
-- **375 After Reckoning** — Sade's invasion of Saashzima was thrown back by Mane.
-- **375 After Reckoning** — Dollva turned from the Faith of Stuskvo to the Rite of Senanaba.
-- **400 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
-- **400 After Reckoning** — A plague swept Deigrthogard; many perished.
+- **375 After Reckoning** — Knorkthy seized Kamaa from Saudaura.
+- **375 After Reckoning** — Orndau turned from the Faith of Maajai to the Rite of Senanaba.
+- **375 After Reckoning** — A long drought gripped Orndau; many perished.
+- **400 After Reckoning** — Knorkthy seized Liamar from Saudaura.
+- **425 After Reckoning** — Knorkthy's invasion of Orndau was thrown back by Saudaura.
 - **425 After Reckoning** — Sade seized Saashzima from Mane.
-- **450 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
-- **475 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
-- **475 After Reckoning** — Saashzima rose against Sade and declared the free realm of Quzkukhka.
-- **475 After Reckoning** — A long drought gripped Graugrfjaugrhro; many perished.
-- **500 After Reckoning** — Mane seized Saashzima from Quzkukhka.
-- **500 After Reckoning** — The realm of Quzkukhka was extinguished.
-- **500 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
-- **525 After Reckoning** — Sade's invasion of Saashzima was thrown back by Mane.
-- **525 After Reckoning** — A plague swept Rushraizku; many perished.
-- **525 After Reckoning** — A golden age dawned over Saudaura; its cities flourished as never before.
-- **550 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
-- **575 After Reckoning** — Sade seized Saashzima from Mane.
-- **600 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
+- **425 After Reckoning** — Sendomiandomo rose against Saudaura and declared the free realm of Ipi.
+- **450 After Reckoning** — Sade seized Sendomiandomo from Ipi.
+- **450 After Reckoning** — The realm of Ipi was extinguished.
+- **450 After Reckoning** — Ipi's invasion of Vipaua was thrown back by Saudaura.
+- **450 After Reckoning** — Liamar rose against Knorkthy and declared the free realm of Rapeca.
+- **475 After Reckoning** — Knorkthy's invasion of Liamar was thrown back by Rapeca.
+- **500 After Reckoning** — Sade seized Liamar from Rapeca.
+- **500 After Reckoning** — The realm of Rapeca was extinguished.
+- **525 After Reckoning** — Knorkthy seized Orndau from Saudaura.
+- **525 After Reckoning** — A plague swept Matemia; many perished.
+- **550 After Reckoning** — Knorkthy seized Brubrurnkno from Saudaura.
+- **550 After Reckoning** — Sade seized Deigrthogard from Saudaura.
+- **550 After Reckoning** — Liamar rose against Sade and declared the free realm of Bitaunavi.
+- **550 After Reckoning** — A golden age dawned over Sade; its cities flourished as never before.
+- **575 After Reckoning** — Knorkthy seized Liamar from Bitaunavi.
+- **575 After Reckoning** — The realm of Bitaunavi was extinguished.
+- **575 After Reckoning** — Sodeote was stormed and left a ruin.
+- **575 After Reckoning** — Sade seized Vipaua from Saudaura.
+- **600 After Reckoning** — Knorkthy seized Zaishmiesh from Saudaura.
+- **600 After Reckoning** — The realm of Saudaura was extinguished.
 - **600 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
-- **600 After Reckoning** — Saashzima rose against Sade and declared the free realm of Kizsi.
-- **625 After Reckoning** — Mane seized Saashzima from Kizsi.
-- **625 After Reckoning** — The realm of Kizsi was extinguished.
-- **625 After Reckoning** — Kaiqe turned from the Rite of Senanaba to the Way of Nallarau.
-- **650 After Reckoning** — Sade's invasion of Saashzima was thrown back by Mane.
-- **650 After Reckoning** — A golden age dawned over Knorkthy; its cities flourished as never before.
-- **675 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
-- **700 After Reckoning** — Sade seized Saashzima from Mane.
-- **725 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
-- **725 After Reckoning** — Knorkthy's invasion of Dollva was thrown back by Saudaura.
-- **725 After Reckoning** — A long drought gripped Kneirkstaudogard; many perished.
-- **750 After Reckoning** — Saashzima rose against Sade and declared the free realm of Khaakhzughu.
-- **775 After Reckoning** — Sade seized Saashzima from Khaakhzughu.
-- **775 After Reckoning** — The realm of Khaakhzughu was extinguished.
-- **775 After Reckoning** — A plague swept Liallaa; many perished.
-- **800 After Reckoning** — Sade seized Ria from Mane.
-- **825 After Reckoning** — Knorkthy seized Liallaa from Mane.
-- **825 After Reckoning** — The realm of Mane was extinguished.
-- **825 After Reckoning** — Sade's invasion of Liamar was thrown back by Saudaura.
-- **825 After Reckoning** — Ria rose against Sade and declared the free realm of Zaqshai.
-- **850 After Reckoning** — Knorkthy seized Ria from Zaqshai.
-- **850 After Reckoning** — The realm of Zaqshai was extinguished.
-- **850 After Reckoning** — A plague swept Brubrurnkno; many perished.
-- **875 After Reckoning** — Knorkthy seized Dollva from Saudaura.
-- **875 After Reckoning** — Sade's invasion of Liamar was thrown back by Saudaura.
-- **900 After Reckoning** — Knorkthy's invasion of Kamaa was thrown back by Saudaura.
+- **625 After Reckoning** — Knorkthy's invasion of Liallaa was thrown back by Mane.
+- **625 After Reckoning** — Vipaua rose against Sade and declared the free realm of Caivento.
+- **650 After Reckoning** — Sade's invasion of Vipaua was thrown back by Caivento.
+- **650 After Reckoning** — A plague swept Breindhragrau; many perished.
+- **675 After Reckoning** — Knorkthy seized Vipaua from Caivento.
+- **675 After Reckoning** — The realm of Caivento was extinguished.
+- **700 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
+- **700 After Reckoning** — Knorkthy's invasion of Liallaa was thrown back by Mane.
+- **700 After Reckoning** — A golden age dawned over Sade; its cities flourished as never before.
+- **750 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
+- **750 After Reckoning** — A plague swept Vipaua; many perished.
+- **775 After Reckoning** — Knorkthy's invasion of Liallaa was thrown back by Mane.
+- **800 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
+- **825 After Reckoning** — Knorkthy's invasion of Liallaa was thrown back by Mane.
+- **850 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
+- **875 After Reckoning** — Knorkthy's invasion of Liallaa was thrown back by Mane.
+- **875 After Reckoning** — A golden age dawned over Sade; its cities flourished as never before.
+- **900 After Reckoning** — Sade's invasion of Ria was thrown back by Mane.
 - **900 After Reckoning** — A golden age dawned over Sade; its cities flourished as never before.
-- **925 After Reckoning** — Sade's invasion of Liamar was thrown back by Saudaura.
-- **950 After Reckoning** — Knorkthy's invasion of Kamaa was thrown back by Saudaura.
-- **975 After Reckoning** — Sade's invasion of Liamar was thrown back by Saudaura.
-- **1000 After Reckoning** — Knorkthy's invasion of Liamar was thrown back by Saudaura.
-- **1025 After Reckoning** — Sade's invasion of Liamar was thrown back by Saudaura.
-- **1025 After Reckoning** — A long drought gripped Deigrthogard; many perished.
-- **1025 After Reckoning** — A golden age dawned over Knorkthy; its cities flourished as never before.
-- **1050 After Reckoning** — Knorkthy's invasion of Kamaa was thrown back by Saudaura.
-- **1050 After Reckoning** — A golden age dawned over Knorkthy; its cities flourished as never before.
-- **1075 After Reckoning** — Sade seized Liamar from Saudaura.
+- **925 After Reckoning** — Knorkthy's invasion of Khikheshi was thrown back by Sade.
+- **925 After Reckoning** — A plague swept Vandvovo; many perished.
+- **950 After Reckoning** — Sade seized Ria from Mane.
+- **950 After Reckoning** — A golden age dawned over Sade; its cities flourished as never before.
+- **975 After Reckoning** — Knorkthy seized Liallaa from Mane.
+- **975 After Reckoning** — The realm of Mane was extinguished.
+- **1000 After Reckoning** — Knorkthy seized Khikheshi from Sade.
+- **1025 After Reckoning** — Knorkthy's invasion of Kaiqe was thrown back by Sade.
+- **1025 After Reckoning** — Sade's invasion of Liamar was thrown back by Knorkthy.
+- **1025 After Reckoning** — Liallaa rose against Knorkthy and declared the free realm of Nevissoro.
+- **1025 After Reckoning** — A long drought gripped Kamaa; many perished.
+- **1050 After Reckoning** — A plague swept Knogrudo; many perished.
+- **1075 After Reckoning** — Sade's invasion of Liallaa was thrown back by Nevissoro.
 
 ## Heightmap
 

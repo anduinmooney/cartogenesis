@@ -37,6 +37,7 @@ import { makeName, languageById } from "./names.js";
                 
                 
             
+            
                  
               
               
@@ -55,6 +56,27 @@ import { makeName, languageById } from "./names.js";
                                   
  
 
+/**
+ * A settlement's life across the simulated centuries. The world's settlements
+ * (from L9) are not all as old as each other, and not all of them survive: a
+ * city can be sacked in a conquest or abandoned when its country empties out.
+ * `fellYear === undefined` means it stands to the present day — so the
+ * present-day maps are exactly the survivors, and the fallen become ruins.
+ */
+                                  
+                                      
+            
+            
+               
+               
+                   
+                     
+                      
+                    
+                                     
+                                
+ 
+
                                   
                 
                     
@@ -63,6 +85,8 @@ import { makeName, languageById } from "./names.js";
                                                                              
                                                            
                                
+                                                                
+                                        
                                                                
                                        
                                       
@@ -70,6 +94,23 @@ import { makeName, languageById } from "./names.js";
                          
                           
  
+
+/** Settlements standing in a given year. */
+export function settlementsAt(
+  timeline                   ,
+  year        ,
+)                    {
+  return timeline.filter(
+    (s) => s.foundedYear <= year && (s.fellYear === undefined || year < s.fellYear),
+  );
+}
+
+/** Ids of settlements that did NOT survive to the present day. */
+export function ruinedSettlementIds(timeline                   )              {
+  const out = new Set        ();
+  for (const s of timeline) if (s.fellYear !== undefined) out.add(s.id);
+  return out;
+}
 
                                    
                
@@ -135,6 +176,7 @@ export function generateSimulation(
       endYear: startYear + turns * yearsPerTurn,
       events,
       snapshots: [],
+      settlementTimeline: [],
       finalControl: {},
       population: {},
       realms: [],
@@ -341,6 +383,58 @@ export function generateSimulation(
   /** Region id → turns of unrest remaining after being conquered. */
   const unrest = new Map                ();
 
+  // --- Settlement timeline. The best sites are the oldest; every town is
+  // founded within the first half of the span so the present-day map is settled.
+  const spanEnd = startYear + turns * yearsPerTurn;
+  const byScore = [...settlements].sort((a, b) => b.score - a.score || a.id - b.id);
+  const foundSpan = (spanEnd - startYear) * 0.55;
+  const settlementTimeline                    = byScore.map((s, i) => ({
+    id: s.id,
+    x: s.x,
+    y: s.y,
+    name: s.name,
+    tier: s.tier,
+    regionId: s.regionId,
+    isCapital: s.isCapital,
+    foundedYear: Math.round(
+      startYear + (i / Math.max(1, byScore.length - 1)) * foundSpan,
+    ),
+  }));
+  const townsByRegion = new Map                           ();
+  for (const ts of settlementTimeline) {
+    const list = townsByRegion.get(ts.regionId) ?? [];
+    list.push(ts);
+    townsByRegion.set(ts.regionId, list);
+  }
+  // Never let the whole map turn to ruins — and never the capital, which the
+  // present-day metadata names.
+  const maxRuins = Math.floor(settlementTimeline.length * 0.35);
+  let ruinCount = 0;
+  const canRuin = (ts                 , year        )          =>
+    !ts.isCapital &&
+    ts.fellYear === undefined &&
+    ts.foundedYear < year && // a town must actually stand before it can fall
+    ruinCount < maxRuins;
+  const ruinSettlement = (
+    ts                 ,
+    year        ,
+    fate                        ,
+  )       => {
+    ts.fellYear = year;
+    ts.fate = fate;
+    ruinCount++;
+    events.push({
+      year,
+      type: "ruin",
+      text:
+        fate === "sacked"
+          ? `${ts.name} was stormed and left a ruin.`
+          : `${ts.name} was abandoned; its people drifted away.`,
+      x: ts.x,
+      y: ts.y,
+    });
+  };
+
   // --- The tick loop. Record borders after every turn (plus the initial). ---
   const snapshots                    = [{ year: startYear, control: { ...control } }];
   for (let t = 0; t < turns; t++) {
@@ -358,6 +452,15 @@ export function generateSimulation(
         }
       }
       population[r.id] = Math.max(0, pop);
+
+      // A country that empties out cannot hold its towns.
+      if (population[r.id] < capacity[r.id] * 0.2) {
+        for (const ts of townsByRegion.get(r.id) ?? []) {
+          if (canRuin(ts, year) && rng.next() < 0.3) {
+            ruinSettlement(ts, year, "abandoned");
+          }
+        }
+      }
     }
 
     // 2) Wars — a realm presses a neighbour only where it can actually project
@@ -422,6 +525,12 @@ export function generateSimulation(
       cooldown.set(op.a, t + CONQUEST_COOLDOWN); // and the victor must rest
       ensureSeat(defender);
       ensureSeat(attacker);
+      // Some cities do not survive their conquest.
+      for (const ts of townsByRegion.get(op.region) ?? []) {
+        if (canRuin(ts, year) && rng.next() < 0.15) {
+          ruinSettlement(ts, year, "sacked");
+        }
+      }
       events.push({
         year,
         type: "conquest",
@@ -579,7 +688,7 @@ export function generateSimulation(
     // 5) Shocks — a plague or drought now and then.
     if (rng.next() < 0.25) {
       const r = regs[rng.int(0, regs.length)];
-      population[r.id] *= 0.6;
+      population[r.id] *= 0.45; // a true pestilence carries off a third or more
       const kind = rng.bool() ? "A plague swept" : "A long drought gripped";
       events.push({ year, type: "plague", text: `${kind} ${r.name}; many perished.`, x: r.cx, y: r.cy });
     }
@@ -639,6 +748,7 @@ export function generateSimulation(
     endYear,
     events,
     snapshots,
+    settlementTimeline,
     finalControl: control,
     population,
     realms: summaries,

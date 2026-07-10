@@ -11,6 +11,7 @@
 import { BIOME_NAMES, BIOME_COLORS } from "./engine/biomes.js";
 import { RESOURCE_NAMES, RESOURCE_COLORS } from "./engine/resources.js";
 import { renderPowersAt } from "./engine/render.js";
+import { settlementsAt, ruinedSettlementIds } from "./engine/simulation.js";
                                                           
 
 // Faith tint palette — mirrors FAITH_PALETTE in src/render.ts.
@@ -28,6 +29,10 @@ const worker = new Worker(new URL("./worker.js", import.meta.url), {
 });
 let layerBuffers                             = {};
 let genStart = 0;
+/** Settlements lost to history — never shown on present-day views. */
+let ruinedIds = new Set        ();
+/** While scrubbing the Powers layer, the year the map is showing. */
+let scrubYear                = null;
 
 const SIZE = 384;
 
@@ -89,6 +94,7 @@ function renderPowersFrame(i        )       {
   offscreen.width = w;
   offscreen.height = h;
   offCtx.putImageData(new ImageData(new Uint8ClampedArray(rgba), w, h), 0, 0);
+  scrubYear = snap.year; // so the overlay shows only the towns alive then
   redraw();
   $("yearlabel").textContent = `${snap.year.toLocaleString()} AR`;
 }
@@ -108,6 +114,7 @@ function updateScrubber()       {
   $("scrubber").hidden = !on;
   if (!on) {
     stopPlay();
+    scrubYear = null; // other layers always show the present day
     return;
   }
   const slider = $("timeslider")                    ;
@@ -231,11 +238,34 @@ function drawOverlays()       {
     drawLabel(sx, sy - vfont * 1.15, `Mt. ${v.name}`, color, Math.round(vfont * 0.9));
   }
 
+  // Settlements standing in the year being shown. On other layers that's the
+  // present day; while scrubbing the Powers map, cities appear and vanish.
+  const shownYear = scrubYear ?? current.simulation.endYear;
+  const living = settlementsAt(current.simulation.settlementTimeline, shownYear);
+
+  // The Powers map carries no baked-in town markers, so draw them here — this
+  // is what makes cities visibly rise and fall as the timeline plays.
+  if (activeLayer === "powers") {
+    for (const s of living) {
+      const sx = s.x * view.scale + view.ox;
+      const sy = s.y * view.scale + view.oy;
+      if (!inBounds(sx, sy)) continue;
+      const r = (s.isCapital ? 3.4 : s.tier === "city" ? 2.6 : 1.8) * d;
+      ctx.beginPath();
+      ctx.arc(sx, sy, r, 0, Math.PI * 2);
+      ctx.fillStyle = s.isCapital ? "#ffd24a" : "#fff4dc";
+      ctx.strokeStyle = "rgba(10,12,16,0.9)";
+      ctx.lineWidth = 1.2 * d;
+      ctx.fill();
+      ctx.stroke();
+    }
+  }
+
   // City / capital labels — only when zoomed in enough to avoid clutter.
   const fitScale = canvas.width / current.elevation.width;
   if (view.scale > fitScale * 1.6) {
     const cfont = Math.round(11 * d);
-    for (const s of current.settlements.settlements) {
+    for (const s of living) {
       if (s.tier === "village") continue;
       if (s.tier === "town" && view.scale < fitScale * 2.4) continue;
       const sx = s.x * view.scale + view.ox;
@@ -310,6 +340,7 @@ function nearestSettlement(wx        , wy        , maxCells        )            
   let best                    = null;
   let bestD = maxCells * maxCells;
   for (const s of current.settlements.settlements) {
+    if (ruinedIds.has(s.id)) continue; // a ruin is not a town
     const dx = s.x - wx;
     const dy = s.y - wy;
     const d = dx * dx + dy * dy;
@@ -548,6 +579,7 @@ function renderInfo(world       )       {
     ["Faiths", String(m.faithCount)],
     ["Dominant power", m.dominantPower],
     ["Surviving realms", String(m.survivingRealms)],
+    ["Ruins", String(m.ruinCount)],
     ["Exports", m.majorExports || "—"],
   ];
   $("stats").innerHTML = stats
@@ -620,6 +652,8 @@ worker.onmessage = (e              ) => {
   const ms = Math.round(performance.now() - genStart);
   current = world;
   layerBuffers = layers;
+  ruinedIds = ruinedSettlementIds(world.simulation.settlementTimeline);
+  scrubYear = null;
   renderInfo(world);
   renderOffscreen();
   sizeCanvas();

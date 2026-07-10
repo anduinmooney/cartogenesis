@@ -84,6 +84,8 @@ export const ENGINE_VERSION = "0.12.0";
                      
                           
                         
+                                                           
+                    
                        
                           
                                                              
@@ -314,6 +316,8 @@ export function generateWorld(config             )        {
     faithCount: religion.faiths.length,
     survivingRealms: simulation.survivingRealms,
     dominantPower: dominant?.name ?? "—",
+    ruinCount: simulation.settlementTimeline.filter((s) => s.fellYear !== undefined)
+      .length,
     volcanoCount: volcanoes.length,
     activeVolcanoes: volcanoes.filter((v) => v.status === "active").length,
     maxAltitudeMetres,

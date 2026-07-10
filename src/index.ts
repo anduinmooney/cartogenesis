@@ -104,10 +104,13 @@ export {
 } from "./religion.ts";
 export {
   generateSimulation,
+  settlementsAt,
+  ruinedSettlementIds,
   type SimulationLayer,
   type SimEvent,
   type RealmSummary,
   type ControlSnapshot,
+  type TimedSettlement,
 } from "./simulation.ts";
 export { worldReportMarkdown } from "./report.ts";
 export { worldPosterSVG, type PosterOptions } from "./svgmap.ts";

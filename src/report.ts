@@ -155,8 +155,14 @@ export function worldReportMarkdown(world: World): string {
     ["town", "Towns"],
     ["village", "Villages"],
   ];
+  const timeline = new Map(
+    world.simulation.settlementTimeline.map((t) => [t.id, t]),
+  );
+  const standing = world.settlements.settlements.filter(
+    (s) => timeline.get(s.id)?.fellYear === undefined,
+  );
   for (const [tier, heading] of tiers) {
-    const list = world.settlements.settlements.filter((s) => s.tier === tier);
+    const list = standing.filter((s) => s.tier === tier);
     if (!list.length) continue;
     lines.push(`### ${heading}`);
     lines.push("");
@@ -173,7 +179,27 @@ export function worldReportMarkdown(world: World): string {
       const goods = eco && eco.produces.length
         ? ` — ${eco.produces.map((k) => RESOURCE_NAMES[k]).join(", ")}`
         : "";
-      lines.push(`- ${s.name}${tags ? ` (${tags})` : ""}${goods}`);
+      const founded = timeline.get(s.id)?.foundedYear;
+      const age = founded !== undefined ? ` *(founded ${founded})*` : "";
+      lines.push(`- ${s.name}${tags ? ` (${tags})` : ""}${goods}${age}`);
+    }
+    lines.push("");
+  }
+
+  // Ruins — the settlements history swallowed.
+  const ruins = world.simulation.settlementTimeline
+    .filter((t) => t.fellYear !== undefined)
+    .sort((a, b) => (a.fellYear ?? 0) - (b.fellYear ?? 0));
+  if (ruins.length) {
+    lines.push("## Ruins");
+    lines.push("");
+    lines.push("*Settlements that did not survive to the present day.*");
+    lines.push("");
+    for (const r of ruins) {
+      const how = r.fate === "sacked" ? "stormed and left a ruin" : "abandoned";
+      lines.push(
+        `- **${r.name}** (${r.tier}) — founded ${r.foundedYear}, ${how} in ${r.fellYear}`,
+      );
     }
     lines.push("");
   }

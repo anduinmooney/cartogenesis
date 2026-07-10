@@ -110,26 +110,31 @@
 
 ### Cities
 
-- Stasta (**capital**, port, trade hub, rich) — Livestock, Grain, Fish, Horses
-- Dendomau (port, trade hub, rich) — Grain, Livestock, Wine, Horses
+- Stasta (**capital**, port, trade hub, rich) — Livestock, Grain, Fish, Horses *(founded 100)*
+- Dendomau (port, trade hub, rich) — Grain, Livestock, Wine, Horses *(founded 142)*
 
 ### Towns
 
-- Pauvassoca (modest) — Grain, Livestock, Fish, Horses
-- Stauknafjau (port, rich) — Grain, Stone, Livestock, Timber
-- Qeshqaa (port, prosperous) — Livestock, Timber, Wine, Fish
-- Zadshe (prosperous) — Livestock, Spices, Fish, Horses
+- Pauvassoca (modest) — Grain, Livestock, Fish, Horses *(founded 185)*
+- Stauknafjau (port, rich) — Grain, Stone, Livestock, Timber *(founded 227)*
+- Qeshqaa (port, prosperous) — Livestock, Timber, Wine, Fish *(founded 269)*
+- Zadshe (prosperous) — Livestock, Spices, Fish, Horses *(founded 312)*
 
 ### Villages
 
-- Isa (port, prosperous) — Livestock, Horses
-- Nadenau (prosperous) — Livestock, Horses, Timber
-- Khakha (prosperous) — Livestock, Horses
-- Hrogravavik (port, prosperous) — Grain, Furs, Livestock, Horses
-- Aju (modest) — Livestock, Horses, Fish
-- Shaarai (prosperous) — Livestock, Stone, Iron, Gold
-- Skothodu (port, modest) — Grain, Wine
-- Sasazaiesh (prosperous) — Livestock, Horses, Copper, Stone
+- Nadenau (prosperous) — Livestock, Horses, Timber *(founded 396)*
+- Khakha (prosperous) — Livestock, Horses *(founded 438)*
+- Hrogravavik (port, prosperous) — Grain, Furs, Livestock, Horses *(founded 481)*
+- Aju (modest) — Livestock, Horses, Fish *(founded 523)*
+- Shaarai (prosperous) — Livestock, Stone, Iron, Gold *(founded 565)*
+- Skothodu (port, modest) — Grain, Wine *(founded 608)*
+- Sasazaiesh (prosperous) — Livestock, Horses, Copper, Stone *(founded 650)*
+
+## Ruins
+
+*Settlements that did not survive to the present day.*
+
+- **Isa** (village) — founded 354, stormed and left a ruin in 475
 
 ## Faiths
 
@@ -174,8 +179,8 @@ Followed across 4 region(s).
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Neneo | 100 | 11 | 1000 | 11 | ascendant |
-| Ghizazsha | 100 | 11 | 825 | 9 | ascendant |
+| Neneo | 100 | 13 | 1025 | 13 | ascendant |
+| Ghizazsha | 100 | 10 | 475 | 7 | diminished |
 | Hrofjagard | 100 | 6 | 100 | 0 | extinct |
 
 ## Chronicle
@@ -187,71 +192,71 @@ Followed across 4 region(s).
 - **125 After Reckoning** — The realm of Jaashadma was extinguished.
 - **150 After Reckoning** — Neneo seized Sinilenpia from Seomorrauleo.
 - **150 After Reckoning** — The realm of Seomorrauleo was extinguished.
-- **150 After Reckoning** — Ghizazsha's invasion of Skurnkna was thrown back by Skaugrei.
-- **175 After Reckoning** — Neneo's invasion of Ghuzmama was thrown back by Ghizazsha.
-- **175 After Reckoning** — A golden age dawned over Ghizazsha; its cities flourished as never before.
-- **200 After Reckoning** — Ghizazsha seized Skurnkna from Skaugrei.
-- **200 After Reckoning** — The realm of Skaugrei was extinguished.
+- **150 After Reckoning** — Ghizazsha seized Skurnkna from Skaugrei.
+- **150 After Reckoning** — The realm of Skaugrei was extinguished.
+- **175 After Reckoning** — Neneo's invasion of Thohrauknoheim was thrown back by Hrofjagard.
+- **175 After Reckoning** — Ghizazsha's invasion of Vosthro was thrown back by Hrofjagard.
 - **225 After Reckoning** — Neneo's invasion of Thohrauknoheim was thrown back by Hrofjagard.
+- **225 After Reckoning** — Dausiame turned from the Rite of Cilenvaulensia to the Rite of Marqaa.
 - **250 After Reckoning** — Ghizazsha's invasion of Vosthro was thrown back by Hrofjagard.
-- **250 After Reckoning** — A long drought gripped Khadshekhaa; many perished.
+- **250 After Reckoning** — A long drought gripped Vosthro; many perished.
 - **275 After Reckoning** — Neneo's invasion of Thohrauknoheim was thrown back by Hrofjagard.
 - **275 After Reckoning** — Skaknagard turned from the Cult of Stubabruvik to the Rite of Marqaa.
 - **275 After Reckoning** — A plague swept Jishsaaesh; many perished.
 - **300 After Reckoning** — Ghizazsha's invasion of Vosthro was thrown back by Hrofjagard.
-- **325 After Reckoning** — Neneo's invasion of Thohrauknoheim was thrown back by Hrofjagard.
+- **325 After Reckoning** — Neneo seized Thohrauknoheim from Hrofjagard.
 - **350 After Reckoning** — Ghizazsha's invasion of Vosthro was thrown back by Hrofjagard.
-- **350 After Reckoning** — A golden age dawned over Ghizazsha; its cities flourished as never before.
-- **375 After Reckoning** — Neneo's invasion of Thohrauknoheim was thrown back by Hrofjagard.
-- **375 After Reckoning** — A plague swept Jishsaaesh; many perished.
-- **400 After Reckoning** — Ghizazsha's invasion of Vosthro was thrown back by Hrofjagard.
-- **400 After Reckoning** — A long drought gripped Zazukhju; many perished.
-- **425 After Reckoning** — Neneo's invasion of Thohrauknoheim was thrown back by Hrofjagard.
-- **450 After Reckoning** — Ghizazsha's invasion of Vosthro was thrown back by Hrofjagard.
-- **450 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
-- **475 After Reckoning** — Neneo seized Thohrauknoheim from Hrofjagard.
-- **475 After Reckoning** — Thohrauknoheim rose against Neneo and declared the free realm of Doknolldu.
-- **500 After Reckoning** — Neneo seized Thohrauknoheim from Doknolldu.
-- **500 After Reckoning** — The realm of Doknolldu was extinguished.
-- **500 After Reckoning** — Ghizazsha's invasion of Vosthro was thrown back by Hrofjagard.
-- **525 After Reckoning** — Neneo's invasion of Jaishghiabad was thrown back by Hrofjagard.
-- **525 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
-- **550 After Reckoning** — Ghizazsha seized Vosthro from Hrofjagard.
-- **550 After Reckoning** — Thohrauknoheim rose against Neneo and declared the free realm of Grurkei.
-- **575 After Reckoning** — Neneo seized Thohrauknoheim from Grurkei.
-- **575 After Reckoning** — The realm of Grurkei was extinguished.
-- **575 After Reckoning** — Ghizazsha's invasion of Skaknagard was thrown back by Hrofjagard.
+- **350 After Reckoning** — Neneo seized Jaishghiabad from Hrofjagard.
+- **350 After Reckoning** — Thohrauknoheim rose against Neneo and declared the free realm of Fjundthanfju.
+- **375 After Reckoning** — Neneo seized Thohrauknoheim from Fjundthanfju.
+- **375 After Reckoning** — The realm of Fjundthanfju was extinguished.
+- **375 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
+- **400 After Reckoning** — Ghizazsha seized Vosthro from Hrofjagard.
+- **400 After Reckoning** — Vosthro rose against Ghizazsha and declared the free realm of Theigreigrau.
+- **400 After Reckoning** — A golden age dawned over Hrofjagard; its cities flourished as never before.
+- **425 After Reckoning** — Ghizazsha seized Vosthro from Theigreigrau.
+- **425 After Reckoning** — The realm of Theigreigrau was extinguished.
+- **450 After Reckoning** — Ghizazsha seized Skaknagard from Hrofjagard.
+- **450 After Reckoning** — Neneo's invasion of Ghuzmama was thrown back by Ghizazsha.
+- **475 After Reckoning** — Isa was stormed and left a ruin.
+- **475 After Reckoning** — Ghizazsha seized Jarja from Hrofjagard.
+- **500 After Reckoning** — Ghizazsha's invasion of Hrostska was thrown back by Hrofjagard.
+- **500 After Reckoning** — Neneo's invasion of Ghuzmama was thrown back by Ghizazsha.
+- **500 After Reckoning** — A plague swept Ghuzmama; many perished.
+- **525 After Reckoning** — Jarja rose against Ghizazsha and declared the free realm of Ghanghuabad.
+- **550 After Reckoning** — Ghizazsha seized Hrostska from Hrofjagard.
+- **550 After Reckoning** — The realm of Hrofjagard was extinguished.
+- **575 After Reckoning** — Ghizazsha seized Jarja from Ghanghuabad.
+- **575 After Reckoning** — The realm of Ghanghuabad was extinguished.
+- **575 After Reckoning** — Hrostska rose against Ghizazsha and declared the free realm of Thybrei.
+- **575 After Reckoning** — Jarja rose against Ghizazsha and declared the free realm of Jishseqa.
 - **575 After Reckoning** — A plague swept Aagha; many perished.
-- **600 After Reckoning** — Neneo's invasion of Jaishghiabad was thrown back by Hrofjagard.
-- **625 After Reckoning** — Ghizazsha's invasion of Skaknagard was thrown back by Hrofjagard.
-- **650 After Reckoning** — Neneo's invasion of Jaishghiabad was thrown back by Hrofjagard.
-- **675 After Reckoning** — Ghizazsha's invasion of Skaknagard was thrown back by Hrofjagard.
-- **700 After Reckoning** — Neneo seized Jaishghiabad from Hrofjagard.
-- **700 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
-- **725 After Reckoning** — Ghizazsha seized Skaknagard from Hrofjagard.
-- **750 After Reckoning** — Neneo's invasion of Jarja was thrown back by Hrofjagard.
-- **750 After Reckoning** — Ghizazsha's invasion of Hrostska was thrown back by Hrofjagard.
-- **750 After Reckoning** — A golden age dawned over Ghizazsha; its cities flourished as never before.
-- **800 After Reckoning** — Ghizazsha seized Hrostska from Hrofjagard.
-- **825 After Reckoning** — Neneo seized Jarja from Hrofjagard.
-- **825 After Reckoning** — The realm of Hrofjagard was extinguished.
-- **825 After Reckoning** — Ghizazsha seized Thohrauknoheim from Neneo.
-- **850 After Reckoning** — Neneo's invasion of Ghuzmama was thrown back by Ghizazsha.
-- **850 After Reckoning** — Thohrauknoheim rose against Ghizazsha and declared the free realm of Darnbruvik.
-- **875 After Reckoning** — Ghizazsha seized Thohrauknoheim from Darnbruvik.
-- **875 After Reckoning** — The realm of Darnbruvik was extinguished.
-- **900 After Reckoning** — Neneo's invasion of Thohrauknoheim was thrown back by Ghizazsha.
-- **925 After Reckoning** — A plague swept Hrostska; many perished.
-- **950 After Reckoning** — Neneo seized Thohrauknoheim from Ghizazsha.
-- **950 After Reckoning** — A long drought gripped Vosthro; many perished.
-- **975 After Reckoning** — Neneo seized Ghuzmama from Ghizazsha.
-- **975 After Reckoning** — Ghuzmama rose against Neneo and declared the free realm of Samqa.
+- **600 After Reckoning** — Neneo seized Jarja from Jishseqa.
+- **600 After Reckoning** — The realm of Jishseqa was extinguished.
+- **600 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
+- **625 After Reckoning** — Neneo seized Hrostska from Thybrei.
+- **625 After Reckoning** — The realm of Thybrei was extinguished.
+- **650 After Reckoning** — Neneo's invasion of Ghuzmama was thrown back by Ghizazsha.
+- **675 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
+- **700 After Reckoning** — Neneo's invasion of Ghuzmama was thrown back by Ghizazsha.
+- **700 After Reckoning** — A plague swept Qaishzuur; many perished.
+- **750 After Reckoning** — Neneo seized Ghuzmama from Ghizazsha.
+- **775 After Reckoning** — Neneo's invasion of Skaknagard was thrown back by Ghizazsha.
+- **775 After Reckoning** — Jashaa turned from the Cult of Stubabruvik to the Rite of Marqaa.
+- **775 After Reckoning** — A long drought gripped Khekai; many perished.
+- **800 After Reckoning** — A plague swept Sadqi; many perished.
+- **825 After Reckoning** — Neneo's invasion of Jashaa was thrown back by Ghizazsha.
+- **850 After Reckoning** — A long drought gripped Jashaa; many perished.
+- **875 After Reckoning** — Neneo's invasion of Jashaa was thrown back by Ghizazsha.
+- **900 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
+- **925 After Reckoning** — Neneo's invasion of Jashaa was thrown back by Ghizazsha.
+- **925 After Reckoning** — A plague swept Thohrauknoheim; many perished.
+- **950 After Reckoning** — A plague swept Parabo; many perished.
+- **975 After Reckoning** — Neneo's invasion of Jashaa was thrown back by Ghizazsha.
 - **975 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
-- **1000 After Reckoning** — Neneo seized Ghuzmama from Samqa.
-- **1000 After Reckoning** — The realm of Samqa was extinguished.
-- **1025 After Reckoning** — Neneo's invasion of Jashaa was thrown back by Ghizazsha.
-- **1050 After Reckoning** — A golden age dawned over Neneo; its cities flourished as never before.
-- **1075 After Reckoning** — Neneo's invasion of Skaknagard was thrown back by Ghizazsha.
+- **1025 After Reckoning** — Neneo seized Jashaa from Ghizazsha.
+- **1050 After Reckoning** — Neneo's invasion of Skaknagard was thrown back by Ghizazsha.
+- **1050 After Reckoning** — A plague swept Hrostska; many perished.
 
 ## Heightmap
 

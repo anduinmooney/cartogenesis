@@ -84,6 +84,8 @@ export interface WorldMeta {
   faithCount: number;
   survivingRealms: number;
   dominantPower: string;
+  /** Settlements lost to history (sacked or abandoned). */
+  ruinCount: number;
   volcanoCount: number;
   activeVolcanoes: number;
   /** Metres represented by a normalized elevation of 1.0. */
@@ -314,6 +316,8 @@ export function generateWorld(config: WorldConfig): World {
     faithCount: religion.faiths.length,
     survivingRealms: simulation.survivingRealms,
     dominantPower: dominant?.name ?? "—",
+    ruinCount: simulation.settlementTimeline.filter((s) => s.fellYear !== undefined)
+      .length,
     volcanoCount: volcanoes.length,
     activeVolcanoes: volcanoes.filter((v) => v.status === "active").length,
     maxAltitudeMetres,

@@ -8,6 +8,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { generateWorld } from "../src/world.ts";
+import { ruinedSettlementIds } from "../src/simulation.ts";
 import {
   renderHypsometric,
   renderRelief,
@@ -54,7 +55,8 @@ function main(): void {
     const base = spec.seed.replace(/[^a-z0-9]+/gi, "-").toLowerCase();
     const w = SIZE;
     const h = SIZE;
-    const towns = world.settlements.settlements;
+    const ruined = ruinedSettlementIds(world.simulation.settlementTimeline);
+    const towns = world.settlements.settlements.filter((s) => !ruined.has(s.id));
 
     // Terrain atlas: hypsometric + rivers + roads + settlements.
     const map = renderHypsometric(world.elevation, world.meta.seaLevel, {

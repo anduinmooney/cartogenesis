@@ -9,7 +9,7 @@
 - **Climate & life:** dominant biome **Savanna**, 16 biomes in all
 - **Peoples:** 33 regions, 23 settlements, 3 realms
 - **Capital:** Monadianale, seat of House Osiriano
-- **Dominant power:** Sike (of 6 surviving realm(s))
+- **Dominant power:** Vobica (of 9 surviving realm(s))
 - **The present year:** 1174 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 9 (1 active)
 
@@ -148,35 +148,40 @@
 
 ### Cities
 
-- Monadianale (**capital**, port, trade hub, rich) — Grain, Livestock, Horses, Timber
-- Peonimortia (port, prosperous) — Grain, Livestock, Wine, Horses
-- Khighaa (port, prosperous) — Horses, Wine, Grain, Livestock
+- Monadianale (**capital**, port, trade hub, rich) — Grain, Livestock, Horses, Timber *(founded 100)*
+- Peonimortia (port, prosperous) — Grain, Livestock, Wine, Horses *(founded 125)*
+- Khighaa (port, prosperous) — Horses, Wine, Grain, Livestock *(founded 150)*
 
 ### Towns
 
-- Baurnthy (port, rich) — Livestock, Grain, Timber, Horses
-- Baubryu (port, modest) — Livestock, Grain, Timber, Iron
-- Timaci (port, rich) — Grain, Livestock, Horses, Fish
-- Greillsteia (rich) — Livestock, Grain, Horses, Iron
-- Arghamshi (trade hub, prosperous) — Livestock, Gold, Horses, Wine
-- Momiantebau (port, modest) — Horses, Livestock
-- Lacenaoa (port, modest) — Livestock
+- Baurnthy (port, rich) — Livestock, Grain, Timber, Horses *(founded 175)*
+- Timaci (port, rich) — Grain, Livestock, Horses, Fish *(founded 225)*
+- Greillsteia (rich) — Livestock, Grain, Horses, Iron *(founded 250)*
+- Arghamshi (trade hub, prosperous) — Livestock, Gold, Horses, Wine *(founded 275)*
+- Momiantebau (port, modest) — Horses, Livestock *(founded 300)*
+- Lacenaoa (port, modest) — Livestock *(founded 325)*
 
 ### Villages
 
-- Sermaeesh (port, prosperous) — Livestock, Grain, Fish, Horses
-- Tasipa (port, prosperous) — Grain, Livestock, Horses, Wine
-- Rukha (modest) — Livestock, Timber, Fish, Horses
-- Syileo (port, poor)
-- Resa (port, prosperous) — Livestock, Grain, Fish, Horses
-- Sasimorivento (prosperous) — Livestock, Fish, Grain, Horses
-- Ninteeotauvento (trade hub, prosperous) — Livestock, Wine, Fish, Stone
-- Ghame (prosperous) — Livestock, Fish, Horses
-- Qashmezmai (rich) — Livestock, Stone, Wine, Horses
-- Qaiza (prosperous) — Livestock, Horses, Fish, Timber
-- Reporo (prosperous) — Livestock, Wine, Horses, Grain
-- Greiy (port, prosperous) — Grain, Livestock, Fish, Horses
-- Afjavik (port, prosperous) — Livestock, Grain, Furs, Fish
+- Sermaeesh (port, prosperous) — Livestock, Grain, Fish, Horses *(founded 350)*
+- Tasipa (port, prosperous) — Grain, Livestock, Horses, Wine *(founded 375)*
+- Rukha (modest) — Livestock, Timber, Fish, Horses *(founded 400)*
+- Syileo (port, poor) *(founded 425)*
+- Resa (port, prosperous) — Livestock, Grain, Fish, Horses *(founded 450)*
+- Sasimorivento (prosperous) — Livestock, Fish, Grain, Horses *(founded 475)*
+- Ninteeotauvento (trade hub, prosperous) — Livestock, Wine, Fish, Stone *(founded 500)*
+- Ghame (prosperous) — Livestock, Fish, Horses *(founded 525)*
+- Qashmezmai (rich) — Livestock, Stone, Wine, Horses *(founded 550)*
+- Qaiza (prosperous) — Livestock, Horses, Fish, Timber *(founded 575)*
+- Reporo (prosperous) — Livestock, Wine, Horses, Grain *(founded 600)*
+- Greiy (port, prosperous) — Grain, Livestock, Fish, Horses *(founded 625)*
+
+## Ruins
+
+*Settlements that did not survive to the present day.*
+
+- **Baubryu** (town) — founded 200, stormed and left a ruin in 525
+- **Afjavik** (village) — founded 650, stormed and left a ruin in 700
 
 ## Faiths
 
@@ -226,25 +231,25 @@ Followed across 5 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 6 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 9 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Veriariasau | 100 | 10 | 850 | 8 | ascendant |
-| Vobica | 100 | 10 | 200 | 0 | extinct |
-| Muradu | 100 | 9 | 975 | 8 | ascendant |
-| Sike | 225 | 9 | 650 | 9 | ascendant |
-| Neori | 100 | 4 | 625 | 3 | diminished |
+| Veriariasau | 100 | 13 | 525 | 7 | diminished |
+| Vobica | 100 | 12 | 700 | 8 | diminished |
+| Muradu | 100 | 7 | 175 | 1 | diminished |
+| Neori | 100 | 7 | 975 | 5 | diminished |
+| Urkhinmi | 975 | 4 | 1075 | 4 | ascendant |
 | Raikhza | 100 | 3 | 100 | 3 | ascendant |
-| Masemi | 100 | 3 | 150 | 2 | diminished |
+| Masemi | 100 | 3 | 150 | 0 | extinct |
 | Fjosksty | 100 | 3 | 100 | 0 | extinct |
-| Thano | 900 | 3 | 900 | 0 | extinct |
-| Ghashraikhu | 975 | 3 | 975 | 0 | extinct |
+| Vaknau | 625 | 3 | 625 | 0 | extinct |
+| Skogrthybo | 775 | 3 | 775 | 0 | extinct |
+| Vaurkskeirksto | 925 | 3 | 925 | 0 | extinct |
+| Bogrhreigrei | 1050 | 3 | 1050 | 2 | diminished |
 | Airkhutaabad | 125 | 2 | 125 | 0 | extinct |
-| Kedrinzuabad | 450 | 2 | 450 | 0 | extinct |
-| Quqra | 500 | 2 | 500 | 0 | extinct |
-| Deoriaconavento | 525 | 2 | 525 | 0 | extinct |
-| Vaknau | 625 | 2 | 625 | 0 | extinct |
+| Terekhaa | 1075 | 2 | 1075 | 2 | ascendant |
+| Fjeirkba | 1050 | 1 | 1050 | 1 | ascendant |
 
 ## Chronicle
 
@@ -263,103 +268,108 @@ Followed across 5 region(s).
 - **200 After Reckoning** — The realm of Airkhutaabad was extinguished.
 - **200 After Reckoning** — Veriariasau seized Knausta from Stoa.
 - **200 After Reckoning** — The realm of Stoa was extinguished.
+- **200 After Reckoning** — A plague swept Jetaimai; many perished.
 - **200 After Reckoning** — A golden age dawned over Masemi; its cities flourished as never before.
-- **225 After Reckoning** — Veriariasau's invasion of Askauheim was thrown back by Neori.
-- **225 After Reckoning** — Maamki and 2 neighbouring province(s) broke away from Vobica to found the realm of Sike.
-- **225 After Reckoning** — A golden age dawned over Masemi; its cities flourished as never before.
-- **250 After Reckoning** — Muradu's invasion of Thafjo was thrown back by Vobica.
-- **250 After Reckoning** — A plague swept Vilo; many perished.
-- **275 After Reckoning** — Veriariasau's invasion of Khemazaa was thrown back by Vobica.
-- **300 After Reckoning** — Neori's invasion of Tadaa was thrown back by Masemi.
-- **300 After Reckoning** — Sike's invasion of Eilla was thrown back by Vobica.
-- **325 After Reckoning** — Veriariasau's invasion of Askauheim was thrown back by Neori.
-- **325 After Reckoning** — Muradu's invasion of Thafjo was thrown back by Vobica.
-- **350 After Reckoning** — Neori seized Tadaa from Masemi.
-- **350 After Reckoning** — Sike seized Lalenni from Vobica.
-- **350 After Reckoning** — Tadaa rose against Neori and declared the free realm of Rumzaabad.
-- **375 After Reckoning** — Sike seized Tadaa from Rumzaabad.
-- **375 After Reckoning** — The realm of Rumzaabad was extinguished.
-- **375 After Reckoning** — Veriariasau seized Khemazaa from Vobica.
-- **400 After Reckoning** — Sike seized Eilla from Vobica.
-- **400 After Reckoning** — Muradu seized Thafjo from Vobica.
-- **425 After Reckoning** — Sike seized Hrondthy from Vobica.
-- **425 After Reckoning** — Thafjo rose against Muradu and declared the free realm of Daustygard.
-- **450 After Reckoning** — Veriariasau seized Thafjo from Daustygard.
-- **450 After Reckoning** — The realm of Daustygard was extinguished.
-- **450 After Reckoning** — Sike's invasion of Grogrei was thrown back by Vobica.
-- **450 After Reckoning** — Thafjo rose against Veriariasau and declared the free realm of Gruhra.
-- **450 After Reckoning** — Eilla rose against Sike and declared the free realm of Obrauveigard.
-- **450 After Reckoning** — Khemazaa and 1 neighbouring province(s) broke away from Veriariasau to found the realm of Kedrinzuabad.
-- **450 After Reckoning** — A long drought gripped Iteesh; many perished.
-- **450 After Reckoning** — A golden age dawned over Veriariasau; its cities flourished as never before.
-- **475 After Reckoning** — Muradu seized Thafjo from Gruhra.
-- **475 After Reckoning** — The realm of Gruhra was extinguished.
-- **475 After Reckoning** — Veriariasau seized Jekhaabad from Kedrinzuabad.
-- **500 After Reckoning** — Sike seized Eilla from Obrauveigard.
-- **500 After Reckoning** — The realm of Obrauveigard was extinguished.
-- **500 After Reckoning** — Jetaimai and 1 neighbouring province(s) broke away from Veriariasau to found the realm of Quqra.
-- **500 After Reckoning** — A plague swept Eleillanaeae; many perished.
-- **525 After Reckoning** — Veriariasau seized Khemazaa from Kedrinzuabad.
-- **525 After Reckoning** — The realm of Kedrinzuabad was extinguished.
-- **525 After Reckoning** — Sike seized Voskaheim from Vobica.
-- **525 After Reckoning** — Retentese and 1 neighbouring province(s) broke away from Sike to found the realm of Deoriaconavento.
-- **525 After Reckoning** — Jetaimai turned from the Cult of Qanqa to the Faith of Raramorra.
-- **550 After Reckoning** — Sike seized Grogrei from Vobica.
-- **550 After Reckoning** — The realm of Vobica was extinguished.
-- **550 After Reckoning** — A golden age dawned over Raikhza; its cities flourished as never before.
-- **575 After Reckoning** — Sike seized Retentese from Deoriaconavento.
-- **600 After Reckoning** — Sike's invasion of Tadaa was thrown back by Deoriaconavento.
-- **600 After Reckoning** — A plague swept Eleillanaeae; many perished.
-- **625 After Reckoning** — Neori seized Tadaa from Deoriaconavento.
-- **625 After Reckoning** — The realm of Deoriaconavento was extinguished.
-- **625 After Reckoning** — Ofjygard and 1 neighbouring province(s) broke away from Muradu to found the realm of Vaknau.
+- **225 After Reckoning** — Veriariasau seized Askauheim from Neori.
+- **250 After Reckoning** — Neori's invasion of Tadaa was thrown back by Masemi.
+- **250 After Reckoning** — Veriariasau's invasion of Bohragard was thrown back by Neori.
+- **250 After Reckoning** — A plague swept Iteesh; many perished.
+- **275 After Reckoning** — Masemi's invasion of Panamaupi was thrown back by Neori.
+- **275 After Reckoning** — A plague swept Retentese; many perished.
+- **300 After Reckoning** — Veriariasau seized Iteesh from Muradu.
+- **325 After Reckoning** — Veriariasau seized Ghakhkhiur from Muradu.
+- **325 After Reckoning** — Vobica's invasion of Ofjygard was thrown back by Muradu.
+- **350 After Reckoning** — Veriariasau seized Starnbrondkno from Muradu.
+- **350 After Reckoning** — Ghakhkhiur rose against Veriariasau and declared the free realm of Tumsa.
+- **375 After Reckoning** — Muradu seized Ghakhkhiur from Tumsa.
+- **375 After Reckoning** — The realm of Tumsa was extinguished.
+- **375 After Reckoning** — Veriariasau seized Vilo from Muradu.
+- **375 After Reckoning** — Starnbrondkno rose against Veriariasau and declared the free realm of Graundkneigrbrau.
+- **375 After Reckoning** — A long drought gripped Eilla; many perished.
+- **400 After Reckoning** — Vobica's invasion of Starnbrondkno was thrown back by Graundkneigrbrau.
+- **400 After Reckoning** — Veriariasau seized Ghakhkhiur from Muradu.
+- **400 After Reckoning** — A golden age dawned over Veriariasau; its cities flourished as never before.
+- **425 After Reckoning** — Veriariasau's invasion of Starnbrondkno was thrown back by Graundkneigrbrau.
+- **425 After Reckoning** — Neori seized Tadaa from Masemi.
+- **425 After Reckoning** — A long drought gripped Pimorbia; many perished.
+- **450 After Reckoning** — Vobica seized Starnbrondkno from Graundkneigrbrau.
+- **450 After Reckoning** — The realm of Graundkneigrbrau was extinguished.
+- **450 After Reckoning** — Neori's invasion of Maanmu was thrown back by Masemi.
+- **475 After Reckoning** — Veriariasau seized Ofjygard from Muradu.
+- **500 After Reckoning** — Veriariasau seized Thullgrei from Muradu.
+- **500 After Reckoning** — Thullgrei rose against Veriariasau and declared the free realm of Thytheivik.
+- **525 After Reckoning** — Baubryu was stormed and left a ruin.
+- **525 After Reckoning** — Veriariasau seized Thullgrei from Thytheivik.
+- **525 After Reckoning** — The realm of Thytheivik was extinguished.
+- **550 After Reckoning** — Veriariasau's invasion of Bohragard was thrown back by Neori.
+- **550 After Reckoning** — Neori's invasion of Maanmu was thrown back by Masemi.
+- **550 After Reckoning** — Thullgrei rose against Veriariasau and declared the free realm of Brybrau.
+- **550 After Reckoning** — A plague swept Starnbrondkno; many perished.
+- **575 After Reckoning** — Masemi's invasion of Tadaa was thrown back by Neori.
+- **600 After Reckoning** — Neori's invasion of Maanmu was thrown back by Masemi.
+- **600 After Reckoning** — A plague swept Thullgrei; many perished.
+- **625 After Reckoning** — Veriariasau seized Thullgrei from Brybrau.
+- **625 After Reckoning** — The realm of Brybrau was extinguished.
+- **625 After Reckoning** — Ofjygard and 2 neighbouring province(s) broke away from Veriariasau to found the realm of Vaknau.
 - **625 After Reckoning** — A long drought gripped Elaennimela; many perished.
-- **650 After Reckoning** — Muradu seized Starnbrondkno from Vaknau.
-- **650 After Reckoning** — Sike seized Ofjygard from Vaknau.
-- **650 After Reckoning** — The realm of Vaknau was extinguished.
-- **675 After Reckoning** — Veriariasau seized Jetaimai from Quqra.
-- **675 After Reckoning** — Neori's invasion of Maanmu was thrown back by Masemi.
-- **675 After Reckoning** — Starnbrondkno rose against Muradu and declared the free realm of Hrygrskeigru.
-- **675 After Reckoning** — A long drought gripped Panamaupi; many perished.
-- **700 After Reckoning** — Muradu seized Starnbrondkno from Hrygrskeigru.
-- **700 After Reckoning** — The realm of Hrygrskeigru was extinguished.
-- **725 After Reckoning** — Veriariasau seized Ghashaa from Quqra.
-- **725 After Reckoning** — The realm of Quqra was extinguished.
-- **725 After Reckoning** — A golden age dawned over Raikhza; its cities flourished as never before.
-- **750 After Reckoning** — Veriariasau seized Askauheim from Neori.
-- **775 After Reckoning** — Sike's invasion of Tadaa was thrown back by Neori.
-- **775 After Reckoning** — Veriariasau's invasion of Iteesh was thrown back by Muradu.
-- **800 After Reckoning** — Neori's invasion of Ollalia was thrown back by Masemi.
-- **825 After Reckoning** — Sike's invasion of Tadaa was thrown back by Neori.
-- **825 After Reckoning** — A plague swept Maanmu; many perished.
-- **850 After Reckoning** — Veriariasau seized Tadaa from Neori.
-- **850 After Reckoning** — A long drought gripped Ghakhkhiur; many perished.
-- **875 After Reckoning** — Veriariasau's invasion of Bohragard was thrown back by Neori.
-- **900 After Reckoning** — Sike's invasion of Maanmu was thrown back by Masemi.
-- **900 After Reckoning** — Neori's invasion of Ollalia was thrown back by Masemi.
-- **900 After Reckoning** — Ofjygard and 2 neighbouring province(s) broke away from Sike to found the realm of Thano.
-- **900 After Reckoning** — A plague swept Starnbrondkno; many perished.
-- **925 After Reckoning** — Muradu seized Ofjygard from Thano.
-- **925 After Reckoning** — Veriariasau's invasion of Maanmu was thrown back by Masemi.
-- **950 After Reckoning** — Sike's invasion of Grogrei was thrown back by Thano.
-- **950 After Reckoning** — Muradu seized Voskaheim from Thano.
-- **950 After Reckoning** — Voskaheim rose against Muradu and declared the free realm of Brodeiheim.
-- **950 After Reckoning** — Ranmainqe turned from the Rite of Fjaagard to the Faith of Raramorra.
-- **975 After Reckoning** — Muradu seized Voskaheim from Brodeiheim.
-- **975 After Reckoning** — The realm of Brodeiheim was extinguished.
-- **975 After Reckoning** — Veriariasau's invasion of Bohragard was thrown back by Neori.
-- **975 After Reckoning** — Khemazaa and 2 neighbouring province(s) broke away from Veriariasau to found the realm of Ghashraikhu.
-- **1000 After Reckoning** — Sike seized Grogrei from Thano.
-- **1000 After Reckoning** — The realm of Thano was extinguished.
-- **1000 After Reckoning** — Neori seized Askauheim from Ghashraikhu.
-- **1000 After Reckoning** — Voskaheim rose against Muradu and declared the free realm of Thaundbry.
-- **1025 After Reckoning** — Sike seized Voskaheim from Thaundbry.
-- **1025 After Reckoning** — The realm of Thaundbry was extinguished.
-- **1050 After Reckoning** — Veriariasau seized Khemazaa from Ghashraikhu.
-- **1050 After Reckoning** — Sike seized Tadaa from Ghashraikhu.
-- **1050 After Reckoning** — The realm of Ghashraikhu was extinguished.
-- **1075 After Reckoning** — Veriariasau's invasion of Askauheim was thrown back by Neori.
-- **1075 After Reckoning** — A long drought gripped Ranmainqe; many perished.
+- **650 After Reckoning** — Veriariasau seized Iteesh from Vaknau.
+- **650 After Reckoning** — Vobica's invasion of Ofjygard was thrown back by Vaknau.
+- **650 After Reckoning** — Thullgrei rose against Veriariasau and declared the free realm of Avo.
+- **650 After Reckoning** — Jekhaabad turned from the Rite of Fjaagard to the Faith of Raramorra.
+- **675 After Reckoning** — Veriariasau seized Vilo from Vaknau.
+- **675 After Reckoning** — Neori seized Maanmu from Masemi.
+- **675 After Reckoning** — Vilo rose against Veriariasau and declared the free realm of Paniva.
+- **700 After Reckoning** — Afjavik was stormed and left a ruin.
+- **700 After Reckoning** — Vobica seized Ofjygard from Vaknau.
+- **700 After Reckoning** — The realm of Vaknau was extinguished.
+- **700 After Reckoning** — Veriariasau seized Vilo from Paniva.
+- **700 After Reckoning** — The realm of Paniva was extinguished.
+- **700 After Reckoning** — Iteesh rose against Veriariasau and declared the free realm of Qakhamtai.
+- **700 After Reckoning** — A long drought gripped Voskaheim; many perished.
+- **700 After Reckoning** — A golden age dawned over Veriariasau; its cities flourished as never before.
+- **725 After Reckoning** — Veriariasau seized Thullgrei from Avo.
+- **725 After Reckoning** — The realm of Avo was extinguished.
+- **725 After Reckoning** — Neori's invasion of Ollalia was thrown back by Masemi.
+- **725 After Reckoning** — Thullgrei rose against Veriariasau and declared the free realm of Barkbado.
+- **750 After Reckoning** — Veriariasau seized Thullgrei from Barkbado.
+- **750 After Reckoning** — The realm of Barkbado was extinguished.
+- **750 After Reckoning** — Vilo rose against Veriariasau and declared the free realm of Tandolellasi.
+- **750 After Reckoning** — A golden age dawned over Neori; its cities flourished as never before.
+- **775 After Reckoning** — Veriariasau seized Vilo from Tandolellasi.
+- **775 After Reckoning** — The realm of Tandolellasi was extinguished.
+- **775 After Reckoning** — Neori seized Ollalia from Masemi.
+- **775 After Reckoning** — The realm of Masemi was extinguished.
+- **775 After Reckoning** — Askauheim and 2 neighbouring province(s) broke away from Veriariasau to found the realm of Skogrthybo.
+- **775 After Reckoning** — A golden age dawned over Vobica; its cities flourished as never before.
+- **800 After Reckoning** — Veriariasau seized Iteesh from Qakhamtai.
+- **800 After Reckoning** — The realm of Qakhamtai was extinguished.
+- **825 After Reckoning** — Neori's invasion of Askauheim was thrown back by Skogrthybo.
+- **850 After Reckoning** — Veriariasau's invasion of Askauheim was thrown back by Skogrthybo.
+- **850 After Reckoning** — A golden age dawned over Neori; its cities flourished as never before.
+- **875 After Reckoning** — Neori seized Askauheim from Skogrthybo.
+- **900 After Reckoning** — Veriariasau seized Jekhaabad from Skogrthybo.
+- **900 After Reckoning** — Neori's invasion of Knausta was thrown back by Skogrthybo.
+- **925 After Reckoning** — Jekhaabad rose against Veriariasau and declared the free realm of Zashiesh.
+- **925 After Reckoning** — Ofjygard and 2 neighbouring province(s) broke away from Vobica to found the realm of Vaurkskeirksto.
+- **925 After Reckoning** — A plague swept Ollalia; many perished.
+- **950 After Reckoning** — Vobica's invasion of Voskaheim was thrown back by Vaurkskeirksto.
+- **950 After Reckoning** — A long drought gripped Jekhaabad; many perished.
+- **975 After Reckoning** — Veriariasau seized Jekhaabad from Zashiesh.
+- **975 After Reckoning** — The realm of Zashiesh was extinguished.
+- **975 After Reckoning** — Neori seized Knausta from Skogrthybo.
+- **975 After Reckoning** — The realm of Skogrthybo was extinguished.
+- **975 After Reckoning** — Iteesh and 2 neighbouring province(s) broke away from Veriariasau to found the realm of Urkhinmi.
+- **1000 After Reckoning** — Vobica seized Grogrei from Vaurkskeirksto.
+- **1025 After Reckoning** — Vobica seized Voskaheim from Vaurkskeirksto.
+- **1025 After Reckoning** — A plague swept Voskaheim; many perished.
+- **1050 After Reckoning** — Vobica seized Ofjygard from Vaurkskeirksto.
+- **1050 After Reckoning** — The realm of Vaurkskeirksto was extinguished.
+- **1050 After Reckoning** — Grogrei rose against Vobica and declared the free realm of Fjeirkba.
+- **1050 After Reckoning** — Ofjygard and 2 neighbouring province(s) broke away from Vobica to found the realm of Bogrhreigrei.
+- **1075 After Reckoning** — Vobica's invasion of Grogrei was thrown back by Fjeirkba.
+- **1075 After Reckoning** — Urkhinmi seized Starnbrondkno from Bogrhreigrei.
+- **1075 After Reckoning** — Maanmu and 1 neighbouring province(s) broke away from Neori to found the realm of Terekhaa.
+- **1075 After Reckoning** — A plague swept Retentese; many perished.
 
 ## Heightmap
 

@@ -9,7 +9,7 @@ import { generateHistory } from "../src/history.ts";
 import { generateReligion } from "../src/religion.ts";
 import { generateResources } from "../src/resources.ts";
 import { generateEconomy } from "../src/economy.ts";
-import { generateSimulation } from "../src/simulation.ts";
+import { generateSimulation, settlementsAt } from "../src/simulation.ts";
 
 function build(seed: string, size = 200) {
   const w = generateWorld({ seed, width: size, height: size });
@@ -112,6 +112,61 @@ test("histories vary: not every world collapses into one power", () => {
   assert.ok(
     shares.some((s) => s > 0.6),
     "no world produced a dominant power — wars are too hard to win",
+  );
+});
+
+test("settlement timeline: every town has a sane founding, ruins fall after it", () => {
+  const { w, sim } = build("towns", 200);
+  const tl = sim.settlementTimeline;
+  assert.equal(tl.length, w.settlements.settlements.length, "one entry per settlement");
+
+  for (const t of tl) {
+    assert.ok(
+      t.foundedYear >= sim.startYear && t.foundedYear <= sim.endYear,
+      `${t.name} founded outside the span`,
+    );
+    if (t.fellYear !== undefined) {
+      assert.ok(t.fellYear > t.foundedYear, `${t.name} fell before it was founded`);
+      assert.ok(t.fellYear <= sim.endYear, `${t.name} fell after the present`);
+      assert.ok(["sacked", "abandoned"].includes(t.fate!), "ruin needs a fate");
+    }
+  }
+
+  // The capital always stands — the present-day metadata names it.
+  const capital = tl.find((t) => t.isCapital);
+  assert.ok(capital, "expected a capital in the timeline");
+  assert.equal(capital!.fellYear, undefined, "the capital must survive");
+
+  // Cities grow in over time, and the present day is exactly the survivors.
+  const atStart = settlementsAt(tl, sim.startYear).length;
+  const atEnd = settlementsAt(tl, sim.endYear).length;
+  const survivors = tl.filter((t) => t.fellYear === undefined).length;
+  assert.ok(atStart < atEnd, "no settlements were founded over time");
+  assert.equal(atEnd, survivors, "present day should equal the survivors");
+});
+
+test("no settlement is destroyed in the same year it is founded", () => {
+  // Checked across several worlds: a single seed once hid a town that was
+  // founded and stormed in the very same year.
+  for (const seed of ["vahalia", "gamma", "alpha", "sirius", "pyxis", "orion"]) {
+    const w = generateWorld({ seed, width: 200, height: 200 });
+    for (const t of w.simulation.settlementTimeline) {
+      if (t.fellYear !== undefined) {
+        assert.ok(
+          t.fellYear > t.foundedYear,
+          `${seed}: ${t.name} founded ${t.foundedYear}, fell ${t.fellYear}`,
+        );
+      }
+    }
+  }
+});
+
+test("settlement timeline is deterministic", () => {
+  const a = build("ruins", 180).sim.settlementTimeline;
+  const b = build("ruins", 180).sim.settlementTimeline;
+  assert.deepEqual(
+    a.map((t) => [t.id, t.foundedYear, t.fellYear ?? -1, t.fate ?? ""]),
+    b.map((t) => [t.id, t.foundedYear, t.fellYear ?? -1, t.fate ?? ""]),
   );
 });
 

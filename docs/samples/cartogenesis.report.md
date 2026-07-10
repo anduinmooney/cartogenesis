@@ -154,38 +154,43 @@
 
 ### Cities
 
-- Bee (**capital**, port, trade hub, rich) — Horses, Livestock, Timber, Fish
-- Saaghaa (port, trade hub, rich) — Grain, Fish, Livestock, Wine
-- Iabauti (port, prosperous) — Livestock, Timber, Grain, Fish
-- Siamordeco (port, rich) — Horses, Livestock, Copper, Grain
+- Bee (**capital**, port, trade hub, rich) — Horses, Livestock, Timber, Fish *(founded 100)*
+- Saaghaa (port, trade hub, rich) — Grain, Fish, Livestock, Wine *(founded 122)*
+- Iabauti (port, prosperous) — Livestock, Timber, Grain, Fish *(founded 144)*
+- Siamordeco (port, rich) — Horses, Livestock, Copper, Grain *(founded 166)*
 
 ### Towns
 
-- Tidia (port, rich) — Grain, Livestock, Horses, Wine
-- Tazshi (port, prosperous) — Grain, Livestock, Timber, Wine
-- Naauleno (port, trade hub, rich) — Grain, Livestock, Horses, Wine
-- Libimorti (port, rich) — Grain, Fish, Horses, Livestock
-- Bauno (rich) — Livestock, Grain, Wine, Horses
-- Zaikhakhai (port, prosperous) — Livestock, Timber, Horses
-- Ynbro (port, prosperous) — Grain, Livestock, Horses
-- Jizaqa (port, modest) — Livestock, Horses
+- Tazshi (port, prosperous) — Grain, Livestock, Timber, Wine *(founded 210)*
+- Naauleno (port, trade hub, rich) — Grain, Livestock, Horses, Wine *(founded 232)*
+- Libimorti (port, rich) — Grain, Fish, Horses, Livestock *(founded 254)*
+- Bauno (rich) — Livestock, Grain, Wine, Horses *(founded 276)*
+- Zaikhakhai (port, prosperous) — Livestock, Timber, Horses *(founded 298)*
+- Ynbro (port, prosperous) — Grain, Livestock, Horses *(founded 320)*
+- Jizaqa (port, modest) — Livestock, Horses *(founded 342)*
 
 ### Villages
 
-- Ghazzazqaa (prosperous) — Livestock, Horses, Grain, Wine
-- Maundoteoe (trade hub, rich) — Livestock, Grain, Wine, Horses
-- Maikhaiabad (prosperous) — Livestock, Horses, Spices, Stone
-- Vogrthau (port, prosperous) — Livestock, Fish, Grain
-- Knaustostu (port, prosperous) — Grain, Horses, Timber, Livestock
-- Khinqeur (port, modest) — Livestock, Horses
-- Ua (port, prosperous) — Grain, Livestock, Timber, Furs
-- Neossobau (rich) — Livestock, Stone, Copper, Coal
-- Brallvarkhry (port, prosperous) — Grain, Stone, Livestock
-- Qeshzeraur (modest) — Livestock, Grain, Wine, Horses
-- Grysty (port, modest) — Livestock, Fish, Furs
-- Zese (modest) — Livestock, Stone, Coal
-- Irkeqsu (prosperous) — Wine, Stone, Livestock, Copper
-- Qaidzergha (modest) — Livestock, Stone, Salt, Coal
+- Ghazzazqaa (prosperous) — Livestock, Horses, Grain, Wine *(founded 364)*
+- Maundoteoe (trade hub, rich) — Livestock, Grain, Wine, Horses *(founded 386)*
+- Maikhaiabad (prosperous) — Livestock, Horses, Spices, Stone *(founded 408)*
+- Vogrthau (port, prosperous) — Livestock, Fish, Grain *(founded 430)*
+- Knaustostu (port, prosperous) — Grain, Horses, Timber, Livestock *(founded 452)*
+- Khinqeur (port, modest) — Livestock, Horses *(founded 474)*
+- Ua (port, prosperous) — Grain, Livestock, Timber, Furs *(founded 496)*
+- Neossobau (rich) — Livestock, Stone, Copper, Coal *(founded 518)*
+- Brallvarkhry (port, prosperous) — Grain, Stone, Livestock *(founded 540)*
+- Qeshzeraur (modest) — Livestock, Grain, Wine, Horses *(founded 562)*
+- Zese (modest) — Livestock, Stone, Coal *(founded 606)*
+- Irkeqsu (prosperous) — Wine, Stone, Livestock, Copper *(founded 628)*
+- Qaidzergha (modest) — Livestock, Stone, Salt, Coal *(founded 650)*
+
+## Ruins
+
+*Settlements that did not survive to the present day.*
+
+- **Tidia** (town) — founded 188, stormed and left a ruin in 275
+- **Grysty** (village) — founded 584, stormed and left a ruin in 975
 
 ## Faiths
 
@@ -241,18 +246,17 @@ Followed across 2 region(s).
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Nopa | 100 | 16 | 850 | 13 | ascendant |
-| Sausabi | 100 | 7 | 950 | 7 | ascendant |
-| Dillaaumar | 100 | 6 | 100 | 2 | diminished |
-| Come | 100 | 6 | 1025 | 5 | ascendant |
+| Nopa | 100 | 13 | 1000 | 13 | ascendant |
+| Sausabi | 100 | 8 | 775 | 8 | ascendant |
+| Dillaaumar | 100 | 6 | 100 | 1 | diminished |
+| Come | 100 | 6 | 550 | 5 | ascendant |
 | Judaesh | 100 | 3 | 100 | 0 | extinct |
 | Siriassoro | 100 | 3 | 100 | 0 | extinct |
 | Kazai | 100 | 3 | 100 | 0 | extinct |
-| Skabrauheim | 925 | 3 | 925 | 0 | extinct |
-| Skogro | 1000 | 3 | 1000 | 0 | extinct |
+| Kheje | 550 | 3 | 550 | 0 | extinct |
 | Neivia | 100 | 2 | 100 | 0 | extinct |
 | Thufjei | 125 | 2 | 125 | 0 | extinct |
-| Bondbu | 1075 | 1 | 1075 | 1 | ascendant |
+| Biriadanau | 1075 | 1 | 1075 | 1 | ascendant |
 
 ## Chronicle
 
@@ -274,91 +278,85 @@ Followed across 2 region(s).
 - **225 After Reckoning** — Come's invasion of Ollbyva was thrown back by Neivia.
 - **250 After Reckoning** — Nopa seized Reuabad from Judaesh.
 - **250 After Reckoning** — The realm of Judaesh was extinguished.
-- **275 After Reckoning** — Nopa seized Penalamar from Siriassoro.
-- **275 After Reckoning** — Sausabi seized Zumghaabad from Siriassoro.
+- **275 After Reckoning** — Nopa seized Zumghaabad from Siriassoro.
+- **275 After Reckoning** — Tidia was stormed and left a ruin.
+- **275 After Reckoning** — Sausabi seized Penalamar from Siriassoro.
 - **275 After Reckoning** — The realm of Siriassoro was extinguished.
-- **275 After Reckoning** — Reuabad rose against Nopa and declared the free realm of Mazte.
-- **300 After Reckoning** — Nopa seized Reuabad from Mazte.
-- **300 After Reckoning** — The realm of Mazte was extinguished.
+- **300 After Reckoning** — Sausabi's invasion of Ollbyva was thrown back by Neivia.
 - **300 After Reckoning** — A golden age dawned over Kazai; its cities flourished as never before.
 - **325 After Reckoning** — Come seized Ollbyva from Neivia.
-- **325 After Reckoning** — Reuabad rose against Nopa and declared the free realm of Shaarazke.
-- **325 After Reckoning** — A plague swept Seshudma; many perished.
-- **350 After Reckoning** — Nopa seized Reuabad from Shaarazke.
-- **350 After Reckoning** — The realm of Shaarazke was extinguished.
 - **350 After Reckoning** — Come seized Peotia from Neivia.
 - **350 After Reckoning** — The realm of Neivia was extinguished.
-- **375 After Reckoning** — Nopa seized Hronbeigrogard from Dillaaumar.
-- **375 After Reckoning** — Come seized Thurntha from Kazai.
-- **375 After Reckoning** — Hronbeigrogard rose against Nopa and declared the free realm of Dunddeindfjau.
-- **375 After Reckoning** — A plague swept Imialau; many perished.
-- **400 After Reckoning** — Nopa seized Hronbeigrogard from Dunddeindfjau.
-- **400 After Reckoning** — The realm of Dunddeindfjau was extinguished.
-- **400 After Reckoning** — Peotia rose against Come and declared the free realm of Tecivento.
-- **425 After Reckoning** — Come seized Peotia from Tecivento.
-- **425 After Reckoning** — The realm of Tecivento was extinguished.
-- **425 After Reckoning** — Thurntha rose against Come and declared the free realm of Vaundkna.
-- **425 After Reckoning** — Hronbeigrogard rose against Nopa and declared the free realm of Donhra.
-- **450 After Reckoning** — Nopa seized Thurntha from Vaundkna.
-- **450 After Reckoning** — The realm of Vaundkna was extinguished.
-- **450 After Reckoning** — Dillaaumar seized Hronbeigrogard from Donhra.
-- **450 After Reckoning** — The realm of Donhra was extinguished.
-- **450 After Reckoning** — A plague swept Makha; many perished.
-- **475 After Reckoning** — Nopa seized Hronbeigrogard from Dillaaumar.
-- **475 After Reckoning** — A plague swept Kusene; many perished.
-- **500 After Reckoning** — Nopa's invasion of Seshudma was thrown back by Kazai.
-- **500 After Reckoning** — Come's invasion of Bragrhrei was thrown back by Sausabi.
-- **525 After Reckoning** — Dillaaumar's invasion of Seshudma was thrown back by Kazai.
-- **525 After Reckoning** — A plague swept Makha; many perished.
-- **550 After Reckoning** — Nopa's invasion of Fjonddofju was thrown back by Dillaaumar.
-- **550 After Reckoning** — Come's invasion of Kaza was thrown back by Kazai.
-- **550 After Reckoning** — A long drought gripped Makha; many perished.
-- **550 After Reckoning** — A golden age dawned over Nopa; its cities flourished as never before.
-- **575 After Reckoning** — Dillaaumar's invasion of Seshudma was thrown back by Kazai.
-- **575 After Reckoning** — Kazai's invasion of Fjonddofju was thrown back by Dillaaumar.
-- **575 After Reckoning** — A golden age dawned over Come; its cities flourished as never before.
-- **600 After Reckoning** — Nopa's invasion of Fjonddofju was thrown back by Dillaaumar.
-- **625 After Reckoning** — Come's invasion of Kaza was thrown back by Kazai.
-- **650 After Reckoning** — Nopa's invasion of Fjonddofju was thrown back by Dillaaumar.
-- **650 After Reckoning** — A plague swept Kusene; many perished.
-- **675 After Reckoning** — Come's invasion of Kaza was thrown back by Kazai.
-- **675 After Reckoning** — Dillaaumar's invasion of Seshudma was thrown back by Kazai.
-- **700 After Reckoning** — Nopa seized Fjonddofju from Dillaaumar.
-- **700 After Reckoning** — Sausabi's invasion of Ollbyva was thrown back by Come.
-- **725 After Reckoning** — Come's invasion of Kaza was thrown back by Kazai.
-- **750 After Reckoning** — Nopa's invasion of Seshudma was thrown back by Kazai.
-- **775 After Reckoning** — Come seized Bragrhrei from Sausabi.
+- **350 After Reckoning** — A plague swept Kusene; many perished.
+- **375 After Reckoning** — Nopa's invasion of Thurntha was thrown back by Kazai.
+- **375 After Reckoning** — Dillaaumar's invasion of Seshudma was thrown back by Kazai.
+- **400 After Reckoning** — Come's invasion of Thurntha was thrown back by Kazai.
+- **425 After Reckoning** — Nopa's invasion of Hronbeigrogard was thrown back by Dillaaumar.
+- **425 After Reckoning** — Dillaaumar's invasion of Thurntha was thrown back by Kazai.
+- **450 After Reckoning** — Come's invasion of Kaza was thrown back by Kazai.
+- **450 After Reckoning** — Sausabi's invasion of Ollbyva was thrown back by Come.
+- **475 After Reckoning** — Nopa's invasion of Thurntha was thrown back by Kazai.
+- **500 After Reckoning** — Come seized Kaza from Kazai.
+- **500 After Reckoning** — Penalamar turned from the Rite of Kansha to the Faith of Dogrbavik.
+- **500 After Reckoning** — A long drought gripped Poriabenteda; many perished.
+- **525 After Reckoning** — Nopa seized Thurntha from Kazai.
+- **550 After Reckoning** — Come seized Seshudma from Kazai.
+- **550 After Reckoning** — The realm of Kazai was extinguished.
+- **550 After Reckoning** — Thurntha rose against Nopa and declared the free realm of Branbrei.
+- **550 After Reckoning** — Reuabad and 2 neighbouring province(s) broke away from Nopa to found the realm of Kheje.
+- **575 After Reckoning** — Nopa seized Thurntha from Branbrei.
+- **575 After Reckoning** — The realm of Branbrei was extinguished.
+- **575 After Reckoning** — Sausabi's invasion of Rumjaikhjaa was thrown back by Kheje.
+- **600 After Reckoning** — Nopa seized Makha from Kheje.
+- **600 After Reckoning** — Makha rose against Nopa and declared the free realm of Aai.
+- **600 After Reckoning** — A long drought gripped Thurntha; many perished.
+- **625 After Reckoning** — Nopa seized Rumjaikhjaa from Kheje.
+- **650 After Reckoning** — Nopa seized Reuabad from Kheje.
+- **650 After Reckoning** — The realm of Kheje was extinguished.
+- **650 After Reckoning** — Come's invasion of Fjonddofju was thrown back by Dillaaumar.
+- **650 After Reckoning** — Reuabad turned from the Rite of Kansha to the Faith of Dogrbavik.
+- **675 After Reckoning** — Nopa seized Makha from Aai.
+- **675 After Reckoning** — The realm of Aai was extinguished.
+- **675 After Reckoning** — Reuabad rose against Nopa and declared the free realm of Quma.
+- **675 After Reckoning** — Rumjaikhjaa rose against Nopa and declared the free realm of Kadkhaiiabad.
+- **675 After Reckoning** — A plague swept Docomea; many perished.
+- **700 After Reckoning** — Sausabi seized Rumjaikhjaa from Kadkhaiiabad.
+- **700 After Reckoning** — The realm of Kadkhaiiabad was extinguished.
+- **725 After Reckoning** — Sausabi seized Reuabad from Quma.
+- **725 After Reckoning** — The realm of Quma was extinguished.
+- **725 After Reckoning** — Nopa's invasion of Hronbeigrogard was thrown back by Dillaaumar.
+- **725 After Reckoning** — A golden age dawned over Dillaaumar; its cities flourished as never before.
+- **750 After Reckoning** — Come's invasion of Riipi was thrown back by Dillaaumar.
+- **750 After Reckoning** — Dillaaumar's invasion of Seshudma was thrown back by Come.
+- **750 After Reckoning** — A plague swept Hronbeigrogard; many perished.
+- **775 After Reckoning** — Nopa seized Hronbeigrogard from Dillaaumar.
 - **775 After Reckoning** — Sausabi seized Ollbyva from Come.
-- **800 After Reckoning** — Come seized Kaza from Kazai.
-- **800 After Reckoning** — A plague swept Peotia; many perished.
-- **825 After Reckoning** — Nopa seized Seshudma from Kazai.
-- **825 After Reckoning** — The realm of Kazai was extinguished.
-- **850 After Reckoning** — Nopa seized Kneibrynu from Dillaaumar.
+- **800 After Reckoning** — Nopa seized Fjonddofju from Dillaaumar.
+- **800 After Reckoning** — A long drought gripped Tukhaa; many perished.
+- **825 After Reckoning** — Nopa's invasion of Kneibrynu was thrown back by Dillaaumar.
+- **825 After Reckoning** — A long drought gripped Makha; many perished.
 - **850 After Reckoning** — Come's invasion of Ollbyva was thrown back by Sausabi.
-- **875 After Reckoning** — Nopa's invasion of Riipi was thrown back by Dillaaumar.
-- **875 After Reckoning** — Seshudma rose against Nopa and declared the free realm of Aiartai.
-- **900 After Reckoning** — Come seized Seshudma from Aiartai.
-- **900 After Reckoning** — The realm of Aiartai was extinguished.
-- **900 After Reckoning** — Sausabi seized Bragrhrei from Come.
-- **925 After Reckoning** — Nopa's invasion of Braullau was thrown back by Dillaaumar.
-- **925 After Reckoning** — Come's invasion of Ollbyva was thrown back by Sausabi.
-- **925 After Reckoning** — Thurntha and 2 neighbouring province(s) broke away from Nopa to found the realm of Skabrauheim.
-- **925 After Reckoning** — A golden age dawned over Sausabi; its cities flourished as never before.
-- **950 After Reckoning** — Sausabi seized Broststu from Skabrauheim.
-- **950 After Reckoning** — Dillaaumar seized Fjonddofju from Skabrauheim.
-- **975 After Reckoning** — Come's invasion of Thurntha was thrown back by Skabrauheim.
-- **975 After Reckoning** — Nopa seized Fjonddofju from Dillaaumar.
-- **1000 After Reckoning** — Nopa seized Thurntha from Skabrauheim.
-- **1000 After Reckoning** — The realm of Skabrauheim was extinguished.
-- **1000 After Reckoning** — Dillaaumar's invasion of Seshudma was thrown back by Come.
-- **1000 After Reckoning** — Thurntha and 2 neighbouring province(s) broke away from Nopa to found the realm of Skogro.
-- **1025 After Reckoning** — Nopa seized Fjonddofju from Skogro.
-- **1025 After Reckoning** — Come seized Thurntha from Skogro.
-- **1025 After Reckoning** — A long drought gripped Hronbeigrogard; many perished.
-- **1050 After Reckoning** — Nopa seized Kneibrynu from Skogro.
-- **1050 After Reckoning** — The realm of Skogro was extinguished.
-- **1075 After Reckoning** — Nopa's invasion of Braullau was thrown back by Dillaaumar.
-- **1075 After Reckoning** — Thurntha rose against Come and declared the free realm of Bondbu.
+- **850 After Reckoning** — Sausabi's invasion of Imialau was thrown back by Come.
+- **875 After Reckoning** — Nopa's invasion of Kneibrynu was thrown back by Dillaaumar.
+- **875 After Reckoning** — A golden age dawned over Come; its cities flourished as never before.
+- **900 After Reckoning** — Come's invasion of Riipi was thrown back by Dillaaumar.
+- **925 After Reckoning** — Nopa's invasion of Kneibrynu was thrown back by Dillaaumar.
+- **925 After Reckoning** — Sausabi's invasion of Imialau was thrown back by Come.
+- **925 After Reckoning** — A golden age dawned over Come; its cities flourished as never before.
+- **950 After Reckoning** — Come's invasion of Riipi was thrown back by Dillaaumar.
+- **950 After Reckoning** — A long drought gripped Kneibrynu; many perished.
+- **975 After Reckoning** — Grysty was stormed and left a ruin.
+- **975 After Reckoning** — Nopa seized Kneibrynu from Dillaaumar.
+- **975 After Reckoning** — Kneibrynu rose against Nopa and declared the free realm of Knaullhraugryvik.
+- **1000 After Reckoning** — Nopa seized Kneibrynu from Knaullhraugryvik.
+- **1000 After Reckoning** — The realm of Knaullhraugryvik was extinguished.
+- **1000 After Reckoning** — Come's invasion of Riipi was thrown back by Dillaaumar.
+- **1025 After Reckoning** — Nopa's invasion of Riipi was thrown back by Dillaaumar.
+- **1050 After Reckoning** — Come's invasion of Riipi was thrown back by Dillaaumar.
+- **1050 After Reckoning** — A golden age dawned over Come; its cities flourished as never before.
+- **1075 After Reckoning** — Nopa seized Riipi from Dillaaumar.
+- **1075 After Reckoning** — Sausabi's invasion of Zumghaabad was thrown back by Nopa.
+- **1075 After Reckoning** — Riipi rose against Nopa and declared the free realm of Biriadanau.
 
 ## Heightmap
 

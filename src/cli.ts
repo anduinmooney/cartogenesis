@@ -17,6 +17,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { generateWorld, worldToJSON, type WorldConfig } from "./world.ts";
+import { ruinedSettlementIds } from "./simulation.ts";
 import {
   renderHypsometric,
   renderGrayscale,
@@ -100,7 +101,8 @@ function runGenerate(opts: CliOptions): void {
   mkdirSync(opts.out, { recursive: true });
   const W = world.elevation.width;
   const H = world.elevation.height;
-  const towns = world.settlements.settlements;
+  const ruined = ruinedSettlementIds(world.simulation.settlementTimeline);
+  const towns = world.settlements.settlements.filter((s) => !ruined.has(s.id));
 
   // Terrain atlas: hypsometric + rivers + roads + settlements.
   const mapPixels = renderHypsometric(world.elevation, world.meta.seaLevel, {
