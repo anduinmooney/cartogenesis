@@ -58,6 +58,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **Deeper volcanic terrain.** Calderas that cradle crater lakes, and lava
   fields that active volcanoes bleed down their flanks (Session 17). Still open:
   seamount arcs, per-region metre-accurate contour intervals.
+- ✅ **Language contact.** Conquest layers place-names — the conquered land keeps
+  its old land-word, the ruler renames the fort (Session 18). A pure overlay:
+  the simulation fingerprint is unchanged (D-024).
 - ✅ **L9 — Settlements.** Habitability scoring → cities/towns/ports + a capital.
 - ✅ **L10 — Roads & trade.** Least-cost Dijkstra + Kruskal MST road network.
 - ✅ **L11 — History.** Realms, wars, disasters, golden ages — a dated chronicle.

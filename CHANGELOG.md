@@ -8,6 +8,45 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 18 — 2026-07-10 — Language contact: conquered towns wear both names
+
+**Theme:** Phase 4 of the overhaul, and the single biggest authored-feel win the
+lexicon (S15) unlocked. Real toponymy layers — *Istanbul* is a Greek name worn
+down under Turkish rule — and now the map does too.
+
+### The feature
+When a realm holds a region of a **different culture** for three turns, that
+region's towns are renamed: the **land-word survives in the conquered people's
+tongue**, the **settlement-word is re-said in the ruler's**. Kesh `Khaimghekh`
+(*stone-gate*) under Auld rule becomes `Khaimdund` — the Kesh root for stone, the
+Auld word for a haven.
+- New `composeLayered(fromLang, toLang, concepts, rng)` in `language.ts` keeps the
+  native modifier root and draws the head from the ruler's lexicon (usually a word
+  of their administration — fort, hall, gate).
+- The simulation tracks per-region foreign-hold duration from its deterministic
+  `control` state and composes with a **private `Rng` keyed by (settlementId,
+  turn)** — it never draws from the sim's own stream. `Settlement` gains
+  `formerNames[]`; `world.ts` applies the renamings after the sim, so the map,
+  gazetteer, and hover all show the new name while remembering the old.
+- Surfaced three ways: the detail card ("formerly Stagrdund … renamed under
+  foreign rule c. 550 AR"), the settlement list, and a dedicated gazetteer
+  section **"Names remade by conquest"**.
+
+### Determinism — a clean proof
+Because the renaming is pure overlay (deterministic control state + a private
+RNG), **all three golden fingerprints are byte-identical** to Session 17
+(`36d22822` / `3ea66d76` / `ca005385`), and a test pins them to prove it. This is
+the same guarantee S15 established for base naming: names never perturb the
+simulation. (D-024.)
+
+### Verification
+Language contact fires in all 20 sampled worlds. Live: the detail card and the
+gazetteer both show the remade names; no console errors. **188 tests** (5 new).
+Phase 3 leftovers (seamount arcs, contour intervals) and Phase 5 (islets,
+benchmark, README) remain queued.
+
+---
+
 ## Session 17 — 2026-07-10 — Deeper terrain: calderas, crater lakes, and lava
 
 **Theme:** the overhaul continues (Session 16 landed 3 of 5 phases). This is

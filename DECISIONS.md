@@ -6,6 +6,34 @@ old one — the history is the point.
 
 ---
 
+## D-024 — Language contact is a cosmetic overlay, not part of the simulation (2026-07-10, Session 18)
+**Decision:** Conquest renames towns, but the renaming reads the simulation's
+deterministic `control` state and composes each new name with a **private `Rng`
+keyed by (settlementId, turn)** — never the simulation's own stream. The
+renamings are returned as a separate `SimulationLayer.renamings` list and applied
+to `Settlement` objects by `world.ts` *after* the sim; they are **not** pushed
+into the `events` array.
+
+**Why:** the simulation fingerprint (`simulationHash`) is computed from realm
+arcs, dated events, and settlement fates — the *structure* of history. Names are
+not structure. Keeping the renaming out of the sim's RNG stream and out of
+`events` means the fingerprint is byte-identical whether or not the feature
+exists, which is both a correctness guarantee (naming can never accidentally
+change who conquers whom) and a cheap, strong test: pin the three fingerprints
+and they must not move. This mirrors D-021/S15 — names live downstream of the
+world, never upstream.
+
+**Rejected:** pushing "contact" events into the chronicle. It would enrich the
+timeline but move `simulationHash`, forfeiting the clean proof. The gazetteer's
+"Names remade by conquest" section gives the same visibility without touching the
+fingerprint.
+
+**Consequence:** if a future change *does* want conquest to alter history (e.g. a
+renamed town's morale), that is a real simulation change and must own its
+fingerprint update — do not sneak it through the naming path.
+
+---
+
 ## D-023 — Water and lava are injected into their layers post-hoc, not classified (2026-07-10, Session 17)
 **Decision:** Crater lakes and lava fields are added by dedicated passes
 (`fillCraterLakes`, `traceLavaFields`) that mutate `water.lakeMask` /
