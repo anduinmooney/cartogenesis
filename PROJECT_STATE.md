@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 18 · 2026-07-10
+- **As of:** Session 19 · 2026-07-10
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 188 tests pass (CI enforced). **Reproducible across
+- **Health:** 🟢 Green. 190 tests pass (CI enforced). **Reproducible across
   Node builds and platforms** — the engine uses only exactly-specified
   arithmetic, guarded by an exact bit-level hash (D-022 resolved, Session 16).
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
@@ -40,8 +40,9 @@
   Markdown gazetteer with an emergent chronicle.
 - **Real volcanoes** (named, active/dormant/extinct) that carry geology: a big
   one may collapse into a **caldera** cradling a **crater lake**, and an active
-  one bleeds **lava fields** (a basalt biome nobody settles on) down its flanks.
-  Plus **real 16-bit heightmap exports** (PNG + raw `.r16`) for 3D tools;
+  one bleeds **lava fields** (a basalt biome nobody settles on) down its flanks,
+  and some chain into **island arcs**. Plus **real 16-bit heightmap exports**
+  (PNG + raw `.r16`) for 3D tools;
   elevation in metres.
 - An **interactive** in-browser generator (`docs/app/`) that generates in a **Web
   Worker** (no UI freeze): pan, zoom, hover to inspect (incl. resource deposits +
@@ -60,7 +61,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 188 passing tests, incl. exact + simulation determinism guards, an
+- 190 passing tests, incl. exact + simulation determinism guards, an
   approximated-math lint, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
@@ -89,13 +90,14 @@
 | Exact cross-engine determinism (D-022) | ✅ done |
 | Deeper terrain: calderas · crater lakes · lava fields | ✅ done |
 | Language contact (conquest layers place-names) | ✅ done |
-| seamount arcs · contour intervals · islets · more | 🔜 the world keeps deepening |
+| Seamount arcs (volcano chains) | ✅ done |
+| contour intervals · islets · benchmark · README | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 188 tests, all offline
+npm test                  # 190 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)

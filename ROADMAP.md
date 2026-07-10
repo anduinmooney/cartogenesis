@@ -56,8 +56,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   arithmetic (`src/exact.ts`), guarded by a bit-level hash and a simulation
   fingerprint — same seed, same world, on any conforming engine (Session 16, D-022).
 - ✅ **Deeper volcanic terrain.** Calderas that cradle crater lakes, and lava
-  fields that active volcanoes bleed down their flanks (Session 17). Still open:
-  seamount arcs, per-region metre-accurate contour intervals.
+  fields that active volcanoes bleed down their flanks (Session 17), and island
+  arcs — volcano chains along a curved line (Session 19). Still open: per-region
+  metre-accurate contour intervals.
 - ✅ **Language contact.** Conquest layers place-names — the conquered land keeps
   its old land-word, the ruler renames the fort (Session 18). A pure overlay:
   the simulation fingerprint is unchanged (D-024).

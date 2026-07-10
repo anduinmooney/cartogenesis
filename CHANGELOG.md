@@ -8,6 +8,37 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 19 — 2026-07-10 — A close bug, and seamount arcs
+
+### Fix: the gazetteer popup wouldn't close (user-reported)
+`#gazovl { display: flex }` is an ID selector, so it overrode the UA stylesheet's
+`[hidden] { display: none }`. `closeGazetteer()` set `.hidden = true`, but the
+element stayed `display: flex` and visible — no close path (✕, backdrop, Escape)
+could hide it. Fixed with a higher-specificity `#gazovl[hidden] { display: none }`.
+The **time scrubber had the identical latent bug** (`#scrubber { display: flex }`
+toggled via `.hidden`), so it stayed on the screen on non-Powers layers; fixed the
+same way. Both verified live.
+
+### Seamount arcs
+`addVolcanoes` placed every cone independently, so volcanoes scattered. Now a
+placed cone has a 35% chance of seeding an **island arc**: a chain that steps
+along a gently curved line, dropping 2–4 more cones of the same system, crossing
+shallow water and re-emerging like a real seamount chain.
+- Refactored the inline build into a `buildCone()` closure shared by single
+  placement and arcs. Direction and per-step bend use rejection sampling +
+  renormalisation — **no trig**, so the arithmetic stays exact (D-022).
+- Arc members carry a shared `arcId`; the gazetteer notes "one of an island arc"
+  and counts the systems.
+- Verified in Node: arcs form in 19/20 worlds and are near-perfect lines (max
+  perpendicular residual < 0.05 of the chain span; test asserts < 0.2). Terrain
+  changed → all three fingerprints regenerated (`61e751b3` / `c59c1726` /
+  `c38f5de3`); 30-seed balance unchanged (mean 60%). **190 tests** (2 new).
+
+Remaining overhaul tail: metre-accurate contour intervals, and cleanup (islets,
+benchmark, README).
+
+---
+
 ## Session 18 — 2026-07-10 — Language contact: conquered towns wear both names
 
 **Theme:** Phase 4 of the overhaul, and the single biggest authored-feel win the

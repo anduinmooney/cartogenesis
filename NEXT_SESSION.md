@@ -1,16 +1,16 @@
-# Next Session — Session 19
+# Next Session — Session 20
 
 > Read `PROJECT_STATE.md` first, then this. The multi-session overhaul (Sessions
-> 16–18) has landed exact arithmetic, the in-app gazetteer, client exports,
-> deeper volcanic terrain, and language contact. What remains is the tail:
-> two small terrain touches and a cleanup pass. Pick the one that appeals; each
-> stands alone.
+> 16–19) has landed exact arithmetic, the in-app gazetteer, client exports,
+> deeper volcanic terrain (calderas, crater lakes, lava, island arcs), and
+> language contact. What remains is the tail: one small rendering touch and a
+> cleanup pass. Each stands alone.
 
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm green **before** changing anything (baseline: **188**).
-3. Skim `CHANGELOG.md` (top, Session 18) and `DECISIONS.md` (D-022 resolved,
+2. `npm test` → confirm green **before** changing anything (baseline: **190**).
+3. Skim `CHANGELOG.md` (top, Session 19) and `DECISIONS.md` (D-022 resolved,
    D-023 post-hoc injection, D-024 language-contact-is-overlay).
 4. Preview: `node scripts/serve-docs.ts` → `/` (atlas) and `/app/` (live).
 5. **After any `src/` change, rerun `node scripts/build-web.ts`.** New engine
@@ -42,23 +42,7 @@
 
 ---
 
-# Option A — Seamount arcs (terrain; changes fingerprints)
-
-`addVolcanoes` places each volcano independently. Real volcanism clusters along
-plate boundaries into **island arcs**. Add: with some probability, place a
-*chain* — pick an origin and a tangent direction, walk it with jitter, drop 3–6
-cones along the line (reuse the existing cone/caldera builder per cone).
-- **No trig** — sample the direction as a unit-ish vector by rejection (see
-  `traceLavaFields`'s `rimPoint`), so the arithmetic stays exact.
-- Changes elevation → regenerate the three fingerprints + samples.
-- **Test:** an arc's cones are roughly collinear (fit a line, assert low
-  residual); arcs don't overlap the map edge.
-
-**Commit:** `Seamount arcs: volcanoes that chain like island arcs`
-
----
-
-# Option B — Metre-accurate contour intervals (rendering only; no fingerprints)
+# Option A — Metre-accurate contour intervals (rendering only; no fingerprints)
 
 `renderContours` uses a uniform interval. Make it **metre-aware**: choose a
 round interval (e.g. 100/250/500 m) from the world's actual relief, and label a
@@ -71,7 +55,7 @@ world-state change and no fingerprint move** — easy to verify and safe.
 
 ---
 
-# Option C — Cleanup: islets, a benchmark, an honest README
+# Option B — Cleanup: islets, a benchmark, an honest README
 
 - **Islets** (changes fingerprints — it alters the region set): single-cell
   islands become their own 1-cell "regions" and clutter every gazetteer. Merge
@@ -91,17 +75,18 @@ world-state change and no fingerprint move** — easy to verify and safe.
 
 ## Recommended order
 
-**B → A → C.** B is safe and quick (rendering only). A is a satisfying terrain
-win. C's README and benchmark are safe; the islets merge is the one heavy item
-(regenerates everything) — do it deliberately or leave it. Do not start a piece
-without budget to finish AND verify it.
+**A → B.** A (contours) is safe and quick — rendering only, no fingerprints. B's
+README and benchmark are safe; the islets merge is the one heavy item (it
+regenerates every world) — do it deliberately or leave it. Do not start a piece
+without budget to finish AND verify it. The overhaul is essentially delivered;
+this is polish and honesty, so quality over quantity.
 
 ## Close out (do not skip)
 
 1. `node scripts/build-web.ts`; `node scripts/make-samples.ts`. Update golden
    fingerprints only if terrain/sim changed — and note *which* moved, it tells
    you how far the change reached.
-2. Update `CHANGELOG.md` (Session 19), `PROJECT_STATE.md`, `ROADMAP.md`,
+2. Update `CHANGELOG.md` (Session 20), `PROJECT_STATE.md`, `ROADMAP.md`,
    `DECISIONS.md` if warranted, and rewrite this file.
 3. Commit per piece and push; confirm CI green **on CI's Node** and verify the
    live app on a FRESH preview (resize to 1280×860 first).
