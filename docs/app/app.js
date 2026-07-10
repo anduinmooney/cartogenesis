@@ -655,12 +655,6 @@ function renderInfo(world       )       {
 
   renderLanguages(world);
 
-  // Entity tooltips in the sidebar as well: the same names that are live in
-  // the gazetteer are live in the annals list and the features list.
-  currentEntities = entityIndex(world);
-  linkifyPlaces($("chronicle"), currentEntities);
-  linkifyPlaces($("features"), currentEntities);
-
   // The emergent chronicle from the simulation (the world's real history).
   // Each entry is clickable — it flies the map to where the event happened.
   $("chronicle").innerHTML = world.simulation.events
@@ -670,6 +664,13 @@ function renderInfo(world       )       {
         `<span class="yr">${e.year} AR</span> ${escapeHtml(e.text)}</li>`,
     )
     .join("");
+
+  // Entity tooltips in the sidebar as well: the same names that are live in
+  // the gazetteer are live in the annals list and the features list. This must
+  // run AFTER the lists' innerHTML is set — assignment wipes the spans.
+  currentEntities = entityIndex(world);
+  linkifyPlaces($("chronicle"), currentEntities);
+  linkifyPlaces($("features"), currentEntities);
 }
 
 /** A legend keyed to the active thematic layer (resources / biomes / faiths). */
