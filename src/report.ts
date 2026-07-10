@@ -75,9 +75,20 @@ export function worldReportMarkdown(world: World): string {
           ? ", **caldera** cradling a crater lake"
           : ", a collapsed **caldera**"
         : "";
+      const arc = v.arcId !== undefined ? ", one of an island arc" : "";
       lines.push(
         `- **Mount ${v.name}** — *${glossPhrase(v.gloss)}* — ${v.type}, ${v.status}, ` +
-          `summit ${metres.toLocaleString()} m${form}`,
+          `summit ${metres.toLocaleString()} m${form}${arc}`,
+      );
+    }
+    const arcCount = new Set(
+      world.volcanoes.filter((v) => v.arcId !== undefined).map((v) => v.arcId),
+    ).size;
+    if (arcCount > 0) {
+      lines.push("");
+      lines.push(
+        `*${arcCount} of the volcanic system${arcCount > 1 ? "s form island arcs" : " forms an island arc"}` +
+          ` — chains of cones strung along a line, as they rise over a moving plate.*`,
       );
     }
     const lavaCells = world.biomes.counts[Biome.LavaField] ?? 0;

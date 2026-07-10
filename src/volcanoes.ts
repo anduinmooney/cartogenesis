@@ -37,6 +37,11 @@ export interface Volcano {
    * by `fillCraterLakes`).
    */
   caldera?: { rimRadius: number; lakeLevel?: number };
+  /**
+   * If set, this volcano belongs to a seamount arc — a chain of cones sharing
+   * this id, placed along a curved line the way real island arcs form.
+   */
+  arcId?: number;
 }
 
 export interface VolcanoConfig {
@@ -106,48 +111,44 @@ export function addVolcanoes(
   // so without an avoid-set a world happily ends up with three Mt. Brogravras.
   const usedNames = new Set<string>();
   let attempts = 0;
+  let nextArcId = 0;
   const maxAttempts = count * 300;
 
-  while (placed.length < count && attempts < maxAttempts) {
-    attempts++;
-    const c = land[rng.int(0, land.length)];
-    const cx = c % width;
-    const cy = (c / width) | 0;
-    const type = pickType(rng);
-    const shape = SHAPES[type];
-    const radius = shape.radiusBase * scale * (0.8 + rng.next() * 0.5);
-
-    // Keep volcanoes clear of the map edge and of each other.
-    if (cx < radius || cy < radius || cx > width - radius || cy > height - radius) continue;
-    let clear = true;
+  // A candidate centre is clear if it is off the edge and not overlapping a
+  // volcano already placed.
+  const clearOf = (cx: number, cy: number, radius: number): boolean => {
+    if (cx < radius || cy < radius || cx > width - radius || cy > height - radius) return false;
     for (const v of placed) {
-      const dx = v.x - cx;
-      const dy = v.y - cy;
-      if (Math.sqrt(dx * dx + dy * dy) < (v.radius + radius) * 0.85) {
-        clear = false;
-        break;
-      }
+      if (dist(v.x - cx, v.y - cy) < (v.radius + radius) * 0.85) return false;
     }
-    if (!clear) continue;
+    return true;
+  };
 
+  // Build one cone (or caldera) at a cleared centre and record it. Draws rng in
+  // a fixed order, so callers stay deterministic.
+  const buildCone = (
+    cx: number,
+    cy: number,
+    type: VolcanoType,
+    radius: number,
+    arcId?: number,
+  ): void => {
+    const shape = SHAPES[type];
     const amp = shape.amp * (0.85 + rng.next() * 0.3);
 
-    // A big stratovolcano or shield may have blown its top: instead of a peaked
-    // summit it gets a wide, flat-floored caldera ringed by a steep rim. Cinder
-    // cones are too small; a caldera needs room.
+    // A big stratovolcano or shield may have blown its top into a wide, flat-
+    // floored caldera. Cinder cones are too small to.
     const calderaEligible = type !== "cinder cone" && radius >= 20 * scale;
     const isCaldera = calderaEligible && rng.next() < 0.5;
 
     const baseCenter = data[cy * width + cx];
     let caldera: { rimRadius: number; lakeLevel?: number } | undefined;
 
-    // Geometry shared by both profiles.
     const craterR = radius * shape.craterFrac;
     const craterDepth = amp * shape.craterDepthFrac;
-    // Caldera: rim about halfway out, a flat floor sitting low, a steep wall.
     const rimRadius = radius * (0.5 + rng.next() * 0.12);
     const floorRadius = rimRadius * 0.72;
-    const floorAdd = amp * (0.26 + rng.next() * 0.12); // floor height above base
+    const floorAdd = amp * (0.26 + rng.next() * 0.12);
     const smoothstep = (u: number) => u * u * (3 - 2 * u);
 
     const x0 = Math.max(0, Math.floor(cx - radius));
@@ -159,24 +160,24 @@ export function addVolcanoes(
       for (let x = x0; x <= x1; x++) {
         const dx = x - cx;
         const dy = y - cy;
-        const r = Math.sqrt(dx * dx + dy * dy);
+        const r = dist(dx, dy);
         if (r >= radius) continue;
         let add: number;
         if (isCaldera) {
           if (r >= rimRadius) {
-            const t = (radius - r) / (radius - rimRadius); // 0 outer → 1 at rim
+            const t = (radius - r) / (radius - rimRadius);
             add = amp * powExact(t, shape.flankExp);
           } else if (r >= floorRadius) {
-            const u = (r - floorRadius) / (rimRadius - floorRadius); // floor→rim
+            const u = (r - floorRadius) / (rimRadius - floorRadius);
             add = floorAdd + (amp - floorAdd) * smoothstep(u);
           } else {
-            add = floorAdd; // flat caldera floor
+            add = floorAdd;
           }
         } else if (r >= craterR) {
-          const t = (radius - r) / (radius - craterR); // 0 at rim-outer → 1 at crater rim
+          const t = (radius - r) / (radius - craterR);
           add = amp * powExact(t, shape.flankExp);
         } else {
-          const t = r / craterR; // 0 center → 1 crater rim
+          const t = r / craterR;
           add = amp - craterDepth * (1 - t * t);
         }
         const i = y * width + x;
@@ -189,8 +190,6 @@ export function addVolcanoes(
     if (isCaldera) {
       const floorAbs = Math.min(1, baseCenter + floorAdd);
       const rimAbs = Math.min(1, baseCenter + amp);
-      // Most calderas above the sea hold a lake — the payoff. A few stay dry
-      // (arid, or drained through a breached rim).
       const holdsLake = floorAbs >= cfg.seaLevel && rng.next() < 0.68;
       const lakeLevel = holdsLake
         ? floorAbs + (rimAbs - floorAbs) * (0.4 + rng.next() * 0.25)
@@ -198,22 +197,85 @@ export function addVolcanoes(
       caldera = { rimRadius, lakeLevel };
     }
 
+    const named = composeName(lang, new Rng(`${cfg.seed}:volcano:${placed.length}`), {
+      kind: "volcano",
+      avoid: usedNames,
+    });
     placed.push({
       x: cx,
       y: cy,
       radius,
       type,
-      ...(() => {
-        const c = composeName(lang, new Rng(`${cfg.seed}:volcano:${placed.length}`), {
-          kind: "volcano",
-          avoid: usedNames,
-        });
-        return { name: c.name, gloss: c.gloss };
-      })(),
+      name: named.name,
+      gloss: named.gloss,
       status: pickStatus(rng),
       summit,
       caldera,
+      arcId,
     });
+  };
+
+  // A unit direction, sampled by rejection so the arithmetic stays exact (no trig).
+  const unitDir = (): [number, number] => {
+    for (let k = 0; k < 32; k++) {
+      const ax = rng.float(-1, 1);
+      const ay = rng.float(-1, 1);
+      const m = dist(ax, ay);
+      if (m >= 0.5 && m <= 1) return [ax / m, ay / m];
+    }
+    return [1, 0];
+  };
+
+  while (placed.length < count && attempts < maxAttempts) {
+    attempts++;
+    const c = land[rng.int(0, land.length)];
+    const cx = c % width;
+    const cy = (c / width) | 0;
+    const type = pickType(rng);
+    const radius = SHAPES[type].radiusBase * scale * (0.8 + rng.next() * 0.5);
+    if (!clearOf(cx, cy, radius)) continue;
+    buildCone(cx, cy, type, radius);
+
+    // Real volcanism clusters along plate boundaries into island arcs. With some
+    // chance this cone seeds a chain: step along a curved line, dropping more
+    // cones of the same system where they emerge onto clear land. The line may
+    // cross shallow water — the arc keeps going and re-emerges, the way a real
+    // seamount chain does.
+    if (placed.length < count && rng.next() < 0.35) {
+      const arcId = nextArcId++;
+      placed[placed.length - 1].arcId = arcId; // the seed cone opens its own arc
+      let [dx, dy] = unitDir();
+      let px = cx;
+      let py = cy;
+      let misses = 0;
+      const arcLen = 2 + rng.int(0, 3); // 2–4 further cones
+      for (let s = 0; s < arcLen + 3 && placed.length < count && misses < 4; s++) {
+        const r2 = SHAPES[type].radiusBase * scale * (0.7 + rng.next() * 0.5);
+        const gap = (radius + r2) * (0.9 + rng.next() * 0.25);
+        // Curve the arc: rotate the step direction a little each cone (a small
+        // perpendicular nudge, renormalised — still trig-free).
+        const bend = rng.float(-0.28, 0.28);
+        const ndx = dx - dy * bend;
+        const ndy = dy + dx * bend;
+        const m = dist(ndx, ndy) || 1;
+        dx = ndx / m;
+        dy = ndy / m;
+        px += dx * gap;
+        py += dy * gap;
+        const icx = Math.round(px);
+        const icy = Math.round(py);
+        if (icx < 0 || icy < 0 || icx >= width || icy >= height) break;
+        if (data[icy * width + icx] < cfg.seaLevel || !clearOf(icx, icy, r2)) {
+          misses++;
+          continue; // underwater or blocked — the chain continues past it
+        }
+        buildCone(icx, icy, type, r2, arcId);
+      }
+      // A lone seed with no chain cone isn't an arc; drop the marker.
+      if (placed.filter((v) => v.arcId === arcId).length < 2) {
+        placed[placed.length - 1].arcId = undefined;
+      }
+    }
   }
 
   return { elevation: out, volcanoes: placed };

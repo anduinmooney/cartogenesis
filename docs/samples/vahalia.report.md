@@ -5,27 +5,29 @@
 ## Overview
 
 - **Extent:** 360 × 360 cells
-- **Land / ocean:** 57.2% land, 42.7% ocean, 3 lake(s)
+- **Land / ocean:** 56.9% land, 43.0% ocean, 4 lake(s)
 - **Climate & life:** dominant biome **Savanna**, 17 biomes in all
-- **Peoples:** 30 regions, 23 settlements, 3 realms
+- **Peoples:** 32 regions, 23 settlements, 3 realms
 - **Capital:** Deociamor, seat of House Variatindo
-- **Dominant power:** Rairkaasi (of 9 surviving realm(s))
+- **Dominant power:** Jaqe (of 5 surviving realm(s))
 - **The present year:** 1100 After Reckoning
-- **Highest peak:** 4,500 m · **volcanoes:** 9 (4 active)
+- **Highest peak:** 4,500 m · **volcanoes:** 9 (5 active)
 
 ## Volcanoes
 
 - **Mount Thygrasturn** — *the fire cliff* — stratovolcano, active, summit 4,500 m
-- **Mount Dohrei** — *the black hill* — shield, active, summit 4,500 m
-- **Mount Brograbry** — *the dread stone* — stratovolcano, extinct, summit 4,500 m, a collapsed **caldera**
-- **Mount Dobry** — *the black stone* — stratovolcano, dormant, summit 4,500 m
-- **Mount Vuhrei** — *the ash hill* — shield, dormant, summit 4,500 m, a collapsed **caldera**
-- **Mount Thathosturn** — *the dark cliff* — stratovolcano, active, summit 4,400 m
-- **Mount Thathohrei** — *the dark hill* — shield, active, summit 3,849 m, **caldera** cradling a crater lake
-- **Mount Thathobra** — *the dark mountain* — cinder cone, dormant, summit 3,008 m
-- **Mount Vynhrei** — *the old hill* — cinder cone, extinct, summit 2,533 m
+- **Mount Vynhrei** — *the old hill* — stratovolcano, extinct, summit 4,500 m, one of an island arc
+- **Mount Thathohrei** — *the dark hill* — stratovolcano, active, summit 4,500 m, **caldera** cradling a crater lake, one of an island arc
+- **Mount Brograbry** — *the dread stone* — stratovolcano, active, summit 4,500 m, a collapsed **caldera**
+- **Mount Thathobra** — *the dark mountain* — stratovolcano, active, summit 4,500 m, **caldera** cradling a crater lake
+- **Mount Vuhrei** — *the ash hill* — stratovolcano, dormant, summit 4,500 m
+- **Mount Dohrei** — *the black hill* — cinder cone, dormant, summit 3,710 m
+- **Mount Thathosturn** — *the dark cliff* — cinder cone, dormant, summit 3,667 m
+- **Mount Dobry** — *the black stone* — cinder cone, active, summit 1,912 m
 
-*Fresh lava fields streak the flanks of the living peaks — 159 cells of cooled basalt where nothing grows and no one builds.*
+*1 of the volcanic system forms an island arc — chains of cones strung along a line, as they rise over a moving plate.*
+
+*Fresh lava fields streak the flanks of the living peaks — 86 cells of cooled basalt where nothing grows and no one builds.*
 
 ## Notable features
 
@@ -37,66 +39,68 @@
 
 | Region | Meaning | Culture | Area | Dominant biome | Coast |
 |--------|---------|---------|-----:|----------------|:-----:|
-| Skakno | *the cold land* | Auld (northern) | 4526 | Tundra | yes |
-| Khirghen | *the sea land* | Kesh (desert) | 4126 | Savanna | yes |
-| Brathaurn | *the mountain grass* | Auld (northern) | 4050 | Alpine | — |
-| Qumid | *the red grass* | Kesh (desert) | 3805 | Desert | yes |
-| Brasturn | *the mountain cliff* | Auld (northern) | 3621 | Cold Desert | — |
-| Khirkai | *the sea spring* | Kesh (desert) | 3452 | Savanna | yes |
-| Brahrei | *the mountain hill* | Auld (northern) | 3368 | Snow | — |
-| Khirmid | *the sea grass* | Kesh (desert) | 3195 | Savanna | yes |
-| Bradaurk | *the mountain folk* | Auld (northern) | 3050 | Snow | — |
-| Brabry | *the mountain stone* | Auld (northern) | 2857 | Snow | — |
-| Rairghen | *the gold land* | Kesh (desert) | 2707 | Savanna | yes |
-| Knyrkagra | *the wild thorn* | Auld (northern) | 2682 | Shrubland | yes |
-| Senabinte | *the thorn folk* | Meridian (southern) | 2594 | Shrubland | — |
-| Stagrahrei | *the sea hill* | Auld (northern) | 2384 | Tundra | yes |
-| Stagrabry | *the sea stone* | Auld (northern) | 2271 | Shrubland | yes |
-| Deobinte | *the sea folk* | Meridian (southern) | 2067 | Grassland | yes |
-| Beossoveolla | *the mountain wood* | Meridian (southern) | 2044 | Alpine | — |
-| Staunbry | *the ice stone* | Auld (northern) | 2003 | Snow | — |
-| Deocina | *the sea hill* | Meridian (southern) | 1987 | Grassland | yes |
-| Deoriando | *the sea vale* | Meridian (southern) | 1980 | Grassland | yes |
-| Peonaneosso | *the grass stone* | Meridian (southern) | 1975 | Grassland | — |
-| Khirshaa | *the sea folk* | Kesh (desert) | 1921 | Savanna | yes |
-| Stagrbei | *the sea wood* | Auld (northern) | 1846 | Tundra | yes |
-| Shinghen | *the wild land* | Kesh (desert) | 1792 | Savanna | yes |
-| Khirzujikh | *the sea isle* | Kesh (desert) | 1776 | Savanna | yes |
-| Beossocina | *the mountain hill* | Meridian (southern) | 1565 | Snow | — |
-| Deocaria | *the sea land* | Meridian (southern) | 1395 | Grassland | yes |
-| Thaurnasturn | *the grass cliff* | Auld (northern) | 1384 | Shrubland | yes |
-| Peonacaria | *the grass land* | Meridian (southern) | 48 | Grassland | yes |
-| Beisturn | *the wood cliff* | Auld (northern) | 1 | Taiga | yes |
+| Mairkhidku | *the mountain hill* | Kesh (desert) | 4000 | Temperate Desert | — |
+| Braba | *the mountain spring* | Auld (northern) | 3988 | Snow | yes |
+| Rairshid | *the gold thorn* | Kesh (desert) | 3728 | Savanna | yes |
+| Brabei | *the mountain wood* | Auld (northern) | 3652 | Grassland | yes |
+| Khirghen | *the sea land* | Kesh (desert) | 3553 | Savanna | yes |
+| Brastausk | *the mountain isle* | Auld (northern) | 3331 | Tundra | yes |
+| Khirmid | *the sea grass* | Kesh (desert) | 3284 | Savanna | yes |
+| Brakno | *the mountain land* | Auld (northern) | 3216 | Cold Desert | — |
+| Mairmid | *the mountain grass* | Kesh (desert) | 3183 | Temperate Desert | — |
+| Khirzash | *the sea vale* | Kesh (desert) | 3175 | Desert | yes |
+| Khirshaa | *the sea folk* | Kesh (desert) | 3120 | Savanna | yes |
+| Brabry | *the mountain stone* | Auld (northern) | 3109 | Cold Desert | — |
+| Brahrei | *the mountain hill* | Auld (northern) | 3101 | Alpine | — |
+| Mairsham | *the mountain cliff* | Kesh (desert) | 3091 | Savanna | — |
+| Stagrabry | *the sea stone* | Auld (northern) | 2755 | Tundra | yes |
+| Khirkai | *the sea spring* | Kesh (desert) | 2720 | Savanna | yes |
+| Midkhaim | *the grass stone* | Kesh (desert) | 2596 | Savanna | — |
+| Stagraknaurk | *the sea sand* | Auld (northern) | 2454 | Tundra | yes |
+| Shinmid | *the wild grass* | Kesh (desert) | 2397 | Savanna | yes |
+| Khirkhukha | *the sea field* | Kesh (desert) | 2332 | Savanna | yes |
+| Stagrba | *the sea spring* | Auld (northern) | 1630 | Tundra | yes |
+| Peonacaria | *the grass land* | Meridian (southern) | 1454 | Grassland | yes |
+| Khirkhaim | *the sea stone* | Kesh (desert) | 1335 | Savanna | yes |
+| Stagrdaurk | *the sea folk* | Auld (northern) | 1321 | Tundra | yes |
+| Shinghen | *the wild land* | Kesh (desert) | 1253 | Savanna | yes |
+| Khirkhajez | *the sea wood* | Kesh (desert) | 1040 | Savanna | yes |
+| Storkafjan | *the white field* | Auld (northern) | 833 | Snow | yes |
+| Niantecaria | *the green land* | Meridian (southern) | 775 | Grassland | yes |
+| Peonabinte | *the grass folk* | Meridian (southern) | 50 | Grassland | yes |
+| Beikno | *the wood land* | Auld (northern) | 1 | Taiga | yes |
+| Melatheo | *the wood cliff* | Sylvan (woodland) | 1 | Tropical Rainforest | — |
+| Syaeenil | *the sea marsh* | Sylvan (woodland) | 1 | Temperate Rainforest | yes |
 
-- Skakno is a coast of frozen barrens, its folk hardy and sea-wise.
-- Khirghen is a coast of golden savanna, its people caravan-traders and readers of stars.
-- Brathaurn is an inland reach of bare grey peaks, its folk hardy and sea-wise.
-- Qumid is a coast of sun-scoured dunes, its people caravan-traders and readers of stars.
-- Brasturn is an inland reach of cold, stony flats, its folk hardy and sea-wise.
-- Khirkai is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirghekh.
-- Brahrei is an inland reach of snowbound heights, its folk hardy and sea-wise.
+- Mairkhidku is an inland reach of dry basin country, its people caravan-traders and readers of stars.
+- Braba is a coast of snowbound heights, its folk hardy and sea-wise.
+- Rairshid is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Shinqe.
+- Brabei is a coast of rolling grassland, its folk hardy and sea-wise, seat of Stagrba.
+- Khirghen is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirghekh.
+- Brastausk is a coast of frozen barrens, its folk hardy and sea-wise.
 - Khirmid is a coast of golden savanna, its people caravan-traders and readers of stars.
-- Bradaurk is an inland reach of snowbound heights, its folk hardy and sea-wise.
-- Brabry is an inland reach of snowbound heights, its folk hardy and sea-wise.
-- Rairghen is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Shinkad.
-- Knyrkagra is a coast of windswept scrub, its folk hardy and sea-wise, seat of Hrafjysk.
-- Senabinte is an inland reach of windswept scrub, a country of vineyards and old stone towns.
-- Stagrahrei is a coast of frozen barrens, its folk hardy and sea-wise, seat of Stagrafjysk.
-- Stagrabry is a coast of windswept scrub, its folk hardy and sea-wise, seat of Thaurnagrull.
-- Deobinte is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deotelen.
-- Beossoveolla is an inland reach of bare grey peaks, a country of vineyards and old stone towns.
-- Staunbry is an inland reach of snowbound heights, its folk hardy and sea-wise.
-- Deocina is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Panatelen.
-- Deoriando is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deociamor.
-- Peonaneosso is an inland reach of rolling grassland, a country of vineyards and old stone towns.
-- Khirshaa is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Ghashzaa.
-- Stagrbei is a coast of frozen barrens, its folk hardy and sea-wise.
-- Shinghen is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Rairqe.
-- Khirzujikh is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Ghashashu.
-- Beossocina is an inland reach of snowbound heights, a country of vineyards and old stone towns.
-- Deocaria is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Peonaciamor.
-- Thaurnasturn is a coast of windswept scrub, its folk hardy and sea-wise, seat of Hrathu.
-- Peonacaria is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Peonanelen.
+- Brakno is an inland reach of cold, stony flats, its folk hardy and sea-wise.
+- Mairmid is an inland reach of dry basin country, its people caravan-traders and readers of stars.
+- Khirzash is a coast of sun-scoured dunes, its people caravan-traders and readers of stars.
+- Khirshaa is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirkai.
+- Brabry is an inland reach of cold, stony flats, its folk hardy and sea-wise.
+- Brahrei is an inland reach of bare grey peaks, its folk hardy and sea-wise.
+- Mairsham is an inland reach of golden savanna, its people caravan-traders and readers of stars.
+- Stagrabry is a coast of frozen barrens, its folk hardy and sea-wise, seat of Knyrkathu.
+- Khirkai is a coast of golden savanna, its people caravan-traders and readers of stars.
+- Midkhaim is an inland reach of golden savanna, its people caravan-traders and readers of stars.
+- Stagraknaurk is a coast of frozen barrens, its folk hardy and sea-wise, seat of Thaurndund.
+- Shinmid is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Ghashkai.
+- Khirkhukha is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirqe.
+- Stagrba is a coast of frozen barrens, its folk hardy and sea-wise.
+- Peonacaria is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Panatelen.
+- Khirkhaim is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khiriz.
+- Stagrdaurk is a coast of frozen barrens, its folk hardy and sea-wise.
+- Shinghen is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirzaa.
+- Khirkhajez is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Midqe.
+- Storkafjan is a coast of snowbound heights, its folk hardy and sea-wise, seat of Stagrathu.
+- Niantecaria is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deociamor.
+- Peonabinte is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deotomor.
 
 ## Ruling houses
 
@@ -104,43 +108,43 @@
 
 *Variatindo, the wild blood; Mantebinte, the white folk.*
 
-- **62–81** Semoran Variatindo
-- **82–95** Belenir Variatindo
-- **96–112** Riandan Variatindo the Pious
-- **113–135** Dorian Variatindo
+- **60–79** Semoran Variatindo
+- **80–93** Belenir Variatindo
+- **94–110** Riandan Variatindo the Pious
+- **111–133** Dorian Variatindo
 - *… 30 rulers over the intervening years …*
-- **1012–1026** Varian Variatindo
-- **1027–1058** Lariai Variatindo
-- **1059–1075** Veollir Variatindo the Conqueror
-- **1076–1100** Niantan Variatindo *(reigning)*
+- **1010–1024** Varian Variatindo
+- **1025–1056** Lariai Variatindo
+- **1057–1073** Veollir Variatindo the Conqueror
+- **1074–1100** Niantan Variatindo *(reigning)*
 
 ### House Manteneosso — realm of Peoriana
 
 *Manteneosso, the white stone; Peoriana, the bright king.*
 
-- **80–103** Neossir Manteneosso the Golden
-- **104–138** Panai Manteneosso
-- **139–157** Saunan Manteneosso
-- **158–183** Peonir Manteneosso
+- **85–108** Neossir Manteneosso the Golden
+- **109–143** Panai Manteneosso
+- **144–162** Saunan Manteneosso
+- **163–188** Peonir Manteneosso
 - *… 31 rulers over the intervening years …*
-- **1012–1037** Belenai Manteneosso
-- **1038–1067** Semoran Manteneosso
-- **1068–1092** Larian Manteneosso
-- **1093–1100** Tarir Manteneosso *(reigning)*
+- **1017–1042** Belenai Manteneosso
+- **1043–1072** Semoran Manteneosso
+- **1073–1097** Larian Manteneosso
+- **1098–1100** Tarir Manteneosso *(reigning)*
 
 ### House Shaimsaid — realm of Rairkaasi
 
 *Shaimsaid, the dark blood; Rairkaasi, the gold war.*
 
-- **96–135** Midan Shaimsaid
-- **136–156** Mishan Shaimsaid the Pious
-- **157–178** Shaimai Shaimsaid the Learned
-- **179–195** Khajezai Shaimsaid the Golden
+- **87–126** Midan Shaimsaid
+- **127–147** Mishan Shaimsaid the Pious
+- **148–169** Shaimai Shaimsaid the Learned
+- **170–186** Khajezai Shaimsaid the Golden
 - *… 30 rulers over the intervening years …*
-- **1018–1036** Midan Shaimsaid the Grim
-- **1037–1052** Kaarai Shaimsaid
-- **1053–1084** Saghan Shaimsaid
-- **1085–1100** Shidan Shaimsaid *(reigning)*
+- **1009–1027** Midan Shaimsaid the Grim
+- **1028–1043** Kaarai Shaimsaid
+- **1044–1075** Saghan Shaimsaid
+- **1076–1100** Shidan Shaimsaid *(reigning)*
 
 ## Notable figures
 
@@ -153,94 +157,95 @@
 
 ### Cities
 
-- **Deociamor**, *the sea gate* (**capital**, port, trade hub, rich) — Livestock, Grain, Horses *(founded 100)*
-- **Panakad**, *the field haven* (prosperous) — Grain, Livestock, Stone *(founded 125)* — formerly **Panatelen**, before conquest remade the name
-- **Khirghekh**, *the sea gate* (port, rich) — Livestock, Grain, Timber, Horses *(founded 150)*
+- **Deociamor**, *the sea gate* (**capital**, port, trade hub, rich) — Livestock, Grain, Wine, Fish *(founded 100)*
+- **Panatelen**, *the field market* (port, trade hub, rich) — Horses, Grain, Livestock, Wine *(founded 125)*
+- **Khirghekh**, *the sea gate* (port, prosperous) — Grain, Wine, Horses, Livestock *(founded 150)*
 
 ### Towns
 
-- **Deotelen**, *the sea market* (port, rich) — Grain, Livestock, Fish, Horses *(founded 175)*
-- **Shinkad**, *the wild haven* (port, prosperous) — Livestock, Fish, Horses *(founded 200)*
-- **Hrafjysk**, *the river home* (prosperous) — Livestock, Grain, Furs, Horses *(founded 225)*
-- **Peonaciamor**, *the grass gate* (port, rich) — Livestock, Grain, Spices, Fish *(founded 250)*
-- **Deotomor**, *the sea fort* (port, prosperous) — Horses, Livestock *(founded 275)*
-- **Peonanelen**, *the grass bridge* (port, modest) — Grain, Livestock *(founded 300)*
-- **Khirshu**, *the sea fort* (port, trade hub, rich) — Livestock, Fish, Horses, Grain *(founded 325)*
+- **Thaurnciamor**, *the grass gate* (rich) — Livestock, Grain, Stone, Gold *(founded 200)* — formerly **Thaurndund**, before conquest remade the name
+- **Khirqe**, *the sea home* (port, modest) — Fish, Livestock *(founded 225)*
+- **Midghekh**, *the grass gate* (port, prosperous) — Livestock, Fish *(founded 250)*
+- **Deotomor**, *the sea fort* (port, poor) *(founded 275)*
+- **Peonaciamor**, *the grass gate* (port, rich) — Grain, Livestock, Fish, Iron *(founded 300)*
+- **Khirshu**, *the sea fort* (port, modest) — Wine, Grain, Livestock, Horses *(founded 325)*
 
 ### Villages
 
-- **Hrademor**, *the river home* (port, prosperous) — Grain, Fish, Livestock, Iron *(founded 350)* — formerly **Hrathu**, before conquest remade the name
-- **Panademor**, *the field home* (rich) — Livestock, Grain, Horses, Wine *(founded 375)*
-- **Deoshu**, *the sea fort* (port, prosperous) — Livestock, Grain *(founded 400)* — formerly **Deonelen**, before conquest remade the name
-- **Belladinte**, *the river spring* (prosperous) — Livestock, Grain, Wine, Horses *(founded 425)*
-- **Ghashtomor**, *the river fort* (prosperous) — Livestock, Horses *(founded 450)* — formerly **Ghashzaa**, before conquest remade the name
-- **Midshu**, *the grass fort* (port, rich) — Livestock, Iron, Coal, Stone *(founded 475)*
-- **Bellanelen**, *the river bridge* (trade hub, rich) — Grain, Stone, Horses, Livestock *(founded 500)*
-- **Stagrba**, *the sea spring* (port, rich) — Grain, Livestock, Fish, Horses *(founded 525)*
-- **Rairshu**, *the gold fort* (rich) — Livestock, Wine, Copper, Grain *(founded 550)*
-- **Thaurntomor**, *the grass fort* (port, prosperous) — Livestock, Coal, Fish, Grain *(founded 575)* — formerly **Thaurnagrull**, before conquest remade the name
-- **Rairciamor**, *the gold gate* (rich) — Livestock, Horses, Iron, Grain *(founded 600)* — formerly **Rairqe**, before conquest remade the name
-- **Ghashtomor**, *the river fort* (prosperous) — Livestock, Horses *(founded 625)* — formerly **Ghashashu**, before conquest remade the name
+- **Hraciamor**, *the river gate* (port, prosperous) — Livestock, Fish, Grain, Horses *(founded 350)* — formerly **Hrathu**, before conquest remade the name
+- **Shinliria**, *the wild haven* (rich) — Livestock, Horses, Grain, Wine *(founded 375)* — formerly **Shinqe**, before conquest remade the name
+- **Stagrciamor**, *the sea gate* (port, prosperous) — Grain, Fish, Gems, Horses *(founded 400)* — formerly **Stagrathu**, before conquest remade the name
+- **Ghashkai**, *the river spring* (trade hub, rich) — Livestock, Horses, Timber *(founded 425)*
+- **Khirtomor**, *the sea fort* (port, prosperous) — Horses, Livestock, Grain, Fish *(founded 450)* — formerly **Khirzaa**, before conquest remade the name
+- **Midshu**, *the grass fort* (prosperous) — Livestock, Horses, Grain *(founded 475)*
+- **Khirkai**, *the sea spring* (port, prosperous) — Livestock, Fish, Horses *(founded 500)*
+- **Stagrtomor**, *the sea fort* (port, rich) — Fish, Grain, Livestock, Stone *(founded 525)* — formerly **Stagrba**, before conquest remade the name
+- **Knyrkmakh**, *the wild hall* (port, prosperous) — Grain, Horses, Livestock *(founded 550)* — formerly **Knyrkathu**, before conquest remade the name
+- **Shinzaa**, *the wild bridge* (prosperous) — Livestock, Grain, Horses *(founded 575)*
+- **Vonciamor**, *the green gate* (rich) — Livestock, Grain, Wine, Horses *(founded 600)* — formerly **Vonfjysk**, before conquest remade the name
+- **Rairtomor**, *the gold fort* (port, prosperous) — Livestock *(founded 625)* — formerly **Rairkhukha**, before conquest remade the name
+- **Midqe**, *the grass home* (port, prosperous) — Livestock, Horses, Stone *(founded 650)*
 
 ## Ruins
 
 *Settlements that did not survive to the present day.*
 
-- **Stagrafjysk** (village) — founded 650, stormed and left a ruin in 875
+- **Khiriz** (town) — founded 175, stormed and left a ruin in 375
 
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Ghashzaa** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Stagrafjysk** → **Stagrlamor** *(the sea hall)* — Auld (northern) land under Meridian (southern) rule, c. 150
-- **Hrathu** → **Hrademor** *(the river home)* — Auld (northern) land under Meridian (southern) rule, c. 150
-- **Rairqe** → **Rairciamor** *(the gold gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Ghashashu** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Thaurnagrull** → **Thaurntomor** *(the grass fort)* — Auld (northern) land under Meridian (southern) rule, c. 150
-- **Panatelen** → **Panakad** *(the field haven)* — Meridian (southern) land under Kesh (desert) rule, c. 1050
-- **Deonelen** → **Deoshu** *(the sea fort)* — Meridian (southern) land under Kesh (desert) rule, c. 1050
+- **Knyrkathu** → **Knyrkmakh** *(the wild hall)* — Auld (northern) land under Kesh (desert) rule, c. 150
+- **Stagrba** → **Stagrtomor** *(the sea fort)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Vonfjysk** → **Vonciamor** *(the green gate)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Shinqe** → **Shinliria** *(the wild haven)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Rairkhukha** → **Rairtomor** *(the gold fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Stagrathu** → **Stagrciamor** *(the sea gate)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Khirzaa** → **Khirtomor** *(the sea fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Thaurndund** → **Thaurnciamor** *(the grass gate)* — Auld (northern) land under Meridian (southern) rule, c. 275
+- **Hrathu** → **Hraciamor** *(the river gate)* — Auld (northern) land under Meridian (southern) rule, c. 275
 
 ## Faiths
 
-### the Cult of Vaveillvoll — Vaveillvoll, god of the Sun
+### the Cult of Vaghazazizam — Vaghazazizam, god of the Sun
 
-*Vaveillvoll: the sky storm.*
+*Vaghazazizam: the sky storm.*
 
-> Each dawn Vaveillvoll drives the sun over Dobra; the people of Skakno greet it with fire.
+> Each dawn Vaghazazizam drives the sun over Dobra; the people of Mairkhidku greet it with fire.
 
-Followed across 10 region(s).
+Followed across 19 region(s).
 
-### the Rite of Vaghisaaghaza — Vaghisaaghaza, god of the Hearth
+### the Rite of Vakneirkveill — Vakneirkveill, god of the Hearth
 
-*Vaghisaaghaza: the dusk sky.*
+*Vakneirkveill: the dusk sky.*
 
-> Vaghisaaghaza lit the first hearth in Khirghen, and its flame has never since gone out.
+> Vakneirkveill lit the first hearth in Braba, and its flame has never since gone out.
 
-Followed across 7 region(s).
+Followed across 9 region(s).
 
 ### the Faith of Varaullacomor — Varaullacomor, god of the Storm
 
 *Varaullacomor: the moon fire.*
 
-> Varaullacomor rides the storms down the Mishkai, and Senabinte both fears and blesses the rain.
-
-Followed across 10 region(s).
-
-### the Rite of Vaskyvastall — Vaskyvastall, god of the Harvest
-
-*Vaskyvastall: the wind king.*
-
-> Vaskyvastall scattered the first seed across Brathaurn; the golden fields were the gift, and the tithe the price.
+> Varaullacomor rides the storms down the Mishkai, and Peonacaria both fears and blesses the rain.
 
 Followed across 3 region(s).
 
+### the Rite of Vananalia — Vananalia, god of the Harvest
+
+*Vananalia: the wind king.*
+
+> Vananalia scattered the first seed across Melatheo; the golden fields were the gift, and the tithe the price.
+
+Followed across 1 region(s).
+
 ## Resources & trade
 
-- **Major exports:** Livestock, Grain, Horses, Fish, Iron
-- **Wealthiest settlement:** Deociamor
-- **Trade hubs:** Deociamor, Khirshu, Bellanelen
-- **Deposits:** Iron ×42, Copper ×29, Gold ×16, Gems ×10, Stone ×73, Coal ×26, Timber ×5, Grain ×30, Livestock ×132, Fish ×15, Furs ×17, Spices ×1, Salt ×17, Horses ×41, Wine ×13
+- **Major exports:** Livestock, Grain, Horses, Fish, Wine
+- **Wealthiest settlement:** Panatelen
+- **Trade hubs:** Deociamor, Panatelen, Ghashkai
+- **Deposits:** Iron ×32, Copper ×23, Gold ×10, Gems ×6, Stone ×64, Coal ×26, Timber ×4, Grain ×32, Livestock ×142, Fish ×15, Furs ×19, Spices ×1, Salt ×21, Horses ×49, Wine ×14
 
 ## Languages
 
@@ -248,191 +253,128 @@ Followed across 3 region(s).
 
 ### Kesh (desert)
 
-*Spoken in Khirghen, Qumid, Khirkai.*
+*Spoken in Mairkhidku, Rairshid, Khirghen.*
 
 **kan** water · **khir** sea · **ghash** river · **takish** lake · **kai** spring · **khaim** stone · **mair** mountain · **khidku** hill · **khukha** field · **zash** vale · **zujikh** isle · **sham** cliff · **khash** marsh · **ghen** land · **khajez** wood · **qa** tree · **shid** thorn · **mid** grass · **zajiq** fire · **zair** ash · **kash** ice · **rarer** sand · **kaz** salt · **mish** iron · **rair** gold · **ja** high · **qish** deep · **shaim** dark · **me** bright · **kaar** old · **ki** new · **qu** red · **kheq** white · **ran** black · **ghush** green · **tu** cold · **shin** wild · **shu** fort · **makh** hall · **ghekh** gate · **zaa** bridge · **kad** haven · **qe** home · **riz** market · **shaa** folk · **maad** king · **said** blood · **kaasi** war · **taitan** peace · **ju** holy · **qidka** dread · **ghair** dawn · **ghisaa** dusk · **sagha** star · **shad** moon · **ghim** sun · **ghaza** sky · **rikhaa** wind · **zizam** storm
 
 ### Auld (northern)
 
-*Spoken in Skakno, Brathaurn, Brasturn.*
+*Spoken in Braba, Brabei, Brastausk.*
 
 **vyvask** water · **stagr** sea · **hra** river · **grei** lake · **ba** spring · **bry** stone · **bra** mountain · **hrei** hill · **fjan** field · **thaugr** vale · **stausk** isle · **sturn** cliff · **brein** marsh · **kno** land · **bei** wood · **gro** tree · **gra** thorn · **thaurn** grass · **thygr** fire · **vu** ash · **staun** ice · **knaurk** sand · **than** salt · **tharn** iron · **steirk** gold · **fjeisk** high · **knyst** deep · **thatho** dark · **knausk** bright · **vyn** old · **fjaun** new · **breist** red · **stork** white · **do** black · **von** green · **ska** cold · **knyrk** wild · **thu** fort · **hro** hall · **bust** gate · **grull** bridge · **dund** haven · **fjysk** home · **gry** market · **daurk** folk · **stall** king · **hryrk** blood · **skei** war · **thon** peace · **thork** holy · **brogr** dread · **thost** dawn · **kneirk** dusk · **fjull** star · **va** moon · **vyrk** sun · **veill** sky · **skyva** wind · **voll** storm
 
 ### Meridian (southern)
 
-*Spoken in Senabinte, Deobinte, Beossoveolla.*
+*Spoken in Peonacaria, Niantecaria, Peonabinte.*
 
 **milen** water · **deo** sea · **bella** river · **si** lake · **dinte** spring · **neosso** stone · **beosso** mountain · **cina** hill · **pana** field · **riando** vale · **doria** isle · **laria** cliff · **po** marsh · **caria** land · **veolla** wood · **baria** tree · **sena** thorn · **peona** grass · **comor** fire · **le** ash · **vi** ice · **da** sand · **maria** salt · **re** iron · **taria** gold · **rauria** high · **sauna** deep · **semor** dark · **peoria** bright · **cau** old · **belen** new · **vasso** red · **mante** white · **dona** black · **niante** green · **vau** cold · **varia** wild · **tomor** fort · **lamor** hall · **ciamor** gate · **nelen** bridge · **liria** haven · **demor** home · **telen** market · **binte** folk · **na** king · **tindo** blood · **meonte** war · **dente** peace · **tena** holy · **losso** dread · **mau** dawn · **bamor** dusk · **selen** star · **raulla** moon · **rondo** sun · **vomor** sky · **lolla** wind · **momor** storm
+
+### Sylvan (woodland)
+
+*Spoken in Melatheo, Syaeenil.*
+
+**syys** water · **syaeen** sea · **melyn** river · **syes** lake · **siaen** spring · **ne** stone · **thaeen** mountain · **melia** hill · **siien** field · **reth** vale · **sier** isle · **theo** cliff · **nil** marsh · **melen** land · **mela** wood · **phae** tree · **le** thorn · **phi** grass · **laeen** fire · **sieen** ash · **reo** ice · **melir** sand · **thiail** salt · **phyil** iron · **sial** gold · **syeo** high · **siael** deep · **nas** dark · **rien** bright · **ly** old · **thil** new · **rywyn** red · **syeil** white · **syia** black · **ril** green · **rith** cold · **this** wild · **phes** fort · **siy** hall · **phawyn** gate · **siawyn** bridge · **raeth** haven · **sieos** home · **nywyn** market · **thyth** folk · **lia** king · **siany** blood · **meler** war · **thaen** peace · **syith** holy · **syaen** dread · **lith** dawn · **theen** dusk · **phen** star · **nar** moon · **thas** sun · **rias** sky · **nana** wind · **reil** storm
 
 ## Legends of the founding age
 
 - **31 After Reckoning** — The city of Deociamor was founded on a sheltered harbour, destined to become the seat of power.
-- **54 After Reckoning** — The city of Panatelen was founded along the Mishkai.
-- **62 After Reckoning** — Deociamor rose to rule its hinterland, and the realm of Mantebinte was proclaimed.
-- **80 After Reckoning** — Panatelen rose to rule its hinterland, and the realm of Peoriana was proclaimed.
-- **81 After Reckoning** — The city of Khirghekh was founded on a sheltered harbour.
-- **96 After Reckoning** — Khirghekh rose to rule its hinterland, and the realm of Rairkaasi was proclaimed.
-- **571 After Reckoning** — A great storm-tide flooded Deociamor; the lower quarters were lost to the sea.
-- **890 After Reckoning** — Dobra woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **960 After Reckoning** — An academy founded on the shores of Semorsi gathered the age's finest cartographers.
-- **1055 After Reckoning** — Under a long peace, Deociamor flourished; its libraries and roads became the wonder of the world.
+- **54 After Reckoning** — The city of Panatelen was founded on a sheltered harbour.
+- **60 After Reckoning** — Deociamor rose to rule its hinterland, and the realm of Mantebinte was proclaimed.
+- **61 After Reckoning** — The city of Khirghekh was founded on a sheltered harbour.
+- **85 After Reckoning** — Panatelen rose to rule its hinterland, and the realm of Peoriana was proclaimed.
+- **87 After Reckoning** — Khirghekh rose to rule its hinterland, and the realm of Rairkaasi was proclaimed.
+- **545 After Reckoning** — Dobra woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **585 After Reckoning** — An academy founded on the shores of Semorsi gathered the age's finest cartographers.
+- **940 After Reckoning** — A great storm-tide flooded Deociamor; the lower quarters were lost to the sea.
+- **1100 After Reckoning** — Under a long peace, Deociamor flourished; its libraries and roads became the wonder of the world.
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 9 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 5 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Caudemor | 100 | 9 | 200 | 6 | diminished |
-| Rairkaasi | 100 | 8 | 1025 | 8 | ascendant |
-| Mantebinte | 100 | 7 | 100 | 6 | ascendant |
-| Peoriana | 100 | 5 | 250 | 1 | diminished |
-| Rauriademor | 100 | 4 | 225 | 4 | ascendant |
-| Thorkafjysk | 100 | 3 | 100 | 2 | diminished |
-| Knauskno | 475 | 3 | 725 | 0 | extinct |
-| Mishmaad | 100 | 2 | 100 | 0 | extinct |
-| Kaarmaad | 275 | 2 | 275 | 1 | diminished |
-| Tharnakno | 300 | 2 | 300 | 0 | extinct |
-| Vynthon | 375 | 2 | 375 | 0 | extinct |
-| Knauskathon | 500 | 2 | 500 | 0 | extinct |
-| Fjeiskastall | 625 | 2 | 625 | 0 | extinct |
-| Vynfjysk | 950 | 2 | 950 | 0 | extinct |
-| Fjeiskastall | 1025 | 2 | 1025 | 0 | extinct |
-| Peoriameonte | 100 | 1 | 100 | 1 | ascendant |
-| Kheqkaasi | 1075 | 1 | 1075 | 1 | ascendant |
+| Rairkaasi | 100 | 12 | 400 | 7 | diminished |
+| Jaqe | 100 | 11 | 675 | 11 | ascendant |
+| Peoriana | 100 | 8 | 700 | 8 | ascendant |
+| Mantebinte | 100 | 6 | 575 | 5 | ascendant |
+| Storkdaurk | 475 | 3 | 475 | 0 | extinct |
+| Mishkaasi | 100 | 2 | 100 | 0 | extinct |
+| Thorkastall | 100 | 2 | 100 | 0 | extinct |
+| Lossomeonte | 100 | 1 | 100 | 1 | ascendant |
 
 ## Chronicle
 
-- **100 After Reckoning** — Rairkaasi's invasion of Beossoveolla was thrown back by Mishmaad.
-- **100 After Reckoning** — Caudemor seized Staunbry from Peoriana.
-- **125 After Reckoning** — Caudemor's invasion of Beossoveolla was thrown back by Mishmaad.
-- **125 After Reckoning** — Peoriana's invasion of Bradaurk was thrown back by Thorkafjysk.
-- **125 After Reckoning** — Staunbry rose against Caudemor and declared the free realm of Knauskafjysk.
-- **150 After Reckoning** — Mantebinte's invasion of Staunbry was thrown back by Knauskafjysk.
-- **150 After Reckoning** — A plague swept Deoriando; many perished.
-- **150 After Reckoning** — A golden age dawned over Thorkafjysk; its cities flourished as never before.
-- **175 After Reckoning** — Caudemor seized Staunbry from Knauskafjysk.
-- **175 After Reckoning** — The realm of Knauskafjysk was extinguished.
-- **200 After Reckoning** — Caudemor seized Beossoveolla from Mishmaad.
-- **200 After Reckoning** — Peoriana seized Bradaurk from Thorkafjysk.
-- **200 After Reckoning** — Bradaurk rose against Peoriana and declared the free realm of Tharnakno.
-- **225 After Reckoning** — Rauriademor seized Bradaurk from Tharnakno.
-- **225 After Reckoning** — The realm of Tharnakno was extinguished.
-- **225 After Reckoning** — Staunbry rose against Caudemor and declared the free realm of Vynkno.
-- **250 After Reckoning** — Peoriana seized Staunbry from Vynkno.
-- **250 After Reckoning** — The realm of Vynkno was extinguished.
-- **250 After Reckoning** — Rairkaasi seized Rairghen from Mishmaad.
-- **250 After Reckoning** — The realm of Mishmaad was extinguished.
-- **250 After Reckoning** — A golden age dawned over Rairkaasi; its cities flourished as never before.
-- **275 After Reckoning** — Caudemor's invasion of Staunbry was thrown back by Peoriana.
-- **275 After Reckoning** — Rairkaasi seized Khirshaa from Peoriana.
-- **275 After Reckoning** — Qumid and 1 neighbouring province(s) broke away from Mantebinte to found the realm of Kaarmaad.
-- **300 After Reckoning** — Rairkaasi's invasion of Brabry was thrown back by Peoriana.
-- **300 After Reckoning** — Stagrahrei and 1 neighbouring province(s) broke away from Caudemor to found the realm of Tharnakno.
-- **325 After Reckoning** — Caudemor seized Brahrei from Tharnakno.
-- **325 After Reckoning** — Khirshaa rose against Rairkaasi and declared the free realm of Jumaad.
-- **350 After Reckoning** — Caudemor seized Stagrahrei from Tharnakno.
-- **350 After Reckoning** — The realm of Tharnakno was extinguished.
-- **350 After Reckoning** — Rairkaasi seized Khirshaa from Jumaad.
-- **350 After Reckoning** — The realm of Jumaad was extinguished.
-- **350 After Reckoning** — A plague swept Qumid; many perished.
-- **375 After Reckoning** — Rairkaasi seized Brabry from Peoriana.
-- **375 After Reckoning** — Brabry rose against Rairkaasi and declared the free realm of Fjeiskastall.
-- **375 After Reckoning** — Stagrahrei and 1 neighbouring province(s) broke away from Caudemor to found the realm of Vynthon.
-- **375 After Reckoning** — Qumid turned from the Rite of Vaghisaaghaza to the Cult of Vaveillvoll.
-- **400 After Reckoning** — Rairkaasi seized Brabry from Fjeiskastall.
-- **400 After Reckoning** — The realm of Fjeiskastall was extinguished.
-- **400 After Reckoning** — Khirshaa rose against Rairkaasi and declared the free realm of Kheqmaad.
-- **425 After Reckoning** — Caudemor seized Brahrei from Vynthon.
-- **450 After Reckoning** — Caudemor seized Stagrahrei from Vynthon.
-- **450 After Reckoning** — The realm of Vynthon was extinguished.
-- **450 After Reckoning** — A golden age dawned over Mantebinte; its cities flourished as never before.
-- **475 After Reckoning** — Caudemor seized Khirshaa from Kheqmaad.
-- **475 After Reckoning** — The realm of Kheqmaad was extinguished.
-- **475 After Reckoning** — Rairkaasi's invasion of Deocina was thrown back by Peoriana.
-- **475 After Reckoning** — Khirshaa rose against Caudemor and declared the free realm of Jughen.
-- **475 After Reckoning** — Brahrei rose against Caudemor and declared the free realm of Brografjysk.
-- **475 After Reckoning** — Stagrahrei and 1 neighbouring province(s) broke away from Caudemor to found the realm of Knauskno.
-- **500 After Reckoning** — Caudemor seized Brahrei from Brografjysk.
-- **500 After Reckoning** — The realm of Brografjysk was extinguished.
-- **500 After Reckoning** — Brahrei and 1 neighbouring province(s) broke away from Caudemor to found the realm of Knauskathon.
-- **525 After Reckoning** — Rairkaasi's invasion of Khirshaa was thrown back by Jughen.
-- **525 After Reckoning** — A golden age dawned over Rairkaasi; its cities flourished as never before.
-- **550 After Reckoning** — Caudemor seized Brahrei from Knauskathon.
-- **550 After Reckoning** — Rauriademor's invasion of Qumid was thrown back by Kaarmaad.
-- **550 After Reckoning** — Brahrei broke away from Caudemor to found the realm of Tharndaurk.
-- **575 After Reckoning** — Mantebinte seized Brahrei from Tharndaurk.
-- **575 After Reckoning** — The realm of Tharndaurk was extinguished.
-- **600 After Reckoning** — Rairkaasi seized Khirshaa from Jughen.
-- **600 After Reckoning** — The realm of Jughen was extinguished.
-- **600 After Reckoning** — Khirshaa rose against Rairkaasi and declared the free realm of Meqe.
-- **600 After Reckoning** — Rairghen turned from the Cult of Vaveillvoll to the Faith of Varaullacomor.
-- **625 After Reckoning** — Rairkaasi seized Khirshaa from Meqe.
-- **625 After Reckoning** — The realm of Meqe was extinguished.
-- **625 After Reckoning** — Caudemor seized Peonaneosso from Knauskathon.
-- **625 After Reckoning** — The realm of Knauskathon was extinguished.
-- **625 After Reckoning** — Khirshaa rose against Rairkaasi and declared the free realm of Qidkakaasi.
-- **625 After Reckoning** — Brahrei and 1 neighbouring province(s) broke away from Mantebinte to found the realm of Fjeiskastall.
-- **650 After Reckoning** — Mantebinte seized Brahrei from Fjeiskastall.
-- **650 After Reckoning** — Brahrei rose against Mantebinte and declared the free realm of Thorkaskei.
-- **650 After Reckoning** — Peonaneosso broke away from Caudemor to found the realm of Tenana.
-- **675 After Reckoning** — Mantebinte seized Brahrei from Thorkaskei.
-- **675 After Reckoning** — The realm of Thorkaskei was extinguished.
-- **675 After Reckoning** — Brahrei rose against Mantebinte and declared the free realm of Knauskno.
-- **675 After Reckoning** — Beossoveolla turned from the Cult of Vaveillvoll to the Faith of Varaullacomor.
-- **700 After Reckoning** — Mantebinte seized Brahrei from Knauskno.
-- **700 After Reckoning** — The realm of Knauskno was extinguished.
-- **700 After Reckoning** — Rairkaasi seized Khirshaa from Qidkakaasi.
-- **700 After Reckoning** — The realm of Qidkakaasi was extinguished.
-- **700 After Reckoning** — Brahrei rose against Mantebinte and declared the free realm of Knauskafjysk.
-- **725 After Reckoning** — Knauskno seized Brahrei from Knauskafjysk.
-- **725 After Reckoning** — The realm of Knauskafjysk was extinguished.
-- **750 After Reckoning** — Mantebinte seized Brasturn from Fjeiskastall.
-- **750 After Reckoning** — The realm of Fjeiskastall was extinguished.
-- **750 After Reckoning** — Rairkaasi seized Staunbry from Peoriana.
-- **750 After Reckoning** — Khirshaa rose against Rairkaasi and declared the free realm of Memaad.
-- **775 After Reckoning** — Caudemor seized Peonaneosso from Tenana.
-- **775 After Reckoning** — The realm of Tenana was extinguished.
-- **775 After Reckoning** — Rairkaasi seized Brahrei from Knauskno.
-- **775 After Reckoning** — Brahrei rose against Rairkaasi and declared the free realm of Knauskaskei.
-- **800 After Reckoning** — Caudemor seized Brahrei from Knauskaskei.
-- **800 After Reckoning** — The realm of Knauskaskei was extinguished.
-- **800 After Reckoning** — Brasturn rose against Mantebinte and declared the free realm of Thorkdaurk.
-- **800 After Reckoning** — A plague swept Shinghen; many perished.
-- **825 After Reckoning** — Mantebinte seized Brasturn from Thorkdaurk.
-- **825 After Reckoning** — The realm of Thorkdaurk was extinguished.
-- **850 After Reckoning** — Rairkaasi seized Khirshaa from Memaad.
-- **850 After Reckoning** — The realm of Memaad was extinguished.
-- **850 After Reckoning** — Caudemor seized Stagrahrei from Knauskno.
-- **850 After Reckoning** — Stagrahrei rose against Caudemor and declared the free realm of Fjeiskdaurk.
-- **875 After Reckoning** — Stagrafjysk was stormed and left a ruin.
-- **875 After Reckoning** — Caudemor seized Stagrahrei from Fjeiskdaurk.
-- **875 After Reckoning** — The realm of Fjeiskdaurk was extinguished.
-- **875 After Reckoning** — Rairkaasi's invasion of Deocina was thrown back by Peoriana.
-- **900 After Reckoning** — Caudemor seized Thaurnasturn from Knauskno.
-- **900 After Reckoning** — The realm of Knauskno was extinguished.
-- **900 After Reckoning** — Mantebinte's invasion of Qumid was thrown back by Kaarmaad.
-- **925 After Reckoning** — Rairkaasi seized Deocina from Peoriana.
-- **950 After Reckoning** — Rairkaasi's invasion of Qumid was thrown back by Kaarmaad.
-- **950 After Reckoning** — Stagrahrei and 1 neighbouring province(s) broke away from Caudemor to found the realm of Vynfjysk.
-- **975 After Reckoning** — Caudemor seized Brahrei from Vynfjysk.
-- **975 After Reckoning** — Mantebinte seized Stagrahrei from Vynfjysk.
-- **975 After Reckoning** — The realm of Vynfjysk was extinguished.
-- **975 After Reckoning** — Deocina rose against Rairkaasi and declared the free realm of Cauna.
-- **1000 After Reckoning** — Rairkaasi seized Deocina from Cauna.
-- **1000 After Reckoning** — The realm of Cauna was extinguished.
-- **1000 After Reckoning** — A plague swept Bradaurk; many perished.
-- **1025 After Reckoning** — Rairkaasi seized Qumid from Kaarmaad.
-- **1025 After Reckoning** — Mantebinte's invasion of Khirghen was thrown back by Kaarmaad.
-- **1025 After Reckoning** — Brahrei and 1 neighbouring province(s) broke away from Caudemor to found the realm of Fjeiskastall.
-- **1025 After Reckoning** — A long drought gripped Skakno; many perished.
-- **1050 After Reckoning** — Caudemor seized Brahrei from Fjeiskastall.
-- **1050 After Reckoning** — A long drought gripped Thaurnasturn; many perished.
-- **1050 After Reckoning** — A golden age dawned over Rauriademor; its cities flourished as never before.
-- **1075 After Reckoning** — Rairkaasi seized Peonaneosso from Fjeiskastall.
-- **1075 After Reckoning** — The realm of Fjeiskastall was extinguished.
-- **1075 After Reckoning** — Qumid rose against Rairkaasi and declared the free realm of Kheqkaasi.
-- **1075 After Reckoning** — A plague swept Knyrkagra; many perished.
+- **100 After Reckoning** — Peoriana's invasion of Brastausk was thrown back by Thorkastall.
+- **100 After Reckoning** — Jaqe seized Braba from Thorkastall.
+- **100 After Reckoning** — Khirmid turned from the Cult of Vaghazazizam to the Rite of Vakneirkveill.
+- **125 After Reckoning** — Jaqe seized Stagraknaurk from Thorkastall.
+- **125 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **150 After Reckoning** — Jaqe's invasion of Khirshaa was thrown back by Mishkaasi.
+- **150 After Reckoning** — Stagraknaurk rose against Jaqe and declared the free realm of Fjeiskdaurk.
+- **175 After Reckoning** — Peoriana seized Brastausk from Thorkastall.
+- **175 After Reckoning** — The realm of Thorkastall was extinguished.
+- **175 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **200 After Reckoning** — Jaqe's invasion of Khirshaa was thrown back by Mishkaasi.
+- **225 After Reckoning** — Peoriana seized Stagraknaurk from Fjeiskdaurk.
+- **225 After Reckoning** — The realm of Fjeiskdaurk was extinguished.
+- **250 After Reckoning** — Jaqe's invasion of Mairmid was thrown back by Rairkaasi.
+- **250 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **300 After Reckoning** — Jaqe seized Khirshaa from Mishkaasi.
+- **300 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **300 After Reckoning** — A golden age dawned over Peoriana; its cities flourished as never before.
+- **325 After Reckoning** — Jaqe's invasion of Khirkhaim was thrown back by Mishkaasi.
+- **350 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **375 After Reckoning** — Khiriz was stormed and left a ruin.
+- **375 After Reckoning** — Jaqe seized Khirkhaim from Mishkaasi.
+- **375 After Reckoning** — The realm of Mishkaasi was extinguished.
+- **400 After Reckoning** — Jaqe's invasion of Mairmid was thrown back by Rairkaasi.
+- **400 After Reckoning** — Rairkaasi seized Stagrdaurk from Mantebinte.
+- **425 After Reckoning** — Mantebinte seized Stagrdaurk from Rairkaasi.
+- **425 After Reckoning** — A long drought gripped Mairkhidku; many perished.
+- **450 After Reckoning** — Peoriana's invasion of Khirzash was thrown back by Rairkaasi.
+- **475 After Reckoning** — Jaqe seized Mairmid from Rairkaasi.
+- **475 After Reckoning** — Brakno and 2 neighbouring province(s) broke away from Rairkaasi to found the realm of Storkdaurk.
+- **500 After Reckoning** — Jaqe seized Brakno from Storkdaurk.
+- **500 After Reckoning** — Peonacaria turned from the Faith of Varaullacomor to the Rite of Vakneirkveill.
+- **525 After Reckoning** — Jaqe seized Brahrei from Storkdaurk.
+- **525 After Reckoning** — Rairkaasi's invasion of Stagrabry was thrown back by Storkdaurk.
+- **525 After Reckoning** — Brakno rose against Jaqe and declared the free realm of Thorkno.
+- **525 After Reckoning** — A golden age dawned over Jaqe; its cities flourished as never before.
+- **550 After Reckoning** — Jaqe seized Brakno from Thorkno.
+- **550 After Reckoning** — The realm of Thorkno was extinguished.
+- **550 After Reckoning** — Brakno rose against Jaqe and declared the free realm of Brograstall.
+- **550 After Reckoning** — A long drought gripped Khirkhukha; many perished.
+- **575 After Reckoning** — Mantebinte seized Brakno from Brograstall.
+- **575 After Reckoning** — The realm of Brograstall was extinguished.
+- **575 After Reckoning** — Rairkaasi seized Stagrabry from Storkdaurk.
+- **575 After Reckoning** — The realm of Storkdaurk was extinguished.
+- **575 After Reckoning** — A plague swept Shinmid; many perished.
+- **600 After Reckoning** — Rairkaasi's invasion of Brakno was thrown back by Mantebinte.
+- **625 After Reckoning** — Jaqe's invasion of Rairshid was thrown back by Mantebinte.
+- **650 After Reckoning** — Rairkaasi's invasion of Brakno was thrown back by Mantebinte.
+- **650 After Reckoning** — A long drought gripped Khirkhaim; many perished.
+- **675 After Reckoning** — Jaqe seized Brakno from Mantebinte.
+- **675 After Reckoning** — A plague swept Brahrei; many perished.
+- **700 After Reckoning** — Peoriana seized Khirzash from Rairkaasi.
+- **700 After Reckoning** — Jaqe's invasion of Storkafjan was thrown back by Mantebinte.
+- **725 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **750 After Reckoning** — Jaqe's invasion of Storkafjan was thrown back by Mantebinte.
+- **800 After Reckoning** — Jaqe's invasion of Storkafjan was thrown back by Mantebinte.
+- **825 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **850 After Reckoning** — Jaqe's invasion of Storkafjan was thrown back by Mantebinte.
+- **875 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **875 After Reckoning** — A plague swept Brastausk; many perished.
+- **900 After Reckoning** — Jaqe's invasion of Rairshid was thrown back by Mantebinte.
+- **925 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **925 After Reckoning** — A plague swept Stagrabry; many perished.
+- **950 After Reckoning** — Jaqe's invasion of Rairshid was thrown back by Mantebinte.
+- **975 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **1000 After Reckoning** — Jaqe's invasion of Storkafjan was thrown back by Mantebinte.
+- **1025 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
+- **1025 After Reckoning** — A golden age dawned over Rairkaasi; its cities flourished as never before.
+- **1050 After Reckoning** — Jaqe's invasion of Storkafjan was thrown back by Mantebinte.
+- **1075 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Mantebinte.
 
 ## Heightmap
 
@@ -440,4 +382,4 @@ A real 360×360 16-bit heightmap is exported alongside this report (`.heightmap1
 
 ---
 
-*Elevation fingerprint `099d5db0f497ba87`. This document and every map of Mantebinte are pure functions of the seed — reproducible anywhere, forever.*
+*Elevation fingerprint `131cd5dc25672075`. This document and every map of Mantebinte are pure functions of the seed — reproducible anywhere, forever.*

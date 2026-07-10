@@ -59,9 +59,9 @@ test("language contact never perturbs the simulation — it is pure overlay", ()
   // Rng, so the three fingerprints must be exactly what they were before the
   // feature existed (regenerated only by S17's terrain, not by this).
   const w = generateWorld({ seed: "cartogenesis", width: 256, height: 256 });
-  assert.equal(w.meta.contentHash, "36d228224ba163d1");
-  assert.equal(w.meta.exactHash, "3ea66d768a5354c0");
-  assert.equal(w.meta.simulationHash, "ca00538568c389c4");
+  assert.equal(w.meta.contentHash, "61e751b300046ddc");
+  assert.equal(w.meta.exactHash, "c59c172694113c4e");
+  assert.equal(w.meta.simulationHash, "c38f5de31cfff136");
 });
 
 test("renamings are self-consistent with the settlements they name", () => {
