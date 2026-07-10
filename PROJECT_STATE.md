@@ -130,5 +130,8 @@ No `npm install` is required — there are zero dependencies.
 - Roadmap & success criteria → `ROADMAP.md`
 - Why things are the way they are → `DECISIONS.md`
 - Session history → `CHANGELOG.md`
-- **The exact next task → `NEXT_SESSION.md`**
+- **The exact next task → `NEXT_SESSION.md`** — Session 16 is a deliberate
+  multi-phase **overhaul** (user's explicit ask): exact arithmetic (D-022), the
+  in-browser gazetteer, client-side exports, calderas & lava fields, language
+  contact, islets + a benchmark. Each phase is a committable unit; Phase 0 first.
 - How to extend safely → `ARCHITECTURE.md`
