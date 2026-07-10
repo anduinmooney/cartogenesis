@@ -230,6 +230,15 @@ export function generateWorld(config: WorldConfig): World {
     {},
   );
 
+  // One authoritative timeline. The simulation defines the world's era; the
+  // founding legends and the ruler successions must both answer to it —
+  // otherwise legends get dated after the present and dynasties end centuries
+  // before the chronicle does.
+  const SIM_START_YEAR = 100;
+  const SIM_TURNS = 40;
+  const SIM_YEARS_PER_TURN = 25;
+  const presentYear = SIM_START_YEAR + SIM_TURNS * SIM_YEARS_PER_TURN;
+
   // L11 — History: a procedural chronicle grounded in the geography above.
   const historyRng = root.stream("history");
   const history = generateHistory(
@@ -238,13 +247,14 @@ export function generateWorld(config: WorldConfig): World {
     rivers,
     regions,
     settlements.settlements,
-    { seed: historyRng.seed },
+    { seed: historyRng.seed, presentYear },
   );
 
   // L12 — Lore: houses, rulers, figures, and region prose.
   const loreRng = root.stream("lore");
   const lore = generateLore(regions, settlements.settlements, history, {
     seed: loreRng.seed,
+    presentYear,
   });
 
   // L13 — Resources: natural deposits by terrain and biome.
@@ -277,7 +287,12 @@ export function generateWorld(config: WorldConfig): World {
     religion,
     settlements.settlements,
     economy,
-    { seed: simulationRng.seed },
+    {
+      seed: simulationRng.seed,
+      startYear: SIM_START_YEAR,
+      turns: SIM_TURNS,
+      yearsPerTurn: SIM_YEARS_PER_TURN,
+    },
   );
   const dominant = [...simulation.realms]
     .filter((r) => r.status !== "extinct")
@@ -308,7 +323,7 @@ export function generateWorld(config: WorldConfig): World {
     roadLength: roads.length,
     realmCount: history.realms.length,
     eventCount: history.events.length,
-    presentYear: history.presentYear,
+    presentYear: simulation.endYear,
     capitalHouse: lore.capitalHouse,
     rulerCount: lore.rulers.length,
     resourceCount: resources.deposits.length,

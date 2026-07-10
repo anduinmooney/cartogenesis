@@ -10,7 +10,7 @@
 - **Peoples:** 20 regions, 14 settlements, 2 realms
 - **Capital:** Stasta, seat of House Bungruheim
 - **Dominant power:** Neneo (of 2 surviving realm(s))
-- **The present year:** 1025 After Reckoning
+- **The present year:** 1100 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 5 (2 active)
 
 ## Volcanoes
@@ -80,31 +80,31 @@
 - **87–106** Dobruthy Bungruheim
 - **107–136** Boknastda Bungruheim the Unlucky
 - **137–177** Stogrska Bungruheim
-- **178–203** Knavy Bungruheim the Golden
-- **204–237** Knaurksko Bungruheim
-- **238–277** Stothavik Bungruheim the Builder
-- **278–298** Groska Bungruheim
-- **299–336** Skeiskobra Bungruheim
+- *… 30 rulers over the intervening years …*
+- **1013–1027** Knoy Bungruheim
+- **1028–1058** Hryfjo Bungruheim
+- **1059–1085** Donstaully Bungruheim the Cruel
+- **1086–1100** Knaba Bungruheim *(reigning)*
 
 ### House Orade — realm of Seomorrauleo
 
-- **92–106** Memorme Orade
-- **107–147** Licetea Orade
-- **148–167** Viacima Orade
-- **168–195** Vaca Orade the Mad
-- **196–227** Mantecauriaci Orade the Learned
-- **228–249** Ibeossocau Orade
-- **250–277** Pissolima Orade the Pious
-- **278–292** Dissodono Orade the Unlucky
-- **293–315** Torianami Orade
+- **92–127** Memorme Orade
+- **128–144** Licetea Orade
+- **145–165** Viacima Orade
+- **166–185** Vaca Orade the Golden
+- *… 31 rulers over the intervening years …*
+- **1016–1043** Bolenbiati Orade
+- **1044–1056** Caulova Orade the Wise
+- **1057–1089** Dilenmauevento Orade the Learned
+- **1090–1100** Veodantecea Orade the Unlucky *(reigning)*
 
 ## Notable figures
 
-- **Thyrkbru, the Explorer** — Thyrkbru charted the far coasts and traced the Deihra to its source.
-- **Dothornhragard, the Mountaineer** — Dothornhragard was first to stand atop Hravyheim and return alive.
-- **Beibro, the General** — Beibro broke the long siege of Stasta.
-- **Dyrkva, the Architect** — Dyrkva raised the great road between Stasta and Dendomau.
-- **Brallbra, the Heretic** — Brallbra was exiled from Stasta for denying the old gods.
+- **Vafjygrbro, the Explorer** — Vafjygrbro charted the far coasts and traced the Deihra to its source.
+- **Durkhro, the General** — Durkhro broke the long siege of Stasta.
+- **Hreigrvy, the Architect** — Hreigrvy raised the great road between Stasta and Dendomau.
+- **Fjuknei, the Scholar** — Fjuknei mapped the waters of Deihra.
+- **Thobullknu, the Mountaineer** — Thobullknu was first to stand atop Hravyheim and return alive.
 
 ## Settlements
 

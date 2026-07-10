@@ -7,6 +7,7 @@ function build(seed: string, size = 180) {
   const w = generateWorld({ seed, width: size, height: size });
   const lore = generateLore(w.regions, w.settlements.settlements, w.history, {
     seed: 5,
+    presentYear: w.meta.presentYear,
   });
   return { w, lore };
 }
@@ -41,7 +42,7 @@ test("every realm has a ruling house and at least one ruler", () => {
 
 test("ruler reigns are chronological and within the realm's lifespan", () => {
   const { w, lore } = build("reigns", 200);
-  const present = w.history.presentYear;
+  const present = w.meta.presentYear;
   for (const realm of w.history.realms) {
     const line = lore.rulers
       .filter((r) => r.realmId === realm.id)
@@ -55,6 +56,48 @@ test("ruler reigns are chronological and within the realm's lifespan", () => {
       prevEnd = r.endYear;
     }
   }
+});
+
+/**
+ * Regression guard: ruler successions used to stop after 9 rulers (~250 years),
+ * so every dynasty ended centuries before the present and the world had no
+ * living monarchs. They must reign right up to the present year.
+ */
+test("every dynasty reigns to the present, with exactly one reigning monarch", () => {
+  const { w, lore } = build("succession", 200);
+  const present = w.meta.presentYear;
+  assert.ok(present > 1000, `present year ${present} looks wrong`);
+
+  for (const realm of w.history.realms) {
+    const line = lore.rulers
+      .filter((r) => r.realmId === realm.id)
+      .sort((a, b) => a.startYear - b.startYear);
+    assert.ok(line.length > 0, `${realm.name} has no rulers`);
+
+    const last = line[line.length - 1];
+    assert.equal(last.endYear, present, `${realm.name}'s line ends at ${last.endYear}`);
+
+    const reigning = line.filter((r) => r.reigning);
+    assert.equal(reigning.length, 1, `${realm.name} has ${reigning.length} reigning rulers`);
+    assert.equal(reigning[0].name, last.name);
+
+    // No gaps: each reign begins the year after the last ended.
+    for (let i = 1; i < line.length; i++) {
+      assert.equal(
+        line[i].startYear,
+        line[i - 1].endYear + 1,
+        `gap in ${realm.name}'s succession`,
+      );
+    }
+  }
+});
+
+test("the world runs on one timeline: meta.presentYear === simulation.endYear", () => {
+  const w = generateWorld({ seed: "timeline", width: 180, height: 180 });
+  assert.equal(w.meta.presentYear, w.simulation.endYear);
+  // And the chronicle's last event falls within it.
+  const last = w.simulation.events.at(-1);
+  if (last) assert.ok(last.year <= w.meta.presentYear);
 });
 
 test("every region gets a non-empty description naming itself", () => {

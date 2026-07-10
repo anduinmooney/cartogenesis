@@ -10,7 +10,7 @@
 - **Peoples:** 27 regions, 19 settlements, 3 realms
 - **Capital:** Nasida, seat of House Ghairaru
 - **Dominant power:** Tamorsenasiaa (of 5 surviving realm(s))
-- **The present year:** 961 After Reckoning
+- **The present year:** 1100 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 7 (1 active)
 
 ## Volcanoes
@@ -97,43 +97,43 @@
 - **80–101** Vadao Redenabi the Cruel
 - **102–137** Nimenaea Redenabi
 - **138–163** Saba Redenabi
-- **164–180** Cassosia Redenabi the Golden
-- **181–222** Vinteli Redenabi
-- **223–251** Lete Redenabi the Young
-- **252–268** Visiace Redenabi the Wise
-- **269–310** Ciatomar Redenabi the Mad
+- *… 29 rulers over the intervening years …*
+- **982–1005** Miassosisia Redenabi
+- **1006–1032** Miariavariaa Redenabi the Golden
+- **1033–1066** Deoriaa Redenabi the Far-Sighted
+- **1067–1100** Beocare Redenabi *(reigning)*
 
 ### House Rate — realm of Edshiesh
 
-- **104–124** Aa Rate the Just
-- **125–143** Jishqemju Rate
-- **144–173** Sajaaqma Rate the Cursed
-- **174–200** Zakhue Rate the Just
-- **201–229** Taamte Rate the Grim
-- **230–261** Shaaghi Rate
-- **262–274** Turuesh Rate
-- **275–313** Zajiu Rate
-- **314–337** Jakhrashu Rate
+- **104–143** Aa Rate
+- **144–175** Jishqemju Rate
+- **176–208** Sajaaqma Rate
+- **209–230** Zakhue Rate
+- *… 31 rulers over the intervening years …*
+- **1000–1033** Zamshu Rate
+- **1034–1066** Shaqruabad Rate the Bold
+- **1067–1081** Ziqjai Rate
+- **1082–1100** Saishraur Rate the Grim *(reigning)*
 
 ### House Ghairaru — realm of Makhzaur
 
-- **109–129** Saajidsha Ghairaru the Unlucky
-- **130–151** Irraaesh Ghairaru
-- **152–187** Ghaimma Ghairaru
-- **188–208** Qenteesh Ghairaru the Pious
-- **209–233** Rajaabad Ghairaru the Grim
-- **234–260** Maqkhu Ghairaru the Golden
-- **261–301** Zata Ghairaru the Lawgiver
-- **302–317** Ghaazudkhe Ghairaru the Young
-- **318–332** Jeju Ghairaru
+- **109–123** Saajidsha Ghairaru
+- **124–156** Irraaesh Ghairaru
+- **157–192** Ghaimma Ghairaru
+- **193–211** Qenteesh Ghairaru
+- *… 30 rulers over the intervening years …*
+- **1019–1044** Khamtai Ghairaru the Just
+- **1045–1076** Ghiza Ghairaru the Lawgiver
+- **1077–1097** Aashaa Ghairaru the Young
+- **1098–1100** Sikhtai Ghairaru *(reigning)*
 
 ## Notable figures
 
-- **Licemorlivento, the General** — Licemorlivento broke the long siege of Mamuesh.
-- **Bemaa, the Mountaineer** — Bemaa was first to stand atop Mausiassoau and return alive.
-- **Meovemorba, the Explorer** — Meovemorba charted the far coasts and traced the Vintememorbe to its source.
-- **Oleriamo, the Scholar** — Oleriamo mapped the waters of Rabolenre.
-- **Mauciareo, the Architect** — Mauciareo raised the great road between Nasida and Aamaur.
+- **Teboce, the Heretic** — Teboce was exiled from Nasida for denying the old gods.
+- **Ceontelini, the Scholar** — Ceontelini mapped the waters of Rabolenre.
+- **Civavo, the General** — Civavo broke the long siege of Aamaur.
+- **Aumimornia, the Explorer** — Aumimornia charted the far coasts and traced the Vintememorbe to its source.
+- **Romepomar, the Architect** — Romepomar raised the great road between Nasida and Aamaur.
 
 ## Settlements
 

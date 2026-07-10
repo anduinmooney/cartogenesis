@@ -10,7 +10,7 @@
 - **Peoples:** 28 regions, 24 settlements, 4 realms
 - **Capital:** Timortepimar, seat of House Beodaveo
 - **Dominant power:** Knorkthy (of 3 surviving realm(s))
-- **The present year:** 927 After Reckoning
+- **The present year:** 1100 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 9 (3 active)
 
 ## Volcanoes
@@ -101,55 +101,54 @@
 - **101–113** Ciantevore Beodaveo the Just
 - **114–138** Veomomar Beodaveo the Bold
 - **139–180** Baumetivento Beodaveo
-- **181–206** Teonauroa Beodaveo
-- **207–230** Leiasi Beodaveo the Fair
-- **231–258** Eriacopivento Beodaveo
-- **259–293** Mianteliavento Beodaveo
-- **294–331** Tirili Beodaveo the Young
+- *… 29 rulers over the intervening years …*
+- **984–1019** Pinada Beodaveo the Silent
+- **1020–1051** Cenavine Beodaveo the Grim
+- **1052–1067** Tendodiimar Beodaveo the Bold
+- **1068–1100** Calladenavento Beodaveo the Unlucky *(reigning)*
 
 ### House Ressodi — realm of Mane
 
-- **124–153** Bissolilenriaa Ressodi
-- **154–195** Vodaundodia Ressodi
-- **196–212** Mipemivento Ressodi
-- **213–235** Benanaundovau Ressodi the Navigator
-- **236–270** Lotameo Ressodi
-- **271–304** Sialia Ressodi the Bold
-- **305–321** Palenmivia Ressodi
-- **322–341** Pidesia Ressodi
-- **342–367** Liae Ressodi
+- **124–164** Bissolilenriaa Ressodi
+- **165–204** Vodaundodia Ressodi the Silent
+- **205–242** Mipemivento Ressodi the Silent
+- **243–267** Benanaundovau Ressodi the Just
+- *… 26 rulers over the intervening years …*
+- **1007–1029** Nelendauteo Ressodi the Fair
+- **1030–1048** Diriaca Ressodi the Lawgiver
+- **1049–1084** Navia Ressodi the Wise
+- **1085–1100** Remau Ressodi the Learned *(reigning)*
 
 ### House Pimorpeomo — realm of Sade
 
-- **149–175** Deodea Pimorpeomo
-- **176–208** Bireopo Pimorpeomo
-- **209–238** Teossoceo Pimorpeomo the Cruel
-- **239–280** Sauamorpiavento Pimorpeomo
-- **281–304** Niariaciata Pimorpeomo
-- **305–332** Aserevento Pimorpeomo
-- **333–368** Boellabia Pimorpeomo the Silent
-- **369–400** Neondoteoleneo Pimorpeomo the Grim
-- **401–416** Ressoceolenau Pimorpeomo the Bold
+- **149–178** Deodea Pimorpeomo the Lawgiver
+- **179–209** Bireopo Pimorpeomo the Young
+- **210–222** Teossoceo Pimorpeomo
+- **223–242** Sauamorpiavento Pimorpeomo
+- *… 28 rulers over the intervening years …*
+- **995–1035** Bondoevento Pimorpeomo
+- **1036–1056** Cassopeomar Pimorpeomo the Great
+- **1057–1087** Piapisau Pimorpeomo
+- **1088–1100** Dauteomorpeo Pimorpeomo the Fair *(reigning)*
 
 ### House Cindota — realm of Rillasemorpau
 
-- **154–176** Endotimortia Cindota
-- **177–192** Peoentereo Cindota the Golden
-- **193–225** Vonau Cindota the Bold
-- **226–256** Sendotallala Cindota the Cursed
-- **257–275** Baurirauvento Cindota the Just
-- **276–302** Saunteceondorauvento Cindota
-- **303–329** Telialeo Cindota the Great
-- **330–352** Baucillala Cindota
-- **353–377** Lecia Cindota
+- **154–191** Endotimortia Cindota
+- **192–227** Peoentereo Cindota
+- **228–257** Vonau Cindota the Cursed
+- **258–291** Sendotallala Cindota
+- *… 25 rulers over the intervening years …*
+- **1007–1022** Meoni Cindota
+- **1023–1051** Taundoti Cindota
+- **1052–1068** Pianterama Cindota the Young
+- **1069–1100** Cida Cindota *(reigning)*
 
 ## Notable figures
 
-- **Cariaviaceo, the General** — Cariaviaceo broke the long siege of Dellaeollano.
-- **Evica, the Heretic** — Evica was exiled from Timortepimar for denying the old gods.
-- **Bimaulenpa, the Architect** — Bimaulenpa raised the great road between Timortepimar and Liaca.
-- **Baumorpoau, the Scholar** — Baumorpoau mapped the waters of Benavia.
-- **Ricau, the Explorer** — Ricau charted the far coasts and traced the Muqkaqa to its source.
+- **Celladibe, the General** — Celladibe broke the long siege of Timortepimar.
+- **Condobeo, the Mountaineer** — Condobeo was first to stand atop Gharqe and return alive.
+- **Iia, the Explorer** — Iia charted the far coasts and traced the Muqkaqa to its source.
+- **Auvialo, the Heretic** — Auvialo was exiled from Timortepimar for denying the old gods.
 
 ## Settlements
 

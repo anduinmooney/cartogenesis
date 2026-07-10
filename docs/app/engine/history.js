@@ -47,6 +47,8 @@ import { makeName, languageById } from "./names.js";
 
                                 
                
+                                                                     
+                       
  
 
 function nameAtCell(
@@ -269,8 +271,11 @@ export function generateHistory(
     });
   }
 
+  // The world runs on one timeline: nothing in the founding age may be dated
+  // after the present, and the present is the simulation's end year.
+  const presentYear = cfg.presentYear ?? (events.at(-1)?.year ?? 1000) + rng.int(20, 80);
+  for (const e of events) e.year = Math.min(e.year, presentYear);
   events.sort((a, b) => a.year - b.year || a.title.localeCompare(b.title));
-  const presentYear = (events.at(-1)?.year ?? 1000) + rng.int(20, 80);
 
   return {
     epoch: "After Reckoning",

@@ -10,7 +10,7 @@
 - **Peoples:** 28 regions, 26 settlements, 4 realms
 - **Capital:** Bee, seat of House Cavonavea
 - **Dominant power:** Nopa (of 5 surviving realm(s))
-- **The present year:** 826 After Reckoning
+- **The present year:** 1100 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 9 (3 active)
 
 ## Volcanoes
@@ -101,54 +101,54 @@
 - **122–134** Nellamisa Rimondoo the Golden
 - **135–173** Paveo Rimondoo
 - **174–189** Vasauvi Rimondoo
-- **190–229** Ireocoa Rimondoo
-- **230–255** Indolo Rimondoo the Bold
-- **256–277** Mellapiase Rimondoo the Young
-- **278–292** Vodiaca Rimondoo the Fair
-- **293–320** Bisaseo Rimondoo the Far-Sighted
+- *… 32 rulers over the intervening years …*
+- **995–1032** Opariamia Rimondoo
+- **1033–1049** Rilenseo Rimondoo
+- **1050–1064** Cebantenau Rimondoo the Fair
+- **1065–1100** Deriaba Rimondoo the Silent *(reigning)*
 
 ### House Sadkai — realm of Judaesh
 
-- **120–152** Zughaa Sadkai
-- **153–173** Shisushja Sadkai
-- **174–202** Ghaimqukhkha Sadkai
-- **203–226** Khikhaara Sadkai
-- **227–259** Qunka Sadkai the Cruel
-- **260–281** Khumaghaa Sadkai the Just
-- **282–311** Saizki Sadkai
-- **312–327** Raazqu Sadkai
-- **328–352** Maaa Sadkai the Navigator
+- **120–155** Zughaa Sadkai the Navigator
+- **156–169** Shisushja Sadkai the Builder
+- **170–202** Ghaimqukhkha Sadkai
+- **203–223** Khikhaara Sadkai the Conqueror
+- *… 26 rulers over the intervening years …*
+- **1025–1037** Khuzsesu Sadkai the Pious
+- **1038–1058** Taqe Sadkai
+- **1059–1095** Khammi Sadkai the Fair
+- **1096–1100** Iqaur Sadkai the Great *(reigning)*
 
 ### House Cavonavea — realm of Nopa
 
-- **142–167** Celenpo Cavonavea the Unlucky
-- **168–205** Menasiatau Cavonavea
-- **206–228** Vaiamia Cavonavea
-- **229–264** Mece Cavonavea the Silent
-- **265–302** Renivento Cavonavea
-- **303–325** Ricilo Cavonavea the Pious
-- **326–345** Sisapo Cavonavea
-- **346–360** Seome Cavonavea
-- **361–388** Cianapi Cavonavea
+- **142–181** Celenpo Cavonavea
+- **182–201** Menasiatau Cavonavea the Just
+- **202–230** Vaiamia Cavonavea the Far-Sighted
+- **231–244** Mece Cavonavea the Cursed
+- *… 29 rulers over the intervening years …*
+- **1020–1060** Deli Cavonavea
+- **1061–1075** Diba Cavonavea the Young
+- **1076–1088** Dacondoeo Cavonavea the Bold
+- **1089–1100** Bossopiadaua Cavonavea *(reigning)*
 
 ### House Cianapeo — realm of Neivia
 
-- **175–198** Sialeorau Cianapeo
-- **199–222** Todiaa Cianapeo the Learned
-- **223–247** Damallate Cianapeo
-- **248–268** Seriarimormavento Cianapeo
-- **269–292** Vessobedeo Cianapeo the Young
-- **293–309** Basipa Cianapeo
-- **310–334** Tamordassopau Cianapeo the Cruel
-- **335–350** Menacendodi Cianapeo the Pious
-- **351–368** Panese Cianapeo the Builder
+- **175–189** Sialeorau Cianapeo the Pious
+- **190–222** Todiaa Cianapeo
+- **223–235** Damallate Cianapeo the Cursed
+- **236–271** Seriarimormavento Cianapeo
+- *… 28 rulers over the intervening years …*
+- **1015–1041** Piariravento Cianapeo
+- **1042–1064** Modivia Cianapeo
+- **1065–1082** Diatana Cianapeo
+- **1083–1100** Ibemorsau Cianapeo *(reigning)*
 
 ## Notable figures
 
-- **Eneve, the Heretic** — Eneve was exiled from Bee for denying the old gods.
-- **Cauneo, the Scholar** — Cauneo mapped the waters of Laussorero.
-- **Cidau, the Architect** — Cidau raised the great road between Bee and Saaghaa.
-- **Mintereriatemar, the Explorer** — Mintereriatemar charted the far coasts and traced the Tashmiza to its source.
+- **Dauaa, the Architect** — Dauaa raised the great road between Bee and Saaghaa.
+- **Pomorsovau, the General** — Pomorsovau broke the long siege of Iabauti.
+- **Lianarau, the Scholar** — Lianarau mapped the waters of Laussorero.
+- **Cianasaule, the Mountaineer** — Cianasaule was first to stand atop Stonthuvik and return alive.
 
 ## Settlements
 

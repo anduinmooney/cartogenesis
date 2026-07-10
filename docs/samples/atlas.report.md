@@ -10,7 +10,7 @@
 - **Peoples:** 27 regions, 16 settlements, 2 realms
 - **Capital:** Bautossota, seat of House Velenmepia
 - **Dominant power:** Devoteo (of 5 surviving realm(s))
-- **The present year:** 1049 After Reckoning
+- **The present year:** 1100 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 6 (1 active)
 
 ## Volcanoes
@@ -92,31 +92,31 @@
 - **103–136** Piamala Velenmepia
 - **137–174** Talena Velenmepia the Grim
 - **175–214** Saubendosavento Velenmepia the Builder
-- **215–230** Isiteoa Velenmepia
-- **231–243** Conane Velenmepia
-- **244–281** Sita Velenmepia the Wise
-- **282–304** Viamorrepi Velenmepia the Conqueror
-- **305–342** Damiantera Velenmepia the Just
+- *… 30 rulers over the intervening years …*
+- **996–1018** Bimormausia Velenmepia the Young
+- **1019–1056** Neova Velenmepia
+- **1057–1082** Biamorcamar Velenmepia
+- **1083–1100** Pemaba Velenmepia *(reigning)*
 
 ### House Camiaba — realm of Taunabi
 
-- **103–118** Meoriapeto Camiaba
-- **119–152** Rollanebe Camiaba the Pious
-- **153–188** Biliani Camiaba
-- **189–211** Teomorle Camiaba
-- **212–227** Veobeda Camiaba
-- **228–267** Dauvauvento Camiaba
-- **268–309** Vadinteia Camiaba
-- **310–345** Ianapine Camiaba the Builder
-- **346–364** Ipemi Camiaba the Cruel
+- **103–142** Meoriapeto Camiaba
+- **143–164** Rollanebe Camiaba
+- **165–177** Biliani Camiaba
+- **178–198** Teomorle Camiaba the Young
+- *… 31 rulers over the intervening years …*
+- **1001–1040** Novendosau Camiaba
+- **1041–1055** Itomorseo Camiaba the Mad
+- **1056–1082** Liadiariaco Camiaba
+- **1083–1100** Rissoi Camiaba *(reigning)*
 
 ## Notable figures
 
-- **Ceonabeo, the Heretic** — Ceonabeo was exiled from Bautossota for denying the old gods.
-- **Aucollatiavento, the General** — Aucollatiavento broke the long siege of Nianata.
-- **Daureovoa, the Mountaineer** — Daureovoa was first to stand atop Vyei and return alive.
-- **Nipauto, the Explorer** — Nipauto charted the far coasts and traced the Semi to its source.
-- **Illarellavi, the Scholar** — Illarellavi mapped the waters of Viacora.
+- **Cadiariale, the Scholar** — Cadiariale mapped the waters of Viacora.
+- **Reore, the Mountaineer** — Reore was first to stand atop Vyei and return alive.
+- **Cosa, the Heretic** — Cosa was exiled from Bautossota for denying the old gods.
+- **Cidessobia, the General** — Cidessobia broke the long siege of Bautossota.
+- **Laderauvento, the Architect** — Laderauvento raised the great road between Bautossota and Nianata.
 
 ## Settlements
 

@@ -71,6 +71,19 @@ test("history references real named features and yields realms", () => {
   assert.ok(history.presentYear > 0);
 });
 
+test("no founding legend is dated after the present year", () => {
+  // A legend once landed at 1112 in a world whose present was 1100.
+  for (const seed of ["vahalia", "atlas", "borea", "chronicle"]) {
+    const w = generateWorld({ seed, width: 180, height: 180 });
+    for (const e of w.history.events) {
+      assert.ok(
+        e.year <= w.meta.presentYear,
+        `${seed}: legend at ${e.year} > present ${w.meta.presentYear}`,
+      );
+    }
+  }
+});
+
 test("every event has a non-empty title and text", () => {
   const { history } = build("prose", 180);
   for (const e of history.events) {

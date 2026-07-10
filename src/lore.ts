@@ -26,6 +26,8 @@ export interface Ruler {
   name: string; // "Given House the Epithet"
   startYear: number;
   endYear: number;
+  /** True for the ruler still on the throne in the present year. */
+  reigning: boolean;
 }
 
 export interface Figure {
@@ -46,6 +48,8 @@ export interface LoreLayer {
 
 export interface LoreConfig {
   seed: number;
+  /** The world's present year — dynasties reign right up to it. */
+  presentYear: number;
 }
 
 const EPITHETS = [
@@ -117,18 +121,22 @@ export function generateLore(
     const houseName = makeName(lang, new Rng(`${cfg.seed}:house:${realm.id}`));
     houses.push({ realmId: realm.id, realmName: realm.name, name: houseName });
 
+    // The house reigns from its founding right up to the present day. (It used
+    // to stop after nine rulers, leaving centuries of the chronicle kingless.)
+    const present = cfg.presentYear;
     let year = realm.foundedYear;
     let n = 0;
-    while (year < history.presentYear && n < 9) {
+    while (year < present && n < 80) {
       const reign = rng.int(12, 42);
       const given = makeName(lang, new Rng(`${cfg.seed}:ruler:${realm.id}:${n}`));
       const epithet = rng.bool(0.4) ? ` ${rng.pick(EPITHETS)}` : "";
-      const endYear = Math.min(year + reign, history.presentYear);
+      const endYear = Math.min(year + reign, present);
       rulers.push({
         realmId: realm.id,
         name: `${given} ${houseName}${epithet}`,
         startYear: year,
         endYear,
+        reigning: endYear >= present,
       });
       year = endYear + 1;
       n++;

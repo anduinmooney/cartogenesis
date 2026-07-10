@@ -54,7 +54,7 @@ export function worldReportMarkdown(world: World): string {
   lines.push(
     `- **Dominant power:** ${m.dominantPower} (of ${m.survivingRealms} surviving realm(s))`,
   );
-  lines.push(`- **The present year:** ${h.presentYear} ${h.epoch}`);
+  lines.push(`- **The present year:** ${m.presentYear} ${h.epoch}`);
   lines.push(
     `- **Highest peak:** ${m.highestPeakMetres.toLocaleString()} m · ` +
       `**volcanoes:** ${m.volcanoCount} (${m.activeVolcanoes} active)`,
@@ -130,8 +130,15 @@ export function worldReportMarkdown(world: World): string {
       const line = world.lore.rulers
         .filter((x) => x.realmId === realm.id)
         .sort((a, b) => a.startYear - b.startYear);
-      for (const ruler of line) {
-        lines.push(`- **${ruler.startYear}–${ruler.endYear}** ${ruler.name}`);
+      const entry = (r: (typeof line)[number]) =>
+        `- **${r.startYear}–${r.endYear}** ${r.name}${r.reigning ? " *(reigning)*" : ""}`;
+      // A thousand-year dynasty is a long king-list; show the ends of it.
+      if (line.length > 10) {
+        for (const r of line.slice(0, 4)) lines.push(entry(r));
+        lines.push(`- *… ${line.length - 8} rulers over the intervening years …*`);
+        for (const r of line.slice(-4)) lines.push(entry(r));
+      } else {
+        for (const r of line) lines.push(entry(r));
       }
       lines.push("");
     }

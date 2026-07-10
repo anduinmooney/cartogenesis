@@ -10,7 +10,7 @@
 - **Peoples:** 33 regions, 23 settlements, 3 realms
 - **Capital:** Monadianale, seat of House Osiriano
 - **Dominant power:** Vobica (of 9 surviving realm(s))
-- **The present year:** 1174 After Reckoning
+- **The present year:** 1100 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 9 (1 active)
 
 ## Volcanoes
@@ -106,43 +106,42 @@
 - **80–93** Sale Osiriano
 - **94–110** Lenatiace Osiriano the Pious
 - **111–133** Mandoniba Osiriano
-- **134–174** Pissocau Osiriano the Fair
-- **175–198** Obace Osiriano the Wise
-- **199–233** Momepau Osiriano the Builder
-- **234–267** Lintebilendemar Osiriano the Conqueror
-- **268–303** Peova Osiriano the Cursed
+- *… 30 rulers over the intervening years …*
+- **1010–1024** Vaumaleo Osiriano
+- **1025–1056** Deveba Osiriano
+- **1057–1073** Raussonariasia Osiriano the Conqueror
+- **1074–1100** Pondotila Osiriano *(reigning)*
 
 ### House Nindosiasavento — realm of Vobica
 
-- **85–112** Rerievento Nindosiasavento
-- **113–137** Banauriapa Nindosiasavento
-- **138–158** Vore Nindosiasavento
-- **159–182** Roranteta Nindosiasavento
-- **183–223** Vaucote Nindosiasavento the Navigator
-- **224–253** Pevissoriamar Nindosiasavento the Just
-- **254–268** Cauvapa Nindosiasavento
-- **269–284** Nivemoramar Nindosiasavento
-- **285–316** Cimorca Nindosiasavento
+- **85–108** Rerievento Nindosiasavento the Golden
+- **109–143** Banauriapa Nindosiasavento
+- **144–162** Vore Nindosiasavento
+- **163–188** Roranteta Nindosiasavento
+- *… 31 rulers over the intervening years …*
+- **1017–1042** Toevento Nindosiasavento
+- **1043–1072** Maucovento Nindosiasavento
+- **1073–1097** Mopaube Nindosiasavento
+- **1098–1100** Sentevesi Nindosiasavento *(reigning)*
 
 ### House Irri — realm of Raikhza
 
-- **87–109** Jekuseur Irri
-- **110–149** Shaiqairju Irri the Silent
-- **150–166** Ghirma Irri the Unlucky
-- **167–206** Rairiabad Irri the Wise
-- **207–228** Sharaa Irri
-- **229–266** Teghidza Irri
-- **267–297** Aisaikhaa Irri
-- **298–332** Zaikija Irri the Far-Sighted
-- **333–348** Taizimtai Irri the Young
+- **87–126** Jekuseur Irri
+- **127–147** Shaiqairju Irri the Pious
+- **148–169** Ghirma Irri the Learned
+- **170–186** Rairiabad Irri the Golden
+- *… 30 rulers over the intervening years …*
+- **1009–1027** Maijaa Irri the Grim
+- **1028–1043** Rashu Irri
+- **1044–1075** Zezusi Irri
+- **1076–1100** Shaghasu Irri *(reigning)*
 
 ## Notable figures
 
-- **Bonaavento, the Architect** — Bonaavento raised the great road between Monadianale and Peonimortia.
-- **Naciapiaa, the Heretic** — Naciapiaa was exiled from Monadianale for denying the old gods.
-- **Seossosenasiavento, the Scholar** — Seossosenasiavento mapped the waters of Miti.
-- **Nitaulenpia, the Explorer** — Nitaulenpia charted the far coasts and traced the Biriameoiaa to its source.
-- **Badata, the General** — Badata broke the long siege of Khighaa.
+- **Damorsia, the Scholar** — Damorsia mapped the waters of Miti.
+- **Sisa, the Architect** — Sisa raised the great road between Monadianale and Peonimortia.
+- **Ticalentaa, the Heretic** — Ticalentaa was exiled from Monadianale for denying the old gods.
+- **Auvovau, the Mountaineer** — Auvovau was first to stand atop Stobrabrau and return alive.
 
 ## Settlements
 
@@ -227,7 +226,7 @@ Followed across 5 region(s).
 - **545 After Reckoning** — Stobrabrau woke in fire and ash; a hard winter followed, and harvests failed across the land.
 - **585 After Reckoning** — An academy founded on the shores of Miti gathered the age's finest cartographers.
 - **940 After Reckoning** — A great storm-tide flooded Monadianale; the lower quarters were lost to the sea.
-- **1112 After Reckoning** — Under a long peace, Monadianale flourished; its libraries and roads became the wonder of the world.
+- **1100 After Reckoning** — Under a long peace, Monadianale flourished; its libraries and roads became the wonder of the world.
 
 ## Rise and fall of realms
 
