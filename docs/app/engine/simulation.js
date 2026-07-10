@@ -10,6 +10,7 @@
 // whole future is still a pure function of its seed.
 
 import { Rng } from "./rng.js";
+import { dist as euclid, dist2 } from "./exact.js";
 import { Biome } from "./biomes.js";
 import { makeName, languageById } from "./names.js";
                                                 
@@ -299,7 +300,7 @@ export function generateSimulation(
     for (const realm of realms) {
       const seat = byId.get(realm.seatRegion);
       if (!seat) continue;
-      const d = (seat.cx - r.cx) ** 2 + (seat.cy - r.cy) ** 2;
+      const d = dist2(seat.cx - r.cx, seat.cy - r.cy);
       if (d < bestD) {
         bestD = d;
         best = realm;
@@ -334,6 +335,13 @@ export function generateSimulation(
   const CONQUEST_COOLDOWN = 1; // turns a realm must rest after taking land
   const UNREST_TURNS = 3;
 
+  /**
+   * How steeply boldness lowers the odds a realm will accept. This used to be
+   * `Math.pow(a, 1.6)`. The exponent is a tuning knob, and 1.5 is `a * sqrt(a)`
+   * — pure exact arithmetic, so the same war gets declared on every engine.
+   */
+  const aggressionCurve = (a        )         => a * Math.sqrt(a);
+
   // Each world has its own temperament. Low cohesion → unruly peoples, empires
   // fray and fragment. High cohesion → conquests stick and a great power can
   // unify the map. This is what makes outcomes differ from world to world
@@ -351,7 +359,7 @@ export function generateSimulation(
     if (r.cy < minY) minY = r.cy;
     if (r.cy > maxY) maxY = r.cy;
   }
-  const mapDiag = Math.max(1, Math.hypot(maxX - minX, maxY - minY));
+  const mapDiag = Math.max(1, euclid(maxX - minX, maxY - minY));
 
   /** Force a realm can actually bring to bear on `target`. */
   const projectedStrength = (realm       , targetId        )         => {
@@ -360,7 +368,7 @@ export function generateSimulation(
     const seat = byId.get(realm.seatRegion);
     const target = byId.get(targetId);
     let dist = 0;
-    if (seat && target) dist = Math.hypot(seat.cx - target.cx, seat.cy - target.cy) / mapDiag;
+    if (seat && target) dist = euclid(seat.cx - target.cx, seat.cy - target.cy) / mapDiag;
     const far = Math.max(0, dist - FREE_RADIUS); // border wars aren't penalised
     return raw / (overext * (1 + DISTANCE_PENALTY * far));
   };
@@ -483,7 +491,7 @@ export function generateSimulation(
         const ratio = attack / (defend + 1);
         // A warlike realm marches on far thinner odds than a cautious one —
         // sometimes on odds so poor the invasion is thrown straight back.
-        if (ratio > ATTACK_RATIO / Math.pow(ownerRealm.aggression, 1.6)) {
+        if (ratio > ATTACK_RATIO / aggressionCurve(ownerRealm.aggression)) {
           opportunities.push({ a: owner, b: other, region: nb, ratio });
         }
       }

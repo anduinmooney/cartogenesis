@@ -12,6 +12,7 @@
 //   moisture:    0 = arid,   1 = saturated
 
 import { Grid } from "./grid.ts";
+import { cosQuarterTurn } from "./exact.ts";
 import { fbm2D } from "./noise.ts";
 import type { WaterLayer } from "./hydrology.ts";
 
@@ -52,7 +53,7 @@ export function generateTemperature(
   for (let y = 0; y < height; y++) {
     // Warmth from latitude: 1 at equator, ~0 at poles (smooth cosine curve).
     const lat = latitudeBand(y, height);
-    const latWarmth = Math.cos((lat * Math.PI) / 2); // 1 → 0
+    const latWarmth = cosQuarterTurn(lat); // 1 → 0
 
     for (let x = 0; x < width; x++) {
       const i = y * width + x;

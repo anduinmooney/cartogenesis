@@ -5,6 +5,7 @@
 // look like islands/continents surrounded by ocean rather than noise squares.
 
 import { Grid } from "./grid.js";
+import { powExact } from "./exact.js";
 import { fbm2D, ridge2D } from "./noise.js";
 
                                 
@@ -33,7 +34,7 @@ export function generateElevation(cfg               )       {
     octaves = 6,
     ridgeMix = 0.3,
     island = true,
-    islandPower = 1.2,
+    islandPower = 1.25,
   } = cfg;
 
   const grid = new Grid(width, height);
@@ -60,7 +61,7 @@ export function generateElevation(cfg               )       {
         const dx = (nx - 0.5) * 2;
         const dy = (ny - 0.5) * 2;
         const d = Math.sqrt(dx * dx + dy * dy) / Math.SQRT2;
-        const mask = 1 - Math.pow(d, islandPower);
+        const mask = 1 - powExact(d, islandPower);
         h *= Math.max(0, mask);
       }
 

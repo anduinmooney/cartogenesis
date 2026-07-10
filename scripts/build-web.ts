@@ -17,6 +17,7 @@ import { join } from "node:path";
 const MODULES = [
   "rng",
   "hash",
+  "exact",
   "noise",
   "grid",
   "terrain",

@@ -9,7 +9,7 @@
 //   elevation → water → temperature → moisture → rivers → biomes
 
 import { Rng } from "./rng.js";
-import { hashQuantized } from "./hash.js";
+import { hashExact, hashQuantized, hashTokens } from "./hash.js";
 import { Grid } from "./grid.js";
 import { generateElevation, landFraction } from "./terrain.js";
 import { addVolcanoes,              } from "./volcanoes.js";
@@ -96,8 +96,12 @@ export const ENGINE_VERSION = "0.13.0";
                             
                                                   
                             
-                                                                         
+                                                                               
                       
+                                                                                  
+                    
+                                                                            
+                         
  
 
                         
@@ -355,6 +359,8 @@ export function generateWorld(config             )        {
     maxAltitudeMetres,
     highestPeakMetres,
     contentHash: hashGrid(elevation),
+    exactHash: hashGridExact(elevation),
+    simulationHash: simulationFingerprint(simulation),
   };
 
   return {
@@ -378,9 +384,35 @@ export function generateWorld(config             )        {
   };
 }
 
-/** Stable content hash of a Grid (quantized to survive trivial float noise). */
+/**
+ * Quantized hash of a Grid — rounds to 16 bits, so it survives (and therefore
+ * hides) last-bit drift. Useful for "did the terrain change visibly". NOT the
+ * determinism guard: use `hashGridExact`. See DECISIONS D-022.
+ */
 export function hashGrid(grid      )         {
   return hashQuantized(grid.data);
+}
+
+/** Exact bit-level hash of a Grid. This is the determinism guard. */
+export function hashGridExact(grid      )         {
+  return hashExact(grid.data);
+}
+
+/**
+ * Fingerprint of what history actually did: every realm's arc, every dated
+ * event, and every settlement's founding and fall. Terrain can be bit-identical
+ * while this drifts — that is exactly what D-022 was.
+ */
+export function simulationFingerprint(sim                 )         {
+  const tokens                         = [];
+  for (const r of sim.realms) {
+    tokens.push(r.foundedYear, "/", r.peakSize, "/", r.peakYear, "/", r.finalSize, "/", r.status, ";");
+  }
+  for (const e of sim.events) tokens.push(e.year, ":", e.type, ";");
+  for (const t of sim.settlementTimeline) {
+    tokens.push(t.id, "@", t.foundedYear, "-", t.fellYear ?? "standing", ";");
+  }
+  return hashTokens(tokens);
 }
 
 /** Serialize world metadata (not the heavy grids) to a JSON string. */

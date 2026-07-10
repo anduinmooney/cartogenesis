@@ -9,6 +9,7 @@
 // status the history layer can pick up.
 
 import { Grid } from "./grid.ts";
+import { powExact } from "./exact.ts";
 import { Rng } from "./rng.ts";
 import { languageById } from "./names.ts";
 import { composeName } from "./language.ts";
@@ -43,14 +44,15 @@ interface Shape {
   amp: number;
   craterFrac: number;
   craterDepthFrac: number;
+  /** Must be a quarter-multiple: the engine raises to it with `powExact`. */
   flankExp: number;
 }
 
 const SHAPES: Record<VolcanoType, Shape> = {
   // Tall, steep cone, small deep crater.
-  stratovolcano: { radiusBase: 24, amp: 0.5, craterFrac: 0.16, craterDepthFrac: 0.38, flankExp: 1.7 },
+  stratovolcano: { radiusBase: 24, amp: 0.5, craterFrac: 0.16, craterDepthFrac: 0.38, flankExp: 1.75 },
   // Broad, gentle dome, shallow wide crater.
-  shield: { radiusBase: 42, amp: 0.34, craterFrac: 0.1, craterDepthFrac: 0.16, flankExp: 1.05 },
+  shield: { radiusBase: 42, amp: 0.34, craterFrac: 0.1, craterDepthFrac: 0.16, flankExp: 1.0 },
   // Small, steep, big relative crater.
   "cinder cone": { radiusBase: 11, amp: 0.22, craterFrac: 0.34, craterDepthFrac: 0.55, flankExp: 1.5 },
 };
@@ -139,7 +141,7 @@ export function addVolcanoes(
         let add: number;
         if (r >= craterR) {
           const t = (radius - r) / (radius - craterR); // 0 at rim-outer → 1 at crater rim
-          add = amp * Math.pow(t, shape.flankExp);
+          add = amp * powExact(t, shape.flankExp);
         } else {
           const t = r / craterR; // 0 center → 1 crater rim
           add = amp - craterDepth * (1 - t * t);

@@ -6,8 +6,9 @@ old one — the history is the point.
 
 ---
 
-## D-022 — Determinism is only as strong as the arithmetic underneath it (2026-07-10, Session 15)
-**Status:** finding + plan. The fix is Session 16's headline objective.
+## D-022 — Determinism is only as strong as the arithmetic underneath it (2026-07-10, Session 15; **RESOLVED** Session 16)
+**Status:** RESOLVED. Session 15 found it; Session 16 fixed it. The resolution is
+recorded at the end of this entry.
 
 **What happened.** CI (Node v24.18.0) and the dev machine (Node v24.16.0)
 disagreed about whether seed `s10` produces any ruins. Two tests that hard-coded
@@ -61,6 +62,35 @@ regenerated in the same commit, with this entry cited.
 **Honest framing to keep:** until step 2 lands, do not claim cross-platform or
 cross-version reproducibility. Claim reproducibility *on a given Node build*,
 which is what we actually have.
+
+### Resolution (Session 16)
+New `src/exact.ts` provides `dist`/`dist2` (from `sqrt`), `powExact` (integer and
+quarter-integer exponents via `sqrt` + binary exponentiation), and
+`cosQuarterTurn` (a 9-term Taylor cosine). Every approximated call in the
+generation pipeline now routes through it:
+- `erosion.ts`, `simulation.ts` `Math.hypot` → `dist`.
+- `simulation.ts` `(…) ** 2` → `dist2`; `Math.pow(aggression, 1.6)` → `a*sqrt(a)`
+  (exponent snapped 1.6 → 1.5; it is a tuning knob, and the 30-seed balance
+  distribution is unchanged: mean 62%, on the same seeds the old code also gave 62%).
+- `terrain.ts` `Math.pow(d, 1.2)` → `powExact`, exponent snapped **1.2 → 1.25**.
+- `volcanoes.ts` `Math.pow(t, flankExp)` → `powExact`, exponents snapped
+  **1.7 → 1.75** and **1.05 → 1.0**.
+- `climate.ts` `Math.cos` → `cosQuarterTurn`.
+- `render.ts` keeps `Math.log1p` — pixels are not world state.
+
+Guards:
+- `hashExact` (raw Float64 bits) and a `simulationFingerprint` (realm arcs, dated
+  events, settlement fates) are now on `meta.exactHash` / `meta.simulationHash`
+  and pinned in `tests/world.test.ts`. A test proves the exact hash catches a
+  one-ulp perturbation the quantized hash rounds away.
+- `tests/exact.test.ts` greps the whole `src/` tree and **fails if any
+  implementation-approximated call (`Math.hypot|pow|cos|sin|exp|log|…` or the
+  `**` operator) appears outside `render.ts` and `exact.ts`** — so this cannot
+  silently regress.
+
+New golden fingerprints (seed "cartogenesis", 256²): quantized `623e773a881f55b0`,
+exact `d3db452f2c2e4472`, simulation `329a34e3d0463789`. The claim is now true:
+same seed, same world, on any conforming engine.
 
 ---
 

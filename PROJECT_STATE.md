@@ -4,9 +4,11 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 15 · 2026-07-10
+- **As of:** Session 16 · 2026-07-10
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 155 tests pass (CI enforced); deterministic output.
+- **Health:** 🟢 Green. 163 tests pass (CI enforced). **Reproducible across
+  Node builds and platforms** — the engine uses only exactly-specified
+  arithmetic, guarded by an exact bit-level hash (D-022 resolved, Session 16).
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 - **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
@@ -46,7 +48,8 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 155 passing tests, incl. golden-hash guard, river mass-conservation, road
+- 163 passing tests, incl. exact + simulation determinism guards, an
+  approximated-math lint, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
   under `docs/`; local preview via `node scripts/serve-docs.ts`.
@@ -76,7 +79,7 @@
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 155 tests, all offline
+npm test                  # 163 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)
@@ -89,9 +92,12 @@ No `npm install` is required — there are zero dependencies.
 
 1. Generation is a pure function of seed + config. No `Math.random`, no clock.
 2. Subsystems use `root.stream("name")` for randomness (order-independent).
-3. The golden hash in `tests/world.test.ts` must stay green, or be updated with
-   a `DECISIONS.md` entry explaining the intentional change. (Note: it is
-   *quantized*, so it does not catch last-bit drift — see D-022.)
+3. The three fingerprints in `tests/world.test.ts` (`contentHash` quantized,
+   `exactHash` bit-level, `simulationHash`) must stay green, or be updated with a
+   `DECISIONS.md` entry explaining the intentional change.
+6. The engine uses only exactly-specified arithmetic (`+ - * / sqrt`, via
+   `src/exact.ts`). No `Math.hypot/pow/cos/…` or `**` outside `render.ts` — a
+   test enforces this (D-022). `render.ts` is exempt; pixels are not world state.
 4. Anything dated derives its years from `meta.presentYear`. Never invent a
    second "present".
 5. `CONCEPTS` in `src/language.ts` is **append-only**. Inserting a concept
@@ -111,17 +117,10 @@ No `npm install` is required — there are zero dependencies.
   cluttering gazetteers. Consider merging sub-threshold islets.
 - Moisture runs a single west→east prevailing wind; latitude wind belts would be
   more realistic (future tuning).
-- **Reproducibility holds per Node build, NOT across them (D-022).** Confirmed
-  Session 15: CI (v24.18.0) and the dev box (v24.16.0) disagree on whether a
-  given seed produces ruins. The pipeline uses `Math.hypot`/`Math.pow`/`Math.cos`,
-  which the spec leaves *implementation-approximated*, and the simulation is
-  chaotic in the last bit — swapping `Math.hypot(x,y)` for the identical
-  `Math.sqrt(x*x+y*y)` flips ruin counts from 2,2,3,2,2 to 1,0,1,0,0. The golden
-  hash misses it because it quantizes before hashing. **Fixing this is Session
-  16's objective.** Until then, don't claim cross-version reproducibility.
 - Tests must never hard-code a *simulated* outcome for a seed (which seed has
-  ruins is not stable across V8 builds). Discover one at run time; fail loudly if
-  none does. `tests/coherence.test.ts` shows the pattern.
+  ruins depends on chaotic last-bit dynamics — even now that the arithmetic is
+  exact, it is fragile to any algorithm tweak). Discover one at run time; fail
+  loudly if none does. `tests/coherence.test.ts` shows the pattern.
 - No TS `enum`/namespaces/decorators — Node strip-only mode rejects them.
 - Remember: after any `src/` change, rerun `build:web` (CI now enforces this).
 

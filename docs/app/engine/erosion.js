@@ -8,6 +8,7 @@
 // reproducible like every other layer.
 
 import { Grid } from "./grid.js";
+import { dist } from "./exact.js";
 import { Rng } from "./rng.js";
 
                                 
@@ -121,7 +122,7 @@ export function erode(elevation      , cfg               )       {
       // Update direction (blend gradient descent with inertia) and move.
       dirX = dirX * inertia - gx * (1 - inertia);
       dirY = dirY * inertia - gy * (1 - inertia);
-      const len = Math.hypot(dirX, dirY);
+      const len = dist(dirX, dirY);
       if (len !== 0) {
         dirX /= len;
         dirY /= len;
