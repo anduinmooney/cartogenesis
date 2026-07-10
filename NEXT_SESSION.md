@@ -6,8 +6,8 @@
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm green **before** changing anything (baseline: **127**).
-3. Skim `CHANGELOG.md` (top, Session 11) and `ROADMAP.md`.
+2. `npm test` → confirm green **before** changing anything (baseline: **128**).
+3. Skim `CHANGELOG.md` (top, Session 12) and `ROADMAP.md`.
 4. Preview: `node scripts/serve-docs.ts` → `/` (atlas) and `/app/` (live).
 5. **After any `src/` change, rerun `node scripts/build-web.ts`** (CI enforces
    it; it also fails if a browser module — engine/app/worker — imports one you
@@ -17,11 +17,19 @@
 
 ## Context: where the project is
 
-Session 11 shipped the **time scrubber**: on the Powers layer you can now play/
-scrub 100→1,100 AR and watch realm borders shift. But the *cities* on the map are
-static — they're the present-day settlements, unchanged as you scrub. The
-simulation already narrates foundings and falls in the chronicle; the next step
-makes them **show on the map**.
+Session 11 shipped the **time scrubber** (play/scrub 100→1,100 AR on the Powers
+layer). Session 12 fixed a serious balance flaw the user spotted — every world
+used to collapse into a single hegemon; now overextension, distance, revolts,
+ambition and per-world cohesion make outcomes **vary** (mean top-power share
+94% → 59%). A regression test guards both failure modes.
+
+The *cities* on the map are still static — present-day settlements, unchanged as
+you scrub. The simulation narrates foundings and falls in the chronicle; the next
+step makes them **show on the map**.
+
+**Balance note:** if you touch `src/simulation.ts` war/revolt logic, re-run the
+distribution check (generate ~30 seeds, measure top-power share) — the regression
+test only catches gross failures, not drift.
 
 **Priority note:** if the user gives new feedback, address that first.
 

@@ -6,6 +6,25 @@ old one — the history is the point.
 
 ---
 
+## D-019 — Balance of power: projected strength, not raw sum (2026-07-09, Session 12)
+**Decision:** War resolution uses a realm's *projected* strength at the target
+(raw strength ÷ overextension ÷ distance-from-capital) against the defender's
+*home-ground* defence — never the raw sum of its regions. Layered on top: war
+exhaustion (cooldowns), unrest/revolt in freshly conquered land, cluster
+secessions, a per-realm `aggression` trait, a per-world `cohesion` trait, and
+invasions that can be repulsed.
+**Why:** With strength = Σ(regions), every conquest strictly increased the odds
+of the next one. That is a positive feedback loop with no damping, so *every*
+world converged on a single hegemon (measured: 94% mean top-power share, 75% of
+worlds >90% unified) and every chronicle read identically. The fix is not to make
+conquest hard — that produced the opposite failure (0 empires, a third of worlds
+with no wars at all) — but to make it **self-limiting**: success carries costs
+that scale with what you already hold. `cohesion` then varies the damping *per
+world* so outcomes spread across a distribution instead of clustering at either
+extreme (now: 59% mean share, 10% unified, 27% fragmented).
+**Guarded by** a regression test asserting both failure modes stay fixed: some
+world must stay divided, and some world must still produce a dominant power.
+
 ## D-018 — Volcanoes before erosion; real 16-bit heightmap exports (2026-07-09, Session 10)
 **Decision:** Volcanoes are built onto the elevation field *before* the hydraulic
 erosion pass, and the project exports genuine 16-bit heightmaps (a grayscale PNG

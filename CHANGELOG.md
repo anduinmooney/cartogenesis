@@ -8,6 +8,58 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 12 — 2026-07-09 — Balance of power (user feedback)
+
+**Theme:** "Powers and regions always nail down to one power by the end." True,
+and measured: mean top-power share **94%**, with **75% of worlds >90% unified**.
+Every history read the same. Fixed.
+
+### The cause
+A realm's strength was the raw **sum** of its regions, so every conquest made the
+next one easier — a pure snowball with nothing pushing back.
+
+### Counter-forces added (`src/simulation.ts`)
+- **Overextension** — a sprawling realm projects less force per front.
+- **Distance** — armies weaken far from their capital (a *free radius* keeps
+  border wars unpenalised).
+- **Home ground** — defenders fight harder on their own soil.
+- **War exhaustion** — a cooldown after every conquest, longer after a defeat.
+- **Unrest & revolt** — freshly conquered land seethes and can rise; the more
+  overextended the empire, the likelier the province revolts.
+- **Cluster secession** — breakaways take a contiguous group of provinces, so
+  they're viable rivals instead of one-region snacks that get re-eaten.
+
+### Variety & character
+- **Per-realm `aggression`** (0.6 timid … 1.8 warlike): bold realms march on poor
+  odds. Every world is guaranteed at least one would-be conqueror.
+- **Per-world `cohesion`** (unruly … cohesive) scales overextension/revolt/
+  secession — so some worlds fragment and some genuinely unify.
+- **Invasions can be repulsed** (new `repulsed` event). Realms relocate their
+  seat when their capital falls.
+
+### Measured over 30 seeds
+| Metric | Before | After |
+|---|---|---|
+| Mean top-power share | 94% | **59%** (sd 19) |
+| Worlds >90% unified | 75% | **10%** |
+| Worlds fragmented (<45%) | 0% | **27%** |
+| Avg powers at end | ~1.5 | **2.6** |
+| Wars per world | — | 11 conquests vs **16 repulsed** |
+
+### Verified
+- `npm test` → **128 passing**, incl. a new **regression guard** asserting
+  histories stay varied (not all unified, *and* conquest still possible).
+- Golden hash unchanged (`74c67102ff7abf98`). Samples + bundle regenerated: the
+  Powers map now shows rival realms; reports carry rise/fall arcs (a realm peaks
+  at 10 provinces then goes extinct) and repeated failed campaigns.
+- In-browser: 6 surviving realms, 120 events (36 conquests / 18 repulsed / 15
+  revolts); scrubber shows borders shifting between real powers.
+
+### Decided
+- D-019 (balance-of-power model: projected strength, not raw sum).
+
+---
+
 ## Session 11 — 2026-07-09 — Temporal atlas (watch history unfold)
 
 **Theme:** First verified Session 10's work live (the preview browser was fine on

@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 11 · 2026-07-09
+- **As of:** Session 12 · 2026-07-09
 - **Engine version:** 0.12.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 127 tests pass (CI enforced); deterministic output.
+- **Health:** 🟢 Green. 128 tests pass (CI enforced); deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 - **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
@@ -31,12 +31,15 @@
   map, a per-layer legend, a clickable chronicle that flies to each event, a
   **time scrubber on the Powers layer** (play/scrub 100→1,100 AR to watch borders
   shift), a 16-bit **heightmap download**, `?seed=` links, and "Today's world".
-- Per world the CLI emits **7 artifacts**: terrain / biome / political map PNGs,
-  a grayscale heightmap, a **labeled SVG poster**, a **Markdown gazetteer**, and
-  JSON metadata with a `contentHash` fingerprint.
+- Per world the CLI emits **10 artifacts**: terrain / biome / political /
+  topographic map PNGs, a relief preview, a **real 16-bit heightmap** (PNG + raw
+  `.r16`), a **labeled SVG poster**, a **Markdown gazetteer**, and JSON metadata
+  with a `contentHash` fingerprint.
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
-- 87 passing tests, incl. golden-hash guard, river mass-conservation, road
-  no-cycle, region full-partition.
+- **Balanced history:** outcomes vary by world — some fragment among rival
+  powers, some unify under an empire (mean top-power share ~59%, not ~94%).
+- 128 passing tests, incl. golden-hash guard, river mass-conservation, road
+  no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
   under `docs/`; local preview via `node scripts/serve-docs.ts`.
 
@@ -55,14 +58,15 @@
 | P1 SVG poster · P3 World report | ✅ done |
 | P2 Browser build · P4 interactive atlas | ✅ done |
 | Web Worker (responsive app) · CI | ✅ done |
-| time scrubber · languages · in-app atlas | 🔜 the world keeps deepening |
+| Time scrubber (temporal atlas) · balance of power | ✅ done |
+| dynamic settlements · languages · in-app atlas | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 87 tests, all offline
-node src/cli.ts generate --seed hello   # writes 7 artifacts to ./output
+npm test                  # 128 tests, all offline
+node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)
 node scripts/serve-docs.ts     # preview docs/ + docs/app/ at http://localhost:8123

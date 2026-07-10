@@ -79,6 +79,10 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **Dynamic history** — the world simulated over turns (L16).
 - ✅ **Time scrubber** — per-turn snapshots animate the Powers map; play/scrub
   the centuries and watch borders shift (Session 11).
+- ✅ **Balance of power** — overextension, distance, home ground, war exhaustion,
+  revolts, cluster secessions, per-realm ambition + per-world cohesion, and
+  repulsed invasions. Histories now vary instead of always ending in one empire
+  (Session 12).
 - ⬜ **Dynamic settlements** — cities founded/abandoned over time, appearing and
   vanishing as you scrub.
 - ⬜ Latitude-varying wind belts for moisture (trade winds vs. westerlies).
