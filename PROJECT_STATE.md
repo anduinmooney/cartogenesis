@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 14 · 2026-07-09
-- **Engine version:** 0.12.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 134 tests pass (CI enforced); deterministic output.
+- **As of:** Session 15 · 2026-07-10
+- **Engine version:** 0.13.0 (runs in Node **and** the browser)
+- **Health:** 🟢 Green. 155 tests pass (CI enforced); deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 - **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
@@ -20,6 +20,10 @@
   wealth & trade, faiths with myths, and a **dynamic simulated history** (the
   world run forward over centuries — emergent wars, conquests, and rising and
   falling realms) — all deterministic from the seed.
+- **Names you can read.** Each culture has a real lexicon (59 word-roots coined
+  in its own phonology); every name is a compound of two of them, glossed. The
+  terrain steers the naming, so a port is *the sea haven* and an alpine province
+  is *the mountain land*. The gazetteer and the app both print the glossary.
 - Ten rendered map layers (terrain, **topographic**, biomes, political, powers,
   faiths, resources, temperature, rainfall, relief) + a labeled SVG poster + a
   Markdown gazetteer with an emergent chronicle.
@@ -42,7 +46,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 134 passing tests, incl. golden-hash guard, river mass-conservation, road
+- 155 passing tests, incl. golden-hash guard, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
   under `docs/`; local preview via `node scripts/serve-docs.ts`.
@@ -64,13 +68,15 @@
 | Web Worker (responsive app) · CI | ✅ done |
 | Time scrubber (temporal atlas) · balance of power | ✅ done |
 | Dynamic settlements (foundings, ruins) · one timeline | ✅ done |
-| languages/lexicons · in-app atlas · more | 🔜 the world keeps deepening |
+| L8.5 Languages (lexicons, glosses, phrasebook) | ✅ done |
+| Present-day roads & economy (survivors only) | ✅ done |
+| in-app gazetteer · deeper terrain · more | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 134 tests, all offline
+npm test                  # 155 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)
@@ -85,6 +91,10 @@ No `npm install` is required — there are zero dependencies.
 2. Subsystems use `root.stream("name")` for randomness (order-independent).
 3. The golden hash in `tests/world.test.ts` must stay green, or be updated with
    a `DECISIONS.md` entry explaining the intentional change.
+4. Anything dated derives its years from `meta.presentYear`. Never invent a
+   second "present".
+5. `CONCEPTS` in `src/language.ts` is **append-only**. Inserting a concept
+   re-rolls every root after it and renames every world.
 
 ## Known limitations / debt
 
@@ -96,9 +106,6 @@ No `npm install` is required — there are zero dependencies.
 - Don't create `new Worker` in `preview_eval` without `.terminate()` — leaked
   workers wedge the whole preview browser (this bit Session 10; a fresh start
   fixed it in Session 11).
-- Roads and the economy are computed on the full L9 settlement set, so a road can
-  lead to a town the simulation later ruined. (Charming, arguably — roads outlive
-  cities — but the gazetteer's economy can still cite a ruin.)
 - Tiny single-cell islands become their own 1-cell "regions" (coverage pass),
   cluttering gazetteers. Consider merging sub-threshold islets.
 - Moisture runs a single west→east prevailing wind; latitude wind belts would be

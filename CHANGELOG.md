@@ -8,6 +8,72 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 15 — 2026-07-10 — Languages, and a world you can read
+
+**Theme:** give every culture real *vocabulary*, so a name can be translated —
+then pay off the promise everywhere a name appears. Engine **0.13.0**.
+
+### The languages (new `src/language.ts`)
+- Each culture gets a **lexicon**: 59 concepts (`sea`, `stone`, `high`, `fort`,
+  `holy` …), each coined as a root in that language's own phonology. Auld
+  `stagr` = sea; Kesh `khir` = sea; Sylvan `syaeen` = sea.
+- Every name is a **compound of two roots**, chosen by a per-kind template
+  (`peak` = a quality + stone/mountain; `town` = a modifier + a work of hands;
+  `deity` = a divine particle + sacred roots). Names carry a **gloss**:
+  `Deoliria` is *the sea haven*.
+- Roots are joined by real **morphophonology** — elision (`vaska`+`erd` →
+  *vaskerd*), degemination (`hold`+`dun` → *holdun*), epenthesis (`vaskr`+`stan`
+  → *vaskrastan*). Roots must begin with a consonant, or every seam becomes a
+  hiatus and compounds turn to mush (`cau`+`au` → *caau*).
+- **The terrain names the place.** Callers pass hints: a port passes `sea`, a
+  desert region `sand`, a town under a summit `mountain`. The composer prefers
+  the most salient hint its template can take — 60% of the time, not always,
+  because a rule with no exceptions reads as a rule. An unusable hint is
+  *ignored*, never emitted: there is no "sea peak".
+- Lexicons are keyed by **language id, not world seed** (D-021). `vyvask` means
+  water in Auld in every world; learn a dozen roots and you can read any map we
+  generate.
+
+### Surfaced
+- **Gazetteer:** a new **Languages** section printing each spoken culture's full
+  glossary and where it's spoken; meanings on regions, settlements, volcanoes,
+  notable features, ruling houses, realms, and gods.
+- **App:** a **Languages phrasebook** panel (collapsible per culture); etymology
+  on hover and in the pinned detail card; glossed notable features.
+- Names also got **short**: median 9 characters, max 13. No more
+  "Leolenvabauvento".
+
+### Coherence: present-day roads and economy
+Longstanding debt in `PROJECT_STATE`. The simulation runs on the world as it
+*was*; the maps describe the world as it *is*. Roads ran to ruined cities and
+the economy listed them among the exporters.
+- The pipeline is now honestly two-pass: roads + economy are computed over all
+  settlements (what the simulation consumes), then **rebuilt over the survivors**
+  once the simulation says who fell. `World.roads` / `World.economy` are the
+  present-day layers.
+- When nothing falls, the rebuild is **skipped**, so it cannot cause drift.
+- Removing a town does not always *shorten* the network — a ruined hub forces
+  detours — so the test asserts the network **differs**, not that it shrinks.
+
+### Bug found and fixed
+A nine-volcano island raised **three peaks all named Mt. Brogravra**: the volcano
+template was 5 modifiers × 2 heads and had no avoid-set. Widened to 12 × 4 and
+given one. Caught by looking at a screenshot, then locked down by a test.
+
+### Verification
+- **155 tests** pass (21 new, in `tests/language.test.ts` and
+  `tests/coherence.test.ts`), incl. non-vacuity guards: the ruin tests fail
+  loudly if a seed stops producing ruins.
+- Elevation golden hash **`74c67102ff7abf98` unchanged** — naming is downstream
+  of geography.
+- Simulation structure proved **byte-identical** across five seeds before/after
+  the rename (a `git stash` A/B on realm years, sizes, fates, and event types) —
+  names draw from private RNG streams and cannot perturb the sim.
+- Live app verified on a fresh preview: phrasebook renders, hover and detail
+  cards gloss, no console errors.
+
+---
+
 ## Session 14 — 2026-07-09 — One timeline (user feedback: "age maxes out")
 
 **Theme:** *"Age doesn't seem to work, maxes out at 150."* Investigating it

@@ -46,6 +46,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **L7 — Regions.** Land partitioned into named provinces (spaced-seed BFS).
 - ✅ **L8 — Naming languages.** Four phonologies → coherent place names; culture
   follows climate.
+- ✅ **L8.5 — Lexicons.** Each culture has 59 word-roots coined in its own
+  phonology; names are glossed compounds steered by the terrain, and the
+  gazetteer prints the glossary (Session 15).
 - ✅ **L9 — Settlements.** Habitability scoring → cities/towns/ports + a capital.
 - ✅ **L10 — Roads & trade.** Least-cost Dijkstra + Kruskal MST road network.
 - ✅ **L11 — History.** Realms, wars, disasters, golden ages — a dated chronicle.
@@ -85,6 +88,12 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   (Session 12).
 - ✅ **Dynamic settlements** — founding years, sacked/abandoned ruins; cities
   appear and vanish as you scrub (Session 13).
+- ✅ **One timeline** — legends, dynasties and the chronicle all answer to
+  `meta.presentYear` (Session 14).
+- ✅ **Present-day roads & economy** — rebuilt on the survivors, so no highway
+  runs to a dead city (Session 15).
+- ⬜ **Language contact** — conquered towns keep their root and take the
+  conqueror's suffix, the way real toponymy layers.
 - ⬜ Latitude-varying wind belts for moisture (trade winds vs. westerlies).
 - ⬜ Lake outflow / river-into-lake-into-river continuity.
 - ⬜ Merge sub-threshold islet "regions".
