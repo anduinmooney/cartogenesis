@@ -488,6 +488,19 @@ export function generateSimulation(
   // slipped through). Track the live name set as renames land.
   const takenNames = new Set(settlements.map((s) => s.name));
 
+  // Chronicle events anchor to a marked place when the region has one: the
+  // oldest town standing in that year. Clicking the chronicle then lands on a
+  // town dot instead of empty countryside. (x/y are not part of the
+  // fingerprint, so this is presentation, not history.)
+  const anchorOf = (regionId: number, year: number): { x: number; y: number } => {
+    const towns = (townsByRegion.get(regionId) ?? [])
+      .filter((t) => t.foundedYear <= year && (t.fellYear === undefined || t.fellYear >= year))
+      .sort((a, b) => a.foundedYear - b.foundedYear || a.id - b.id);
+    if (towns.length > 0) return { x: towns[0].x, y: towns[0].y };
+    const reg = byId.get(regionId);
+    return { x: reg?.cx ?? 0, y: reg?.cy ?? 0 };
+  };
+
   // --- The tick loop. Record borders after every turn (plus the initial). ---
   const snapshots: ControlSnapshot[] = [{ year: startYear, control: { ...control } }];
   for (let t = 0; t < turns; t++) {
@@ -501,7 +514,7 @@ export function generateSimulation(
       if (pop > cap * 1.15) {
         pop *= 0.82;
         if (rng.next() < 0.15) {
-          events.push({ year, type: "famine", actors: { place: r.name }, text: `Famine struck ${r.name}; the fields could not feed its people.`, x: r.cx, y: r.cy });
+          { const at = anchorOf(r.id, year); events.push({ year, type: "famine", actors: { place: r.name }, text: `Famine struck ${r.name}; the fields could not feed its people.`, x: at.x, y: at.y }); }
         }
       }
       population[r.id] = Math.max(0, pop);
@@ -560,14 +573,17 @@ export function generateSimulation(
       if (rng.next() >= successProb) {
         population[op.region] *= 0.96; // the border bleeds either way
         cooldown.set(op.a, t + CONQUEST_COOLDOWN + 1); // a costly failure
-        events.push({
-          year,
-          type: "repulsed",
-          actors: { subject: attacker.name, object: defender.name, place: cr.name },
-          text: `${attacker.name}'s invasion of ${cr.name} was thrown back by ${defender.name}.`,
-          x: cr.cx,
-          y: cr.cy,
-        });
+        {
+          const at = anchorOf(cr.id, year);
+          events.push({
+            year,
+            type: "repulsed",
+            actors: { subject: attacker.name, object: defender.name, place: cr.name },
+            text: `${attacker.name}'s invasion of ${cr.name} was thrown back by ${defender.name}.`,
+            x: at.x,
+            y: at.y,
+          });
+        }
         continue;
       }
 
@@ -585,17 +601,20 @@ export function generateSimulation(
           ruinSettlement(ts, year, "sacked");
         }
       }
-      events.push({
-        year,
-        type: "conquest",
-        actors: { subject: attacker.name, object: defender.name, place: cr.name },
-        text: `${attacker.name} seized ${cr.name} from ${defender.name}.`,
-        x: cr.cx,
-        y: cr.cy,
-      });
+      {
+        const at = anchorOf(cr.id, year);
+        events.push({
+          year,
+          type: "conquest",
+          actors: { subject: attacker.name, object: defender.name, place: cr.name },
+          text: `${attacker.name} seized ${cr.name} from ${defender.name}.`,
+          x: at.x,
+          y: at.y,
+        });
+      }
       if (defender.regions.size === 0 && defender.alive) {
         defender.alive = false;
-        events.push({ year, type: "fall", actors: { subject: defender.name, place: cr.name }, text: `The realm of ${defender.name} was extinguished.`, x: cr.cx, y: cr.cy });
+        { const at = anchorOf(cr.id, year); events.push({ year, type: "fall", actors: { subject: defender.name, place: cr.name }, text: `The realm of ${defender.name} was extinguished.`, x: at.x, y: at.y }); }
       }
     }
 
@@ -636,14 +655,17 @@ export function generateSimulation(
       realmById.set(rebel.id, rebel);
       unrest.delete(rid);
       ensureSeat(owner);
-      events.push({
-        year,
-        type: "revolt",
-        actors: { subject: rebel.name, object: owner.name, place: reg.name },
-        text: `${reg.name} rose against ${owner.name} and declared the free realm of ${rebel.name}.`,
-        x: reg.cx,
-        y: reg.cy,
-      });
+      {
+        const at = anchorOf(reg.id, year);
+        events.push({
+          year,
+          type: "revolt",
+          actors: { subject: rebel.name, object: owner.name, place: reg.name },
+          text: `${reg.name} rose against ${owner.name} and declared the free realm of ${rebel.name}.`,
+          x: at.x,
+          y: at.y,
+        });
+      }
     }
 
     // 3) Fragmentation — overgrown realms shed a breakaway state.
@@ -710,8 +732,8 @@ export function generateSimulation(
           cluster.length > 1
             ? `${reg.name} and ${cluster.length - 1} neighbouring province(s) broke away from ${realm.name} to found the realm of ${newRealm.name}.`
             : `${reg.name} broke away from ${realm.name} to found the realm of ${newRealm.name}.`,
-        x: reg.cx,
-        y: reg.cy,
+        x: anchorOf(reg.id, year).x,
+        y: anchorOf(reg.id, year).y,
       });
     }
 
@@ -731,14 +753,17 @@ export function generateSimulation(
         const from = faith[r.id];
         faith[r.id] = faith[bestNb];
         if (rng.next() < 0.25) {
-          events.push({
-            year,
-            type: "conversion",
-            actors: { subject: faithName(faith[bestNb]), object: faithName(from), place: r.name },
-            text: `${r.name} turned from ${faithName(from)} to ${faithName(faith[bestNb])}.`,
-            x: r.cx,
-            y: r.cy,
-          });
+          {
+            const at = anchorOf(r.id, year);
+            events.push({
+              year,
+              type: "conversion",
+              actors: { subject: faithName(faith[bestNb]), object: faithName(from), place: r.name },
+              text: `${r.name} turned from ${faithName(from)} to ${faithName(faith[bestNb])}.`,
+              x: at.x,
+              y: at.y,
+            });
+          }
         }
       }
     }
@@ -748,7 +773,7 @@ export function generateSimulation(
       const r = regs[rng.int(0, regs.length)];
       population[r.id] *= 0.45; // a true pestilence carries off a third or more
       const kind = rng.bool() ? "A plague swept" : "A long drought gripped";
-      events.push({ year, type: "plague", actors: { place: r.name }, text: `${kind} ${r.name}; many perished.`, x: r.cx, y: r.cy });
+      { const at = anchorOf(r.id, year); events.push({ year, type: "plague", actors: { place: r.name }, text: `${kind} ${r.name}; many perished.`, x: at.x, y: at.y }); }
     }
 
     // 6) Golden ages for large, prosperous realms.

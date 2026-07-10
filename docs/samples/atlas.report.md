@@ -5,30 +5,27 @@
 ## Overview
 
 - **Extent:** 360 × 360 cells
-- **Land / ocean:** 41.7% land, 58.3% ocean, 4 lake(s)
+- **Land / ocean:** 41.7% land, 58.3% ocean, 1 lake(s)
 - **Climate & life:** dominant biome **Savanna**, 15 biomes in all
 - **Peoples:** 26 regions, 17 settlements, 3 realms
 - **Capital:** Deoliria, seat of House Niantetindo
-- **Dominant power:** Qidkakaasi (of 4 surviving realm(s))
+- **Dominant power:** Rauriacaria (of 4 surviving realm(s))
 - **The present year:** 1100 After Reckoning
-- **Highest peak:** 4,500 m · **volcanoes:** 6 (3 active)
+- **Highest peak:** 4,490 m · **volcanoes:** 3 (2 active)
 
 ## Volcanoes
 
 - **Mount Vusturn** — *the ash cliff* — stratovolcano, active, summit 4,500 m
-- **Mount Vollasturn** — *the storm cliff* — stratovolcano, dormant, summit 4,500 m, one of an island arc
-- **Mount Thygrabry** — *the fire stone* — stratovolcano, active, summit 4,500 m, one of an island arc
-- **Mount Vynhrei** — *the old hill* — stratovolcano, dormant, summit 4,500 m, **caldera** cradling a crater lake, one of an island arc
 - **Mount Vollahrei** — *the storm hill* — shield, extinct, summit 3,291 m, a collapsed **caldera**, one of an island arc
 - **Mount Thathobry** — *the dark stone* — shield, active, summit 2,706 m, one of an island arc
 
-*2 of the volcanic systems form island arcs — chains of cones strung along a line, as they rise over a moving plate.*
+*1 of the volcanic system forms an island arc — chains of cones strung along a line, as they rise over a moving plate.*
 
-*Fresh lava fields streak the flanks of the living peaks — 141 cells of cooled basalt where nothing grows and no one builds.*
+*Fresh lava fields streak the flanks of the living peaks — 92 cells of cooled basalt where nothing grows and no one builds.*
 
 ## Notable features
 
-- **Mount Vynbra** — the highest peak, *the old mountain*
+- **Mount Caubeosso** — the highest peak, *the old mountain*
 - **The Qishaghash** — the greatest river, *the deep river*
 - **Lake Donasi** — the largest inland water, *the black lake*
 
@@ -36,57 +33,58 @@
 
 | Region | Meaning | Culture | Area | Dominant biome | Coast |
 |--------|---------|---------|-----:|----------------|:-----:|
-| Brahrei | *the mountain hill* | Auld (northern) | 3101 | Snow | — |
-| Mairghen | *the mountain land* | Kesh (desert) | 3087 | Savanna | — |
-| Rairmid | *the gold grass* | Kesh (desert) | 3037 | Savanna | yes |
-| Peonaveolla | *the grass wood* | Meridian (southern) | 3030 | Shrubland | yes |
-| Beossodinte | *the mountain spring* | Meridian (southern) | 2943 | Grassland | — |
-| Stagrdaurk | *the sea folk* | Auld (northern) | 2889 | Shrubland | yes |
-| Khirarer | *the sea sand* | Kesh (desert) | 2857 | Savanna | yes |
-| Khirkhash | *the sea marsh* | Kesh (desert) | 2676 | Savanna | yes |
-| Deocina | *the sea hill* | Meridian (southern) | 2652 | Grassland | yes |
-| Panalaria | *the field cliff* | Meridian (southern) | 2584 | Grassland | — |
-| Skafjan | *the cold field* | Auld (northern) | 2431 | Snow | — |
-| Mairkai | *the mountain spring* | Kesh (desert) | 2379 | Savanna | — |
-| Shinkhukha | *the wild field* | Kesh (desert) | 2346 | Savanna | yes |
-| Staunkno | *the ice land* | Auld (northern) | 2295 | Snow | — |
-| Midkhajez | *the grass wood* | Kesh (desert) | 2286 | Savanna | — |
-| Khirshaa | *the sea folk* | Kesh (desert) | 1887 | Savanna | yes |
-| Mairkhaim | *the mountain stone* | Kesh (desert) | 1704 | Savanna | — |
-| Khirkhajez | *the sea wood* | Kesh (desert) | 1601 | Savanna | yes |
-| Deocaria | *the sea land* | Meridian (southern) | 1568 | Grassland | yes |
-| Khirzash | *the sea vale* | Kesh (desert) | 1483 | Savanna | yes |
-| Khirkhaim | *the sea stone* | Kesh (desert) | 1333 | Savanna | yes |
-| Khirghen | *the sea land* | Kesh (desert) | 1266 | Savanna | yes |
-| Deodinte | *the sea spring* | Meridian (southern) | 1149 | Grassland | yes |
-| Rairghen | *the gold land* | Kesh (desert) | 1029 | Savanna | yes |
-| Syaeenmelen | *the sea land* | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
+| Khirghen | *the sea land* | Kesh (desert) | 3524 | Savanna | yes |
+| Shinkhajez | *the wild wood* | Kesh (desert) | 3465 | Savanna | yes |
+| Mairghen | *the mountain land* | Kesh (desert) | 2772 | Savanna | — |
+| Panalaria | *the field cliff* | Meridian (southern) | 2722 | Grassland | yes |
+| Khirshaa | *the sea folk* | Kesh (desert) | 2721 | Savanna | yes |
+| Jakhidku | *the high hill* | Kesh (desert) | 2563 | Savanna | — |
+| Brahrei | *the mountain hill* | Auld (northern) | 2501 | Snow | — |
+| Beossoda | *the mountain sand* | Meridian (southern) | 2487 | Grassland | yes |
+| Khirkhaim | *the sea stone* | Kesh (desert) | 2424 | Savanna | yes |
+| Mairkai | *the mountain spring* | Kesh (desert) | 2390 | Savanna | — |
+| Beossodinte | *the mountain spring* | Meridian (southern) | 2331 | Alpine | — |
+| Stagrdaurk | *the sea folk* | Auld (northern) | 2328 | Shrubland | yes |
+| Mairkhidku | *the mountain hill* | Kesh (desert) | 2099 | Cold Desert | — |
+| Midkhash | *the grass marsh* | Kesh (desert) | 2076 | Savanna | — |
+| Khirkhidku | *the sea hill* | Kesh (desert) | 2064 | Savanna | yes |
+| Peonapana | *the grass field* | Meridian (southern) | 1962 | Shrubland | yes |
+| Qusham | *the red cliff* | Kesh (desert) | 1898 | Temperate Desert | — |
+| Brabei | *the mountain wood* | Auld (northern) | 1810 | Alpine | — |
+| Khirarer | *the sea sand* | Kesh (desert) | 1720 | Savanna | yes |
+| Deoneosso | *the sea stone* | Meridian (southern) | 1679 | Grassland | yes |
+| Midghen | *the grass land* | Kesh (desert) | 1601 | Savanna | yes |
+| Peonaveolla | *the grass wood* | Meridian (southern) | 1308 | Grassland | yes |
+| Midkhajez | *the grass wood* | Kesh (desert) | 1233 | Savanna | yes |
+| Khirkhajez | *the sea wood* | Kesh (desert) | 1204 | Savanna | yes |
+| Deodinte | *the sea spring* | Meridian (southern) | 1166 | Grassland | yes |
 | Melareth | *the wood vale* | Sylvan (woodland) | 1 | Tropical Rainforest | yes |
 
-- Brahrei is an inland reach of snowbound heights, its folk hardy and sea-wise.
-- Mairghen is an inland reach of golden savanna, its people caravan-traders and readers of stars.
-- Rairmid is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirghekh.
-- Peonaveolla is a coast of windswept scrub, a country of vineyards and old stone towns, seat of Deodinte.
-- Beossodinte is an inland reach of rolling grassland, a country of vineyards and old stone towns.
-- Stagrdaurk is a coast of windswept scrub, its folk hardy and sea-wise, seat of Thaurndund.
-- Khirarer is a coast of golden savanna, its people caravan-traders and readers of stars.
-- Khirkhash is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Shinkai.
-- Deocina is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deoliria.
-- Panalaria is an inland reach of rolling grassland, a country of vineyards and old stone towns.
-- Skafjan is an inland reach of snowbound heights, its folk hardy and sea-wise.
-- Mairkai is an inland reach of golden savanna, its people caravan-traders and readers of stars.
-- Shinkhukha is a coast of golden savanna, its people caravan-traders and readers of stars.
-- Staunkno is an inland reach of snowbound heights, its folk hardy and sea-wise.
-- Midkhajez is an inland reach of golden savanna, its people caravan-traders and readers of stars.
-- Khirshaa is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Rairshu.
-- Mairkhaim is an inland reach of golden savanna, its people caravan-traders and readers of stars.
-- Khirkhajez is a coast of golden savanna, its people caravan-traders and readers of stars.
-- Deocaria is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deolamor.
-- Khirzash is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirkai.
-- Khirkhaim is a coast of golden savanna, its people caravan-traders and readers of stars.
 - Khirghen is a coast of golden savanna, its people caravan-traders and readers of stars.
-- Deodinte is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deotomor.
-- Rairghen is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirzaa.
+- Shinkhajez is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirghekh.
+- Mairghen is an inland reach of golden savanna, its people caravan-traders and readers of stars.
+- Panalaria is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deolamor.
+- Khirshaa is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Ghashmakh.
+- Jakhidku is an inland reach of golden savanna, its people caravan-traders and readers of stars.
+- Brahrei is an inland reach of snowbound heights, its folk hardy and sea-wise.
+- Beossoda is a coast of rolling grassland, a country of vineyards and old stone towns.
+- Khirkhaim is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Ghashkai.
+- Mairkai is an inland reach of golden savanna, its people caravan-traders and readers of stars.
+- Beossodinte is an inland reach of bare grey peaks, a country of vineyards and old stone towns.
+- Stagrdaurk is a coast of windswept scrub, its folk hardy and sea-wise, seat of Hrafjysk.
+- Mairkhidku is an inland reach of cold, stony flats, its people caravan-traders and readers of stars.
+- Midkhash is an inland reach of golden savanna, its people caravan-traders and readers of stars.
+- Khirkhidku is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirqe.
+- Peonapana is a coast of windswept scrub, a country of vineyards and old stone towns, seat of Bellalamor.
+- Qusham is an inland reach of dry basin country, its people caravan-traders and readers of stars.
+- Brabei is an inland reach of bare grey peaks, its folk hardy and sea-wise.
+- Khirarer is a coast of golden savanna, its people caravan-traders and readers of stars.
+- Deoneosso is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deotomor.
+- Midghen is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirkai.
+- Peonaveolla is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deoliria.
+- Midkhajez is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Khirzaa.
+- Khirkhajez is a coast of golden savanna, its people caravan-traders and readers of stars.
+- Deodinte is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Niantetomor.
 
 ## Ruling houses
 
@@ -94,155 +92,149 @@
 
 *Niantetindo, the green blood; Tenameonte, the holy war.*
 
-- **89–119** Rondai Niantetindo
-- **120–153** Senai Niantetindo
-- **154–191** Mantai Niantetindo the Grim
-- **192–231** Tindir Niantetindo the Builder
-- *… 29 rulers over the intervening years …*
-- **989–1012** Vair Niantetindo
-- **1013–1035** Cinai Niantetindo the Young
-- **1036–1073** Niantir Niantetindo
-- **1074–1099** Donai Niantetindo
+- **82–112** Rondai Niantetindo
+- **113–146** Senai Niantetindo
+- **147–184** Mantai Niantetindo the Grim
+- **185–224** Tindir Niantetindo the Builder
+- *… 30 rulers over the intervening years …*
+- **1006–1028** Cinai Niantetindo the Young
+- **1029–1066** Niantir Niantetindo
+- **1067–1092** Donai Niantetindo
+- **1093–1100** Belenai Niantetindo *(reigning)*
 
 ### House Variataria — realm of Caudente
 
 *Variataria, the wild gold; Caudente, the old peace.*
 
-- **96–123** Panan Variataria
-- **124–163** Varian Variataria
-- **164–185** Peonai Variataria
-- **186–198** Niantai Variataria
+- **99–138** Panan Variataria
+- **139–160** Varian Variataria
+- **161–173** Peonai Variataria
+- **174–194** Niantai Variataria the Young
 - *… 31 rulers over the intervening years …*
-- **986–1021** Veollir Variataria
-- **1022–1061** Cinan Variataria
-- **1062–1076** Neossai Variataria the Mad
-- **1077–1100** Mantir Variataria *(reigning)*
+- **997–1036** Veollir Variataria
+- **1037–1051** Cinan Variataria the Mad
+- **1052–1078** Neossai Variataria
+- **1079–1100** Mantir Variataria *(reigning)*
 
-### House Ghushakhaim — realm of Rairghen
+### House Nianteneosso — realm of Tariacaria
 
-*Ghushakhaim, the green stone; Rairghen, the gold land.*
+*Nianteneosso, the green stone; Tariacaria, the gold land.*
 
-- **115–147** Saidai Ghushakhaim
-- **148–161** Kheqir Ghushakhaim
-- **162–195** Rairan Ghushakhaim
-- **196–221** Shaman Ghushakhaim
+- **123–136** Tindai Nianteneosso
+- **137–170** Mantan Nianteneosso
+- **171–196** Tarir Nianteneosso
+- **197–216** Peoriai Nianteneosso the Unlucky
 - *… 31 rulers over the intervening years …*
-- **1003–1042** Zujikhai Ghushakhaim the Far-Sighted
-- **1043–1059** Shaman Ghushakhaim
-- **1060–1085** Shamai Ghushakhaim the Unlucky
-- **1086–1100** Shaman Ghushakhaim the Fair *(reigning)*
+- **1018–1034** Doriai Nianteneosso
+- **1035–1060** Larir Nianteneosso the Unlucky
+- **1061–1095** Lariai Nianteneosso the Fair
+- **1096–1100** Belenan Nianteneosso *(reigning)*
 
 ## Notable figures
 
-- **Varian, the Explorer** — Varian charted the far coasts and traced the Qishaghash to its source.
-- **Peorir, the General** — Peorir broke the long siege of Rairshu.
-- **Peorir, the Scholar** — Peorir mapped the waters of Donasi.
-- **Dintai, the Heretic** — Dintai was exiled from Deoliria for denying the old gods.
+- **Raurian, the Mountaineer** — Raurian was first to stand atop Caubeosso and return alive.
+- **Peorir, the General** — Peorir broke the long siege of Deolamor.
+- **Niantir, the Explorer** — Niantir charted the far coasts and traced the Qishaghash to its source.
+- **Senir, the Scholar** — Senir mapped the waters of Donasi.
 
 ## Settlements
 
 ### Cities
 
-- **Deoliria**, *the sea haven* (**capital**, port, rich) — Grain, Fish, Livestock, Horses *(founded 100)*
-- **Deolamor**, *the sea hall* (port, prosperous) — Livestock, Wine, Horses, Grain *(founded 134)*
-- **Rairdemor**, *the gold home* (port, prosperous) — Horses, Wine, Livestock, Grain *(founded 169)* — formerly **Rairshu**, before conquest remade the name
+- **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Livestock, Wine, Grain, Fish *(founded 100)*
+- **Deolamor**, *the sea hall* (port, prosperous) — Grain, Timber, Livestock, Horses *(founded 134)*
+- **Nianteqe**, *the green home* (prosperous) — Livestock, Grain, Fish, Horses *(founded 169)* — formerly **Niantetomor**, before conquest remade the name
 
 ### Towns
 
-- **Deotomor**, *the sea fort* (port, prosperous) — Grain, Livestock, Horses, Wine *(founded 203)*
-- **Thaurnliria**, *the grass haven* (prosperous) — Grain, Livestock, Horses, Wine *(founded 238)* — formerly **Thaurndund**, before conquest remade the name
-- **Deonelen**, *the sea bridge* (port, trade hub, prosperous) — Grain, Fish, Livestock *(founded 272)*
-- **Khirliria**, *the sea haven* (port, modest) — Livestock, Timber, Fish, Horses *(founded 306)* — formerly **Khirmakh**, before conquest remade the name
+- **Deotomor**, *the sea fort* (port, rich) — Grain, Wine, Timber, Fish *(founded 203)*
+- **Panaliria**, *the field haven* (trade hub, rich) — Livestock, Fish, Grain, Wine *(founded 238)*
+- **Bellalamor**, *the river hall* (rich) — Wine, Livestock, Grain, Fish *(founded 272)*
+- **Ghashciamor**, *the river gate* (prosperous) — Grain, Livestock, Timber, Horses *(founded 306)* — formerly **Ghashmakh**, before conquest remade the name
 - **Khirghekh**, *the sea gate* (port, prosperous) — Livestock, Grain, Wine, Horses *(founded 341)*
 
 ### Villages
 
-- **Shinlamor**, *the wild hall* (modest) — Livestock, Horses, Grain, Wine *(founded 409)* — formerly **Shinkai**, before conquest remade the name
-- **Khirlamor**, *the sea hall* (port, modest) — Livestock, Grain, Horses *(founded 444)* — formerly **Khirkai**, before conquest remade the name
-- **Khirzaa**, *the sea bridge* (port, prosperous) — Livestock, Fish, Iron, Wine *(founded 478)*
-- **Ghashdemor**, *the river home* (prosperous) — Livestock, Wine, Grain, Horses *(founded 513)* — formerly **Ghashqe**, before conquest remade the name
-- **Deodemor**, *the sea home* (port, modest) — Spices, Fish, Livestock, Horses *(founded 547)*
-- **Stagrlamor**, *the sea hall* (port, prosperous) — Livestock, Grain, Timber, Horses *(founded 581)* — formerly **Stagrba**, before conquest remade the name
-- **Ghashakhukha**, *the river field* (port, prosperous) — Livestock, Copper, Horses, Stone *(founded 616)*
-- **Bellapana**, *the river field* (trade hub, prosperous) — Livestock, Wine, Grain, Horses *(founded 650)*
-
-## Ruins
-
-*Settlements that did not survive to the present day.*
-
-- **Deodinte** (village) — founded 375, stormed and left a ruin in 500
+- **Khirlamor**, *the sea hall* (port, modest) — Livestock, Horses *(founded 375)* — formerly **Khirkai**, before conquest remade the name
+- **Panadinte**, *the field spring* (port, rich) — Livestock, Grain, Horses, Fish *(founded 409)*
+- **Ghashlamor**, *the river hall* (prosperous) — Livestock, Fish, Horses *(founded 444)* — formerly **Ghashkai**, before conquest remade the name
+- **Khirzaa**, *the sea bridge* (port, prosperous) — Coal, Horses, Wine, Livestock *(founded 478)*
+- **Khirdemor**, *the sea home* (port, modest) — Livestock, Horses *(founded 513)* — formerly **Khirqe**, before conquest remade the name
+- **Hraliria**, *the river haven* (prosperous) — Grain, Livestock, Horses, Wine *(founded 547)* — formerly **Hrafjysk**, before conquest remade the name
+- **Ghashakhukha**, *the river field* (trade hub, rich) — Livestock, Iron, Coal, Wine *(founded 581)*
+- **Peonapana**, *the grass field* (prosperous) — Grain, Livestock, Horses *(founded 616)*
+- **Shintomor**, *the wild fort* (modest) — Livestock, Horses *(founded 650)* — formerly **Shinshu**, before conquest remade the name
 
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Shinkai** → **Shinlamor** *(the wild hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Deodinte** → **Deofjysk** *(the sea home)* — Meridian (southern) land under Auld (northern) rule, c. 150
+- **Khirqe** → **Khirdemor** *(the sea home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Ghashkai** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
 - **Khirkai** → **Khirlamor** *(the sea hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Ghashqe** → **Ghashdemor** *(the river home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Rairshu** → **Rairdemor** *(the gold home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Khirmakh** → **Khirliria** *(the sea haven)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Thaurndund** → **Thaurnliria** *(the grass haven)* — Auld (northern) land under Meridian (southern) rule, c. 700
-- **Stagrba** → **Stagrlamor** *(the sea hall)* — Auld (northern) land under Meridian (southern) rule, c. 700
+- **Niantetomor** → **Nianteqe** *(the green home)* — Meridian (southern) land under Kesh (desert) rule, c. 150
+- **Hrafjysk** → **Hraliria** *(the river haven)* — Auld (northern) land under Meridian (southern) rule, c. 275
+- **Ghashmakh** → **Ghashciamor** *(the river gate)* — Kesh (desert) land under Meridian (southern) rule, c. 700
+- **Shinshu** → **Shintomor** *(the wild fort)* — Kesh (desert) land under Meridian (southern) rule, c. 700
 
 ## Faiths
 
-### the Cult of Vaskyvastall — Vaskyvastall, god of War
+### the Cult of Varikhaamaad — Varikhaamaad, god of War
 
-*Vaskyvastall: the wind king.*
+*Varikhaamaad: the wind king.*
 
-> Vaskyvastall forged the first blade in the fires of Vynbra and gave it to the bold of Brahrei.
-
-Followed across 14 region(s).
-
-### the Faith of Vaghisaaju — Vaghisaaju, god of the Sea
-
-*Vaghisaaju: the dusk holy.*
-
-> In the first age the waters covered all, until Vaghisaaju drew up the land and set the Qishaghash running to the sea.
-
-Followed across 4 region(s).
-
-### the Rite of Valossocomor — Valossocomor, god of the Forest
-
-*Valossocomor: the dread fire.*
-
-> Valossocomor planted the first tree in Peonaveolla and hides still among the deep woods.
+> Varikhaamaad forged the first blade in the fires of Caubeosso and gave it to the bold of Khirghen.
 
 Followed across 8 region(s).
+
+### the Faith of Vabamortena — Vabamortena, god of the Sea
+
+*Vabamortena: the dusk holy.*
+
+> In the first age the waters covered all, until Vabamortena drew up the land and set the Qishaghash running to the sea.
+
+Followed across 7 region(s).
+
+### the Rite of Vabrograthygr — Vabrograthygr, god of the Forest
+
+*Vabrograthygr: the dread fire.*
+
+> Vabrograthygr planted the first tree in Brahrei and hides still among the deep woods.
+
+Followed across 11 region(s).
 
 ## Resources & trade
 
 - **Major exports:** Livestock, Horses, Grain, Wine, Fish
 - **Wealthiest settlement:** Deoliria
-- **Trade hubs:** Deonelen, Bellapana
-- **Deposits:** Iron ×22, Copper ×16, Gold ×8, Gems ×5, Stone ×50, Coal ×18, Timber ×4, Grain ×29, Livestock ×112, Fish ×12, Spices ×1, Salt ×10, Horses ×35, Wine ×17
+- **Trade hubs:** Deoliria, Panaliria, Ghashakhukha
+- **Deposits:** Iron ×23, Copper ×17, Gold ×7, Gems ×4, Stone ×47, Coal ×19, Timber ×7, Grain ×30, Livestock ×112, Fish ×12, Spices ×2, Salt ×12, Horses ×34, Wine ×17
 
 ## Languages
 
 *Every place-name in this world is a compound of the roots below. Read them and the map reads back.*
 
-### Auld (northern)
-
-*Spoken in Brahrei, Stagrdaurk, Skafjan.*
-
-**vyvask** water · **stagr** sea · **hra** river · **grei** lake · **ba** spring · **bry** stone · **bra** mountain · **hrei** hill · **fjan** field · **thaugr** vale · **stausk** isle · **sturn** cliff · **brein** marsh · **kno** land · **bei** wood · **gro** tree · **gra** thorn · **thaurn** grass · **thygr** fire · **vu** ash · **staun** ice · **knaurk** sand · **than** salt · **tharn** iron · **steirk** gold · **fjeisk** high · **knyst** deep · **thatho** dark · **knausk** bright · **vyn** old · **fjaun** new · **breist** red · **stork** white · **do** black · **von** green · **ska** cold · **knyrk** wild · **thu** fort · **hro** hall · **bust** gate · **grull** bridge · **dund** haven · **fjysk** home · **gry** market · **daurk** folk · **stall** king · **hryrk** blood · **skei** war · **thon** peace · **thork** holy · **brogr** dread · **thost** dawn · **kneirk** dusk · **fjull** star · **va** moon · **vyrk** sun · **veill** sky · **skyva** wind · **voll** storm
-
 ### Kesh (desert)
 
-*Spoken in Mairghen, Rairmid, Khirarer.*
+*Spoken in Khirghen, Shinkhajez, Mairghen.*
 
 **kan** water · **khir** sea · **ghash** river · **takish** lake · **kai** spring · **khaim** stone · **mair** mountain · **khidku** hill · **khukha** field · **zash** vale · **zujikh** isle · **sham** cliff · **khash** marsh · **ghen** land · **khajez** wood · **qa** tree · **shid** thorn · **mid** grass · **zajiq** fire · **zair** ash · **kash** ice · **rarer** sand · **kaz** salt · **mish** iron · **rair** gold · **ja** high · **qish** deep · **shaim** dark · **me** bright · **kaar** old · **ki** new · **qu** red · **kheq** white · **ran** black · **ghush** green · **tu** cold · **shin** wild · **shu** fort · **makh** hall · **ghekh** gate · **zaa** bridge · **kad** haven · **qe** home · **riz** market · **shaa** folk · **maad** king · **said** blood · **kaasi** war · **taitan** peace · **ju** holy · **qidka** dread · **ghair** dawn · **ghisaa** dusk · **sagha** star · **shad** moon · **ghim** sun · **ghaza** sky · **rikhaa** wind · **zizam** storm
 
+### Auld (northern)
+
+*Spoken in Brahrei, Stagrdaurk, Brabei.*
+
+**vyvask** water · **stagr** sea · **hra** river · **grei** lake · **ba** spring · **bry** stone · **bra** mountain · **hrei** hill · **fjan** field · **thaugr** vale · **stausk** isle · **sturn** cliff · **brein** marsh · **kno** land · **bei** wood · **gro** tree · **gra** thorn · **thaurn** grass · **thygr** fire · **vu** ash · **staun** ice · **knaurk** sand · **than** salt · **tharn** iron · **steirk** gold · **fjeisk** high · **knyst** deep · **thatho** dark · **knausk** bright · **vyn** old · **fjaun** new · **breist** red · **stork** white · **do** black · **von** green · **ska** cold · **knyrk** wild · **thu** fort · **hro** hall · **bust** gate · **grull** bridge · **dund** haven · **fjysk** home · **gry** market · **daurk** folk · **stall** king · **hryrk** blood · **skei** war · **thon** peace · **thork** holy · **brogr** dread · **thost** dawn · **kneirk** dusk · **fjull** star · **va** moon · **vyrk** sun · **veill** sky · **skyva** wind · **voll** storm
+
 ### Meridian (southern)
 
-*Spoken in Peonaveolla, Beossodinte, Deocina.*
+*Spoken in Panalaria, Beossoda, Beossodinte.*
 
 **milen** water · **deo** sea · **bella** river · **si** lake · **dinte** spring · **neosso** stone · **beosso** mountain · **cina** hill · **pana** field · **riando** vale · **doria** isle · **laria** cliff · **po** marsh · **caria** land · **veolla** wood · **baria** tree · **sena** thorn · **peona** grass · **comor** fire · **le** ash · **vi** ice · **da** sand · **maria** salt · **re** iron · **taria** gold · **rauria** high · **sauna** deep · **semor** dark · **peoria** bright · **cau** old · **belen** new · **vasso** red · **mante** white · **dona** black · **niante** green · **vau** cold · **varia** wild · **tomor** fort · **lamor** hall · **ciamor** gate · **nelen** bridge · **liria** haven · **demor** home · **telen** market · **binte** folk · **na** king · **tindo** blood · **meonte** war · **dente** peace · **tena** holy · **losso** dread · **mau** dawn · **bamor** dusk · **selen** star · **raulla** moon · **rondo** sun · **vomor** sky · **lolla** wind · **momor** storm
 
 ### Sylvan (woodland)
 
-*Spoken in Syaeenmelen, Melareth.*
+*Spoken in Melareth.*
 
 **syys** water · **syaeen** sea · **melyn** river · **syes** lake · **siaen** spring · **ne** stone · **thaeen** mountain · **melia** hill · **siien** field · **reth** vale · **sier** isle · **theo** cliff · **nil** marsh · **melen** land · **mela** wood · **phae** tree · **le** thorn · **phi** grass · **laeen** fire · **sieen** ash · **reo** ice · **melir** sand · **thiail** salt · **phyil** iron · **sial** gold · **syeo** high · **siael** deep · **nas** dark · **rien** bright · **ly** old · **thil** new · **rywyn** red · **syeil** white · **syia** black · **ril** green · **rith** cold · **this** wild · **phes** fort · **siy** hall · **phawyn** gate · **siawyn** bridge · **raeth** haven · **sieos** home · **nywyn** market · **thyth** folk · **lia** king · **siany** blood · **meler** war · **thaen** peace · **syith** holy · **syaen** dread · **lith** dawn · **theen** dusk · **phen** star · **nar** moon · **thas** sun · **rias** sky · **nana** wind · **reil** storm
 
@@ -250,62 +242,62 @@ Followed across 8 region(s).
 
 *One saga per culture — the founding as its own singers keep it. The facts are the world's facts; the pride is their own.*
 
-### The Saga of Qidkakaasi (Kesh (desert))
+### The Saga of Qidkaqe (Kesh (desert))
 
 > First came the desert folk over the singing sands,
-> and the land they found they would not leave.
-> Mairghen they named it — the mountain land —
+> and the shore they found they would not leave.
+> Khirghen they named it — the sea land —
 > for they were a people who named things truly.
-> Rairshu they built first, the gold fort,
-> its harbour open like a hand.
-> (The maps write it Rairdemor now. The saga does not.)
-> Over it they set Vaghisaaju, the dusk holy,
-> whose dominion is the sea;
-> and the Faith of Vaghisaaju keeps that fire yet.
+> Ghashmakh they built first, the river hall,
+> its walls set square against the weather.
+> (The maps write it Ghashciamor now. The saga does not.)
+> Over it they set Varikhaamaad, the wind king,
+> whose dominion is war;
+> and the Cult of Varikhaamaad keeps that fire yet.
 > In their tongue, zajiq is fire and khaim is stone;
 > so read their map: every name a small song.
-> And of Qidkakaasi the singers still sing,
-> for its banners stand as high as ever they did.
+> Qidkaqe endures, lesser than its songs —
+> as all things are, that last long enough to be sung of.
 
 ### The Saga of Caudente (Meridian (southern))
 
 > Out of the warm sea came the southern folk,
 > and the shore they found they would not leave.
-> Peonaveolla they named it — the grass wood —
+> Panalaria they named it — the field cliff —
 > and the name has outlived every wall they raised.
 > Deoliria they built first, the sea haven,
 > its harbour open like a hand.
-> Over it they set Valossocomor, the dread fire,
-> whose dominion is the forest;
-> and the Rite of Valossocomor remembers.
+> Over it they set Vabamortena, the dusk holy,
+> whose dominion is the sea;
+> and the Faith of Vabamortena remembers.
 > In their tongue, demor is home and na is king;
 > so read their map: every name a small song.
-> And of Caudente the singers still sing,
-> for its banners stand as high as ever they did.
+> Caudente endures, lesser than its songs —
+> as all things are, that last long enough to be sung of.
 
-### The Saga of Thorkastall (Auld (northern))
+### The Saga of Fjeiskdaurk (Auld (northern))
 
 > Out of the grey water came the northern folk,
 > and the land they found they would not leave.
 > Brahrei they named it — the mountain hill —
 > and the name has outlived every wall they raised.
-> Thaurndund they built first, the grass haven,
+> Hrafjysk they built first, the river home,
 > its walls set square against the weather.
-> (The maps write it Thaurnliria now. The saga does not.)
-> Over it they set Vaskyvastall, the wind king,
-> whose dominion is war;
-> and the Cult of Vaskyvastall remembers.
+> (The maps write it Hraliria now. The saga does not.)
+> Over it they set Vabrograthygr, the dread fire,
+> whose dominion is the forest;
+> and the Rite of Vabrograthygr remembers.
 > In their tongue, fjull is star and bry is stone;
 > so read their map: every name a small song.
-> Of Thorkastall their singers made much, once.
-> It rose to 4 provinces and it fell, and the saga does not say so —
+> Of Fjeiskdaurk their singers made much, once.
+> It rose to 2 provinces and it fell, and the saga does not say so —
 > but the chronicle does.
 
-### How the Woodland Folk Came to Syaeenmelen (Sylvan (woodland))
+### How the Woodland Folk Came to Melareth (Sylvan (woodland))
 
 > Out of the deep wood came the woodland folk,
 > and the shore they found they would not leave.
-> Syaeenmelen they named it — the sea land —
+> Melareth they named it — the wood vale —
 > for they were a people who named things truly.
 > In their tongue, syaeen is sea and ne is stone;
 > so read their map: every name a small song.
@@ -314,14 +306,14 @@ Followed across 8 region(s).
 
 - **58 After Reckoning** — The city of Deoliria was founded on a sheltered harbour, destined to become the seat of power.
 - **72 After Reckoning** — The city of Deolamor was founded on a sheltered harbour.
-- **88 After Reckoning** — The city of Rairshu was founded on a sheltered harbour.
-- **89 After Reckoning** — Deoliria rose to rule its hinterland, and the realm of Tenameonte was proclaimed.
-- **96 After Reckoning** — Deolamor rose to rule its hinterland, and the realm of Caudente was proclaimed.
-- **115 After Reckoning** — Rairshu rose to rule its hinterland, and the realm of Rairghen was proclaimed.
-- **773 After Reckoning** — A great storm-tide flooded Deoliria; the lower quarters were lost to the sea.
-- **833 After Reckoning** — An academy founded on the shores of Donasi gathered the age's finest cartographers.
-- **927 After Reckoning** — Vynbra woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **1100 After Reckoning** — Under a long peace, Deoliria flourished; its libraries and roads became the wonder of the world.
+- **82 After Reckoning** — Deoliria rose to rule its hinterland, and the realm of Tenameonte was proclaimed.
+- **88 After Reckoning** — The city of Niantetomor was founded amid good country.
+- **99 After Reckoning** — Deolamor rose to rule its hinterland, and the realm of Caudente was proclaimed.
+- **123 After Reckoning** — Niantetomor rose to rule its hinterland, and the realm of Tariacaria was proclaimed.
+- **723 After Reckoning** — Caubeosso woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **849 After Reckoning** — A great storm-tide flooded Deoliria; the lower quarters were lost to the sea.
+- **907 After Reckoning** — Under a long peace, Deoliria flourished; its libraries and roads became the wonder of the world.
+- **1033 After Reckoning** — An academy founded on the shores of Donasi gathered the age's finest cartographers.
 
 ## Rise and fall of realms
 
@@ -329,161 +321,231 @@ Followed across 8 region(s).
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Qidkakaasi | 100 | 8 | 150 | 8 | ascendant |
-| Caudente | 100 | 8 | 600 | 8 | ascendant |
-| Tenameonte | 100 | 7 | 650 | 7 | ascendant |
-| Thorkastall | 100 | 4 | 100 | 0 | extinct |
-| Cauna | 100 | 3 | 100 | 3 | ascendant |
+| Caudente | 100 | 9 | 225 | 7 | diminished |
+| Qidkaqe | 100 | 8 | 575 | 6 | diminished |
+| Rauriacaria | 100 | 8 | 1075 | 8 | ascendant |
+| Tenameonte | 100 | 5 | 1000 | 5 | ascendant |
+| Mishqe | 100 | 5 | 100 | 0 | extinct |
+| Rairkaasi | 350 | 4 | 400 | 0 | extinct |
+| Lossobinte | 100 | 3 | 100 | 0 | extinct |
+| Fjeiskdaurk | 150 | 2 | 150 | 0 | extinct |
+| Jamaad | 975 | 2 | 975 | 0 | extinct |
 
-## The Chronicle of Qidkakaasi
+## The Chronicle of Caudente
 
 *I write in Deoliria, under the patronage of House Niantetindo, in the year 1100. The legends of the founding age are kept elsewhere in this book; here is only what happened, year upon year, for 1000 years.*
 
-*The world it happened in is quickly drawn: Mount Vynbra in the high places, and the Qishaghash running to the sea, and between them every road this chronicle walks.*
+*The world it happened in is quickly drawn: Mount Caubeosso in the high places, and the Qishaghash running to the sea, and between them every road this chronicle walks.*
 
-### I. The First Banners, 100–350
+### I. The First Banners, 100–300
 
-In the year 100, the assault Tenameonte loosed upon Staunkno broke against Thorkastall's spears and came to nothing. That same year, the young southern realm of Cauna marched on Khirshaa, and by winter the province had fallen to it; the desert realm of Rairghen was the poorer. And in that year too, in Melareth the bells rang without ceasing; a third of its people were laid in the ground.
+In the year 100, the assault Caudente loosed upon Brahrei broke against Lossobinte's spears and came to nothing. That same year, the young desert realm of Mishqe marched on Deodinte, and by winter the province had fallen to it; the southern realm of Tariacaria was the poorer. It was the end of Tariacaria; its lands were divided among its enemies. That same year, a pestilence swept Melareth and carried off more than any war had.
 
-In 125, Khirarer passed by force from Rairghen to Qidkakaasi; the tax rolls were rewritten before the dead were counted. With that, the realm of Rairghen was extinguished; its name passes from the roll of the powers. In the same season, the people of Khirarer drove out Qidkakaasi's governors and took for themselves the name Meqe. Hard on its heels, Qidkakaasi marched on Khirarer, and by winter the province had fallen to it; the desert realm of Meqe was the poorer. It was the end of Meqe: 25 years of banners, done in a single season.
+In 125, Tenameonte seized Beossoda from Lossobinte, and the border stones were moved in the night. Before long, what had once broken against Brahrei's defences now carried them: Caudente took the province, and Lossobinte's pride with it. And in that year too, the realm of Fjeiskdaurk was carved whole out of Caudente's flank, with Stagrdaurk at its heart. Soon after, Caudente and Lossobinte met over Peonapana yet again, and yet again it was Caudente that kept the field. With that, the realm of Lossobinte was extinguished; its name passes from the roll of the powers.
 
-In the year 150, these were the high years of Tenameonte — its markets loud, its walls, for a while, unneeded. Soon after, what had once broken against Staunkno's defences now carried them: Tenameonte took the province, and Thorkastall's pride with it. Before long, Thorkastall held Skafjan against Caudente, whose army went home leaner and wiser.
+About the year 200, the banners of Caudente entered Mairkhidku, and what Fjeiskdaurk had held it held no longer. That same year, Deodinte passed by force from Mishqe to Rauriacaria; the tax rolls were rewritten before the dead were counted. Before long, Caudente marched on Stagrdaurk, and by winter the province had fallen to it; Fjeiskdaurk was the poorer. It was the end of Fjeiskdaurk: 75 years of banners, done in a single season.
 
-About the year 200, not all was iron: a golden age dawned over Qidkakaasi, and its cities flourished as never before. Soon after, a great drought lay upon Staunkno; the rivers shrank and the wells soured. Before long, the assault Caudente loosed upon Peonaveolla broke against Thorkastall's spears and came to nothing. By 300, Thorkastall held Peonaveolla against Caudente, whose army went home leaner and wiser.
+In 225, Mishqe held Khirshaa against Rauriacaria, whose army went home leaner and wiser. Hard on its heels, Tenameonte moved against Brabei, but the desert realm of Qidkaqe threw the invaders back over the border. Before long, the assault Rauriacaria loosed upon Khirkhajez broke against Mishqe's spears and came to nothing.
 
-In the year 325, no rain came to Khirkhajez for two years together; many perished.
+These years also built more than they burned — 5 new settlements, of which Deolamor would become the best known.
 
-These years also built more than they burned — 7 new settlements, of which Deolamor would become the best known.
+Conquest re-said the very map: Khirqe became Khirdemor on its new masters' tongues — and 4 other names with it.
 
-Conquest re-said the very map: Shinkai became Shinlamor on its new masters' tongues — and 5 other names with it.
+### II. The Marching Years, 300–500
 
-### II. The Age of Blood and Banners, 350–600
+In the year 300, Qidkaqe held Brabei against Tenameonte, whose army went home leaner and wiser. Soon after, the assault Rauriacaria loosed upon Khirkhajez broke against Mishqe's spears and came to nothing. Before long, Qidkaqe held Brabei against Tenameonte, whose army went home leaner and wiser. That same year, Caudente had grown past its own strength: Midkhash and its neighbours broke away to found Rairkaasi.
 
-About the year 350, Caudente moved against Peonaveolla, but Thorkastall threw the invaders back over the border. Soon after, a pestilence swept Khirzash and carried off more than any war had. Before long, the assault Caudente loosed upon Peonaveolla broke against Thorkastall's spears and came to nothing. In the same season, these were the high years of Cauna — its markets loud, its walls, for a while, unneeded.
+About the year 375, the assault Rauriacaria loosed upon Khirkhajez broke against Mishqe's spears and came to nothing. Hard on its heels, the banners of Rairkaasi entered Mairghen, and what Mishqe had held it held no longer. In the same season, Qidkaqe held Qusham against Tenameonte, whose army went home leaner and wiser.
 
-In the year 450, Thorkastall held Peonaveolla against Caudente, whose army went home leaner and wiser. A generation on, Deodinte did not survive its conquerors; what stands of it stands empty. And in that year too, what had once broken against Peonaveolla's defences now carried them: Caudente took the province, and Thorkastall's pride with it. That same year, word came from Peonaveolla that it would be governed from within: thus Peoriabinte, born in a single furious season.
+In the year 400, quieter conquests were made as well: Brahrei turned from the Rite of Vabrograthygr to the Faith of Vabamortena. Soon after, Rauriacaria moved against Khirkhajez, but Mishqe threw the invaders back over the border. And in that year too, the assault Rairkaasi loosed upon Beossodinte broke against Mishqe's spears and came to nothing.
 
-About the year 525, Tenameonte and Thorkastall met over Skafjan yet again, and yet again it was Tenameonte that kept the field. In the same season, Caudente moved against Peonaveolla, but the young southern realm of Peoriabinte threw the invaders back over the border. That same year, Skafjan rose against Tenameonte, and out of the rising was proclaimed the free realm of Vynstall.
+About the year 425, in Shinkhajez the bells rang without ceasing; a third of its people were laid in the ground. Before long, Qidkaqe held Brabei against Tenameonte, whose army went home leaner and wiser. That same year, a great drought lay upon Stagrdaurk; the rivers shrank and the wells soured.
 
-In 550, swollen with victories, Tenameonte pressed on into Skafjan, and the young northern realm of Vynstall could not hold it. With that, the realm of Vynstall was extinguished; its name passes from the roll of the powers. In the same season, in Peonaveolla the bells rang without ceasing; a third of its people were laid in the ground. Hard on its heels, Peonaveolla passed by force from Peoriabinte to Tenameonte; the tax rolls were rewritten before the dead were counted. It was the end of Peoriabinte: 75 years of banners, done in a single season.
+In 475, what had once broken against Khirkhajez's defences now carried them: Rauriacaria took the province, and Mishqe's pride with it.
 
-About the year 575, word came from Peonaveolla that it would be governed from within: thus Cauna, born in a single furious season.
+All the while the land was filling: 6 settlements were raised in these years, Ghashmakh and Khirghekh among them.
 
-All the while the land was filling: 7 settlements were raised in these years, Deodinte and Shinkai among them.
+### III. The Contested Years, 500–700
 
-### III. The Marching Years, 600–850
+In the year 500, the assault Rauriacaria loosed upon Khirshaa broke against Mishqe's spears and came to nothing. And in that year too, Caudente held Peonapana against Tenameonte, whose army went home leaner and wiser. Soon after, the assault Rairkaasi loosed upon Khirshaa broke against Mishqe's spears and came to nothing.
 
-In 600, Caudente marched on Peonaveolla, and by winter the province had fallen to it; Cauna was the poorer. With that, the realm of Cauna was extinguished; its name passes from the roll of the powers. And in that year too, the assault Tenameonte loosed upon Stagrdaurk broke against Thorkastall's spears and came to nothing.
+About the year 550, Mishqe held Khirshaa against Rauriacaria, whose army went home leaner and wiser. That same year, Tenameonte moved against Peonapana, but Caudente threw the invaders back over the border. Before long, Qidkaqe marched on Beossodinte, and by winter the province had fallen to it; Mishqe was the poorer.
 
-In the year 600, a great drought lay upon Staunkno; the rivers shrank and the wells soured. In the years that followed, what had once broken against Stagrdaurk's defences now carried them: Tenameonte took the province, and Thorkastall's pride with it. It was the end of Thorkastall: 550 years of banners, done in a single season.
+In 575, the assault Rairkaasi loosed upon Khirshaa broke against Mishqe's spears and came to nothing. Soon after, Rauriacaria moved against Khirshaa, but Mishqe threw the invaders back over the border. In the same season, a pestilence swept Mairkai and carried off more than any war had.
 
-About the year 700, no rain came to Rairghen for two years together; many perished. A generation on, a great drought lay upon Shinkhukha; the rivers shrank and the wells soured. Soon after, a pestilence swept Khirkhash and carried off more than any war had.
+About the year 625, the assault Rairkaasi loosed upon Khirshaa broke against Mishqe's spears and came to nothing. And in that year too, Tenameonte moved against Qusham, but Qidkaqe threw the invaders back over the border. That same year, no rain came to Qusham for two years together; many perished. Hard on its heels, what had once broken against Khirshaa's defences now carried them: Rauriacaria took the province, and Mishqe's pride with it. With that, the realm of Mishqe was extinguished; its name passes from the roll of the powers.
 
-In 800, in Mairghen the bells rang without ceasing; a third of its people were laid in the ground.
+In 650, a great drought lay upon Peonapana; the rivers shrank and the wells soured. That same year, these were the high years of Tenameonte — its markets loud, its walls, for a while, unneeded. Soon after, the assault Rauriacaria loosed upon Mairghen broke against Rairkaasi's spears and came to nothing.
 
-These years also built more than they burned — 2 new settlements, of which Ghashakhukha would become the best known.
+In the year 675, in Shinkhajez the bells rang without ceasing; a third of its people were laid in the ground. And in that year too, not all was iron: a golden age dawned over Tenameonte, and its cities flourished as never before.
 
-The occupiers kept the land-words and changed the rest, and so Thaurndund is written Thaurnliria in every ledger since — and 1 other name with it.
+These years also built more than they burned — 5 new settlements, of which Khirqe would become the best known.
 
-### IV. The Years the Bells Rang, 850–1100
+### IV. The Age of Blood and Banners, 700–900
 
-In the year 875, no rain came to Khirzash for two years together; many perished. In the years that followed, not all was iron: a golden age dawned over Qidkakaasi, and its cities flourished as never before. The chronicle is silent until 1000, when a great drought lay upon Brahrei; the rivers shrank and the wells soured.
+About the year 700, Qidkaqe held Brabei against Tenameonte, whose army went home leaner and wiser. That same year, Rairkaasi moved against Mairkhidku, but Caudente threw the invaders back over the border. In the same season, no rain came to Deoneosso for two years together; many perished. And in that year too, these were the high years of Caudente — its markets loud, its walls, for a while, unneeded.
 
-About the year 1000, these were the high years of Qidkakaasi — its markets loud, its walls, for a while, unneeded. Before long, no rain came to Deocina for two years together; many perished. A generation on, not all was iron: a golden age dawned over Caudente, and its cities flourished as never before.
+In the year 725, what had once broken against Mairghen's defences now carried them: Rauriacaria took the province, and Rairkaasi's pride with it. Before long, the assault Rauriacaria loosed upon Khirarer broke against Rairkaasi's spears and came to nothing. That same year, what had once broken against Brabei's defences now carried them: Tenameonte took the province, and Qidkaqe's pride with it.
 
-*So the matter stands in 1100: 4 realms endure, and Qidkakaasi is mightiest among them, holding 8 provinces. 1 town lies in ruins; their names are kept in this book, which is more than their walls kept.*
+About the year 775, Qidkaqe held Qusham against Tenameonte, whose army went home leaner and wiser. Soon after, Rauriacaria moved against Khirarer, but Rairkaasi threw the invaders back over the border. Before long, the assault Tenameonte loosed upon Qusham broke against Qidkaqe's spears and came to nothing.
 
-*Here the record rests — not because history has, but because ink runs out before it does.*
+In 850, Rauriacaria moved against Khirarer, but Rairkaasi threw the invaders back over the border. Hard on its heels, the assault Tenameonte loosed upon Qusham broke against Qidkaqe's spears and came to nothing.
+
+The occupiers kept the land-words and changed the rest, and so Ghashmakh is written Ghashciamor in every ledger since — and 1 other name with it.
+
+### V. The Contested Years, 900–1100
+
+In the year 900, what had once broken against Khirarer's defences now carried them: Rauriacaria took the province, and Rairkaasi's pride with it. Before long, what had once broken against Midkhash's defences now carried them: Caudente took the province, and Rairkaasi's pride with it. In the same season, Qidkaqe held Beossodinte against Rauriacaria, whose army went home leaner and wiser.
+
+About the year 925, a great drought lay upon Melareth; the rivers shrank and the wells soured. Soon after, what had once broken against Qusham's defences now carried them: Tenameonte took the province, and Qidkaqe's pride with it. And in that year too, Midkhash rose against Caudente, and out of the rising was proclaimed the free realm of Jaghen. In the same season, the people of Qusham drove out Tenameonte's governors and took for themselves the name Jaqe.
+
+In 950, no rain came to Khirkhajez for two years together; many perished. Before long, Tenameonte seized Qusham from Jaqe, and the border stones were moved in the night. It was the end of Jaqe: 25 years of banners, done in a single season.
+
+About the year 975, Midkhash passed by force from Jaghen to Rauriacaria; the tax rolls were rewritten before the dead were counted. With that, the realm of Jaghen was extinguished; its name passes from the roll of the powers. In the same season, Qusham rose against Tenameonte, and out of the rising was proclaimed the free realm of Mishqe.
+
+In 975, the realm of Jamaad was carved whole out of Rauriacaria's flank, with Mairghen at its heart. Hard on its heels, there was no halting Tenameonte that season: Qusham fell to it while Mishqe looked on. It was the end of Mishqe: 25 years of banners, done in a single season.
+
+About the year 1000, a great drought lay upon Peonapana; the rivers shrank and the wells soured. Soon after, Caudente moved against Khirkhidku, but Rairkaasi threw the invaders back over the border. In the same season, swollen with victories, Rauriacaria pressed on into Mairghen, and the young desert realm of Jamaad could not hold it. And in that year too, the people of Mairghen drove out Rauriacaria's governors and took for themselves the name Kheqtaitan.
+
+In the year 1025, a pestilence swept Khirkhaim and carried off more than any war had. Before long, the banners of Rauriacaria entered Mairghen, and what Kheqtaitan had held it held no longer. With that, the realm of Kheqtaitan was extinguished; its name passes from the roll of the powers. That same year, Jamaad held Midkhash against Rairkaasi, whose army went home leaner and wiser.
+
+About the year 1075, there was no halting Caudente that season: Midkhash fell to it while Jamaad looked on. It was the end of Jamaad: 100 years of banners, done in a single season. And in that year too, Rauriacaria and Rairkaasi met over Khirkhidku yet again, and yet again it was Rauriacaria that kept the field. With that, the realm of Rairkaasi was extinguished; its name passes from the roll of the powers.
+
+*So the matter stands in 1100: 4 realms endure, and Rauriacaria is mightiest among them, holding 8 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
+
+*Belenai Niantetindo reigns in Deoliria. Let whoever comes after me write the next page better than I have written this one.*
 
 ## Annals
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 After Reckoning** — Tenameonte's invasion of Staunkno was thrown back by Thorkastall.
-- **100 After Reckoning** — Cauna seized Khirshaa from Rairghen.
+- **100 After Reckoning** — Caudente's invasion of Brahrei was thrown back by Lossobinte.
+- **100 After Reckoning** — Mishqe seized Deodinte from Tariacaria.
+- **100 After Reckoning** — The realm of Tariacaria was extinguished.
 - **100 After Reckoning** — A plague swept Melareth; many perished.
-- **125 After Reckoning** — Qidkakaasi seized Khirarer from Rairghen.
-- **125 After Reckoning** — The realm of Rairghen was extinguished.
-- **125 After Reckoning** — Khirarer rose against Qidkakaasi and declared the free realm of Meqe.
-- **150 After Reckoning** — Qidkakaasi seized Khirarer from Meqe.
-- **150 After Reckoning** — The realm of Meqe was extinguished.
-- **150 After Reckoning** — A golden age dawned over Tenameonte; its cities flourished as never before.
-- **175 After Reckoning** — Tenameonte seized Staunkno from Thorkastall.
-- **200 After Reckoning** — Caudente's invasion of Skafjan was thrown back by Thorkastall.
-- **200 After Reckoning** — A golden age dawned over Qidkakaasi; its cities flourished as never before.
-- **225 After Reckoning** — A long drought gripped Staunkno; many perished.
-- **250 After Reckoning** — Caudente's invasion of Peonaveolla was thrown back by Thorkastall.
-- **300 After Reckoning** — Caudente's invasion of Peonaveolla was thrown back by Thorkastall.
-- **325 After Reckoning** — A long drought gripped Khirkhajez; many perished.
-- **350 After Reckoning** — Caudente's invasion of Peonaveolla was thrown back by Thorkastall.
-- **375 After Reckoning** — A plague swept Khirzash; many perished.
-- **400 After Reckoning** — Caudente's invasion of Peonaveolla was thrown back by Thorkastall.
-- **400 After Reckoning** — A golden age dawned over Cauna; its cities flourished as never before.
-- **450 After Reckoning** — Caudente's invasion of Peonaveolla was thrown back by Thorkastall.
-- **500 After Reckoning** — Deodinte was stormed and left a ruin.
-- **500 After Reckoning** — Caudente seized Peonaveolla from Thorkastall.
-- **500 After Reckoning** — Peonaveolla rose against Caudente and declared the free realm of Peoriabinte.
-- **525 After Reckoning** — Tenameonte seized Skafjan from Thorkastall.
-- **525 After Reckoning** — Caudente's invasion of Peonaveolla was thrown back by Peoriabinte.
-- **525 After Reckoning** — Skafjan rose against Tenameonte and declared the free realm of Vynstall.
-- **550 After Reckoning** — Tenameonte seized Skafjan from Vynstall.
-- **550 After Reckoning** — The realm of Vynstall was extinguished.
-- **550 After Reckoning** — A plague swept Peonaveolla; many perished.
-- **575 After Reckoning** — Tenameonte seized Peonaveolla from Peoriabinte.
-- **575 After Reckoning** — The realm of Peoriabinte was extinguished.
-- **575 After Reckoning** — Peonaveolla rose against Tenameonte and declared the free realm of Cauna.
-- **600 After Reckoning** — Caudente seized Peonaveolla from Cauna.
-- **600 After Reckoning** — The realm of Cauna was extinguished.
-- **600 After Reckoning** — Tenameonte's invasion of Stagrdaurk was thrown back by Thorkastall.
-- **600 After Reckoning** — A long drought gripped Staunkno; many perished.
-- **650 After Reckoning** — Tenameonte seized Stagrdaurk from Thorkastall.
-- **650 After Reckoning** — The realm of Thorkastall was extinguished.
-- **700 After Reckoning** — A long drought gripped Rairghen; many perished.
-- **750 After Reckoning** — A long drought gripped Shinkhukha; many perished.
-- **775 After Reckoning** — A plague swept Khirkhash; many perished.
-- **800 After Reckoning** — A plague swept Mairghen; many perished.
-- **875 After Reckoning** — A long drought gripped Khirzash; many perished.
-- **925 After Reckoning** — A golden age dawned over Qidkakaasi; its cities flourished as never before.
-- **1000 After Reckoning** — A long drought gripped Brahrei; many perished.
-- **1000 After Reckoning** — A golden age dawned over Qidkakaasi; its cities flourished as never before.
-- **1025 After Reckoning** — A long drought gripped Deocina; many perished.
-- **1075 After Reckoning** — A golden age dawned over Caudente; its cities flourished as never before.
+- **125 After Reckoning** — Tenameonte seized Beossoda from Lossobinte.
+- **150 After Reckoning** — Caudente seized Brahrei from Lossobinte.
+- **150 After Reckoning** — Stagrdaurk and 1 neighbouring province(s) broke away from Caudente to found the realm of Fjeiskdaurk.
+- **175 After Reckoning** — Caudente seized Peonapana from Lossobinte.
+- **175 After Reckoning** — The realm of Lossobinte was extinguished.
+- **200 After Reckoning** — Caudente seized Mairkhidku from Fjeiskdaurk.
+- **200 After Reckoning** — Rauriacaria seized Deodinte from Mishqe.
+- **225 After Reckoning** — Caudente seized Stagrdaurk from Fjeiskdaurk.
+- **225 After Reckoning** — The realm of Fjeiskdaurk was extinguished.
+- **225 After Reckoning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
+- **250 After Reckoning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
+- **275 After Reckoning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
+- **300 After Reckoning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
+- **325 After Reckoning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
+- **350 After Reckoning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
+- **350 After Reckoning** — Midkhash and 2 neighbouring province(s) broke away from Caudente to found the realm of Rairkaasi.
+- **375 After Reckoning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
+- **400 After Reckoning** — Rairkaasi seized Mairghen from Mishqe.
+- **400 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
+- **400 After Reckoning** — Brahrei turned from the Rite of Vabrograthygr to the Faith of Vabamortena.
+- **425 After Reckoning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
+- **425 After Reckoning** — Rairkaasi's invasion of Beossodinte was thrown back by Mishqe.
+- **425 After Reckoning** — A plague swept Shinkhajez; many perished.
+- **450 After Reckoning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
+- **450 After Reckoning** — A long drought gripped Stagrdaurk; many perished.
+- **475 After Reckoning** — Rauriacaria seized Khirkhajez from Mishqe.
+- **500 After Reckoning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
+- **500 After Reckoning** — Tenameonte's invasion of Peonapana was thrown back by Caudente.
+- **525 After Reckoning** — Rairkaasi's invasion of Khirshaa was thrown back by Mishqe.
+- **550 After Reckoning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
+- **550 After Reckoning** — Tenameonte's invasion of Peonapana was thrown back by Caudente.
+- **575 After Reckoning** — Qidkaqe seized Beossodinte from Mishqe.
+- **575 After Reckoning** — Rairkaasi's invasion of Khirshaa was thrown back by Mishqe.
+- **600 After Reckoning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
+- **600 After Reckoning** — A plague swept Mairkai; many perished.
+- **625 After Reckoning** — Rairkaasi's invasion of Khirshaa was thrown back by Mishqe.
+- **625 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
+- **625 After Reckoning** — A long drought gripped Qusham; many perished.
+- **650 After Reckoning** — Rauriacaria seized Khirshaa from Mishqe.
+- **650 After Reckoning** — The realm of Mishqe was extinguished.
+- **650 After Reckoning** — A long drought gripped Peonapana; many perished.
+- **650 After Reckoning** — A golden age dawned over Tenameonte; its cities flourished as never before.
+- **675 After Reckoning** — Rauriacaria's invasion of Mairghen was thrown back by Rairkaasi.
+- **675 After Reckoning** — A plague swept Shinkhajez; many perished.
+- **675 After Reckoning** — A golden age dawned over Tenameonte; its cities flourished as never before.
+- **700 After Reckoning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
+- **700 After Reckoning** — Rairkaasi's invasion of Mairkhidku was thrown back by Caudente.
+- **700 After Reckoning** — A long drought gripped Deoneosso; many perished.
+- **700 After Reckoning** — A golden age dawned over Caudente; its cities flourished as never before.
+- **725 After Reckoning** — Rauriacaria seized Mairghen from Rairkaasi.
+- **750 After Reckoning** — Rauriacaria's invasion of Khirarer was thrown back by Rairkaasi.
+- **750 After Reckoning** — Tenameonte seized Brabei from Qidkaqe.
+- **775 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
+- **800 After Reckoning** — Rauriacaria's invasion of Khirarer was thrown back by Rairkaasi.
+- **825 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
+- **850 After Reckoning** — Rauriacaria's invasion of Khirarer was thrown back by Rairkaasi.
+- **875 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
+- **900 After Reckoning** — Rauriacaria seized Khirarer from Rairkaasi.
+- **925 After Reckoning** — Caudente seized Midkhash from Rairkaasi.
+- **925 After Reckoning** — Rauriacaria's invasion of Beossodinte was thrown back by Qidkaqe.
+- **925 After Reckoning** — A long drought gripped Melareth; many perished.
+- **950 After Reckoning** — Tenameonte seized Qusham from Qidkaqe.
+- **950 After Reckoning** — Midkhash rose against Caudente and declared the free realm of Jaghen.
+- **950 After Reckoning** — Qusham rose against Tenameonte and declared the free realm of Jaqe.
+- **950 After Reckoning** — A long drought gripped Khirkhajez; many perished.
+- **975 After Reckoning** — Tenameonte seized Qusham from Jaqe.
+- **975 After Reckoning** — The realm of Jaqe was extinguished.
+- **975 After Reckoning** — Rauriacaria seized Midkhash from Jaghen.
+- **975 After Reckoning** — The realm of Jaghen was extinguished.
+- **975 After Reckoning** — Qusham rose against Tenameonte and declared the free realm of Mishqe.
+- **975 After Reckoning** — Mairghen and 1 neighbouring province(s) broke away from Rauriacaria to found the realm of Jamaad.
+- **1000 After Reckoning** — Tenameonte seized Qusham from Mishqe.
+- **1000 After Reckoning** — The realm of Mishqe was extinguished.
+- **1000 After Reckoning** — A long drought gripped Peonapana; many perished.
+- **1025 After Reckoning** — Caudente's invasion of Khirkhidku was thrown back by Rairkaasi.
+- **1025 After Reckoning** — Rauriacaria seized Mairghen from Jamaad.
+- **1025 After Reckoning** — Mairghen rose against Rauriacaria and declared the free realm of Kheqtaitan.
+- **1025 After Reckoning** — A plague swept Khirkhaim; many perished.
+- **1050 After Reckoning** — Rauriacaria seized Mairghen from Kheqtaitan.
+- **1050 After Reckoning** — The realm of Kheqtaitan was extinguished.
+- **1050 After Reckoning** — Rairkaasi's invasion of Midkhash was thrown back by Jamaad.
+- **1075 After Reckoning** — Caudente seized Midkhash from Jamaad.
+- **1075 After Reckoning** — The realm of Jamaad was extinguished.
+- **1075 After Reckoning** — Rauriacaria seized Khirkhidku from Rairkaasi.
+- **1075 After Reckoning** — The realm of Rairkaasi was extinguished.
 
 ## A Traveller's Account, in the year 1100
 
 *I, Rondir, a pilgrim of no great piety, set out from Deoliria in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
 
-From Deoliria the road runs 13 leagues to Thaurnliria, through grass as high as the stirrup. We forded three times; I stopped counting wet boots. Thaurnliria itself — the grass haven — is a town; its market is all grain and livestock. The people here still say Thaurndund; the ledgers say Thaurnliria. I bought bread in both names.
+From Deoliria the road runs 12 leagues to Panaliria, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Panaliria itself — the field haven — is a town; its market is all livestock and fish.
 
-Out of Thaurnliria, then, toward Stagrlamor, the country unchanged. The road finds water twice on this stretch. The road climbs some 250 metres before it thinks better of it. Stagrlamor itself — the sea hall — is a village with its face to the sea; its market is all livestock and grain. The people here still say Stagrba; the ledgers say Stagrlamor. I bought bread in both names.
+From Panaliria the road runs 9 leagues to Ghashlamor, through gold grass and scattered trees. The road finds water twice on this stretch. Ghashlamor itself — the river hall — is a village; its market is all livestock and fish. The people here still say Ghashkai; the ledgers say Ghashlamor. I bought bread in both names.
 
-From Stagrlamor the road runs 23 leagues to Bellapana, through thornscrub that plucked at our sleeves. The way crosses Peonaveolla. The road finds water twice on this stretch. The road climbs some 1050 metres before it thinks better of it. Bellapana itself — the river field — is a village; its market is all livestock and wine.
+From Ghashlamor the road runs 43 leagues to Ghashakhukha. The way crosses Jakhidku and then Mairkai. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Ghashakhukha itself — the river field — is a village; its market is all livestock and iron.
 
-Deolamor lies 10 leagues on from Bellapana, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Deolamor itself — the sea hall — is a city with its face to the sea; its market is all livestock and wine.
+Khirghekh lies 16 leagues on from Ghashakhukha, through more of the same. The road finds water twice on this stretch. Khirghekh itself — the sea gate — is a town with its face to the sea; its market is all livestock and grain.
 
-I went back down my own road as far as Bellapana, then turned for Deodemor. There is one ford, cold but honest. Deodemor itself — the sea home — is a village with its face to the sea; its market is all spices and fish.
+I went back down my own road as far as Ghashakhukha, then turned for Khirzaa. We forded once, boots held high. Khirzaa itself — the sea bridge — is a village with its face to the sea; its market is all coal and horses.
 
-I went back down my own road as far as Deoliria, then turned for Deonelen. We forded once, boots held high. The road climbs some 250 metres before it thinks better of it. Deonelen itself — the sea bridge — is a town with its face to the sea; its market is all grain and fish.
+Out of Khirzaa, then, toward Shintomor, the country unchanged. We forded once, boots held high. Shintomor itself — the wild fort — is a village; its market is all livestock and horses. The people here still say Shinshu; the ledgers say Shintomor. I bought bread in both names.
 
-From Deonelen the road runs 10 leagues to Khirlamor, through gold grass and scattered trees. Khirlamor itself — the sea hall — is a village with its face to the sea; its market is all livestock and grain. The people here still say Khirkai; the ledgers say Khirlamor. I bought bread in both names.
+From Shintomor the road runs 12 leagues to Ghashciamor, through more of the same. We forded twice; I stopped counting wet boots. Ghashciamor itself — the river gate — is a town; its market is all grain and livestock. The people here still say Ghashmakh; the ledgers say Ghashciamor. I bought bread in both names.
 
-I went back down my own road as far as Deonelen, then turned for Ghashdemor. We forded once, boots held high. Ghashdemor itself — the river home — is a village; its market is all livestock and wine. The people here still say Ghashqe; the ledgers say Ghashdemor. I bought bread in both names.
+Nianteqe lies 12 leagues on from Ghashciamor, through grass as high as the stirrup. The road finds water twice on this stretch. Nianteqe itself — the green home — is a city; its market is all livestock and grain. The people here still say Niantetomor; the ledgers say Nianteqe. I bought bread in both names.
 
-Out of Ghashdemor, then, toward Ghashakhukha, through gold grass and scattered trees. The way crosses Beossodinte and then Mairghen. We forded twice; I stopped counting wet boots. The road climbs some 1200 metres before it thinks better of it. Ghashakhukha itself — the river field — is a village with its face to the sea; its market is all livestock and copper.
+Deotomor lies 15 leagues on from Nianteqe, the country unchanged. We forded once, boots held high. The road climbs some 900 metres before it thinks better of it. Deotomor itself — the sea fort — is a town with its face to the sea; its market is all grain and wine.
 
-From Ghashakhukha the road runs 13 leagues to Khirghekh, through more of the same. We forded twice; I stopped counting wet boots. The road climbs some 350 metres before it thinks better of it. Khirghekh itself — the sea gate — is a town with its face to the sea; its market is all livestock and grain.
+Out of Deotomor, then, toward Khirlamor, through gold grass and scattered trees. We forded once, boots held high. Khirlamor itself — the sea hall — is a village with its face to the sea; its market is all livestock and horses. The people here still say Khirkai; the ledgers say Khirlamor. I bought bread in both names.
 
-I went back down my own road as far as Ghashakhukha, then turned for Khirzaa. There is one ford, cold but honest. The road climbs some 350 metres before it thinks better of it. Khirzaa itself — the sea bridge — is a village with its face to the sea; its market is all livestock and fish.
+I went back down my own road as far as Deoliria, then turned for Bellalamor. The way crosses Beossoda. The road finds water twice on this stretch. Bellalamor itself — the river hall — is a town; its market is all wine and livestock.
 
-Shinlamor lies 17 leagues on from Khirzaa, the country unchanged. We forded once, boots held high. Shinlamor itself — the wild hall — is a village; its market is all livestock and horses. The people here still say Shinkai; the ledgers say Shinlamor. I bought bread in both names.
+From Bellalamor the road runs 12 leagues to Hraliria, through more of the same. The road finds water twice on this stretch. Hraliria itself — the river haven — is a village; its market is all grain and livestock. The people here still say Hrafjysk; the ledgers say Hraliria. I bought bread in both names.
 
-Out of Shinlamor, then, toward Deotomor, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Deotomor itself — the sea fort — is a town with its face to the sea; its market is all grain and livestock.
+Panadinte lies 21 leagues on from Hraliria, the country unchanged. There is one ford, cold but honest. The road climbs some 300 metres before it thinks better of it. Panadinte itself — the field spring — is a village with its face to the sea; its market is all livestock and grain.
 
-Rairdemor lies 16 leagues on from Deotomor. We forded once, boots held high. The road climbs some 1000 metres before it thinks better of it. Rairdemor itself — the gold home — is a city with its face to the sea; its market is all horses and wine. The people here still say Rairshu; the ledgers say Rairdemor. I bought bread in both names.
+Out of Panadinte, then, toward Deolamor. We forded once, boots held high. Deolamor itself — the sea hall — is a city with its face to the sea; its market is all grain and timber.
 
-Out of Rairdemor, then, toward Khirliria, through gold grass and scattered trees. We forded once, boots held high. The road climbs some 250 metres before it thinks better of it. Khirliria itself — the sea haven — is a town with its face to the sea; its market is all livestock and timber. The people here still say Khirmakh; the ledgers say Khirliria. I bought bread in both names.
+Out of Deolamor, then, toward Peonapana, the country unchanged. We forded twice; I stopped counting wet boots. Peonapana itself — the grass field — is a village; its market is all grain and livestock.
 
-*I came home by the same roads, which were somehow longer in that direction. Rondir, 1100.*
+From Peonapana the road runs 13 leagues to Khirdemor, through gold grass and scattered trees. We forded once, boots held high. Khirdemor itself — the sea home — is a village with its face to the sea; its market is all livestock and horses. The people here still say Khirqe; the ledgers say Khirdemor. I bought bread in both names.
+
+*My boots did not survive the year. The account did. Rondir, 1100.*
 
 ## Heightmap
 
@@ -491,4 +553,4 @@ A real 360×360 16-bit heightmap is exported alongside this report (`.heightmap1
 
 ---
 
-*Elevation fingerprint `c179d7c5ac399e18`. This document and every map of Tenameonte are pure functions of the seed — reproducible anywhere, forever.*
+*Elevation fingerprint `356f14d525ad1476`. This document and every map of Tenameonte are pure functions of the seed — reproducible anywhere, forever.*

@@ -59,7 +59,7 @@ test("present-day settlement names are unique — conquest renaming cannot colli
 
 test("the journey never perturbs the world: fingerprints byte-identical", () => {
   const w = generateWorld({ seed: "cartogenesis", width: 256, height: 256 });
-  assert.equal(w.meta.contentHash, "61e751b300046ddc");
-  assert.equal(w.meta.exactHash, "c59c172694113c4e");
-  assert.equal(w.meta.simulationHash, "c38f5de31cfff136");
+  assert.equal(w.meta.contentHash, "86c5fef61d7a567b");
+  assert.equal(w.meta.exactHash, "418ddfd224e6f31c");
+  assert.equal(w.meta.simulationHash, "15371f1173c805ad");
 });

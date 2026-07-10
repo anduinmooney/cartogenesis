@@ -68,7 +68,7 @@ const SHAPES                             = {
   // Broad, gentle dome, shallow wide crater.
   shield: { radiusBase: 42, amp: 0.34, craterFrac: 0.1, craterDepthFrac: 0.16, flankExp: 1.0 },
   // Small, steep, big relative crater.
-  "cinder cone": { radiusBase: 11, amp: 0.22, craterFrac: 0.34, craterDepthFrac: 0.55, flankExp: 1.5 },
+  "cinder cone": { radiusBase: 11, amp: 0.22, craterFrac: 0.22, craterDepthFrac: 0.3, flankExp: 1.5 },
 };
 
 function pickType(rng     )              {
@@ -103,7 +103,7 @@ export function addVolcanoes(
 
   const count =
     cfg.count ??
-    Math.max(1, Math.min(9, Math.round(land.length / 9000) + rng.int(0, 3)));
+    Math.max(1, Math.min(6, Math.round(land.length / 16000) + rng.int(0, 2)));
 
   const lang = languageById(cfg.languageId ?? "auld");
   const placed            = [];

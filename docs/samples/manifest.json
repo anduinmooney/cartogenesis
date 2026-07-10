@@ -35,24 +35,24 @@
       "stats": {
         "landFraction": 63.8,
         "oceanFraction": 36.2,
-        "lakeCount": 4,
-        "biomeDiversity": 17,
+        "lakeCount": 2,
+        "biomeDiversity": 16,
         "dominantBiome": "Grassland",
         "regionCount": 29,
-        "settlementCount": 25,
+        "settlementCount": 26,
         "capital": "Deoliria",
         "realmCount": 4,
         "presentYear": 1100,
         "capitalHouse": "Belentaria",
         "faithCount": 4,
-        "majorExports": "Livestock, Horses, Grain, Wine, Fish",
-        "resourceCount": 523,
-        "dominantPower": "Tariademor",
-        "survivingRealms": 6,
-        "volcanoCount": 9,
+        "majorExports": "Livestock, Grain, Horses, Wine, Fish",
+        "resourceCount": 514,
+        "dominantPower": "Vynthon",
+        "survivingRealms": 4,
+        "volcanoCount": 6,
         "highestPeakMetres": 4500
       },
-      "contentHash": "31e521cca3f24168"
+      "contentHash": "f62420c7f1413d88"
     },
     {
       "seed": "atlas",
@@ -75,7 +75,7 @@
       "stats": {
         "landFraction": 41.7,
         "oceanFraction": 58.3,
-        "lakeCount": 4,
+        "lakeCount": 1,
         "biomeDiversity": 15,
         "dominantBiome": "Savanna",
         "regionCount": 26,
@@ -86,13 +86,13 @@
         "capitalHouse": "Niantetindo",
         "faithCount": 3,
         "majorExports": "Livestock, Horses, Grain, Wine, Fish",
-        "resourceCount": 339,
-        "dominantPower": "Qidkakaasi",
+        "resourceCount": 343,
+        "dominantPower": "Rauriacaria",
         "survivingRealms": 4,
-        "volcanoCount": 6,
-        "highestPeakMetres": 4500
+        "volcanoCount": 3,
+        "highestPeakMetres": 4490
       },
-      "contentHash": "c179d7c5ac399e18"
+      "contentHash": "356f14d525ad1476"
     },
     {
       "seed": "borea",
@@ -127,12 +127,12 @@
         "faithCount": 4,
         "majorExports": "Livestock, Grain, Horses, Wine, Fish",
         "resourceCount": 513,
-        "dominantPower": "Rauriabinte",
-        "survivingRealms": 10,
-        "volcanoCount": 9,
+        "dominantPower": "Knauskaskei",
+        "survivingRealms": 6,
+        "volcanoCount": 6,
         "highestPeakMetres": 4500
       },
-      "contentHash": "8b832a7c7e9ff8cd"
+      "contentHash": "5a8cfe48015a71f8"
     },
     {
       "seed": "mistral",
@@ -153,26 +153,26 @@
         "report": "mistral.report.md"
       },
       "stats": {
-        "landFraction": 47.2,
-        "oceanFraction": 52.8,
-        "lakeCount": 3,
+        "landFraction": 46.7,
+        "oceanFraction": 53.3,
+        "lakeCount": 1,
         "biomeDiversity": 17,
         "dominantBiome": "Grassland",
-        "regionCount": 30,
+        "regionCount": 28,
         "settlementCount": 19,
         "capital": "Deoliria",
         "realmCount": 3,
         "presentYear": 1100,
         "capitalHouse": "Belentaria",
         "faithCount": 4,
-        "majorExports": "Grain, Livestock, Horses, Wine, Timber",
-        "resourceCount": 436,
-        "dominantPower": "Remeonte",
+        "majorExports": "Livestock, Grain, Horses, Timber, Fish",
+        "resourceCount": 419,
+        "dominantPower": "Steirkastall",
         "survivingRealms": 4,
-        "volcanoCount": 7,
+        "volcanoCount": 4,
         "highestPeakMetres": 4500
       },
-      "contentHash": "b621a4868f89be77"
+      "contentHash": "6b64829cb94b32a3"
     },
     {
       "seed": "vahalia",
@@ -193,26 +193,26 @@
         "report": "vahalia.report.md"
       },
       "stats": {
-        "landFraction": 56.9,
-        "oceanFraction": 43,
-        "lakeCount": 4,
+        "landFraction": 56.8,
+        "oceanFraction": 43.1,
+        "lakeCount": 7,
         "biomeDiversity": 17,
         "dominantBiome": "Savanna",
-        "regionCount": 32,
+        "regionCount": 31,
         "settlementCount": 23,
         "capital": "Deociamor",
         "realmCount": 3,
         "presentYear": 1100,
         "capitalHouse": "Variatindo",
         "faithCount": 4,
-        "majorExports": "Livestock, Grain, Horses, Fish, Wine",
-        "resourceCount": 458,
-        "dominantPower": "Jaqe",
+        "majorExports": "Livestock, Horses, Grain, Wine, Fish",
+        "resourceCount": 456,
+        "dominantPower": "Kheqshaa",
         "survivingRealms": 5,
-        "volcanoCount": 9,
+        "volcanoCount": 6,
         "highestPeakMetres": 4500
       },
-      "contentHash": "131cd5dc25672075"
+      "contentHash": "c0320501ca4a1928"
     },
     {
       "seed": "aurelia-9",
@@ -233,26 +233,26 @@
         "report": "aurelia-9.report.md"
       },
       "stats": {
-        "landFraction": 34.5,
-        "oceanFraction": 65.5,
-        "lakeCount": 4,
+        "landFraction": 33.8,
+        "oceanFraction": 66.2,
+        "lakeCount": 1,
         "biomeDiversity": 16,
         "dominantBiome": "Savanna",
-        "regionCount": 21,
+        "regionCount": 19,
         "settlementCount": 13,
-        "capital": "Niantetomor",
+        "capital": "Vonthu",
         "realmCount": 2,
         "presentYear": 1100,
-        "capitalHouse": "Kheqsaid",
-        "faithCount": 3,
-        "majorExports": "Livestock, Grain, Horses, Wine, Stone",
-        "resourceCount": 291,
-        "dominantPower": "Redemor",
-        "survivingRealms": 5,
-        "volcanoCount": 5,
+        "capitalHouse": "Breistagra",
+        "faithCount": 2,
+        "majorExports": "Livestock, Horses, Grain, Wine, Fish",
+        "resourceCount": 290,
+        "dominantPower": "Steirkafjysk",
+        "survivingRealms": 4,
+        "volcanoCount": 3,
         "highestPeakMetres": 4500
       },
-      "contentHash": "0c5cb85325bd9fe0"
+      "contentHash": "2ec25c47d1563892"
     }
   ]
 }

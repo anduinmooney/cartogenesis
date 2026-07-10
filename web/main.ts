@@ -185,6 +185,9 @@ function clampView(): void {
 }
 
 let highlight: { x: number; y: number; start: number } | null = null;
+/** A persistent marker dropped by clicking a chronicle entry — so "fly to the
+ *  event" lands on something visible even in townless countryside. */
+let eventPin: { x: number; y: number; year: number; text: string } | null = null;
 
 function redraw(): void {
   if (!current) return;
@@ -214,10 +217,27 @@ function drawLabel(sx: number, sy: number, text: string, color: string, font: nu
   ctx.fillText(text, sx, sy);
 }
 
-/** Draw feature labels, city labels (when zoomed), and any fly-to highlight. */
+/** Draw feature labels, city labels (when zoomed), any fly-to highlight, and
+ *  the chronicle's event pin. */
 function drawOverlays(): void {
   if (!current) return;
   const d = dpr();
+
+  // The chronicle's event pin (drawn first so labels layer above it).
+  if (eventPin) {
+    const sx = eventPin.x * view.scale + view.ox;
+    const sy = eventPin.y * view.scale + view.oy;
+    ctx.strokeStyle = "#d9a441";
+    ctx.lineWidth = 2 * d;
+    ctx.beginPath();
+    ctx.arc(sx, sy, 9 * d, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(sx, sy - 9 * d);
+    ctx.lineTo(sx, sy - 20 * d);
+    ctx.stroke();
+    drawLabel(sx, sy - 27 * d, `${eventPin.year} — ${eventPin.text}`, "#d9a441", Math.round(11 * d));
+  }
   const inBounds = (sx: number, sy: number) =>
     sx > -80 && sy > -20 && sx < canvas.width + 80 && sy < canvas.height + 20;
 
@@ -635,6 +655,12 @@ function renderInfo(world: World): void {
 
   renderLanguages(world);
 
+  // Entity tooltips in the sidebar as well: the same names that are live in
+  // the gazetteer are live in the annals list and the features list.
+  currentEntities = entityIndex(world);
+  linkifyPlaces($("chronicle"), currentEntities);
+  linkifyPlaces($("features"), currentEntities);
+
   // The emergent chronicle from the simulation (the world's real history).
   // Each entry is clickable — it flies the map to where the event happened.
   $("chronicle").innerHTML = world.simulation.events
@@ -696,6 +722,7 @@ worker.onmessage = (e: MessageEvent) => {
   layerBuffers = layers;
   ruinedIds = ruinedSettlementIds(world.simulation.settlementTimeline);
   scrubYear = null;
+  eventPin = null;
   renderInfo(world);
   buildGazetteer(world);
   renderOffscreen();
@@ -884,11 +911,20 @@ function init(): void {
     if (!li) return;
     const x = Number(li.getAttribute("data-x"));
     const y = Number(li.getAttribute("data-y"));
-    if (Number.isFinite(x) && Number.isFinite(y)) flyTo(x, y);
+    if (Number.isFinite(x) && Number.isFinite(y)) {
+      // Drop a labelled pin at the event so the fly-to lands on something
+      // visible — events anchor to towns when the region has one, but a famine
+      // in empty country still deserves a mark.
+      const year = li.querySelector(".yr")?.textContent?.replace(/\D+$/, "") ?? "";
+      const text = (li.textContent ?? "").replace(/^\s*\d[\d,]*\s*AR\s*/, "").trim();
+      eventPin = { x, y, year: Number(year.replace(/,/g, "")) || 0, text: text.slice(0, 46) + (text.length > 46 ? "…" : "") };
+      flyTo(x, y);
+    }
   });
 
   wireGazetteer();
   wireExports();
+  wireEntityTooltips();
 
   const urlSeed = new URL(location.href).searchParams.get("seed");
   seedInput.value = urlSeed ?? "cartogenesis";
@@ -930,16 +966,181 @@ function renderLanguages(world: World): void {
 /** The current world's report Markdown, kept for the download button. */
 let gazetteerMd = "";
 
-/** name → world coordinates, so a name in the prose can fly the map. */
-function placeIndex(world: World): Map<string, { x: number; y: number }> {
-  const idx = new Map<string, { x: number; y: number }>();
-  const add = (name: string, x: number, y: number) => {
-    if (name && name.length >= 3 && !idx.has(name)) idx.set(name, { x, y });
+/** Anything the prose can reference: where it is (if anywhere), and what to say. */
+interface Entity {
+  kind: string;
+  label: string;
+  /** Tooltip body lines. */
+  lines: string[];
+  x?: number;
+  y?: number;
+}
+
+/** The current world's referenceable names. Rebuilt on every generate. */
+let currentEntities: Map<string, Entity> | null = null;
+
+/**
+ * name → entity, for every kind of thing the prose mentions: people, houses,
+ * realms, faiths, gods, then places — places inserted LAST so that if a person
+ * ever shares a name with a town, the clickable, locatable thing wins.
+ */
+function entityIndex(world: World): Map<string, Entity> {
+  const idx = new Map<string, Entity>();
+  const put = (name: string | undefined, e: Entity) => {
+    if (name && name.length >= 3) idx.set(name, e);
   };
-  for (const s of world.settlements.settlements) add(s.name, s.x, s.y);
-  for (const r of world.regions.regions) add(r.name, r.cx, r.cy);
-  for (const v of world.volcanoes) add(v.name, v.x, v.y);
-  for (const f of world.history.features) add(f.name, f.x, f.y);
+  const regionById = new Map(world.regions.regions.map((r) => [r.id, r]));
+  const timeline = new Map(world.simulation.settlementTimeline.map((t) => [t.id, t]));
+  const realmSeat = new Map(world.history.realms.map((r) => [r.name, r.regionId]));
+
+  // People — rulers (full styled name) and notable figures (bare name).
+  for (const r of world.lore.rulers) {
+    const realm = world.history.realms.find((x) => x.id === r.realmId);
+    const seat = realm ? regionById.get(realm.regionId) : undefined;
+    put(r.name, {
+      kind: "ruler",
+      label: r.name,
+      lines: [
+        `Reigned ${r.startYear}–${r.endYear}${r.reigning ? " (reigning now)" : ""}`,
+        realm ? `Ruler of ${realm.name}` : "",
+      ].filter(Boolean),
+      x: seat?.cx,
+      y: seat?.cy,
+    });
+  }
+  for (const fig of world.lore.figures) {
+    const bare = fig.name.split(",")[0];
+    put(bare, { kind: "figure", label: fig.name, lines: [fig.description] });
+  }
+
+  // Houses, realms (historic and simulated), faiths, gods.
+  for (const h of world.lore.houses) {
+    const seat = regionById.get(realmSeat.get(h.realmName) ?? -1);
+    put(h.name, {
+      kind: "house",
+      label: `House ${h.name}`,
+      lines: [`${glossPhrase(h.gloss)} — ruling house of ${h.realmName}`],
+      x: seat?.cx,
+      y: seat?.cy,
+    });
+  }
+  const finalByRealm = new Map<number, number>();
+  for (const [rid, realmId] of Object.entries(world.simulation.finalControl)) {
+    if (!finalByRealm.has(realmId as number)) finalByRealm.set(realmId as number, Number(rid));
+  }
+  for (const r of world.simulation.realms) {
+    const seatRegion =
+      regionById.get(realmSeat.get(r.name) ?? -1) ?? regionById.get(finalByRealm.get(r.id) ?? -1);
+    const fate =
+      r.status === "extinct"
+        ? "extinguished"
+        : r.status === "ascendant"
+          ? `ascendant — ${r.finalSize} province${r.finalSize === 1 ? "" : "s"}`
+          : `diminished — ${r.finalSize} of a peak ${r.peakSize}`;
+    put(r.name, {
+      kind: "realm",
+      label: r.name,
+      lines: [
+        `Realm (${r.languageId}) · founded ${r.foundedYear}`,
+        `Peak ${r.peakSize} province${r.peakSize === 1 ? "" : "s"} in ${r.peakYear} · ${fate}`,
+      ],
+      x: seatRegion?.cx,
+      y: seatRegion?.cy,
+    });
+  }
+  for (const fa of world.religion.faiths) {
+    const origin = regionById.get(fa.originRegionId);
+    put(fa.name, {
+      kind: "faith",
+      label: fa.name,
+      lines: [
+        `${fa.deity.name}, ${glossPhrase(fa.deity.gloss)} — god of ${fa.deity.domain.toLowerCase()}`,
+        `Followed in ${fa.followerRegions.length || 1} region${(fa.followerRegions.length || 1) === 1 ? "" : "s"}`,
+      ],
+      x: origin?.cx,
+      y: origin?.cy,
+    });
+    put(fa.deity.name, {
+      kind: "deity",
+      label: fa.deity.name,
+      lines: [
+        `${glossPhrase(fa.deity.gloss)} — god of ${fa.deity.domain.toLowerCase()}`,
+        `Worshipped by ${fa.name}`,
+      ],
+      x: origin?.cx,
+      y: origin?.cy,
+    });
+  }
+
+  // Places last — they win any name collision.
+  for (const fe of world.history.features) {
+    put(fe.name, {
+      kind: fe.kind,
+      label: fe.kind === "peak" ? `Mount ${fe.name}` : fe.name,
+      lines: [
+        `${glossPhrase(fe.gloss)} — the ${
+          fe.kind === "peak" ? "highest peak" : fe.kind === "river" ? "greatest river" : "largest inland water"
+        }`,
+      ],
+      x: fe.x,
+      y: fe.y,
+    });
+  }
+  for (const v of world.volcanoes) {
+    put(v.name, {
+      kind: "volcano",
+      label: `Mount ${v.name}`,
+      lines: [
+        `${glossPhrase(v.gloss)} — ${v.type}, ${v.status}`,
+        v.caldera ? (v.caldera.lakeLevel !== undefined ? "Caldera with a crater lake" : "Collapsed caldera") : "",
+        v.arcId !== undefined ? "One of an island arc" : "",
+      ].filter(Boolean),
+      x: v.x,
+      y: v.y,
+    });
+  }
+  for (const r of world.regions.regions) {
+    const faith = world.religion.faiths.find((x) => x.id === world.religion.regionFaith[r.id]);
+    put(r.name, {
+      kind: "region",
+      label: r.name,
+      lines: [
+        `${glossPhrase(r.gloss)} — ${r.languageLabel}`,
+        `${BIOME_NAMES[r.dominantBiome as keyof typeof BIOME_NAMES]} · ${r.coastal ? "coastal" : "inland"} · ${r.area} cells`,
+        faith ? `Faith: ${faith.name}` : "",
+      ].filter(Boolean),
+      x: r.cx,
+      y: r.cy,
+    });
+  }
+  for (const st of world.settlements.settlements) {
+    const t = timeline.get(st.id);
+    const eco = world.economy.economies.find((e) => e.settlementId === st.id);
+    put(st.name, {
+      kind: "settlement",
+      label: st.name,
+      lines: [
+        `${glossPhrase(st.gloss)} — ${st.isCapital ? "capital" : st.tier}${st.isPort ? ", port" : ""}`,
+        t ? `Founded ${t.foundedYear}${t.fellYear !== undefined ? ` · fell ${t.fellYear}` : ""}` : "",
+        st.formerNames?.length ? `Formerly ${st.formerNames[st.formerNames.length - 1].name}` : "",
+        eco?.produces.length
+          ? `Produces ${eco.produces.slice(0, 3).map((k) => RESOURCE_NAMES[k]).join(", ")}`
+          : "",
+      ].filter(Boolean),
+      x: st.x,
+      y: st.y,
+    });
+    // Old names still appear in sagas and "formerly" notes — make them live too.
+    for (const old of st.formerNames ?? []) {
+      put(old.name, {
+        kind: "settlement",
+        label: `${old.name} (now ${st.name})`,
+        lines: [`${glossPhrase(old.gloss)} — renamed under foreign rule c. ${old.untilYear}`],
+        x: st.x,
+        y: st.y,
+      });
+    }
+  }
   return idx;
 }
 
@@ -949,7 +1150,7 @@ function placeIndex(world: World): Map<string, { x: number; y: number }> {
  * span carrying its coordinates. Works on the DOM, not the HTML string, so it
  * can never break tags or match inside attributes.
  */
-function linkifyPlaces(root: HTMLElement, idx: Map<string, { x: number; y: number }>): void {
+function linkifyPlaces(root: HTMLElement, idx: Map<string, Entity>): void {
   if (idx.size === 0) return;
   // The matching itself is pure string logic in markdown.ts (placePattern /
   // containsPlace / segmentPlaces), under Node tests — a stateful /g regex once
@@ -969,13 +1170,15 @@ function linkifyPlaces(root: HTMLElement, idx: Map<string, { x: number; y: numbe
         frag.appendChild(document.createTextNode(seg.text));
         continue;
       }
-      const coords = idx.get(seg.text)!;
+      const ent = idx.get(seg.text)!;
       const span = document.createElement("span");
       span.className = "place";
       span.textContent = seg.text;
-      span.dataset.x = String(coords.x);
-      span.dataset.y = String(coords.y);
-      span.title = "Find on the map";
+      span.dataset.name = seg.text;
+      if (ent.x !== undefined && ent.y !== undefined) {
+        span.dataset.x = String(ent.x);
+        span.dataset.y = String(ent.y);
+      }
       frag.appendChild(span);
     }
     t.parentNode?.replaceChild(frag, t);
@@ -988,7 +1191,8 @@ function buildGazetteer(world: World): void {
   const { html, headings } = renderMarkdown(gazetteerMd);
   const content = $("gaz-content");
   content.innerHTML = html;
-  linkifyPlaces(content, placeIndex(world));
+  currentEntities ??= entityIndex(world);
+  linkifyPlaces(content, currentEntities);
 
   $("gaz-toc").innerHTML = headings
     .map(
@@ -1016,6 +1220,37 @@ function downloadText(filename: string, text: string, mime: string): void {
   a.download = filename;
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+/** Tooltip body for an entity, in the map tooltip's own visual language. */
+function entityTipHtml(e: Entity): string {
+  const rows = e.lines.map((l) => `<div class="trow">${escapeHtml(l)}</div>`).join("");
+  return `<div class="tname">${escapeHtml(e.label)}</div>${rows}`;
+}
+
+/** Hovering any linkified name — gazetteer, annals, features — explains it. */
+function wireEntityTooltips(): void {
+  document.addEventListener("mouseover", (ev) => {
+    const el = ev.target as HTMLElement;
+    if (!el.classList?.contains("place")) return;
+    const ent = currentEntities?.get(el.dataset.name ?? el.textContent ?? "");
+    if (!ent) return;
+    tip.innerHTML = entityTipHtml(ent);
+    tip.hidden = false;
+    const r = el.getBoundingClientRect();
+    const pad = 10;
+    let left = r.left;
+    let top = r.bottom + 6;
+    const tr = tip.getBoundingClientRect();
+    if (left + tr.width > window.innerWidth - pad) left = window.innerWidth - tr.width - pad;
+    if (top + tr.height > window.innerHeight - pad) top = r.top - tr.height - 6;
+    tip.style.left = `${Math.max(pad, left)}px`;
+    tip.style.top = `${Math.max(pad, top)}px`;
+  });
+  document.addEventListener("mouseout", (ev) => {
+    const el = ev.target as HTMLElement;
+    if (el.classList?.contains("place")) tip.hidden = true;
+  });
 }
 
 function wireGazetteer(): void {
