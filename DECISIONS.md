@@ -6,6 +6,36 @@ old one — the history is the point.
 
 ---
 
+## D-023 — Water and lava are injected into their layers post-hoc, not classified (2026-07-10, Session 17)
+**Decision:** Crater lakes and lava fields are added by dedicated passes
+(`fillCraterLakes`, `traceLavaFields`) that mutate `water.lakeMask` /
+`biomes.ids` *after* the base classification, rather than being detected by
+`analyzeWater` / `classifyBiomes`.
+
+**Why:** Both features are defined by the volcanoes, not by the fields the
+classifiers read. A crater lake sits *above* sea level, so the ocean/inland-basin
+flood fill — which only knows "below sea level, not reachable from the border" —
+can never find it. Lava is a surface material laid down by an eruption, not a
+climate outcome, so no temperature/moisture rule would produce it. Teaching the
+classifiers about volcanoes would invert the dependency (hydrology and biomes
+would import the volcano layer) for two special cases; a post-pass keeps the
+classifiers pure and the special-casing localized.
+
+**Consequence:** the passes must run at the right point and update derived
+counts. `fillCraterLakes` runs after erosion + `analyzeWater` (the floor is only
+final after erosion) and updates `lakeCount` / `lakeFraction`. `traceLavaFields`
+runs after `classifyBiomes` but *before* regions/settlements (so nobody settles
+on basalt) and updates `counts` / `diversity` / `dominant`. Ordering is load-
+bearing; it is commented at each call site in `world.ts`.
+
+**Determinism split, worth remembering:** calderas change *elevation* → all three
+golden fingerprints move. Lava changes only *biomes* → the elevation hashes are
+untouched and only `simulationHash` moves (through settlement placement). When a
+change moves only some fingerprints, that is evidence about how far it actually
+reaches — a useful check.
+
+---
+
 ## D-022 — Determinism is only as strong as the arithmetic underneath it (2026-07-10, Session 15; **RESOLVED** Session 16)
 **Status:** RESOLVED. Session 15 found it; Session 16 fixed it. The resolution is
 recorded at the end of this entry.

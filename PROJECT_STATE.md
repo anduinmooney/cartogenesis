@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 16 · 2026-07-10
+- **As of:** Session 17 · 2026-07-10
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 176 tests pass (CI enforced). **Reproducible across
+- **Health:** 🟢 Green. 183 tests pass (CI enforced). **Reproducible across
   Node builds and platforms** — the engine uses only exactly-specified
   arithmetic, guarded by an exact bit-level hash (D-022 resolved, Session 16).
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
@@ -34,8 +34,11 @@
 - Ten rendered map layers (terrain, **topographic**, biomes, political, powers,
   faiths, resources, temperature, rainfall, relief) + a labeled SVG poster + a
   Markdown gazetteer with an emergent chronicle.
-- **Real volcanoes** (with craters, named, active/dormant/extinct) and **real
-  16-bit heightmap exports** (PNG + raw `.r16`) for 3D tools; elevation in metres.
+- **Real volcanoes** (named, active/dormant/extinct) that carry geology: a big
+  one may collapse into a **caldera** cradling a **crater lake**, and an active
+  one bleeds **lava fields** (a basalt biome nobody settles on) down its flanks.
+  Plus **real 16-bit heightmap exports** (PNG + raw `.r16`) for 3D tools;
+  elevation in metres.
 - An **interactive** in-browser generator (`docs/app/`) that generates in a **Web
   Worker** (no UI freeze): pan, zoom, hover to inspect (incl. resource deposits +
   elevation in metres), click for details, feature/volcano/city labels on the
@@ -53,7 +56,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 176 passing tests, incl. exact + simulation determinism guards, an
+- 183 passing tests, incl. exact + simulation determinism guards, an
   approximated-math lint, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
@@ -80,13 +83,14 @@
 | Present-day roads & economy (survivors only) | ✅ done |
 | In-app gazetteer · client-side exports (PNG/SVG/MD) | ✅ done |
 | Exact cross-engine determinism (D-022) | ✅ done |
-| deeper terrain · language contact · more | 🔜 the world keeps deepening |
+| Deeper terrain: calderas · crater lakes · lava fields | ✅ done |
+| seamount arcs · language contact · islets · more | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 176 tests, all offline
+npm test                  # 183 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)
@@ -102,12 +106,12 @@ No `npm install` is required — there are zero dependencies.
 3. The three fingerprints in `tests/world.test.ts` (`contentHash` quantized,
    `exactHash` bit-level, `simulationHash`) must stay green, or be updated with a
    `DECISIONS.md` entry explaining the intentional change.
-6. The engine uses only exactly-specified arithmetic (`+ - * / sqrt`, via
+4. The engine uses only exactly-specified arithmetic (`+ - * / sqrt`, via
    `src/exact.ts`). No `Math.hypot/pow/cos/…` or `**` outside `render.ts` — a
    test enforces this (D-022). `render.ts` is exempt; pixels are not world state.
-4. Anything dated derives its years from `meta.presentYear`. Never invent a
+5. Anything dated derives its years from `meta.presentYear`. Never invent a
    second "present".
-5. `CONCEPTS` in `src/language.ts` is **append-only**. Inserting a concept
+6. `CONCEPTS` in `src/language.ts` is **append-only**. Inserting a concept
    re-rolls every root after it and renames every world.
 
 ## Known limitations / debt

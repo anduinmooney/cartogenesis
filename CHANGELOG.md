@@ -8,6 +8,49 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 17 — 2026-07-10 — Deeper terrain: calderas, crater lakes, and lava
+
+**Theme:** the overhaul continues (Session 16 landed 3 of 5 phases). This is
+Phase 3 — deeper volcanic terrain, for the friend who loves mountains and
+volcanoes. Two features, each committed and verified.
+
+### Calderas and crater lakes
+A large stratovolcano or shield now has an even chance of having blown its top:
+instead of a peak it gets a wide, flat-floored caldera ringed by a steep rim
+(built with the same exact-arithmetic profile — smoothstep wall, `powExact`
+flanks). Most calderas above the sea then **cradle a crater lake**.
+- Crater lakes sit *above* sea level, so `analyzeWater`'s ocean/basin flood fill
+  never finds them. A new `fillCraterLakes` pass runs after erosion + hydrology
+  and injects the lake cells into `water.lakeMask`, so biomes, rendering,
+  settlements, and the gazetteer all agree the floor is water. Verified: every
+  crater-lake cell classifies as `Biome.Lake`, and no settlement is founded on
+  one. The gazetteer marks the volcano "a caldera cradling a crater lake";
+  hovering it in the app reads "Lake".
+
+### Lava fields
+Each **active** volcano sends 2–5 lava flows down its flanks — steepest-descent
+walks from the rim across the final eroded terrain, painting a new
+`Biome.LavaField` (near-black basalt) until they hit water or pool in a pit.
+- Lava repaints biomes and never touches elevation, so the terrain hashes are
+  unchanged — only the simulation fingerprint moves (via settlement placement).
+  Nobody settles on fresh basalt (`generateSettlements` skips lava candidates;
+  zero across 20 worlds). Rendering, the legend, and hover pick it up for free
+  through `BIOME_COLORS`/`BIOME_NAMES`. Verified live: 309 basalt pixels on the
+  biomes canvas.
+
+### Determinism & tests
+Terrain changed (calderas) → all three golden fingerprints regenerated
+(`36d22822` / `3ea66d76` / `ca005385`); lava changed only the simulation
+fingerprint. Two existing tests encoded assumptions the new water/biome broke and
+are **corrected, not masked**: fish may sit by a mountain crater lake (not only
+the sea), and the "ruins change the road network" check is split from the always-
+true "roads follow the survivors" invariant so a ruined leaf town can't make it
+flaky. **183 tests** (7 new), incl. a lint proof that the new terrain code uses no
+approximated math. Two more Phase-3 ideas (seamount arcs, per-region contour
+intervals) and Phases 4–5 (language contact, cleanup) remain queued.
+
+---
+
 ## Session 16 — 2026-07-10 — The overhaul: exact arithmetic, the gazetteer in-app, and exports
 
 **Theme:** the user asked for the biggest session yet with the most features.

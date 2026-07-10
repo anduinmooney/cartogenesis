@@ -55,6 +55,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
 - ✅ **Exact cross-engine determinism.** The pipeline uses only exactly-specified
   arithmetic (`src/exact.ts`), guarded by a bit-level hash and a simulation
   fingerprint — same seed, same world, on any conforming engine (Session 16, D-022).
+- ✅ **Deeper volcanic terrain.** Calderas that cradle crater lakes, and lava
+  fields that active volcanoes bleed down their flanks (Session 17). Still open:
+  seamount arcs, per-region metre-accurate contour intervals.
 - ✅ **L9 — Settlements.** Habitability scoring → cities/towns/ports + a capital.
 - ✅ **L10 — Roads & trade.** Least-cost Dijkstra + Kruskal MST road network.
 - ✅ **L11 — History.** Realms, wars, disasters, golden ages — a dated chronicle.
