@@ -123,19 +123,19 @@
 ### Towns
 
 - **Deotelen**, *the sea market* (port, trade hub, rich) — Livestock, Fish, Grain, Wine *(founded 185)*
-- **Vondund**, *the green haven* (port, rich) — Grain, Wine, Horses, Livestock *(founded 227)*
+- **Vondemor**, *the green home* (port, rich) — Grain, Wine, Horses, Livestock *(founded 227)* — formerly **Vondund**, before conquest remade the name
 - **Deoliria**, *the sea haven* (port, prosperous) — Timber, Livestock, Fish, Horses *(founded 269)*
-- **Stagragrull**, *the sea bridge* (port, rich) — Grain, Livestock, Iron, Wine *(founded 312)*
+- **Stagrdemor**, *the sea home* (port, rich) — Grain, Livestock, Iron, Wine *(founded 312)* — formerly **Stagragrull**, before conquest remade the name
 
 ### Villages
 
-- **Ghashqe**, *the river home* (prosperous) — Livestock, Grain, Wine, Iron *(founded 354)*
-- **Ghashakhukha**, *the river field* (prosperous) — Livestock, Wine, Horses *(founded 438)*
-- **Knyrkathu**, *the wild fort* (port, trade hub, rich) — Horses, Livestock, Grain, Copper *(founded 481)*
-- **Khirqe**, *the sea home* (port, prosperous) — Livestock, Horses, Grain *(founded 523)*
-- **Ghashkai**, *the river spring* (prosperous) — Livestock, Horses, Wine, Stone *(founded 565)*
-- **Ghashashu**, *the river fort* (port, prosperous) — Fish, Livestock, Horses *(founded 608)*
-- **Mairqe**, *the mountain home* (prosperous) — Livestock, Stone, Iron, Coal *(founded 650)*
+- **Ghashliria**, *the river haven* (prosperous) — Livestock, Grain, Wine, Iron *(founded 354)* — formerly **Ghashqe**, before conquest remade the name
+- **Ghashtomor**, *the river fort* (prosperous) — Livestock, Wine, Horses *(founded 438)* — formerly **Ghashakhukha**, before conquest remade the name
+- **Knyrkciamor**, *the wild gate* (port, trade hub, rich) — Horses, Livestock, Grain, Copper *(founded 481)* — formerly **Knyrkathu**, before conquest remade the name
+- **Khirdund**, *the sea haven* (port, prosperous) — Livestock, Horses, Grain *(founded 523)* — formerly **Khirqe**, before conquest remade the name
+- **Ghashlamor**, *the river hall* (prosperous) — Livestock, Horses, Wine, Stone *(founded 565)* — formerly **Ghashkai**, before conquest remade the name
+- **Ghashciamor**, *the river gate* (port, prosperous) — Fish, Livestock, Horses *(founded 608)* — formerly **Ghashashu**, before conquest remade the name
+- **Mairciamor**, *the mountain gate* (prosperous) — Livestock, Stone, Iron, Coal *(founded 650)* — formerly **Mairqe**, before conquest remade the name
 
 ## Ruins
 
@@ -172,8 +172,8 @@ Followed across 3 region(s).
 ## Resources & trade
 
 - **Major exports:** Livestock, Grain, Horses, Wine, Fish
-- **Wealthiest settlement:** Knyrkathu
-- **Trade hubs:** Deotelen, Knyrkathu
+- **Wealthiest settlement:** Knyrkciamor
+- **Trade hubs:** Deotelen, Knyrkciamor
 - **Deposits:** Iron ×22, Copper ×16, Gold ×7, Gems ×4, Stone ×46, Coal ×20, Timber ×3, Grain ×25, Livestock ×96, Fish ×11, Furs ×2, Spices ×1, Salt ×7, Horses ×30, Wine ×14
 
 ## Languages

@@ -315,6 +315,22 @@ export function generateWorld(config: WorldConfig): World {
       yearsPerTurn: SIM_YEARS_PER_TURN,
     },
   );
+  // Apply language contact: the simulation reports which towns a foreign power
+  // held long enough to rename. Layer the present-day name over each, preserving
+  // the old one, so the map, gazetteer, and hover all show the changed name.
+  const settlementById = new Map(settlements.settlements.map((s) => [s.id, s]));
+  for (const rn of simulation.renamings) {
+    const s = settlementById.get(rn.settlementId);
+    if (!s) continue;
+    (s.formerNames ??= []).push({
+      name: s.name,
+      gloss: s.gloss,
+      untilYear: rn.year,
+    });
+    s.name = rn.name;
+    s.gloss = rn.gloss;
+  }
+
   // The world as it was is what the simulation ran on. The world as it IS — the
   // one we draw and describe — has ruins in it. Recompute the road network and
   // the economy over the settlements that actually survived, so a highway never

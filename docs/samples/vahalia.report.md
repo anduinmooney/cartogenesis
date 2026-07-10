@@ -154,7 +154,7 @@
 ### Cities
 
 - **Deociamor**, *the sea gate* (**capital**, port, trade hub, rich) — Livestock, Grain, Horses *(founded 100)*
-- **Panatelen**, *the field market* (prosperous) — Grain, Livestock, Stone *(founded 125)*
+- **Panakad**, *the field haven* (prosperous) — Grain, Livestock, Stone *(founded 125)* — formerly **Panatelen**, before conquest remade the name
 - **Khirghekh**, *the sea gate* (port, rich) — Livestock, Grain, Timber, Horses *(founded 150)*
 
 ### Towns
@@ -169,18 +169,18 @@
 
 ### Villages
 
-- **Hrathu**, *the river fort* (port, prosperous) — Grain, Fish, Livestock, Iron *(founded 350)*
+- **Hrademor**, *the river home* (port, prosperous) — Grain, Fish, Livestock, Iron *(founded 350)* — formerly **Hrathu**, before conquest remade the name
 - **Panademor**, *the field home* (rich) — Livestock, Grain, Horses, Wine *(founded 375)*
-- **Deonelen**, *the sea bridge* (port, prosperous) — Livestock, Grain *(founded 400)*
+- **Deoshu**, *the sea fort* (port, prosperous) — Livestock, Grain *(founded 400)* — formerly **Deonelen**, before conquest remade the name
 - **Belladinte**, *the river spring* (prosperous) — Livestock, Grain, Wine, Horses *(founded 425)*
-- **Ghashzaa**, *the river bridge* (prosperous) — Livestock, Horses *(founded 450)*
+- **Ghashtomor**, *the river fort* (prosperous) — Livestock, Horses *(founded 450)* — formerly **Ghashzaa**, before conquest remade the name
 - **Midshu**, *the grass fort* (port, rich) — Livestock, Iron, Coal, Stone *(founded 475)*
 - **Bellanelen**, *the river bridge* (trade hub, rich) — Grain, Stone, Horses, Livestock *(founded 500)*
 - **Stagrba**, *the sea spring* (port, rich) — Grain, Livestock, Fish, Horses *(founded 525)*
 - **Rairshu**, *the gold fort* (rich) — Livestock, Wine, Copper, Grain *(founded 550)*
-- **Thaurnagrull**, *the grass bridge* (port, prosperous) — Livestock, Coal, Fish, Grain *(founded 575)*
-- **Rairqe**, *the gold home* (rich) — Livestock, Horses, Iron, Grain *(founded 600)*
-- **Ghashashu**, *the river fort* (prosperous) — Livestock, Horses *(founded 625)*
+- **Thaurntomor**, *the grass fort* (port, prosperous) — Livestock, Coal, Fish, Grain *(founded 575)* — formerly **Thaurnagrull**, before conquest remade the name
+- **Rairciamor**, *the gold gate* (rich) — Livestock, Horses, Iron, Grain *(founded 600)* — formerly **Rairqe**, before conquest remade the name
+- **Ghashtomor**, *the river fort* (prosperous) — Livestock, Horses *(founded 625)* — formerly **Ghashashu**, before conquest remade the name
 
 ## Ruins
 

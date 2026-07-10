@@ -163,20 +163,20 @@
 - **Deonelen**, *the sea bridge* (port, rich) — Grain, Livestock, Horses, Wine *(founded 222)*
 - **Stagrafjysk**, *the sea home* (port, prosperous) — Grain, Wine, Horses, Livestock *(founded 253)*
 - **Niantenelen**, *the green bridge* (port, prosperous) — Horses, Livestock, Timber *(founded 283)*
-- **Shinghekh**, *the wild gate* (port, prosperous) — Horses, Livestock, Grain *(founded 314)*
+- **Shinbust**, *the wild gate* (port, prosperous) — Horses, Livestock, Grain *(founded 314)* — formerly **Shinghekh**, before conquest remade the name
 
 ### Villages
 
 - **Bellademor**, *the river home* (rich) — Grain, Livestock, Horses, Stone *(founded 375)*
-- **Panadinte**, *the field spring* (port, prosperous) — Timber, Grain, Livestock, Wine *(founded 406)*
-- **Ghashakhukha**, *the river field* (prosperous) — Livestock, Wine, Timber, Grain *(founded 436)*
-- **Knyrkagrull**, *the wild bridge* (port, rich) — Livestock, Grain, Horses, Fish *(founded 467)*
+- **Panaba**, *the field spring* (port, prosperous) — Timber, Grain, Livestock, Wine *(founded 406)* — formerly **Panadinte**, before conquest remade the name
+- **Ghashro**, *the river hall* (prosperous) — Livestock, Wine, Timber, Grain *(founded 436)* — formerly **Ghashakhukha**, before conquest remade the name
+- **Knyrktomor**, *the wild fort* (port, rich) — Livestock, Grain, Horses, Fish *(founded 467)* — formerly **Knyrkagrull**, before conquest remade the name
 - **Stagrafjan**, *the sea field* (port, modest) — Grain, Fish, Livestock *(founded 497)*
-- **Ghashqe**, *the river home* (prosperous) — Grain, Livestock, Horses, Wine *(founded 528)*
-- **Bellanelen**, *the river bridge* (trade hub, rich) — Grain, Livestock, Stone, Coal *(founded 558)*
+- **Ghashro**, *the river hall* (prosperous) — Grain, Livestock, Horses, Wine *(founded 528)* — formerly **Ghashqe**, before conquest remade the name
+- **Bellakad**, *the river haven* (trade hub, rich) — Grain, Livestock, Stone, Coal *(founded 558)* — formerly **Bellanelen**, before conquest remade the name
 - **Stagrathu**, *the sea fort* (port, prosperous) — Livestock, Grain, Horses *(founded 589)*
-- **Thaurnagrull**, *the grass bridge* (port, prosperous) — Grain, Horses, Livestock *(founded 619)*
-- **Khirkhukha**, *the sea field* (port, prosperous) — Livestock, Horses *(founded 650)*
+- **Thaurnliria**, *the grass haven* (port, prosperous) — Grain, Horses, Livestock *(founded 619)* — formerly **Thaurnagrull**, before conquest remade the name
+- **Khirpana**, *the sea field* (port, prosperous) — Livestock, Horses *(founded 650)* — formerly **Khirkhukha**, before conquest remade the name
 
 ## Ruins
 
@@ -221,8 +221,8 @@ Followed across 3 region(s).
 ## Resources & trade
 
 - **Major exports:** Livestock, Grain, Horses, Wine, Timber
-- **Wealthiest settlement:** Bellanelen
-- **Trade hubs:** Deoliria, Stagragrull, Bellanelen
+- **Wealthiest settlement:** Bellakad
+- **Trade hubs:** Deoliria, Stagragrull, Bellakad
 - **Deposits:** Iron ×30, Copper ×21, Gold ×10, Gems ×6, Stone ×60, Coal ×21, Timber ×4, Grain ×45, Livestock ×127, Fish ×13, Furs ×4, Spices ×1, Salt ×11, Horses ×38, Wine ×23
 
 ## Languages

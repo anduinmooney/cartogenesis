@@ -37,7 +37,7 @@
 <circle cx="280" cy="51" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
 <text x="280" y="44.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Vonthu</text>
 <circle cx="17" cy="263" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
-<text x="17" y="256.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Khirmakh</text>
+<text x="17" y="256.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Khirciamor</text>
 <circle cx="309" cy="260" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
 <text x="309" y="253.89999999999998" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Khirkad</text>
 <circle cx="75" cy="308" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
@@ -45,7 +45,7 @@
 <circle cx="49" cy="97" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
 <text x="49" y="90.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Ghashashu</text>
 <circle cx="144" cy="37" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
-<text x="144" y="30.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Knyrkbust</text>
+<text x="144" y="30.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Knyrktomor</text>
 </g>
 <g><rect x="10" y="316.4" width="143.04" height="33.6" rx="4" fill="#0d1017" fill-opacity="0.66" stroke="#d9b25a" stroke-width="1"/><text x="22" y="331.18399999999997" fill="#f4ead0" font-size="16" font-weight="700" dominant-baseline="middle">Rauriameonte</text><text x="22" y="341.936" fill="#9fb0c0" font-size="7" font-style="italic" dominant-baseline="middle">Cartogenesis · seed: cartogenesis</text></g>
 </svg>

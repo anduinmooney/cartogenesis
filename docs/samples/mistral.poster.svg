@@ -37,9 +37,9 @@
 <circle cx="42" cy="83" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
 <text x="42" y="76.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Niantenelen</text>
 <circle cx="267" cy="93" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
-<text x="267" y="86.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Shinghekh</text>
+<text x="267" y="86.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Shinbust</text>
 <circle cx="110" cy="258" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
-<text x="110" y="251.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Ghashriz</text>
+<text x="110" y="251.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Ghashathu</text>
 </g>
 <g><rect x="10" y="316.4" width="93.44" height="33.6" rx="4" fill="#0d1017" fill-opacity="0.66" stroke="#d9b25a" stroke-width="1"/><text x="22" y="331.18399999999997" fill="#f4ead0" font-size="16" font-weight="700" dominant-baseline="middle">Redente</text><text x="22" y="341.936" fill="#9fb0c0" font-size="7" font-style="italic" dominant-baseline="middle">Cartogenesis · seed: mistral</text></g>
 </svg>

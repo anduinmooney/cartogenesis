@@ -338,6 +338,48 @@ export function composeName(
   return last;
 }
 
+/**
+ * A place-name layered by conquest. The land-word (the modifier) survives in the
+ * conquered people's tongue; the settlement-word (the head) is re-said in the
+ * ruler's. So Kesh `Khaimghekh` (*stone-gate*) under Auld rule becomes
+ * `Khaimdund` — the Kesh root for stone, the Auld word for a haven. This is how
+ * real toponymy layers: the hills keep their old names, the forts take new ones.
+ *
+ * Deterministic in `rng` alone. Returns `null` if the layered form would just be
+ * the original (same roots) or comes out unpronounceable — the caller then
+ * leaves the name untouched.
+ */
+export function composeLayered(
+  fromLang: Language,
+  toLang: Language,
+  concepts: string[],
+  rng: Rng,
+): ComposedName | null {
+  const from = lexiconOf(fromLang);
+  const to = lexiconOf(toLang);
+  const modifier = concepts[0];
+  const head = concepts[concepts.length - 1];
+  if (!from.roots[modifier] || !to.roots[head]) return null;
+
+  // Keep the native land-word; re-say the settlement-word in the ruler's tongue.
+  // The ruler usually keeps the same sense, but sometimes imposes a word of
+  // their own administration ("fort", "hall") — deterministic in `rng`.
+  const modRoot = from.roots[modifier];
+  const rulerHeads = [head, "fort", "hall", "home", "haven", "gate"].filter(
+    (c) => to.roots[c],
+  );
+  const headConcept = rng.pick(rulerHeads.length ? rulerHeads : [head]);
+  const name = titleCase(joinRoots(modRoot, to.roots[headConcept], to.linker));
+  if (name.length < MIN_LEN || name.length > MAX_LEN + 2) return null;
+
+  return {
+    name,
+    gloss: `${modifier}-${headConcept}`,
+    concepts: [modifier, headConcept],
+    languageId: toLang.id,
+  };
+}
+
 /** Render a gloss as prose: `"sea-fort"` → `"the sea fort"`. */
 export function glossPhrase(gloss: string): string {
   return `the ${gloss.replace(/-/g, " ")}`;

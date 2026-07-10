@@ -210,9 +210,12 @@ export function worldReportMarkdown(world       )         {
         : "";
       const founded = timeline.get(s.id)?.foundedYear;
       const age = founded !== undefined ? ` *(founded ${founded})*` : "";
+      const former = s.formerNames?.length
+        ? ` — formerly **${s.formerNames[0].name}**, before conquest remade the name`
+        : "";
       lines.push(
         `- **${s.name}**, *${glossPhrase(s.gloss)}*` +
-          `${tags ? ` (${tags})` : ""}${goods}${age}`,
+          `${tags ? ` (${tags})` : ""}${goods}${age}${former}`,
       );
     }
     lines.push("");

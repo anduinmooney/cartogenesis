@@ -174,16 +174,16 @@
 
 - **Deodemor**, *the sea home* (port, trade hub, rich) — Grain, Livestock, Wine, Horses *(founded 188)*
 - **Vonthu**, *the green fort* (port, rich) — Livestock, Horses, Grain, Stone *(founded 232)*
-- **Khirmakh**, *the sea hall* (port, prosperous) — Livestock, Horses *(founded 254)*
+- **Khirciamor**, *the sea gate* (port, prosperous) — Livestock, Horses *(founded 254)* — formerly **Khirmakh**, before conquest remade the name
 - **Khirkad**, *the sea haven* (port, prosperous) — Fish, Horses, Livestock *(founded 276)*
 - **Thaurndund**, *the grass haven* (prosperous) — Livestock, Grain, Wine, Horses *(founded 298)*
 - **Ghashashu**, *the river fort* (modest) — Livestock, Horses *(founded 320)*
-- **Knyrkbust**, *the wild gate* (port, prosperous) — Grain, Livestock, Horses, Iron *(founded 342)*
+- **Knyrktomor**, *the wild fort* (port, prosperous) — Grain, Livestock, Horses, Iron *(founded 342)* — formerly **Knyrkbust**, before conquest remade the name
 
 ### Villages
 
-- **Pananelen**, *the field bridge* (prosperous) — Grain, Livestock, Wine, Stone *(founded 364)*
-- **Belladinte**, *the river spring* (port, prosperous) — Grain, Coal, Livestock, Iron *(founded 386)*
+- **Panadund**, *the field haven* (prosperous) — Grain, Livestock, Wine, Stone *(founded 364)* — formerly **Pananelen**, before conquest remade the name
+- **Bellafjysk**, *the river home* (port, prosperous) — Grain, Coal, Livestock, Iron *(founded 386)* — formerly **Belladinte**, before conquest remade the name
 - **Hrafjan**, *the river field* (prosperous) — Livestock, Grain, Wine, Horses *(founded 430)*
 - **Vonba**, *the green spring* (port, modest) — Grain, Livestock, Horses *(founded 452)*
 - **Stagrafjysk**, *the sea home* (port, prosperous) — Livestock, Grain *(founded 496)*
@@ -192,7 +192,7 @@
 - **Rairkai**, *the gold spring* (port, modest) — Livestock, Spices, Fish, Horses *(founded 562)*
 - **Khirzaa**, *the sea bridge* (port, modest) — Livestock, Fish, Horses, Salt *(founded 584)*
 - **Ghashzaa**, *the river bridge* (modest) — Livestock, Stone *(founded 606)*
-- **Ghashakhukha**, *the river field* (modest) — Livestock, Fish, Horses *(founded 628)*
+- **Ghashtomor**, *the river fort* (modest) — Livestock, Fish, Horses *(founded 628)* — formerly **Ghashakhukha**, before conquest remade the name
 
 ## Ruins
 

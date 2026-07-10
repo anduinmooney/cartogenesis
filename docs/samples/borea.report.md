@@ -175,25 +175,25 @@
 - **Peonaliria**, *the grass haven* (port, prosperous) — Grain, Wine, Livestock *(founded 196)*
 - **Bellaliria**, *the river haven* (port, prosperous) — Livestock, Grain, Wine, Horses *(founded 243)*
 - **Senaciamor**, *the thorn gate* (prosperous) — Livestock, Horses, Grain, Wine *(founded 267)*
-- **Ghashzaa**, *the river bridge* (modest) — Livestock, Timber *(founded 291)*
+- **Ghashtomor**, *the river fort* (modest) — Livestock, Timber *(founded 291)* — formerly **Ghashzaa**, before conquest remade the name
 - **Bellanelen**, *the river bridge* (prosperous) — Livestock, Grain, Horses, Coal *(founded 315)*
 - **Bellatomor**, *the river fort* (prosperous) — Grain, Wine, Livestock *(founded 339)*
 
 ### Villages
 
-- **Stagrafjan**, *the sea field* (port, rich) — Livestock, Grain, Fish, Horses *(founded 363)*
+- **Stagrdemor**, *the sea home* (port, rich) — Livestock, Grain, Fish, Horses *(founded 363)* — formerly **Stagrafjan**, before conquest remade the name
 - **Peonanelen**, *the grass bridge* (port, trade hub, prosperous) — Horses, Timber, Grain, Livestock *(founded 387)*
-- **Khirkhukha**, *the sea field* (port, prosperous) — Livestock, Horses, Fish *(founded 411)*
-- **Thaurnafjan**, *the grass field* (port, prosperous) — Livestock, Horses, Furs *(founded 435)*
-- **Stagrba**, *the sea spring* (port, prosperous) — Livestock, Grain, Furs, Horses *(founded 459)*
-- **Knyrkafjan**, *the wild field* (port, rich) — Grain, Livestock, Furs, Fish *(founded 483)*
-- **Knyrkba**, *the wild spring* (port, prosperous) — Grain, Livestock, Timber, Fish *(founded 507)*
+- **Khirciamor**, *the sea gate* (port, prosperous) — Livestock, Horses, Fish *(founded 411)* — formerly **Khirkhukha**, before conquest remade the name
+- **Thaurnliria**, *the grass haven* (port, prosperous) — Livestock, Horses, Furs *(founded 435)* — formerly **Thaurnafjan**, before conquest remade the name
+- **Stagrciamor**, *the sea gate* (port, prosperous) — Livestock, Grain, Furs, Horses *(founded 459)* — formerly **Stagrba**, before conquest remade the name
+- **Knyrktomor**, *the wild fort* (port, rich) — Grain, Livestock, Furs, Fish *(founded 483)* — formerly **Knyrkafjan**, before conquest remade the name
+- **Knyrkliria**, *the wild haven* (port, prosperous) — Grain, Livestock, Timber, Fish *(founded 507)* — formerly **Knyrkba**, before conquest remade the name
 - **Belladinte**, *the river spring* (prosperous) — Copper, Livestock, Iron, Coal *(founded 530)*
 - **Panatomor**, *the field fort* (modest) — Livestock, Grain, Wine, Horses *(founded 554)*
-- **Storkafjan**, *the white field* (port, prosperous) — Livestock, Grain, Fish, Stone *(founded 578)*
+- **Storkliria**, *the white haven* (port, prosperous) — Livestock, Grain, Fish, Stone *(founded 578)* — formerly **Storkafjan**, before conquest remade the name
 - **Neossotomor**, *the stone fort* (trade hub, rich) — Livestock, Stone, Coal, Iron *(founded 602)*
-- **Rairqe**, *the gold home* (port, prosperous) — Horses, Livestock *(founded 626)*
-- **Rairshu**, *the gold fort* (port, modest) — Horses, Livestock *(founded 650)*
+- **Rairtomor**, *the gold fort* (port, prosperous) — Horses, Livestock *(founded 626)* — formerly **Rairqe**, before conquest remade the name
+- **Rairciamor**, *the gold gate* (port, modest) — Horses, Livestock *(founded 650)* — formerly **Rairshu**, before conquest remade the name
 
 ## Ruins
 

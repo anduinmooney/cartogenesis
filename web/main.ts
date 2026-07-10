@@ -469,6 +469,13 @@ function pinDetail(clientX: number, clientY: number): void {
     const s = info.settlement;
     parts.push(`<div class="dh">${s.name}</div>`);
     parts.push(`<div class="dgloss">${glossPhrase(s.gloss)}</div>`);
+    if (s.formerNames?.length) {
+      const f = s.formerNames[s.formerNames.length - 1];
+      parts.push(
+        `<div class="drow">formerly <b>${f.name}</b> (${glossPhrase(f.gloss)}) — ` +
+          `renamed under foreign rule c. ${f.untilYear} AR</div>`,
+      );
+    }
     const eco = current.economy.economies.find((e) => e.settlementId === s.id);
     const tags = [
       s.isCapital ? "Capital" : s.tier[0].toUpperCase() + s.tier.slice(1),

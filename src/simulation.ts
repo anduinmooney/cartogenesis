@@ -13,6 +13,7 @@ import { Rng } from "./rng.ts";
 import { dist as euclid, dist2 } from "./exact.ts";
 import { Biome } from "./biomes.ts";
 import { makeName, languageById } from "./names.ts";
+import { composeLayered } from "./language.ts";
 import type { RegionLayer } from "./regions.ts";
 import type { HistoryLayer } from "./history.ts";
 import type { ReligionLayer } from "./religion.ts";
@@ -94,6 +95,23 @@ export interface SimulationLayer {
   population: Record<number, number>;
   realms: RealmSummary[];
   survivingRealms: number;
+  /** Settlements renamed by conquest (language contact). Applied by world.ts. */
+  renamings: SettlementRenaming[];
+}
+
+/** A settlement renamed because a foreign power held its region long enough. */
+export interface SettlementRenaming {
+  settlementId: number;
+  /** The layered present-day name and its literal reading. */
+  name: string;
+  gloss: string;
+  /** The name it displaced, and the year the new one took hold. */
+  formerName: string;
+  formerGloss: string;
+  year: number;
+  /** Cultures involved, for the chronicle. */
+  fromCulture: string;
+  toCulture: string;
 }
 
 /** Settlements standing in a given year. */
@@ -182,6 +200,7 @@ export function generateSimulation(
       population: {},
       realms: [],
       survivingRealms: 0,
+      renamings: [],
     };
   }
 
@@ -444,6 +463,17 @@ export function generateSimulation(
       y: ts.y,
     });
   };
+
+  // --- Language contact. A region ruled by a foreign culture for this many
+  // turns sees its towns' names layer: the land-word survives in the old tongue,
+  // the settlement-word is re-said in the ruler's. Tracked from the deterministic
+  // `control` state and composed with a PRIVATE Rng, so this never touches the
+  // simulation's own stream — the fingerprint is unchanged by the renaming.
+  const CONTACT_TURNS = 3;
+  const foreignTurns = new Map<number, number>();
+  const renamed = new Set<number>();
+  const renamings: SettlementRenaming[] = [];
+  const settlementById = new Map(settlements.map((s) => [s.id, s]));
 
   // --- The tick loop. Record borders after every turn (plus the initial). ---
   const snapshots: ControlSnapshot[] = [{ year: startYear, control: { ...control } }];
@@ -719,6 +749,43 @@ export function generateSimulation(
       }
     }
 
+    // 7) Language contact — long foreign rule layers a region's place-names.
+    for (const r of regs) {
+      const owner = realmById.get(control[r.id]);
+      if (!owner?.alive || owner.languageId === r.languageId) {
+        foreignTurns.set(r.id, 0); // native rule (or none) resets the clock
+        continue;
+      }
+      const held = (foreignTurns.get(r.id) ?? 0) + 1;
+      foreignTurns.set(r.id, held);
+      if (held !== CONTACT_TURNS) continue; // trigger once, when it first sticks
+      const fromLang = languageById(r.languageId);
+      const toLang = languageById(owner.languageId);
+      for (const ts of townsByRegion.get(r.id) ?? []) {
+        if (ts.fellYear !== undefined || renamed.has(ts.id)) continue;
+        const orig = settlementById.get(ts.id);
+        if (!orig) continue;
+        const layered = composeLayered(
+          fromLang,
+          toLang,
+          orig.gloss.split("-"),
+          new Rng(`${cfg.seed}:contact:${ts.id}:${t}`),
+        );
+        if (!layered || layered.name === orig.name) continue;
+        renamed.add(ts.id);
+        renamings.push({
+          settlementId: ts.id,
+          name: layered.name,
+          gloss: layered.gloss,
+          formerName: orig.name,
+          formerGloss: orig.gloss,
+          year,
+          fromCulture: fromLang.label,
+          toCulture: toLang.label,
+        });
+      }
+    }
+
     // Track peak territory.
     for (const realm of realms) {
       if (realm.alive && realm.regions.size > realm.peakSize) {
@@ -763,5 +830,6 @@ export function generateSimulation(
     population,
     realms: summaries,
     survivingRealms: realms.filter((r) => r.alive).length,
+    renamings,
   };
 }

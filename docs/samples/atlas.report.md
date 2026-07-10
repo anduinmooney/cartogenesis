@@ -148,7 +148,7 @@
 ### Cities
 
 - **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Grain, Livestock, Fish, Horses *(founded 100)*
-- **Niantetomor**, *the green fort* (port, rich) — Grain, Fish, Horses, Livestock *(founded 169)*
+- **Nianteshu**, *the green fort* (port, rich) — Grain, Fish, Horses, Livestock *(founded 169)* — formerly **Niantetomor**, before conquest remade the name
 
 ### Towns
 
@@ -160,11 +160,11 @@
 
 ### Villages
 
-- **Stagrba**, *the sea spring* (port, rich) — Grain, Horses, Livestock, Furs *(founded 375)*
+- **Stagrdemor**, *the sea home* (port, rich) — Grain, Horses, Livestock, Furs *(founded 375)* — formerly **Stagrba**, before conquest remade the name
 - **Shinkai**, *the wild spring* (prosperous) — Livestock, Wine, Grain *(founded 409)*
 - **Ghashkai**, *the river spring* (modest) — Fish, Horses, Livestock *(founded 444)*
-- **Ghashzaa**, *the river bridge* (prosperous) — Fish, Livestock, Grain, Horses *(founded 478)*
-- **Khirqe**, *the sea home* (port, prosperous) — Fish, Horses, Livestock *(founded 513)*
+- **Ghashlamor**, *the river hall* (prosperous) — Fish, Livestock, Grain, Horses *(founded 478)* — formerly **Ghashzaa**, before conquest remade the name
+- **Khirlamor**, *the sea hall* (port, prosperous) — Fish, Horses, Livestock *(founded 513)* — formerly **Khirqe**, before conquest remade the name
 - **Bellademor**, *the river home* (rich) — Livestock, Horses, Grain, Wine *(founded 547)*
 - **Ghashakhukha**, *the river field* (rich) — Livestock, Horses, Coal, Wine *(founded 581)*
 - **Khirkai**, *the sea spring* (port, prosperous) — Livestock *(founded 616)*

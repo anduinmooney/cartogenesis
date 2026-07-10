@@ -29,6 +29,12 @@ export interface Settlement {
   isPort: boolean;
   isCapital: boolean;
   score: number;
+  /**
+   * Names this settlement carried before conquest renamed it. Present only when
+   * a foreign power held its region long enough to layer the name (see the
+   * simulation's language-contact pass); most recent last.
+   */
+  formerNames?: Array<{ name: string; gloss: string; untilYear: number }>;
 }
 
 export interface SettlementLayer {
