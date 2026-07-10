@@ -15,11 +15,11 @@
 
 ## Volcanoes
 
-- **Mount Breistabry** — *the red stone* — stratovolcano, extinct, summit 4,500 m
-- **Mount Breistabry** — *the red stone* — stratovolcano, active, summit 4,500 m
-- **Mount Brograbra** — *the dread mountain* — shield, extinct, summit 4,500 m
-- **Mount Brograbra** — *the dread mountain* — shield, dormant, summit 3,555 m
-- **Mount Breistabra** — *the red mountain* — shield, active, summit 3,261 m
+- **Mount Storkahrei** — *the white hill* — stratovolcano, extinct, summit 4,500 m
+- **Mount Vollahrei** — *the storm hill* — stratovolcano, active, summit 4,500 m
+- **Mount Thathobry** — *the dark stone* — shield, extinct, summit 4,500 m
+- **Mount Vynbry** — *the old stone* — shield, dormant, summit 3,555 m
+- **Mount Vollabry** — *the storm stone* — shield, active, summit 3,261 m
 
 ## Notable features
 

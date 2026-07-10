@@ -220,7 +220,11 @@ const TEMPLATES                                         = {
   village: [PLACE_MODS, ["home", "field", "bridge", "spring", "fort"]],
   peak:    [["high", "white", "cold", "dark", "old", "black", "dread", "storm"],
             ["stone", "mountain", "cliff"]],
-  volcano: [["fire", "ash", "dread", "red", "black"], ["mountain", "stone"]],
+  // Wide enough to name the nine volcanoes a big world can raise without
+  // repeating itself: 12 × 4 combinations, not 5 × 2.
+  volcano: [["fire", "ash", "dread", "red", "black", "dark", "old", "storm",
+             "holy", "white", "high", "cold"],
+            ["mountain", "stone", "cliff", "hill"]],
   river:   [[...QUALITY, "iron", "salt", "gold"], ["river", "water", "spring"]],
   lake:    [[...QUALITY, "holy", "salt"], ["lake", "water"]],
   region:  [PLACE_MODS, [...LANDFORM, "land", "land", "folk"]],

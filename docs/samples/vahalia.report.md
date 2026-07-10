@@ -15,15 +15,15 @@
 
 ## Volcanoes
 
-- **Mount Brograbry** — *the dread stone* — cinder cone, extinct, summit 4,500 m
-- **Mount Vubra** — *the ash mountain* — stratovolcano, dormant, summit 4,500 m
-- **Mount Thygrabry** — *the fire stone* — stratovolcano, dormant, summit 4,500 m
-- **Mount Thygrabry** — *the fire stone* — stratovolcano, extinct, summit 4,500 m
-- **Mount Brograbry** — *the dread stone* — stratovolcano, dormant, summit 4,387 m
-- **Mount Thygrabry** — *the fire stone* — stratovolcano, extinct, summit 4,326 m
-- **Mount Vubry** — *the ash stone* — stratovolcano, extinct, summit 4,129 m
-- **Mount Brograbra** — *the dread mountain* — shield, extinct, summit 4,094 m
-- **Mount Vubra** — *the ash mountain* — shield, active, summit 3,452 m
+- **Mount Thathohrei** — *the dark hill* — cinder cone, extinct, summit 4,500 m
+- **Mount Brograbry** — *the dread stone* — stratovolcano, dormant, summit 4,500 m
+- **Mount Vuhrei** — *the ash hill* — stratovolcano, dormant, summit 4,500 m
+- **Mount Thathosturn** — *the dark cliff* — stratovolcano, extinct, summit 4,500 m
+- **Mount Vynhrei** — *the old hill* — stratovolcano, dormant, summit 4,387 m
+- **Mount Thygrasturn** — *the fire cliff* — stratovolcano, extinct, summit 4,326 m
+- **Mount Dohrei** — *the black hill* — stratovolcano, extinct, summit 4,129 m
+- **Mount Thathobra** — *the dark mountain* — shield, extinct, summit 4,094 m
+- **Mount Dobry** — *the black stone* — shield, active, summit 3,452 m
 
 ## Notable features
 
@@ -161,8 +161,8 @@
 
 - **Stagragry**, *the sea market* (port, rich) — Livestock, Grain, Timber, Horses *(founded 175)*
 - **Deodemor**, *the sea home* (port, rich) — Grain, Livestock, Horses, Fish *(founded 225)*
-- **Staunbust**, *the ice gate* (rich) — Livestock, Grain, Horses, Iron *(founded 250)*
-- **Ghashashu**, *the river fort* (trade hub, prosperous) — Livestock, Gold, Horses, Wine *(founded 275)*
+- **Staunbust**, *the ice gate* (trade hub, rich) — Livestock, Grain, Horses, Iron *(founded 250)*
+- **Ghashashu**, *the river fort* (prosperous) — Livestock, Gold, Horses, Wine *(founded 275)*
 - **Peonaciamor**, *the grass gate* (port, modest) — Horses, Livestock *(founded 300)*
 - **Deotomor**, *the sea fort* (port, modest) — Livestock *(founded 325)*
 
@@ -226,7 +226,7 @@ Followed across 5 region(s).
 
 - **Major exports:** Livestock, Horses, Grain, Fish, Wine
 - **Wealthiest settlement:** Deociamor
-- **Trade hubs:** Deociamor, Ghashashu, Belladinte
+- **Trade hubs:** Deociamor, Staunbust, Belladinte
 - **Deposits:** Iron ×35, Copper ×25, Gold ×11, Gems ×7, Stone ×67, Coal ×29, Timber ×8, Grain ×33, Livestock ×143, Fish ×14, Furs ×16, Spices ×1, Salt ×22, Horses ×42, Wine ×15
 
 ## Languages

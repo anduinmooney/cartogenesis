@@ -15,12 +15,12 @@
 
 ## Volcanoes
 
-- **Mount Breistabry** — *the red stone* — stratovolcano, dormant, summit 4,500 m
-- **Mount Breistabry** — *the red stone* — stratovolcano, dormant, summit 4,500 m
-- **Mount Brograbra** — *the dread mountain* — shield, extinct, summit 3,963 m
-- **Mount Thygrabry** — *the fire stone* — stratovolcano, dormant, summit 3,934 m
-- **Mount Breistabry** — *the red stone* — shield, dormant, summit 3,719 m
-- **Mount Breistabry** — *the red stone* — shield, active, summit 3,571 m
+- **Mount Thorkahrei** — *the holy hill* — stratovolcano, dormant, summit 4,500 m
+- **Mount Thorkasturn** — *the holy cliff* — stratovolcano, dormant, summit 4,500 m
+- **Mount Vynbry** — *the old stone* — shield, extinct, summit 3,963 m
+- **Mount Vuhrei** — *the ash hill* — stratovolcano, dormant, summit 3,934 m
+- **Mount Vollasturn** — *the storm cliff* — shield, dormant, summit 3,719 m
+- **Mount Storkahrei** — *the white hill* — shield, active, summit 3,571 m
 - **Mount Breistabry** — *the red stone* — cinder cone, extinct, summit 2,033 m
 
 ## Notable features
@@ -146,28 +146,28 @@
 ### Cities
 
 - **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Grain, Wine, Livestock, Horses *(founded 100)*
-- **Khirmakh**, *the sea hall* (port, prosperous) — Livestock, Wine, Fish, Grain *(founded 131)*
+- **Khirmakh**, *the sea hall* (port, trade hub, rich) — Livestock, Wine, Fish, Grain *(founded 131)*
 
 ### Towns
 
 - **Deolamor**, *the sea hall* (port, prosperous) — Grain, Wine, Livestock *(founded 192)*
-- **Bellanelen**, *the river bridge* (modest) — Livestock, Grain, Timber, Coal *(founded 222)*
-- **Stagrafjysk**, *the sea home* (port, prosperous) — Livestock, Grain, Coal, Horses *(founded 253)*
-- **Niantenelen**, *the green bridge* (prosperous) — Livestock, Horses, Grain, Timber *(founded 283)*
+- **Bellanelen**, *the river bridge* (prosperous) — Livestock, Grain, Timber, Coal *(founded 222)*
+- **Stagrafjysk**, *the sea home* (port, rich) — Livestock, Grain, Coal, Horses *(founded 253)*
+- **Niantenelen**, *the green bridge* (rich) — Livestock, Horses, Grain, Timber *(founded 283)*
 - **Shinghekh**, *the wild gate* (port, prosperous) — Livestock, Horses, Fish *(founded 314)*
 - **Deotelen**, *the sea market* (port, modest) — Grain, Timber, Wine, Livestock *(founded 344)*
 
 ### Villages
 
 - **Deodemor**, *the sea home* (port, prosperous) — Livestock, Fish, Horses, Grain *(founded 375)*
-- **Bellatomor**, *the river fort* (modest) — Livestock, Grain, Horses, Wine *(founded 406)*
+- **Bellatomor**, *the river fort* (prosperous) — Livestock, Grain, Horses, Wine *(founded 406)*
 - **Ghashakhukha**, *the river field* (modest) — Livestock, Wine, Horses *(founded 436)*
 - **Fjangrull**, *the field bridge* (port, prosperous) — Grain, Livestock, Fish, Horses *(founded 467)*
-- **Ghashqe**, *the river home* (trade hub, modest) — Horses, Livestock *(founded 497)*
-- **Fjanba**, *the field spring* (port, modest) — Fish, Grain, Livestock *(founded 528)*
-- **Ghashzaa**, *the river bridge* (modest) — Livestock, Horses *(founded 558)*
+- **Ghashqe**, *the river home* (prosperous) — Horses, Livestock *(founded 497)*
+- **Fjanba**, *the field spring* (port, prosperous) — Fish, Grain, Livestock *(founded 528)*
+- **Ghashzaa**, *the river bridge* (prosperous) — Livestock, Horses *(founded 558)*
 - **Deotomor**, *the sea fort* (port, prosperous) — Livestock, Grain *(founded 589)*
-- **Pananelen**, *the field bridge* (prosperous) — Livestock, Iron, Grain, Stone *(founded 619)*
+- **Pananelen**, *the field bridge* (trade hub, rich) — Livestock, Iron, Grain, Stone *(founded 619)*
 - **Deopana**, *the sea field* (port, prosperous) — Grain, Livestock, Horses, Stone *(founded 650)*
 
 ## Ruins
@@ -205,8 +205,8 @@ Followed across 6 region(s).
 ## Resources & trade
 
 - **Major exports:** Livestock, Grain, Horses, Wine, Fish
-- **Wealthiest settlement:** Khirshu
-- **Trade hubs:** Deoliria, Khirshu, Ghashqe
+- **Wealthiest settlement:** Deoliria
+- **Trade hubs:** Deoliria, Khirmakh, Pananelen
 - **Deposits:** Iron ×33, Copper ×25, Gold ×11, Gems ×7, Stone ×68, Coal ×28, Timber ×7, Grain ×42, Livestock ×122, Fish ×11, Furs ×5, Spices ×1, Salt ×10, Horses ×35, Wine ×21
 
 ## Languages

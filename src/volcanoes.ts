@@ -91,6 +91,9 @@ export function addVolcanoes(
 
   const lang = languageById(cfg.languageId ?? "auld");
   const placed: Volcano[] = [];
+  // Volcano names come from a narrow template (fire/ash/dread × mountain/stone),
+  // so without an avoid-set a world happily ends up with three Mt. Brogravras.
+  const usedNames = new Set<string>();
   let attempts = 0;
   const maxAttempts = count * 300;
 
@@ -156,6 +159,7 @@ export function addVolcanoes(
       ...(() => {
         const c = composeName(lang, new Rng(`${cfg.seed}:volcano:${placed.length}`), {
           kind: "volcano",
+          avoid: usedNames,
         });
         return { name: c.name, gloss: c.gloss };
       })(),

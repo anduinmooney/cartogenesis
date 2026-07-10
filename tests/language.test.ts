@@ -223,3 +223,27 @@ test("settlement names reflect the site: ports lean seaward, peaks do not", () =
   );
   assert.ok(portRate > 0.4, `only ${(portRate * 100).toFixed(0)}% of ports named for water`);
 });
+
+test("a world never names two volcanoes the same", () => {
+  // Three Mt. Brogravras once stood on one island: the volcano template was
+  // narrow and nothing stopped it repeating.
+  for (const seed of ["s10", "atlas", "borea", "vahalia", "kesh"]) {
+    const w = generateWorld({ seed, width: 240, height: 240 });
+    const names = w.volcanoes.map((v) => v.name);
+    assert.equal(
+      new Set(names).size,
+      names.length,
+      `${seed}: duplicate volcano names — ${names.join(", ")}`,
+    );
+  }
+});
+
+test("a world never names two settlements or two regions the same", () => {
+  for (const seed of ["s10", "atlas", "borea"]) {
+    const w = generateWorld({ seed, width: 240, height: 240 });
+    const towns = w.settlements.settlements.map((s) => s.name);
+    assert.equal(new Set(towns).size, towns.length, `${seed}: duplicate towns`);
+    const regions = w.regions.regions.map((r) => r.name);
+    assert.equal(new Set(regions).size, regions.length, `${seed}: duplicate regions`);
+  }
+});

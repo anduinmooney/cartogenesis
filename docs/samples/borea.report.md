@@ -16,14 +16,14 @@
 ## Volcanoes
 
 - **Mount Thygrabra** — *the fire mountain* — stratovolcano, dormant, summit 4,500 m
-- **Mount Breistabry** — *the red stone* — stratovolcano, dormant, summit 4,500 m
-- **Mount Breistabra** — *the red mountain* — cinder cone, active, summit 4,500 m
-- **Mount Breistabry** — *the red stone* — stratovolcano, extinct, summit 4,500 m
-- **Mount Brograbry** — *the dread stone* — cinder cone, extinct, summit 4,365 m
-- **Mount Thygrabra** — *the fire mountain* — shield, extinct, summit 3,826 m
-- **Mount Vubra** — *the ash mountain* — cinder cone, active, summit 3,602 m
-- **Mount Brograbry** — *the dread stone* — cinder cone, dormant, summit 2,833 m
-- **Mount Thygrabry** — *the fire stone* — cinder cone, active, summit 2,666 m
+- **Mount Thorkahrei** — *the holy hill* — stratovolcano, dormant, summit 4,500 m
+- **Mount Storkabra** — *the white mountain* — cinder cone, active, summit 4,500 m
+- **Mount Vollahrei** — *the storm hill* — stratovolcano, extinct, summit 4,500 m
+- **Mount Thathosturn** — *the dark cliff* — cinder cone, extinct, summit 4,365 m
+- **Mount Thygrabry** — *the fire stone* — shield, extinct, summit 3,826 m
+- **Mount Breistabra** — *the red mountain* — cinder cone, active, summit 3,602 m
+- **Mount Vynsturn** — *the old cliff* — cinder cone, dormant, summit 2,833 m
+- **Mount Thygrasturn** — *the fire cliff* — cinder cone, active, summit 2,666 m
 
 ## Notable features
 
@@ -162,7 +162,7 @@
 
 ### Cities
 
-- **Niantetomor**, *the green fort* (**capital**, port, trade hub, rich) — Grain, Livestock *(founded 100)*
+- **Niantetomor**, *the green fort* (**capital**, port, rich) — Grain, Livestock *(founded 100)*
 - **Deociamor**, *the sea gate* (port, prosperous) — Grain, Horses, Livestock, Wine *(founded 124)*
 - **Panalamor**, *the field hall* (port, prosperous) — Wine, Livestock, Timber, Grain *(founded 148)*
 - **Niantetelen**, *the green market* (port, rich) — Grain, Horses, Livestock, Fish *(founded 172)*
@@ -236,7 +236,7 @@ Followed across 4 region(s).
 
 - **Major exports:** Livestock, Grain, Horses, Wine, Fish
 - **Wealthiest settlement:** Stagrbust
-- **Trade hubs:** Niantetomor, Stagrbust, Bellatomor, Vonthu
+- **Trade hubs:** Stagrbust, Bellatomor, Vonthu
 - **Deposits:** Iron ×51, Copper ×38, Gold ×16, Gems ×10, Stone ×81, Coal ×31, Timber ×9, Grain ×44, Livestock ×130, Fish ×12, Furs ×5, Spices ×2, Salt ×23, Horses ×37, Wine ×17
 
 ## Languages

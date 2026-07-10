@@ -15,15 +15,15 @@
 
 ## Volcanoes
 
-- **Mount Thygrabry** — *the fire stone* — stratovolcano, dormant, summit 4,500 m
-- **Mount Brograbra** — *the dread mountain* — stratovolcano, active, summit 4,500 m
-- **Mount Breistabry** — *the red stone* — stratovolcano, active, summit 4,500 m
-- **Mount Dobra** — *the black mountain* — shield, active, summit 4,500 m
-- **Mount Vubry** — *the ash stone* — stratovolcano, extinct, summit 4,500 m
-- **Mount Breistabra** — *the red mountain* — stratovolcano, extinct, summit 4,500 m
-- **Mount Brograbra** — *the dread mountain* — shield, extinct, summit 4,409 m
-- **Mount Dobry** — *the black stone* — stratovolcano, extinct, summit 4,233 m
-- **Mount Dobra** — *the black mountain* — shield, dormant, summit 3,253 m
+- **Mount Thygrahrei** — *the fire hill* — stratovolcano, dormant, summit 4,500 m
+- **Mount Vynbry** — *the old stone* — stratovolcano, active, summit 4,500 m
+- **Mount Vollasturn** — *the storm cliff* — stratovolcano, active, summit 4,500 m
+- **Mount Fjeiskabra** — *the high mountain* — shield, active, summit 4,500 m
+- **Mount Brograhrei** — *the dread hill* — stratovolcano, extinct, summit 4,500 m
+- **Mount Vollabry** — *the storm stone* — stratovolcano, extinct, summit 4,500 m
+- **Mount Vynbra** — *the old mountain* — shield, extinct, summit 4,409 m
+- **Mount Fjeiskasturn** — *the high cliff* — stratovolcano, extinct, summit 4,233 m
+- **Mount Fjeiskabry** — *the high stone* — shield, dormant, summit 3,253 m
 
 ## Notable features
 
@@ -163,7 +163,7 @@
 ### Cities
 
 - **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Horses, Livestock, Timber, Fish *(founded 100)*
-- **Khirghekh**, *the sea gate* (port, trade hub, rich) — Grain, Fish, Livestock, Wine *(founded 122)*
+- **Khirghekh**, *the sea gate* (port, prosperous) — Grain, Fish, Livestock, Wine *(founded 122)*
 - **Deotelen**, *the sea market* (port, prosperous) — Livestock, Timber, Grain, Fish *(founded 144)*
 - **Deociamor**, *the sea gate* (port, rich) — Horses, Livestock, Copper, Grain *(founded 166)*
 
@@ -171,18 +171,18 @@
 
 - **Khirzaa**, *the sea bridge* (port, prosperous) — Grain, Livestock, Timber, Wine *(founded 210)*
 - **Niantetomor**, *the green fort* (port, trade hub, rich) — Grain, Livestock, Horses, Wine *(founded 232)*
-- **Deolamor**, *the sea hall* (port, rich) — Grain, Fish, Horses, Livestock *(founded 254)*
+- **Deolamor**, *the sea hall* (port, prosperous) — Grain, Fish, Horses, Livestock *(founded 254)*
 - **Bellaliria**, *the river haven* (rich) — Livestock, Grain, Wine, Horses *(founded 276)*
 - **Midkad**, *the grass haven* (port, prosperous) — Livestock, Timber, Horses *(founded 298)*
 - **Stagrathu**, *the sea fort* (port, prosperous) — Grain, Livestock, Horses *(founded 320)*
-- **Rairghekh**, *the gold gate* (port, modest) — Livestock, Horses *(founded 342)*
+- **Rairghekh**, *the gold gate* (port, prosperous) — Livestock, Horses *(founded 342)*
 
 ### Villages
 
 - **Quzaa**, *the red bridge* (prosperous) — Livestock, Horses, Grain, Wine *(founded 364)*
 - **Peonadinte**, *the grass spring* (trade hub, rich) — Livestock, Grain, Wine, Horses *(founded 386)*
 - **Ghashashu**, *the river fort* (prosperous) — Livestock, Horses, Spices, Stone *(founded 408)*
-- **Stagrafjan**, *the sea field* (port, prosperous) — Livestock, Fish, Grain *(founded 430)*
+- **Stagrafjan**, *the sea field* (port, modest) — Livestock, Fish, Grain *(founded 430)*
 - **Knyrkba**, *the wild spring* (port, prosperous) — Grain, Horses, Timber, Livestock *(founded 452)*
 - **Khirqe**, *the sea home* (port, modest) — Livestock, Horses *(founded 474)*
 - **Stagrafjysk**, *the sea home* (port, prosperous) — Grain, Livestock, Timber, Furs *(founded 496)*
@@ -190,7 +190,7 @@
 - **Stagragrull**, *the sea bridge* (port, prosperous) — Grain, Stone, Livestock *(founded 540)*
 - **Qukai**, *the red spring* (modest) — Livestock, Grain, Wine, Horses *(founded 562)*
 - **Ghashzaa**, *the river bridge* (modest) — Livestock, Stone, Coal *(founded 606)*
-- **Ghashakhukha**, *the river field* (prosperous) — Wine, Stone, Livestock, Copper *(founded 628)*
+- **Ghashakhukha**, *the river field* (trade hub, prosperous) — Wine, Stone, Livestock, Copper *(founded 628)*
 - **Rairkai**, *the gold spring* (modest) — Livestock, Stone, Salt, Coal *(founded 650)*
 
 ## Ruins
@@ -238,7 +238,7 @@ Followed across 2 region(s).
 
 - **Major exports:** Livestock, Grain, Horses, Wine, Stone
 - **Wealthiest settlement:** Deoliria
-- **Trade hubs:** Deoliria, Khirghekh, Niantetomor, Peonadinte
+- **Trade hubs:** Deoliria, Niantetomor, Peonadinte, Ghashakhukha
 - **Deposits:** Iron ×41, Copper ×31, Gold ×15, Gems ×9, Stone ×100, Coal ×40, Timber ×6, Grain ×46, Livestock ×141, Fish ×11, Furs ×10, Spices ×1, Salt ×30, Horses ×35, Wine ×20
 
 ## Languages

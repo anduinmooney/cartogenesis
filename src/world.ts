@@ -34,7 +34,11 @@ import { generateLore, type LoreLayer } from "./lore.ts";
 import { generateResources, RESOURCE_NAMES, type ResourceLayer } from "./resources.ts";
 import { generateEconomy, type EconomyLayer } from "./economy.ts";
 import { generateReligion, type ReligionLayer } from "./religion.ts";
-import { generateSimulation, type SimulationLayer } from "./simulation.ts";
+import {
+  generateSimulation,
+  ruinedSettlementIds,
+  type SimulationLayer,
+} from "./simulation.ts";
 
 export const ENGINE_VERSION = "0.13.0";
 
@@ -294,6 +298,19 @@ export function generateWorld(config: WorldConfig): World {
       yearsPerTurn: SIM_YEARS_PER_TURN,
     },
   );
+  // The world as it was is what the simulation ran on. The world as it IS — the
+  // one we draw and describe — has ruins in it. Recompute the road network and
+  // the economy over the settlements that actually survived, so a highway never
+  // runs to a dead city and the gazetteer never lists a ruin among its exporters.
+  const ruined = ruinedSettlementIds(simulation.settlementTimeline);
+  const standing = settlements.settlements.filter((s) => !ruined.has(s.id));
+  const roadsNow = ruined.size
+    ? generateRoads(elevation, water, rivers, standing, {})
+    : roads;
+  const economyNow = ruined.size
+    ? generateEconomy(standing, roadsNow, resources, { seed: economyRng.seed })
+    : economy;
+
   const dominant = [...simulation.realms]
     .filter((r) => r.status !== "extinct")
     .sort((a, b) => b.finalSize - a.finalSize)[0];
@@ -320,14 +337,14 @@ export function generateWorld(config: WorldConfig): World {
     largestRegion: largest.name,
     settlementCount: settlements.settlements.length,
     capital: capital?.name ?? "—",
-    roadLength: roads.length,
+    roadLength: roadsNow.length,
     realmCount: history.realms.length,
     eventCount: history.events.length,
     presentYear: simulation.endYear,
     capitalHouse: lore.capitalHouse,
     rulerCount: lore.rulers.length,
     resourceCount: resources.deposits.length,
-    majorExports: economy.majorExports.map((k) => RESOURCE_NAMES[k]).join(", "),
+    majorExports: economyNow.majorExports.map((k) => RESOURCE_NAMES[k]).join(", "),
     faithCount: religion.faiths.length,
     survivingRealms: simulation.survivingRealms,
     dominantPower: dominant?.name ?? "—",
@@ -350,11 +367,11 @@ export function generateWorld(config: WorldConfig): World {
     biomes,
     regions,
     settlements,
-    roads,
+    roads: roadsNow,
     history,
     lore,
     resources,
-    economy,
+    economy: economyNow,
     religion,
     simulation,
     volcanoes,

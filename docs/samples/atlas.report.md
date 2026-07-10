@@ -15,12 +15,12 @@
 
 ## Volcanoes
 
-- **Mount Brograbra** — *the dread mountain* — shield, dormant, summit 4,500 m
-- **Mount Breistabry** — *the red stone* — stratovolcano, dormant, summit 4,500 m
-- **Mount Breistabry** — *the red stone* — stratovolcano, active, summit 4,500 m
+- **Mount Thathobry** — *the dark stone* — shield, dormant, summit 4,500 m
+- **Mount Vollahrei** — *the storm hill* — stratovolcano, dormant, summit 4,500 m
+- **Mount Vollasturn** — *the storm cliff* — stratovolcano, active, summit 4,500 m
 - **Mount Thygrabry** — *the fire stone* — stratovolcano, extinct, summit 4,500 m
-- **Mount Brograbry** — *the dread stone* — stratovolcano, dormant, summit 4,500 m
-- **Mount Thygrabry** — *the fire stone* — stratovolcano, extinct, summit 4,459 m
+- **Mount Vynhrei** — *the old hill* — stratovolcano, dormant, summit 4,500 m
+- **Mount Vusturn** — *the ash cliff* — stratovolcano, extinct, summit 4,459 m
 
 ## Notable features
 
