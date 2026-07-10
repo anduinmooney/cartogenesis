@@ -6,8 +6,8 @@
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm green **before** changing anything (baseline: **131**).
-3. Skim `CHANGELOG.md` (top, Session 13) and `ROADMAP.md`.
+2. `npm test` → confirm green **before** changing anything (baseline: **134**).
+3. Skim `CHANGELOG.md` (top, Session 14) and `ROADMAP.md`.
 4. Preview: `node scripts/serve-docs.ts` → `/` (atlas) and `/app/` (live).
 5. **After any `src/` change, rerun `node scripts/build-web.ts`** (CI enforces
    it; it also fails if a browser module — engine/app/worker — imports one you
@@ -24,7 +24,13 @@
 The simulation is now genuinely alive: balanced rival powers (S12) whose borders
 you can scrub through the centuries (S11), with cities that are founded, sacked,
 and abandoned as you watch (S13). Present-day maps show exactly the survivors;
-the gazetteer records the ruins.
+the gazetteer records the ruins. S14 unified the world onto **one timeline**
+(start 100 → present 1,100): legends, dynasties, and the chronicle all answer to
+`meta.presentYear === simulation.endYear`, and every house has exactly one
+reigning monarch.
+
+**Timeline invariant:** if you add anything dated, derive its years from
+`meta.presentYear` — never invent a second "present". Three tests guard this.
 
 **Priority note:** if the user gives new feedback, address that first — it beats
 any queued plan.
@@ -70,7 +76,7 @@ visibly share roots — the single biggest step in making the world feel authore
 
 ### Close out (do not skip)
 1. `node scripts/build-web.ts`; `node scripts/make-samples.ts`.
-2. Update `CHANGELOG.md` (Session 14), `PROJECT_STATE.md`, `ROADMAP.md`,
+2. Update `CHANGELOG.md` (Session 15), `PROJECT_STATE.md`, `ROADMAP.md`,
    `DECISIONS.md` if warranted, and rewrite this file for the next theme.
 3. Commit per logical unit and push; confirm CI green and verify the live app on
    a FRESH preview.

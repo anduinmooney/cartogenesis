@@ -8,6 +8,44 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 14 — 2026-07-09 — One timeline (user feedback: "age maxes out")
+
+**Theme:** *"Age doesn't seem to work, maxes out at 150."* Investigating it
+uncovered two real bugs, the second worse than the first.
+
+### The bugs
+1. **Dynasties ended centuries early.** Ruler successions were capped at
+   `n < 9` rulers (~250 years), so every house's line stopped around year 350
+   while the present year was 826–1174. The world had **no living monarchs** and
+   600–800 kingless years.
+2. **The world ran on two contradictory timelines.** `history.presentYear`
+   (derived from the old pre-simulation chronicle: 826–1174) versus the
+   simulation's 100→1,100. The rulers were counting against the wrong one, and a
+   founding legend could be dated *after* the present (Vahalia had one at 1112).
+
+### Fixes
+- **One authoritative timeline** in `world.ts` (start 100, 40 turns × 25 years →
+  present **1,100**), passed to history, lore, *and* the simulation.
+  `meta.presentYear = simulation.endYear`.
+- **`lore.ts`**: dynasties reign from their founding right up to the present
+  (safety cap 80, not 9). `Ruler.reigning` marks the one monarch on the throne
+  today — exactly one per house.
+- **`history.ts`**: takes the present year and clamps legends to it.
+- **`report.ts`**: the overview uses the single present year, the reigning
+  monarch is marked, and thousand-year king-lists collapse to the first and last
+  four with *"… 30 rulers over the intervening years …"*.
+
+### Verified
+- Across all six samples: `present=1100`, `legends ≤ 1100`, reigns end **exactly**
+  at 1100, `chronicle ≤ 1075`. In-app: chronicle 100→1075, scrubber ends 1,100 AR.
+- **Three regression tests**: a dynasty must reach the present with exactly one
+  reigning monarch and no gaps in the succession; no legend dated after the
+  present; `meta.presentYear === simulation.endYear`.
+- Balance re-checked (15 seeds): mean top-power share **58%**, unchanged.
+- `npm test` → **134 passing**. Golden hash unchanged.
+
+---
+
 ## Session 13 — 2026-07-09 — Dynamic settlements (cities rise and fall)
 
 **Theme:** The scrubber showed borders shifting, but the cities were timeless —

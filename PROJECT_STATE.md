@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 13 · 2026-07-09
+- **As of:** Session 14 · 2026-07-09
 - **Engine version:** 0.12.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 131 tests pass (CI enforced); deterministic output.
+- **Health:** 🟢 Green. 134 tests pass (CI enforced); deterministic output.
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
 - **Live gallery:** https://anduinmooney.github.io/cartogenesis/ (GitHub Pages, from `/docs`).
 - **Live generator:** https://anduinmooney.github.io/cartogenesis/app/ (type a seed, generate in-browser).
@@ -42,7 +42,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 131 passing tests, incl. golden-hash guard, river mass-conservation, road
+- 134 passing tests, incl. golden-hash guard, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
   under `docs/`; local preview via `node scripts/serve-docs.ts`.
@@ -63,14 +63,14 @@
 | P2 Browser build · P4 interactive atlas | ✅ done |
 | Web Worker (responsive app) · CI | ✅ done |
 | Time scrubber (temporal atlas) · balance of power | ✅ done |
-| Dynamic settlements (foundings, ruins) | ✅ done |
+| Dynamic settlements (foundings, ruins) · one timeline | ✅ done |
 | languages/lexicons · in-app atlas · more | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 131 tests, all offline
+npm test                  # 134 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)
