@@ -1,6 +1,12 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { renderMarkdown, slug } from "../web/markdown.ts";
+import {
+  containsPlace,
+  placePattern,
+  renderMarkdown,
+  segmentPlaces,
+  slug,
+} from "../web/markdown.ts";
 import { generateWorld } from "../src/world.ts";
 import { worldReportMarkdown } from "../src/report.ts";
 
@@ -70,4 +76,51 @@ test("rendering is deterministic for a fixed report", () => {
   const w = generateWorld({ seed: "borea", width: 180, height: 180 });
   const md = worldReportMarkdown(w);
   assert.equal(renderMarkdown(md).html, renderMarkdown(md).html);
+});
+
+// --- Place-name matching (the linkifier's pure core) ------------------------
+
+test("containsPlace is immune to /g statefulness across consecutive probes", () => {
+  // The original bug: a raw re.test() left lastIndex pointing past the first
+  // string's late match, so a second string whose match sat EARLIER was skipped
+  // and its place name never became clickable. Both probes must hit.
+  const re = placePattern(["Deoliria"]);
+  const lateMatch = "…a long stretch of prose before the city of Deoliria.";
+  const earlyMatch = "Deoliria stood at the harbour.";
+  assert.equal(containsPlace(lateMatch, re), true);
+  assert.equal(containsPlace(earlyMatch, re), true, "stateful-regex regression");
+  // And probing a non-matching string never poisons the next probe either.
+  assert.equal(containsPlace("no places here", re), false);
+  assert.equal(containsPlace(lateMatch, re), true);
+});
+
+test("segmentPlaces splits text into ordered plain/place segments", () => {
+  const re = placePattern(["Deoliria", "Khaimdund"]);
+  const segs = segmentPlaces("From Deoliria the road runs to Khaimdund.", re);
+  assert.deepEqual(segs, [
+    { text: "From ", place: false },
+    { text: "Deoliria", place: true },
+    { text: " the road runs to ", place: false },
+    { text: "Khaimdund", place: true },
+    { text: ".", place: false },
+  ]);
+  // Reassembly must be lossless.
+  assert.equal(segs.map((s) => s.text).join(""), "From Deoliria the road runs to Khaimdund.");
+});
+
+test("longer place names win over their own prefixes", () => {
+  const re = placePattern(["Stagr", "Stagrheim"]); // deliberately prefix-ordered
+  const segs = segmentPlaces("They rode for Stagrheim.", re);
+  const places = segs.filter((s) => s.place).map((s) => s.text);
+  assert.deepEqual(places, ["Stagrheim"]);
+});
+
+test("place names containing regex metacharacters cannot break the pattern", () => {
+  // Names are guaranteed alphabetic today (language.test.ts asserts it), so the
+  // defence here is narrower: a hostile name must not throw at construction or
+  // corrupt matching of the well-formed names beside it. (Exact matching of a
+  // name ending in ")" is impossible with \b anyway — no word boundary there.)
+  const re = placePattern(["Vask (Old)", "Deoliria"]);
+  assert.equal(containsPlace("the harbour of Deoliria", re), true);
+  assert.equal(containsPlace("no places here", re), false);
 });

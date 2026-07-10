@@ -149,3 +149,52 @@ export function renderMarkdown(md        )               {
 
   return { html: out.join("\n"), headings };
 }
+
+// ---------------------------------------------------------------------------
+// Place-name matching for the gazetteer's clickable links. Pure string logic,
+// extracted from the DOM code so the /g-regex statefulness that once silently
+// dropped links (a .test() without resetting lastIndex) stays under test.
+// ---------------------------------------------------------------------------
+
+/** Escape a literal string for embedding inside a RegExp. */
+export function escapeRegExp(s        )         {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
+ * A global pattern matching any of `names` on word boundaries, longest name
+ * first so "Stagrheim" wins over "Stagr". The returned regex is stateful (`g`);
+ * use the helpers below, which reset it, rather than calling .test() raw.
+ */
+export function placePattern(names          )         {
+  const sorted = [...names].sort((a, b) => b.length - a.length);
+  return new RegExp(`\\b(${sorted.map(escapeRegExp).join("|")})\\b`, "g");
+}
+
+/** True if `text` contains any place name. Safe to call repeatedly. */
+export function containsPlace(text        , re        )          {
+  re.lastIndex = 0;
+  return re.test(text);
+}
+
+/**
+ * Split `text` into alternating plain/place segments, in order. The DOM layer
+ * turns each `place: true` segment into a clickable span; everything else stays
+ * a text node.
+ */
+export function segmentPlaces(
+  text        ,
+  re        ,
+)                                          {
+  re.lastIndex = 0;
+  const out                                          = [];
+  let last = 0;
+  let m                        ;
+  while ((m = re.exec(text))) {
+    if (m.index > last) out.push({ text: text.slice(last, m.index), place: false });
+    out.push({ text: m[1], place: true });
+    last = m.index + m[1].length;
+  }
+  if (last < text.length) out.push({ text: text.slice(last), place: false });
+  return out;
+}

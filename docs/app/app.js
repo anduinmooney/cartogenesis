@@ -18,7 +18,12 @@ import { languageById } from "./engine/names.js";
 import { worldReportMarkdown } from "./engine/report.js";
 import { worldPosterSVG } from "./engine/svgmap.js";
 import { renderRegions } from "./engine/render.js";
-import { renderMarkdown } from "./markdown.js";
+import {
+  containsPlace,
+  placePattern,
+  renderMarkdown,
+  segmentPlaces,
+} from "./markdown.js";
 
 // Faith tint palette — mirrors FAITH_PALETTE in src/render.ts.
 const FAITH_PALETTE = [
@@ -343,10 +348,20 @@ function clientToWorld(clientX        , clientY        )                        
 
 function nearestSettlement(wx        , wy        , maxCells        )                    {
   if (!current) return null;
+  // Hover answers for what the map is SHOWING. While the Powers timeline is
+  // scrubbed to a past year, only towns alive that year are inspectable — the
+  // same filter drawOverlays applies to the markers. Otherwise: present-day
+  // survivors (a ruin is not a town).
+  const aliveThen =
+    scrubYear !== null
+      ? new Set(
+          settlementsAt(current.simulation.settlementTimeline, scrubYear).map((t) => t.id),
+        )
+      : null;
   let best                    = null;
   let bestD = maxCells * maxCells;
   for (const s of current.settlements.settlements) {
-    if (ruinedIds.has(s.id)) continue; // a ruin is not a town
+    if (aliveThen ? !aliveThen.has(s.id) : ruinedIds.has(s.id)) continue;
     const dx = s.x - wx;
     const dy = s.y - wy;
     const d = dx * dx + dy * dy;
@@ -928,10 +943,6 @@ function placeIndex(world       )                                        {
   return idx;
 }
 
-/** Regex-escape a place name for the linkifier. */
-function reEsc(s        )         {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
 
 /**
  * Wrap every occurrence of a known place name (in a text node) with a clickable
@@ -940,33 +951,33 @@ function reEsc(s        )         {
  */
 function linkifyPlaces(root             , idx                                       )       {
   if (idx.size === 0) return;
-  const names = [...idx.keys()].sort((a, b) => b.length - a.length);
-  const re = new RegExp(`\\b(${names.map(reEsc).join("|")})\\b`, "g");
+  // The matching itself is pure string logic in markdown.ts (placePattern /
+  // containsPlace / segmentPlaces), under Node tests — a stateful /g regex once
+  // silently dropped links here, and the extraction keeps that regression caged.
+  const re = placePattern([...idx.keys()]);
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   const targets         = [];
   for (let n = walker.nextNode(); n; n = walker.nextNode()) {
     const t = n        ;
     if ((t.parentElement?.className ?? "").includes("place")) continue;
-    if (re.test(t.data)) targets.push(t);
+    if (containsPlace(t.data, re)) targets.push(t);
   }
   for (const t of targets) {
-    re.lastIndex = 0;
     const frag = document.createDocumentFragment();
-    let last = 0;
-    let m                        ;
-    while ((m = re.exec(t.data))) {
-      if (m.index > last) frag.appendChild(document.createTextNode(t.data.slice(last, m.index)));
-      const coords = idx.get(m[1]) ;
+    for (const seg of segmentPlaces(t.data, re)) {
+      if (!seg.place) {
+        frag.appendChild(document.createTextNode(seg.text));
+        continue;
+      }
+      const coords = idx.get(seg.text) ;
       const span = document.createElement("span");
       span.className = "place";
-      span.textContent = m[1];
+      span.textContent = seg.text;
       span.dataset.x = String(coords.x);
       span.dataset.y = String(coords.y);
       span.title = "Find on the map";
       frag.appendChild(span);
-      last = m.index + m[1].length;
     }
-    if (last < t.data.length) frag.appendChild(document.createTextNode(t.data.slice(last)));
     t.parentNode?.replaceChild(frag, t);
   }
 }

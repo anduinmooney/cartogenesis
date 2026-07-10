@@ -129,10 +129,13 @@ export function generateEconomy(
     .slice(0, 5)
     .map(([k]) => k            );
 
-  const richest = economies.reduce(
-    (best, e) => (e.wealth > (economies[best]?.wealth ?? -1) ? economies.indexOf(e) : best),
-    0,
-  );
+  // Richest settlement: first-wins on ties, exactly like the reduce this
+  // replaces — but a plain indexed scan, not indexOf-inside-reduce, which was
+  // O(n²) and identity-fragile (one .map() over the array would have broken it).
+  let richest = 0;
+  for (let i = 1; i < economies.length; i++) {
+    if (economies[i].wealth > economies[richest].wealth) richest = i;
+  }
 
   return {
     economies,
