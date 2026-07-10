@@ -28,6 +28,8 @@ export const Biome = {
   Savanna: 13,
   TropicalSeasonalForest: 14,
   TropicalRainforest: 15,
+  // Not climatic — painted onto the map by lava flows from active volcanoes.
+  LavaField: 16,
 }         ;
 
                                                        
@@ -49,6 +51,7 @@ export const BIOME_NAMES                        = {
   [Biome.Savanna]: "Savanna",
   [Biome.TropicalSeasonalForest]: "Tropical Seasonal Forest",
   [Biome.TropicalRainforest]: "Tropical Rainforest",
+  [Biome.LavaField]: "Lava Field",
 };
 
 export const BIOME_COLORS                                          = {
@@ -68,6 +71,7 @@ export const BIOME_COLORS                                          = {
   [Biome.Savanna]: [192, 188, 100],
   [Biome.TropicalSeasonalForest]: [96, 162, 70],
   [Biome.TropicalRainforest]: [38, 120, 56],
+  [Biome.LavaField]: [58, 44, 46], // cooled basalt, near-black
 };
 
 // Rows = temperature band (cold→hot), cols = moisture band (dry→wet).

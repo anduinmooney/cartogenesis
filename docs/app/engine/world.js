@@ -12,7 +12,12 @@ import { Rng } from "./rng.js";
 import { hashExact, hashQuantized, hashTokens } from "./hash.js";
 import { Grid } from "./grid.js";
 import { generateElevation, landFraction } from "./terrain.js";
-import { addVolcanoes, fillCraterLakes,              } from "./volcanoes.js";
+import {
+  addVolcanoes,
+  fillCraterLakes,
+  traceLavaFields,
+               
+} from "./volcanoes.js";
 import { erode } from "./erosion.js";
 import { analyzeWater,                 } from "./hydrology.js";
 import { generateTemperature, generateMoisture } from "./climate.js";
@@ -201,6 +206,11 @@ export function generateWorld(config             )        {
     water,
     seaLevel,
   );
+  // Paint lava fields from active volcanoes over the climatic biomes. Downstream
+  // (regions, settlements) then see them — nobody settles on fresh basalt.
+  if (config.volcanoes !== false) {
+    traceLavaFields(elevation, water, biomes, volcanoes, volcanoRng.seed);
+  }
 
   // L7 — Regions: partition land into named provinces.
   const regionsRng = root.stream("regions");
@@ -227,7 +237,7 @@ export function generateWorld(config             )        {
     rivers,
     regions,
     seaLevel,
-    { seed: settlementsRng.seed },
+    { seed: settlementsRng.seed, biomes },
   );
   const capital = settlements.settlements.find((s) => s.isCapital);
 

@@ -9,11 +9,12 @@
 // status the history layer can pick up.
 
 import { Grid } from "./grid.ts";
-import { powExact } from "./exact.ts";
+import { dist, powExact } from "./exact.ts";
 import { Rng } from "./rng.ts";
 import { languageById } from "./names.ts";
 import { composeName } from "./language.ts";
 import { countComponents, type WaterLayer } from "./hydrology.ts";
+import { Biome, type BiomeLayer } from "./biomes.ts";
 
 export type VolcanoType = "stratovolcano" | "shield" | "cinder cone";
 export type VolcanoStatus = "active" | "dormant" | "extinct";
@@ -270,4 +271,101 @@ export function fillCraterLakes(
     for (let i = 0; i < lakeMask.length; i++) if (lakeMask[i]) lakeCells++;
     water.lakeFraction = lakeCells / lakeMask.length;
   }
+}
+
+const NEIGHBORS8: ReadonlyArray<[number, number]> = [
+  [1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [1, -1], [-1, 1], [-1, -1],
+];
+
+/**
+ * Paint lava fields into a BiomeLayer, in place. Each **active** volcano sends a
+ * few flows down its flanks: starting on the rim, each flow walks steepest-
+ * descent, marking cells `Biome.LavaField` until it reaches water, runs out of
+ * downhill, or exhausts its length. Deterministic (a private `lava` stream keyed
+ * by volcano index). Runs after biome classification; updates the layer's
+ * counts, diversity, and dominant.
+ */
+export function traceLavaFields(
+  elevation: Grid,
+  water: WaterLayer,
+  biomes: BiomeLayer,
+  volcanoes: Volcano[],
+  seed: number,
+): void {
+  const { width, height, data } = elevation;
+  const ids = biomes.ids;
+  const isWater = (i: number) => water.oceanMask[i] === 1 || water.lakeMask[i] === 1;
+
+  const paint = (i: number) => {
+    if (ids[i] === Biome.LavaField || isWater(i)) return;
+    biomes.counts[ids[i]] = (biomes.counts[ids[i]] ?? 1) - 1;
+    ids[i] = Biome.LavaField;
+    biomes.counts[Biome.LavaField] = (biomes.counts[Biome.LavaField] ?? 0) + 1;
+  };
+
+  // A point on the rim, chosen by rejection sampling a ring — no trig, so the
+  // arithmetic stays exact-by-construction (D-022).
+  const rimPoint = (rng: Rng, startR: number): [number, number] => {
+    for (let tries = 0; tries < 24; tries++) {
+      const dx = rng.float(-startR, startR);
+      const dy = rng.float(-startR, startR);
+      const r = dist(dx, dy);
+      if (r >= startR * 0.72 && r <= startR) return [Math.round(dx), Math.round(dy)];
+    }
+    return [Math.round(startR), 0];
+  };
+
+  for (let vi = 0; vi < volcanoes.length; vi++) {
+    const v = volcanoes[vi];
+    if (v.status !== "active") continue;
+    const rng = new Rng(`${seed}:lava:${vi}`);
+    const startR = v.caldera ? v.caldera.rimRadius : v.radius * 0.42;
+    const flows = 2 + rng.int(0, 4); // 2..5
+    const maxSteps = Math.round(v.radius * 2.2);
+
+    for (let f = 0; f < flows; f++) {
+      const [odx, ody] = rimPoint(rng, startR);
+      let x = v.x + odx;
+      let y = v.y + ody;
+      for (let step = 0; step < maxSteps; step++) {
+        if (x < 0 || y < 0 || x >= width || y >= height) break;
+        const i = y * width + x;
+        if (isWater(i)) break;
+        paint(i);
+        // Steepest descent to the lowest 8-neighbour.
+        let bx = x;
+        let by = y;
+        let lowest = data[i];
+        for (const [dx, dy] of NEIGHBORS8) {
+          const nx = x + dx;
+          const ny = y + dy;
+          if (nx < 0 || ny < 0 || nx >= width || ny >= height) continue;
+          const e = data[ny * width + nx];
+          if (e < lowest) {
+            lowest = e;
+            bx = nx;
+            by = ny;
+          }
+        }
+        if (bx === x && by === y) break; // a local pit: the flow pools and stops
+        x = bx;
+        y = by;
+      }
+    }
+  }
+
+  biomes.diversity = Object.keys(biomes.counts).filter(
+    (k) => (biomes.counts[Number(k)] ?? 0) > 0,
+  ).length;
+  let dominant = biomes.dominant;
+  let best = -1;
+  for (const key of Object.keys(biomes.counts)) {
+    const id = Number(key);
+    if (id === Biome.Ocean || id === Biome.Lake) continue;
+    if ((biomes.counts[id] ?? 0) > best) {
+      best = biomes.counts[id];
+      dominant = id as Biome;
+    }
+  }
+  biomes.dominant = dominant;
 }

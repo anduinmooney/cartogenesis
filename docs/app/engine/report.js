@@ -6,7 +6,7 @@
 // layers cohere into one place with a name and a story.
 
 import {             elevationToMetres } from "./world.js";
-import { BIOME_NAMES,            } from "./biomes.js";
+import { BIOME_NAMES, Biome } from "./biomes.js";
 import { RESOURCE_NAMES } from "./resources.js";
 import { glossPhrase, glossary } from "./language.js";
 import { languageById } from "./names.js";
@@ -78,6 +78,14 @@ export function worldReportMarkdown(world       )         {
       lines.push(
         `- **Mount ${v.name}** — *${glossPhrase(v.gloss)}* — ${v.type}, ${v.status}, ` +
           `summit ${metres.toLocaleString()} m${form}`,
+      );
+    }
+    const lavaCells = world.biomes.counts[Biome.LavaField] ?? 0;
+    if (lavaCells > 0) {
+      lines.push("");
+      lines.push(
+        `*Fresh lava fields streak the flanks of the living peaks — ${lavaCells} ` +
+          `cells of cooled basalt where nothing grows and no one builds.*`,
       );
     }
     lines.push("");

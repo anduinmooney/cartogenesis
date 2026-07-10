@@ -6,7 +6,7 @@
 
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 60.5% land, 39.5% ocean, 2 lake(s)
-- **Climate & life:** dominant biome **Grassland**, 16 biomes in all
+- **Climate & life:** dominant biome **Grassland**, 17 biomes in all
 - **Peoples:** 29 regions, 24 settlements, 4 realms
 - **Capital:** Variatomor, seat of House Mantesena
 - **Dominant power:** Rauriacaria (of 4 surviving realm(s))
@@ -24,6 +24,8 @@
 - **Mount Thygrasturn** — *the fire cliff* — cinder cone, extinct, summit 3,925 m
 - **Mount Thygrabra** — *the fire mountain* — cinder cone, dormant, summit 3,871 m
 - **Mount Breistabra** — *the red mountain* — cinder cone, dormant, summit 2,016 m
+
+*Fresh lava fields streak the flanks of the living peaks — 180 cells of cooled basalt where nothing grows and no one builds.*
 
 ## Notable features
 
@@ -163,35 +165,35 @@
 
 ### Cities
 
-- **Variatomor**, *the wild fort* (**capital**, port, trade hub, rich) — Grain, Wine, Horses, Livestock *(founded 100)*
+- **Variatomor**, *the wild fort* (**capital**, port, trade hub, rich) — Horses, Grain, Wine, Livestock *(founded 100)*
 - **Deociamor**, *the sea gate* (port, prosperous) — Grain, Livestock, Wine, Horses *(founded 124)*
-- **Panalamor**, *the field hall* (port, rich) — Grain, Livestock, Fish, Horses *(founded 148)*
-- **Niantetelen**, *the green market* (port, prosperous) — Grain, Livestock, Horses *(founded 172)*
+- **Panalamor**, *the field hall* (port, prosperous) — Wine, Grain, Horses, Livestock *(founded 148)*
+- **Niantetelen**, *the green market* (port, prosperous) — Fish, Grain, Horses, Livestock *(founded 172)*
 
 ### Towns
 
-- **Peonaliria**, *the grass haven* (port, rich) — Grain, Livestock, Fish, Wine *(founded 196)*
-- **Bellaliria**, *the river haven* (port, rich) — Horses, Livestock, Grain, Fish *(founded 243)*
-- **Senaciamor**, *the thorn gate* (prosperous) — Grain, Wine, Livestock, Horses *(founded 267)*
-- **Ghashzaa**, *the river bridge* (prosperous) — Livestock, Horses, Timber, Wine *(founded 291)*
-- **Bellanelen**, *the river bridge* (prosperous) — Grain, Livestock, Horses, Coal *(founded 315)*
-- **Bellatomor**, *the river fort* (prosperous) — Livestock, Horses, Grain, Wine *(founded 339)*
+- **Peonaliria**, *the grass haven* (port, prosperous) — Grain, Wine, Livestock *(founded 196)*
+- **Bellaliria**, *the river haven* (port, prosperous) — Livestock, Grain, Wine, Horses *(founded 243)*
+- **Senaciamor**, *the thorn gate* (prosperous) — Livestock, Horses, Grain, Wine *(founded 267)*
+- **Ghashzaa**, *the river bridge* (modest) — Livestock, Timber *(founded 291)*
+- **Bellanelen**, *the river bridge* (prosperous) — Livestock, Grain, Horses, Coal *(founded 315)*
+- **Bellatomor**, *the river fort* (prosperous) — Grain, Wine, Livestock *(founded 339)*
 
 ### Villages
 
-- **Stagrafjan**, *the sea field* (port, prosperous) — Grain, Livestock, Horses *(founded 363)*
-- **Peonanelen**, *the grass bridge* (port, trade hub, rich) — Livestock, Timber, Grain, Wine *(founded 387)*
-- **Khirkhukha**, *the sea field* (port, prosperous) — Livestock, Fish *(founded 411)*
-- **Thaurnafjan**, *the grass field* (port, prosperous) — Grain, Livestock, Fish, Wine *(founded 435)*
-- **Stagrba**, *the sea spring* (port, prosperous) — Livestock, Grain, Horses *(founded 459)*
-- **Knyrkafjan**, *the wild field* (port, rich) — Livestock, Grain, Horses, Furs *(founded 483)*
-- **Knyrkba**, *the wild spring* (port, prosperous) — Livestock, Grain, Horses *(founded 507)*
-- **Belladinte**, *the river spring* (prosperous) — Copper, Iron, Livestock, Coal *(founded 530)*
-- **Panatomor**, *the field fort* (prosperous) — Grain, Livestock, Wine *(founded 554)*
-- **Storkafjan**, *the white field* (port, rich) — Grain, Livestock, Furs, Timber *(founded 578)*
-- **Neossotomor**, *the stone fort* (trade hub, rich) — Stone, Coal, Livestock, Iron *(founded 602)*
-- **Rairqe**, *the gold home* (port, prosperous) — Fish, Livestock, Timber, Horses *(founded 626)*
-- **Rairshu**, *the gold fort* (port, modest) — Livestock *(founded 650)*
+- **Stagrafjan**, *the sea field* (port, rich) — Livestock, Grain, Fish, Horses *(founded 363)*
+- **Peonanelen**, *the grass bridge* (port, trade hub, prosperous) — Horses, Timber, Grain, Livestock *(founded 387)*
+- **Khirkhukha**, *the sea field* (port, prosperous) — Livestock, Horses, Fish *(founded 411)*
+- **Thaurnafjan**, *the grass field* (port, prosperous) — Livestock, Horses, Furs *(founded 435)*
+- **Stagrba**, *the sea spring* (port, prosperous) — Livestock, Grain, Furs, Horses *(founded 459)*
+- **Knyrkafjan**, *the wild field* (port, rich) — Grain, Livestock, Furs, Fish *(founded 483)*
+- **Knyrkba**, *the wild spring* (port, prosperous) — Grain, Livestock, Timber, Fish *(founded 507)*
+- **Belladinte**, *the river spring* (prosperous) — Copper, Livestock, Iron, Coal *(founded 530)*
+- **Panatomor**, *the field fort* (modest) — Livestock, Grain, Wine, Horses *(founded 554)*
+- **Storkafjan**, *the white field* (port, prosperous) — Livestock, Grain, Fish, Stone *(founded 578)*
+- **Neossotomor**, *the stone fort* (trade hub, rich) — Livestock, Stone, Coal, Iron *(founded 602)*
+- **Rairqe**, *the gold home* (port, prosperous) — Horses, Livestock *(founded 626)*
+- **Rairshu**, *the gold fort* (port, modest) — Horses, Livestock *(founded 650)*
 
 ## Ruins
 
@@ -238,7 +240,7 @@ Followed across 1 region(s).
 - **Major exports:** Livestock, Grain, Horses, Wine, Fish
 - **Wealthiest settlement:** Variatomor
 - **Trade hubs:** Variatomor, Peonanelen, Neossotomor
-- **Deposits:** Iron ×52, Copper ×36, Gold ×18, Gems ×11, Stone ×85, Coal ×30, Timber ×5, Grain ×45, Livestock ×132, Fish ×12, Furs ×7, Spices ×1, Salt ×24, Horses ×39, Wine ×19
+- **Deposits:** Iron ×52, Copper ×36, Gold ×18, Gems ×11, Stone ×85, Coal ×30, Timber ×5, Grain ×45, Livestock ×132, Fish ×12, Furs ×7, Spices ×1, Salt ×24, Horses ×39, Wine ×18
 
 ## Languages
 
@@ -290,11 +292,11 @@ Followed across 1 region(s).
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Rauriacaria | 100 | 11 | 1000 | 11 | ascendant |
-| Mantedente | 100 | 9 | 675 | 7 | diminished |
-| Tariademor | 100 | 9 | 625 | 9 | ascendant |
+| Rauriacaria | 100 | 12 | 1050 | 12 | ascendant |
+| Mantedente | 100 | 9 | 675 | 5 | diminished |
+| Tariademor | 100 | 9 | 625 | 7 | diminished |
 | Tariadente | 100 | 8 | 100 | 0 | extinct |
-| Rauriacaria | 100 | 5 | 100 | 2 | diminished |
+| Rauriacaria | 100 | 6 | 950 | 5 | ascendant |
 
 ## Chronicle
 
@@ -320,13 +322,13 @@ Followed across 1 region(s).
 - **250 After Reckoning** — Rauriacaria seized Deocaria from Tenacaria.
 - **250 After Reckoning** — The realm of Tenacaria was extinguished.
 - **275 After Reckoning** — Rauriacaria seized Fjeiskafjan from Tariadente.
-- **300 After Reckoning** — Rauriacaria's invasion of Mairsham was thrown back by Tariadente.
+- **300 After Reckoning** — Rauriacaria's invasion of Brabei was thrown back by Mantedente.
 - **300 After Reckoning** — Tariademor's invasion of Knyrkbei was thrown back by Tariadente.
 - **300 After Reckoning** — Mairkhukha turned from the Way of Vathostvoll to the Faith of Varondotindo.
 - **300 After Reckoning** — A plague swept Peonasena; many perished.
 - **300 After Reckoning** — A golden age dawned over Rauriacaria; its cities flourished as never before.
-- **325 After Reckoning** — Mantedente's invasion of Mairkhukha was thrown back by Tariadente.
-- **350 After Reckoning** — Rauriacaria's invasion of Brabei was thrown back by Mantedente.
+- **325 After Reckoning** — Rauriacaria's invasion of Rarershaa was thrown back by Tariadente.
+- **350 After Reckoning** — Rauriacaria's invasion of Deodoria was thrown back by Tariadente.
 - **375 After Reckoning** — Tariademor seized Knyrkbei from Tariadente.
 - **375 After Reckoning** — A plague swept Brabei; many perished.
 - **400 After Reckoning** — Rauriacaria's invasion of Mairsham was thrown back by Tariadente.
@@ -348,7 +350,7 @@ Followed across 1 region(s).
 - **575 After Reckoning** — Senatomor was stormed and left a ruin.
 - **575 After Reckoning** — Rauriacaria seized Deodoria from Tariadente.
 - **575 After Reckoning** — The realm of Tariadente was extinguished.
-- **575 After Reckoning** — Tariademor's invasion of Rairghen was thrown back by Rauriacaria.
+- **575 After Reckoning** — Rauriacaria's invasion of Mantecaria was thrown back by Mantedente.
 - **575 After Reckoning** — Mairsham rose against Rauriacaria and declared the free realm of Kheqkaasi.
 - **575 After Reckoning** — A long drought gripped Deodoria; many perished.
 - **600 After Reckoning** — Rauriacaria's invasion of Mairsham was thrown back by Kheqkaasi.
@@ -367,39 +369,40 @@ Followed across 1 region(s).
 - **725 After Reckoning** — Rauriacaria's invasion of Mantecaria was thrown back by Mantedente.
 - **725 After Reckoning** — A long drought gripped Brakno; many perished.
 - **750 After Reckoning** — Rauriacaria's invasion of Brabei was thrown back by Mantedente.
-- **775 After Reckoning** — Tariademor's invasion of Rairghen was thrown back by Rauriacaria.
+- **775 After Reckoning** — Rauriacaria's invasion of Mantecaria was thrown back by Mantedente.
 - **800 After Reckoning** — Rauriacaria seized Brabei from Mantedente.
-- **800 After Reckoning** — Rauriacaria's invasion of Mantecaria was thrown back by Mantedente.
+- **800 After Reckoning** — Tariademor's invasion of Rairghen was thrown back by Rauriacaria.
 - **825 After Reckoning** — Rauriacaria seized Staunba from Mantedente.
 - **825 After Reckoning** — Staunba rose against Rauriacaria and declared the free realm of Fjeiskaskei.
 - **825 After Reckoning** — A long drought gripped Fjanbry; many perished.
 - **850 After Reckoning** — Rauriacaria seized Staunba from Fjeiskaskei.
 - **850 After Reckoning** — The realm of Fjeiskaskei was extinguished.
-- **850 After Reckoning** — Tariademor's invasion of Rairghen was thrown back by Rauriacaria.
+- **850 After Reckoning** — Rauriacaria's invasion of Mantecaria was thrown back by Mantedente.
 - **875 After Reckoning** — Rauriacaria's invasion of Mairsham was thrown back by Tariademor.
 - **875 After Reckoning** — A long drought gripped Brakno; many perished.
-- **900 After Reckoning** — Tariademor's invasion of Rairghen was thrown back by Rauriacaria.
 - **900 After Reckoning** — Rauriacaria's invasion of Mantecaria was thrown back by Mantedente.
+- **900 After Reckoning** — Tariademor's invasion of Rairghen was thrown back by Rauriacaria.
 - **925 After Reckoning** — Rauriacaria seized Mairsham from Tariademor.
 - **950 After Reckoning** — Rauriacaria seized Mairkhukha from Mantedente.
-- **950 After Reckoning** — Tariademor seized Rairghen from Rauriacaria.
+- **950 After Reckoning** — Rauriacaria seized Mantecaria from Mantedente.
 - **950 After Reckoning** — Mairkhukha rose against Rauriacaria and declared the free realm of Qidkakaasi.
 - **975 After Reckoning** — Rauriacaria seized Mairkhukha from Qidkakaasi.
 - **975 After Reckoning** — The realm of Qidkakaasi was extinguished.
-- **975 After Reckoning** — Mantedente seized Beossolaria from Rauriacaria.
+- **975 After Reckoning** — Mantedente seized Mantecaria from Rauriacaria.
 - **975 After Reckoning** — Mairkhukha rose against Rauriacaria and declared the free realm of Qidkataitan.
-- **975 After Reckoning** — A plague swept Rairghen; many perished.
+- **975 After Reckoning** — A golden age dawned over Rauriacaria; its cities flourished as never before.
 - **1000 After Reckoning** — Rauriacaria seized Mairkhukha from Qidkataitan.
 - **1000 After Reckoning** — The realm of Qidkataitan was extinguished.
-- **1025 After Reckoning** — Tariademor's invasion of Shinkhash was thrown back by Rauriacaria.
+- **1000 After Reckoning** — Mairkhukha rose against Rauriacaria and declared the free realm of Kaartaitan.
+- **1025 After Reckoning** — Rauriacaria seized Mairkhukha from Kaartaitan.
+- **1025 After Reckoning** — The realm of Kaartaitan was extinguished.
+- **1025 After Reckoning** — Rauriacaria's invasion of Brafjan was thrown back by Mantedente.
 - **1025 After Reckoning** — A plague swept Deosena; many perished.
 - **1025 After Reckoning** — A golden age dawned over Tariademor; its cities flourished as never before.
-- **1050 After Reckoning** — Mantedente seized Grakno from Rauriacaria.
-- **1050 After Reckoning** — Rauriacaria's invasion of Senariando was thrown back by Tariademor.
-- **1075 After Reckoning** — Mantedente's invasion of Peonasena was thrown back by Rauriacaria.
-- **1075 After Reckoning** — Tariademor's invasion of Shinkhash was thrown back by Rauriacaria.
-- **1075 After Reckoning** — A plague swept Mairsham; many perished.
-- **1075 After Reckoning** — A golden age dawned over Rauriacaria; its cities flourished as never before.
+- **1050 After Reckoning** — Rauriacaria seized Senariando from Tariademor.
+- **1050 After Reckoning** — Mantedente's invasion of Rarershaa was thrown back by Tariademor.
+- **1075 After Reckoning** — Rauriacaria's invasion of Knyrkbei was thrown back by Tariademor.
+- **1075 After Reckoning** — Rauriacaria's invasion of Rarershaa was thrown back by Tariademor.
 
 ## Heightmap
 

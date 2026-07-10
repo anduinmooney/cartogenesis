@@ -6,10 +6,10 @@
 
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 34.5% land, 65.5% ocean, 3 lake(s)
-- **Climate & life:** dominant biome **Savanna**, 15 biomes in all
+- **Climate & life:** dominant biome **Savanna**, 16 biomes in all
 - **Peoples:** 20 regions, 14 settlements, 2 realms
 - **Capital:** Niantetomor, seat of House Mantetindo
-- **Dominant power:** Rauriabinte (of 4 surviving realm(s))
+- **Dominant power:** Rauriabinte (of 3 surviving realm(s))
 - **The present year:** 1100 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 5 (2 active)
 
@@ -20,6 +20,8 @@
 - **Mount Thathobry** — *the dark stone* — stratovolcano, active, summit 4,401 m
 - **Mount Storkahrei** — *the white hill* — stratovolcano, active, summit 3,907 m
 - **Mount Vynbry** — *the old stone* — shield, extinct, summit 3,582 m
+
+*Fresh lava fields streak the flanks of the living peaks — 103 cells of cooled basalt where nothing grows and no one builds.*
 
 ## Notable features
 
@@ -115,26 +117,31 @@
 
 ### Cities
 
-- **Niantetomor**, *the green fort* (**capital**, port, trade hub, rich) — Grain, Wine, Horses, Livestock *(founded 100)*
-- **Deotomor**, *the sea fort* (port, rich) — Livestock, Grain, Wine, Horses *(founded 142)*
+- **Niantetomor**, *the green fort* (**capital**, port, rich) — Livestock, Wine, Fish, Grain *(founded 100)*
+- **Deotomor**, *the sea fort* (port, rich) — Grain, Livestock, Horses, Wine *(founded 142)*
 
 ### Towns
 
-- **Deotelen**, *the sea market* (port, rich) — Grain, Wine, Livestock, Fish *(founded 185)*
-- **Vondund**, *the green haven* (port, prosperous) — Livestock, Grain, Wine, Horses *(founded 227)*
-- **Deoliria**, *the sea haven* (port, modest) — Livestock, Wine *(founded 269)*
-- **Stagragrull**, *the sea bridge* (port, prosperous) — Livestock, Timber, Grain, Iron *(founded 312)*
+- **Deotelen**, *the sea market* (port, trade hub, rich) — Livestock, Fish, Grain, Wine *(founded 185)*
+- **Vondund**, *the green haven* (port, rich) — Grain, Wine, Horses, Livestock *(founded 227)*
+- **Deoliria**, *the sea haven* (port, prosperous) — Timber, Livestock, Fish, Horses *(founded 269)*
+- **Stagragrull**, *the sea bridge* (port, rich) — Grain, Livestock, Iron, Wine *(founded 312)*
 
 ### Villages
 
-- **Ghashqe**, *the river home* (prosperous) — Livestock, Grain, Iron, Coal *(founded 354)*
-- **Stagrba**, *the sea spring* (port, trade hub, rich) — Livestock, Grain, Fish, Horses *(founded 396)*
-- **Ghashakhukha**, *the river field* (modest) — Livestock, Timber, Wine *(founded 438)*
-- **Knyrkathu**, *the wild fort* (port, prosperous) — Fish, Livestock, Copper, Horses *(founded 481)*
-- **Khirqe**, *the sea home* (port, modest) — Livestock, Fish, Horses *(founded 523)*
-- **Ghashkai**, *the river spring* (modest) — Livestock, Horses, Stone *(founded 565)*
-- **Ghashashu**, *the river fort* (port, prosperous) — Horses, Livestock *(founded 608)*
+- **Ghashqe**, *the river home* (prosperous) — Livestock, Grain, Wine, Iron *(founded 354)*
+- **Ghashakhukha**, *the river field* (prosperous) — Livestock, Wine, Horses *(founded 438)*
+- **Knyrkathu**, *the wild fort* (port, trade hub, rich) — Horses, Livestock, Grain, Copper *(founded 481)*
+- **Khirqe**, *the sea home* (port, prosperous) — Livestock, Horses, Grain *(founded 523)*
+- **Ghashkai**, *the river spring* (prosperous) — Livestock, Horses, Wine, Stone *(founded 565)*
+- **Ghashashu**, *the river fort* (port, prosperous) — Fish, Livestock, Horses *(founded 608)*
 - **Mairqe**, *the mountain home* (prosperous) — Livestock, Stone, Iron, Coal *(founded 650)*
+
+## Ruins
+
+*Settlements that did not survive to the present day.*
+
+- **Stagrba** (village) — founded 396, stormed and left a ruin in 700
 
 ## Faiths
 
@@ -164,9 +171,9 @@ Followed across 3 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Livestock, Horses, Grain, Wine, Fish
-- **Wealthiest settlement:** Niantetomor
-- **Trade hubs:** Niantetomor, Stagrba
+- **Major exports:** Livestock, Grain, Horses, Wine, Fish
+- **Wealthiest settlement:** Knyrkathu
+- **Trade hubs:** Deotelen, Knyrkathu
 - **Deposits:** Iron ×22, Copper ×16, Gold ×7, Gems ×4, Stone ×46, Coal ×20, Timber ×3, Grain ×25, Livestock ×96, Fish ×11, Furs ×2, Spices ×1, Salt ×7, Horses ×30, Wine ×14
 
 ## Languages
@@ -204,24 +211,25 @@ Followed across 3 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 4 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 3 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Rauriabinte | 100 | 10 | 775 | 10 | ascendant |
-| Lossocaria | 100 | 8 | 100 | 7 | ascendant |
-| Steirkafjysk | 100 | 6 | 375 | 2 | diminished |
+| Rauriabinte | 100 | 13 | 1050 | 13 | ascendant |
+| Lossocaria | 100 | 10 | 825 | 6 | diminished |
+| Steirkafjysk | 100 | 6 | 375 | 0 | extinct |
 | Tariademor | 100 | 4 | 100 | 0 | extinct |
-| Fjeiskathon | 1075 | 1 | 1075 | 1 | ascendant |
+| Brograskei | 675 | 3 | 675 | 0 | extinct |
+| Kaarkaasi | 1075 | 1 | 1075 | 1 | ascendant |
 
 ## Chronicle
 
 - **100 After Reckoning** — Tariademor's invasion of Khirarer was thrown back by Rauriabinte.
 - **100 After Reckoning** — Rauriabinte's invasion of Pananeosso was thrown back by Tariademor.
 - **125 After Reckoning** — Beossoneosso turned from the Rite of Vavomortindo to the Cult of Vazizamghim.
-- **150 After Reckoning** — Tariademor's invasion of Peonariando was thrown back by Rauriabinte.
+- **150 After Reckoning** — Tariademor's invasion of Khirarer was thrown back by Rauriabinte.
 - **175 After Reckoning** — Rauriabinte's invasion of Pananeosso was thrown back by Tariademor.
-- **200 After Reckoning** — Tariademor's invasion of Khirarer was thrown back by Rauriabinte.
+- **200 After Reckoning** — Tariademor's invasion of Peonariando was thrown back by Rauriabinte.
 - **200 After Reckoning** — A long drought gripped Rarerkhidku; many perished.
 - **225 After Reckoning** — Rauriabinte's invasion of Pananeosso was thrown back by Tariademor.
 - **250 After Reckoning** — Tariademor's invasion of Peonariando was thrown back by Rauriabinte.
@@ -241,50 +249,61 @@ Followed across 3 region(s).
 - **450 After Reckoning** — A plague swept Stagrasturn; many perished.
 - **450 After Reckoning** — A golden age dawned over Rauriabinte; its cities flourished as never before.
 - **475 After Reckoning** — Lossocaria's invasion of Braknaurk was thrown back by Steirkafjysk.
-- **475 After Reckoning** — A long drought gripped Mairzash; many perished.
+- **475 After Reckoning** — A plague swept Khirkhidku; many perished.
 - **500 After Reckoning** — Rauriabinte seized Beossoneosso from Steirkafjysk.
-- **525 After Reckoning** — Rauriabinte seized Mairzash from Lossocaria.
-- **550 After Reckoning** — Lossocaria's invasion of Braknaurk was thrown back by Steirkafjysk.
-- **550 After Reckoning** — Rauriabinte seized Fjeiskabry from Steirkafjysk.
+- **500 After Reckoning** — A long drought gripped Khirghen; many perished.
+- **525 After Reckoning** — Rauriabinte seized Fjeiskabry from Steirkafjysk.
+- **550 After Reckoning** — Lossocaria seized Braknaurk from Steirkafjysk.
 - **550 After Reckoning** — Beossoneosso rose against Rauriabinte and declared the free realm of Mantedente.
+- **550 After Reckoning** — A plague swept Beossodinte; many perished.
 - **575 After Reckoning** — Rauriabinte seized Beossoneosso from Mantedente.
 - **575 After Reckoning** — The realm of Mantedente was extinguished.
-- **600 After Reckoning** — Rauriabinte's invasion of Khirghen was thrown back by Steirkafjysk.
-- **600 After Reckoning** — Beossoneosso rose against Rauriabinte and declared the free realm of Mantedemor.
-- **600 After Reckoning** — Shinsham turned from the Rite of Vavomortindo to the Cult of Vazizamghim.
-- **625 After Reckoning** — Steirkafjysk seized Beossoneosso from Mantedemor.
-- **625 After Reckoning** — The realm of Mantedemor was extinguished.
-- **625 After Reckoning** — Lossocaria's invasion of Braknaurk was thrown back by Steirkafjysk.
-- **650 After Reckoning** — Rauriabinte's invasion of Beossoneosso was thrown back by Steirkafjysk.
-- **675 After Reckoning** — Lossocaria's invasion of Braknaurk was thrown back by Steirkafjysk.
-- **675 After Reckoning** — A long drought gripped Midshaa; many perished.
-- **700 After Reckoning** — Rauriabinte seized Beossoneosso from Steirkafjysk.
-- **725 After Reckoning** — Rauriabinte's invasion of Shinrarer was thrown back by Lossocaria.
-- **725 After Reckoning** — A plague swept Stagrasturn; many perished.
-- **750 After Reckoning** — Lossocaria's invasion of Braknaurk was thrown back by Steirkafjysk.
+- **575 After Reckoning** — Lossocaria's invasion of Stagrbei was thrown back by Steirkafjysk.
+- **575 After Reckoning** — Beossoneosso rose against Rauriabinte and declared the free realm of Cauna.
+- **575 After Reckoning** — A golden age dawned over Lossocaria; its cities flourished as never before.
+- **600 After Reckoning** — Rauriabinte seized Beossoneosso from Cauna.
+- **600 After Reckoning** — The realm of Cauna was extinguished.
+- **600 After Reckoning** — A plague swept Stagrbei; many perished.
+- **625 After Reckoning** — Rauriabinte's invasion of Khirghen was thrown back by Steirkafjysk.
+- **625 After Reckoning** — Lossocaria's invasion of Stagrbei was thrown back by Steirkafjysk.
+- **625 After Reckoning** — Beossoneosso rose against Rauriabinte and declared the free realm of Recaria.
+- **625 After Reckoning** — A long drought gripped Midkhidku; many perished.
+- **675 After Reckoning** — Rauriabinte seized Beossoneosso from Recaria.
+- **675 After Reckoning** — The realm of Recaria was extinguished.
+- **675 After Reckoning** — Lossocaria seized Stagrbei from Steirkafjysk.
+- **675 After Reckoning** — Stagrbei and 2 neighbouring province(s) broke away from Lossocaria to found the realm of Brograskei.
+- **675 After Reckoning** — Khirkhidku turned from the Rite of Vavomortindo to the Cult of Vazizamghim.
+- **675 After Reckoning** — A golden age dawned over Lossocaria; its cities flourished as never before.
+- **700 After Reckoning** — Rauriabinte seized Mairzash from Brograskei.
+- **700 After Reckoning** — Stagrba was stormed and left a ruin.
+- **700 After Reckoning** — Lossocaria seized Stagrbei from Brograskei.
+- **700 After Reckoning** — Stagrbei broke away from Lossocaria to found the realm of Fjeiskastall.
+- **700 After Reckoning** — A golden age dawned over Lossocaria; its cities flourished as never before.
+- **725 After Reckoning** — Lossocaria seized Braknaurk from Brograskei.
+- **725 After Reckoning** — The realm of Brograskei was extinguished.
+- **750 After Reckoning** — Lossocaria seized Stagrbei from Fjeiskastall.
+- **750 After Reckoning** — The realm of Fjeiskastall was extinguished.
 - **775 After Reckoning** — Rauriabinte seized Khirghen from Steirkafjysk.
-- **800 After Reckoning** — Rauriabinte seized Braknaurk from Steirkafjysk.
-- **800 After Reckoning** — Braknaurk rose against Rauriabinte and declared the free realm of Knauskaskei.
-- **825 After Reckoning** — Lossocaria seized Braknaurk from Knauskaskei.
-- **825 After Reckoning** — The realm of Knauskaskei was extinguished.
-- **825 After Reckoning** — A long drought gripped Beossodinte; many perished.
-- **850 After Reckoning** — Rauriabinte's invasion of Stagrasturn was thrown back by Steirkafjysk.
-- **850 After Reckoning** — Lossocaria's invasion of Stagrbei was thrown back by Steirkafjysk.
-- **850 After Reckoning** — Braknaurk rose against Lossocaria and declared the free realm of Knauskno.
-- **875 After Reckoning** — Steirkafjysk seized Braknaurk from Knauskno.
-- **875 After Reckoning** — The realm of Knauskno was extinguished.
-- **900 After Reckoning** — Lossocaria's invasion of Braknaurk was thrown back by Steirkafjysk.
-- **900 After Reckoning** — Rauriabinte's invasion of Stagrasturn was thrown back by Steirkafjysk.
-- **925 After Reckoning** — A long drought gripped Mairzash; many perished.
-- **950 After Reckoning** — Lossocaria's invasion of Braknaurk was thrown back by Steirkafjysk.
-- **950 After Reckoning** — A golden age dawned over Lossocaria; its cities flourished as never before.
-- **975 After Reckoning** — Rauriabinte's invasion of Braknaurk was thrown back by Steirkafjysk.
-- **1025 After Reckoning** — Lossocaria seized Braknaurk from Steirkafjysk.
-- **1025 After Reckoning** — Rauriabinte's invasion of Shinrarer was thrown back by Lossocaria.
-- **1050 After Reckoning** — Lossocaria's invasion of Stagrbei was thrown back by Steirkafjysk.
-- **1050 After Reckoning** — A long drought gripped Mairzash; many perished.
-- **1075 After Reckoning** — Rauriabinte's invasion of Stagrasturn was thrown back by Steirkafjysk.
-- **1075 After Reckoning** — Braknaurk rose against Lossocaria and declared the free realm of Fjeiskathon.
+- **775 After Reckoning** — A plague swept Khirzash; many perished.
+- **800 After Reckoning** — Rauriabinte's invasion of Stagrasturn was thrown back by Steirkafjysk.
+- **800 After Reckoning** — A long drought gripped Khirmid; many perished.
+- **825 After Reckoning** — Lossocaria seized Stagrasturn from Steirkafjysk.
+- **825 After Reckoning** — The realm of Steirkafjysk was extinguished.
+- **850 After Reckoning** — Rauriabinte's invasion of Shinrarer was thrown back by Lossocaria.
+- **850 After Reckoning** — A golden age dawned over Lossocaria; its cities flourished as never before.
+- **875 After Reckoning** — Stagrasturn rose against Lossocaria and declared the free realm of Knauskafjysk.
+- **900 After Reckoning** — Rauriabinte seized Stagrasturn from Knauskafjysk.
+- **900 After Reckoning** — The realm of Knauskafjysk was extinguished.
+- **900 After Reckoning** — Knauskafjysk's invasion of Braknaurk was thrown back by Lossocaria.
+- **925 After Reckoning** — Rauriabinte's invasion of Shinrarer was thrown back by Lossocaria.
+- **925 After Reckoning** — A long drought gripped Khirkhidku; many perished.
+- **975 After Reckoning** — Rauriabinte's invasion of Shinrarer was thrown back by Lossocaria.
+- **1025 After Reckoning** — Rauriabinte seized Shinrarer from Lossocaria.
+- **1025 After Reckoning** — A golden age dawned over Lossocaria; its cities flourished as never before.
+- **1050 After Reckoning** — Rauriabinte seized Khirmid from Lossocaria.
+- **1075 After Reckoning** — Rauriabinte seized Midkhidku from Lossocaria.
+- **1075 After Reckoning** — Khirmid rose against Rauriabinte and declared the free realm of Kaarkaasi.
+- **1075 After Reckoning** — Shinrarer turned from the Cult of Vazizamghim to the Rite of Vaveillafjull.
 
 ## Heightmap
 

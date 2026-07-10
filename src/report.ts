@@ -6,7 +6,7 @@
 // layers cohere into one place with a name and a story.
 
 import { type World, elevationToMetres } from "./world.ts";
-import { BIOME_NAMES, type Biome } from "./biomes.ts";
+import { BIOME_NAMES, Biome } from "./biomes.ts";
 import { RESOURCE_NAMES } from "./resources.ts";
 import { glossPhrase, glossary } from "./language.ts";
 import { languageById } from "./names.ts";
@@ -78,6 +78,14 @@ export function worldReportMarkdown(world: World): string {
       lines.push(
         `- **Mount ${v.name}** — *${glossPhrase(v.gloss)}* — ${v.type}, ${v.status}, ` +
           `summit ${metres.toLocaleString()} m${form}`,
+      );
+    }
+    const lavaCells = world.biomes.counts[Biome.LavaField] ?? 0;
+    if (lavaCells > 0) {
+      lines.push("");
+      lines.push(
+        `*Fresh lava fields streak the flanks of the living peaks — ${lavaCells} ` +
+          `cells of cooled basalt where nothing grows and no one builds.*`,
       );
     }
     lines.push("");

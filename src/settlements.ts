@@ -11,6 +11,7 @@ import { Grid } from "./grid.ts";
 import type { WaterLayer } from "./hydrology.ts";
 import type { RiverLayer } from "./rivers.ts";
 import type { RegionLayer } from "./regions.ts";
+import { Biome, type BiomeLayer } from "./biomes.ts";
 import { languageById } from "./names.ts";
 import { composeName, hintsForBiome } from "./language.ts";
 
@@ -39,6 +40,8 @@ export interface SettlementConfig {
   seed: number;
   /** Override the automatic settlement count. */
   count?: number;
+  /** If given, no settlement is placed on a `Biome.LavaField` cell. */
+  biomes?: BiomeLayer;
 }
 
 const N4: ReadonlyArray<[number, number]> = [
@@ -160,8 +163,11 @@ export function generateSettlements(
   );
 
   // Candidate land cells with meaningful habitability, sorted best-first.
+  // Fresh basalt is uninhabitable — skip lava fields outright.
+  const lava = cfg.biomes?.ids;
   const candidates: number[] = [];
   for (let i = 0; i < n; i++) {
+    if (lava && lava[i] === Biome.LavaField) continue;
     if (habitability.data[i] > 0.3) candidates.push(i);
   }
   candidates.sort((a, b) => habitability.data[b] - habitability.data[a]);

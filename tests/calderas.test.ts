@@ -87,3 +87,37 @@ test("caldera generation is deterministic", () => {
     b.volcanoes.map((v) => [v.x, v.y, v.caldera?.rimRadius, v.caldera?.lakeLevel]),
   );
 });
+
+test("active volcanoes bleed lava fields that no one settles on", () => {
+  const w = firstWorldWith((w) => (w.biomes.counts[Biome.LavaField] ?? 0) > 0);
+  const { width } = w.elevation;
+  // Lava only appears where an active volcano is present.
+  assert.ok(
+    w.volcanoes.some((v) => v.status === "active"),
+    "lava with no active volcano",
+  );
+  // Every lava cell is land, above sea level, and not water.
+  let lava = 0;
+  for (let i = 0; i < w.biomes.ids.length; i++) {
+    if (w.biomes.ids[i] !== Biome.LavaField) continue;
+    lava++;
+    assert.equal(w.water.oceanMask[i], 0, "lava on ocean");
+    assert.equal(w.water.lakeMask[i], 0, "lava on lake");
+    assert.ok(w.elevation.data[i] >= w.meta.seaLevel, "lava below sea level");
+  }
+  assert.ok(lava > 0);
+  // No settlement stands on basalt.
+  for (const s of w.settlements.settlements) {
+    assert.notEqual(w.biomes.ids[s.y * width + s.x], Biome.LavaField, `${s.name} on lava`);
+  }
+  // The layer's own count matches the cells.
+  assert.equal(w.biomes.counts[Biome.LavaField], lava);
+});
+
+test("lava tracing is deterministic and leaves elevation untouched", () => {
+  // Lava paints biomes, never terrain — the exact elevation hash must not move.
+  const a = generateWorld({ seed: "cald4", width: 200, height: 200 });
+  const b = generateWorld({ seed: "cald4", width: 200, height: 200 });
+  assert.deepEqual([...a.biomes.ids], [...b.biomes.ids]);
+  assert.equal(a.meta.exactHash, b.meta.exactHash);
+});

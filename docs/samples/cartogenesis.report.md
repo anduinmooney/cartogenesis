@@ -6,10 +6,10 @@
 
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 64.8% land, 35.2% ocean, 2 lake(s)
-- **Climate & life:** dominant biome **Grassland**, 16 biomes in all
+- **Climate & life:** dominant biome **Grassland**, 17 biomes in all
 - **Peoples:** 30 regions, 26 settlements, 4 realms
 - **Capital:** Deoliria, seat of House Belentaria
-- **Dominant power:** Rauriana (of 15 surviving realm(s))
+- **Dominant power:** Rauriana (of 14 surviving realm(s))
 - **The present year:** 1100 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 9 (3 active)
 
@@ -24,6 +24,8 @@
 - **Mount Vynbra** — *the old mountain* — stratovolcano, active, summit 4,500 m
 - **Mount Vollabry** — *the storm stone* — stratovolcano, dormant, summit 4,500 m
 - **Mount Thygrahrei** — *the fire hill* — stratovolcano, dormant, summit 3,858 m
+
+*Fresh lava fields streak the flanks of the living peaks — 117 cells of cooled basalt where nothing grows and no one builds.*
 
 ## Notable features
 
@@ -164,43 +166,43 @@
 
 ### Cities
 
-- **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Grain, Livestock, Horses, Wine *(founded 100)*
-- **Stagrbust**, *the sea gate* (port, prosperous) — Livestock, Grain, Wine, Fish *(founded 122)*
-- **Deotelen**, *the sea market* (port, prosperous) — Livestock, Grain, Horses, Wine *(founded 144)*
-- **Deociamor**, *the sea gate* (port, modest) — Copper, Gold, Gems, Fish *(founded 166)*
+- **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Livestock, Grain, Horses, Wine *(founded 100)*
+- **Stagrbust**, *the sea gate* (port, trade hub, rich) — Grain, Horses, Livestock, Fish *(founded 122)*
+- **Deotelen**, *the sea market* (port, prosperous) — Livestock, Horses, Grain, Wine *(founded 144)*
 
 ### Towns
 
-- **Deodemor**, *the sea home* (port, trade hub, rich) — Grain, Livestock, Wine, Fish *(founded 188)*
-- **Stagragrull**, *the sea bridge* (port, prosperous) — Livestock, Grain, Horses, Wine *(founded 210)*
-- **Vonthu**, *the green fort* (port, prosperous) — Fish, Stone, Horses, Grain *(founded 232)*
-- **Khirmakh**, *the sea hall* (port, modest) — Livestock, Horses *(founded 254)*
-- **Khirkad**, *the sea haven* (port, modest) — Horses, Livestock *(founded 276)*
-- **Thaurndund**, *the grass haven* (rich) — Grain, Horses, Livestock, Timber *(founded 298)*
-- **Knyrkbust**, *the wild gate* (port, trade hub, rich) — Grain, Livestock, Fish, Iron *(founded 342)*
+- **Deodemor**, *the sea home* (port, trade hub, rich) — Grain, Livestock, Wine, Horses *(founded 188)*
+- **Vonthu**, *the green fort* (port, rich) — Livestock, Horses, Grain, Stone *(founded 232)*
+- **Khirmakh**, *the sea hall* (port, prosperous) — Livestock, Horses *(founded 254)*
+- **Khirkad**, *the sea haven* (port, prosperous) — Fish, Horses, Livestock *(founded 276)*
+- **Thaurndund**, *the grass haven* (prosperous) — Livestock, Grain, Wine, Horses *(founded 298)*
+- **Ghashashu**, *the river fort* (modest) — Livestock, Horses *(founded 320)*
+- **Knyrkbust**, *the wild gate* (port, prosperous) — Grain, Livestock, Horses, Iron *(founded 342)*
 
 ### Villages
 
-- **Pananelen**, *the field bridge* (modest) — Livestock, Grain, Stone *(founded 364)*
-- **Belladinte**, *the river spring* (port, prosperous) — Grain, Coal, Iron, Stone *(founded 386)*
-- **Hrafjan**, *the river field* (modest) — Livestock, Grain, Horses, Stone *(founded 430)*
-- **Vonba**, *the green spring* (port, prosperous) — Grain, Gold, Timber, Fish *(founded 452)*
-- **Stagrafjysk**, *the sea home* (port, prosperous) — Grain, Livestock, Horses *(founded 496)*
-- **Deonelen**, *the sea bridge* (port, modest) — Livestock, Horses, Grain, Wine *(founded 518)*
-- **Rairkai**, *the gold spring* (port, modest) — Livestock, Fish, Horses *(founded 562)*
+- **Pananelen**, *the field bridge* (prosperous) — Grain, Livestock, Wine, Stone *(founded 364)*
+- **Belladinte**, *the river spring* (port, prosperous) — Grain, Coal, Livestock, Iron *(founded 386)*
+- **Hrafjan**, *the river field* (prosperous) — Livestock, Grain, Wine, Horses *(founded 430)*
+- **Vonba**, *the green spring* (port, modest) — Grain, Livestock, Horses *(founded 452)*
+- **Stagrafjysk**, *the sea home* (port, prosperous) — Livestock, Grain *(founded 496)*
+- **Deonelen**, *the sea bridge* (port, prosperous) — Horses, Livestock, Fish, Grain *(founded 518)*
+- **Hrafjysk**, *the river home* (port, prosperous) — Livestock, Grain, Furs, Horses *(founded 540)*
+- **Rairkai**, *the gold spring* (port, modest) — Livestock, Spices, Fish, Horses *(founded 562)*
+- **Khirzaa**, *the sea bridge* (port, modest) — Livestock, Fish, Horses, Salt *(founded 584)*
 - **Ghashzaa**, *the river bridge* (modest) — Livestock, Stone *(founded 606)*
-- **Ghashakhukha**, *the river field* (modest) — Livestock, Horses *(founded 628)*
+- **Ghashakhukha**, *the river field* (modest) — Livestock, Fish, Horses *(founded 628)*
 
 ## Ruins
 
 *Settlements that did not survive to the present day.*
 
-- **Bellatomor** (village) — founded 408, stormed and left a ruin in 625
-- **Hrafjysk** (village) — founded 540, stormed and left a ruin in 625
-- **Ghashashu** (town) — founded 320, stormed and left a ruin in 675
-- **Ghashqe** (village) — founded 474, stormed and left a ruin in 800
-- **Khirzaa** (village) — founded 584, stormed and left a ruin in 875
-- **Storkba** (village) — founded 650, stormed and left a ruin in 1075
+- **Deociamor** (city) — founded 166, stormed and left a ruin in 275
+- **Ghashqe** (village) — founded 474, stormed and left a ruin in 725
+- **Bellatomor** (village) — founded 408, stormed and left a ruin in 825
+- **Storkba** (village) — founded 650, stormed and left a ruin in 825
+- **Stagragrull** (town) — founded 210, stormed and left a ruin in 1025
 
 ## Faiths
 
@@ -238,10 +240,10 @@ Followed across 2 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Livestock, Grain, Horses, Fish, Wine
+- **Major exports:** Livestock, Horses, Grain, Fish, Wine
 - **Wealthiest settlement:** Deoliria
-- **Trade hubs:** Deoliria, Deodemor, Knyrkbust
-- **Deposits:** Iron ×35, Copper ×26, Gold ×15, Gems ×9, Stone ×91, Coal ×33, Timber ×4, Grain ×45, Livestock ×142, Fish ×12, Furs ×13, Spices ×1, Salt ×32, Horses ×38, Wine ×19
+- **Trade hubs:** Deoliria, Stagrbust, Deodemor
+- **Deposits:** Iron ×35, Copper ×26, Gold ×15, Gems ×9, Stone ×91, Coal ×33, Timber ×4, Grain ×45, Livestock ×141, Fish ×12, Furs ×13, Spices ×1, Salt ×32, Horses ×38, Wine ×19
 
 ## Languages
 
@@ -288,28 +290,28 @@ Followed across 2 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 15 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 14 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Rauriana | 100 | 10 | 775 | 5 | diminished |
-| Thorkafjysk | 100 | 7 | 975 | 4 | diminished |
-| Mekaasi | 100 | 4 | 100 | 0 | extinct |
+| Thorkafjysk | 100 | 8 | 775 | 3 | diminished |
+| Rauriana | 100 | 6 | 300 | 5 | ascendant |
+| Mishaghen | 100 | 5 | 475 | 3 | diminished |
+| Mekaasi | 100 | 4 | 100 | 3 | diminished |
 | Storkno | 100 | 4 | 100 | 0 | extinct |
 | Tharnathon | 100 | 4 | 100 | 3 | diminished |
-| Mishaghen | 100 | 4 | 100 | 1 | diminished |
-| Rauriameonte | 100 | 3 | 450 | 3 | ascendant |
-| Storkno | 975 | 3 | 975 | 2 | diminished |
-| Kheqkaasi | 1025 | 3 | 1075 | 3 | ascendant |
+| Tariademor | 100 | 3 | 800 | 3 | ascendant |
 | Peoriademor | 100 | 2 | 100 | 1 | diminished |
-| Cauna | 375 | 2 | 375 | 0 | extinct |
-| Kheqshaa | 1050 | 2 | 1050 | 2 | ascendant |
+| Rauriameonte | 100 | 2 | 100 | 2 | ascendant |
+| Vynkno | 500 | 2 | 500 | 0 | extinct |
+| Tharnastall | 875 | 2 | 875 | 0 | extinct |
+| Storkdaurk | 950 | 2 | 950 | 0 | extinct |
+| Redente | 1025 | 2 | 1025 | 2 | ascendant |
 | Steirkno | 100 | 1 | 100 | 1 | ascendant |
-| Tariademor | 100 | 1 | 100 | 1 | ascendant |
 | Tharnakno | 100 | 1 | 100 | 1 | ascendant |
-| Brograstall | 1050 | 1 | 1050 | 1 | ascendant |
-| Juqe | 1050 | 1 | 1050 | 1 | ascendant |
-| Mantedente | 1075 | 1 | 1075 | 1 | ascendant |
+| Knauskaskei | 1075 | 1 | 1075 | 1 | ascendant |
+| Knauskno | 1075 | 1 | 1075 | 1 | ascendant |
+| Thorkastall | 1075 | 1 | 1075 | 1 | ascendant |
 
 ## Chronicle
 
@@ -334,127 +336,150 @@ Followed across 2 region(s).
 - **200 After Reckoning** — A plague swept Deobinte; many perished.
 - **225 After Reckoning** — Rauriana seized Fjeiskagra from Vynfjysk.
 - **225 After Reckoning** — The realm of Vynfjysk was extinguished.
-- **225 After Reckoning** — Mekaasi seized Deobinte from Peoriademor.
-- **250 After Reckoning** — Thorkafjysk seized Brabei from Storkno.
-- **250 After Reckoning** — Brabei rose against Thorkafjysk and declared the free realm of Tharnaskei.
-- **275 After Reckoning** — Thorkafjysk seized Brabei from Tharnaskei.
-- **275 After Reckoning** — The realm of Tharnaskei was extinguished.
-- **275 After Reckoning** — Brabei rose against Thorkafjysk and declared the free realm of Knauskno.
-- **300 After Reckoning** — Thorkafjysk seized Brabei from Knauskno.
-- **300 After Reckoning** — The realm of Knauskno was extinguished.
-- **300 After Reckoning** — Rauriana seized Stagrdaurk from Storkno.
-- **300 After Reckoning** — The realm of Storkno was extinguished.
-- **325 After Reckoning** — Mishaghen's invasion of Brathaurn was thrown back by Tharnakno.
-- **350 After Reckoning** — Rauriana's invasion of Deobinte was thrown back by Mekaasi.
-- **350 After Reckoning** — Stagrdaurk rose against Rauriana and declared the free realm of Knauskafjysk.
-- **350 After Reckoning** — A long drought gripped Thaurnastausk; many perished.
-- **375 After Reckoning** — Thorkafjysk seized Stagrdaurk from Knauskafjysk.
-- **375 After Reckoning** — The realm of Knauskafjysk was extinguished.
-- **375 After Reckoning** — Beossobinte and 1 neighbouring province(s) broke away from Thorkafjysk to found the realm of Cauna.
-- **375 After Reckoning** — A long drought gripped Deopana; many perished.
-- **400 After Reckoning** — Thorkafjysk's invasion of Brabrein was thrown back by Cauna.
-- **400 After Reckoning** — Stagrdaurk rose against Thorkafjysk and declared the free realm of Fjeiskaskei.
-- **425 After Reckoning** — Rauriana seized Stagrdaurk from Fjeiskaskei.
-- **425 After Reckoning** — The realm of Fjeiskaskei was extinguished.
-- **425 After Reckoning** — Stagrdaurk rose against Rauriana and declared the free realm of Storkathon.
-- **425 After Reckoning** — Knyrkabrein broke away from Tharnathon to found the realm of Vynskei.
-- **450 After Reckoning** — Rauriameonte seized Knyrkabrein from Vynskei.
-- **450 After Reckoning** — The realm of Vynskei was extinguished.
-- **475 After Reckoning** — Thorkafjysk seized Stagrdaurk from Storkathon.
-- **475 After Reckoning** — The realm of Storkathon was extinguished.
-- **475 After Reckoning** — Mekaasi's invasion of Khirshaa was thrown back by Jaghen.
-- **475 After Reckoning** — A golden age dawned over Mishaghen; its cities flourished as never before.
-- **500 After Reckoning** — Thorkafjysk seized Brabrein from Cauna.
-- **500 After Reckoning** — Knyrkabrein rose against Rauriameonte and declared the free realm of Steirkathon.
-- **525 After Reckoning** — Tharnathon seized Knyrkabrein from Steirkathon.
-- **525 After Reckoning** — The realm of Steirkathon was extinguished.
-- **525 After Reckoning** — Thorkafjysk's invasion of Beossobinte was thrown back by Cauna.
-- **525 After Reckoning** — Knyrkabrein rose against Tharnathon and declared the free realm of Vynskei.
-- **525 After Reckoning** — Stagrdaurk broke away from Thorkafjysk to found the realm of Storkno.
-- **525 After Reckoning** — A long drought gripped Khirkai; many perished.
-- **550 After Reckoning** — Tharnathon seized Knyrkabrein from Vynskei.
-- **550 After Reckoning** — The realm of Vynskei was extinguished.
-- **550 After Reckoning** — Rauriana seized Stagrdaurk from Storkno.
-- **550 After Reckoning** — The realm of Storkno was extinguished.
-- **550 After Reckoning** — Knyrkabrein rose against Tharnathon and declared the free realm of Fjeiskno.
-- **550 After Reckoning** — Deobinte broke away from Mekaasi to found the realm of Tariademor.
-- **550 After Reckoning** — A golden age dawned over Tharnathon; its cities flourished as never before.
-- **575 After Reckoning** — Tharnathon seized Knyrkabrein from Fjeiskno.
-- **575 After Reckoning** — The realm of Fjeiskno was extinguished.
-- **575 After Reckoning** — Thorkafjysk seized Beossobinte from Cauna.
-- **575 After Reckoning** — The realm of Cauna was extinguished.
-- **575 After Reckoning** — Knyrkabrein rose against Tharnathon and declared the free realm of Steirkaskei.
-- **600 After Reckoning** — Tharnathon's invasion of Knyrkabrein was thrown back by Steirkaskei.
-- **600 After Reckoning** — A plague swept Deoriando; many perished.
-- **625 After Reckoning** — Hrafjysk was stormed and left a ruin.
-- **625 After Reckoning** — Rauriameonte seized Knyrkabrein from Steirkaskei.
-- **625 After Reckoning** — The realm of Steirkaskei was extinguished.
-- **625 After Reckoning** — Bellatomor was stormed and left a ruin.
-- **625 After Reckoning** — Rauriana seized Deobinte from Tariademor.
-- **625 After Reckoning** — The realm of Tariademor was extinguished.
-- **625 After Reckoning** — Beossobinte broke away from Thorkafjysk to found the realm of Caucaria.
-- **625 After Reckoning** — Fjeiskagra turned from the Faith of Vatenavomor to the Way of Vaghimzizam.
-- **650 After Reckoning** — Thorkafjysk's invasion of Beossobinte was thrown back by Caucaria.
-- **675 After Reckoning** — Ghashashu was stormed and left a ruin.
-- **675 After Reckoning** — Rauriana seized Rairkhash from Mekaasi.
-- **675 After Reckoning** — Mishaghen's invasion of Beossobinte was thrown back by Caucaria.
-- **700 After Reckoning** — Thorkafjysk seized Beossobinte from Caucaria.
-- **700 After Reckoning** — The realm of Caucaria was extinguished.
-- **700 After Reckoning** — Beossobinte rose against Thorkafjysk and declared the free realm of Redente.
-- **700 After Reckoning** — A long drought gripped Rairkhash; many perished.
-- **725 After Reckoning** — Thorkafjysk seized Beossobinte from Redente.
-- **725 After Reckoning** — The realm of Redente was extinguished.
-- **750 After Reckoning** — Rauriana seized Mairzash from Mekaasi.
-- **750 After Reckoning** — A long drought gripped Rairghen; many perished.
-- **775 After Reckoning** — Rauriana seized Khirkhukha from Mekaasi.
-- **775 After Reckoning** — The realm of Mekaasi was extinguished.
-- **775 After Reckoning** — Thorkafjysk's invasion of Rairghen was thrown back by Mishaghen.
-- **800 After Reckoning** — Ghashqe was stormed and left a ruin.
-- **800 After Reckoning** — Rauriana seized Khirshaa from Jaghen.
-- **800 After Reckoning** — The realm of Jaghen was extinguished.
-- **800 After Reckoning** — Khirkhukha rose against Rauriana and declared the free realm of Kaartaitan.
-- **800 After Reckoning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
-- **825 After Reckoning** — Rauriana's invasion of Khirkhukha was thrown back by Kaartaitan.
-- **825 After Reckoning** — Thorkafjysk's invasion of Rairghen was thrown back by Mishaghen.
-- **850 After Reckoning** — Tharnathon's invasion of Knyrkabrein was thrown back by Rauriameonte.
-- **850 After Reckoning** — Mishaghen's invasion of Brathaurn was thrown back by Tharnakno.
-- **850 After Reckoning** — Khirshaa rose against Rauriana and declared the free realm of Kaarkaasi.
-- **875 After Reckoning** — Khirzaa was stormed and left a ruin.
-- **875 After Reckoning** — Rauriana seized Khirkhukha from Kaartaitan.
-- **875 After Reckoning** — The realm of Kaartaitan was extinguished.
-- **875 After Reckoning** — Thorkafjysk seized Rairghen from Mishaghen.
-- **900 After Reckoning** — Thorkafjysk's invasion of Brabry was thrown back by Mishaghen.
-- **925 After Reckoning** — Rauriana seized Khirshaa from Kaarkaasi.
-- **925 After Reckoning** — The realm of Kaarkaasi was extinguished.
-- **925 After Reckoning** — Rairghen rose against Thorkafjysk and declared the free realm of Jushaa.
-- **925 After Reckoning** — Khirshaa rose against Rauriana and declared the free realm of Mishaghen.
-- **950 After Reckoning** — Thorkafjysk seized Rairghen from Jushaa.
-- **950 After Reckoning** — The realm of Jushaa was extinguished.
-- **950 After Reckoning** — Rauriana's invasion of Khirshaa was thrown back by Mishaghen.
-- **950 After Reckoning** — A long drought gripped Brabei; many perished.
-- **975 After Reckoning** — Thorkafjysk seized Brabry from Mishaghen.
-- **975 After Reckoning** — Brakno and 2 neighbouring province(s) broke away from Rauriana to found the realm of Storkno.
-- **975 After Reckoning** — A long drought gripped Brabei; many perished.
-- **1000 After Reckoning** — Rauriana seized Khirshaa from Mishaghen.
-- **1000 After Reckoning** — The realm of Mishaghen was extinguished.
-- **1000 After Reckoning** — Thorkafjysk seized Khirkhidku from Mishaghen.
-- **1000 After Reckoning** — Khirkhidku rose against Thorkafjysk and declared the free realm of Jataitan.
-- **1025 After Reckoning** — Thorkafjysk seized Khirkhidku from Jataitan.
-- **1025 After Reckoning** — The realm of Jataitan was extinguished.
-- **1025 After Reckoning** — Rauriana seized Brakno from Storkno.
-- **1025 After Reckoning** — Brabry rose against Thorkafjysk and declared the free realm of Vynkno.
-- **1025 After Reckoning** — Khirshaa rose against Rauriana and declared the free realm of Kaarmaad.
-- **1025 After Reckoning** — Khirkhidku and 1 neighbouring province(s) broke away from Thorkafjysk to found the realm of Kheqkaasi.
-- **1050 After Reckoning** — Thorkafjysk's invasion of Brabry was thrown back by Vynkno.
-- **1050 After Reckoning** — Rauriana seized Khirshaa from Kaarmaad.
-- **1050 After Reckoning** — The realm of Kaarmaad was extinguished.
+- **225 After Reckoning** — Thorkafjysk seized Brabei from Storkno.
+- **225 After Reckoning** — Fjeiskagra rose against Rauriana and declared the free realm of Tharnakno.
+- **250 After Reckoning** — Rauriana seized Fjeiskagra from Tharnakno.
+- **250 After Reckoning** — The realm of Tharnakno was extinguished.
+- **250 After Reckoning** — Thorkafjysk seized Stagrdaurk from Storkno.
+- **250 After Reckoning** — The realm of Storkno was extinguished.
+- **250 After Reckoning** — Brabrein rose against Thorkafjysk and declared the free realm of Vynfjysk.
+- **275 After Reckoning** — Thorkafjysk seized Brabrein from Vynfjysk.
+- **275 After Reckoning** — The realm of Vynfjysk was extinguished.
+- **275 After Reckoning** — Deociamor was stormed and left a ruin.
+- **275 After Reckoning** — Mekaasi seized Deobinte from Peoriademor.
+- **300 After Reckoning** — Rauriana seized Brafjan from Tharnathon.
+- **325 After Reckoning** — Mishaghen's invasion of Panalaria was thrown back by Rauriameonte.
+- **325 After Reckoning** — Brafjan rose against Rauriana and declared the free realm of Vynskei.
+- **350 After Reckoning** — Tharnathon seized Brafjan from Vynskei.
+- **350 After Reckoning** — The realm of Vynskei was extinguished.
+- **350 After Reckoning** — A golden age dawned over Rauriana; its cities flourished as never before.
+- **375 After Reckoning** — Rauriana seized Brafjan from Tharnathon.
+- **375 After Reckoning** — Brafjan rose against Rauriana and declared the free realm of Storkdaurk.
+- **400 After Reckoning** — Rauriana's invasion of Brafjan was thrown back by Storkdaurk.
+- **400 After Reckoning** — Deobinte broke away from Mekaasi to found the realm of Mantecaria.
+- **400 After Reckoning** — Brakno broke away from Rauriana to found the realm of Fjeiskdaurk.
+- **400 After Reckoning** — A long drought gripped Deobinte; many perished.
+- **425 After Reckoning** — Mishaghen seized Brafjan from Storkdaurk.
+- **425 After Reckoning** — The realm of Storkdaurk was extinguished.
+- **425 After Reckoning** — Brafjan rose against Mishaghen and declared the free realm of Fjeiskastall.
+- **425 After Reckoning** — Thaurnastausk broke away from Rauriana to found the realm of Brograskei.
+- **450 After Reckoning** — Rauriana's invasion of Brafjan was thrown back by Fjeiskastall.
+- **475 After Reckoning** — Mishaghen seized Brafjan from Fjeiskastall.
+- **475 After Reckoning** — The realm of Fjeiskastall was extinguished.
+- **475 After Reckoning** — Thorkafjysk seized Brakno from Fjeiskdaurk.
+- **475 After Reckoning** — The realm of Fjeiskdaurk was extinguished.
+- **475 After Reckoning** — A long drought gripped Khirshaa; many perished.
+- **500 After Reckoning** — Rauriana seized Thaurnastausk from Brograskei.
+- **500 After Reckoning** — The realm of Brograskei was extinguished.
+- **500 After Reckoning** — Brafjan broke away from Mishaghen to found the realm of Brografjysk.
+- **500 After Reckoning** — Brakno and 1 neighbouring province(s) broke away from Thorkafjysk to found the realm of Vynkno.
+- **525 After Reckoning** — Rauriana's invasion of Brafjan was thrown back by Brografjysk.
+- **525 After Reckoning** — Mekaasi seized Deobinte from Mantecaria.
+- **525 After Reckoning** — The realm of Mantecaria was extinguished.
+- **550 After Reckoning** — Mishaghen seized Brafjan from Brografjysk.
+- **550 After Reckoning** — The realm of Brografjysk was extinguished.
+- **550 After Reckoning** — Thaurnastausk rose against Rauriana and declared the free realm of Fjeiskno.
+- **550 After Reckoning** — Beossobinte broke away from Thorkafjysk to found the realm of Caumeonte.
+- **575 After Reckoning** — Thorkafjysk seized Beossobinte from Caumeonte.
+- **575 After Reckoning** — The realm of Caumeonte was extinguished.
+- **575 After Reckoning** — Rauriana seized Brakno from Vynkno.
+- **575 After Reckoning** — Brakno rose against Rauriana and declared the free realm of Tharnathon.
+- **575 After Reckoning** — Deobinte rose against Mekaasi and declared the free realm of Lossona.
+- **575 After Reckoning** — A plague swept Syaeenmelen; many perished.
+- **575 After Reckoning** — A golden age dawned over Tharnathon; its cities flourished as never before.
+- **600 After Reckoning** — Rauriana seized Brakno from Tharnathon.
+- **600 After Reckoning** — The realm of Tharnathon was extinguished.
+- **600 After Reckoning** — Thorkafjysk seized Stagrdaurk from Vynkno.
+- **600 After Reckoning** — The realm of Vynkno was extinguished.
+- **600 After Reckoning** — Brakno rose against Rauriana and declared the free realm of Fjeiskaskei.
+- **600 After Reckoning** — Stagrdaurk rose against Thorkafjysk and declared the free realm of Thorkastall.
+- **600 After Reckoning** — Brafjan broke away from Mishaghen to found the realm of Fjeiskafjysk.
+- **625 After Reckoning** — Rauriana seized Brafjan from Fjeiskafjysk.
+- **625 After Reckoning** — The realm of Fjeiskafjysk was extinguished.
+- **625 After Reckoning** — Thorkafjysk seized Brakno from Fjeiskaskei.
+- **625 After Reckoning** — The realm of Fjeiskaskei was extinguished.
+- **625 After Reckoning** — Brafjan rose against Rauriana and declared the free realm of Storkno.
+- **625 After Reckoning** — A plague swept Brakno; many perished.
+- **625 After Reckoning** — A golden age dawned over Mekaasi; its cities flourished as never before.
+- **650 After Reckoning** — Rauriana's invasion of Brafjan was thrown back by Storkno.
+- **675 After Reckoning** — Mishaghen's invasion of Brafjan was thrown back by Storkno.
+- **675 After Reckoning** — A plague swept Khirkai; many perished.
+- **700 After Reckoning** — Rauriana seized Brafjan from Storkno.
+- **700 After Reckoning** — The realm of Storkno was extinguished.
+- **700 After Reckoning** — Thorkafjysk seized Stagrdaurk from Thorkastall.
+- **700 After Reckoning** — The realm of Thorkastall was extinguished.
+- **700 After Reckoning** — Stagrdaurk rose against Thorkafjysk and declared the free realm of Steirkdaurk.
+- **700 After Reckoning** — A long drought gripped Knyrkabrein; many perished.
+- **725 After Reckoning** — Thorkafjysk seized Stagrdaurk from Steirkdaurk.
+- **725 After Reckoning** — The realm of Steirkdaurk was extinguished.
+- **725 After Reckoning** — Ghashqe was stormed and left a ruin.
+- **725 After Reckoning** — Tariademor seized Khirshaa from Jaghen.
+- **725 After Reckoning** — The realm of Jaghen was extinguished.
+- **725 After Reckoning** — Brabry broke away from Mishaghen to found the realm of Thorkdaurk.
+- **725 After Reckoning** — A long drought gripped Mairzash; many perished.
+- **750 After Reckoning** — Thorkafjysk seized Brabry from Thorkdaurk.
+- **750 After Reckoning** — The realm of Thorkdaurk was extinguished.
+- **750 After Reckoning** — Stagrdaurk rose against Thorkafjysk and declared the free realm of Vynstall.
+- **750 After Reckoning** — Brafjan rose against Rauriana and declared the free realm of Fjeiskdaurk.
+- **750 After Reckoning** — A plague swept Deobinte; many perished.
+- **775 After Reckoning** — Rauriana seized Brafjan from Fjeiskdaurk.
+- **775 After Reckoning** — The realm of Fjeiskdaurk was extinguished.
+- **775 After Reckoning** — Thorkafjysk seized Stagrdaurk from Vynstall.
+- **775 After Reckoning** — The realm of Vynstall was extinguished.
+- **800 After Reckoning** — Rauriana's invasion of Deobinte was thrown back by Lossona.
+- **800 After Reckoning** — Tariademor seized Brasturn from Tharnathon.
+- **800 After Reckoning** — Brabry rose against Thorkafjysk and declared the free realm of Thorkdaurk.
+- **825 After Reckoning** — Storkba was stormed and left a ruin.
+- **825 After Reckoning** — Thorkafjysk seized Brabry from Thorkdaurk.
+- **825 After Reckoning** — The realm of Thorkdaurk was extinguished.
+- **825 After Reckoning** — Bellatomor was stormed and left a ruin.
+- **825 After Reckoning** — Mekaasi seized Deobinte from Lossona.
+- **825 After Reckoning** — The realm of Lossona was extinguished.
+- **825 After Reckoning** — Brafjan rose against Rauriana and declared the free realm of Knauskastall.
+- **850 After Reckoning** — Tariademor seized Brafjan from Knauskastall.
+- **850 After Reckoning** — The realm of Knauskastall was extinguished.
+- **850 After Reckoning** — Rauriana seized Thaurnastausk from Fjeiskno.
+- **850 After Reckoning** — The realm of Fjeiskno was extinguished.
+- **850 After Reckoning** — Brasturn rose against Tariademor and declared the free realm of Tharnaskei.
+- **850 After Reckoning** — Brabry rose against Thorkafjysk and declared the free realm of Knauskdaurk.
+- **850 After Reckoning** — Deobinte rose against Mekaasi and declared the free realm of Caucaria.
+- **875 After Reckoning** — Rauriana seized Brabry from Knauskdaurk.
+- **875 After Reckoning** — The realm of Knauskdaurk was extinguished.
+- **875 After Reckoning** — Tharnathon seized Brasturn from Tharnaskei.
+- **875 After Reckoning** — The realm of Tharnaskei was extinguished.
+- **875 After Reckoning** — Brakno and 1 neighbouring province(s) broke away from Thorkafjysk to found the realm of Tharnastall.
+- **900 After Reckoning** — Rauriana seized Deobinte from Caucaria.
+- **900 After Reckoning** — The realm of Caucaria was extinguished.
+- **900 After Reckoning** — Thorkafjysk seized Stagrdaurk from Tharnastall.
+- **900 After Reckoning** — Thaurnastausk broke away from Rauriana to found the realm of Thorkafjysk.
+- **900 After Reckoning** — A golden age dawned over Thorkafjysk; its cities flourished as never before.
+- **925 After Reckoning** — Thorkafjysk seized Brakno from Tharnastall.
+- **925 After Reckoning** — The realm of Tharnastall was extinguished.
+- **925 After Reckoning** — Deobinte rose against Rauriana and declared the free realm of Rauriadente.
+- **925 After Reckoning** — A long drought gripped Khirkhukha; many perished.
+- **950 After Reckoning** — Rauriana seized Deobinte from Rauriadente.
+- **950 After Reckoning** — The realm of Rauriadente was extinguished.
+- **950 After Reckoning** — Brakno and 1 neighbouring province(s) broke away from Thorkafjysk to found the realm of Storkdaurk.
+- **975 After Reckoning** — Rauriana seized Thaurnastausk from Thorkafjysk.
+- **975 After Reckoning** — The realm of Thorkafjysk was extinguished.
+- **975 After Reckoning** — Thaurnastausk rose against Rauriana and declared the free realm of Fjeiskdaurk.
+- **1000 After Reckoning** — Rauriana seized Brakno from Storkdaurk.
+- **1000 After Reckoning** — Brakno rose against Rauriana and declared the free realm of Thorkno.
+- **1025 After Reckoning** — Rauriana seized Brakno from Thorkno.
+- **1025 After Reckoning** — The realm of Thorkno was extinguished.
+- **1025 After Reckoning** — Stagragrull was stormed and left a ruin.
+- **1025 After Reckoning** — Thorkafjysk seized Stagrdaurk from Storkdaurk.
+- **1025 After Reckoning** — The realm of Storkdaurk was extinguished.
+- **1025 After Reckoning** — Beossobinte and 1 neighbouring province(s) broke away from Thorkafjysk to found the realm of Redente.
+- **1025 After Reckoning** — A long drought gripped Thaurnastausk; many perished.
+- **1050 After Reckoning** — Rauriana seized Thaurnastausk from Fjeiskdaurk.
+- **1050 After Reckoning** — The realm of Fjeiskdaurk was extinguished.
 - **1050 After Reckoning** — Brakno rose against Rauriana and declared the free realm of Brograstall.
-- **1050 After Reckoning** — Khirshaa rose against Rauriana and declared the free realm of Juqe.
-- **1050 After Reckoning** — Rarerkhidku and 1 neighbouring province(s) broke away from Rauriana to found the realm of Kheqshaa.
-- **1075 After Reckoning** — Storkba was stormed and left a ruin.
-- **1075 After Reckoning** — Kheqkaasi seized Brabry from Vynkno.
-- **1075 After Reckoning** — The realm of Vynkno was extinguished.
-- **1075 After Reckoning** — Beossobinte broke away from Thorkafjysk to found the realm of Mantedente.
+- **1075 After Reckoning** — Rauriana seized Brakno from Brograstall.
+- **1075 After Reckoning** — The realm of Brograstall was extinguished.
+- **1075 After Reckoning** — Brakno rose against Rauriana and declared the free realm of Knauskaskei.
+- **1075 After Reckoning** — Stagrdaurk rose against Thorkafjysk and declared the free realm of Knauskno.
+- **1075 After Reckoning** — Thaurnastausk broke away from Rauriana to found the realm of Thorkastall.
 
 ## Heightmap
 

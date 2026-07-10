@@ -73,7 +73,7 @@ test("golden fingerprints for the canonical world are stable", () => {
   const w = generateWorld({ seed: "cartogenesis", width: 256, height: 256 });
   assert.equal(w.meta.contentHash, "36d228224ba163d1", "quantized terrain hash");
   assert.equal(w.meta.exactHash, "3ea66d768a5354c0", "exact terrain hash");
-  assert.equal(w.meta.simulationHash, "0e8a9c67aa002aa6", "simulation fingerprint");
+  assert.equal(w.meta.simulationHash, "ca00538568c389c4", "simulation fingerprint");
 });
 
 test("the exact hash sees a one-ulp change that the quantized hash misses", () => {

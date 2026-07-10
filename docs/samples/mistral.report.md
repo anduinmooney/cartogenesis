@@ -6,10 +6,10 @@
 
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 47.8% land, 52.2% ocean, 9 lake(s)
-- **Climate & life:** dominant biome **Grassland**, 16 biomes in all
+- **Climate & life:** dominant biome **Grassland**, 17 biomes in all
 - **Peoples:** 32 regions, 19 settlements, 3 realms
 - **Capital:** Deoliria, seat of House Belentaria
-- **Dominant power:** Redente (of 8 surviving realm(s))
+- **Dominant power:** Vyndaurk (of 7 surviving realm(s))
 - **The present year:** 1100 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 7 (2 active)
 
@@ -22,6 +22,8 @@
 - **Mount Vynbry** — *the old stone* — stratovolcano, extinct, summit 4,026 m, **caldera** cradling a crater lake
 - **Mount Vollasturn** — *the storm cliff* — cinder cone, dormant, summit 3,948 m
 - **Mount Vuhrei** — *the ash hill* — cinder cone, extinct, summit 2,346 m
+
+*Fresh lava fields streak the flanks of the living peaks — 34 cells of cooled basalt where nothing grows and no one builds.*
 
 ## Notable features
 
@@ -151,31 +153,36 @@
 
 ### Cities
 
-- **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Grain, Livestock, Horses, Wine *(founded 100)*
-- **Stagrahro**, *the sea hall* (port, prosperous) — Livestock, Grain, Timber, Horses *(founded 131)*
-- **Deotomor**, *the sea fort* (port, prosperous) — Grain, Livestock, Fish, Horses *(founded 161)*
+- **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Grain, Livestock, Wine, Horses *(founded 100)*
+- **Stagrahro**, *the sea hall* (port, prosperous) — Grain, Livestock, Wine, Horses *(founded 131)*
+- **Deotomor**, *the sea fort* (port, rich) — Livestock, Grain, Wine, Horses *(founded 161)*
 
 ### Towns
 
-- **Stagragrull**, *the sea bridge* (port, trade hub, prosperous) — Grain, Horses, Livestock *(founded 192)*
-- **Deonelen**, *the sea bridge* (port, modest) — Livestock, Grain, Horses, Wine *(founded 222)*
-- **Stagrafjysk**, *the sea home* (port, prosperous) — Livestock, Grain, Horses, Fish *(founded 253)*
-- **Niantenelen**, *the green bridge* (port, prosperous) — Livestock, Horses, Grain, Timber *(founded 283)*
-- **Shinghekh**, *the wild gate* (port, modest) — Livestock, Grain, Wine, Horses *(founded 314)*
-- **Ghashriz**, *the river market* (modest) — Livestock, Fish, Horses *(founded 344)*
+- **Stagragrull**, *the sea bridge* (port, trade hub, rich) — Livestock, Grain, Horses, Fish *(founded 192)*
+- **Deonelen**, *the sea bridge* (port, rich) — Grain, Livestock, Horses, Wine *(founded 222)*
+- **Stagrafjysk**, *the sea home* (port, prosperous) — Grain, Wine, Horses, Livestock *(founded 253)*
+- **Niantenelen**, *the green bridge* (port, prosperous) — Horses, Livestock, Timber *(founded 283)*
+- **Shinghekh**, *the wild gate* (port, prosperous) — Horses, Livestock, Grain *(founded 314)*
 
 ### Villages
 
-- **Bellademor**, *the river home* (prosperous) — Livestock, Wine, Grain, Horses *(founded 375)*
-- **Panadinte**, *the field spring* (port, modest) — Fish, Grain, Livestock *(founded 406)*
-- **Ghashakhukha**, *the river field* (prosperous) — Grain, Horses, Livestock, Timber *(founded 436)*
-- **Knyrkagrull**, *the wild bridge* (port, prosperous) — Grain, Livestock, Horses, Wine *(founded 467)*
-- **Stagrafjan**, *the sea field* (port, modest) — Grain, Horses, Livestock *(founded 497)*
-- **Ghashqe**, *the river home* (modest) — Livestock, Grain *(founded 528)*
-- **Bellanelen**, *the river bridge* (trade hub, prosperous) — Wine, Livestock, Grain, Stone *(founded 558)*
-- **Stagrathu**, *the sea fort* (port, modest) — Grain, Livestock, Horses, Wine *(founded 589)*
-- **Thaurnagrull**, *the grass bridge* (port, modest) — Livestock, Horses *(founded 619)*
-- **Khirkhukha**, *the sea field* (port, modest) — Livestock, Horses *(founded 650)*
+- **Bellademor**, *the river home* (rich) — Grain, Livestock, Horses, Stone *(founded 375)*
+- **Panadinte**, *the field spring* (port, prosperous) — Timber, Grain, Livestock, Wine *(founded 406)*
+- **Ghashakhukha**, *the river field* (prosperous) — Livestock, Wine, Timber, Grain *(founded 436)*
+- **Knyrkagrull**, *the wild bridge* (port, rich) — Livestock, Grain, Horses, Fish *(founded 467)*
+- **Stagrafjan**, *the sea field* (port, modest) — Grain, Fish, Livestock *(founded 497)*
+- **Ghashqe**, *the river home* (prosperous) — Grain, Livestock, Horses, Wine *(founded 528)*
+- **Bellanelen**, *the river bridge* (trade hub, rich) — Grain, Livestock, Stone, Coal *(founded 558)*
+- **Stagrathu**, *the sea fort* (port, prosperous) — Livestock, Grain, Horses *(founded 589)*
+- **Thaurnagrull**, *the grass bridge* (port, prosperous) — Grain, Horses, Livestock *(founded 619)*
+- **Khirkhukha**, *the sea field* (port, prosperous) — Livestock, Horses *(founded 650)*
+
+## Ruins
+
+*Settlements that did not survive to the present day.*
+
+- **Ghashriz** (town) — founded 344, stormed and left a ruin in 1000
 
 ## Faiths
 
@@ -213,8 +220,8 @@ Followed across 3 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Livestock, Grain, Horses, Wine, Fish
-- **Wealthiest settlement:** Deoliria
+- **Major exports:** Livestock, Grain, Horses, Wine, Timber
+- **Wealthiest settlement:** Bellanelen
 - **Trade hubs:** Deoliria, Stagragrull, Bellanelen
 - **Deposits:** Iron ×30, Copper ×21, Gold ×10, Gems ×6, Stone ×60, Coal ×21, Timber ×4, Grain ×45, Livestock ×127, Fish ×13, Furs ×4, Spices ×1, Salt ×11, Horses ×38, Wine ×23
 
@@ -261,145 +268,144 @@ Followed across 3 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 8 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 7 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Redente | 100 | 11 | 950 | 10 | ascendant |
-| Vyndaurk | 100 | 9 | 400 | 6 | diminished |
-| Tharnastall | 100 | 6 | 1000 | 6 | ascendant |
-| Remeonte | 100 | 5 | 400 | 3 | diminished |
+| Vyndaurk | 100 | 10 | 250 | 9 | ascendant |
+| Redente | 100 | 9 | 1050 | 6 | diminished |
+| Remeonte | 100 | 7 | 700 | 4 | diminished |
+| Tharnastall | 100 | 7 | 900 | 6 | ascendant |
 | Mishmaad | 100 | 5 | 100 | 3 | diminished |
 | Tenadente | 100 | 3 | 100 | 1 | diminished |
 | Rairghen | 100 | 3 | 100 | 0 | extinct |
-| Vynkno | 200 | 3 | 200 | 0 | extinct |
-| Fjeiskdaurk | 475 | 3 | 475 | 0 | extinct |
-| Knauskastall | 800 | 3 | 800 | 0 | extinct |
-| Vynskei | 925 | 3 | 925 | 0 | extinct |
-| Steirkastall | 125 | 2 | 125 | 0 | extinct |
-| Kheqshaa | 375 | 2 | 375 | 0 | extinct |
-| Vyndaurk | 1075 | 2 | 1075 | 2 | ascendant |
-| Tharnaskei | 1075 | 1 | 1075 | 1 | ascendant |
+| Brograskei | 550 | 3 | 550 | 0 | extinct |
+| Storkno | 1075 | 3 | 1075 | 3 | ascendant |
+| Kheqe | 125 | 2 | 125 | 0 | extinct |
 
 ## Chronicle
 
-- **100 After Reckoning** — Tharnastall's invasion of Stagrabry was thrown back by Thorkno.
 - **100 After Reckoning** — Redente seized Khirkhukha from Tenadente.
+- **100 After Reckoning** — Tharnastall seized Stagrabry from Thorkno.
+- **100 After Reckoning** — The realm of Thorkno was extinguished.
 - **125 After Reckoning** — Redente seized Mairkhukha from Rairghen.
-- **125 After Reckoning** — Vyndaurk seized Bradaurk from Rairghen.
-- **125 After Reckoning** — Bradaurk rose against Vyndaurk and declared the free realm of Vynfjysk.
-- **125 After Reckoning** — Brasturn and 1 neighbouring province(s) broke away from Vyndaurk to found the realm of Steirkastall.
-- **150 After Reckoning** — Vyndaurk seized Bradaurk from Vynfjysk.
-- **150 After Reckoning** — The realm of Vynfjysk was extinguished.
-- **150 After Reckoning** — Redente seized Brasturn from Steirkastall.
-- **175 After Reckoning** — Vyndaurk seized Brabry from Steirkastall.
-- **175 After Reckoning** — The realm of Steirkastall was extinguished.
-- **175 After Reckoning** — Tharnastall seized Stagrabry from Thorkno.
-- **175 After Reckoning** — The realm of Thorkno was extinguished.
-- **200 After Reckoning** — Redente seized Midshaa from Tenadente.
-- **200 After Reckoning** — Tharnastall seized Khirkhidku from Rairghen.
-- **200 After Reckoning** — The realm of Rairghen was extinguished.
-- **200 After Reckoning** — Brasturn and 2 neighbouring province(s) broke away from Redente to found the realm of Vynkno.
-- **225 After Reckoning** — Remeonte seized Deodoria from Tenadente.
-- **225 After Reckoning** — A golden age dawned over Redente; its cities flourished as never before.
-- **250 After Reckoning** — Vyndaurk's invasion of Khirzujikh was thrown back by Mishmaad.
-- **250 After Reckoning** — Redente's invasion of Peonapo was thrown back by Vynkno.
-- **275 After Reckoning** — Remeonte's invasion of Midshaa was thrown back by Redente.
-- **300 After Reckoning** — Vyndaurk's invasion of Khirzujikh was thrown back by Mishmaad.
-- **300 After Reckoning** — A long drought gripped Khirkhajez; many perished.
-- **325 After Reckoning** — Redente's invasion of Peonapo was thrown back by Vynkno.
-- **325 After Reckoning** — Remeonte's invasion of Midshaa was thrown back by Redente.
-- **325 After Reckoning** — A plague swept Midrarer; many perished.
-- **325 After Reckoning** — A golden age dawned over Mishmaad; its cities flourished as never before.
-- **350 After Reckoning** — Vyndaurk's invasion of Khirzujikh was thrown back by Mishmaad.
-- **350 After Reckoning** — A golden age dawned over Tharnastall; its cities flourished as never before.
-- **375 After Reckoning** — Redente seized Peonapo from Vynkno.
-- **375 After Reckoning** — Mairkhukha and 1 neighbouring province(s) broke away from Redente to found the realm of Kheqshaa.
-- **400 After Reckoning** — Vyndaurk seized Brasturn from Vynkno.
-- **400 After Reckoning** — Remeonte seized Mairkhukha from Kheqshaa.
-- **425 After Reckoning** — Redente seized Grastausk from Vynkno.
-- **425 After Reckoning** — The realm of Vynkno was extinguished.
-- **425 After Reckoning** — Brasturn rose against Vyndaurk and declared the free realm of Steirkathon.
-- **425 After Reckoning** — A plague swept Stagrabry; many perished.
-- **425 After Reckoning** — A golden age dawned over Mishmaad; its cities flourished as never before.
-- **450 After Reckoning** — Vyndaurk seized Brasturn from Steirkathon.
-- **450 After Reckoning** — The realm of Steirkathon was extinguished.
-- **450 After Reckoning** — Redente's invasion of Beossoda was thrown back by Kheqshaa.
-- **450 After Reckoning** — A golden age dawned over Remeonte; its cities flourished as never before.
-- **475 After Reckoning** — Vyndaurk's invasion of Khirzujikh was thrown back by Mishmaad.
-- **475 After Reckoning** — Brasturn and 2 neighbouring province(s) broke away from Vyndaurk to found the realm of Fjeiskdaurk.
-- **500 After Reckoning** — Redente seized Brasturn from Fjeiskdaurk.
-- **500 After Reckoning** — Kheqshaa seized Qushaa from Fjeiskdaurk.
-- **525 After Reckoning** — Vyndaurk seized Brabry from Fjeiskdaurk.
-- **525 After Reckoning** — The realm of Fjeiskdaurk was extinguished.
-- **525 After Reckoning** — Redente's invasion of Qushaa was thrown back by Kheqshaa.
-- **550 After Reckoning** — Vyndaurk seized Khirzujikh from Mishmaad.
-- **550 After Reckoning** — Brasturn rose against Redente and declared the free realm of Tharnafjysk.
-- **550 After Reckoning** — A plague swept Deoveolla; many perished.
-- **550 After Reckoning** — A golden age dawned over Tharnastall; its cities flourished as never before.
-- **575 After Reckoning** — Vyndaurk seized Brasturn from Tharnafjysk.
-- **575 After Reckoning** — The realm of Tharnafjysk was extinguished.
-- **575 After Reckoning** — Brasturn rose against Vyndaurk and declared the free realm of Vyndaurk.
-- **575 After Reckoning** — A golden age dawned over Remeonte; its cities flourished as never before.
-- **600 After Reckoning** — Vyndaurk's invasion of Brasturn was thrown back by Vyndaurk.
-- **625 After Reckoning** — Redente seized Brasturn from Vyndaurk.
-- **625 After Reckoning** — The realm of Vyndaurk was extinguished.
-- **650 After Reckoning** — Vyndaurk seized Khirkai from Mishmaad.
-- **675 After Reckoning** — Vyndaurk's invasion of Qushaa was thrown back by Kheqshaa.
-- **675 After Reckoning** — Redente seized Beossoda from Kheqshaa.
-- **675 After Reckoning** — Brasturn rose against Redente and declared the free realm of Thorkdaurk.
-- **700 After Reckoning** — Redente seized Brasturn from Thorkdaurk.
-- **700 After Reckoning** — The realm of Thorkdaurk was extinguished.
-- **725 After Reckoning** — Redente seized Qushaa from Kheqshaa.
-- **725 After Reckoning** — The realm of Kheqshaa was extinguished.
-- **725 After Reckoning** — Brasturn rose against Redente and declared the free realm of Knauskno.
-- **750 After Reckoning** — Redente seized Brasturn from Knauskno.
-- **750 After Reckoning** — The realm of Knauskno was extinguished.
-- **750 After Reckoning** — Brasturn rose against Redente and declared the free realm of Storkdaurk.
-- **750 After Reckoning** — A golden age dawned over Remeonte; its cities flourished as never before.
-- **775 After Reckoning** — Redente seized Brasturn from Storkdaurk.
-- **775 After Reckoning** — The realm of Storkdaurk was extinguished.
-- **800 After Reckoning** — Redente seized Midkai from Remeonte.
-- **800 After Reckoning** — Vyndaurk's invasion of Mairkhukha was thrown back by Remeonte.
-- **800 After Reckoning** — Brasturn and 2 neighbouring province(s) broke away from Redente to found the realm of Knauskastall.
-- **825 After Reckoning** — Redente seized Peonapo from Knauskastall.
-- **825 After Reckoning** — Remeonte's invasion of Khirkhidku was thrown back by Tharnastall.
-- **850 After Reckoning** — Vyndaurk's invasion of Brasturn was thrown back by Knauskastall.
-- **850 After Reckoning** — Redente seized Grastausk from Knauskastall.
-- **875 After Reckoning** — Redente seized Brasturn from Knauskastall.
-- **875 After Reckoning** — The realm of Knauskastall was extinguished.
-- **900 After Reckoning** — Redente seized Midrarer from Remeonte.
-- **900 After Reckoning** — Midrarer rose against Redente and declared the free realm of Qidkataitan.
-- **925 After Reckoning** — Redente seized Midrarer from Qidkataitan.
-- **925 After Reckoning** — The realm of Qidkataitan was extinguished.
-- **925 After Reckoning** — Vyndaurk's invasion of Mairkhukha was thrown back by Remeonte.
-- **925 After Reckoning** — Brasturn rose against Redente and declared the free realm of Brograskei.
-- **925 After Reckoning** — Brabry and 2 neighbouring province(s) broke away from Vyndaurk to found the realm of Vynskei.
-- **925 After Reckoning** — A golden age dawned over Vyndaurk; its cities flourished as never before.
-- **950 After Reckoning** — Redente seized Brasturn from Brograskei.
-- **950 After Reckoning** — The realm of Brograskei was extinguished.
-- **975 After Reckoning** — Vyndaurk seized Brabry from Vynskei.
-- **1000 After Reckoning** — Tharnastall seized Bradaurk from Vynskei.
-- **1000 After Reckoning** — Vyndaurk seized Khirkhajez from Vynskei.
-- **1000 After Reckoning** — The realm of Vynskei was extinguished.
-- **1000 After Reckoning** — Brasturn rose against Redente and declared the free realm of Tharnaskei.
-- **1000 After Reckoning** — Brabry rose against Vyndaurk and declared the free realm of Knauskno.
-- **1000 After Reckoning** — A long drought gripped Grastausk; many perished.
-- **1025 After Reckoning** — Vyndaurk seized Brabry from Knauskno.
-- **1025 After Reckoning** — The realm of Knauskno was extinguished.
-- **1025 After Reckoning** — Khirkhajez rose against Vyndaurk and declared the free realm of Kaarghen.
-- **1050 After Reckoning** — Redente seized Brasturn from Tharnaskei.
-- **1050 After Reckoning** — The realm of Tharnaskei was extinguished.
-- **1050 After Reckoning** — Vyndaurk seized Khirkhajez from Kaarghen.
-- **1050 After Reckoning** — The realm of Kaarghen was extinguished.
-- **1050 After Reckoning** — Brasturn rose against Redente and declared the free realm of Thorkastall.
-- **1050 After Reckoning** — A long drought gripped Deoveolla; many perished.
-- **1075 After Reckoning** — Vyndaurk seized Brasturn from Thorkastall.
-- **1075 After Reckoning** — The realm of Thorkastall was extinguished.
+- **125 After Reckoning** — Tharnastall seized Bradaurk from Rairghen.
+- **125 After Reckoning** — Mairkhukha and 1 neighbouring province(s) broke away from Redente to found the realm of Kheqe.
+- **125 After Reckoning** — A long drought gripped Stagrabry; many perished.
+- **150 After Reckoning** — Tharnastall seized Khirkhidku from Rairghen.
+- **150 After Reckoning** — The realm of Rairghen was extinguished.
+- **150 After Reckoning** — Redente seized Midshaa from Tenadente.
+- **175 After Reckoning** — Remeonte seized Deodoria from Tenadente.
+- **175 After Reckoning** — Vyndaurk's invasion of Khirzujikh was thrown back by Mishmaad.
+- **175 After Reckoning** — Midshaa rose against Redente and declared the free realm of Jumaad.
+- **200 After Reckoning** — Remeonte seized Midshaa from Jumaad.
+- **200 After Reckoning** — The realm of Jumaad was extinguished.
+- **200 After Reckoning** — Redente's invasion of Beossoda was thrown back by Kheqe.
+- **225 After Reckoning** — Vyndaurk seized Khirzujikh from Mishmaad.
+- **250 After Reckoning** — Vyndaurk seized Khirkai from Mishmaad.
+- **250 After Reckoning** — Remeonte seized Mairkhukha from Kheqe.
+- **250 After Reckoning** — Midshaa rose against Remeonte and declared the free realm of Kheqtaitan.
+- **275 After Reckoning** — Remeonte's invasion of Midshaa was thrown back by Kheqtaitan.
+- **275 After Reckoning** — Redente's invasion of Beossoda was thrown back by Kheqe.
+- **275 After Reckoning** — Khirzujikh rose against Vyndaurk and declared the free realm of Kaarshaa.
+- **300 After Reckoning** — Vyndaurk's invasion of Khirzujikh was thrown back by Kaarshaa.
+- **300 After Reckoning** — A golden age dawned over Redente; its cities flourished as never before.
+- **325 After Reckoning** — Remeonte seized Midshaa from Kheqtaitan.
+- **325 After Reckoning** — The realm of Kheqtaitan was extinguished.
+- **325 After Reckoning** — Midshaa rose against Remeonte and declared the free realm of Mishkaasi.
+- **325 After Reckoning** — A golden age dawned over Remeonte; its cities flourished as never before.
+- **350 After Reckoning** — Remeonte seized Midshaa from Mishkaasi.
+- **350 After Reckoning** — The realm of Mishkaasi was extinguished.
+- **350 After Reckoning** — Vyndaurk seized Khirzujikh from Kaarshaa.
+- **350 After Reckoning** — The realm of Kaarshaa was extinguished.
+- **350 After Reckoning** — A golden age dawned over Vyndaurk; its cities flourished as never before.
+- **375 After Reckoning** — Redente's invasion of Beossoda was thrown back by Kheqe.
+- **400 After Reckoning** — Vyndaurk's invasion of Beossoda was thrown back by Kheqe.
+- **425 After Reckoning** — Redente seized Beossoda from Kheqe.
+- **425 After Reckoning** — The realm of Kheqe was extinguished.
+- **425 After Reckoning** — Beossoda rose against Redente and declared the free realm of Rauriacaria.
+- **425 After Reckoning** — A plague swept Midrarer; many perished.
+- **450 After Reckoning** — Redente seized Beossoda from Rauriacaria.
+- **450 After Reckoning** — The realm of Rauriacaria was extinguished.
+- **450 After Reckoning** — Vyndaurk's invasion of Grastausk was thrown back by Redente.
+- **475 After Reckoning** — Redente's invasion of Midkai was thrown back by Remeonte.
+- **500 After Reckoning** — Vyndaurk seized Bradaurk from Tharnastall.
+- **500 After Reckoning** — Bradaurk rose against Vyndaurk and declared the free realm of Vynstall.
+- **500 After Reckoning** — A golden age dawned over Vyndaurk; its cities flourished as never before.
+- **525 After Reckoning** — Tharnastall seized Bradaurk from Vynstall.
+- **525 After Reckoning** — The realm of Vynstall was extinguished.
+- **525 After Reckoning** — Redente seized Midkai from Remeonte.
+- **525 After Reckoning** — A long drought gripped Peonapo; many perished.
+- **550 After Reckoning** — Redente's invasion of Midshaa was thrown back by Remeonte.
+- **550 After Reckoning** — Vyndaurk's invasion of Mairkhukha was thrown back by Remeonte.
+- **550 After Reckoning** — Midkai rose against Redente and declared the free realm of Kaartaitan.
+- **550 After Reckoning** — Bradaurk rose against Tharnastall and declared the free realm of Knauskaskei.
+- **550 After Reckoning** — Brasturn and 2 neighbouring province(s) broke away from Vyndaurk to found the realm of Brograskei.
+- **550 After Reckoning** — A golden age dawned over Redente; its cities flourished as never before.
+- **575 After Reckoning** — Tharnastall seized Bradaurk from Knauskaskei.
+- **575 After Reckoning** — The realm of Knauskaskei was extinguished.
+- **575 After Reckoning** — Remeonte seized Midkai from Kaartaitan.
+- **575 After Reckoning** — The realm of Kaartaitan was extinguished.
+- **600 After Reckoning** — Vyndaurk seized Brabry from Brograskei.
+- **600 After Reckoning** — Redente seized Brasturn from Brograskei.
+- **600 After Reckoning** — Brasturn rose against Redente and declared the free realm of Storkastall.
+- **600 After Reckoning** — A long drought gripped Qushaa; many perished.
+- **625 After Reckoning** — Redente seized Qushaa from Brograskei.
+- **625 After Reckoning** — The realm of Brograskei was extinguished.
+- **625 After Reckoning** — Vyndaurk's invasion of Brasturn was thrown back by Storkastall.
+- **625 After Reckoning** — A plague swept Beossoveolla; many perished.
+- **650 After Reckoning** — Redente seized Brasturn from Storkastall.
+- **650 After Reckoning** — The realm of Storkastall was extinguished.
+- **650 After Reckoning** — Remeonte's invasion of Khirkhidku was thrown back by Tharnastall.
+- **650 After Reckoning** — A long drought gripped Beossodoria; many perished.
+- **675 After Reckoning** — Redente's invasion of Midkai was thrown back by Remeonte.
+- **675 After Reckoning** — Vyndaurk's invasion of Bradaurk was thrown back by Tharnastall.
+- **675 After Reckoning** — Qushaa rose against Redente and declared the free realm of Jutaitan.
+- **700 After Reckoning** — Remeonte seized Qushaa from Jutaitan.
+- **700 After Reckoning** — The realm of Jutaitan was extinguished.
+- **700 After Reckoning** — A golden age dawned over Mishmaad; its cities flourished as never before.
+- **725 After Reckoning** — Redente's invasion of Qushaa was thrown back by Remeonte.
+- **750 After Reckoning** — Vyndaurk's invasion of Qushaa was thrown back by Remeonte.
+- **750 After Reckoning** — Remeonte's invasion of Khirkhidku was thrown back by Tharnastall.
+- **775 After Reckoning** — Redente's invasion of Qushaa was thrown back by Remeonte.
+- **775 After Reckoning** — A golden age dawned over Tharnastall; its cities flourished as never before.
+- **800 After Reckoning** — Vyndaurk's invasion of Qushaa was thrown back by Remeonte.
+- **800 After Reckoning** — Remeonte's invasion of Khirkhidku was thrown back by Tharnastall.
+- **800 After Reckoning** — A long drought gripped Khirarer; many perished.
+- **825 After Reckoning** — Redente's invasion of Qushaa was thrown back by Remeonte.
+- **825 After Reckoning** — A plague swept Deoneosso; many perished.
+- **850 After Reckoning** — Vyndaurk seized Qushaa from Remeonte.
+- **850 After Reckoning** — A golden age dawned over Mishmaad; its cities flourished as never before.
+- **875 After Reckoning** — Redente's invasion of Midkai was thrown back by Remeonte.
+- **875 After Reckoning** — Vyndaurk's invasion of Mairkhukha was thrown back by Remeonte.
+- **875 After Reckoning** — Qushaa rose against Vyndaurk and declared the free realm of Jumaad.
+- **900 After Reckoning** — Tharnastall seized Qushaa from Jumaad.
+- **900 After Reckoning** — The realm of Jumaad was extinguished.
+- **900 After Reckoning** — A long drought gripped Khirkai; many perished.
+- **925 After Reckoning** — Redente seized Midkai from Remeonte.
+- **925 After Reckoning** — A long drought gripped Stagrabry; many perished.
+- **925 After Reckoning** — A golden age dawned over Tharnastall; its cities flourished as never before.
+- **950 After Reckoning** — Redente's invasion of Mairkhukha was thrown back by Remeonte.
+- **950 After Reckoning** — A long drought gripped Knyrkabry; many perished.
+- **975 After Reckoning** — Vyndaurk seized Qushaa from Tharnastall.
+- **975 After Reckoning** — Remeonte seized Khirkhidku from Tharnastall.
+- **975 After Reckoning** — Khirkhidku rose against Remeonte and declared the free realm of Jaqe.
+- **975 After Reckoning** — A golden age dawned over Mishmaad; its cities flourished as never before.
+- **1000 After Reckoning** — Ghashriz was stormed and left a ruin.
+- **1000 After Reckoning** — Remeonte seized Khirkhidku from Jaqe.
+- **1000 After Reckoning** — The realm of Jaqe was extinguished.
+- **1000 After Reckoning** — Khirkhidku rose against Remeonte and declared the free realm of Kheqshaa.
+- **1025 After Reckoning** — Remeonte seized Khirkhidku from Kheqshaa.
+- **1025 After Reckoning** — The realm of Kheqshaa was extinguished.
+- **1025 After Reckoning** — Khirkhidku rose against Remeonte and declared the free realm of Mishkaasi.
+- **1050 After Reckoning** — Remeonte's invasion of Khirkhidku was thrown back by Mishkaasi.
+- **1050 After Reckoning** — Redente seized Midshaa from Remeonte.
+- **1050 After Reckoning** — A golden age dawned over Vyndaurk; its cities flourished as never before.
+- **1075 After Reckoning** — Tharnastall seized Khirkhidku from Mishkaasi.
+- **1075 After Reckoning** — The realm of Mishkaasi was extinguished.
 - **1075 After Reckoning** — Redente's invasion of Mairkhukha was thrown back by Remeonte.
-- **1075 After Reckoning** — Brasturn rose against Vyndaurk and declared the free realm of Tharnaskei.
-- **1075 After Reckoning** — Brabry and 1 neighbouring province(s) broke away from Vyndaurk to found the realm of Vyndaurk.
-- **1075 After Reckoning** — A plague swept Khirzujikh; many perished.
+- **1075 After Reckoning** — Brasturn and 2 neighbouring province(s) broke away from Redente to found the realm of Storkno.
+- **1075 After Reckoning** — A plague swept Midrarer; many perished.
 
 ## Heightmap
 

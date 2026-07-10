@@ -11,6 +11,7 @@ import { Grid } from "./grid.js";
                                                  
                                               
                                                 
+import { Biome,                 } from "./biomes.js";
 import { languageById } from "./names.js";
 import { composeName, hintsForBiome } from "./language.js";
 
@@ -39,6 +40,8 @@ import { composeName, hintsForBiome } from "./language.js";
                
                                                  
                  
+                                                                       
+                      
  
 
 const N4                                  = [
@@ -160,8 +163,11 @@ export function generateSettlements(
   );
 
   // Candidate land cells with meaningful habitability, sorted best-first.
+  // Fresh basalt is uninhabitable — skip lava fields outright.
+  const lava = cfg.biomes?.ids;
   const candidates           = [];
   for (let i = 0; i < n; i++) {
+    if (lava && lava[i] === Biome.LavaField) continue;
     if (habitability.data[i] > 0.3) candidates.push(i);
   }
   candidates.sort((a, b) => habitability.data[b] - habitability.data[a]);

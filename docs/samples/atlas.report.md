@@ -6,10 +6,10 @@
 
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 42.0% land, 58.0% ocean, 3 lake(s)
-- **Climate & life:** dominant biome **Savanna**, 15 biomes in all
+- **Climate & life:** dominant biome **Savanna**, 16 biomes in all
 - **Peoples:** 30 regions, 17 settlements, 3 realms
 - **Capital:** Deoliria, seat of House Niantetindo
-- **Dominant power:** Tenameonte (of 6 surviving realm(s))
+- **Dominant power:** Tenameonte (of 5 surviving realm(s))
 - **The present year:** 1100 After Reckoning
 - **Highest peak:** 4,500 m · **volcanoes:** 6 (2 active)
 
@@ -21,6 +21,8 @@
 - **Mount Vollahrei** — *the storm hill* — shield, dormant, summit 3,734 m
 - **Mount Thathobry** — *the dark stone* — shield, active, summit 2,706 m
 - **Mount Thygrabry** — *the fire stone* — shield, active, summit 2,320 m
+
+*Fresh lava fields streak the flanks of the living peaks — 133 cells of cooled basalt where nothing grows and no one builds.*
 
 ## Notable features
 
@@ -145,29 +147,34 @@
 
 ### Cities
 
-- **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Horses, Grain, Wine, Livestock *(founded 100)*
-- **Deolamor**, *the sea hall* (port, rich) — Grain, Horses, Fish, Wine *(founded 134)*
-- **Niantetomor**, *the green fort* (port, prosperous) — Wine, Grain, Horses, Livestock *(founded 169)*
+- **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Grain, Livestock, Fish, Horses *(founded 100)*
+- **Niantetomor**, *the green fort* (port, rich) — Grain, Fish, Horses, Livestock *(founded 169)*
 
 ### Towns
 
-- **Deotomor**, *the sea fort* (port, prosperous) — Grain, Wine, Livestock *(founded 203)*
-- **Panaliria**, *the field haven* (port, trade hub, rich) — Grain, Livestock, Wine, Horses *(founded 238)*
-- **Deonelen**, *the sea bridge* (port, rich) — Livestock, Fish, Wine, Grain *(founded 272)*
-- **Khirmakh**, *the sea hall* (port, poor) — Fish *(founded 306)*
-- **Khirghekh**, *the sea gate* (port, rich) — Livestock, Horses, Fish, Spices *(founded 341)*
+- **Deotomor**, *the sea fort* (port, rich) — Grain, Livestock, Fish, Wine *(founded 203)*
+- **Panaliria**, *the field haven* (port, trade hub, rich) — Grain, Livestock, Horses, Fish *(founded 238)*
+- **Deonelen**, *the sea bridge* (port, prosperous) — Horses, Grain, Furs, Livestock *(founded 272)*
+- **Khirmakh**, *the sea hall* (port, poor) *(founded 306)*
+- **Khirghekh**, *the sea gate* (port, prosperous) — Livestock, Horses *(founded 341)*
 
 ### Villages
 
-- **Stagrba**, *the sea spring* (port, prosperous) — Grain, Timber, Fish, Horses *(founded 375)*
-- **Shinkai**, *the wild spring* (rich) — Livestock, Grain, Horses, Wine *(founded 409)*
-- **Ghashkai**, *the river spring* (modest) — Livestock, Horses *(founded 444)*
-- **Ghashzaa**, *the river bridge* (modest) — Livestock, Horses, Grain *(founded 478)*
+- **Stagrba**, *the sea spring* (port, rich) — Grain, Horses, Livestock, Furs *(founded 375)*
+- **Shinkai**, *the wild spring* (prosperous) — Livestock, Wine, Grain *(founded 409)*
+- **Ghashkai**, *the river spring* (modest) — Fish, Horses, Livestock *(founded 444)*
+- **Ghashzaa**, *the river bridge* (prosperous) — Fish, Livestock, Grain, Horses *(founded 478)*
 - **Khirqe**, *the sea home* (port, prosperous) — Fish, Horses, Livestock *(founded 513)*
-- **Bellademor**, *the river home* (trade hub, rich) — Livestock, Grain, Wine, Horses *(founded 547)*
-- **Ghashakhukha**, *the river field* (prosperous) — Livestock, Coal, Gems, Copper *(founded 581)*
-- **Khirkai**, *the sea spring* (port, modest) — Livestock, Fish, Horses *(founded 616)*
-- **Shinshu**, *the wild fort* (prosperous) — Livestock, Horses *(founded 650)*
+- **Bellademor**, *the river home* (rich) — Livestock, Horses, Grain, Wine *(founded 547)*
+- **Ghashakhukha**, *the river field* (rich) — Livestock, Horses, Coal, Wine *(founded 581)*
+- **Khirkai**, *the sea spring* (port, prosperous) — Livestock *(founded 616)*
+- **Shinshu**, *the wild fort* (prosperous) — Livestock, Horses, Fish *(founded 650)*
+
+## Ruins
+
+*Settlements that did not survive to the present day.*
+
+- **Deolamor** (city) — founded 134, stormed and left a ruin in 225
 
 ## Faiths
 
@@ -205,10 +212,10 @@ Followed across 2 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Livestock, Horses, Grain, Wine, Fish
+- **Major exports:** Livestock, Horses, Grain, Fish, Wine
 - **Wealthiest settlement:** Deoliria
-- **Trade hubs:** Deoliria, Panaliria, Bellademor
-- **Deposits:** Iron ×27, Copper ×20, Gold ×8, Gems ×5, Stone ×53, Coal ×23, Timber ×4, Grain ×24, Livestock ×107, Fish ×12, Furs ×4, Spices ×1, Salt ×14, Horses ×36, Wine ×14
+- **Trade hubs:** Deoliria, Panaliria
+- **Deposits:** Iron ×27, Copper ×20, Gold ×8, Gems ×5, Stone ×53, Coal ×23, Timber ×4, Grain ×24, Livestock ×106, Fish ×12, Furs ×4, Spices ×1, Salt ×14, Horses ×36, Wine ×14
 
 ## Languages
 
@@ -254,104 +261,132 @@ Followed across 2 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 6 realm(s) endured to the present.*
+*Simulated 100–1100 After Reckoning. 5 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Qidkakaasi | 100 | 15 | 675 | 11 | diminished |
-| Tenameonte | 100 | 13 | 1050 | 12 | ascendant |
+| Qidkakaasi | 100 | 14 | 225 | 11 | diminished |
+| Tenameonte | 100 | 14 | 475 | 13 | ascendant |
 | Caucaria | 100 | 5 | 100 | 2 | diminished |
-| Kheqghen | 425 | 4 | 550 | 0 | extinct |
-| Kaarmaad | 350 | 3 | 350 | 0 | extinct |
-| Vynfjysk | 375 | 3 | 375 | 0 | extinct |
-| Rena | 950 | 3 | 950 | 0 | extinct |
-| Rauriana | 975 | 3 | 975 | 2 | diminished |
+| Kheqghen | 425 | 3 | 425 | 0 | extinct |
+| Mishqe | 675 | 3 | 675 | 0 | extinct |
+| Redente | 675 | 3 | 675 | 0 | extinct |
+| Mishaghen | 700 | 3 | 700 | 2 | diminished |
+| Kaarkaasi | 875 | 3 | 875 | 0 | extinct |
+| Tariacaria | 100 | 2 | 125 | 0 | extinct |
 | Kaarkaasi | 100 | 2 | 100 | 2 | ascendant |
-| Caudemor | 1075 | 1 | 1075 | 1 | ascendant |
 
 ## Chronicle
 
 - **100 After Reckoning** — Qidkakaasi's invasion of Deocina was thrown back by Caudente.
-- **100 After Reckoning** — A plague swept Qusham; many perished.
-- **125 After Reckoning** — Tenameonte seized Midkhajez from Caucaria.
-- **125 After Reckoning** — Caudente's invasion of Deoneosso was thrown back by Tariacaria.
-- **150 After Reckoning** — Qidkakaasi seized Deocina from Caudente.
-- **150 After Reckoning** — The realm of Caudente was extinguished.
-- **150 After Reckoning** — A golden age dawned over Tenameonte; its cities flourished as never before.
+- **125 After Reckoning** — Tariacaria seized Deocina from Caudente.
+- **125 After Reckoning** — The realm of Caudente was extinguished.
+- **125 After Reckoning** — A long drought gripped Rairmid; many perished.
+- **150 After Reckoning** — Qidkakaasi seized Deocina from Tariacaria.
 - **175 After Reckoning** — Qidkakaasi seized Deoneosso from Tariacaria.
 - **175 After Reckoning** — The realm of Tariacaria was extinguished.
-- **175 After Reckoning** — A plague swept Thaurnafjan; many perished.
-- **200 After Reckoning** — Tenameonte's invasion of Deopo was thrown back by Caucaria.
-- **225 After Reckoning** — Qidkakaasi's invasion of Khirkai was thrown back by Caucaria.
+- **175 After Reckoning** — Tenameonte's invasion of Midkhajez was thrown back by Caucaria.
+- **200 After Reckoning** — Qidkakaasi seized Midkhajez from Caucaria.
+- **200 After Reckoning** — Deocina rose against Qidkakaasi and declared the free realm of Tenabinte.
+- **225 After Reckoning** — Deolamor was stormed and left a ruin.
+- **225 After Reckoning** — Qidkakaasi seized Deocina from Tenabinte.
+- **225 After Reckoning** — The realm of Tenabinte was extinguished.
+- **225 After Reckoning** — A plague swept Deoda; many perished.
+- **250 After Reckoning** — Qidkakaasi's invasion of Khirkai was thrown back by Caucaria.
 - **250 After Reckoning** — Tenameonte seized Deopo from Caucaria.
-- **275 After Reckoning** — Qidkakaasi seized Khirkai from Caucaria.
-- **275 After Reckoning** — A plague swept Beossocaria; many perished.
-- **300 After Reckoning** — Qidkakaasi's invasion of Midkhajez was thrown back by Tenameonte.
-- **300 After Reckoning** — Tenameonte's invasion of Braba was thrown back by Qidkakaasi.
-- **350 After Reckoning** — Qidkakaasi's invasion of Midkhajez was thrown back by Tenameonte.
-- **350 After Reckoning** — Tenameonte's invasion of Braba was thrown back by Qidkakaasi.
-- **350 After Reckoning** — Midkhidku and 2 neighbouring province(s) broke away from Qidkakaasi to found the realm of Kaarmaad.
-- **375 After Reckoning** — Brahrei and 2 neighbouring province(s) broke away from Tenameonte to found the realm of Vynfjysk.
-- **400 After Reckoning** — Tenameonte seized Brahrei from Vynfjysk.
-- **400 After Reckoning** — Qidkakaasi seized Khirkhash from Kaarmaad.
-- **400 After Reckoning** — Brahrei rose against Tenameonte and declared the free realm of Brografjysk.
-- **400 After Reckoning** — Khirkhash rose against Qidkakaasi and declared the free realm of Qidkakaasi.
-- **400 After Reckoning** — A golden age dawned over Tenameonte; its cities flourished as never before.
-- **425 After Reckoning** — Tenameonte seized Brahrei from Brografjysk.
-- **425 After Reckoning** — The realm of Brografjysk was extinguished.
-- **425 After Reckoning** — Brahrei rose against Tenameonte and declared the free realm of Storkaskei.
-- **425 After Reckoning** — Midkhajez and 2 neighbouring province(s) broke away from Tenameonte to found the realm of Kheqghen.
-- **450 After Reckoning** — Tenameonte seized Brahrei from Storkaskei.
-- **450 After Reckoning** — The realm of Storkaskei was extinguished.
-- **450 After Reckoning** — Qidkakaasi seized Khirkhash from Qidkakaasi.
-- **450 After Reckoning** — The realm of Qidkakaasi was extinguished.
-- **475 After Reckoning** — Qidkakaasi's invasion of Midkhidku was thrown back by Kaarmaad.
-- **500 After Reckoning** — Tenameonte seized Qusham from Kaarmaad.
-- **525 After Reckoning** — Qidkakaasi's invasion of Midkhidku was thrown back by Kaarmaad.
-- **525 After Reckoning** — Tenameonte seized Midghen from Vynfjysk.
-- **525 After Reckoning** — A long drought gripped Midghen; many perished.
-- **550 After Reckoning** — Kheqghen seized Midkhidku from Kaarmaad.
-- **550 After Reckoning** — The realm of Kaarmaad was extinguished.
-- **550 After Reckoning** — Tenameonte's invasion of Thaurnafjan was thrown back by Kheqghen.
-- **575 After Reckoning** — Qidkakaasi seized Beossocaria from Vynfjysk.
-- **575 After Reckoning** — The realm of Vynfjysk was extinguished.
-- **600 After Reckoning** — Qidkakaasi seized Midkhidku from Kheqghen.
-- **625 After Reckoning** — Qidkakaasi's invasion of Midkhajez was thrown back by Kheqghen.
-- **650 After Reckoning** — Tenameonte seized Thaurnafjan from Kheqghen.
-- **675 After Reckoning** — Qidkakaasi seized Midkhajez from Kheqghen.
-- **700 After Reckoning** — Qidkakaasi's invasion of Deopo was thrown back by Kheqghen.
-- **700 After Reckoning** — Midkhajez rose against Qidkakaasi and declared the free realm of Meshaa.
-- **725 After Reckoning** — Tenameonte seized Midkhajez from Meshaa.
-- **725 After Reckoning** — The realm of Meshaa was extinguished.
-- **750 After Reckoning** — Qidkakaasi seized Deopo from Kheqghen.
-- **750 After Reckoning** — The realm of Kheqghen was extinguished.
-- **750 After Reckoning** — Tenameonte's invasion of Braba was thrown back by Qidkakaasi.
-- **775 After Reckoning** — Qidkakaasi's invasion of Qusham was thrown back by Tenameonte.
-- **775 After Reckoning** — Midkhajez rose against Tenameonte and declared the free realm of Kaartaitan.
-- **775 After Reckoning** — A long drought gripped Qusham; many perished.
-- **800 After Reckoning** — Tenameonte seized Midkhajez from Kaartaitan.
-- **800 After Reckoning** — The realm of Kaartaitan was extinguished.
-- **825 After Reckoning** — Qidkakaasi's invasion of Qusham was thrown back by Tenameonte.
-- **825 After Reckoning** — Khirzash turned from the Cult of Vaskyvastall to the Faith of Vabamortena.
-- **875 After Reckoning** — Qidkakaasi's invasion of Qusham was thrown back by Tenameonte.
-- **925 After Reckoning** — Qidkakaasi's invasion of Qusham was thrown back by Tenameonte.
-- **950 After Reckoning** — Beossocaria and 2 neighbouring province(s) broke away from Qidkakaasi to found the realm of Rena.
-- **975 After Reckoning** — Qidkakaasi seized Beossocaria from Rena.
-- **975 After Reckoning** — Tenameonte seized Braba from Rena.
-- **975 After Reckoning** — Beossocaria and 2 neighbouring province(s) broke away from Qidkakaasi to found the realm of Rauriana.
-- **1000 After Reckoning** — Tenameonte's invasion of Shinkhajez was thrown back by Rena.
-- **1025 After Reckoning** — Rauriana seized Shinkhajez from Rena.
-- **1025 After Reckoning** — The realm of Rena was extinguished.
-- **1025 After Reckoning** — Qidkakaasi seized Mairkai from Rauriana.
-- **1025 After Reckoning** — Mairkai rose against Qidkakaasi and declared the free realm of Kaarqe.
-- **1050 After Reckoning** — Qidkakaasi seized Mairkai from Kaarqe.
-- **1050 After Reckoning** — The realm of Kaarqe was extinguished.
-- **1050 After Reckoning** — Tenameonte seized Beossocaria from Rauriana.
-- **1050 After Reckoning** — Mairkai rose against Qidkakaasi and declared the free realm of Jutaitan.
-- **1075 After Reckoning** — Qidkakaasi seized Mairkai from Jutaitan.
-- **1075 After Reckoning** — The realm of Jutaitan was extinguished.
-- **1075 After Reckoning** — Beossocaria rose against Tenameonte and declared the free realm of Caudemor.
-- **1075 After Reckoning** — A long drought gripped Deoneosso; many perished.
+- **250 After Reckoning** — Thaurnafjan turned from the Cult of Vaskyvastall to the Rite of Vaqidkazajiq.
+- **250 After Reckoning** — A long drought gripped Mairghen; many perished.
+- **275 After Reckoning** — Tenameonte seized Khirkai from Caucaria.
+- **300 After Reckoning** — Tenameonte seized Braba from Qidkakaasi.
+- **300 After Reckoning** — Qidkakaasi's invasion of Khirkai was thrown back by Tenameonte.
+- **300 After Reckoning** — Braba rose against Tenameonte and declared the free realm of Tharnaskei.
+- **325 After Reckoning** — Tenameonte seized Braba from Tharnaskei.
+- **325 After Reckoning** — The realm of Tharnaskei was extinguished.
+- **325 After Reckoning** — Khirkai rose against Tenameonte and declared the free realm of Kheqkaasi.
+- **350 After Reckoning** — Qidkakaasi's invasion of Khirkai was thrown back by Kheqkaasi.
+- **350 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkakaasi.
+- **375 After Reckoning** — Deocina turned from the Faith of Vabamortena to the Rite of Vaqidkazajiq.
+- **375 After Reckoning** — A plague swept Shinkhukha; many perished.
+- **400 After Reckoning** — Qidkakaasi's invasion of Khirkai was thrown back by Kheqkaasi.
+- **425 After Reckoning** — Tenameonte seized Khirkai from Kheqkaasi.
+- **425 After Reckoning** — The realm of Kheqkaasi was extinguished.
+- **425 After Reckoning** — Khirkai rose against Tenameonte and declared the free realm of Qidkaqe.
+- **425 After Reckoning** — Midkhajez and 2 neighbouring province(s) broke away from Qidkakaasi to found the realm of Kheqghen.
+- **450 After Reckoning** — Tenameonte seized Khirkai from Qidkaqe.
+- **450 After Reckoning** — The realm of Qidkaqe was extinguished.
+- **475 After Reckoning** — Qidkakaasi seized Midkhidku from Kheqghen.
+- **475 After Reckoning** — Tenameonte seized Qusham from Kheqghen.
+- **500 After Reckoning** — Qidkakaasi seized Midkhajez from Kheqghen.
+- **500 After Reckoning** — The realm of Kheqghen was extinguished.
+- **525 After Reckoning** — Qidkakaasi's invasion of Qusham was thrown back by Tenameonte.
+- **525 After Reckoning** — Tenameonte's invasion of Mairkai was thrown back by Qidkakaasi.
+- **525 After Reckoning** — Midkhidku rose against Qidkakaasi and declared the free realm of Rairghen.
+- **575 After Reckoning** — Qidkakaasi seized Midkhidku from Rairghen.
+- **575 After Reckoning** — The realm of Rairghen was extinguished.
+- **575 After Reckoning** — Tenameonte's invasion of Mairkai was thrown back by Qidkakaasi.
+- **600 After Reckoning** — Qidkakaasi's invasion of Qusham was thrown back by Tenameonte.
+- **625 After Reckoning** — Tenameonte's invasion of Mairkai was thrown back by Qidkakaasi.
+- **650 After Reckoning** — Qidkakaasi seized Qusham from Tenameonte.
+- **650 After Reckoning** — Qusham rose against Qidkakaasi and declared the free realm of Jukaasi.
+- **675 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Jukaasi.
+- **675 After Reckoning** — Midkhajez and 2 neighbouring province(s) broke away from Qidkakaasi to found the realm of Mishqe.
+- **675 After Reckoning** — Beossocaria and 2 neighbouring province(s) broke away from Tenameonte to found the realm of Redente.
+- **675 After Reckoning** — A plague swept Rairmid; many perished.
+- **700 After Reckoning** — Mishqe seized Qusham from Jukaasi.
+- **700 After Reckoning** — The realm of Jukaasi was extinguished.
+- **700 After Reckoning** — Qidkakaasi seized Midkhidku from Mishqe.
+- **700 After Reckoning** — Qusham rose against Mishqe and declared the free realm of Kheqshaa.
+- **700 After Reckoning** — Midghen and 2 neighbouring province(s) broke away from Tenameonte to found the realm of Mishaghen.
+- **725 After Reckoning** — Tenameonte seized Qusham from Kheqshaa.
+- **725 After Reckoning** — The realm of Kheqshaa was extinguished.
+- **725 After Reckoning** — A long drought gripped Mairkai; many perished.
+- **750 After Reckoning** — Tenameonte seized Brahrei from Redente.
+- **750 After Reckoning** — A long drought gripped Melareth; many perished.
+- **775 After Reckoning** — Tenameonte seized Braba from Redente.
+- **775 After Reckoning** — Qidkakaasi seized Khirkhash from Mishqe.
+- **775 After Reckoning** — Brahrei rose against Tenameonte and declared the free realm of Tharnafjysk.
+- **775 After Reckoning** — Qusham rose against Tenameonte and declared the free realm of Jukaasi.
+- **775 After Reckoning** — A plague swept Khirkhash; many perished.
+- **800 After Reckoning** — Tenameonte seized Brahrei from Tharnafjysk.
+- **800 After Reckoning** — The realm of Tharnafjysk was extinguished.
+- **800 After Reckoning** — Qidkakaasi's invasion of Qusham was thrown back by Jukaasi.
+- **825 After Reckoning** — Tenameonte seized Qusham from Jukaasi.
+- **825 After Reckoning** — The realm of Jukaasi was extinguished.
+- **825 After Reckoning** — Qusham rose against Tenameonte and declared the free realm of Kheqshaa.
+- **825 After Reckoning** — A golden age dawned over Qidkakaasi; its cities flourished as never before.
+- **850 After Reckoning** — Tenameonte seized Qusham from Kheqshaa.
+- **850 After Reckoning** — The realm of Kheqshaa was extinguished.
+- **850 After Reckoning** — A plague swept Shinkhukha; many perished.
+- **875 After Reckoning** — Qidkakaasi seized Midkhajez from Mishqe.
+- **875 After Reckoning** — The realm of Mishqe was extinguished.
+- **875 After Reckoning** — Midkhajez and 2 neighbouring province(s) broke away from Qidkakaasi to found the realm of Kaarkaasi.
+- **875 After Reckoning** — A plague swept Khirsham; many perished.
+- **875 After Reckoning** — A golden age dawned over Qidkakaasi; its cities flourished as never before.
+- **900 After Reckoning** — Tenameonte seized Beossocaria from Redente.
+- **900 After Reckoning** — The realm of Redente was extinguished.
+- **925 After Reckoning** — Qidkakaasi seized Midkhidku from Kaarkaasi.
+- **925 After Reckoning** — Tenameonte seized Midghen from Mishaghen.
+- **950 After Reckoning** — Qidkakaasi's invasion of Khirkhash was thrown back by Kaarkaasi.
+- **950 After Reckoning** — Beossocaria rose against Tenameonte and declared the free realm of Mantebinte.
+- **950 After Reckoning** — Midkhidku rose against Qidkakaasi and declared the free realm of Mishkaasi.
+- **975 After Reckoning** — Tenameonte seized Midkhidku from Mishkaasi.
+- **975 After Reckoning** — The realm of Mishkaasi was extinguished.
+- **975 After Reckoning** — A plague swept Midghen; many perished.
+- **1000 After Reckoning** — Qidkakaasi's invasion of Khirkhash was thrown back by Kaarkaasi.
+- **1000 After Reckoning** — Tenameonte seized Beossocaria from Mantebinte.
+- **1000 After Reckoning** — The realm of Mantebinte was extinguished.
+- **1000 After Reckoning** — A plague swept Deoneosso; many perished.
+- **1025 After Reckoning** — Tenameonte seized Midkhajez from Kaarkaasi.
+- **1025 After Reckoning** — Midkhidku rose against Tenameonte and declared the free realm of Kheqmaad.
+- **1050 After Reckoning** — Qidkakaasi seized Khirkhash from Kaarkaasi.
+- **1050 After Reckoning** — The realm of Kaarkaasi was extinguished.
+- **1050 After Reckoning** — Midkhajez rose against Tenameonte and declared the free realm of Qidkamaad.
+- **1050 After Reckoning** — A long drought gripped Bradaurk; many perished.
+- **1075 After Reckoning** — Qidkakaasi seized Midkhidku from Kheqmaad.
+- **1075 After Reckoning** — The realm of Kheqmaad was extinguished.
+- **1075 After Reckoning** — Tenameonte seized Midkhajez from Qidkamaad.
+- **1075 After Reckoning** — The realm of Qidkamaad was extinguished.
+- **1075 After Reckoning** — A plague swept Khirghen; many perished.
 
 ## Heightmap
 
