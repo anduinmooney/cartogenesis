@@ -109,7 +109,10 @@ function main(): void {
     const posterFile = `${base}.poster.svg`;
     writeFileSync(
       join(OUT, posterFile),
-      worldPosterSVG(world, encodePNG(w, h, politicalBare)),
+      worldPosterSVG(
+        world,
+        `data:image/png;base64,${encodePNG(w, h, politicalBare).toString("base64")}`,
+      ),
     );
     files.poster = posterFile;
 

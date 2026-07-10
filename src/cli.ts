@@ -140,7 +140,10 @@ function runGenerate(opts: CliOptions): void {
   for (let i = 0; i < samples.length; i++) r16.writeUInt16LE(samples[i], i * 2);
 
   // Labeled SVG poster over the political map + Markdown gazetteer.
-  const posterSvg = worldPosterSVG(world, politicalPng);
+  const posterSvg = worldPosterSVG(
+    world,
+    `data:image/png;base64,${politicalPng.toString("base64")}`,
+  );
   const reportMd = worldReportMarkdown(world);
 
   const mapPath = join(opts.out, `${name}.map.png`);

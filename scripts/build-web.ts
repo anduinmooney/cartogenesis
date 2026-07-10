@@ -40,6 +40,7 @@ const MODULES = [
   "simulation",
   "render",
   "report",
+  "svgmap",
   "world",
 ];
 

@@ -5,21 +5,21 @@
 // notable features — the first output where places are actually *named on the
 // map*. The result is a single self-contained .svg poster.
 
-import type { World } from "./world.ts";
+                                        
 
-function esc(s: string): string {
+function esc(s        )         {
   return s
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
 }
 
-export interface PosterOptions {
-  /** Title shown in the cartouche; defaults to the largest realm/capital. */
-  title?: string;
-  /** Subtitle (e.g. the seed). */
-  subtitle?: string;
-}
+                                
+                                                                             
+                 
+                                  
+                    
+ 
 
 /**
  * Build an SVG poster string. `backgroundDataUri` is a `data:image/png;base64,…`
@@ -28,10 +28,10 @@ export interface PosterOptions {
  * this run in the browser too (from `canvas.toDataURL`), not only in Node.
  */
 export function worldPosterSVG(
-  world: World,
-  backgroundDataUri: string,
-  opts: PosterOptions = {},
-): string {
+  world       ,
+  backgroundDataUri        ,
+  opts                = {},
+)         {
   const W = world.meta.width;
   const H = world.meta.height;
   const dataUri = backgroundDataUri;
@@ -45,7 +45,7 @@ export function worldPosterSVG(
   const townFont = Math.max(6, Math.round(W / 52));
   const titleFont = Math.max(14, Math.round(W / 22));
 
-  const parts: string[] = [];
+  const parts           = [];
   parts.push(
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" ` +
       `font-family="Georgia, 'Times New Roman', serif">`,
@@ -53,7 +53,7 @@ export function worldPosterSVG(
   parts.push(`<image href="${dataUri}" x="0" y="0" width="${W}" height="${H}"/>`);
 
   // Reusable label style: white text with a dark outline for legibility.
-  const labelStyle = (font: number, weight = "400", italic = false) =>
+  const labelStyle = (font        , weight = "400", italic = false) =>
     `fill="#fdfdfb" stroke="#1a1712" stroke-width="${Math.max(
       1.6,
       font / 6,

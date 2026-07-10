@@ -36,7 +36,7 @@ test("SVG poster is well-formed and labels places", () => {
     w.elevation.height,
     renderBiomes(w.biomes, w.elevation),
   );
-  const svg = worldPosterSVG(w, png);
+  const svg = worldPosterSVG(w, `data:image/png;base64,${png.toString("base64")}`);
   assert.ok(svg.startsWith("<svg"));
   assert.ok(svg.trimEnd().endsWith("</svg>"));
   assert.ok(svg.includes("data:image/png;base64,"));

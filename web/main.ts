@@ -16,6 +16,8 @@ import type { Settlement } from "./engine/settlements.ts";
 import { glossPhrase, glossary } from "./engine/language.ts";
 import { languageById } from "./engine/names.ts";
 import { worldReportMarkdown } from "./engine/report.ts";
+import { worldPosterSVG } from "./engine/svgmap.ts";
+import { renderRegions } from "./engine/render.ts";
 import { renderMarkdown } from "./markdown.ts";
 
 // Faith tint palette — mirrors FAITH_PALETTE in src/render.ts.
@@ -864,6 +866,7 @@ function init(): void {
   });
 
   wireGazetteer();
+  wireExports();
 
   const urlSeed = new URL(location.href).searchParams.get("seed");
   seedInput.value = urlSeed ?? "cartogenesis";
@@ -1027,4 +1030,67 @@ function wireGazetteer(): void {
     const seed = current ? String(current.meta.seed) : "world";
     downloadText(`cartogenesis-${seed}.md`, gazetteerMd, "text/markdown");
   });
+}
+
+// --- Exports: take the world with you --------------------------------------
+
+/** Render a world-resolution RGBA buffer to a PNG data URI via a temp canvas. */
+function rgbaToPngDataUri(rgba: Uint8Array, w: number, h: number): string {
+  const cvs = document.createElement("canvas");
+  cvs.width = w;
+  cvs.height = h;
+  const c = cvs.getContext("2d")!;
+  c.putImageData(new ImageData(new Uint8ClampedArray(rgba), w, h), 0, 0);
+  return cvs.toDataURL("image/png");
+}
+
+function safeSeed(): string {
+  return (current ? String(current.meta.seed) : "world").replace(/[^a-z0-9.\-]/gi, "_");
+}
+
+/** Download the current map layer as a PNG, at full world resolution. */
+function downloadMapPng(): void {
+  if (!current) return;
+  const w = current.elevation.width;
+  const h = current.elevation.height;
+  const rgba = layerBuffers[activeLayer];
+  if (!rgba) return;
+  const cvs = document.createElement("canvas");
+  cvs.width = w;
+  cvs.height = h;
+  cvs.getContext("2d")!.putImageData(
+    new ImageData(new Uint8ClampedArray(rgba), w, h),
+    0,
+    0,
+  );
+  cvs.toBlob((blob) => {
+    if (!blob) return;
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `cartogenesis-${safeSeed()}-${activeLayer}.png`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  }, "image/png");
+  $("status").textContent = `Downloaded the ${activeLayer} map (${w}×${h})`;
+}
+
+/** Download a labeled SVG poster of this world, over the political map. */
+function downloadPosterSvg(): void {
+  if (!current) return;
+  const w = current.elevation.width;
+  const h = current.elevation.height;
+  // The poster wants the political map as its base, regardless of the layer on
+  // screen — that is what carries region borders and names.
+  const politicalRgba =
+    layerBuffers["political"] ??
+    renderRegions(current.regions, current.water, current.elevation);
+  const dataUri = rgbaToPngDataUri(politicalRgba, w, h);
+  const svg = worldPosterSVG(current, dataUri);
+  downloadText(`cartogenesis-${safeSeed()}-poster.svg`, svg, "image/svg+xml");
+  $("status").textContent = "Downloaded the labeled SVG poster";
+}
+
+function wireExports(): void {
+  $("dlmap").addEventListener("click", downloadMapPng);
+  $("dlposter").addEventListener("click", downloadPosterSvg);
 }
