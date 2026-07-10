@@ -12,7 +12,7 @@ import { Rng } from "./rng.js";
 import { hashExact, hashQuantized, hashTokens } from "./hash.js";
 import { Grid } from "./grid.js";
 import { generateElevation, landFraction } from "./terrain.js";
-import { addVolcanoes,              } from "./volcanoes.js";
+import { addVolcanoes, fillCraterLakes,              } from "./volcanoes.js";
 import { erode } from "./erosion.js";
 import { analyzeWater,                 } from "./hydrology.js";
 import { generateTemperature, generateMoisture } from "./climate.js";
@@ -173,6 +173,9 @@ export function generateWorld(config             )        {
   // isolated.)
   root.stream("hydrology");
   const water = analyzeWater(elevation, seaLevel);
+  // Crater lakes sit above sea level, so the ocean/basin flood fill never finds
+  // them; inject them now that erosion has finalized the caldera floors.
+  fillCraterLakes(elevation, water, volcanoes, seaLevel);
 
   // L3 — Temperature; L4 — Moisture. Both draw from the climate stream.
   const climateRng = root.stream("climate");

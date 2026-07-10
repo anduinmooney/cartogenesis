@@ -57,7 +57,24 @@ test("ore/gems sit high; fish sit near water", () => {
       assert.ok(eAbove > 0.3, `${RESOURCE_NAMES[d.kind]} too low at ${eAbove.toFixed(2)}`);
     }
     if (d.kind === Resource.Fish) {
-      assert.ok(w.water.distToOcean.data[i] <= 3, "fish far from water");
+      // Near the ocean, OR beside any lake — a crater lake high in the mountains
+      // is far from the sea but is still water fish can live in.
+      let nearLake = false;
+      for (let dy = -2; dy <= 2 && !nearLake; dy++) {
+        for (let dx = -2; dx <= 2; dx++) {
+          const nx = d.x + dx;
+          const ny = d.y + dy;
+          if (nx < 0 || ny < 0 || nx >= width || ny >= w.elevation.height) continue;
+          if (w.water.lakeMask[ny * width + nx]) {
+            nearLake = true;
+            break;
+          }
+        }
+      }
+      assert.ok(
+        w.water.distToOcean.data[i] <= 3 || nearLake,
+        "fish far from any water",
+      );
     }
   }
 });

@@ -69,28 +69,39 @@ test("no trade hub is a dead city", () => {
 });
 
 test("roads are rebuilt on the survivors, not on the founding-age towns", () => {
-  // A world with ruins must have a road network that differs from the one you
-  // would get by connecting every settlement ever founded. (It is not always
-  // *shorter*: removing a well-placed hub can force longer detours.)
-  const { w, ruined } = firstWorldWithRuins();
+  // For EVERY ruin-producing world, the present-day network must equal the one
+  // you get from the survivors — never the all-towns network. That equality is
+  // the real invariant and holds always. (Removing a town does not always
+  // *change* the total length — a ruined leaf can leave it unchanged — so we
+  // assert equality-with-survivors here, and prove ruins can change the network
+  // separately below.)
+  for (const seed of SEEDS) {
+    const w = generateWorld({ seed, width: SIZE, height: SIZE });
+    const ruined = ruinedSettlementIds(w.simulation.settlementTimeline);
+    if (ruined.size === 0) continue;
+    const standing = w.settlements.settlements.filter((s) => !ruined.has(s.id));
+    const rebuilt = generateRoads(w.elevation, w.water, w.rivers, standing, {});
+    assert.equal(w.roads.length, rebuilt.length, `${seed}: roads not on survivors`);
+  }
+});
 
-  const naive = generateRoads(
-    w.elevation,
-    w.water,
-    w.rivers,
-    w.settlements.settlements,
-    {},
-  );
-  assert.notEqual(
-    w.roads.length,
-    naive.length,
-    "present-day roads are identical to the all-towns network",
-  );
-
-  // And the survivors' network is exactly what you'd get from the survivors.
-  const standing = w.settlements.settlements.filter((s) => !ruined.has(s.id));
-  const rebuilt = generateRoads(w.elevation, w.water, w.rivers, standing, {});
-  assert.equal(w.roads.length, rebuilt.length);
+test("ruins actually change the road network (not merely the town list)", () => {
+  // Somewhere among the seeds, removing the ruined towns must change the total
+  // road length — otherwise the two-pass rebuild would be unobservable.
+  const differs = SEEDS.some((seed) => {
+    const w = generateWorld({ seed, width: SIZE, height: SIZE });
+    const ruined = ruinedSettlementIds(w.simulation.settlementTimeline);
+    if (ruined.size === 0) return false;
+    const naive = generateRoads(
+      w.elevation,
+      w.water,
+      w.rivers,
+      w.settlements.settlements,
+      {},
+    );
+    return w.roads.length !== naive.length;
+  });
+  assert.ok(differs, "no seed had a ruin that changed the road network");
 });
 
 test("a world without ruins keeps its original roads and economy", () => {

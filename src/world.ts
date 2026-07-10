@@ -12,7 +12,7 @@ import { Rng } from "./rng.ts";
 import { hashExact, hashQuantized, hashTokens } from "./hash.ts";
 import { Grid } from "./grid.ts";
 import { generateElevation, landFraction } from "./terrain.ts";
-import { addVolcanoes, type Volcano } from "./volcanoes.ts";
+import { addVolcanoes, fillCraterLakes, type Volcano } from "./volcanoes.ts";
 import { erode } from "./erosion.ts";
 import { analyzeWater, type WaterLayer } from "./hydrology.ts";
 import { generateTemperature, generateMoisture } from "./climate.ts";
@@ -173,6 +173,9 @@ export function generateWorld(config: WorldConfig): World {
   // isolated.)
   root.stream("hydrology");
   const water = analyzeWater(elevation, seaLevel);
+  // Crater lakes sit above sea level, so the ocean/basin flood fill never finds
+  // them; inject them now that erosion has finalized the caldera floors.
+  fillCraterLakes(elevation, water, volcanoes, seaLevel);
 
   // L3 — Temperature; L4 — Moisture. Both draw from the climate stream.
   const climateRng = root.stream("climate");

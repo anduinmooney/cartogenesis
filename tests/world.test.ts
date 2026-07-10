@@ -71,9 +71,9 @@ function nextAfter(x: number): number {
 //                  while realms, wars, and ruins drift
 test("golden fingerprints for the canonical world are stable", () => {
   const w = generateWorld({ seed: "cartogenesis", width: 256, height: 256 });
-  assert.equal(w.meta.contentHash, "623e773a881f55b0", "quantized terrain hash");
-  assert.equal(w.meta.exactHash, "d3db452f2c2e4472", "exact terrain hash");
-  assert.equal(w.meta.simulationHash, "329a34e3d0463789", "simulation fingerprint");
+  assert.equal(w.meta.contentHash, "36d228224ba163d1", "quantized terrain hash");
+  assert.equal(w.meta.exactHash, "3ea66d768a5354c0", "exact terrain hash");
+  assert.equal(w.meta.simulationHash, "0e8a9c67aa002aa6", "simulation fingerprint");
 });
 
 test("the exact hash sees a one-ulp change that the quantized hash misses", () => {

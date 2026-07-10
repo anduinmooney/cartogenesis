@@ -70,9 +70,14 @@ export function worldReportMarkdown(world       )         {
     const vs = [...world.volcanoes].sort((a, b) => b.summit - a.summit);
     for (const v of vs) {
       const metres = elevationToMetres(v.summit, m.seaLevel, m.maxAltitudeMetres);
+      const form = v.caldera
+        ? v.caldera.lakeLevel !== undefined
+          ? ", **caldera** cradling a crater lake"
+          : ", a collapsed **caldera**"
+        : "";
       lines.push(
         `- **Mount ${v.name}** — *${glossPhrase(v.gloss)}* — ${v.type}, ${v.status}, ` +
-          `summit ${metres.toLocaleString()} m`,
+          `summit ${metres.toLocaleString()} m${form}`,
       );
     }
     lines.push("");
