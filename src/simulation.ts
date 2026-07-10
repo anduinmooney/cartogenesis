@@ -483,6 +483,10 @@ export function generateSimulation(
   const renamed = new Set<number>();
   const renamings: SettlementRenaming[] = [];
   const settlementById = new Map(settlements.map((s) => [s.id, s]));
+  // Present-day names must stay unique — the base namer guarantees it, and the
+  // renaming must not break it (two towns both re-said as "Khirlamor" once
+  // slipped through). Track the live name set as renames land.
+  const takenNames = new Set(settlements.map((s) => s.name));
 
   // --- The tick loop. Record borders after every turn (plus the initial). ---
   const snapshots: ControlSnapshot[] = [{ year: startYear, control: { ...control } }];
@@ -780,13 +784,25 @@ export function generateSimulation(
         if (ts.fellYear !== undefined || renamed.has(ts.id)) continue;
         const orig = settlementById.get(ts.id);
         if (!orig) continue;
-        const layered = composeLayered(
-          fromLang,
-          toLang,
-          orig.gloss.split("-"),
-          new Rng(`${cfg.seed}:contact:${ts.id}:${t}`),
-        );
-        if (!layered || layered.name === orig.name) continue;
+        // Retry with a salted stream if the layered form collides with a name
+        // already on the map; give up after a few — an unrenamed town is fine,
+        // a duplicate name is not.
+        let layered: ReturnType<typeof composeLayered> = null;
+        for (let attempt = 0; attempt < 4; attempt++) {
+          const candidate = composeLayered(
+            fromLang,
+            toLang,
+            orig.gloss.split("-"),
+            new Rng(`${cfg.seed}:contact:${ts.id}:${t}:${attempt}`),
+          );
+          if (!candidate || candidate.name === orig.name) continue;
+          if (takenNames.has(candidate.name)) continue;
+          layered = candidate;
+          break;
+        }
+        if (!layered) continue;
+        takenNames.delete(orig.name);
+        takenNames.add(layered.name);
         renamed.add(ts.id);
         renamings.push({
           settlementId: ts.id,

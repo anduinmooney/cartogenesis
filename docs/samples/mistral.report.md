@@ -170,28 +170,28 @@
 
 - **Bellademor**, *the river home* (prosperous) — Livestock, Fish, Horses, Grain *(founded 375)*
 - **Bellatomor**, *the river fort* (modest) — Livestock, Wine, Grain, Horses *(founded 406)*
-- **Stagrliria**, *the sea haven* (port, modest) — Timber, Grain, Wine, Horses *(founded 436)* — formerly **Stagrafjan**, before conquest remade the name
+- **Stagrdemor**, *the sea home* (port, modest) — Timber, Grain, Wine, Horses *(founded 436)* — formerly **Stagrafjan**, before conquest remade the name
 - **Vongrull**, *the green bridge* (port, prosperous) — Horses, Grain, Livestock, Stone *(founded 467)*
-- **Khirhro**, *the sea hall* (port, modest) — Fish, Livestock, Grain, Horses *(founded 497)* — formerly **Khirkhukha**, before conquest remade the name
+- **Khirbust**, *the sea gate* (port, modest) — Fish, Livestock, Grain, Horses *(founded 497)* — formerly **Khirkhukha**, before conquest remade the name
 - **Fjanliria**, *the field haven* (port, prosperous) — Livestock, Grain, Horses *(founded 528)* — formerly **Fjanba**, before conquest remade the name
-- **Ghashliria**, *the river haven* (prosperous) — Coal, Stone, Timber, Gems *(founded 558)* — formerly **Ghashzaa**, before conquest remade the name
-- **Ghashlamor**, *the river hall* (prosperous) — Livestock, Grain, Horses, Stone *(founded 589)* — formerly **Ghashashu**, before conquest remade the name
-- **Fjanliria**, *the field haven* (port, modest) — Livestock, Grain, Horses, Wine *(founded 619)* — formerly **Fjangrull**, before conquest remade the name
+- **Ghashlamor**, *the river hall* (prosperous) — Coal, Stone, Timber, Gems *(founded 558)* — formerly **Ghashzaa**, before conquest remade the name
+- **Ghashciamor**, *the river gate* (prosperous) — Livestock, Grain, Horses, Stone *(founded 589)* — formerly **Ghashashu**, before conquest remade the name
+- **Fjanlamor**, *the field hall* (port, modest) — Livestock, Grain, Horses, Wine *(founded 619)* — formerly **Fjangrull**, before conquest remade the name
 - **Bellapana**, *the river field* (prosperous) — Livestock, Grain, Wine, Horses *(founded 650)*
 
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Ghashzaa** → **Ghashliria** *(the river haven)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Ghashashu** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Khirkhukha** → **Khirhro** *(the sea hall)* — Kesh (desert) land under Auld (northern) rule, c. 150
-- **Fjangrull** → **Fjanliria** *(the field haven)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Ghashzaa** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Ghashashu** → **Ghashciamor** *(the river gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Khirkhukha** → **Khirbust** *(the sea gate)* — Kesh (desert) land under Auld (northern) rule, c. 150
+- **Fjangrull** → **Fjanlamor** *(the field hall)* — Auld (northern) land under Meridian (southern) rule, c. 150
 - **Shinghekh** → **Shinliria** *(the wild haven)* — Kesh (desert) land under Meridian (southern) rule, c. 350
 - **Stagragry** → **Stagrliria** *(the sea haven)* — Auld (northern) land under Meridian (southern) rule, c. 375
 - **Fjanba** → **Fjanliria** *(the field haven)* — Auld (northern) land under Meridian (southern) rule, c. 400
 - **Stagrahro** → **Stagrlamor** *(the sea hall)* — Auld (northern) land under Meridian (southern) rule, c. 450
-- **Stagrafjan** → **Stagrliria** *(the sea haven)* — Auld (northern) land under Meridian (southern) rule, c. 450
+- **Stagrafjan** → **Stagrdemor** *(the sea home)* — Auld (northern) land under Meridian (southern) rule, c. 450
 
 ## Faiths
 
@@ -381,7 +381,7 @@ In 275, what had once broken against Brafjan's defences now carried them: Thorkd
 
 These years also built more than they burned — 6 new settlements, of which Bellalamor would become the best known.
 
-Conquest re-said the very map: Ghashzaa became Ghashliria on its new masters' tongues — and 3 other names with it.
+Conquest re-said the very map: Ghashzaa became Ghashlamor on its new masters' tongues — and 3 other names with it.
 
 ### II. The Age of Blood and Banners, 300–500
 
@@ -559,6 +559,48 @@ In the year 1075, a pestilence swept Khirsham and carried off more than any war 
 - **1050 After Reckoning** — Rena's invasion of Beossoveolla was thrown back by Tariana.
 - **1075 After Reckoning** — Remeonte's invasion of Khirkhidku was thrown back by Thorkdaurk.
 - **1075 After Reckoning** — A plague swept Khirsham; many perished.
+
+## A Traveller's Account, in the year 1100
+
+*I, Mantir, a dealer in wool and salt, set out from Deoliria in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
+
+From Deoliria the road runs 11 leagues to Peonanelen, through grass as high as the stirrup. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Peonanelen itself — the grass bridge — is a town with its face to the sea; its market is all livestock and grain.
+
+Out of Peonanelen, then, toward Ghashciamor, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Ghashciamor itself — the river gate — is a village; its market is all livestock and grain. The people here still say Ghashashu; the ledgers say Ghashciamor. I bought bread in both names.
+
+From Ghashciamor the road runs 34 leagues to Ghashlamor. The way crosses Peonaneosso. The road finds water twice on this stretch. Ghashlamor itself — the river hall — is a village; its market is all coal and stone. The people here still say Ghashzaa; the ledgers say Ghashlamor. I bought bread in both names.
+
+Bellalamor lies 19 leagues on from Ghashlamor, through more of the same. We forded twice; I stopped counting wet boots. The road climbs some 400 metres before it thinks better of it. Bellalamor itself — the river hall — is a city; its market is all livestock and grain.
+
+Deonelen lies 13 leagues on from Bellalamor, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. The road climbs some 350 metres before it thinks better of it. Deonelen itself — the sea bridge — is a town with its face to the sea; its market is all wine and grain.
+
+Shinliria lies 13 leagues on from Deonelen, through gold grass and scattered trees. The road finds water twice on this stretch. Shinliria itself — the wild haven — is a town with its face to the sea; its market is all timber and livestock. The people here still say Shinghekh; the ledgers say Shinliria. I bought bread in both names.
+
+Out of Shinliria, then, toward Bellademor, through more of the same. We forded twice; I stopped counting wet boots. Bellademor itself — the river home — is a village; its market is all livestock and fish.
+
+Out of Bellademor, then, toward Stagrlamor, through more of the same. The way crosses Khirghen. We forded twice; I stopped counting wet boots. Stagrlamor itself — the sea hall — is a town with its face to the sea; its market is all grain and livestock. The people here still say Stagrahro; the ledgers say Stagrlamor. I bought bread in both names.
+
+From Stagrlamor the road runs 13 leagues to Stagrdemor, under green galleries. There is one ford, cold but honest. Stagrdemor itself — the sea home — is a village with its face to the sea; its market is all timber and grain. The people here still say Stagrafjan; the ledgers say Stagrdemor. I bought bread in both names.
+
+I went back down my own road as far as Stagrlamor, then turned for Fjanlamor. There is one ford, cold but honest. The road climbs some 700 metres before it thinks better of it. Fjanlamor itself — the field hall — is a village with its face to the sea; its market is all livestock and grain. The people here still say Fjangrull; the ledgers say Fjanlamor. I bought bread in both names.
+
+Deotomor lies 11 leagues on from Fjanlamor. There is one ford, cold but honest. Deotomor itself — the sea fort — is a city with its face to the sea; its market is all grain and wine.
+
+Out of Deotomor, then, toward Bellatomor. The road finds water twice on this stretch. Bellatomor itself — the river fort — is a village; its market is all livestock and wine.
+
+I went back down my own road as far as Deoliria, then turned for Stagrliria. The road finds water twice on this stretch. Stagrliria itself — the sea haven — is a town with its face to the sea; its market is all grain and livestock. The people here still say Stagragry; the ledgers say Stagrliria. I bought bread in both names.
+
+Fjanliria lies 13 leagues on from Stagrliria. We forded twice; I stopped counting wet boots. The road climbs some 300 metres before it thinks better of it. Fjanliria itself — the field haven — is a village with its face to the sea; its market is all livestock and grain. The people here still say Fjanba; the ledgers say Fjanliria. I bought bread in both names.
+
+Out of Fjanliria, then, toward Vongrull. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Vongrull itself — the green bridge — is a village with its face to the sea; its market is all horses and grain.
+
+Stagrafjysk lies 16 leagues on from Vongrull, through more of the same. We forded twice; I stopped counting wet boots. The road climbs some 650 metres before it thinks better of it. Stagrafjysk itself — the sea home — is a town with its face to the sea; its market is all horses and livestock.
+
+From Stagrafjysk the road runs 12 leagues to Khirbust, through gold grass and scattered trees. We forded once, boots held high. The road climbs some 250 metres before it thinks better of it. Khirbust itself — the sea gate — is a village with its face to the sea; its market is all fish and livestock. The people here still say Khirkhukha; the ledgers say Khirbust. I bought bread in both names.
+
+I went back down my own road as far as Deoliria, then turned for Bellapana. We forded twice; I stopped counting wet boots. Bellapana itself — the river field — is a village; its market is all livestock and grain.
+
+*I came home by the same roads, which were somehow longer in that direction. Mantir, 1100.*
 
 ## Heightmap
 

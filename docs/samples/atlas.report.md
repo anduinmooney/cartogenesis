@@ -152,17 +152,17 @@
 - **Deotomor**, *the sea fort* (port, prosperous) — Grain, Livestock, Horses, Wine *(founded 203)*
 - **Thaurnliria**, *the grass haven* (prosperous) — Grain, Livestock, Horses, Wine *(founded 238)* — formerly **Thaurndund**, before conquest remade the name
 - **Deonelen**, *the sea bridge* (port, trade hub, prosperous) — Grain, Fish, Livestock *(founded 272)*
-- **Khirdemor**, *the sea home* (port, modest) — Livestock, Timber, Fish, Horses *(founded 306)* — formerly **Khirmakh**, before conquest remade the name
+- **Khirliria**, *the sea haven* (port, modest) — Livestock, Timber, Fish, Horses *(founded 306)* — formerly **Khirmakh**, before conquest remade the name
 - **Khirghekh**, *the sea gate* (port, prosperous) — Livestock, Grain, Wine, Horses *(founded 341)*
 
 ### Villages
 
-- **Shinliria**, *the wild haven* (modest) — Livestock, Horses, Grain, Wine *(founded 409)* — formerly **Shinkai**, before conquest remade the name
+- **Shinlamor**, *the wild hall* (modest) — Livestock, Horses, Grain, Wine *(founded 409)* — formerly **Shinkai**, before conquest remade the name
 - **Khirlamor**, *the sea hall* (port, modest) — Livestock, Grain, Horses *(founded 444)* — formerly **Khirkai**, before conquest remade the name
 - **Khirzaa**, *the sea bridge* (port, prosperous) — Livestock, Fish, Iron, Wine *(founded 478)*
-- **Ghashlamor**, *the river hall* (prosperous) — Livestock, Wine, Grain, Horses *(founded 513)* — formerly **Ghashqe**, before conquest remade the name
+- **Ghashdemor**, *the river home* (prosperous) — Livestock, Wine, Grain, Horses *(founded 513)* — formerly **Ghashqe**, before conquest remade the name
 - **Deodemor**, *the sea home* (port, modest) — Spices, Fish, Livestock, Horses *(founded 547)*
-- **Stagrdinte**, *the sea spring* (port, prosperous) — Livestock, Grain, Timber, Horses *(founded 581)* — formerly **Stagrba**, before conquest remade the name
+- **Stagrlamor**, *the sea hall* (port, prosperous) — Livestock, Grain, Timber, Horses *(founded 581)* — formerly **Stagrba**, before conquest remade the name
 - **Ghashakhukha**, *the river field* (port, prosperous) — Livestock, Copper, Horses, Stone *(founded 616)*
 - **Bellapana**, *the river field* (trade hub, prosperous) — Livestock, Wine, Grain, Horses *(founded 650)*
 
@@ -176,14 +176,14 @@
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Shinkai** → **Shinliria** *(the wild haven)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Shinkai** → **Shinlamor** *(the wild hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
 - **Deodinte** → **Deofjysk** *(the sea home)* — Meridian (southern) land under Auld (northern) rule, c. 150
 - **Khirkai** → **Khirlamor** *(the sea hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Ghashqe** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Ghashqe** → **Ghashdemor** *(the river home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
 - **Rairshu** → **Rairdemor** *(the gold home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Khirmakh** → **Khirdemor** *(the sea home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Khirmakh** → **Khirliria** *(the sea haven)* — Kesh (desert) land under Meridian (southern) rule, c. 150
 - **Thaurndund** → **Thaurnliria** *(the grass haven)* — Auld (northern) land under Meridian (southern) rule, c. 700
-- **Stagrba** → **Stagrdinte** *(the sea spring)* — Auld (northern) land under Meridian (southern) rule, c. 700
+- **Stagrba** → **Stagrlamor** *(the sea hall)* — Auld (northern) land under Meridian (southern) rule, c. 700
 
 ## Faiths
 
@@ -355,7 +355,7 @@ In the year 325, no rain came to Khirkhajez for two years together; many perishe
 
 These years also built more than they burned — 7 new settlements, of which Deolamor would become the best known.
 
-Conquest re-said the very map: Shinkai became Shinliria on its new masters' tongues — and 5 other names with it.
+Conquest re-said the very map: Shinkai became Shinlamor on its new masters' tongues — and 5 other names with it.
 
 ### II. The Age of Blood and Banners, 350–600
 
@@ -448,6 +448,42 @@ About the year 1000, these were the high years of Qidkakaasi — its markets lou
 - **1000 After Reckoning** — A golden age dawned over Qidkakaasi; its cities flourished as never before.
 - **1025 After Reckoning** — A long drought gripped Deocina; many perished.
 - **1075 After Reckoning** — A golden age dawned over Caudente; its cities flourished as never before.
+
+## A Traveller's Account, in the year 1100
+
+*I, Rondir, a pilgrim of no great piety, set out from Deoliria in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
+
+From Deoliria the road runs 13 leagues to Thaurnliria, through grass as high as the stirrup. We forded three times; I stopped counting wet boots. Thaurnliria itself — the grass haven — is a town; its market is all grain and livestock. The people here still say Thaurndund; the ledgers say Thaurnliria. I bought bread in both names.
+
+Out of Thaurnliria, then, toward Stagrlamor, the country unchanged. The road finds water twice on this stretch. The road climbs some 250 metres before it thinks better of it. Stagrlamor itself — the sea hall — is a village with its face to the sea; its market is all livestock and grain. The people here still say Stagrba; the ledgers say Stagrlamor. I bought bread in both names.
+
+From Stagrlamor the road runs 23 leagues to Bellapana, through thornscrub that plucked at our sleeves. The way crosses Peonaveolla. The road finds water twice on this stretch. The road climbs some 1050 metres before it thinks better of it. Bellapana itself — the river field — is a village; its market is all livestock and wine.
+
+Deolamor lies 10 leagues on from Bellapana, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Deolamor itself — the sea hall — is a city with its face to the sea; its market is all livestock and wine.
+
+I went back down my own road as far as Bellapana, then turned for Deodemor. There is one ford, cold but honest. Deodemor itself — the sea home — is a village with its face to the sea; its market is all spices and fish.
+
+I went back down my own road as far as Deoliria, then turned for Deonelen. We forded once, boots held high. The road climbs some 250 metres before it thinks better of it. Deonelen itself — the sea bridge — is a town with its face to the sea; its market is all grain and fish.
+
+From Deonelen the road runs 10 leagues to Khirlamor, through gold grass and scattered trees. Khirlamor itself — the sea hall — is a village with its face to the sea; its market is all livestock and grain. The people here still say Khirkai; the ledgers say Khirlamor. I bought bread in both names.
+
+I went back down my own road as far as Deonelen, then turned for Ghashdemor. We forded once, boots held high. Ghashdemor itself — the river home — is a village; its market is all livestock and wine. The people here still say Ghashqe; the ledgers say Ghashdemor. I bought bread in both names.
+
+Out of Ghashdemor, then, toward Ghashakhukha, through gold grass and scattered trees. The way crosses Beossodinte and then Mairghen. We forded twice; I stopped counting wet boots. The road climbs some 1200 metres before it thinks better of it. Ghashakhukha itself — the river field — is a village with its face to the sea; its market is all livestock and copper.
+
+From Ghashakhukha the road runs 13 leagues to Khirghekh, through more of the same. We forded twice; I stopped counting wet boots. The road climbs some 350 metres before it thinks better of it. Khirghekh itself — the sea gate — is a town with its face to the sea; its market is all livestock and grain.
+
+I went back down my own road as far as Ghashakhukha, then turned for Khirzaa. There is one ford, cold but honest. The road climbs some 350 metres before it thinks better of it. Khirzaa itself — the sea bridge — is a village with its face to the sea; its market is all livestock and fish.
+
+Shinlamor lies 17 leagues on from Khirzaa, the country unchanged. We forded once, boots held high. Shinlamor itself — the wild hall — is a village; its market is all livestock and horses. The people here still say Shinkai; the ledgers say Shinlamor. I bought bread in both names.
+
+Out of Shinlamor, then, toward Deotomor, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Deotomor itself — the sea fort — is a town with its face to the sea; its market is all grain and livestock.
+
+Rairdemor lies 16 leagues on from Deotomor. We forded once, boots held high. The road climbs some 1000 metres before it thinks better of it. Rairdemor itself — the gold home — is a city with its face to the sea; its market is all horses and wine. The people here still say Rairshu; the ledgers say Rairdemor. I bought bread in both names.
+
+Out of Rairdemor, then, toward Khirliria, through gold grass and scattered trees. We forded once, boots held high. The road climbs some 250 metres before it thinks better of it. Khirliria itself — the sea haven — is a town with its face to the sea; its market is all livestock and timber. The people here still say Khirmakh; the ledgers say Khirliria. I bought bread in both names.
+
+*I came home by the same roads, which were somehow longer in that direction. Rondir, 1100.*
 
 ## Heightmap
 

@@ -29,7 +29,7 @@
 <circle cx="55" cy="75" r="3.6" fill="#fff4dc" stroke="#1a1712" stroke-width="1.2"/>
 <text x="55" y="67.4" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="8" font-weight="400" text-anchor="middle" dominant-baseline="middle">Panalamor</text>
 <circle cx="307" cy="69" r="3.6" fill="#fff4dc" stroke="#1a1712" stroke-width="1.2"/>
-<text x="307" y="61.400000000000006" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="8" font-weight="400" text-anchor="middle" dominant-baseline="middle">Knyrkaghekh</text>
+<text x="307" y="61.400000000000006" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="8" font-weight="400" text-anchor="middle" dominant-baseline="middle">Knyrkashu</text>
 <circle cx="58" cy="289" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
 <text x="58" y="282.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Peonaliria</text>
 <circle cx="137" cy="56" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
@@ -39,11 +39,11 @@
 <circle cx="183" cy="48" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
 <text x="183" y="41.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Skabust</text>
 <circle cx="28" cy="98" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
-<text x="28" y="91.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Ghashdemor</text>
+<text x="28" y="91.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Ghashlamor</text>
 <circle cx="277" cy="102" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
 <text x="277" y="95.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Ghashashu</text>
 <circle cx="164" cy="321" r="2.6" fill="#ffffff" stroke="#1a1712" stroke-width="1.2"/>
-<text x="164" y="314.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Stagrdemor</text>
+<text x="164" y="314.9" fill="#fdfdfb" stroke="#1a1712" stroke-width="1.6" paint-order="stroke" font-size="7" font-weight="400" text-anchor="middle" dominant-baseline="middle">Stagrliria</text>
 </g>
 <g><rect x="10" y="316.4" width="123.2" height="33.6" rx="4" fill="#0d1017" fill-opacity="0.66" stroke="#d9b25a" stroke-width="1"/><text x="22" y="331.18399999999997" fill="#f4ead0" font-size="16" font-weight="700" dominant-baseline="middle">Tariadente</text><text x="22" y="341.936" fill="#9fb0c0" font-size="7" font-style="italic" dominant-baseline="middle">Cartogenesis · seed: borea</text></g>
 </svg>

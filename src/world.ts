@@ -46,6 +46,7 @@ import {
 } from "./simulation.ts";
 import { generateNarrative, type NarrativeLayer } from "./narrative.ts";
 import { generateSagas, type Saga } from "./saga.ts";
+import { generateJourney, type Journey } from "./journey.ts";
 
 export const ENGINE_VERSION = "0.13.0";
 
@@ -132,6 +133,8 @@ export interface World {
   narrative: NarrativeLayer;
   /** L17b — one founding saga per culture, in verse. */
   sagas: Saga[];
+  /** L17c — a named traveller walks the present-day road network. */
+  journey: Journey;
   volcanoes: Volcano[];
 }
 
@@ -354,6 +357,8 @@ export function generateWorld(config: WorldConfig): World {
     .filter((r) => r.status !== "extinct")
     .sort((a, b) => b.finalSize - a.finalSize)[0];
 
+  const maxAltitudeMetres = config.maxAltitudeMetres ?? 4500;
+
   // L17 — Narrative: the chronicle told as a story. Strictly downstream of the
   // simulation (its own stream; reads events, never writes them), so the
   // simulation fingerprint is identical with or without it.
@@ -370,8 +375,32 @@ export function generateWorld(config: WorldConfig): World {
   const sagas = generateSagas(regions, settlements.settlements, religion, simulation, {
     seed: sagaRng.seed,
   });
+  // L17c — A traveller's account, walked on the PRESENT-DAY roads (roadsNow) so
+  // the account never travels a road to a dead city. Own stream; reads only.
+  const journeyRng = root.stream("journey");
+  const journey = generateJourney(
+    {
+      elevation,
+      regions,
+      biomes,
+      rivers,
+      roads: roadsNow,
+      settlements: settlements.settlements,
+      volcanoes,
+      simulation,
+      economy: economyNow,
+      religion,
+      meta: {
+        seaLevel,
+        maxAltitudeMetres,
+        presentYear: simulation.endYear,
+        capital: capital?.name ?? "—",
+      },
+    },
+    { seed: journeyRng.seed },
+  );
 
-  const maxAltitudeMetres = config.maxAltitudeMetres ?? 4500;
+  // (maxAltitudeMetres is declared earlier, before the journey.)
   const peakValue = elevation.extent().max;
   const highestPeakMetres = elevationToMetres(peakValue, seaLevel, maxAltitudeMetres);
 
@@ -434,6 +463,7 @@ export function generateWorld(config: WorldConfig): World {
     simulation,
     narrative,
     sagas,
+    journey,
     volcanoes,
   };
 }

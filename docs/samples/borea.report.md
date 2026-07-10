@@ -169,7 +169,7 @@
 - **Niantetomor**, *the green fort* (**capital**, port, trade hub, rich) — Grain, Livestock, Timber, Wine *(founded 100)*
 - **Deociamor**, *the sea gate* (port, prosperous) — Livestock, Wine, Timber, Grain *(founded 124)*
 - **Panalamor**, *the field hall* (port, trade hub, prosperous) — Grain, Horses, Timber, Wine *(founded 148)*
-- **Knyrkaghekh**, *the wild gate* (port, prosperous) — Livestock, Horses, Grain, Wine *(founded 172)* — formerly **Knyrkagry**, before conquest remade the name
+- **Knyrkashu**, *the wild fort* (port, prosperous) — Livestock, Horses, Grain, Wine *(founded 172)* — formerly **Knyrkagry**, before conquest remade the name
 
 ### Towns
 
@@ -177,40 +177,40 @@
 - **Peonatomor**, *the grass fort* (port, prosperous) — Livestock, Wine, Grain, Horses *(founded 220)*
 - **Bellaciamor**, *the river gate* (prosperous) — Grain, Livestock, Fish, Wine *(founded 243)*
 - **Skabust**, *the cold gate* (modest) — Livestock, Timber, Fish, Grain *(founded 267)*
-- **Ghashdemor**, *the river home* (modest) — Livestock, Grain, Horses *(founded 291)* — formerly **Ghashzaa**, before conquest remade the name
+- **Ghashlamor**, *the river hall* (modest) — Livestock, Grain, Horses *(founded 291)* — formerly **Ghashzaa**, before conquest remade the name
 - **Ghashashu**, *the river fort* (prosperous) — Livestock, Grain, Wine, Horses *(founded 315)*
-- **Stagrdemor**, *the sea home* (port, prosperous) — Grain, Timber, Horses, Livestock *(founded 339)* — formerly **Stagrathu**, before conquest remade the name
+- **Stagrliria**, *the sea haven* (port, prosperous) — Grain, Timber, Horses, Livestock *(founded 339)* — formerly **Stagrathu**, before conquest remade the name
 
 ### Villages
 
 - **Deopana**, *the sea field* (port, prosperous) — Grain, Horses, Livestock *(founded 363)*
 - **Peonanelen**, *the grass bridge* (prosperous) — Livestock, Grain, Wine, Horses *(founded 387)*
-- **Stagrciamor**, *the sea gate* (port, prosperous) — Livestock, Fish, Timber, Stone *(founded 411)* — formerly **Stagrafjan**, before conquest remade the name
+- **Stagrdemor**, *the sea home* (port, prosperous) — Livestock, Fish, Timber, Stone *(founded 411)* — formerly **Stagrafjan**, before conquest remade the name
 - **Graghekh**, *the thorn gate* (port, modest) — Grain, Fish *(founded 435)* — formerly **Grafjan**, before conquest remade the name
-- **Ghashciamor**, *the river gate* (prosperous) — Horses, Livestock, Grain, Wine *(founded 459)* — formerly **Ghashkai**, before conquest remade the name
-- **Rairtomor**, *the gold fort* (prosperous) — Livestock, Horses, Coal, Copper *(founded 483)* — formerly **Rairkhukha**, before conquest remade the name
-- **Knyrkliria**, *the wild haven* (port, prosperous) — Grain, Livestock, Horses *(founded 507)* — formerly **Knyrkba**, before conquest remade the name
-- **Shintomor**, *the wild fort* (prosperous) — Livestock, Horses, Spices *(founded 530)* — formerly **Shinshu**, before conquest remade the name
-- **Khirdemor**, *the sea home* (port, modest) — Livestock, Fish *(founded 554)* — formerly **Khirshu**, before conquest remade the name
+- **Ghashliria**, *the river haven* (prosperous) — Horses, Livestock, Grain, Wine *(founded 459)* — formerly **Ghashkai**, before conquest remade the name
+- **Rairliria**, *the gold haven* (prosperous) — Livestock, Horses, Coal, Copper *(founded 483)* — formerly **Rairkhukha**, before conquest remade the name
+- **Knyrkdemor**, *the wild home* (port, prosperous) — Grain, Livestock, Horses *(founded 507)* — formerly **Knyrkba**, before conquest remade the name
+- **Shindemor**, *the wild home* (prosperous) — Livestock, Horses, Spices *(founded 530)* — formerly **Shinshu**, before conquest remade the name
+- **Khirliria**, *the sea haven* (port, modest) — Livestock, Fish *(founded 554)* — formerly **Khirshu**, before conquest remade the name
 - **Niantepana**, *the green field* (trade hub, prosperous) — Livestock, Grain, Stone, Copper *(founded 578)*
 - **Skathu**, *the cold fort* (port, trade hub, prosperous) — Grain, Timber, Fish, Furs *(founded 602)*
 - **Rairqe**, *the gold home* (port, modest) — Livestock, Fish, Horses *(founded 626)*
-- **Rairciamor**, *the gold gate* (prosperous) — Livestock, Horses, Fish, Spices *(founded 650)* — formerly **Rairshu**, before conquest remade the name
+- **Rairtomor**, *the gold fort* (prosperous) — Livestock, Horses, Fish, Spices *(founded 650)* — formerly **Rairshu**, before conquest remade the name
 
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Stagrafjan** → **Stagrciamor** *(the sea gate)* — Auld (northern) land under Meridian (southern) rule, c. 150
-- **Ghashkai** → **Ghashciamor** *(the river gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Khirshu** → **Khirdemor** *(the sea home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Rairshu** → **Rairciamor** *(the gold gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Ghashzaa** → **Ghashdemor** *(the river home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Shinshu** → **Shintomor** *(the wild fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Rairkhukha** → **Rairtomor** *(the gold fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Stagrathu** → **Stagrdemor** *(the sea home)* — Auld (northern) land under Meridian (southern) rule, c. 175
-- **Knyrkba** → **Knyrkliria** *(the wild haven)* — Auld (northern) land under Meridian (southern) rule, c. 175
-- **Knyrkagry** → **Knyrkaghekh** *(the wild gate)* — Auld (northern) land under Kesh (desert) rule, c. 200
+- **Stagrafjan** → **Stagrdemor** *(the sea home)* — Auld (northern) land under Meridian (southern) rule, c. 150
+- **Ghashkai** → **Ghashliria** *(the river haven)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Khirshu** → **Khirliria** *(the sea haven)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Rairshu** → **Rairtomor** *(the gold fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Ghashzaa** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Shinshu** → **Shindemor** *(the wild home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Rairkhukha** → **Rairliria** *(the gold haven)* — Kesh (desert) land under Meridian (southern) rule, c. 150
+- **Stagrathu** → **Stagrliria** *(the sea haven)* — Auld (northern) land under Meridian (southern) rule, c. 175
+- **Knyrkba** → **Knyrkdemor** *(the wild home)* — Auld (northern) land under Meridian (southern) rule, c. 175
+- **Knyrkagry** → **Knyrkashu** *(the wild fort)* — Auld (northern) land under Kesh (desert) rule, c. 200
 - **Grafjan** → **Graghekh** *(the thorn gate)* — Auld (northern) land under Kesh (desert) rule, c. 200
 
 ## Faiths
@@ -288,7 +288,7 @@ Followed across 9 region(s).
 > and the name has outlived every wall they raised.
 > Knyrkagry they built first, the wild market,
 > its harbour open like a hand.
-> (The maps write it Knyrkaghekh now. The saga does not.)
+> (The maps write it Knyrkashu now. The saga does not.)
 > Over it they set Vathostvoll, the dawn storm,
 > whose dominion is the hearth;
 > and the Way of Vathostvoll keeps that fire yet.
@@ -305,7 +305,7 @@ Followed across 9 region(s).
 > for they were a people who named things truly.
 > Ghashzaa they built first, the river bridge,
 > its walls set square against the weather.
-> (The maps write it Ghashdemor now. The saga does not.)
+> (The maps write it Ghashlamor now. The saga does not.)
 > Over it they set Vaghimzizam, the sun storm,
 > whose dominion is the sea;
 > and the Faith of Vaghimzizam remembers.
@@ -393,7 +393,7 @@ In 275, Rauriabinte had grown past its own strength: Grakno and its neighbours b
 
 All the while the land was filling: 8 settlements were raised in these years, Deociamor and Panalamor among them.
 
-The occupiers kept the land-words and changed the rest, and so Stagrafjan is written Stagrciamor in every ledger since — and 10 other names with it.
+The occupiers kept the land-words and changed the rest, and so Stagrafjan is written Stagrdemor in every ledger since — and 10 other names with it.
 
 ### II. The Age of Blood and Banners, 300–500
 
@@ -582,6 +582,50 @@ In 1075, Mantemeonte had grown past its own strength: Jakai and its neighbours b
 - **1050 After Reckoning** — A golden age dawned over Tariadente; its cities flourished as never before.
 - **1075 After Reckoning** — Rauriabinte seized Grakno from Thorkno.
 - **1075 After Reckoning** — Jakai broke away from Mantemeonte to found the realm of Kaartaitan.
+
+## A Traveller's Account, in the year 1100
+
+*I, Tariai, a dealer in wool and salt, set out from Niantetomor in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
+
+Out of Niantetomor, then, toward Peonatomor, under green galleries. We forded twice; I stopped counting wet boots. Peonatomor itself — the grass fort — is a town with its face to the sea; its market is all livestock and wine.
+
+From Peonatomor the road runs 16 leagues to Skabust, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Skabust itself — the cold gate — is a town; its market is all livestock and timber.
+
+Skathu lies 10 leagues on from Skabust, under green galleries. The road finds water twice on this stretch. Skathu itself — the cold fort — is a village with its face to the sea; its market is all grain and timber.
+
+Out of Skathu, then, toward Graghekh, over hard, treeless miles. The way crosses Stagrba. There is one ford, cold but honest. The road climbs some 850 metres before it thinks better of it. Graghekh itself — the thorn gate — is a village with its face to the sea; its market is all grain and fish. The people here still say Grafjan; the ledgers say Graghekh. I bought bread in both names.
+
+Knyrkashu lies 11 leagues on from Graghekh, through grass as high as the stirrup. Knyrkashu itself — the wild fort — is a city with its face to the sea; its market is all livestock and horses. The people here still say Knyrkagry; the ledgers say Knyrkashu. I bought bread in both names.
+
+Ghashashu lies 13 leagues on from Knyrkashu. There is one ford, cold but honest. Ghashashu itself — the river fort — is a town; its market is all livestock and grain.
+
+From Ghashashu the road runs 10 leagues to Rairqe, through gold grass and scattered trees. We forded once, boots held high. Rairqe itself — the gold home — is a village with its face to the sea; its market is all livestock and fish.
+
+I went back down my own road as far as Niantetomor, then turned for Niantepana. We forded twice; I stopped counting wet boots. Niantepana itself — the green field — is a village; its market is all livestock and grain.
+
+Out of Niantepana, then, toward Panalamor, the country unchanged. We forded twice; I stopped counting wet boots. Panalamor itself — the field hall — is a city with its face to the sea; its market is all grain and horses.
+
+From Panalamor the road runs 10 leagues to Ghashlamor. We forded twice; I stopped counting wet boots. The road climbs some 350 metres before it thinks better of it. Ghashlamor itself — the river hall — is a town; its market is all livestock and grain. The people here still say Ghashzaa; the ledgers say Ghashlamor. I bought bread in both names.
+
+Shindemor lies 11 leagues on from Ghashlamor, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Shindemor itself — the wild home — is a village; its market is all livestock and horses. The people here still say Shinshu; the ledgers say Shindemor. I bought bread in both names.
+
+From Shindemor the road runs 15 leagues to Rairtomor. We forded twice; I stopped counting wet boots. The road climbs some 300 metres before it thinks better of it. Rairtomor itself — the gold fort — is a village; its market is all livestock and horses. The people here still say Rairshu; the ledgers say Rairtomor. I bought bread in both names.
+
+Out of Rairtomor, then, toward Rairliria. We forded twice; I stopped counting wet boots. Rairliria itself — the gold haven — is a village; its market is all livestock and horses. The people here still say Rairkhukha; the ledgers say Rairliria. I bought bread in both names.
+
+Peonanelen lies 11 leagues on from Rairliria, through grass as high as the stirrup. The road finds water twice on this stretch. The road climbs some 350 metres before it thinks better of it. Peonanelen itself — the grass bridge — is a village; its market is all livestock and grain.
+
+From Peonanelen the road runs 12 leagues to Peonaliria. We forded once, boots held high. Peonaliria itself — the grass haven — is a town with its face to the sea; its market is all horses and grain.
+
+From Peonaliria the road runs 11 leagues to Bellaciamor. We forded once, boots held high. The road climbs some 300 metres before it thinks better of it. Bellaciamor itself — the river gate — is a town; its market is all grain and livestock.
+
+Out of Bellaciamor, then, toward Knyrkdemor, under green galleries. We forded once, boots held high. Knyrkdemor itself — the wild home — is a village with its face to the sea; its market is all grain and livestock. The people here still say Knyrkba; the ledgers say Knyrkdemor. I bought bread in both names.
+
+Out of Knyrkdemor, then, toward Stagrliria, through grass as high as the stirrup. There is one ford, cold but honest. The road climbs some 300 metres before it thinks better of it. Stagrliria itself — the sea haven — is a town with its face to the sea; its market is all grain and timber. The people here still say Stagrathu; the ledgers say Stagrliria. I bought bread in both names.
+
+*The rest of that country I crossed more quickly than it deserved: Stagrdemor, Deopana, Deociamor, Ghashliria, Khirliria — each worth a page I did not have.*
+
+*I came home by the same roads, which were somehow longer in that direction. Tariai, 1100.*
 
 ## Heightmap
 

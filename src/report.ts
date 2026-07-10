@@ -420,6 +420,23 @@ export function worldReportMarkdown(world: World): string {
   }
   lines.push("");
 
+  // A traveller's account — the present-day roads, walked and told.
+  const j = world.journey;
+  lines.push(`## ${j.title}`);
+  lines.push("");
+  for (const p of j.opening) {
+    lines.push(`*${p}*`);
+    lines.push("");
+  }
+  for (const leg of j.legs) {
+    lines.push(leg.prose);
+    lines.push("");
+  }
+  for (const p of j.closing) {
+    lines.push(`*${p}*`);
+    lines.push("");
+  }
+
   lines.push("## Heightmap");
   lines.push("");
   lines.push(
