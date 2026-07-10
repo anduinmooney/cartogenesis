@@ -1,5 +1,13 @@
 # Next Session — Session 20
 
+> **⚡ Handoff to Fable:** the user has asked Fable to review the whole project,
+> fix real issues, confirm everything works, and build one significant addition.
+> If you are Fable (or picking up that mandate), **read `FABLE_BRIEFING.md`** —
+> it has the full mandate, the invariants, a candidate-issues list, and a
+> recommended flagship feature (a deterministic narrative-prose engine). The
+> "options" below are the normal queued tail and remain valid as smaller work or
+> as the review turns them up.
+
 > Read `PROJECT_STATE.md` first, then this. The multi-session overhaul (Sessions
 > 16–19) has landed exact arithmetic, the in-app gazetteer, client exports,
 > deeper volcanic terrain (calderas, crater lakes, lava, island arcs), and
