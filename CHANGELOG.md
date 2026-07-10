@@ -8,6 +8,52 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 21 — 2026-07-10 — Sagas, a traveller, and a legible map
+
+**Theme:** the largest session yet, in two movements — the narrative layer grew
+two voices, then mid-session user feedback (which beats any queued plan) turned
+the second half into a map-legibility pass.
+
+### L17b — Founding sagas
+One saga per culture, in verse: the crossing, the naming of the heartland (the
+lexicon glossed into the lines), the first city, the god, two word-roots taught
+to the reader, and the fate of their greatest realm — elegiac if the simulation
+extinguished it. The detail that earns its keep: a saga refuses conquest's
+renamings — *"(The maps write it Khirciamor now. The saga does not.)"* — tested.
+
+### L17c — A traveller's account
+A named traveller (composed in the capital's tongue) walks the REAL post-
+simulation road tree depth-first from the capital; every leg is told from the
+actual path cells — provinces crossed, fords, climbs in metres, volcanoes and
+ruins off the road, markets from the real economy, renamed towns heard as a
+traveller hears them ("I bought bread in both names"). Walking the world caught
+a real bug: **two towns renamed to the same name** — S18's language contact had
+no collision guard. The contact pass now tracks the live name set and retries
+on a salted stream; zero duplicates across 20 worlds.
+
+### User feedback: tooltips for everything, chronicle pins, calmer volcanoes
+1. **A full entity index** now backs the app: rulers, figures, houses, realms,
+   faiths, gods, volcanoes, features, regions, settlements — and the former
+   names of renamed towns. Every linkified name in the gazetteer (933 spans on
+   one test world), the annals sidebar (266), and the features list shows a
+   hover tooltip; located entities still fly the map on click.
+2. **Chronicle clicks land on something.** Events anchor to the region's oldest
+   standing town (coordinates aren't hashed — presentation, not history), and
+   every click drops a labelled gold pin at the spot.
+3. **Fewer, cleaner volcanoes:** count capped at 6 with thinner density (mean
+   5.1 at 384², was ~9); cinder-cone craters shallower. Fingerprints
+   regenerated (`86c5fef6` / `418ddfd2` / `15371f11`); 30-seed balance in band
+   (mean 56%).
+
+### Also
+The port-naming test's control group was wrong (riverside towns are rightly
+water-named); it is now dry inland towns, direction asserted only when that
+group exists. A sidebar-linkification ordering bug (innerHTML assigned after
+linkify) was caught on the deployed site and fixed. **211 tests** (10 new).
+Remaining tail (contours, islets, benchmark, README) carries to next session.
+
+---
+
 ## Session 20 — 2026-07-10 — Fable: the review, and the chronicle told
 
 **Theme:** the user handed the project to Fable with a mandate — review

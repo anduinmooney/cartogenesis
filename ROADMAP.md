@@ -59,6 +59,10 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   fields that active volcanoes bleed down their flanks (Session 17), and island
   arcs — volcano chains along a curved line (Session 19). Still open: per-region
   metre-accurate contour intervals.
+- ✅ **L17b/c — Sagas & the traveller.** Verse founding-sagas per culture and a
+  first-person road journey, both under the narrator's three laws (Session 21).
+- ✅ **A legible map.** Entity tooltips for everything referenced, chronicle
+  event pins, town-anchored events, a calmer volcano field (Session 21).
 - ✅ **L17 — The chronicle, told.** A deterministic in-world narrator turns the
   simulation into chaptered prose — total, grounded, strictly downstream
   (Session 20, D-025).
