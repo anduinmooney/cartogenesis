@@ -1,100 +1,91 @@
-# Next Session — Session 20
+# Next Session — Session 21
 
-> **⚡ Handoff to Fable:** the user has asked Fable to review the whole project,
-> fix real issues, confirm everything works, and build one significant addition.
-> If you are Fable (or picking up that mandate), **read `FABLE_BRIEFING.md`** —
-> it has the full mandate, the invariants, a candidate-issues list, and a
-> recommended flagship feature (a deterministic narrative-prose engine). The
-> "options" below are the normal queued tail and remain valid as smaller work or
-> as the review turns them up.
-
-> Read `PROJECT_STATE.md` first, then this. The multi-session overhaul (Sessions
-> 16–19) has landed exact arithmetic, the in-app gazetteer, client exports,
-> deeper volcanic terrain (calderas, crater lakes, lava, island arcs), and
-> language contact. What remains is the tail: one small rendering touch and a
-> cleanup pass. Each stands alone.
+> Read `PROJECT_STATE.md` first, then this. Session 20 (Fable) closed the review
+> mandate: three fixes landed, and the world gained its voice — **L17, the
+> chronicle told** (`src/narrative.ts`, D-025). The overhaul tail below remains,
+> plus two natural follow-ons the narrative layer just made possible.
 
 ## Start-of-session checklist
 
 1. `node --version` → confirm ≥ 22.6.
-2. `npm test` → confirm green **before** changing anything (baseline: **190**).
-3. Skim `CHANGELOG.md` (top, Session 19) and `DECISIONS.md` (D-022 resolved,
-   D-023 post-hoc injection, D-024 language-contact-is-overlay).
+2. `npm test` → confirm green **before** changing anything (baseline: **201**).
+3. Skim `CHANGELOG.md` (top, Session 20) and `DECISIONS.md` (D-025 — the
+   narrator's three laws — is required reading before touching narrative).
 4. Preview: `node scripts/serve-docs.ts` → `/` (atlas) and `/app/` (live).
 5. **After any `src/` change, rerun `node scripts/build-web.ts`.** New engine
    module → `MODULES`; new `web/` helper → `WEB_MODULES`.
-6. **Preview discipline:** headless viewport reports **0×0** — resize to
-   `1280×860` before measuring layout. Screenshots frequently time out; verify
-   with `preview_eval` (read canvas pixels / DOM / tooltip text), which is
-   stronger evidence anyway. Never leak a `new Worker`.
+6. **Preview gotcha (NEW, Session 20):** if the Browser pane is the ext-shaped
+   Chrome (navigate/javascript_tool instead of preview_eval), it may NOT reach
+   sandbox-bound localhost servers at all — `ERR_CONNECTION_REFUSED` while curl
+   works. Don't burn time on transport: verify content pipelines in Node (the
+   report → renderMarkdown → placePattern path is fully testable there) and
+   verify pixels on the DEPLOYED Pages site after push.
 7. **If you touch `src/simulation.ts` war/revolt/plague logic**, re-run a ~30-seed
    distribution check (mean top-power share ~55–62%).
 
 ## Invariants — know these before you touch anything
 
-- **Exact arithmetic (D-022):** engine uses only `+ - * / sqrt` via `src/exact.ts`.
-  No `Math.hypot/pow/cos/sin/exp/log` or `**` outside `render.ts` — a lint test
-  greps for it. `powExact` takes only quarter-integer exponents.
-- **Post-hoc injection (D-023):** crater lakes / lava added after classification;
-  ordering in `world.ts` is load-bearing.
-- **Names never perturb the simulation (D-021, D-024):** naming and language
-  contact use private `Rng`s and stay out of `events`. Three fingerprints pinned
-  in `tests/world.test.ts` — a change that moves them must be intentional and
-  documented.
+- **Exact arithmetic (D-022):** engine uses only `+ - * / sqrt` via `src/exact.ts`;
+  a lint test greps for violations outside `render.ts`/`exact.ts`.
+- **Three fingerprints** pinned in `tests/world.test.ts` (content `61e751b3`,
+  exact `c59c1726`, sim `c38f5de3`). Intentional moves need a DECISIONS note.
+- **Names and narrative never perturb the simulation (D-021/D-024/D-025):**
+  private `Rng`s, out of the sim's `events`, proven by the pinned fingerprints.
+- **The narrator's three laws (D-025):** strictly downstream, total (never omit
+  an event), grounded (never invent a fact). New event types must be added to
+  the narrative banks AND the total-narration test.
 - **`CONCEPTS` in `src/language.ts` is append-only.** Dated things derive from
-  `meta.presentYear`.
-- **No test may hard-code a *simulated* outcome for a seed** — discover at run
-  time (`tests/coherence.test.ts`, `tests/contact.test.ts` show the pattern).
+  `meta.presentYear`. No test may hard-code a simulated outcome for a seed.
 
 **Priority note:** if the user gives new feedback, address that first.
 
 ---
 
-# Option A — Metre-accurate contour intervals (rendering only; no fingerprints)
+# Option A — Narrative follow-ons (build on L17)
 
-`renderContours` uses a uniform interval. Make it **metre-aware**: choose a
-round interval (e.g. 100/250/500 m) from the world's actual relief, and label a
-few isolines with their elevation in metres. Pure `render.ts` change, so **no
-world-state change and no fingerprint move** — easy to verify and safe.
-- **Test:** contour lines appear at the expected elevations; labels read plausible
-  metre values. Verify live by reading canvas pixels on the Topo layer.
+The chronicler exists; two voices are within easy reach, same three laws:
+- **Founding sagas**: one per culture, opening the gazetteer's Legends section —
+  built from that culture's lexicon roots (gloss the compound names into the
+  verse: "Vask-heim, the sea-home, first of the harbours"). Small, high charm.
+- **A traveller's account**: first-person prose stitched along the actual road
+  network from the capital — regions, layered conquest-names, crater lakes,
+  lava fields, faiths, in walking order. Bigger; needs a road-walk helper.
 
-**Commit:** `Metre-accurate, labelled topographic contours`
+**Tests:** same shape as `tests/narrative.test.ts` — determinism, no leakage,
+grounding, fingerprints untouched.
 
 ---
 
-# Option B — Cleanup: islets, a benchmark, an honest README
+# Option B — Metre-accurate contour intervals (rendering only; no fingerprints)
 
-- **Islets** (changes fingerprints — it alters the region set): single-cell
-  islands become their own 1-cell "regions" and clutter every gazetteer. Merge
-  sub-threshold islets (< ~12 cells) into the nearest region across water, or
-  bucket them as "the Scattered Isles". This regenerates every world — treat it
-  as a deliberate, fingerprint-updating change, not a quick fix.
-- **Benchmark** (`scripts/bench.ts`, no fingerprints): per-layer timings for
-  256²/384²/512², a table, a budget in `PROJECT_STATE.md`.
-- **README** (no fingerprints): last touched many sessions ago; it undersells the
-  project badly (no languages, temporal atlas, exact determinism, in-app
-  gazetteer, calderas/lava, language contact). One honest pass — this is the one
-  time it earns a rewrite.
+`renderContours` uses a uniform interval. Make it metre-aware: choose a round
+interval (100/250/500 m) from the world's actual relief, label a few isolines.
+Pure `render.ts` change — safe and quick.
 
-**Commit(s):** one per piece.
+---
+
+# Option C — Cleanup: islets, a benchmark, an honest README
+
+- **Islets** (moves fingerprints — deliberate change): merge sub-threshold
+  islands (< ~12 cells) into a neighbour or a "Scattered Isles" bucket.
+- **Benchmark** (`scripts/bench.ts`): per-layer timings 256²/384²/512², budget
+  recorded in PROJECT_STATE.
+- **README**: still undersells the project (now missing the chronicle too). One
+  honest rewrite — it has earned it.
 
 ---
 
 ## Recommended order
 
-**A → B.** A (contours) is safe and quick — rendering only, no fingerprints. B's
-README and benchmark are safe; the islets merge is the one heavy item (it
-regenerates every world) — do it deliberately or leave it. Do not start a piece
-without budget to finish AND verify it. The overhaul is essentially delivered;
-this is polish and honesty, so quality over quantity.
+**A-sagas → B → C.** The sagas are small and complete the L17 arc; B is safe;
+C's islets merge is the one heavy item — do it deliberately or leave it. Do not
+start a piece without budget to finish AND verify it.
 
 ## Close out (do not skip)
 
 1. `node scripts/build-web.ts`; `node scripts/make-samples.ts`. Update golden
-   fingerprints only if terrain/sim changed — and note *which* moved, it tells
-   you how far the change reached.
-2. Update `CHANGELOG.md` (Session 20), `PROJECT_STATE.md`, `ROADMAP.md`,
+   fingerprints only if terrain/sim changed — note *which* moved.
+2. Update `CHANGELOG.md` (Session 21), `PROJECT_STATE.md`, `ROADMAP.md`,
    `DECISIONS.md` if warranted, and rewrite this file.
-3. Commit per piece and push; confirm CI green **on CI's Node** and verify the
-   live app on a FRESH preview (resize to 1280×860 first).
+3. Commit per piece and push; confirm CI green **on CI's Node**; verify the
+   deployed app (see checklist item 6 for why localhost may not work).

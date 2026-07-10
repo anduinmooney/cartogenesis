@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 19 · 2026-07-10
+- **As of:** Session 20 · 2026-07-10 (Fable)
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 190 tests pass (CI enforced). **Reproducible across
+- **Health:** 🟢 Green. 201 tests pass (CI enforced). **Reproducible across
   Node builds and platforms** — the engine uses only exactly-specified
   arithmetic, guarded by an exact bit-level hash (D-022 resolved, Session 16).
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
@@ -26,6 +26,11 @@
   in its own phonology); every name is a compound of two of them, glossed. The
   terrain steers the naming, so a port is *the sea haven* and an alpine province
   is *the mountain land*. The gazetteer and the app both print the glossary.
+- **The chronicle, told.** An in-world chronicler (L17) narrates the simulated
+  centuries as real prose — named ages, realm introductions, rivalry memory,
+  falls attached to their conquests — deterministic to the letter and proven
+  never to perturb the simulation (D-025). It is the gazetteer's centrepiece;
+  the raw dated record remains as the Annals.
 - **Conquest layers the map.** Hold a foreign-culture region long enough and its
   towns are renamed — the land-word kept in the old tongue, the settlement-word
   re-said in the ruler's (Kesh *Khaimghekh* → *Khaimdund* under Auld rule). The
@@ -61,7 +66,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 190 passing tests, incl. exact + simulation determinism guards, an
+- 201 passing tests, incl. exact + simulation determinism guards, an
   approximated-math lint, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
@@ -91,13 +96,14 @@
 | Deeper terrain: calderas · crater lakes · lava fields | ✅ done |
 | Language contact (conquest layers place-names) | ✅ done |
 | Seamount arcs (volcano chains) | ✅ done |
+| L17 Narrative (the chronicle, told) | ✅ done |
 | contour intervals · islets · benchmark · README | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 190 tests, all offline
+npm test                  # 201 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)

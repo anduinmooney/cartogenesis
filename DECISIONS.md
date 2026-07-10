@@ -6,6 +6,38 @@ old one — the history is the point.
 
 ---
 
+## D-025 — The narrator is a generator with three laws, not a model (2026-07-10, Session 20)
+**Decision:** L17 (`src/narrative.ts`) turns the simulation into prose using
+grammar-driven phrase banks expanded by a private RNG stream — no model call at
+generation time, ever. Three laws bind it, each enforced by a test:
+1. **Strictly downstream.** It reads the finished simulation and never feeds
+   back — no draw from the sim's stream, no event mutation. All three golden
+   fingerprints are byte-identical with or without the feature.
+2. **Total.** Every event is narrated; the teller may colour, never omit.
+3. **Grounded.** Every name in the prose is a real name from the world; the
+   narrator invents phrasing, never facts.
+
+**Why not model-authored prose?** The engine's identity is "same seed, same
+world, every time, offline, zero dependencies". A model call would break all
+four properties at once. The craft belongs in the generator: rivalry memory,
+momentum, cause-attachment ("With that, the realm was extinguished") are state
+machines over the event list, and they are reproducible to the letter.
+
+**Feeding it:** `SimEvent.actors` {subject, object, place} and
+`RealmSummary.languageId` were added at the source rather than re-parsing the
+prebaked event text — the fingerprint hashes year+type and realm arcs, so both
+are invisible to it. The narrator probes `e.text` only to split plague/drought
+and sacked/abandoned, which share a type; facts still come from actors.
+
+**Style consequence worth keeping:** variety is load-bearing. The varied picker
+avoids repeating a bank's previous choice *per category key* (chapter-title
+banks are keyed by tenor, not index, so back-to-back war chapters rotate), and
+momentum phrases fire probabilistically — a chronicler who says "swollen with
+victories" every time is a bore. If you add event types, add them to the banks
+AND to the total-narration test.
+
+---
+
 ## D-024 — Language contact is a cosmetic overlay, not part of the simulation (2026-07-10, Session 18)
 **Decision:** Conquest renames towns, but the renaming reads the simulation's
 deterministic `control` state and composes each new name with a **private `Rng`

@@ -59,6 +59,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   fields that active volcanoes bleed down their flanks (Session 17), and island
   arcs — volcano chains along a curved line (Session 19). Still open: per-region
   metre-accurate contour intervals.
+- ✅ **L17 — The chronicle, told.** A deterministic in-world narrator turns the
+  simulation into chaptered prose — total, grounded, strictly downstream
+  (Session 20, D-025).
 - ✅ **Language contact.** Conquest layers place-names — the conquered land keeps
   its old land-word, the ruler renames the fort (Session 18). A pure overlay:
   the simulation fingerprint is unchanged (D-024).

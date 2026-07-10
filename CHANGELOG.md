@@ -8,6 +8,59 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 20 — 2026-07-10 — Fable: the review, and the chronicle told
+
+**Theme:** the user handed the project to Fable with a mandate — review
+everything, fix what's wrong, confirm it works, and build one significant
+addition Fable would excel at. Delivered in three commits.
+
+### The review, and what it fixed
+The scouted candidate list was validated finding by finding:
+1. **Real bug, fixed:** `linkifyPlaces` probed text nodes with a stateful `/g`
+   regex — `.test()` resumed from the previous node's `lastIndex`, silently
+   skipping nodes and leaving some gazetteer place names unclickable. The
+   matching is now pure string logic in `web/markdown.ts` (`placePattern` /
+   `containsPlace` / `segmentPlaces`) with four Node tests caging the exact
+   failure mode.
+2. **Fragility, fixed:** `economy.ts` computed `richest` with `indexOf` inside a
+   `reduce` — O(n²) and identity-fragile. Now an indexed scan with identical
+   semantics; the untouched `simulationHash` is the proof of equivalence.
+3. **UX mismatch, fixed:** hovering the map while the Powers timeline was
+   scrubbed to a past year answered with *present-day* towns. Hover now uses the
+   same `settlementsAt(shownYear)` filter the markers use.
+4. **Intentional, documented:** `Date.now()` in `cli.ts` times the status line
+   and never feeds generation.
+
+### L17 — the chronicle, told (the significant addition)
+The world's history was real but read like a ledger. New `src/narrative.ts`
+gives it a chronicler: an in-world voice with an opening frame, chapters named
+for their tenor ("III. The Age of Blood and Banners, 500–700"), realm
+introductions with culture epithets, a rivalry memory ("yet again it was
+Kaarghen that kept the field"), repulsed invasions that pay off later, falls
+that attach to the conquest that caused them, momentum that colours the telling
+only sometimes, and a grounded sign-off naming the reigning monarch.
+
+Three laws, each enforced by test: **strictly downstream** (private stream, all
+three fingerprints byte-identical with the feature in place), **total** (every
+event's actors are found in their covering chapter — a chronicle that skips the
+famine is propaganda), **grounded** (every name is a real name from the world).
+`SimEvent` gained structured `actors` and `RealmSummary` a `languageId` to feed
+it — both invisible to the fingerprint by construction.
+
+Surfaced as the gazetteer's centrepiece ("## The Chronicle of …", chapters in
+the ToC, prose place-names clickable via the fixed linkifier), with the old
+bulleted list demoted to "## Annals".
+
+### Verification
+**201 tests** (11 new: 4 linkifier, 7 narrative). Fingerprints unchanged
+(`61e751b3` / `c59c1726` / `c38f5de3`). Live-app verification note: the local
+preview's browser could not reach sandbox-bound servers this session
+(ERR_CONNECTION_REFUSED from the real Chrome; curl fine) — content pipeline was
+proven end-to-end in Node instead, and the deployed Pages site verified after
+push.
+
+---
+
 ## Session 19 — 2026-07-10 — A close bug, and seamount arcs
 
 ### Fix: the gazetteer popup wouldn't close (user-reported)
