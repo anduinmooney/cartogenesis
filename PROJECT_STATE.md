@@ -121,6 +121,17 @@ node scripts/serve-docs.ts     # preview docs/ + docs/app/ at http://localhost:8
 
 No `npm install` is required — there are zero dependencies.
 
+## Performance budget (Session 22 baseline — `node scripts/bench.ts`)
+
+| Measure | Budget (median) |
+|---------|-----------------|
+| generateWorld 256² | ~370 ms |
+| generateWorld 384² (the app's size) | ~620 ms |
+| generateWorld 512² | ~1,050 ms |
+| Heaviest stages at 384² | erosion ~85 ms · roads ~65 ms · rivers ~57 ms |
+
+Re-run the bench after heavy changes; investigate anything 2× over budget.
+
 ## Key invariants (don't break these)
 
 1. Generation is a pure function of seed + config. No `Math.random`, no clock.
