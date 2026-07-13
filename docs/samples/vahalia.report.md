@@ -382,93 +382,91 @@ Followed across 1 region(s).
 
 *Set down in Deociamor, in the year 1100 after the Landing, by a servant of House Variatindo. What follows is not legend — of the founding age the legends tell enough — but the plain record of 1000 years, as well as one hand could gather it.*
 
+*The years in these pages are counted after the Landing; the first of the legends tells how the count began, with the Landing.*
+
 *The world it happened in is quickly drawn: Mount Dobra in the high places, and the Mishkai running to the sea, and between them every road this chronicle walks.*
 
-### I. The First Banners, 100–300
+### I. The Age of Foundations, 100–300
 
-About the year 100, Jakaasi held Midghen against Kheqshaa, whose army went home leaner and wiser. And in that year too, the northern realm of Vynskei marched on Brabry, and by winter the province had fallen to it; the southern realm of Caudemor was the poorer. That same year, the shrines of the Faith of Vavathygr in Brakno emptied, and those of the Cult of Vaghazazizam filled. Soon after, Vynskei moved against Deobinte, but Caudemor threw the invaders back over the border.
+100: Midghen held — Jakaasi met Kheqshaa at the border and sent it back the way it came. Vynskei crossed into Brabry at first thaw; Caudemor spent the summer pretending it could be undone. And in that year too, quieter conquests were made as well: Brakno turned from the Faith of Vavathygr to the Cult of Vaghazazizam. Before long, Vynskei moved against Deobinte, but Caudemor threw the invaders back over the border.
 
-In the year 125, the assault Mantebinte loosed upon Midshaa broke against Vynskei's spears and came to nothing. And in that year too, a great drought lay upon Melamelen; the rivers shrank and the wells soured. Before long, Kheqshaa moved against Jararer, but Caudemor threw the invaders back over the border. That same year, the realm of Mekaasi was carved whole out of Vynskei's flank, with Midshaa at its heart.
+In the year 125, Vynskei held Midshaa against Mantebinte, whose army went home leaner and wiser. The wells of Melamelen gave dust, and the river shrank to an argument. Within the year, whatever Kheqshaa intended for Jararer, Caudemor had prepared for it twice over.
 
-About the year 150, quieter conquests were made as well: Knyrkafjan turned from the Faith of Vavathygr to the Rite of Vabamorvomor. Soon after, the banners of Mantebinte entered Midshaa, and what Mekaasi had held it held no longer. In the same season, no rain came to Mairkhidku for two years together; many perished.
+In 150, too big to govern and too proud to shrink, Vynskei watched Midshaa walk away and become Mekaasi. Nor was that all: the shrines of the Faith of Vavathygr in Knyrkafjan emptied, and those of the Rite of Vabamorvomor filled. Hard on its heels, the matter of Midshaa was settled with spears — Mantebinte kept the province, Mekaasi the grievance. That same year, no rain came to Mairkhidku for two years together; many perished. The record here is thin, and I have not thickened it.
 
-In 200, Beossoriando passed by force from Mekaasi to Rairkaasi; the tax rolls were rewritten before the dead were counted. It was the end of Mekaasi: 50 years of banners, done in a single season. Hard on its heels, Shinkad did not survive its conquerors; what stands of it stands empty. In the same season, what had once broken against Midghen's defences now carried them: Kheqshaa took the province, and Jakaasi's pride with it. With that, the realm of Jakaasi was extinguished; its name passes from the roll of the powers.
+About the year 200, the desert realm of Rairkaasi marched on Beossoriando, and by winter the province had fallen to it; Mekaasi was the poorer. It was the end of Mekaasi: 50 years of banners, done in a single season. Shinkad was stormed and left a ruin; travellers still point out its broken walls.
 
-In the year 250, what had once broken against Jararer's defences now carried them: Kheqshaa took the province, and Caudemor's pride with it. Soon after, Kheqshaa and Caudemor met over Deobinte yet again, and yet again it was Kheqshaa that kept the field. It was the end of Caudemor: 175 years of banners, done in a single season. In the same season, the assault Mantebinte loosed upon Staunbry broke against Vynskei's spears and came to nothing.
+In 225, what had once broken against Midghen's defences now carried them: Kheqshaa took the province, and Jakaasi's pride with it. And that was the whole of Jakaasi's ending — no siege worth the name, no song; a surrender and a seal. Soon after, what had once broken against Jararer's defences now carried them: Kheqshaa took the province, and Caudemor's pride with it.
 
-In 275, these were the high years of Vynskei — its markets loud, its walls, for a while, unneeded.
+275: Kheqshaa and Caudemor met over Deobinte yet again, and yet again it was Kheqshaa that kept the field. It was the end of Caudemor: 175 years of banners, done in a single season. The assault Mantebinte loosed upon Staunbry broke against Vynskei's spears and came to nothing. For a while everything Vynskei touched came back gold; even its rivals banked in its coin.
 
-These years also built more than they burned — 7 new settlements, of which Fjangry would become the best known.
+All the while the land was filling: 7 settlements were raised in these years, Fjangry and Khirghekh among them.
 
 Conquest re-said the very map: Khirkai became Khirtomor on its new masters' tongues — and 4 other names with it.
 
-### II. The Marching Years, 300–500
+### II. The Contested Years, 300–500
 
-In the year 300, swollen with victories, Kheqshaa pressed on into Brabry, and Vynskei could not hold it. And in that year too, Rairkaasi had grown past its own strength: Beossoriando and its neighbours broke away to found Tariabinte. Before long, Kheqshaa, whose appetite grew with the eating, took Beossoriando next.
+In 300, one more province, Brabry, joined Kheqshaa's list; Vynskei's name joined another. Nor was that all: Tariabinte left Rairkaasi the way grown children leave — with Beossoriando, and without asking. Kheqshaa crossed into Beossoriando at first thaw; Tariabinte spent the summer pretending it could be undone. And in that year too, Mantebinte marched on Mairkhaim, and by winter the province had fallen to it; Tariabinte was the poorer. And that was the whole of Tariabinte's ending — no siege worth the name, no song; a surrender and a seal.
 
-About the year 325, Mantebinte seized Mairkhaim from Tariabinte, and the border stones were moved in the night. With that, the realm of Tariabinte was extinguished; its name passes from the roll of the powers. Soon after, Mantebinte moved against Staunbry, but Vynskei threw the invaders back over the border.
+About the year 350, Vynskei held Staunbry against Mantebinte, whose army went home leaner and wiser. The banners of Kheqshaa entered Khirmid, and what Knauskastall had held it held no longer. It was Kheqshaa's year: Brakno was taken from Knauskastall before the passes closed. In the same season, the garrison of Brakno woke to new flags — Storkastall had declared itself overnight, and made it stick.
 
-In 350, there was no halting Kheqshaa that season: Khirmid fell to it while Knauskastall looked on. Before long, Brakno passed by force from Knauskastall to Kheqshaa; the tax rolls were rewritten before the dead were counted. In the same season, the people of Brakno drove out Kheqshaa's governors and took for themselves the name Storkastall. And in that year too, word came from Beossoriando that it would be governed from within: thus Tenacaria, born in a single furious season.
+In the year 375, word came from Beossoriando that it would be governed from within: thus Tenacaria, born in a single furious season. Peonabinte cracked and browned under a sky that owed it water and paid none. Hard on its heels, Kheqshaa came for Beossoriando and left without it; the war songs on both sides insist otherwise.
 
-About the year 375, a great drought lay upon Peonabinte; the rivers shrank and the wells soured. Hard on its heels, Tenacaria held Beossoriando against Kheqshaa, whose army went home leaner and wiser. That same year, Knauskastall seized Brakno from Storkastall, and the border stones were moved in the night. It was the end of Storkastall: 25 years of banners, done in a single season.
+About the year 400, Knauskastall marched on Brakno, and by winter the province had fallen to it; the northern realm of Storkastall was the poorer. With that, the realm of Storkastall was extinguished; its name passes from the roll of the powers. Close on that, the appetite of Mantebinte was becoming proverbial: Beossoriando this time, and Tenacaria unable to answer. It was the end of Tenacaria: 50 years of banners, done in a single season.
 
-In 425, swollen with victories, Mantebinte pressed on into Beossoriando, and Tenacaria could not hold it. With that, the realm of Tenacaria was extinguished; its name passes from the roll of the powers. Before long, Kheqshaa and Knauskastall met over Brakno yet again, and yet again it was Kheqshaa that kept the field. In the same season, Brakno rose against Kheqshaa, and out of the rising was proclaimed the free realm of Fjeiskdaurk.
+In 450, the old quarrel between Kheqshaa and Knauskastall found its old battlefield: Brakno changed hands once more, in the usual direction. That same year, Kheqshaa taxed Brakno once too often; the realm of Fjeiskdaurk was the receipt. The same year, Knaurkno changed its prayers — the Faith of Vavathygr out, the Rite of Vabamorvomor in, and the festival days re-hung on the calendar. In the same season, no rain came to Shinkhash for two years together; many perished.
 
-About the year 450, the shrines of the Faith of Vavathygr in Knaurkno emptied, and those of the Rite of Vabamorvomor filled. And in that year too, no rain came to Shinkhash for two years together; many perished. In the same season, not all was iron: a golden age dawned over Kheqshaa, and its cities flourished as never before. Hard on its heels, Kheqshaa, whose appetite grew with the eating, took Brakno next. It was the end of Fjeiskdaurk: 25 years of banners, done in a single season.
+About the year 450, these were the high years of Kheqshaa — its markets loud, its walls, for a while, unneeded. Kheqshaa took Brakno within the year, and the young northern realm of Fjeiskdaurk could do little but record the loss. And that was the whole of Fjeiskdaurk's ending — no siege worth the name, no song; a surrender and a seal. Nor was that all: for a while everything Kheqshaa touched came back gold; even its rivals banked in its coin.
 
-In 475, these were the high years of Kheqshaa — its markets loud, its walls, for a while, unneeded.
-
-All the while the land was filling: 8 settlements were raised in these years, Ghashaghekh and Deotomor among them.
+The map grew fuller meanwhile: 8 new settlements took root, Ghashaghekh first among them.
 
 The occupiers kept the land-words and changed the rest, and so Bellatelen is written Bellaghekh in every ledger since.
 
-### III. The Contested Years, 500–700
+### III. The Wars of the Marches, 500–700
 
-In the year 500, Kheqshaa and Knauskastall met over Stagrdaurk yet again, and yet again it was Kheqshaa that kept the field. In the same season, the assault Mantebinte loosed upon Staunbry broke against Vynskei's spears and came to nothing. And in that year too, a pestilence swept Vongra and carried off more than any war had.
+The year 500 opened with trouble: Kheqshaa and Knauskastall met over Stagrdaurk yet again, and yet again it was Kheqshaa that kept the field. And in that year too, Staunbry held — Vynskei met Mantebinte at the border and sent it back the way it came. That same year, the physicians of Vongra tried everything; the gravediggers finished what was left. Not all was iron: a golden age dawned over Mantebinte, and its cities flourished as never before.
 
-About the year 500, not all was iron: a golden age dawned over Mantebinte, and its cities flourished as never before. Soon after, Kheqshaa and Knauskastall met over Vongra yet again, and yet again it was Kheqshaa that kept the field. That same year, Knauskastall held Stagraknaurk against Rairkaasi, whose army went home leaner and wiser. In the same season, the people of Brakno drove out Kheqshaa's governors and took for themselves the name Thorkno.
+In the year 525, the old quarrel between Kheqshaa and Knauskastall found its old battlefield: Vongra changed hands once more, in the usual direction. Rairkaasi came for Stagraknaurk and left without it; the war songs on both sides insist otherwise. In 525, word came from Brakno that it would be governed from within: thus Thorkno, born in a single furious season.
 
-In 525, word came from Vongra that it would be governed from within: thus Vyndaurk, born in a single furious season. And in that year too, these were the high years of Mantebinte — its markets loud, its walls, for a while, unneeded. Hard on its heels, Kheqshaa and Knauskastall met over Stagraknaurk yet again, and yet again it was Kheqshaa that kept the field. Soon after, the banners of Kheqshaa entered Brakno, and what Thorkno had held it held no longer. With that, the realm of Thorkno was extinguished; its name passes from the roll of the powers.
+The year 525 opened with trouble: the garrison of Vongra woke to new flags — Vyndaurk had declared itself overnight, and made it stick. Mantebinte had its great noon: roads mended, songs written, taxes very nearly forgiven. Hard on its heels, Kheqshaa and Knauskastall met over Stagraknaurk yet again, and yet again it was Kheqshaa that kept the field. It was soon after that Kheqshaa crossed into Brakno, and it did not cross back; Thorkno redrew its maps. It was the end of Thorkno: 50 years of banners, done in a single season.
 
-In the year 575, what had once broken against Staunbry's defences now carried them: Mantebinte took the province, and Vynskei's pride with it. In the same season, the people of Stagraknaurk drove out Kheqshaa's governors and took for themselves the name Steirkdaurk. And in that year too, the realm of Mishkaasi was carved whole out of Mantebinte's flank, with Midshaa at its heart. Before long, Rairkaasi seized Stagraknaurk from Steirkdaurk, and the border stones were moved in the night. It was the end of Steirkdaurk: 25 years of banners, done in a single season.
+In the year 575, what had once broken against Staunbry's defences now carried them: Mantebinte took the province, and Vynskei's pride with it. In the same season, word came from Stagraknaurk that it would be governed from within: thus Steirkdaurk, born in a single furious season. That same year, too big to govern and too proud to shrink, Mantebinte watched Midshaa walk away and become Mishkaasi. Hard on its heels, Rairkaasi crossed into Stagraknaurk at first thaw; Steirkdaurk spent the summer pretending it could be undone. And that was the whole of Steirkdaurk's ending — no siege worth the name, no song; a surrender and a seal.
 
-In 625, the banners of Kheqshaa entered Vongra, and what Vyndaurk had held it held no longer. With that, the realm of Vyndaurk was extinguished; its name passes from the roll of the powers. That same year, Beossoriando passed by force from Mishkaasi to Mantebinte; the tax rolls were rewritten before the dead were counted.
+In 625, Kheqshaa seized Vongra from Vyndaurk, and the border stones were moved in the night. With that, the realm of Vyndaurk was extinguished; its name passes from the roll of the powers. That same year, there was no halting Mantebinte that season: Beossoriando fell to it while Mishkaasi looked on.
 
-About the year 650, there was no halting Mantebinte that season: Midshaa fell to it while Mishkaasi looked on. It was the end of Mishkaasi: 75 years of banners, done in a single season. And in that year too, Kheqshaa had grown past its own strength: Stagrdaurk and its neighbours broke away to found Thorkaskei.
+In the year 650, Mantebinte, whose appetite grew with the eating, took Midshaa next. It was the end of Mishkaasi: 75 years of banners, done in a single season. Thorkaskei left Kheqshaa the way grown children leave — with Stagrdaurk, and without asking. The priests of the Rite of Vabamorvomor out-argued the priests of the Faith of Vavathygr in Stagraknaurk, which is how those wars are won.
 
-In the year 650, quieter conquests were made as well: Stagraknaurk turned from the Faith of Vavathygr to the Rite of Vabamorvomor. Soon after, the banners of Kheqshaa entered Brakno, and what Thorkaskei had held it held no longer. In the same season, the assault Rairkaasi loosed upon Stagrdaurk broke against Thorkaskei's spears and came to nothing.
+The year 675 opened with trouble: the matter of Brakno was settled with spears — Kheqshaa kept the province, Thorkaskei the grievance. Nor was that all: Thorkaskei held Stagrdaurk against Rairkaasi, whose army went home leaner and wiser.
 
 These years also built more than they burned — 7 new settlements, of which Khirkai would become the best known.
 
 ### IV. The Age of Blood and Banners, 700–900
 
-About the year 700, swollen with victories, Kheqshaa pressed on into Stagrdaurk, and Thorkaskei could not hold it. And in that year too, Vynskei held Fjanthaurn against Mantebinte, whose army went home leaner and wiser. That same year, word came from Midshaa that it would be governed from within: thus Meqe, born in a single furious season.
+About the year 700, swollen with victories, Kheqshaa pressed on into Stagrdaurk, and Thorkaskei could not hold it. In the same season, Fjanthaurn held — Vynskei met Mantebinte at the border and sent it back the way it came. Mantebinte taxed Midshaa once too often; the realm of Meqe was the receipt.
 
-In the year 700, the people of Stagrdaurk drove out Kheqshaa's governors and took for themselves the name Brograkno. In the same season, the realm of Jataitan was carved whole out of Rairkaasi's flank, with Jaghen at its heart. Before long, there was no halting Rairkaasi that season: Stagrdaurk fell to it while Brograkno looked on. With that, the realm of Brograkno was extinguished; its name passes from the roll of the powers.
+700: the people of Stagrdaurk drove out Kheqshaa's governors and took for themselves the name Brograkno. Too big to govern and too proud to shrink, Rairkaasi watched Jaghen walk away and become Jataitan. Soon after, Rairkaasi marched on Stagrdaurk, and by winter the province had fallen to it; the young northern realm of Brograkno was the poorer. And that was the whole of Brograkno's ending — no siege worth the name, no song; a surrender and a seal.
 
-About the year 750, Kheqshaa and Thorkaskei met over Vongra yet again, and yet again it was Kheqshaa that kept the field. It was the end of Thorkaskei: 100 years of banners, done in a single season. And in that year too, Mantebinte, whose appetite grew with the eating, took Midshaa next. With that, the realm of Meqe was extinguished; its name passes from the roll of the powers.
+In the year 750, the old quarrel between Kheqshaa and Thorkaskei found its old battlefield: Vongra changed hands once more, in the usual direction. With that, the realm of Thorkaskei was extinguished; its name passes from the roll of the powers. The same year, Midshaa passed by force from Meqe to Mantebinte; the tax rolls were rewritten before the dead were counted. And that was the whole of Meqe's ending — no siege worth the name, no song; a surrender and a seal.
 
-In 775, Kheqshaa marched on Stagrahrei, and by winter the province had fallen to it; the young desert realm of Jataitan was the poorer. That same year, swollen with victories, Mantebinte pressed on into Jaghen, and Jataitan could not hold it. It was the end of Jataitan: 75 years of banners, done in a single season.
+In 775, there was no halting Kheqshaa that season: Stagrahrei fell to it while Jataitan looked on. Mantebinte marched on Jaghen, and by winter the province had fallen to it; Jataitan was the poorer. With that, the realm of Jataitan was extinguished; its name passes from the roll of the powers. Within the year, one more province, Knaurkno, joined Kheqshaa's list; Rairkaasi's name joined another.
 
-In the year 800, Kheqshaa, whose appetite grew with the eating, took Knaurkno next. That same year, Stagrba was stormed and left a ruin; travellers still point out its broken walls. In the same season, what had once broken against Fjanthaurn's defences now carried them: Mantebinte took the province, and Vynskei's pride with it.
+In the year 800, Stagrba burned for two nights and was not rebuilt. And in that year too, what had once broken against Fjanthaurn's defences now carried them: Mantebinte took the province, and Vynskei's pride with it. That same year, a pestilence swept Midghen and carried off more than any war had. Close on that, Mantebinte and Vynskei met over Stagrba yet again, and yet again it was Mantebinte that kept the field. It was the end of Vynskei: 725 years of banners, done in a single season.
 
-About the year 800, in Midghen the bells rang without ceasing; a third of its people were laid in the ground. Hard on its heels, Mantebinte and Vynskei met over Stagrba yet again, and yet again it was Mantebinte that kept the field. With that, the realm of Vynskei was extinguished; its name passes from the roll of the powers.
+In 825, Kheqshaa seized Stagraknaurk from Rairkaasi, and the border stones were moved in the night. Before long, Rairkaasi held Stagrdaurk against Kheqshaa, whose army went home leaner and wiser. And in that year too, the assault Mantebinte loosed upon Shinkhash broke against Rairkaasi's spears and came to nothing. In Shinkhash the bells rang without ceasing; a third of its people were laid in the ground.
 
-In 825, the banners of Kheqshaa entered Stagraknaurk, and what Rairkaasi had held it held no longer. Soon after, the assault Kheqshaa loosed upon Stagrdaurk broke against Rairkaasi's spears and came to nothing. And in that year too, Rairkaasi held Shinkhash against Mantebinte, whose army went home leaner and wiser. In the same season, a pestilence swept Shinkhash and carried off more than any war had.
+In the year 875, the physicians of Khirkhaim tried everything; the gravediggers finished what was left. I set it down as it was told to me.
 
-In the year 875, in Khirkhaim the bells rang without ceasing; a third of its people were laid in the ground.
-
-Conquest re-said the very map: Fjangry became Fjanqe on its new masters' tongues — and 4 other names with it.
+Names changed hands with the land: Fjangry would be Fjanqe from then on — and 4 other names with it.
 
 ### V. The Contested Years, 900–1100
 
-In 900, what had once broken against Shinkhash's defences now carried them: Mantebinte took the province, and Rairkaasi's pride with it. And in that year too, what had once broken against Stagrdaurk's defences now carried them: Kheqshaa took the province, and Rairkaasi's pride with it. In the same season, not all was iron: a golden age dawned over Kheqshaa, and its cities flourished as never before. Hard on its heels, the assault Mantebinte loosed upon Knyrkafjan broke against Rairkaasi's spears and came to nothing.
+In 900, what had once broken against Shinkhash's defences now carried them: Mantebinte took the province, and Rairkaasi's pride with it. What had once broken against Stagrdaurk's defences now carried them: Kheqshaa took the province, and Rairkaasi's pride with it. That same year, not all was iron: a golden age dawned over Kheqshaa, and its cities flourished as never before. Soon after, Rairkaasi held Knyrkafjan against Mantebinte, whose army went home leaner and wiser.
 
-In the year 975, what had once broken against Knyrkafjan's defences now carried them: Mantebinte took the province, and Rairkaasi's pride with it. And in that year too, the shrines of the Rite of Vabamorvomor in Knaurkno emptied, and those of the Cult of Vaghazazizam filled. That same year, a pestilence swept Stagrdaurk and carried off more than any war had.
+In 975, what had once broken against Knyrkafjan's defences now carried them: Mantebinte took the province, and Rairkaasi's pride with it. In 975, quieter conquests were made as well: Knaurkno turned from the Rite of Vabamorvomor to the Cult of Vaghazazizam. The same year, sickness walked through Stagrdaurk and was not particular. Hard on its heels, the assault Mantebinte loosed upon Brabry broke against Kheqshaa's spears and came to nothing.
 
-In 1000, Kheqshaa held Brabry against Mantebinte, whose army went home leaner and wiser. In the years that followed, Mantebinte moved against Brabry, but Kheqshaa threw the invaders back over the border.
+In 1050, Mantebinte came for Brabry and left without it; the war songs on both sides insist otherwise.
 
-The occupiers kept the land-words and changed the rest, and so Khirghekh is written Khirlamor in every ledger since — and 3 other names with it.
+Conquest re-said the very map: Khirghekh became Khirlamor on its new masters' tongues — and 3 other names with it.
 
 *So the matter stands in 1100: 5 realms endure, and Kheqshaa is mightiest among them, holding 16 provinces. 2 towns lie in ruins; their names are kept in this book, which is more than their walls kept.*
 

@@ -359,71 +359,73 @@ Followed across 1 region(s).
 
 ## The Chronicle of Steirkastall
 
-*I write in Deoliria, under the patronage of House Belentaria, in the year 1100. The legends of the founding age are kept elsewhere in this book; here is only what happened, year upon year, for 1000 years.*
+*I write in Deoliria, in the year 1100, having outlived most of the men in this book and served House Belentaria longer than either of us expected. That is the whole of my qualification, and it is enough.*
+
+*The years in these pages are counted after the Crowning; the first of the legends tells how the count began, with the First Crowning.*
 
 *The world it happened in is quickly drawn: Mount Semorneosso in the high places, and the Belenbella running to the sea, and between them every road this chronicle walks.*
 
-### I. The Age of Foundations, 100–300
+### I. The Shaping Years, 100–300
 
-About the year 100, the banners of Caubinte entered Khirkhajez, and what Mishmaad had held it held no longer. It was the end of Mishmaad; its lands were divided among its enemies. That same year, the assault Redente loosed upon Beossoda broke against Rairqe's spears and came to nothing.
+The year 100 opened with trouble: Caubinte crossed into Khirkhajez at first thaw; Mishmaad spent the summer pretending it could be undone. It was the end of Mishmaad; its lands were divided among its enemies. And in that year too, Beossoda held — Rairqe met Redente at the border and sent it back the way it came. Before long, Caubinte marched on Beossoda, and by winter the province had fallen to it; Rairqe was the poorer.
 
-In the year 125, Beossoda passed by force from Rairqe to Caubinte; the tax rolls were rewritten before the dead were counted. In the same season, Caumeonte seized Shinshaa from Rairqe, and the border stones were moved in the night. With that, the realm of Rairqe was extinguished; its name passes from the roll of the powers.
+125: Shinshaa passed by force from Rairqe to Caumeonte; the tax rolls were rewritten before the dead were counted. And that was the whole of Rairqe's ending — no siege worth the name, no song; a surrender and a seal. Hard on its heels, Caumeonte moved against Niantepeona, but the southern realm of Remeonte threw the invaders back over the border. That same year, the people of Shinshaa drove out Caumeonte's governors and took for themselves the name Rairghen.
 
-In 150, Remeonte held Niantepeona against Caumeonte, whose army went home leaner and wiser. In the same season, the people of Shinshaa drove out Caumeonte's governors and took for themselves the name Rairghen. And in that year too, no rain came to Niantepeona for two years together; many perished. Soon after, Caubinte, whose appetite grew with the eating, took Shinshaa next. It was the end of Rairghen: 25 years of banners, done in a single season.
+In the year 150, Niantepeona cracked and browned under a sky that owed it water and paid none. Shinshaa fell to Caubinte within the year; Rairghen's protest is preserved, and was ignored. With that, the realm of Rairghen was extinguished; its name passes from the roll of the powers. Hard on its heels, what the army wanted from Deotomor it took; the rest it left to the crows.
 
-In the year 200, Deotomor was stormed and left a ruin; travellers still point out its broken walls. In the same season, what had once broken against Niantepeona's defences now carried them: Caumeonte took the province, and Remeonte's pride with it. That same year, the banners of Steirkastall entered Deoneosso, and what Remeonte had held it held no longer. In the same season, the realm of Vynkno was carved whole out of Steirkastall's flank, with Brasturn at its heart.
+In 200, what had once broken against Niantepeona's defences now carried them: Caumeonte took the province, and Remeonte's pride with it. Nor was that all: the matter of Deoneosso was settled with spears — Steirkastall kept the province, Remeonte the grievance. The same year, Vynkno left Steirkastall the way grown children leave — with Brasturn, and without asking.
 
-In 200, quieter conquests were made as well: Brafjan turned from the Faith of Vathorkveill to the Way of Varondovomor. Before long, the assault Caumeonte loosed upon Khirkhukha broke against Remeonte's spears and came to nothing. And in that year too, Khirshaa passed by force from Remeonte to Steirkastall; the tax rolls were rewritten before the dead were counted.
+In the year 200, the priests of the Way of Varondovomor out-argued the priests of the Faith of Vathorkveill in Brafjan, which is how those wars are won. Before long, Caumeonte came for Khirkhukha and left without it; the war songs on both sides insist otherwise. It was that same year that Steirkastall crossed into Khirshaa, and it did not cross back; Remeonte redrew its maps. That same year, no rain came to Syaeenmelen for two years together; many perished. Write the names while they are still names.
 
-In the year 225, a great drought lay upon Syaeenmelen; the rivers shrank and the wells soured. Hard on its heels, Redente marched on Brasturn, and by winter the province had fallen to it; the northern realm of Vynkno was the poorer. That same year, word came from Niantepeona that it would be governed from within: thus Rauriameonte, born in a single furious season. In the same season, Caumeonte had grown past its own strength: Beossolaria and its neighbours broke away to found Tenameonte.
+About the year 250, the banners of Redente entered Brasturn, and what Vynkno had held it held no longer. In the same season, word came from Niantepeona that it would be governed from within: thus Rauriameonte, born in a single furious season. Caumeonte had grown past its own strength: Beossolaria and its neighbours broke away to found Tenameonte.
 
-About the year 250, the realm of Knauskno was carved whole out of Redente's flank, with Brasturn at its heart. Soon after, Steirkastall and Remeonte met over Khirkhidku yet again, and yet again it was Steirkastall that kept the field. With that, the realm of Remeonte was extinguished; its name passes from the roll of the powers.
+In the year 250, too big to govern and too proud to shrink, Redente watched Brasturn walk away and become Knauskno. Soon after, Steirkastall and Remeonte met over Khirkhidku yet again, and yet again it was Steirkastall that kept the field. It was the end of Remeonte: 175 years of banners, done in a single season.
 
-These years also built more than they burned — 6 new settlements, of which Ghashmakh would become the best known.
+The map grew fuller meanwhile: 6 new settlements took root, Ghashmakh first among them.
 
-Conquest re-said the very map: Stagragrull became Stagrlamor on its new masters' tongues — and 5 other names with it.
+Names changed hands with the land: Stagragrull would be Stagrlamor from then on — and 5 other names with it.
 
-### II. The Contested Years, 300–500
+### II. The Marching Years, 300–500
 
-In the year 300, Niantepeona passed by force from Rauriameonte to Caumeonte; the tax rolls were rewritten before the dead were counted. It was the end of Rauriameonte: 50 years of banners, done in a single season. In the same season, Tenameonte held Brafjan against Caubinte, whose army went home leaner and wiser.
+In 300, Caumeonte, whose appetite grew with the eating, took Niantepeona next. With that, the realm of Rauriameonte was extinguished; its name passes from the roll of the powers. Nor was that all: whatever Caubinte intended for Brafjan, Tenameonte had prepared for it twice over. The physicians of Khirkhajez tried everything; the gravediggers finished what was left.
 
-About the year 300, a pestilence swept Khirkhajez and carried off more than any war had. Hard on its heels, what had once broken against Khirkhukha's defences now carried them: Caumeonte took the province, and Remeonte's pride with it. With that, the realm of Remeonte was extinguished; its name passes from the roll of the powers.
+In the year 325, what had once broken against Khirkhukha's defences now carried them: Caumeonte took the province, and Remeonte's pride with it. It was the end of Remeonte: 225 years of banners, done in a single season. The same year, Steirkastall had its great noon: roads mended, songs written, taxes very nearly forgiven.
 
-In 325, these were the high years of Steirkastall — its markets loud, its walls, for a while, unneeded. Before long, there was no halting Caumeonte that season: Brafjan fell to it while Tenameonte looked on. In the same season, not all was iron: a golden age dawned over Caumeonte, and its cities flourished as never before.
+In 350, Tenameonte lost Brafjan to Caumeonte, and the harvest went with it. That same year, these were the high years of Caumeonte — its markets loud, its walls, for a while, unneeded. Caumeonte took Beossolaria soon after, and Tenameonte could do little but record the loss. With that, the realm of Tenameonte was extinguished; its name passes from the roll of the powers.
 
-In the year 375, the banners of Caumeonte entered Beossolaria, and what Tenameonte had held it held no longer. It was the end of Tenameonte: 125 years of banners, done in a single season. In the same season, Redente marched on Stagrba, and by winter the province had fallen to it; Vynkno was the poorer. With that, the realm of Vynkno was extinguished; its name passes from the roll of the powers.
+Stagrba fell to Redente in 375; Vynkno's protest is preserved, and was ignored. It was the end of Vynkno: 175 years of banners, done in a single season. A pestilence swept Brasturn and carried off more than any war had. Within the year, it was Steirkastall's year: Brasturn was taken from Knauskno before the passes closed.
 
-In 375, in Brasturn the bells rang without ceasing; a third of its people were laid in the ground. Hard on its heels, Brasturn passed by force from Knauskno to Steirkastall; the tax rolls were rewritten before the dead were counted. Soon after, swollen with victories, Steirkastall pressed on into Peonapo, and Knauskno could not hold it. It was the end of Knauskno: 175 years of banners, done in a single season.
+425: Steirkastall marched on Peonapo, and by winter the province had fallen to it; Knauskno was the poorer. With that, the realm of Knauskno was extinguished; its name passes from the roll of the powers. Close on that, Shinshaa held — Caubinte met Caumeonte at the border and sent it back the way it came.
 
-In the year 450, the assault Caumeonte loosed upon Shinshaa broke against Caubinte's spears and came to nothing. And in that year too, these were the high years of Caumeonte — its markets loud, its walls, for a while, unneeded. Before long, no rain came to Mairzujikh for two years together; many perished.
+In 450, Caumeonte had its great noon: roads mended, songs written, taxes very nearly forgiven. Within the year, the wells of Mairzujikh gave dust, and the river shrank to an argument. So much for the work of a generation.
 
 All the while the land was filling: 7 settlements were raised in these years, Shinghekh and Bellatelen among them.
 
-The occupiers kept the land-words and changed the rest, and so Belladinte is written Belladund in every ledger since — and 1 other name with it.
+Conquest re-said the very map: Belladinte became Belladund on its new masters' tongues — and 1 other name with it.
 
-### III. The Age of Blood and Banners, 500–700
+### III. The Age of Iron, 500–700
 
-About the year 500, Caumeonte moved against Shinshaa, but Caubinte threw the invaders back over the border. That same year, a pestilence swept Khirshaa and carried off more than any war had. By 550, the assault Caumeonte loosed upon Shinshaa broke against Caubinte's spears and came to nothing. In the same season, a great drought lay upon Brasturn; the rivers shrank and the wells soured.
+In the year 500, Caubinte held Shinshaa against Caumeonte, whose army went home leaner and wiser. And in that year too, sickness walked through Khirshaa and was not particular. When a generation had passed, Shinshaa held — Caubinte met Caumeonte at the border and sent it back the way it came. A great drought lay upon Brasturn; the rivers shrank and the wells soured.
 
-In the year 600, Caumeonte moved against Shinshaa, but Caubinte threw the invaders back over the border. A generation on, the assault Caumeonte loosed upon Shinshaa broke against Caubinte's spears and came to nothing.
+About the year 600, whatever Caumeonte intended for Shinshaa, Caubinte had prepared for it twice over. In the years that followed, Caubinte held Shinshaa against Caumeonte, whose army went home leaner and wiser.
 
 These years also built more than they burned — 5 new settlements, of which Bellademor would become the best known.
 
-### IV. The Contested Years, 700–900
+### IV. The Wars of the Marches, 700–900
 
-About the year 700, Caumeonte moved against Shinshaa, but Caubinte threw the invaders back over the border. Hard on its heels, in Brasturn the bells rang without ceasing; a third of its people were laid in the ground. Before long, Caubinte held Shinshaa against Caumeonte, whose army went home leaner and wiser. By 800, Caumeonte moved against Shinshaa, but Caubinte threw the invaders back over the border.
+700: Shinshaa held — Caubinte met Caumeonte at the border and sent it back the way it came. The physicians of Brasturn tried everything; the gravediggers finished what was left. Close on that, Caubinte held Shinshaa against Caumeonte, whose army went home leaner and wiser. When a generation had passed, the assault Caumeonte loosed upon Shinshaa broke against Caubinte's spears and came to nothing.
 
-In 825, no rain came to Khirkhidku for two years together; many perished. Soon after, the assault Caumeonte loosed upon Shinshaa broke against Caubinte's spears and came to nothing. That same year, not all was iron: a golden age dawned over Steirkastall, and its cities flourished as never before.
+In the year 825, no rain came to Khirkhidku for two years together; many perished. Hard on its heels, whatever Caumeonte intended for Shinshaa, Caubinte had prepared for it twice over. For a while everything Steirkastall touched came back gold; even its rivals banked in its coin.
 
-### V. The Marching Years, 900–1100
+### V. The Contested Years, 900–1100
 
-About the year 900, Caubinte held Shinshaa against Caumeonte, whose army went home leaner and wiser. A generation on, the assault Caumeonte loosed upon Shinshaa broke against Caubinte's spears and came to nothing. By 1000, Caumeonte moved against Shinshaa, but Caubinte threw the invaders back over the border.
+About the year 900, Caumeonte came for Shinshaa and left without it; the war songs on both sides insist otherwise. A generation on, Caumeonte moved against Shinshaa, but Caubinte threw the invaders back over the border. In the years that followed, whatever Caumeonte intended for Shinshaa, Caubinte had prepared for it twice over.
 
-In 1050, Caubinte held Shinshaa against Caumeonte, whose army went home leaner and wiser.
+In 1050, Caumeonte came for Shinshaa and left without it; the war songs on both sides insist otherwise.
 
 *So the matter stands in 1100: 4 realms endure, and Steirkastall is mightiest among them, holding 9 provinces. 1 town lies in ruins; their names are kept in this book, which is more than their walls kept.*
 
-*Veollai Belentaria reigns in Deoliria. Let whoever comes after me write the next page better than I have written this one.*
+*In Deoliria, Veollai Belentaria holds the throne. I have kept the names. It is the only keeping a chronicler can promise.*
 
 ## Annals
 

@@ -335,87 +335,85 @@ Followed across 11 region(s).
 
 ## The Chronicle of Caudente
 
-*I write in Deoliria, under the patronage of House Niantetindo, in the year 1100. The legends of the founding age are kept elsewhere in this book; here is only what happened, year upon year, for 1000 years.*
+*I write in Deoliria, in the year 1100, having outlived most of the men in this book and served House Niantetindo longer than either of us expected. That is the whole of my qualification, and it is enough.*
+
+*The years in these pages are counted after the Burning; the first of the legends tells how the count began, with the Great Burning of Mount Thathobry.*
 
 *The world it happened in is quickly drawn: Mount Caubeosso in the high places, and the Qishaghash running to the sea, and between them every road this chronicle walks.*
 
-### I. The First Banners, 100–300
+### I. The Shaping Years, 100–300
 
-In the year 100, the assault Caudente loosed upon Brahrei broke against Lossobinte's spears and came to nothing. That same year, the young desert realm of Mishqe marched on Deodinte, and by winter the province had fallen to it; the southern realm of Tariacaria was the poorer. It was the end of Tariacaria; its lands were divided among its enemies. That same year, a pestilence swept Melareth and carried off more than any war had.
+In the year 100, whatever Caudente intended for Brahrei, Lossobinte had prepared for it twice over. The banners of Mishqe entered Deodinte, and what Tariacaria had held it held no longer. With that, the realm of Tariacaria was extinguished; its name passes from the roll of the powers.
 
-In 125, Tenameonte seized Beossoda from Lossobinte, and the border stones were moved in the night. Before long, what had once broken against Brahrei's defences now carried them: Caudente took the province, and Lossobinte's pride with it. And in that year too, the realm of Fjeiskdaurk was carved whole out of Caudente's flank, with Stagrdaurk at its heart. Soon after, Caudente and Lossobinte met over Peonapana yet again, and yet again it was Caudente that kept the field. With that, the realm of Lossobinte was extinguished; its name passes from the roll of the powers.
+About the year 100, a pestilence swept Melareth and carried off more than any war had. Before long, Tenameonte crossed into Beossoda at first thaw; Lossobinte spent the summer pretending it could be undone. Within the year, what had once broken against Brahrei's defences now carried them: Caudente took the province, and Lossobinte's pride with it.
 
-About the year 200, the banners of Caudente entered Mairkhidku, and what Fjeiskdaurk had held it held no longer. That same year, Deodinte passed by force from Mishqe to Rauriacaria; the tax rolls were rewritten before the dead were counted. Before long, Caudente marched on Stagrdaurk, and by winter the province had fallen to it; Fjeiskdaurk was the poorer. It was the end of Fjeiskdaurk: 75 years of banners, done in a single season.
+150: too big to govern and too proud to shrink, Caudente watched Stagrdaurk walk away and become Fjeiskdaurk. Soon after, the old quarrel between Caudente and Lossobinte found its old battlefield: Peonapana changed hands once more, in the usual direction. It was the end of Lossobinte: 75 years of banners, done in a single season. Before long, swollen with victories, Caudente pressed on into Mairkhidku, and the northern realm of Fjeiskdaurk could not hold it.
 
-In 225, Mishqe held Khirshaa against Rauriacaria, whose army went home leaner and wiser. Hard on its heels, Tenameonte moved against Brabei, but the desert realm of Qidkaqe threw the invaders back over the border. Before long, the assault Rauriacaria loosed upon Khirkhajez broke against Mishqe's spears and came to nothing.
+In 200, the matter of Deodinte was settled with spears — Rauriacaria kept the province, Mishqe the grievance. Soon after, Stagrdaurk passed by force from Fjeiskdaurk to Caudente; the tax rolls were rewritten before the dead were counted. And that was the whole of Fjeiskdaurk's ending — no siege worth the name, no song; a surrender and a seal.
 
-These years also built more than they burned — 5 new settlements, of which Deolamor would become the best known.
+About the year 225, Rauriacaria moved against Khirshaa, but Mishqe threw the invaders back over the border. Within the year, the assault Tenameonte loosed upon Brabei broke against Qidkaqe's spears and came to nothing. Hard on its heels, Khirkhajez held — Mishqe met Rauriacaria at the border and sent it back the way it came.
 
-Conquest re-said the very map: Khirqe became Khirdemor on its new masters' tongues — and 4 other names with it.
+The map grew fuller meanwhile: 5 new settlements took root, Deolamor first among them.
 
-### II. The Marching Years, 300–500
+The occupiers kept the land-words and changed the rest, and so Khirqe is written Khirdemor in every ledger since — and 4 other names with it.
 
-In the year 300, Qidkaqe held Brabei against Tenameonte, whose army went home leaner and wiser. Soon after, the assault Rauriacaria loosed upon Khirkhajez broke against Mishqe's spears and came to nothing. Before long, Qidkaqe held Brabei against Tenameonte, whose army went home leaner and wiser. That same year, Caudente had grown past its own strength: Midkhash and its neighbours broke away to found Rairkaasi.
+### II. The Wars of the Marches, 300–500
 
-About the year 375, the assault Rauriacaria loosed upon Khirkhajez broke against Mishqe's spears and came to nothing. Hard on its heels, the banners of Rairkaasi entered Mairghen, and what Mishqe had held it held no longer. In the same season, Qidkaqe held Qusham against Tenameonte, whose army went home leaner and wiser.
+The year 300 opened with trouble: Tenameonte moved against Brabei, but Qidkaqe threw the invaders back over the border. Within the year, the assault Rauriacaria loosed upon Khirkhajez broke against Mishqe's spears and came to nothing. Close on that, Qidkaqe held Brabei against Tenameonte, whose army went home leaner and wiser.
 
-In the year 400, quieter conquests were made as well: Brahrei turned from the Rite of Vabrograthygr to the Faith of Vabamortena. Soon after, Rauriacaria moved against Khirkhajez, but Mishqe threw the invaders back over the border. And in that year too, the assault Rairkaasi loosed upon Beossodinte broke against Mishqe's spears and came to nothing.
+350: the realm of Rairkaasi was carved whole out of Caudente's flank, with Midkhash at its heart. Hard on its heels, Rauriacaria came for Khirkhajez and left without it; the war songs on both sides insist otherwise. The matter of Mairghen was settled with spears — Rairkaasi kept the province, Mishqe the grievance. Nor was that all: Qusham held — Qidkaqe met Tenameonte at the border and sent it back the way it came.
 
-About the year 425, in Shinkhajez the bells rang without ceasing; a third of its people were laid in the ground. Before long, Qidkaqe held Brabei against Tenameonte, whose army went home leaner and wiser. That same year, a great drought lay upon Stagrdaurk; the rivers shrank and the wells soured.
+The year 400 opened with trouble: the priests of the Faith of Vabamortena out-argued the priests of the Rite of Vabrograthygr in Brahrei, which is how those wars are won. Within the year, the assault Rauriacaria loosed upon Khirkhajez broke against Mishqe's spears and came to nothing. In the same season, Rairkaasi came for Beossodinte and left without it; the war songs on both sides insist otherwise. And in that year too, in Shinkhajez the bells rang without ceasing; a third of its people were laid in the ground.
 
-In 475, what had once broken against Khirkhajez's defences now carried them: Rauriacaria took the province, and Mishqe's pride with it.
+In 450, Qidkaqe held Brabei against Tenameonte, whose army went home leaner and wiser. Stagrdaurk cracked and browned under a sky that owed it water and paid none. Before long, what had once broken against Khirkhajez's defences now carried them: Rauriacaria took the province, and Mishqe's pride with it.
 
 All the while the land was filling: 6 settlements were raised in these years, Ghashmakh and Khirghekh among them.
 
-### III. The Contested Years, 500–700
+### III. The Age of Blood and Banners, 500–700
 
-In the year 500, the assault Rauriacaria loosed upon Khirshaa broke against Mishqe's spears and came to nothing. And in that year too, Caudente held Peonapana against Tenameonte, whose army went home leaner and wiser. Soon after, the assault Rairkaasi loosed upon Khirshaa broke against Mishqe's spears and came to nothing.
+In the year 500, the assault Rauriacaria loosed upon Khirshaa broke against Mishqe's spears and came to nothing. Nor was that all: whatever Tenameonte intended for Peonapana, Caudente had prepared for it twice over. Hard on its heels, Rairkaasi moved against Khirshaa, but Mishqe threw the invaders back over the border. So much for the work of a generation.
 
-About the year 550, Mishqe held Khirshaa against Rauriacaria, whose army went home leaner and wiser. That same year, Tenameonte moved against Peonapana, but Caudente threw the invaders back over the border. Before long, Qidkaqe marched on Beossodinte, and by winter the province had fallen to it; Mishqe was the poorer.
+The year 550 opened with trouble: Rauriacaria came for Khirshaa and left without it; the war songs on both sides insist otherwise. Caudente held Peonapana against Tenameonte, whose army went home leaner and wiser. Before long, Qidkaqe marched on Beossodinte, and by winter the province had fallen to it; Mishqe was the poorer. Rairkaasi came for Khirshaa and left without it; the war songs on both sides insist otherwise.
 
-In 575, the assault Rairkaasi loosed upon Khirshaa broke against Mishqe's spears and came to nothing. Soon after, Rauriacaria moved against Khirshaa, but Mishqe threw the invaders back over the border. In the same season, a pestilence swept Mairkai and carried off more than any war had.
+In 600, the assault Rauriacaria loosed upon Khirshaa broke against Mishqe's spears and came to nothing. Sickness walked through Mairkai and was not particular. Close on that, Mishqe held Khirshaa against Rairkaasi, whose army went home leaner and wiser. And in that year too, Qusham held — Qidkaqe met Tenameonte at the border and sent it back the way it came. The land keeps no grudges; men keep enough for both.
 
-About the year 625, the assault Rairkaasi loosed upon Khirshaa broke against Mishqe's spears and came to nothing. And in that year too, Tenameonte moved against Qusham, but Qidkaqe threw the invaders back over the border. That same year, no rain came to Qusham for two years together; many perished. Hard on its heels, what had once broken against Khirshaa's defences now carried them: Rauriacaria took the province, and Mishqe's pride with it. With that, the realm of Mishqe was extinguished; its name passes from the roll of the powers.
+In the year 625, the wells of Qusham gave dust, and the river shrank to an argument. What had once broken against Khirshaa's defences now carried them: Rauriacaria took the province, and Mishqe's pride with it. With that, the realm of Mishqe was extinguished; its name passes from the roll of the powers.
 
-In 650, a great drought lay upon Peonapana; the rivers shrank and the wells soured. That same year, these were the high years of Tenameonte — its markets loud, its walls, for a while, unneeded. Soon after, the assault Rauriacaria loosed upon Mairghen broke against Rairkaasi's spears and came to nothing.
+About the year 650, a great drought lay upon Peonapana; the rivers shrank and the wells soured. These were the high years of Tenameonte — its markets loud, its walls, for a while, unneeded. Hard on its heels, whatever Rauriacaria intended for Mairghen, Rairkaasi had prepared for it twice over.
 
-In the year 675, in Shinkhajez the bells rang without ceasing; a third of its people were laid in the ground. And in that year too, not all was iron: a golden age dawned over Tenameonte, and its cities flourished as never before.
+In the year 675, a pestilence swept Shinkhajez and carried off more than any war had. In the same season, not all was iron: a golden age dawned over Tenameonte, and its cities flourished as never before.
 
 These years also built more than they burned — 5 new settlements, of which Khirqe would become the best known.
 
-### IV. The Age of Blood and Banners, 700–900
+### IV. The Wars of the Marches, 700–900
 
-About the year 700, Qidkaqe held Brabei against Tenameonte, whose army went home leaner and wiser. That same year, Rairkaasi moved against Mairkhidku, but Caudente threw the invaders back over the border. In the same season, no rain came to Deoneosso for two years together; many perished. And in that year too, these were the high years of Caudente — its markets loud, its walls, for a while, unneeded.
+About the year 700, Tenameonte moved against Brabei, but Qidkaqe threw the invaders back over the border. And in that year too, the assault Rairkaasi loosed upon Mairkhidku broke against Caudente's spears and came to nothing. The same year, no rain came to Deoneosso for two years together; many perished. That same year, Caudente had its great noon: roads mended, songs written, taxes very nearly forgiven. Write the names while they are still names.
 
-In the year 725, what had once broken against Mairghen's defences now carried them: Rauriacaria took the province, and Rairkaasi's pride with it. Before long, the assault Rauriacaria loosed upon Khirarer broke against Rairkaasi's spears and came to nothing. That same year, what had once broken against Brabei's defences now carried them: Tenameonte took the province, and Qidkaqe's pride with it.
+In the year 725, what had once broken against Mairghen's defences now carried them: Rauriacaria took the province, and Rairkaasi's pride with it. Close on that, whatever Rauriacaria intended for Khirarer, Rairkaasi had prepared for it twice over. What had once broken against Brabei's defences now carried them: Tenameonte took the province, and Qidkaqe's pride with it. Tenameonte moved against Qusham, but Qidkaqe threw the invaders back over the border.
 
-About the year 775, Qidkaqe held Qusham against Tenameonte, whose army went home leaner and wiser. Soon after, Rauriacaria moved against Khirarer, but Rairkaasi threw the invaders back over the border. Before long, the assault Tenameonte loosed upon Qusham broke against Qidkaqe's spears and came to nothing.
+The year 800 opened with trouble: Rauriacaria came for Khirarer and left without it; the war songs on both sides insist otherwise. Soon after, Qidkaqe held Qusham against Tenameonte, whose army went home leaner and wiser. Within the year, Khirarer held — Rairkaasi met Rauriacaria at the border and sent it back the way it came. Close on that, Qidkaqe held Qusham against Tenameonte, whose army went home leaner and wiser.
 
-In 850, Rauriacaria moved against Khirarer, but Rairkaasi threw the invaders back over the border. Hard on its heels, the assault Tenameonte loosed upon Qusham broke against Qidkaqe's spears and came to nothing.
+Names changed hands with the land: Ghashmakh would be Ghashciamor from then on — and 1 other name with it.
 
-The occupiers kept the land-words and changed the rest, and so Ghashmakh is written Ghashciamor in every ledger since — and 1 other name with it.
+### V. The Age of Blood and Banners, 900–1100
 
-### V. The Contested Years, 900–1100
+In 900, what had once broken against Khirarer's defences now carried them: Rauriacaria took the province, and Rairkaasi's pride with it. Hard on its heels, what had once broken against Midkhash's defences now carried them: Caudente took the province, and Rairkaasi's pride with it. Beossodinte held — Qidkaqe met Rauriacaria at the border and sent it back the way it came. And in that year too, the wells of Melareth gave dust, and the river shrank to an argument.
 
-In the year 900, what had once broken against Khirarer's defences now carried them: Rauriacaria took the province, and Rairkaasi's pride with it. Before long, what had once broken against Midkhash's defences now carried them: Caudente took the province, and Rairkaasi's pride with it. In the same season, Qidkaqe held Beossodinte against Rauriacaria, whose army went home leaner and wiser.
+In 950, what had once broken against Qusham's defences now carried them: Tenameonte took the province, and Qidkaqe's pride with it. The people of Midkhash drove out Caudente's governors and took for themselves the name Jaghen. In the same season, word came from Qusham that it would be governed from within: thus Jaqe, born in a single furious season. A great drought lay upon Khirkhajez; the rivers shrank and the wells soured.
 
-About the year 925, a great drought lay upon Melareth; the rivers shrank and the wells soured. Soon after, what had once broken against Qusham's defences now carried them: Tenameonte took the province, and Qidkaqe's pride with it. And in that year too, Midkhash rose against Caudente, and out of the rising was proclaimed the free realm of Jaghen. In the same season, the people of Qusham drove out Tenameonte's governors and took for themselves the name Jaqe.
+In the year 975, one more province, Qusham, joined Tenameonte's list; Jaqe's name joined another. It was the end of Jaqe: 25 years of banners, done in a single season. Swollen with victories, Rauriacaria pressed on into Midkhash, and the young desert realm of Jaghen could not hold it. And that was the whole of Jaghen's ending — no siege worth the name, no song; a surrender and a seal.
 
-In 950, no rain came to Khirkhajez for two years together; many perished. Before long, Tenameonte seized Qusham from Jaqe, and the border stones were moved in the night. It was the end of Jaqe: 25 years of banners, done in a single season.
+About the year 975, the garrison of Qusham woke to new flags — Mishqe had declared itself overnight, and made it stick. That same year, too big to govern and too proud to shrink, Rauriacaria watched Mairghen walk away and become Jamaad. Qusham fell to Tenameonte within the year; Mishqe's protest is preserved, and was ignored. With that, the realm of Mishqe was extinguished; its name passes from the roll of the powers. So much for the work of a generation.
 
-About the year 975, Midkhash passed by force from Jaghen to Rauriacaria; the tax rolls were rewritten before the dead were counted. With that, the realm of Jaghen was extinguished; its name passes from the roll of the powers. In the same season, Qusham rose against Tenameonte, and out of the rising was proclaimed the free realm of Mishqe.
+The year 1000 opened with trouble: no rain came to Peonapana for two years together; many perished. Hard on its heels, Caudente came for Khirkhidku and left without it; the war songs on both sides insist otherwise. There was no halting Rauriacaria that season: Mairghen fell to it while Jamaad looked on. Rauriacaria taxed Mairghen once too often; the realm of Kheqtaitan was the receipt.
 
-In 975, the realm of Jamaad was carved whole out of Rauriacaria's flank, with Mairghen at its heart. Hard on its heels, there was no halting Tenameonte that season: Qusham fell to it while Mishqe looked on. It was the end of Mishqe: 25 years of banners, done in a single season.
+1025: in Khirkhaim the bells rang without ceasing; a third of its people were laid in the ground. Before long, swollen with victories, Rauriacaria pressed on into Mairghen, and the young desert realm of Kheqtaitan could not hold it. It was the end of Kheqtaitan: 25 years of banners, done in a single season. Whatever Rairkaasi intended for Midkhash, Jamaad had prepared for it twice over.
 
-About the year 1000, a great drought lay upon Peonapana; the rivers shrank and the wells soured. Soon after, Caudente moved against Khirkhidku, but Rairkaasi threw the invaders back over the border. In the same season, swollen with victories, Rauriacaria pressed on into Mairghen, and the young desert realm of Jamaad could not hold it. And in that year too, the people of Mairghen drove out Rauriacaria's governors and took for themselves the name Kheqtaitan.
-
-In the year 1025, a pestilence swept Khirkhaim and carried off more than any war had. Before long, the banners of Rauriacaria entered Mairghen, and what Kheqtaitan had held it held no longer. With that, the realm of Kheqtaitan was extinguished; its name passes from the roll of the powers. That same year, Jamaad held Midkhash against Rairkaasi, whose army went home leaner and wiser.
-
-About the year 1075, there was no halting Caudente that season: Midkhash fell to it while Jamaad looked on. It was the end of Jamaad: 100 years of banners, done in a single season. And in that year too, Rauriacaria and Rairkaasi met over Khirkhidku yet again, and yet again it was Rauriacaria that kept the field. With that, the realm of Rairkaasi was extinguished; its name passes from the roll of the powers.
+In 1075, it was Caudente's year: Midkhash was taken from Jamaad before the passes closed. With that, the realm of Jamaad was extinguished; its name passes from the roll of the powers. Rauriacaria and Rairkaasi met over Khirkhidku yet again, and yet again it was Rauriacaria that kept the field. It was the end of Rairkaasi: 725 years of banners, done in a single season.
 
 *So the matter stands in 1100: 4 realms endure, and Rauriacaria is mightiest among them, holding 8 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
 
-*Belenai Niantetindo reigns in Deoliria. Let whoever comes after me write the next page better than I have written this one.*
+*Belenai Niantetindo reigns in Deoliria. What was built is listed above. What it cost is listed there too, if you read slowly.*
 
 ## Annals
 

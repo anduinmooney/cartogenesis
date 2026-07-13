@@ -50,7 +50,8 @@ test("no template leakage anywhere in the prose", () => {
     }
     // Every paragraph is a sentence or more: starts uppercase, ends terminally.
     for (const p of n.chapters.flatMap((c) => c.paragraphs)) {
-      assert.match(p, /^[A-Z“"]/, `${seed}: uncapitalized paragraph: ${p.slice(0, 60)}`);
+      // A paragraph may open with a capital OR a year anchor ("1050: …").
+      assert.match(p, /^[A-Z“"\d]/, `${seed}: uncapitalized paragraph: ${p.slice(0, 60)}`);
       assert.match(p, /[.!?]$/, `${seed}: unterminated paragraph: …${p.slice(-60)}`);
     }
   }
@@ -119,4 +120,59 @@ test("the report carries both the told chronicle and the raw annals", () => {
     // And the narration sits BEFORE the annals, as the primary telling.
     assert.ok(md.indexOf(`## ${w.narrative.title}`) < md.indexOf("## Annals"));
   });
+});
+
+test("each world has a chronicler with a temperament, and they differ", () => {
+  const voices = new Set<string>();
+  for (const seed of ["s10", "atlas", "ct0", "borea", "mistral", "vahalia"]) {
+    const w = generateWorld({ seed, width: 160, height: 160 });
+    assert.ok(["plain", "wry", "grave"].includes(w.narrative.voice), w.narrative.voice);
+    voices.add(w.narrative.voice);
+  }
+  assert.ok(voices.size >= 2, `all six chroniclers share one temperament: ${[...voices]}`);
+});
+
+test("the chronicle does not read as a ledger: sentence shapes vary", () => {
+  // The original complaint: every sentence was "[time phrase] X did Y." Frames
+  // now drop or embed the time reference often enough that time-led sentences
+  // are a majority at most, not the whole book.
+  const timeLed =
+    /^(In |That |Soon|By |About|A generation|Hard|Before|Some \d|The chronicle is silent|Within the year|Close on|The same year|Nor was|And in|The year \d|\d+:|When a generation|Years later|In the same)/;
+  let led = 0;
+  let total = 0;
+  for (const seed of ["s10", "atlas", "ct0", "borea"]) {
+    const w = generateWorld({ seed, width: 240, height: 240 });
+    for (const ch of w.narrative.chapters) {
+      for (const p of ch.paragraphs) {
+        for (const sent of p.split(/(?<=[.!?]) (?=[A-Z])/)) {
+          total++;
+          if (timeLed.test(sent)) led++;
+        }
+      }
+    }
+  }
+  assert.ok(total > 100, "sample too small to judge shape variety");
+  assert.ok(led / total < 0.8, `${((led / total) * 100).toFixed(0)}% of sentences are time-led`);
+  assert.ok(led / total > 0.3, "chronology cues almost gone — the reader would get lost");
+});
+
+test("no colon-stutter: an anchor ending in ':' never meets a colon-bearing body", () => {
+  for (const seed of ["s10", "atlas", "ct0", "borea"]) {
+    const w = generateWorld({ seed, width: 240, height: 240 });
+    for (const ch of w.narrative.chapters) {
+      for (const p of ch.paragraphs) {
+        assert.doesNotMatch(p, /:[^.!?]{0,25}:/, `${seed}: colon stutter in "${p.slice(0, 80)}"`);
+      }
+    }
+  }
+});
+
+test("the opening names the world's own reckoning", () => {
+  const w = generateWorld({ seed: "atlas", width: 180, height: 180 });
+  const opening = w.narrative.opening.join(" ");
+  assert.ok(opening.includes(w.history.epoch), "opening does not state the era");
+  assert.ok(
+    opening.includes(w.history.calendar.origin.title.replace(/^The /, "the ")),
+    "opening does not name the origin event",
+  );
 });

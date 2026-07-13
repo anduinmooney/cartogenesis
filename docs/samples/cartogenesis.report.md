@@ -381,79 +381,81 @@ Followed across 1 region(s).
 
 ## The Chronicle of Vynthon
 
-*Set down in Deoliria, in the year 1100 after the Crowning, by a servant of House Belentaria. What follows is not legend — of the founding age the legends tell enough — but the plain record of 1000 years, as well as one hand could gather it.*
+*I write in Deoliria, in the year 1100, at the pleasure of House Belentaria — which is to say, at its expense. Here are 1000 years, told as honestly as patronage allows, which is more honestly than you might think.*
+
+*The years in these pages are counted after the Crowning; the first of the legends tells how the count began, with the First Crowning.*
 
 *The world it happened in is quickly drawn: Mount Dobra in the high places, and the Mishkan running to the sea, and between them every road this chronicle walks.*
 
 ### I. The First Banners, 100–300
 
-About the year 100, the banners of Vynthon entered Deobinte, and what Rauriacaria had held it held no longer. It was the end of Rauriacaria; its lands were divided among its enemies. In the same season, Rairghen passed by force from Mantebinte to Tariademor; the tax rolls were rewritten before the dead were counted.
+Deobinte fell to Vynthon in 100; Rauriacaria's protest is preserved, and was ignored. And that was the whole of Rauriacaria's ending — no siege worth the name, no song; a surrender and a seal. Nor was that all: Tariademor seized Rairghen from Mantebinte, and the border stones were moved in the night.
 
-In 125, Tariademor marched on Panalaria, and by winter the province had fallen to it; Mantebinte was the poorer. With that, the realm of Mantebinte was extinguished; its name passes from the roll of the powers. In the same season, Vynthon seized Qughen from Kaarkaasi, and the border stones were moved in the night.
+In the year 125, Mantebinte lost Panalaria to Tariademor, and the harvest went with it. It was the end of Mantebinte: 25 years of banners, done in a single season. Vynthon took Qughen in the same season, and the desert realm of Kaarkaasi could do little but record the loss. And in that year too, the garrison of Rairghen woke to new flags — Rairghen had declared itself overnight, and made it stick.
 
-In the year 125, word came from Rairghen that it would be governed from within: thus Rairghen, born in a single furious season. Before long, Rairghen passed by force from Rairghen to Tariademor; the tax rolls were rewritten before the dead were counted. It was the end of Rairghen: 25 years of banners, done in a single season. In the same season, the people of Deobinte drove out Vynthon's governors and took for themselves the name Caumeonte.
+It was in 150 that Tariademor crossed into Rairghen, and it did not cross back; Rairghen redrew its maps. With that, the realm of Rairghen was extinguished; its name passes from the roll of the powers. The same year, the people of Deobinte drove out Vynthon's governors and took for themselves the name Caumeonte. These were the high years of Tenademor — its markets loud, its walls, for a while, unneeded. Historians are asked why wars begin. Read on; they mostly begin on purpose.
 
-In 150, these were the high years of Tenademor — its markets loud, its walls, for a while, unneeded. Hard on its heels, Vynthon, whose appetite grew with the eating, took Deobinte next. With that, the realm of Caumeonte was extinguished; its name passes from the roll of the powers. Soon after, there was no halting Vynthon that season: Mairkhukha fell to it while Kaarkaasi looked on.
+In the year 175, swollen with victories, Vynthon pressed on into Deobinte, and the southern realm of Caumeonte could not hold it. It was the end of Caumeonte: 25 years of banners, done in a single season. Close on that, Vynthon, whose appetite grew with the eating, took Mairkhukha next.
 
-About the year 200, Tenademor seized Mairkhash from Kaarkaasi, and the border stones were moved in the night. Before long, Vynthon and Kaarkaasi met over Khirghen yet again, and yet again it was Vynthon that kept the field. It was the end of Kaarkaasi: 125 years of banners, done in a single season.
+About the year 200, the banners of Tenademor entered Mairkhash, and what Kaarkaasi had held it held no longer. Before long, the old quarrel between Vynthon and Kaarkaasi found its old battlefield: Khirghen changed hands once more, in the usual direction. And that was the whole of Kaarkaasi's ending — no siege worth the name, no song; a surrender and a seal. The reader will notice a pattern; the realms did not.
 
-In 225, the southern realm of Rauriameonte moved against Brabrein, but Tenademor threw the invaders back over the border. Soon after, Vynthon, whose appetite grew with the eating, took Khirkhidku next. With that, the realm of Meqe was extinguished; its name passes from the roll of the powers. That same year, the assault Tenademor loosed upon Khirshaa broke against Kheqghen's spears and came to nothing.
+In 225, the southern realm of Rauriameonte moved against Brabrein, but Tenademor threw the invaders back over the border. Vynthon marched on Khirkhidku, and by winter the province had fallen to it; the desert realm of Meqe was the poorer. With that, the realm of Meqe was extinguished; its name passes from the roll of the powers. That same year, whatever Tenademor intended for Khirshaa, Kheqghen had prepared for it twice over.
 
-In the year 250, not all was iron: a golden age dawned over Tenademor, and its cities flourished as never before. Before long, Tenademor held Brabrein against Rauriameonte, whose army went home leaner and wiser. In the same season, Kheqghen moved against Mairsham, but Tenademor threw the invaders back over the border.
+About the year 250, Tenademor had its great noon: roads mended, songs written, taxes very nearly forgiven. Hard on its heels, Brabrein held — Tenademor met Rauriameonte at the border and sent it back the way it came. Whatever Kheqghen intended for Mairsham, Tenademor had prepared for it twice over.
 
-All the while the land was filling: 9 settlements were raised in these years, Deociamor and Deotelen among them.
+The map grew fuller meanwhile: 9 new settlements took root, Deociamor first among them.
 
 The occupiers kept the land-words and changed the rest, and so Niantedinte is written Niantefjysk in every ledger since — and 9 other names with it.
 
-### II. The Marching Years, 300–500
+### II. The Contested Years, 300–500
 
-About the year 300, the assault Tenademor loosed upon Khirshaa broke against Kheqghen's spears and came to nothing. And in that year too, these were the high years of Vynthon — its markets loud, its walls, for a while, unneeded. Soon after, Rauriameonte moved against Brabrein, but Tenademor threw the invaders back over the border.
+300: Tenademor moved against Khirshaa, but Kheqghen threw the invaders back over the border. In the same season, for a while everything Vynthon touched came back gold; even its rivals banked in its coin. Within the year, whatever Rauriameonte intended for Brabrein, Tenademor had prepared for it twice over.
 
-In 325, in Mairkhash the bells rang without ceasing; a third of its people were laid in the ground. Hard on its heels, the assault Tenademor loosed upon Khirshaa broke against Kheqghen's spears and came to nothing. In the same season, Tenademor held Mairsham against Kheqghen, whose army went home leaner and wiser. Before long, the assault Rauriameonte loosed upon Brabrein broke against Tenademor's spears and came to nothing.
+In 325, the physicians of Mairkhash tried everything; the gravediggers finished what was left. Soon after, Khirshaa held — Kheqghen met Tenademor at the border and sent it back the way it came. Whatever Kheqghen intended for Mairsham, Tenademor had prepared for it twice over.
 
-In the year 375, not all was iron: a golden age dawned over Rauriameonte, and its cities flourished as never before. Hard on its heels, what had once broken against Khirshaa's defences now carried them: Tenademor took the province, and Kheqghen's pride with it. That same year, Tenademor held Mairsham against Kheqghen, whose army went home leaner and wiser.
+The year 375 opened with trouble: Rauriameonte came for Brabrein and left without it; the war songs on both sides insist otherwise. Rauriameonte had its great noon: roads mended, songs written, taxes very nearly forgiven. What had once broken against Khirshaa's defences now carried them: Tenademor took the province, and Kheqghen's pride with it.
 
-About the year 400, the shrines of the Faith of Vatenavomor in Vaudoria emptied, and those of the Way of Vaghimzizam filled. Soon after, there was no halting Vynthon that season: Khirkhukha fell to it while Kheqghen looked on. It was the end of Kheqghen: 325 years of banners, done in a single season.
+About the year 400, Mairsham held — Tenademor met Kheqghen at the border and sent it back the way it came. And in that year too, quieter conquests were made as well: Vaudoria turned from the Faith of Vatenavomor to the Way of Vaghimzizam. Before long, there was no halting Vynthon that season: Khirkhukha fell to it while Kheqghen looked on. And that was the whole of Kheqghen's ending — no siege worth the name, no song; a surrender and a seal.
 
-In 425, what had once broken against Brabrein's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it. And in that year too, quieter conquests were made as well: Brakno turned from the Faith of Vatenavomor to the Way of Vaghimzizam. That same year, these were the high years of Tenademor — its markets loud, its walls, for a while, unneeded.
+In 425, what had once broken against Brabrein's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it. Nor was that all: the shrines of the Faith of Vatenavomor in Brakno emptied, and those of the Way of Vaghimzizam filled. The same year, for a while everything Tenademor touched came back gold; even its rivals banked in its coin. Close on that, Rauriameonte and Tenademor met over Bradaurk yet again, and yet again it was Rauriameonte that kept the field.
 
-In the year 450, Rauriameonte and Tenademor met over Bradaurk yet again, and yet again it was Rauriameonte that kept the field. Before long, Rauriameonte moved against Mairghen, but Tenademor threw the invaders back over the border. And in that year too, a pestilence swept Mairkhash and carried off more than any war had.
+In the year 475, the assault Rauriameonte loosed upon Mairghen broke against Tenademor's spears and came to nothing. Nor was that all: a pestilence swept Mairkhash and carried off more than any war had. The same year, not all was iron: a golden age dawned over Rauriameonte, and its cities flourished as never before.
 
-About the year 475, not all was iron: a golden age dawned over Rauriameonte, and its cities flourished as never before.
+All the while the land was filling: 9 settlements were raised in these years, Bellatomor and Nianteciamor among them.
 
-These years also built more than they burned — 9 new settlements, of which Bellatomor would become the best known.
+Names changed hands with the land: Khirghekh would be Khirdund from then on — and 3 other names with it.
 
-Conquest re-said the very map: Khirghekh became Khirdund on its new masters' tongues — and 3 other names with it.
+### III. The Marching Years, 500–700
 
-### III. The Age of Blood and Banners, 500–700
+500: whatever Tenademor intended for Bradaurk, Rauriameonte had prepared for it twice over. Mairghen held — Tenademor met Rauriameonte at the border and sent it back the way it came. Hard on its heels, Tenademor came for Bradaurk and left without it; the war songs on both sides insist otherwise. Soon after, Mairghen held — Tenademor met Rauriameonte at the border and sent it back the way it came.
 
-In the year 500, the assault Tenademor loosed upon Bradaurk broke against Rauriameonte's spears and came to nothing. Hard on its heels, Rauriameonte moved against Mairghen, but Tenademor threw the invaders back over the border. Soon after, the assault Tenademor loosed upon Bradaurk broke against Rauriameonte's spears and came to nothing.
+About the year 600, Tenademor came for Bradaurk and left without it; the war songs on both sides insist otherwise. And in that year too, sickness walked through Rairghen and was not particular. Before long, Tenademor held Mairghen against Rauriameonte, whose army went home leaner and wiser.
 
-In 575, Rauriameonte moved against Mairghen, but Tenademor threw the invaders back over the border. Hard on its heels, Rauriameonte held Bradaurk against Tenademor, whose army went home leaner and wiser. That same year, in Rairghen the bells rang without ceasing; a third of its people were laid in the ground. Before long, Rauriameonte moved against Mairghen, but Tenademor threw the invaders back over the border.
+The year 650 opened with trouble: Tenademor moved against Bradaurk, but Rauriameonte threw the invaders back over the border. What had once broken against Mairghen's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it. No one in this chapter believed themselves the villain of it.
 
-About the year 650, Rauriameonte held Bradaurk against Tenademor, whose army went home leaner and wiser. Hard on its heels, what had once broken against Mairghen's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it.
+These years also built more than they burned — 7 new settlements, of which Khirzaa would become the best known.
 
-All the while the land was filling: 7 settlements were raised in these years, Khirzaa and Stagrafjan among them.
+### IV. The Age of Iron, 700–900
 
-### IV. The Contested Years, 700–900
+700: whatever Rauriameonte intended for Skagra, Tenademor had prepared for it twice over. The same year, Bradaurk held — Rauriameonte met Tenademor at the border and sent it back the way it came. When a generation had passed, the assault Rauriameonte loosed upon Skagra broke against Tenademor's spears and came to nothing.
 
-In the year 700, the assault Rauriameonte loosed upon Skagra broke against Tenademor's spears and came to nothing. And in that year too, Rauriameonte held Bradaurk against Tenademor, whose army went home leaner and wiser. A generation on, the assault Rauriameonte loosed upon Skagra broke against Tenademor's spears and came to nothing. That same year, Tenademor moved against Bradaurk, but Rauriameonte threw the invaders back over the border.
+In 750, Tenademor moved against Bradaurk, but Rauriameonte threw the invaders back over the border. By 800, Rauriameonte came for Skagra and left without it; the war songs on both sides insist otherwise. No rain came to Khirkhidku for two years together; many perished.
 
-About the year 800, Tenademor held Skagra against Rauriameonte, whose army went home leaner and wiser. In the same season, no rain came to Khirkhidku for two years together; many perished. That same year, these were the high years of Vynthon — its markets loud, its walls, for a while, unneeded. Soon after, Tenademor moved against Bradaurk, but Rauriameonte threw the invaders back over the border.
+The year 800 opened with trouble: these were the high years of Vynthon — its markets loud, its walls, for a while, unneeded. Close on that, Tenademor moved against Bradaurk, but Rauriameonte threw the invaders back over the border. In the same season, in Rairghen the bells rang without ceasing; a third of its people were laid in the ground. What had once broken against Skagra's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it.
 
-In the year 825, a pestilence swept Rairghen and carried off more than any war had. Before long, what had once broken against Skagra's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it. Hard on its heels, the assault Rauriameonte loosed upon Mairsham broke against Tenademor's spears and came to nothing.
+In the year 875, the assault Rauriameonte loosed upon Mairsham broke against Tenademor's spears and came to nothing. Skagra rose against Rauriameonte, and out of the rising was proclaimed the free realm of Storkastall. That same year, the wells of Qughen gave dust, and the river shrank to an argument.
 
-About the year 875, Skagra rose against Rauriameonte, and out of the rising was proclaimed the free realm of Storkastall. In the same season, a great drought lay upon Qughen; the rivers shrank and the wells soured.
+### V. The Age of Blood and Banners, 900–1100
 
-### V. The Marching Years, 900–1100
+The year 900 opened with trouble: Rauriameonte held Bradaurk against Tenademor, whose army went home leaner and wiser. Within the year, Rauriameonte crossed into Skagra at first thaw; Storkastall spent the summer pretending it could be undone. With that, the realm of Storkastall was extinguished; its name passes from the roll of the powers.
 
-In 900, Rauriameonte held Bradaurk against Tenademor, whose army went home leaner and wiser. Before long, Rauriameonte marched on Skagra, and by winter the province had fallen to it; the young northern realm of Storkastall was the poorer. With that, the realm of Storkastall was extinguished; its name passes from the roll of the powers.
+950: whatever Rauriameonte intended for Mairsham, Tenademor had prepared for it twice over. Close on that, for a while everything Vynthon touched came back gold; even its rivals banked in its coin. Before long, Tenademor held Mairsham against Rauriameonte, whose army went home leaner and wiser.
 
-In the year 950, the assault Rauriameonte loosed upon Mairsham broke against Tenademor's spears and came to nothing. Hard on its heels, not all was iron: a golden age dawned over Vynthon, and its cities flourished as never before. Soon after, Tenademor held Mairsham against Rauriameonte, whose army went home leaner and wiser. In the years that followed, the assault Rauriameonte loosed upon Mairsham broke against Tenademor's spears and came to nothing.
+In the year 1050, Rauriameonte came for Mairsham and left without it; the war songs on both sides insist otherwise.
 
 *So the matter stands in 1100: 4 realms endure, and Vynthon is mightiest among them, holding 10 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
 
-*Semorai Belentaria the Silent reigns in Deoliria. Let whoever comes after me write the next page better than I have written this one.*
+*In Deoliria, Semorai Belentaria the Silent holds the throne. If the reader has found errors, they should know the realms found them first, and at greater cost.*
 
 ## Annals
 
