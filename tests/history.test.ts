@@ -92,3 +92,51 @@ test("every event has a non-empty title and text", () => {
     assert.ok(Number.isFinite(e.year));
   }
 });
+
+test("every world counts its years from its own year-zero event", () => {
+  // The calendar is chosen from the world's own facts on a private stream, so
+  // it varies across worlds without perturbing anything the simulation reads.
+  const seen = new Set<string>();
+  for (const seed of ["atlas", "borea", "s10", "mistral", "vahalia", "ct0"]) {
+    const w = generateWorld({ seed, width: 160, height: 160 });
+    const c = w.history.calendar;
+    assert.match(c.suffix, /^A\.[A-Z]\.$/, `${seed}: odd suffix ${c.suffix}`);
+    assert.match(c.era, /^after the /, `${seed}: odd era ${c.era}`);
+    assert.equal(w.history.epoch, c.era, `${seed}: epoch must be the era`);
+    // The origin is the FIRST legend, at year zero, and says why the count began.
+    const first = w.history.events[0];
+    assert.equal(first.year, 0, `${seed}: origin not at year 0`);
+    assert.equal(first.title, c.origin.title);
+    assert.ok(
+      first.text.includes("count their days"),
+      `${seed}: origin does not explain the reckoning`,
+    );
+    seen.add(c.suffix);
+  }
+  assert.ok(seen.size >= 3, `calendars not varied: only ${[...seen].join(", ")}`);
+});
+
+test("a fiery calendar names a real mountain", () => {
+  // Find a world whose reckoning is the Great Burning; the mountain named in
+  // its origin must be one of that world's actual volcanoes.
+  let found = false;
+  for (const seed of ["atlas", "ct0", "borea", "s10", "cald0", "cald4"]) {
+    const w = generateWorld({ seed, width: 160, height: 160 });
+    const c = w.history.calendar;
+    if (!c.origin.title.includes("Great Burning")) continue;
+    found = true;
+    const named = c.origin.title.replace("The Great Burning of Mount ", "");
+    assert.ok(
+      w.volcanoes.some((v) => v.name === named),
+      `${seed}: origin names ${named}, not a real volcano`,
+    );
+  }
+  assert.ok(found, "no seed produced a fiery calendar — widen the search");
+});
+
+test("the calendar never perturbs the world: fingerprints byte-identical", () => {
+  const w = generateWorld({ seed: "cartogenesis", width: 256, height: 256 });
+  assert.equal(w.meta.contentHash, "86c5fef61d7a567b");
+  assert.equal(w.meta.exactHash, "418ddfd224e6f31c");
+  assert.equal(w.meta.simulationHash, "15371f1173c805ad");
+});

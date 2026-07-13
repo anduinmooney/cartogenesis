@@ -42,8 +42,26 @@ import { composeName,               } from "./language.js";
                
  
 
+/**
+ * How this world counts its years. Every world's count begins at a year-zero
+ * event — the reason there IS a year zero — chosen from the world's own facts:
+ * a volcanic world may count from the Great Burning of a real, named mountain;
+ * a seafaring one from the Landing. The origin joins the founding legends, and
+ * every date in the book wears this calendar's suffix.
+ */
+                           
+                                                  
+                                          
+                                                 
+              
+                                                       
+                 
+ 
+
                                
+                                                                                  
                 
+                     
                       
                   
                            
@@ -54,7 +72,93 @@ import { composeName,               } from "./language.js";
                
                                                                      
                        
+                                                                                 
+                                                      
  
+
+/**
+ * Choose the world's calendar. Drawn on a PRIVATE stream (`seed:calendar`), so
+ * the sequential history rng is untouched and realms/legends are byte-identical
+ * with or without this feature — the fingerprints prove it.
+ */
+function makeCalendar(
+  cfg               ,
+  capital                        ,
+  oceanFraction        ,
+)           {
+  const rng = new Rng(`${cfg.seed}:calendar`);
+  const at = capital ? ` below what is now ${capital.name}` : "";
+
+                                                                                
+  const eligible           = [];
+
+  const volcano =
+    cfg.volcanoes && cfg.volcanoes.length
+      ? cfg.volcanoes.find((v) => v.status === "active") ?? cfg.volcanoes[0]
+      : undefined;
+  if (volcano) {
+    eligible.push({
+      title: `the Great Burning of Mount ${volcano.name}`,
+      era: "after the Burning",
+      suffix: "A.B.",
+      texts: [
+        `Mount ${volcano.name} split the sky with fire, and ash fell on every roof for a season. When the sun came back, the peoples agreed among themselves that the world had begun again.`,
+        `the mountain called ${volcano.name} spoke fire for the first time in living memory; the elders called it an ending, and the young, more sensibly, a beginning.`,
+      ],
+    });
+  }
+  if (capital?.isPort || oceanFraction > 0.45) {
+    eligible.push({
+      title: "the Landing",
+      era: "after the Landing",
+      suffix: "A.L.",
+      texts: [
+        `the first ships came ashore${at}, keels loud on the shingle, and the people who stepped out of them chose to stay.`,
+        `the boats that had wandered too long found this coast${at} and were pulled up past the tide line for good.`,
+      ],
+    });
+  }
+  eligible.push(
+    {
+      title: "the Long Winter",
+      era: "after the Thaw",
+      suffix: "A.T.",
+      texts: [
+        `three years passed without a summer; when the ice finally let go of the rivers, what was left of the peoples began to count again from the first green spring.`,
+        `snow lay a man deep from sea to sea, and those who lived through it dated everything afterwards from the year the thaw came.`,
+      ],
+    },
+    {
+      title: "the First Crowning",
+      era: "after the Crowning",
+      suffix: "A.C.",
+      texts: [
+        `the scattered halls${capital ? ` around ${capital.name}` : ""} set a circlet on one head for the first time, and — having at last someone to blame — began to keep records.`,
+      ],
+    },
+    {
+      title: "the Falling Star",
+      era: "after the Star",
+      suffix: "A.S.",
+      texts: [
+        `a star fell burning across the whole sky and struck the sea beyond the horizon; the wave it raised is remembered, and the light more so.`,
+        `a light crossed the heavens by day and was gone. Nothing was ever found of it, which has never stopped anyone from counting from it.`,
+      ],
+    },
+  );
+
+  const o = rng.pick(eligible);
+  return {
+    origin: {
+      title: o.title.charAt(0).toUpperCase() + o.title.slice(1),
+      text:
+        `In the year now called zero, ${rng.pick(o.texts)} ` +
+        `From that year the peoples of this world count their days.`,
+    },
+    era: o.era,
+    suffix: o.suffix,
+  };
+}
 
 /** Name a feature in the language of whoever lives around it. */
 function nameAtCell(
@@ -287,8 +391,24 @@ export function generateHistory(
   for (const e of events) e.year = Math.min(e.year, presentYear);
   events.sort((a, b) => a.year - b.year || a.title.localeCompare(b.title));
 
+  // The world's own calendar, and the year-zero event that explains it.
+  const oceanFraction = (() => {
+    let n = 0;
+    for (let i = 0; i < water.oceanMask.length; i++) n += water.oceanMask[i];
+    return n / water.oceanMask.length;
+  })();
+  const capitalTown = settlements.find((s) => s.isCapital);
+  const calendar = makeCalendar(cfg, capitalTown, oceanFraction);
+  events.unshift({
+    year: 0,
+    type: "founding",
+    title: calendar.origin.title,
+    text: calendar.origin.text,
+  });
+
   return {
-    epoch: "After Reckoning",
+    epoch: calendar.era,
+    calendar,
     presentYear,
     realms,
     features,

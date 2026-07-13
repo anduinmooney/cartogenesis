@@ -10,7 +10,8 @@
 - **Peoples:** 28 regions, 24 settlements, 4 realms
 - **Capital:** Niantetomor, seat of House Caumeonte
 - **Dominant power:** Knauskaskei (of 6 surviving realm(s))
-- **The present year:** 1100 After Reckoning
+- **The present year:** 1100 A.L. — 1100 years after the Landing
+- **The reckoning:** years are counted from **The Landing** (year 0); dates wear `A.L.`
 - **Highest peak:** 4,500 m · **volcanoes:** 6 (2 active)
 
 ## Volcanoes
@@ -329,23 +330,24 @@ Followed across 10 region(s).
 
 ## Legends of the founding age
 
-- **74 After Reckoning** — The city of Niantetomor was founded on a sheltered harbour, destined to become the seat of power.
-- **86 After Reckoning** — Niantetomor rose to rule its hinterland, and the realm of Tariadente was proclaimed.
-- **87 After Reckoning** — The city of Deociamor was founded on a sheltered harbour.
-- **119 After Reckoning** — The city of Panalamor was founded on a sheltered harbour.
-- **124 After Reckoning** — Deociamor rose to rule its hinterland, and the realm of Rauriabinte was proclaimed.
-- **127 After Reckoning** — The city of Vongry was founded on a sheltered harbour.
-- **149 After Reckoning** — Vongry rose to rule its hinterland, and the realm of Fjeiskno was proclaimed.
-- **154 After Reckoning** — Panalamor rose to rule its hinterland, and the realm of Tariademor was proclaimed.
-- **391 After Reckoning** — Over control of the Vynsturn passes, Tariadente and Tariademor went to war; a marriage-pact bound Tariadente and Tariademor in uneasy peace.
-- **672 After Reckoning** — A great storm-tide flooded Niantetomor; the lower quarters were lost to the sea.
-- **729 After Reckoning** — Vynsturn woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **737 After Reckoning** — Under a long peace, Niantetomor flourished; its libraries and roads became the wonder of the world.
-- **871 After Reckoning** — An academy founded on the shores of Caumilen gathered the age's finest cartographers.
+- **0 A.L.** — In the year now called zero, the first ships came ashore below what is now Niantetomor, keels loud on the shingle, and the people who stepped out of them chose to stay. From that year the peoples of this world count their days.
+- **74 A.L.** — The city of Niantetomor was founded on a sheltered harbour, destined to become the seat of power.
+- **86 A.L.** — Niantetomor rose to rule its hinterland, and the realm of Tariadente was proclaimed.
+- **87 A.L.** — The city of Deociamor was founded on a sheltered harbour.
+- **119 A.L.** — The city of Panalamor was founded on a sheltered harbour.
+- **124 A.L.** — Deociamor rose to rule its hinterland, and the realm of Rauriabinte was proclaimed.
+- **127 A.L.** — The city of Vongry was founded on a sheltered harbour.
+- **149 A.L.** — Vongry rose to rule its hinterland, and the realm of Fjeiskno was proclaimed.
+- **154 A.L.** — Panalamor rose to rule its hinterland, and the realm of Tariademor was proclaimed.
+- **391 A.L.** — Over control of the Vynsturn passes, Tariadente and Tariademor went to war; a marriage-pact bound Tariadente and Tariademor in uneasy peace.
+- **672 A.L.** — A great storm-tide flooded Niantetomor; the lower quarters were lost to the sea.
+- **729 A.L.** — Vynsturn woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **737 A.L.** — Under a long peace, Niantetomor flourished; its libraries and roads became the wonder of the world.
+- **871 A.L.** — An academy founded on the shores of Caumilen gathered the age's finest cartographers.
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 6 realm(s) endured to the present.*
+*Simulated 100–1100 after the Landing. 6 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
@@ -470,129 +472,129 @@ In the year 1075, these were the high years of Tariadente — its markets loud, 
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 After Reckoning** — Knauskathon seized Stagrdaurk from Fjeiskno.
-- **100 After Reckoning** — The realm of Fjeiskno was extinguished.
-- **100 After Reckoning** — Tariademor seized Mairkhajez from Vynskei.
-- **100 After Reckoning** — Stagrdaurk rose against Knauskathon and declared the free realm of Steirkathon.
-- **100 After Reckoning** — A golden age dawned over Tariademor; its cities flourished as never before.
-- **125 After Reckoning** — Knauskathon seized Stagrdaurk from Steirkathon.
-- **125 After Reckoning** — The realm of Steirkathon was extinguished.
-- **125 After Reckoning** — Tariademor's invasion of Brakno was thrown back by Vynskei.
-- **125 After Reckoning** — A plague swept Peonasena; many perished.
-- **150 After Reckoning** — Tariadente seized Brakno from Vynskei.
-- **150 After Reckoning** — The realm of Vynskei was extinguished.
-- **175 After Reckoning** — Knauskaskei's invasion of Deobinte was thrown back by Rauriabinte.
-- **175 After Reckoning** — Tariadente's invasion of Peonasena was thrown back by Tariademor.
-- **175 After Reckoning** — A plague swept Jakhukha; many perished.
-- **200 After Reckoning** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
-- **225 After Reckoning** — Tariadente's invasion of Peonasena was thrown back by Tariademor.
-- **225 After Reckoning** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
-- **225 After Reckoning** — A long drought gripped Bragra; many perished.
-- **250 After Reckoning** — Mantemeonte seized Fjeiskba from Knauskaskei.
-- **250 After Reckoning** — Mairkhajez turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
-- **250 After Reckoning** — A long drought gripped Thaurnbei; many perished.
-- **275 After Reckoning** — Deociamor was stormed and left a ruin.
-- **275 After Reckoning** — Knauskaskei seized Deobinte from Rauriabinte.
-- **300 After Reckoning** — Knauskaskei seized Khirzujikh from Rauriabinte.
-- **300 After Reckoning** — The realm of Rauriabinte was extinguished.
-- **300 After Reckoning** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
-- **300 After Reckoning** — Deobinte rose against Knauskaskei and declared the free realm of Lossomeonte.
-- **325 After Reckoning** — Knauskaskei seized Deobinte from Lossomeonte.
-- **325 After Reckoning** — The realm of Lossomeonte was extinguished.
-- **350 After Reckoning** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
-- **350 After Reckoning** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
-- **350 After Reckoning** — Brakno turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
-- **350 After Reckoning** — Raurianeosso turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
-- **375 After Reckoning** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
-- **375 After Reckoning** — Tariademor's invasion of Bryhrei was thrown back by Mantemeonte.
-- **375 After Reckoning** — A long drought gripped Peonasena; many perished.
-- **400 After Reckoning** — Tariadente seized Mairkhajez from Tariademor.
-- **400 After Reckoning** — Brafjan and 2 neighbouring province(s) broke away from Knauskaskei to found the realm of Steirkno.
-- **400 After Reckoning** — A plague swept Peonasena; many perished.
-- **425 After Reckoning** — Knauskaskei seized Mantecaria from Steirkno.
-- **425 After Reckoning** — Tariadente's invasion of Brafjan was thrown back by Steirkno.
-- **450 After Reckoning** — Bellanelen was abandoned; its people drifted away.
-- **450 After Reckoning** — Knauskaskei seized Raurianeosso from Steirkno.
-- **450 After Reckoning** — Mantemeonte seized Brafjan from Steirkno.
-- **450 After Reckoning** — The realm of Steirkno was extinguished.
-- **450 After Reckoning** — A plague swept Rarerkai; many perished.
-- **475 After Reckoning** — Panalamor was stormed and left a ruin.
-- **475 After Reckoning** — Tariadente seized Peonasena from Tariademor.
-- **475 After Reckoning** — Peonasena rose against Tariadente and declared the free realm of Caudemor.
-- **475 After Reckoning** — A long drought gripped Mairkhajez; many perished.
-- **500 After Reckoning** — Tariadente seized Peonasena from Caudemor.
-- **500 After Reckoning** — The realm of Caudemor was extinguished.
-- **525 After Reckoning** — Tariadente seized Mairkhaim from Tariademor.
-- **525 After Reckoning** — The realm of Tariademor was extinguished.
-- **525 After Reckoning** — Fjeiskba turned from the Faith of Vaghimsaid to the Way of Vathostvoll.
-- **550 After Reckoning** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
-- **550 After Reckoning** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
-- **550 After Reckoning** — Mairkhaim rose against Tariadente and declared the free realm of Meghen.
-- **550 After Reckoning** — A golden age dawned over Mantemeonte; its cities flourished as never before.
-- **575 After Reckoning** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
-- **575 After Reckoning** — A long drought gripped Shinkhukha; many perished.
-- **600 After Reckoning** — Knauskaskei seized Jakhukha from Mishmaad.
-- **600 After Reckoning** — Jakhukha rose against Knauskaskei and declared the free realm of Jumaad.
-- **600 After Reckoning** — Mantecaria and 1 neighbouring province(s) broke away from Knauskaskei to found the realm of Tariacaria.
-- **600 After Reckoning** — A long drought gripped Deobinte; many perished.
-- **600 After Reckoning** — A golden age dawned over Knauskaskei; its cities flourished as never before.
-- **625 After Reckoning** — Tariadente seized Jakhukha from Jumaad.
-- **625 After Reckoning** — The realm of Jumaad was extinguished.
-- **625 After Reckoning** — Brafjan and 1 neighbouring province(s) broke away from Mantemeonte to found the realm of Fjeiskdaurk.
-- **625 After Reckoning** — Mantecaria turned from the Faith of Varondomomor to the Way of Vathostvoll.
-- **625 After Reckoning** — A golden age dawned over Knauskaskei; its cities flourished as never before.
-- **650 After Reckoning** — Mantemeonte seized Bryhrei from Fjeiskdaurk.
-- **650 After Reckoning** — A long drought gripped Deoriando; many perished.
-- **675 After Reckoning** — Tariadente seized Brafjan from Fjeiskdaurk.
-- **675 After Reckoning** — The realm of Fjeiskdaurk was extinguished.
-- **700 After Reckoning** — Knauskaskei seized Mantecaria from Tariacaria.
-- **725 After Reckoning** — Tariadente's invasion of Mairkhaim was thrown back by Meghen.
-- **725 After Reckoning** — Brafjan rose against Tariadente and declared the free realm of Fjeiskaskei.
-- **725 After Reckoning** — Mantecaria and 1 neighbouring province(s) broke away from Knauskaskei to found the realm of Tenabinte.
-- **725 After Reckoning** — A long drought gripped Deoriando; many perished.
-- **750 After Reckoning** — Knauskaskei seized Brafjan from Fjeiskaskei.
-- **750 After Reckoning** — The realm of Fjeiskaskei was extinguished.
-- **775 After Reckoning** — Knauskaskei seized Mantecaria from Tenabinte.
-- **775 After Reckoning** — A golden age dawned over Knauskaskei; its cities flourished as never before.
-- **800 After Reckoning** — Knauskaskei seized Rarerkai from Tenabinte.
-- **800 After Reckoning** — The realm of Tenabinte was extinguished.
-- **800 After Reckoning** — Rairkhukha was stormed and left a ruin.
-- **800 After Reckoning** — Tariadente seized Mairkhaim from Meghen.
-- **800 After Reckoning** — The realm of Meghen was extinguished.
-- **800 After Reckoning** — Brafjan rose against Knauskaskei and declared the free realm of Tharnafjysk.
-- **800 After Reckoning** — Mairkhaim rose against Tariadente and declared the free realm of Meshaa.
-- **825 After Reckoning** — Tariadente seized Brafjan from Tharnafjysk.
-- **825 After Reckoning** — The realm of Tharnafjysk was extinguished.
-- **825 After Reckoning** — Knauskaskei's invasion of Rairghen was thrown back by Tariacaria.
-- **825 After Reckoning** — Mantecaria rose against Knauskaskei and declared the free realm of Rauriadente.
-- **825 After Reckoning** — A long drought gripped Bragra; many perished.
-- **850 After Reckoning** — Tariacaria seized Mantecaria from Rauriadente.
-- **850 After Reckoning** — The realm of Rauriadente was extinguished.
-- **850 After Reckoning** — Rarerkai rose against Knauskaskei and declared the free realm of Rairshaa.
-- **875 After Reckoning** — Knauskaskei seized Rarerkai from Rairshaa.
-- **875 After Reckoning** — The realm of Rairshaa was extinguished.
-- **875 After Reckoning** — Brafjan rose against Tariadente and declared the free realm of Storkathon.
-- **875 After Reckoning** — A golden age dawned over Knauskaskei; its cities flourished as never before.
-- **900 After Reckoning** — Mantemeonte seized Brafjan from Storkathon.
-- **900 After Reckoning** — The realm of Storkathon was extinguished.
-- **900 After Reckoning** — A plague swept Jakhukha; many perished.
-- **925 After Reckoning** — Knauskaskei's invasion of Mantecaria was thrown back by Tariacaria.
-- **925 After Reckoning** — Tariadente's invasion of Bryhrei was thrown back by Mantemeonte.
-- **950 After Reckoning** — Knauskathon's invasion of Shinkhukha was thrown back by Mishmaad.
-- **950 After Reckoning** — A golden age dawned over Tariadente; its cities flourished as never before.
-- **975 After Reckoning** — Knauskaskei seized Mantecaria from Tariacaria.
-- **975 After Reckoning** — Mantecaria rose against Knauskaskei and declared the free realm of Tenabinte.
-- **1000 After Reckoning** — Knauskaskei seized Mantecaria from Tenabinte.
-- **1000 After Reckoning** — The realm of Tenabinte was extinguished.
-- **1025 After Reckoning** — Tariadente seized Mairkhaim from Meshaa.
-- **1025 After Reckoning** — The realm of Meshaa was extinguished.
-- **1025 After Reckoning** — Shinshu was stormed and left a ruin.
-- **1025 After Reckoning** — Knauskaskei seized Rairghen from Tariacaria.
-- **1025 After Reckoning** — The realm of Tariacaria was extinguished.
-- **1025 After Reckoning** — Mairkhaim rose against Tariadente and declared the free realm of Rairqe.
-- **1050 After Reckoning** — Tariadente's invasion of Mairkhaim was thrown back by Rairqe.
-- **1075 After Reckoning** — Knauskaskei's invasion of Fjeiskba was thrown back by Mantemeonte.
-- **1075 After Reckoning** — A golden age dawned over Tariadente; its cities flourished as never before.
+- **100 after the Landing** — Knauskathon seized Stagrdaurk from Fjeiskno.
+- **100 after the Landing** — The realm of Fjeiskno was extinguished.
+- **100 after the Landing** — Tariademor seized Mairkhajez from Vynskei.
+- **100 after the Landing** — Stagrdaurk rose against Knauskathon and declared the free realm of Steirkathon.
+- **100 after the Landing** — A golden age dawned over Tariademor; its cities flourished as never before.
+- **125 after the Landing** — Knauskathon seized Stagrdaurk from Steirkathon.
+- **125 after the Landing** — The realm of Steirkathon was extinguished.
+- **125 after the Landing** — Tariademor's invasion of Brakno was thrown back by Vynskei.
+- **125 after the Landing** — A plague swept Peonasena; many perished.
+- **150 after the Landing** — Tariadente seized Brakno from Vynskei.
+- **150 after the Landing** — The realm of Vynskei was extinguished.
+- **175 after the Landing** — Knauskaskei's invasion of Deobinte was thrown back by Rauriabinte.
+- **175 after the Landing** — Tariadente's invasion of Peonasena was thrown back by Tariademor.
+- **175 after the Landing** — A plague swept Jakhukha; many perished.
+- **200 after the Landing** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
+- **225 after the Landing** — Tariadente's invasion of Peonasena was thrown back by Tariademor.
+- **225 after the Landing** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
+- **225 after the Landing** — A long drought gripped Bragra; many perished.
+- **250 after the Landing** — Mantemeonte seized Fjeiskba from Knauskaskei.
+- **250 after the Landing** — Mairkhajez turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
+- **250 after the Landing** — A long drought gripped Thaurnbei; many perished.
+- **275 after the Landing** — Deociamor was stormed and left a ruin.
+- **275 after the Landing** — Knauskaskei seized Deobinte from Rauriabinte.
+- **300 after the Landing** — Knauskaskei seized Khirzujikh from Rauriabinte.
+- **300 after the Landing** — The realm of Rauriabinte was extinguished.
+- **300 after the Landing** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
+- **300 after the Landing** — Deobinte rose against Knauskaskei and declared the free realm of Lossomeonte.
+- **325 after the Landing** — Knauskaskei seized Deobinte from Lossomeonte.
+- **325 after the Landing** — The realm of Lossomeonte was extinguished.
+- **350 after the Landing** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
+- **350 after the Landing** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
+- **350 after the Landing** — Brakno turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
+- **350 after the Landing** — Raurianeosso turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
+- **375 after the Landing** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
+- **375 after the Landing** — Tariademor's invasion of Bryhrei was thrown back by Mantemeonte.
+- **375 after the Landing** — A long drought gripped Peonasena; many perished.
+- **400 after the Landing** — Tariadente seized Mairkhajez from Tariademor.
+- **400 after the Landing** — Brafjan and 2 neighbouring province(s) broke away from Knauskaskei to found the realm of Steirkno.
+- **400 after the Landing** — A plague swept Peonasena; many perished.
+- **425 after the Landing** — Knauskaskei seized Mantecaria from Steirkno.
+- **425 after the Landing** — Tariadente's invasion of Brafjan was thrown back by Steirkno.
+- **450 after the Landing** — Bellanelen was abandoned; its people drifted away.
+- **450 after the Landing** — Knauskaskei seized Raurianeosso from Steirkno.
+- **450 after the Landing** — Mantemeonte seized Brafjan from Steirkno.
+- **450 after the Landing** — The realm of Steirkno was extinguished.
+- **450 after the Landing** — A plague swept Rarerkai; many perished.
+- **475 after the Landing** — Panalamor was stormed and left a ruin.
+- **475 after the Landing** — Tariadente seized Peonasena from Tariademor.
+- **475 after the Landing** — Peonasena rose against Tariadente and declared the free realm of Caudemor.
+- **475 after the Landing** — A long drought gripped Mairkhajez; many perished.
+- **500 after the Landing** — Tariadente seized Peonasena from Caudemor.
+- **500 after the Landing** — The realm of Caudemor was extinguished.
+- **525 after the Landing** — Tariadente seized Mairkhaim from Tariademor.
+- **525 after the Landing** — The realm of Tariademor was extinguished.
+- **525 after the Landing** — Fjeiskba turned from the Faith of Vaghimsaid to the Way of Vathostvoll.
+- **550 after the Landing** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
+- **550 after the Landing** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
+- **550 after the Landing** — Mairkhaim rose against Tariadente and declared the free realm of Meghen.
+- **550 after the Landing** — A golden age dawned over Mantemeonte; its cities flourished as never before.
+- **575 after the Landing** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
+- **575 after the Landing** — A long drought gripped Shinkhukha; many perished.
+- **600 after the Landing** — Knauskaskei seized Jakhukha from Mishmaad.
+- **600 after the Landing** — Jakhukha rose against Knauskaskei and declared the free realm of Jumaad.
+- **600 after the Landing** — Mantecaria and 1 neighbouring province(s) broke away from Knauskaskei to found the realm of Tariacaria.
+- **600 after the Landing** — A long drought gripped Deobinte; many perished.
+- **600 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
+- **625 after the Landing** — Tariadente seized Jakhukha from Jumaad.
+- **625 after the Landing** — The realm of Jumaad was extinguished.
+- **625 after the Landing** — Brafjan and 1 neighbouring province(s) broke away from Mantemeonte to found the realm of Fjeiskdaurk.
+- **625 after the Landing** — Mantecaria turned from the Faith of Varondomomor to the Way of Vathostvoll.
+- **625 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
+- **650 after the Landing** — Mantemeonte seized Bryhrei from Fjeiskdaurk.
+- **650 after the Landing** — A long drought gripped Deoriando; many perished.
+- **675 after the Landing** — Tariadente seized Brafjan from Fjeiskdaurk.
+- **675 after the Landing** — The realm of Fjeiskdaurk was extinguished.
+- **700 after the Landing** — Knauskaskei seized Mantecaria from Tariacaria.
+- **725 after the Landing** — Tariadente's invasion of Mairkhaim was thrown back by Meghen.
+- **725 after the Landing** — Brafjan rose against Tariadente and declared the free realm of Fjeiskaskei.
+- **725 after the Landing** — Mantecaria and 1 neighbouring province(s) broke away from Knauskaskei to found the realm of Tenabinte.
+- **725 after the Landing** — A long drought gripped Deoriando; many perished.
+- **750 after the Landing** — Knauskaskei seized Brafjan from Fjeiskaskei.
+- **750 after the Landing** — The realm of Fjeiskaskei was extinguished.
+- **775 after the Landing** — Knauskaskei seized Mantecaria from Tenabinte.
+- **775 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
+- **800 after the Landing** — Knauskaskei seized Rarerkai from Tenabinte.
+- **800 after the Landing** — The realm of Tenabinte was extinguished.
+- **800 after the Landing** — Rairkhukha was stormed and left a ruin.
+- **800 after the Landing** — Tariadente seized Mairkhaim from Meghen.
+- **800 after the Landing** — The realm of Meghen was extinguished.
+- **800 after the Landing** — Brafjan rose against Knauskaskei and declared the free realm of Tharnafjysk.
+- **800 after the Landing** — Mairkhaim rose against Tariadente and declared the free realm of Meshaa.
+- **825 after the Landing** — Tariadente seized Brafjan from Tharnafjysk.
+- **825 after the Landing** — The realm of Tharnafjysk was extinguished.
+- **825 after the Landing** — Knauskaskei's invasion of Rairghen was thrown back by Tariacaria.
+- **825 after the Landing** — Mantecaria rose against Knauskaskei and declared the free realm of Rauriadente.
+- **825 after the Landing** — A long drought gripped Bragra; many perished.
+- **850 after the Landing** — Tariacaria seized Mantecaria from Rauriadente.
+- **850 after the Landing** — The realm of Rauriadente was extinguished.
+- **850 after the Landing** — Rarerkai rose against Knauskaskei and declared the free realm of Rairshaa.
+- **875 after the Landing** — Knauskaskei seized Rarerkai from Rairshaa.
+- **875 after the Landing** — The realm of Rairshaa was extinguished.
+- **875 after the Landing** — Brafjan rose against Tariadente and declared the free realm of Storkathon.
+- **875 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
+- **900 after the Landing** — Mantemeonte seized Brafjan from Storkathon.
+- **900 after the Landing** — The realm of Storkathon was extinguished.
+- **900 after the Landing** — A plague swept Jakhukha; many perished.
+- **925 after the Landing** — Knauskaskei's invasion of Mantecaria was thrown back by Tariacaria.
+- **925 after the Landing** — Tariadente's invasion of Bryhrei was thrown back by Mantemeonte.
+- **950 after the Landing** — Knauskathon's invasion of Shinkhukha was thrown back by Mishmaad.
+- **950 after the Landing** — A golden age dawned over Tariadente; its cities flourished as never before.
+- **975 after the Landing** — Knauskaskei seized Mantecaria from Tariacaria.
+- **975 after the Landing** — Mantecaria rose against Knauskaskei and declared the free realm of Tenabinte.
+- **1000 after the Landing** — Knauskaskei seized Mantecaria from Tenabinte.
+- **1000 after the Landing** — The realm of Tenabinte was extinguished.
+- **1025 after the Landing** — Tariadente seized Mairkhaim from Meshaa.
+- **1025 after the Landing** — The realm of Meshaa was extinguished.
+- **1025 after the Landing** — Shinshu was stormed and left a ruin.
+- **1025 after the Landing** — Knauskaskei seized Rairghen from Tariacaria.
+- **1025 after the Landing** — The realm of Tariacaria was extinguished.
+- **1025 after the Landing** — Mairkhaim rose against Tariadente and declared the free realm of Rairqe.
+- **1050 after the Landing** — Tariadente's invasion of Mairkhaim was thrown back by Rairqe.
+- **1075 after the Landing** — Knauskaskei's invasion of Fjeiskba was thrown back by Mantemeonte.
+- **1075 after the Landing** — A golden age dawned over Tariadente; its cities flourished as never before.
 
 ## A Traveller's Account, in the year 1100
 

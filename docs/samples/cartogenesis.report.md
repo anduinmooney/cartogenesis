@@ -10,7 +10,8 @@
 - **Peoples:** 29 regions, 26 settlements, 4 realms
 - **Capital:** Deoliria, seat of House Belentaria
 - **Dominant power:** Vynthon (of 4 surviving realm(s))
-- **The present year:** 1100 After Reckoning
+- **The present year:** 1100 A.C. — 1100 years after the Crowning
+- **The reckoning:** years are counted from **The First Crowning** (year 0); dates wear `A.C.`
 - **Highest peak:** 4,500 m · **volcanoes:** 6 (1 active)
 
 ## Volcanoes
@@ -351,22 +352,23 @@ Followed across 1 region(s).
 
 ## Legends of the founding age
 
-- **72 After Reckoning** — The city of Deoliria was founded on a sheltered harbour, destined to become the seat of power.
-- **94 After Reckoning** — The city of Deociamor was founded on a sheltered harbour.
-- **100 After Reckoning** — Deoliria rose to rule its hinterland, and the realm of Rauriameonte was proclaimed.
-- **120 After Reckoning** — Deociamor rose to rule its hinterland, and the realm of Tenademor was proclaimed.
-- **121 After Reckoning** — The city of Deotelen was founded on a sheltered harbour.
-- **142 After Reckoning** — Deotelen rose to rule its hinterland, and the realm of Tariademor was proclaimed.
-- **143 After Reckoning** — The city of Khirghekh was founded on a sheltered harbour.
-- **175 After Reckoning** — Khirghekh rose to rule its hinterland, and the realm of Meqe was proclaimed.
-- **450 After Reckoning** — An academy founded on the shores of Tenasi gathered the age's finest cartographers.
-- **612 After Reckoning** — Dobra woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **750 After Reckoning** — A great storm-tide flooded Deoliria; the lower quarters were lost to the sea.
-- **802 After Reckoning** — Under a long peace, Deoliria flourished; its libraries and roads became the wonder of the world.
+- **0 A.C.** — In the year now called zero, the scattered halls around Deoliria set a circlet on one head for the first time, and — having at last someone to blame — began to keep records. From that year the peoples of this world count their days.
+- **72 A.C.** — The city of Deoliria was founded on a sheltered harbour, destined to become the seat of power.
+- **94 A.C.** — The city of Deociamor was founded on a sheltered harbour.
+- **100 A.C.** — Deoliria rose to rule its hinterland, and the realm of Rauriameonte was proclaimed.
+- **120 A.C.** — Deociamor rose to rule its hinterland, and the realm of Tenademor was proclaimed.
+- **121 A.C.** — The city of Deotelen was founded on a sheltered harbour.
+- **142 A.C.** — Deotelen rose to rule its hinterland, and the realm of Tariademor was proclaimed.
+- **143 A.C.** — The city of Khirghekh was founded on a sheltered harbour.
+- **175 A.C.** — Khirghekh rose to rule its hinterland, and the realm of Meqe was proclaimed.
+- **450 A.C.** — An academy founded on the shores of Tenasi gathered the age's finest cartographers.
+- **612 A.C.** — Dobra woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **750 A.C.** — A great storm-tide flooded Deoliria; the lower quarters were lost to the sea.
+- **802 A.C.** — Under a long peace, Deoliria flourished; its libraries and roads became the wonder of the world.
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 4 realm(s) endured to the present.*
+*Simulated 100–1100 after the Crowning. 4 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
@@ -379,7 +381,7 @@ Followed across 1 region(s).
 
 ## The Chronicle of Vynthon
 
-*Set down in Deoliria, in the year 1100 After Reckoning, by a servant of House Belentaria. What follows is not legend — of the founding age the legends tell enough — but the plain record of 1000 years, as well as one hand could gather it.*
+*Set down in Deoliria, in the year 1100 after the Crowning, by a servant of House Belentaria. What follows is not legend — of the founding age the legends tell enough — but the plain record of 1000 years, as well as one hand could gather it.*
 
 *The world it happened in is quickly drawn: Mount Dobra in the high places, and the Mishkan running to the sea, and between them every road this chronicle walks.*
 
@@ -457,79 +459,79 @@ In the year 950, the assault Rauriameonte loosed upon Mairsham broke against Ten
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 After Reckoning** — Vynthon seized Deobinte from Rauriacaria.
-- **100 After Reckoning** — The realm of Rauriacaria was extinguished.
-- **100 After Reckoning** — Tariademor seized Rairghen from Mantebinte.
-- **125 After Reckoning** — Tariademor seized Panalaria from Mantebinte.
-- **125 After Reckoning** — The realm of Mantebinte was extinguished.
-- **125 After Reckoning** — Vynthon seized Qughen from Kaarkaasi.
-- **125 After Reckoning** — Rairghen rose against Tariademor and declared the free realm of Rairghen.
-- **150 After Reckoning** — Tariademor seized Rairghen from Rairghen.
-- **150 After Reckoning** — The realm of Rairghen was extinguished.
-- **150 After Reckoning** — Deobinte rose against Vynthon and declared the free realm of Caumeonte.
-- **150 After Reckoning** — A golden age dawned over Tenademor; its cities flourished as never before.
-- **175 After Reckoning** — Vynthon seized Deobinte from Caumeonte.
-- **175 After Reckoning** — The realm of Caumeonte was extinguished.
-- **200 After Reckoning** — Vynthon seized Mairkhukha from Kaarkaasi.
-- **200 After Reckoning** — Tenademor seized Mairkhash from Kaarkaasi.
-- **225 After Reckoning** — Vynthon seized Khirghen from Kaarkaasi.
-- **225 After Reckoning** — The realm of Kaarkaasi was extinguished.
-- **225 After Reckoning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **250 After Reckoning** — Vynthon seized Khirkhidku from Meqe.
-- **250 After Reckoning** — The realm of Meqe was extinguished.
-- **250 After Reckoning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
-- **250 After Reckoning** — A golden age dawned over Tenademor; its cities flourished as never before.
-- **275 After Reckoning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **275 After Reckoning** — Kheqghen's invasion of Mairsham was thrown back by Tenademor.
-- **300 After Reckoning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
-- **300 After Reckoning** — A golden age dawned over Vynthon; its cities flourished as never before.
-- **325 After Reckoning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **325 After Reckoning** — A plague swept Mairkhash; many perished.
-- **350 After Reckoning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
-- **350 After Reckoning** — Kheqghen's invasion of Mairsham was thrown back by Tenademor.
-- **375 After Reckoning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **375 After Reckoning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
-- **400 After Reckoning** — Tenademor seized Khirshaa from Kheqghen.
-- **400 After Reckoning** — Kheqghen's invasion of Mairsham was thrown back by Tenademor.
-- **400 After Reckoning** — Vaudoria turned from the Faith of Vatenavomor to the Way of Vaghimzizam.
-- **425 After Reckoning** — Vynthon seized Khirkhukha from Kheqghen.
-- **425 After Reckoning** — The realm of Kheqghen was extinguished.
-- **425 After Reckoning** — Rauriameonte seized Brabrein from Tenademor.
-- **425 After Reckoning** — Brakno turned from the Faith of Vatenavomor to the Way of Vaghimzizam.
-- **425 After Reckoning** — A golden age dawned over Tenademor; its cities flourished as never before.
-- **450 After Reckoning** — Rauriameonte seized Bradaurk from Tenademor.
-- **475 After Reckoning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
-- **475 After Reckoning** — A plague swept Mairkhash; many perished.
-- **475 After Reckoning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
-- **500 After Reckoning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **525 After Reckoning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
-- **550 After Reckoning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **575 After Reckoning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
-- **600 After Reckoning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **600 After Reckoning** — A plague swept Rairghen; many perished.
-- **625 After Reckoning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
-- **650 After Reckoning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **675 After Reckoning** — Rauriameonte seized Mairghen from Tenademor.
-- **700 After Reckoning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **700 After Reckoning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **750 After Reckoning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **750 After Reckoning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **800 After Reckoning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **800 After Reckoning** — A long drought gripped Khirkhidku; many perished.
-- **800 After Reckoning** — A golden age dawned over Vynthon; its cities flourished as never before.
-- **825 After Reckoning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **825 After Reckoning** — A plague swept Rairghen; many perished.
-- **850 After Reckoning** — Rauriameonte seized Skagra from Tenademor.
-- **875 After Reckoning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
-- **875 After Reckoning** — Skagra rose against Rauriameonte and declared the free realm of Storkastall.
-- **875 After Reckoning** — A long drought gripped Qughen; many perished.
-- **900 After Reckoning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **925 After Reckoning** — Rauriameonte seized Skagra from Storkastall.
-- **925 After Reckoning** — The realm of Storkastall was extinguished.
-- **950 After Reckoning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
-- **975 After Reckoning** — A golden age dawned over Vynthon; its cities flourished as never before.
-- **1000 After Reckoning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
-- **1050 After Reckoning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
+- **100 after the Crowning** — Vynthon seized Deobinte from Rauriacaria.
+- **100 after the Crowning** — The realm of Rauriacaria was extinguished.
+- **100 after the Crowning** — Tariademor seized Rairghen from Mantebinte.
+- **125 after the Crowning** — Tariademor seized Panalaria from Mantebinte.
+- **125 after the Crowning** — The realm of Mantebinte was extinguished.
+- **125 after the Crowning** — Vynthon seized Qughen from Kaarkaasi.
+- **125 after the Crowning** — Rairghen rose against Tariademor and declared the free realm of Rairghen.
+- **150 after the Crowning** — Tariademor seized Rairghen from Rairghen.
+- **150 after the Crowning** — The realm of Rairghen was extinguished.
+- **150 after the Crowning** — Deobinte rose against Vynthon and declared the free realm of Caumeonte.
+- **150 after the Crowning** — A golden age dawned over Tenademor; its cities flourished as never before.
+- **175 after the Crowning** — Vynthon seized Deobinte from Caumeonte.
+- **175 after the Crowning** — The realm of Caumeonte was extinguished.
+- **200 after the Crowning** — Vynthon seized Mairkhukha from Kaarkaasi.
+- **200 after the Crowning** — Tenademor seized Mairkhash from Kaarkaasi.
+- **225 after the Crowning** — Vynthon seized Khirghen from Kaarkaasi.
+- **225 after the Crowning** — The realm of Kaarkaasi was extinguished.
+- **225 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **250 after the Crowning** — Vynthon seized Khirkhidku from Meqe.
+- **250 after the Crowning** — The realm of Meqe was extinguished.
+- **250 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
+- **250 after the Crowning** — A golden age dawned over Tenademor; its cities flourished as never before.
+- **275 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **275 after the Crowning** — Kheqghen's invasion of Mairsham was thrown back by Tenademor.
+- **300 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
+- **300 after the Crowning** — A golden age dawned over Vynthon; its cities flourished as never before.
+- **325 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **325 after the Crowning** — A plague swept Mairkhash; many perished.
+- **350 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
+- **350 after the Crowning** — Kheqghen's invasion of Mairsham was thrown back by Tenademor.
+- **375 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **375 after the Crowning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
+- **400 after the Crowning** — Tenademor seized Khirshaa from Kheqghen.
+- **400 after the Crowning** — Kheqghen's invasion of Mairsham was thrown back by Tenademor.
+- **400 after the Crowning** — Vaudoria turned from the Faith of Vatenavomor to the Way of Vaghimzizam.
+- **425 after the Crowning** — Vynthon seized Khirkhukha from Kheqghen.
+- **425 after the Crowning** — The realm of Kheqghen was extinguished.
+- **425 after the Crowning** — Rauriameonte seized Brabrein from Tenademor.
+- **425 after the Crowning** — Brakno turned from the Faith of Vatenavomor to the Way of Vaghimzizam.
+- **425 after the Crowning** — A golden age dawned over Tenademor; its cities flourished as never before.
+- **450 after the Crowning** — Rauriameonte seized Bradaurk from Tenademor.
+- **475 after the Crowning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
+- **475 after the Crowning** — A plague swept Mairkhash; many perished.
+- **475 after the Crowning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
+- **500 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
+- **525 after the Crowning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
+- **550 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
+- **575 after the Crowning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
+- **600 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
+- **600 after the Crowning** — A plague swept Rairghen; many perished.
+- **625 after the Crowning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
+- **650 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
+- **675 after the Crowning** — Rauriameonte seized Mairghen from Tenademor.
+- **700 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **700 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
+- **750 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **750 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
+- **800 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **800 after the Crowning** — A long drought gripped Khirkhidku; many perished.
+- **800 after the Crowning** — A golden age dawned over Vynthon; its cities flourished as never before.
+- **825 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
+- **825 after the Crowning** — A plague swept Rairghen; many perished.
+- **850 after the Crowning** — Rauriameonte seized Skagra from Tenademor.
+- **875 after the Crowning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
+- **875 after the Crowning** — Skagra rose against Rauriameonte and declared the free realm of Storkastall.
+- **875 after the Crowning** — A long drought gripped Qughen; many perished.
+- **900 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
+- **925 after the Crowning** — Rauriameonte seized Skagra from Storkastall.
+- **925 after the Crowning** — The realm of Storkastall was extinguished.
+- **950 after the Crowning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
+- **975 after the Crowning** — A golden age dawned over Vynthon; its cities flourished as never before.
+- **1000 after the Crowning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
+- **1050 after the Crowning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
 
 ## A Traveller's Account, in the year 1100
 

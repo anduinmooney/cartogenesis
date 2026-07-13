@@ -277,7 +277,11 @@ export function generateWorld(config             )        {
     rivers,
     regions,
     settlements.settlements,
-    { seed: historyRng.seed, presentYear },
+    {
+      seed: historyRng.seed,
+      presentYear,
+      volcanoes: volcanoes.map((v) => ({ name: v.name, status: v.status })),
+    },
   );
 
   // L12 — Lore: houses, rulers, figures, and region prose.

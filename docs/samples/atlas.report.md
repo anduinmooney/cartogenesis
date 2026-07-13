@@ -10,7 +10,8 @@
 - **Peoples:** 26 regions, 17 settlements, 3 realms
 - **Capital:** Deoliria, seat of House Niantetindo
 - **Dominant power:** Rauriacaria (of 4 surviving realm(s))
-- **The present year:** 1100 After Reckoning
+- **The present year:** 1100 A.B. — 1100 years after the Burning
+- **The reckoning:** years are counted from **The Great Burning of Mount Thathobry** (year 0); dates wear `A.B.`
 - **Highest peak:** 4,490 m · **volcanoes:** 3 (2 active)
 
 ## Volcanoes
@@ -304,20 +305,21 @@ Followed across 11 region(s).
 
 ## Legends of the founding age
 
-- **58 After Reckoning** — The city of Deoliria was founded on a sheltered harbour, destined to become the seat of power.
-- **72 After Reckoning** — The city of Deolamor was founded on a sheltered harbour.
-- **82 After Reckoning** — Deoliria rose to rule its hinterland, and the realm of Tenameonte was proclaimed.
-- **88 After Reckoning** — The city of Niantetomor was founded amid good country.
-- **99 After Reckoning** — Deolamor rose to rule its hinterland, and the realm of Caudente was proclaimed.
-- **123 After Reckoning** — Niantetomor rose to rule its hinterland, and the realm of Tariacaria was proclaimed.
-- **723 After Reckoning** — Caubeosso woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **849 After Reckoning** — A great storm-tide flooded Deoliria; the lower quarters were lost to the sea.
-- **907 After Reckoning** — Under a long peace, Deoliria flourished; its libraries and roads became the wonder of the world.
-- **1033 After Reckoning** — An academy founded on the shores of Donasi gathered the age's finest cartographers.
+- **0 A.B.** — In the year now called zero, the mountain called Thathobry spoke fire for the first time in living memory; the elders called it an ending, and the young, more sensibly, a beginning. From that year the peoples of this world count their days.
+- **58 A.B.** — The city of Deoliria was founded on a sheltered harbour, destined to become the seat of power.
+- **72 A.B.** — The city of Deolamor was founded on a sheltered harbour.
+- **82 A.B.** — Deoliria rose to rule its hinterland, and the realm of Tenameonte was proclaimed.
+- **88 A.B.** — The city of Niantetomor was founded amid good country.
+- **99 A.B.** — Deolamor rose to rule its hinterland, and the realm of Caudente was proclaimed.
+- **123 A.B.** — Niantetomor rose to rule its hinterland, and the realm of Tariacaria was proclaimed.
+- **723 A.B.** — Caubeosso woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **849 A.B.** — A great storm-tide flooded Deoliria; the lower quarters were lost to the sea.
+- **907 A.B.** — Under a long peace, Deoliria flourished; its libraries and roads became the wonder of the world.
+- **1033 A.B.** — An academy founded on the shores of Donasi gathered the age's finest cartographers.
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 4 realm(s) endured to the present.*
+*Simulated 100–1100 after the Burning. 4 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
@@ -419,95 +421,95 @@ About the year 1075, there was no halting Caudente that season: Midkhash fell to
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 After Reckoning** — Caudente's invasion of Brahrei was thrown back by Lossobinte.
-- **100 After Reckoning** — Mishqe seized Deodinte from Tariacaria.
-- **100 After Reckoning** — The realm of Tariacaria was extinguished.
-- **100 After Reckoning** — A plague swept Melareth; many perished.
-- **125 After Reckoning** — Tenameonte seized Beossoda from Lossobinte.
-- **150 After Reckoning** — Caudente seized Brahrei from Lossobinte.
-- **150 After Reckoning** — Stagrdaurk and 1 neighbouring province(s) broke away from Caudente to found the realm of Fjeiskdaurk.
-- **175 After Reckoning** — Caudente seized Peonapana from Lossobinte.
-- **175 After Reckoning** — The realm of Lossobinte was extinguished.
-- **200 After Reckoning** — Caudente seized Mairkhidku from Fjeiskdaurk.
-- **200 After Reckoning** — Rauriacaria seized Deodinte from Mishqe.
-- **225 After Reckoning** — Caudente seized Stagrdaurk from Fjeiskdaurk.
-- **225 After Reckoning** — The realm of Fjeiskdaurk was extinguished.
-- **225 After Reckoning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
-- **250 After Reckoning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
-- **275 After Reckoning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
-- **300 After Reckoning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
-- **325 After Reckoning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
-- **350 After Reckoning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
-- **350 After Reckoning** — Midkhash and 2 neighbouring province(s) broke away from Caudente to found the realm of Rairkaasi.
-- **375 After Reckoning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
-- **400 After Reckoning** — Rairkaasi seized Mairghen from Mishqe.
-- **400 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
-- **400 After Reckoning** — Brahrei turned from the Rite of Vabrograthygr to the Faith of Vabamortena.
-- **425 After Reckoning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
-- **425 After Reckoning** — Rairkaasi's invasion of Beossodinte was thrown back by Mishqe.
-- **425 After Reckoning** — A plague swept Shinkhajez; many perished.
-- **450 After Reckoning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
-- **450 After Reckoning** — A long drought gripped Stagrdaurk; many perished.
-- **475 After Reckoning** — Rauriacaria seized Khirkhajez from Mishqe.
-- **500 After Reckoning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
-- **500 After Reckoning** — Tenameonte's invasion of Peonapana was thrown back by Caudente.
-- **525 After Reckoning** — Rairkaasi's invasion of Khirshaa was thrown back by Mishqe.
-- **550 After Reckoning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
-- **550 After Reckoning** — Tenameonte's invasion of Peonapana was thrown back by Caudente.
-- **575 After Reckoning** — Qidkaqe seized Beossodinte from Mishqe.
-- **575 After Reckoning** — Rairkaasi's invasion of Khirshaa was thrown back by Mishqe.
-- **600 After Reckoning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
-- **600 After Reckoning** — A plague swept Mairkai; many perished.
-- **625 After Reckoning** — Rairkaasi's invasion of Khirshaa was thrown back by Mishqe.
-- **625 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
-- **625 After Reckoning** — A long drought gripped Qusham; many perished.
-- **650 After Reckoning** — Rauriacaria seized Khirshaa from Mishqe.
-- **650 After Reckoning** — The realm of Mishqe was extinguished.
-- **650 After Reckoning** — A long drought gripped Peonapana; many perished.
-- **650 After Reckoning** — A golden age dawned over Tenameonte; its cities flourished as never before.
-- **675 After Reckoning** — Rauriacaria's invasion of Mairghen was thrown back by Rairkaasi.
-- **675 After Reckoning** — A plague swept Shinkhajez; many perished.
-- **675 After Reckoning** — A golden age dawned over Tenameonte; its cities flourished as never before.
-- **700 After Reckoning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
-- **700 After Reckoning** — Rairkaasi's invasion of Mairkhidku was thrown back by Caudente.
-- **700 After Reckoning** — A long drought gripped Deoneosso; many perished.
-- **700 After Reckoning** — A golden age dawned over Caudente; its cities flourished as never before.
-- **725 After Reckoning** — Rauriacaria seized Mairghen from Rairkaasi.
-- **750 After Reckoning** — Rauriacaria's invasion of Khirarer was thrown back by Rairkaasi.
-- **750 After Reckoning** — Tenameonte seized Brabei from Qidkaqe.
-- **775 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
-- **800 After Reckoning** — Rauriacaria's invasion of Khirarer was thrown back by Rairkaasi.
-- **825 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
-- **850 After Reckoning** — Rauriacaria's invasion of Khirarer was thrown back by Rairkaasi.
-- **875 After Reckoning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
-- **900 After Reckoning** — Rauriacaria seized Khirarer from Rairkaasi.
-- **925 After Reckoning** — Caudente seized Midkhash from Rairkaasi.
-- **925 After Reckoning** — Rauriacaria's invasion of Beossodinte was thrown back by Qidkaqe.
-- **925 After Reckoning** — A long drought gripped Melareth; many perished.
-- **950 After Reckoning** — Tenameonte seized Qusham from Qidkaqe.
-- **950 After Reckoning** — Midkhash rose against Caudente and declared the free realm of Jaghen.
-- **950 After Reckoning** — Qusham rose against Tenameonte and declared the free realm of Jaqe.
-- **950 After Reckoning** — A long drought gripped Khirkhajez; many perished.
-- **975 After Reckoning** — Tenameonte seized Qusham from Jaqe.
-- **975 After Reckoning** — The realm of Jaqe was extinguished.
-- **975 After Reckoning** — Rauriacaria seized Midkhash from Jaghen.
-- **975 After Reckoning** — The realm of Jaghen was extinguished.
-- **975 After Reckoning** — Qusham rose against Tenameonte and declared the free realm of Mishqe.
-- **975 After Reckoning** — Mairghen and 1 neighbouring province(s) broke away from Rauriacaria to found the realm of Jamaad.
-- **1000 After Reckoning** — Tenameonte seized Qusham from Mishqe.
-- **1000 After Reckoning** — The realm of Mishqe was extinguished.
-- **1000 After Reckoning** — A long drought gripped Peonapana; many perished.
-- **1025 After Reckoning** — Caudente's invasion of Khirkhidku was thrown back by Rairkaasi.
-- **1025 After Reckoning** — Rauriacaria seized Mairghen from Jamaad.
-- **1025 After Reckoning** — Mairghen rose against Rauriacaria and declared the free realm of Kheqtaitan.
-- **1025 After Reckoning** — A plague swept Khirkhaim; many perished.
-- **1050 After Reckoning** — Rauriacaria seized Mairghen from Kheqtaitan.
-- **1050 After Reckoning** — The realm of Kheqtaitan was extinguished.
-- **1050 After Reckoning** — Rairkaasi's invasion of Midkhash was thrown back by Jamaad.
-- **1075 After Reckoning** — Caudente seized Midkhash from Jamaad.
-- **1075 After Reckoning** — The realm of Jamaad was extinguished.
-- **1075 After Reckoning** — Rauriacaria seized Khirkhidku from Rairkaasi.
-- **1075 After Reckoning** — The realm of Rairkaasi was extinguished.
+- **100 after the Burning** — Caudente's invasion of Brahrei was thrown back by Lossobinte.
+- **100 after the Burning** — Mishqe seized Deodinte from Tariacaria.
+- **100 after the Burning** — The realm of Tariacaria was extinguished.
+- **100 after the Burning** — A plague swept Melareth; many perished.
+- **125 after the Burning** — Tenameonte seized Beossoda from Lossobinte.
+- **150 after the Burning** — Caudente seized Brahrei from Lossobinte.
+- **150 after the Burning** — Stagrdaurk and 1 neighbouring province(s) broke away from Caudente to found the realm of Fjeiskdaurk.
+- **175 after the Burning** — Caudente seized Peonapana from Lossobinte.
+- **175 after the Burning** — The realm of Lossobinte was extinguished.
+- **200 after the Burning** — Caudente seized Mairkhidku from Fjeiskdaurk.
+- **200 after the Burning** — Rauriacaria seized Deodinte from Mishqe.
+- **225 after the Burning** — Caudente seized Stagrdaurk from Fjeiskdaurk.
+- **225 after the Burning** — The realm of Fjeiskdaurk was extinguished.
+- **225 after the Burning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
+- **250 after the Burning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
+- **275 after the Burning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
+- **300 after the Burning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
+- **325 after the Burning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
+- **350 after the Burning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
+- **350 after the Burning** — Midkhash and 2 neighbouring province(s) broke away from Caudente to found the realm of Rairkaasi.
+- **375 after the Burning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
+- **400 after the Burning** — Rairkaasi seized Mairghen from Mishqe.
+- **400 after the Burning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
+- **400 after the Burning** — Brahrei turned from the Rite of Vabrograthygr to the Faith of Vabamortena.
+- **425 after the Burning** — Rauriacaria's invasion of Khirkhajez was thrown back by Mishqe.
+- **425 after the Burning** — Rairkaasi's invasion of Beossodinte was thrown back by Mishqe.
+- **425 after the Burning** — A plague swept Shinkhajez; many perished.
+- **450 after the Burning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
+- **450 after the Burning** — A long drought gripped Stagrdaurk; many perished.
+- **475 after the Burning** — Rauriacaria seized Khirkhajez from Mishqe.
+- **500 after the Burning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
+- **500 after the Burning** — Tenameonte's invasion of Peonapana was thrown back by Caudente.
+- **525 after the Burning** — Rairkaasi's invasion of Khirshaa was thrown back by Mishqe.
+- **550 after the Burning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
+- **550 after the Burning** — Tenameonte's invasion of Peonapana was thrown back by Caudente.
+- **575 after the Burning** — Qidkaqe seized Beossodinte from Mishqe.
+- **575 after the Burning** — Rairkaasi's invasion of Khirshaa was thrown back by Mishqe.
+- **600 after the Burning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
+- **600 after the Burning** — A plague swept Mairkai; many perished.
+- **625 after the Burning** — Rairkaasi's invasion of Khirshaa was thrown back by Mishqe.
+- **625 after the Burning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
+- **625 after the Burning** — A long drought gripped Qusham; many perished.
+- **650 after the Burning** — Rauriacaria seized Khirshaa from Mishqe.
+- **650 after the Burning** — The realm of Mishqe was extinguished.
+- **650 after the Burning** — A long drought gripped Peonapana; many perished.
+- **650 after the Burning** — A golden age dawned over Tenameonte; its cities flourished as never before.
+- **675 after the Burning** — Rauriacaria's invasion of Mairghen was thrown back by Rairkaasi.
+- **675 after the Burning** — A plague swept Shinkhajez; many perished.
+- **675 after the Burning** — A golden age dawned over Tenameonte; its cities flourished as never before.
+- **700 after the Burning** — Tenameonte's invasion of Brabei was thrown back by Qidkaqe.
+- **700 after the Burning** — Rairkaasi's invasion of Mairkhidku was thrown back by Caudente.
+- **700 after the Burning** — A long drought gripped Deoneosso; many perished.
+- **700 after the Burning** — A golden age dawned over Caudente; its cities flourished as never before.
+- **725 after the Burning** — Rauriacaria seized Mairghen from Rairkaasi.
+- **750 after the Burning** — Rauriacaria's invasion of Khirarer was thrown back by Rairkaasi.
+- **750 after the Burning** — Tenameonte seized Brabei from Qidkaqe.
+- **775 after the Burning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
+- **800 after the Burning** — Rauriacaria's invasion of Khirarer was thrown back by Rairkaasi.
+- **825 after the Burning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
+- **850 after the Burning** — Rauriacaria's invasion of Khirarer was thrown back by Rairkaasi.
+- **875 after the Burning** — Tenameonte's invasion of Qusham was thrown back by Qidkaqe.
+- **900 after the Burning** — Rauriacaria seized Khirarer from Rairkaasi.
+- **925 after the Burning** — Caudente seized Midkhash from Rairkaasi.
+- **925 after the Burning** — Rauriacaria's invasion of Beossodinte was thrown back by Qidkaqe.
+- **925 after the Burning** — A long drought gripped Melareth; many perished.
+- **950 after the Burning** — Tenameonte seized Qusham from Qidkaqe.
+- **950 after the Burning** — Midkhash rose against Caudente and declared the free realm of Jaghen.
+- **950 after the Burning** — Qusham rose against Tenameonte and declared the free realm of Jaqe.
+- **950 after the Burning** — A long drought gripped Khirkhajez; many perished.
+- **975 after the Burning** — Tenameonte seized Qusham from Jaqe.
+- **975 after the Burning** — The realm of Jaqe was extinguished.
+- **975 after the Burning** — Rauriacaria seized Midkhash from Jaghen.
+- **975 after the Burning** — The realm of Jaghen was extinguished.
+- **975 after the Burning** — Qusham rose against Tenameonte and declared the free realm of Mishqe.
+- **975 after the Burning** — Mairghen and 1 neighbouring province(s) broke away from Rauriacaria to found the realm of Jamaad.
+- **1000 after the Burning** — Tenameonte seized Qusham from Mishqe.
+- **1000 after the Burning** — The realm of Mishqe was extinguished.
+- **1000 after the Burning** — A long drought gripped Peonapana; many perished.
+- **1025 after the Burning** — Caudente's invasion of Khirkhidku was thrown back by Rairkaasi.
+- **1025 after the Burning** — Rauriacaria seized Mairghen from Jamaad.
+- **1025 after the Burning** — Mairghen rose against Rauriacaria and declared the free realm of Kheqtaitan.
+- **1025 after the Burning** — A plague swept Khirkhaim; many perished.
+- **1050 after the Burning** — Rauriacaria seized Mairghen from Kheqtaitan.
+- **1050 after the Burning** — The realm of Kheqtaitan was extinguished.
+- **1050 after the Burning** — Rairkaasi's invasion of Midkhash was thrown back by Jamaad.
+- **1075 after the Burning** — Caudente seized Midkhash from Jamaad.
+- **1075 after the Burning** — The realm of Jamaad was extinguished.
+- **1075 after the Burning** — Rauriacaria seized Khirkhidku from Rairkaasi.
+- **1075 after the Burning** — The realm of Rairkaasi was extinguished.
 
 ## A Traveller's Account, in the year 1100
 

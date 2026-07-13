@@ -10,7 +10,8 @@
 - **Peoples:** 31 regions, 23 settlements, 3 realms
 - **Capital:** Deociamor, seat of House Variatindo
 - **Dominant power:** Kheqshaa (of 5 surviving realm(s))
-- **The present year:** 1100 After Reckoning
+- **The present year:** 1100 A.L. — 1100 years after the Landing
+- **The reckoning:** years are counted from **The Landing** (year 0); dates wear `A.L.`
 - **Highest peak:** 4,500 m · **volcanoes:** 6 (4 active)
 
 ## Volcanoes
@@ -346,20 +347,21 @@ Followed across 1 region(s).
 
 ## Legends of the founding age
 
-- **31 After Reckoning** — The city of Deociamor was founded on a sheltered harbour, destined to become the seat of power.
-- **54 After Reckoning** — The city of Fjangry was founded along the Mishkai.
-- **62 After Reckoning** — Deociamor rose to rule its hinterland, and the realm of Mantebinte was proclaimed.
-- **80 After Reckoning** — Fjangry rose to rule its hinterland, and the realm of Knauskastall was proclaimed.
-- **81 After Reckoning** — The city of Khirghekh was founded on a sheltered harbour.
-- **96 After Reckoning** — Khirghekh rose to rule its hinterland, and the realm of Rairkaasi was proclaimed.
-- **571 After Reckoning** — A great storm-tide flooded Deociamor; the lower quarters were lost to the sea.
-- **890 After Reckoning** — Dobra woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **960 After Reckoning** — An academy founded on the shores of Semorsi gathered the age's finest cartographers.
-- **1055 After Reckoning** — Under a long peace, Deociamor flourished; its libraries and roads became the wonder of the world.
+- **0 A.L.** — In the year now called zero, the boats that had wandered too long found this coast below what is now Deociamor and were pulled up past the tide line for good. From that year the peoples of this world count their days.
+- **31 A.L.** — The city of Deociamor was founded on a sheltered harbour, destined to become the seat of power.
+- **54 A.L.** — The city of Fjangry was founded along the Mishkai.
+- **62 A.L.** — Deociamor rose to rule its hinterland, and the realm of Mantebinte was proclaimed.
+- **80 A.L.** — Fjangry rose to rule its hinterland, and the realm of Knauskastall was proclaimed.
+- **81 A.L.** — The city of Khirghekh was founded on a sheltered harbour.
+- **96 A.L.** — Khirghekh rose to rule its hinterland, and the realm of Rairkaasi was proclaimed.
+- **571 A.L.** — A great storm-tide flooded Deociamor; the lower quarters were lost to the sea.
+- **890 A.L.** — Dobra woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **960 A.L.** — An academy founded on the shores of Semorsi gathered the age's finest cartographers.
+- **1055 A.L.** — Under a long peace, Deociamor flourished; its libraries and roads became the wonder of the world.
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 5 realm(s) endured to the present.*
+*Simulated 100–1100 after the Landing. 5 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
@@ -378,7 +380,7 @@ Followed across 1 region(s).
 
 ## The Chronicle of Kheqshaa
 
-*Set down in Deociamor, in the year 1100 After Reckoning, by a servant of House Variatindo. What follows is not legend — of the founding age the legends tell enough — but the plain record of 1000 years, as well as one hand could gather it.*
+*Set down in Deociamor, in the year 1100 after the Landing, by a servant of House Variatindo. What follows is not legend — of the founding age the legends tell enough — but the plain record of 1000 years, as well as one hand could gather it.*
 
 *The world it happened in is quickly drawn: Mount Dobra in the high places, and the Mishkai running to the sea, and between them every road this chronicle walks.*
 
@@ -476,111 +478,111 @@ The occupiers kept the land-words and changed the rest, and so Khirghekh is writ
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 After Reckoning** — Kheqshaa's invasion of Midghen was thrown back by Jakaasi.
-- **100 After Reckoning** — Vynskei seized Brabry from Caudemor.
-- **100 After Reckoning** — Brakno turned from the Faith of Vavathygr to the Cult of Vaghazazizam.
-- **125 After Reckoning** — Vynskei's invasion of Deobinte was thrown back by Caudemor.
-- **125 After Reckoning** — Mantebinte's invasion of Midshaa was thrown back by Vynskei.
-- **125 After Reckoning** — A long drought gripped Melamelen; many perished.
-- **150 After Reckoning** — Kheqshaa's invasion of Jararer was thrown back by Caudemor.
-- **150 After Reckoning** — Midshaa and 1 neighbouring province(s) broke away from Vynskei to found the realm of Mekaasi.
-- **150 After Reckoning** — Knyrkafjan turned from the Faith of Vavathygr to the Rite of Vabamorvomor.
-- **175 After Reckoning** — Mantebinte seized Midshaa from Mekaasi.
-- **175 After Reckoning** — A long drought gripped Mairkhidku; many perished.
-- **200 After Reckoning** — Rairkaasi seized Beossoriando from Mekaasi.
-- **200 After Reckoning** — The realm of Mekaasi was extinguished.
-- **225 After Reckoning** — Shinkad was stormed and left a ruin.
-- **225 After Reckoning** — Kheqshaa seized Midghen from Jakaasi.
-- **225 After Reckoning** — The realm of Jakaasi was extinguished.
-- **250 After Reckoning** — Kheqshaa seized Jararer from Caudemor.
-- **275 After Reckoning** — Kheqshaa seized Deobinte from Caudemor.
-- **275 After Reckoning** — The realm of Caudemor was extinguished.
-- **275 After Reckoning** — Mantebinte's invasion of Staunbry was thrown back by Vynskei.
-- **275 After Reckoning** — A golden age dawned over Vynskei; its cities flourished as never before.
-- **300 After Reckoning** — Kheqshaa seized Brabry from Vynskei.
-- **300 After Reckoning** — Beossoriando and 1 neighbouring province(s) broke away from Rairkaasi to found the realm of Tariabinte.
-- **325 After Reckoning** — Kheqshaa seized Beossoriando from Tariabinte.
-- **325 After Reckoning** — Mantebinte seized Mairkhaim from Tariabinte.
-- **325 After Reckoning** — The realm of Tariabinte was extinguished.
-- **350 After Reckoning** — Mantebinte's invasion of Staunbry was thrown back by Vynskei.
-- **350 After Reckoning** — Kheqshaa seized Khirmid from Knauskastall.
-- **375 After Reckoning** — Kheqshaa seized Brakno from Knauskastall.
-- **375 After Reckoning** — Brakno rose against Kheqshaa and declared the free realm of Storkastall.
-- **375 After Reckoning** — Beossoriando rose against Kheqshaa and declared the free realm of Tenacaria.
-- **375 After Reckoning** — A long drought gripped Peonabinte; many perished.
-- **400 After Reckoning** — Kheqshaa's invasion of Beossoriando was thrown back by Tenacaria.
-- **400 After Reckoning** — Knauskastall seized Brakno from Storkastall.
-- **400 After Reckoning** — The realm of Storkastall was extinguished.
-- **425 After Reckoning** — Mantebinte seized Beossoriando from Tenacaria.
-- **425 After Reckoning** — The realm of Tenacaria was extinguished.
-- **450 After Reckoning** — Kheqshaa seized Brakno from Knauskastall.
-- **450 After Reckoning** — Brakno rose against Kheqshaa and declared the free realm of Fjeiskdaurk.
-- **450 After Reckoning** — Knaurkno turned from the Faith of Vavathygr to the Rite of Vabamorvomor.
-- **450 After Reckoning** — A long drought gripped Shinkhash; many perished.
-- **450 After Reckoning** — A golden age dawned over Kheqshaa; its cities flourished as never before.
-- **475 After Reckoning** — Kheqshaa seized Brakno from Fjeiskdaurk.
-- **475 After Reckoning** — The realm of Fjeiskdaurk was extinguished.
-- **475 After Reckoning** — A golden age dawned over Kheqshaa; its cities flourished as never before.
-- **500 After Reckoning** — Kheqshaa seized Stagrdaurk from Knauskastall.
-- **500 After Reckoning** — Mantebinte's invasion of Staunbry was thrown back by Vynskei.
-- **500 After Reckoning** — A plague swept Vongra; many perished.
-- **500 After Reckoning** — A golden age dawned over Mantebinte; its cities flourished as never before.
-- **525 After Reckoning** — Kheqshaa seized Vongra from Knauskastall.
-- **525 After Reckoning** — Rairkaasi's invasion of Stagraknaurk was thrown back by Knauskastall.
-- **525 After Reckoning** — Brakno rose against Kheqshaa and declared the free realm of Thorkno.
-- **525 After Reckoning** — Vongra rose against Kheqshaa and declared the free realm of Vyndaurk.
-- **525 After Reckoning** — A golden age dawned over Mantebinte; its cities flourished as never before.
-- **550 After Reckoning** — Kheqshaa seized Stagraknaurk from Knauskastall.
-- **575 After Reckoning** — Kheqshaa seized Brakno from Thorkno.
-- **575 After Reckoning** — The realm of Thorkno was extinguished.
-- **575 After Reckoning** — Mantebinte seized Staunbry from Vynskei.
-- **575 After Reckoning** — Stagraknaurk rose against Kheqshaa and declared the free realm of Steirkdaurk.
-- **575 After Reckoning** — Midshaa and 1 neighbouring province(s) broke away from Mantebinte to found the realm of Mishkaasi.
-- **600 After Reckoning** — Rairkaasi seized Stagraknaurk from Steirkdaurk.
-- **600 After Reckoning** — The realm of Steirkdaurk was extinguished.
-- **625 After Reckoning** — Kheqshaa seized Vongra from Vyndaurk.
-- **625 After Reckoning** — The realm of Vyndaurk was extinguished.
-- **625 After Reckoning** — Mantebinte seized Beossoriando from Mishkaasi.
-- **650 After Reckoning** — Mantebinte seized Midshaa from Mishkaasi.
-- **650 After Reckoning** — The realm of Mishkaasi was extinguished.
-- **650 After Reckoning** — Stagrdaurk and 2 neighbouring province(s) broke away from Kheqshaa to found the realm of Thorkaskei.
-- **650 After Reckoning** — Stagraknaurk turned from the Faith of Vavathygr to the Rite of Vabamorvomor.
-- **675 After Reckoning** — Kheqshaa seized Brakno from Thorkaskei.
-- **675 After Reckoning** — Rairkaasi's invasion of Stagrdaurk was thrown back by Thorkaskei.
-- **700 After Reckoning** — Kheqshaa seized Stagrdaurk from Thorkaskei.
-- **700 After Reckoning** — Mantebinte's invasion of Fjanthaurn was thrown back by Vynskei.
-- **700 After Reckoning** — Midshaa rose against Mantebinte and declared the free realm of Meqe.
-- **700 After Reckoning** — Stagrdaurk rose against Kheqshaa and declared the free realm of Brograkno.
-- **700 After Reckoning** — Jaghen and 1 neighbouring province(s) broke away from Rairkaasi to found the realm of Jataitan.
-- **725 After Reckoning** — Rairkaasi seized Stagrdaurk from Brograkno.
-- **725 After Reckoning** — The realm of Brograkno was extinguished.
-- **750 After Reckoning** — Kheqshaa seized Vongra from Thorkaskei.
-- **750 After Reckoning** — The realm of Thorkaskei was extinguished.
-- **750 After Reckoning** — Mantebinte seized Midshaa from Meqe.
-- **750 After Reckoning** — The realm of Meqe was extinguished.
-- **775 After Reckoning** — Kheqshaa seized Stagrahrei from Jataitan.
-- **775 After Reckoning** — Mantebinte seized Jaghen from Jataitan.
-- **775 After Reckoning** — The realm of Jataitan was extinguished.
-- **800 After Reckoning** — Kheqshaa seized Knaurkno from Rairkaasi.
-- **800 After Reckoning** — Stagrba was stormed and left a ruin.
-- **800 After Reckoning** — Mantebinte seized Fjanthaurn from Vynskei.
-- **800 After Reckoning** — A plague swept Midghen; many perished.
-- **825 After Reckoning** — Mantebinte seized Stagrba from Vynskei.
-- **825 After Reckoning** — The realm of Vynskei was extinguished.
-- **825 After Reckoning** — Kheqshaa seized Stagraknaurk from Rairkaasi.
-- **850 After Reckoning** — Kheqshaa's invasion of Stagrdaurk was thrown back by Rairkaasi.
-- **850 After Reckoning** — Mantebinte's invasion of Shinkhash was thrown back by Rairkaasi.
-- **850 After Reckoning** — A plague swept Shinkhash; many perished.
-- **875 After Reckoning** — A plague swept Khirkhaim; many perished.
-- **900 After Reckoning** — Mantebinte seized Shinkhash from Rairkaasi.
-- **900 After Reckoning** — Kheqshaa seized Stagrdaurk from Rairkaasi.
-- **900 After Reckoning** — A golden age dawned over Kheqshaa; its cities flourished as never before.
-- **925 After Reckoning** — Mantebinte's invasion of Knyrkafjan was thrown back by Rairkaasi.
-- **975 After Reckoning** — Mantebinte seized Knyrkafjan from Rairkaasi.
-- **975 After Reckoning** — Knaurkno turned from the Rite of Vabamorvomor to the Cult of Vaghazazizam.
-- **975 After Reckoning** — A plague swept Stagrdaurk; many perished.
-- **1000 After Reckoning** — Mantebinte's invasion of Brabry was thrown back by Kheqshaa.
-- **1050 After Reckoning** — Mantebinte's invasion of Brabry was thrown back by Kheqshaa.
+- **100 after the Landing** — Kheqshaa's invasion of Midghen was thrown back by Jakaasi.
+- **100 after the Landing** — Vynskei seized Brabry from Caudemor.
+- **100 after the Landing** — Brakno turned from the Faith of Vavathygr to the Cult of Vaghazazizam.
+- **125 after the Landing** — Vynskei's invasion of Deobinte was thrown back by Caudemor.
+- **125 after the Landing** — Mantebinte's invasion of Midshaa was thrown back by Vynskei.
+- **125 after the Landing** — A long drought gripped Melamelen; many perished.
+- **150 after the Landing** — Kheqshaa's invasion of Jararer was thrown back by Caudemor.
+- **150 after the Landing** — Midshaa and 1 neighbouring province(s) broke away from Vynskei to found the realm of Mekaasi.
+- **150 after the Landing** — Knyrkafjan turned from the Faith of Vavathygr to the Rite of Vabamorvomor.
+- **175 after the Landing** — Mantebinte seized Midshaa from Mekaasi.
+- **175 after the Landing** — A long drought gripped Mairkhidku; many perished.
+- **200 after the Landing** — Rairkaasi seized Beossoriando from Mekaasi.
+- **200 after the Landing** — The realm of Mekaasi was extinguished.
+- **225 after the Landing** — Shinkad was stormed and left a ruin.
+- **225 after the Landing** — Kheqshaa seized Midghen from Jakaasi.
+- **225 after the Landing** — The realm of Jakaasi was extinguished.
+- **250 after the Landing** — Kheqshaa seized Jararer from Caudemor.
+- **275 after the Landing** — Kheqshaa seized Deobinte from Caudemor.
+- **275 after the Landing** — The realm of Caudemor was extinguished.
+- **275 after the Landing** — Mantebinte's invasion of Staunbry was thrown back by Vynskei.
+- **275 after the Landing** — A golden age dawned over Vynskei; its cities flourished as never before.
+- **300 after the Landing** — Kheqshaa seized Brabry from Vynskei.
+- **300 after the Landing** — Beossoriando and 1 neighbouring province(s) broke away from Rairkaasi to found the realm of Tariabinte.
+- **325 after the Landing** — Kheqshaa seized Beossoriando from Tariabinte.
+- **325 after the Landing** — Mantebinte seized Mairkhaim from Tariabinte.
+- **325 after the Landing** — The realm of Tariabinte was extinguished.
+- **350 after the Landing** — Mantebinte's invasion of Staunbry was thrown back by Vynskei.
+- **350 after the Landing** — Kheqshaa seized Khirmid from Knauskastall.
+- **375 after the Landing** — Kheqshaa seized Brakno from Knauskastall.
+- **375 after the Landing** — Brakno rose against Kheqshaa and declared the free realm of Storkastall.
+- **375 after the Landing** — Beossoriando rose against Kheqshaa and declared the free realm of Tenacaria.
+- **375 after the Landing** — A long drought gripped Peonabinte; many perished.
+- **400 after the Landing** — Kheqshaa's invasion of Beossoriando was thrown back by Tenacaria.
+- **400 after the Landing** — Knauskastall seized Brakno from Storkastall.
+- **400 after the Landing** — The realm of Storkastall was extinguished.
+- **425 after the Landing** — Mantebinte seized Beossoriando from Tenacaria.
+- **425 after the Landing** — The realm of Tenacaria was extinguished.
+- **450 after the Landing** — Kheqshaa seized Brakno from Knauskastall.
+- **450 after the Landing** — Brakno rose against Kheqshaa and declared the free realm of Fjeiskdaurk.
+- **450 after the Landing** — Knaurkno turned from the Faith of Vavathygr to the Rite of Vabamorvomor.
+- **450 after the Landing** — A long drought gripped Shinkhash; many perished.
+- **450 after the Landing** — A golden age dawned over Kheqshaa; its cities flourished as never before.
+- **475 after the Landing** — Kheqshaa seized Brakno from Fjeiskdaurk.
+- **475 after the Landing** — The realm of Fjeiskdaurk was extinguished.
+- **475 after the Landing** — A golden age dawned over Kheqshaa; its cities flourished as never before.
+- **500 after the Landing** — Kheqshaa seized Stagrdaurk from Knauskastall.
+- **500 after the Landing** — Mantebinte's invasion of Staunbry was thrown back by Vynskei.
+- **500 after the Landing** — A plague swept Vongra; many perished.
+- **500 after the Landing** — A golden age dawned over Mantebinte; its cities flourished as never before.
+- **525 after the Landing** — Kheqshaa seized Vongra from Knauskastall.
+- **525 after the Landing** — Rairkaasi's invasion of Stagraknaurk was thrown back by Knauskastall.
+- **525 after the Landing** — Brakno rose against Kheqshaa and declared the free realm of Thorkno.
+- **525 after the Landing** — Vongra rose against Kheqshaa and declared the free realm of Vyndaurk.
+- **525 after the Landing** — A golden age dawned over Mantebinte; its cities flourished as never before.
+- **550 after the Landing** — Kheqshaa seized Stagraknaurk from Knauskastall.
+- **575 after the Landing** — Kheqshaa seized Brakno from Thorkno.
+- **575 after the Landing** — The realm of Thorkno was extinguished.
+- **575 after the Landing** — Mantebinte seized Staunbry from Vynskei.
+- **575 after the Landing** — Stagraknaurk rose against Kheqshaa and declared the free realm of Steirkdaurk.
+- **575 after the Landing** — Midshaa and 1 neighbouring province(s) broke away from Mantebinte to found the realm of Mishkaasi.
+- **600 after the Landing** — Rairkaasi seized Stagraknaurk from Steirkdaurk.
+- **600 after the Landing** — The realm of Steirkdaurk was extinguished.
+- **625 after the Landing** — Kheqshaa seized Vongra from Vyndaurk.
+- **625 after the Landing** — The realm of Vyndaurk was extinguished.
+- **625 after the Landing** — Mantebinte seized Beossoriando from Mishkaasi.
+- **650 after the Landing** — Mantebinte seized Midshaa from Mishkaasi.
+- **650 after the Landing** — The realm of Mishkaasi was extinguished.
+- **650 after the Landing** — Stagrdaurk and 2 neighbouring province(s) broke away from Kheqshaa to found the realm of Thorkaskei.
+- **650 after the Landing** — Stagraknaurk turned from the Faith of Vavathygr to the Rite of Vabamorvomor.
+- **675 after the Landing** — Kheqshaa seized Brakno from Thorkaskei.
+- **675 after the Landing** — Rairkaasi's invasion of Stagrdaurk was thrown back by Thorkaskei.
+- **700 after the Landing** — Kheqshaa seized Stagrdaurk from Thorkaskei.
+- **700 after the Landing** — Mantebinte's invasion of Fjanthaurn was thrown back by Vynskei.
+- **700 after the Landing** — Midshaa rose against Mantebinte and declared the free realm of Meqe.
+- **700 after the Landing** — Stagrdaurk rose against Kheqshaa and declared the free realm of Brograkno.
+- **700 after the Landing** — Jaghen and 1 neighbouring province(s) broke away from Rairkaasi to found the realm of Jataitan.
+- **725 after the Landing** — Rairkaasi seized Stagrdaurk from Brograkno.
+- **725 after the Landing** — The realm of Brograkno was extinguished.
+- **750 after the Landing** — Kheqshaa seized Vongra from Thorkaskei.
+- **750 after the Landing** — The realm of Thorkaskei was extinguished.
+- **750 after the Landing** — Mantebinte seized Midshaa from Meqe.
+- **750 after the Landing** — The realm of Meqe was extinguished.
+- **775 after the Landing** — Kheqshaa seized Stagrahrei from Jataitan.
+- **775 after the Landing** — Mantebinte seized Jaghen from Jataitan.
+- **775 after the Landing** — The realm of Jataitan was extinguished.
+- **800 after the Landing** — Kheqshaa seized Knaurkno from Rairkaasi.
+- **800 after the Landing** — Stagrba was stormed and left a ruin.
+- **800 after the Landing** — Mantebinte seized Fjanthaurn from Vynskei.
+- **800 after the Landing** — A plague swept Midghen; many perished.
+- **825 after the Landing** — Mantebinte seized Stagrba from Vynskei.
+- **825 after the Landing** — The realm of Vynskei was extinguished.
+- **825 after the Landing** — Kheqshaa seized Stagraknaurk from Rairkaasi.
+- **850 after the Landing** — Kheqshaa's invasion of Stagrdaurk was thrown back by Rairkaasi.
+- **850 after the Landing** — Mantebinte's invasion of Shinkhash was thrown back by Rairkaasi.
+- **850 after the Landing** — A plague swept Shinkhash; many perished.
+- **875 after the Landing** — A plague swept Khirkhaim; many perished.
+- **900 after the Landing** — Mantebinte seized Shinkhash from Rairkaasi.
+- **900 after the Landing** — Kheqshaa seized Stagrdaurk from Rairkaasi.
+- **900 after the Landing** — A golden age dawned over Kheqshaa; its cities flourished as never before.
+- **925 after the Landing** — Mantebinte's invasion of Knyrkafjan was thrown back by Rairkaasi.
+- **975 after the Landing** — Mantebinte seized Knyrkafjan from Rairkaasi.
+- **975 after the Landing** — Knaurkno turned from the Rite of Vabamorvomor to the Cult of Vaghazazizam.
+- **975 after the Landing** — A plague swept Stagrdaurk; many perished.
+- **1000 after the Landing** — Mantebinte's invasion of Brabry was thrown back by Kheqshaa.
+- **1050 after the Landing** — Mantebinte's invasion of Brabry was thrown back by Kheqshaa.
 
 ## A Traveller's Account, in the year 1100
 

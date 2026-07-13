@@ -56,7 +56,11 @@ export function worldReportMarkdown(world       )         {
   lines.push(
     `- **Dominant power:** ${m.dominantPower} (of ${m.survivingRealms} surviving realm(s))`,
   );
-  lines.push(`- **The present year:** ${m.presentYear} ${h.epoch}`);
+  lines.push(`- **The present year:** ${m.presentYear} ${h.calendar.suffix} — ${m.presentYear} years ${h.epoch}`);
+  lines.push(
+    `- **The reckoning:** years are counted from **${h.calendar.origin.title}** ` +
+      `(year 0); dates wear \`${h.calendar.suffix}\``,
+  );
   lines.push(
     `- **Highest peak:** ${m.highestPeakMetres.toLocaleString()} m · ` +
       `**volcanoes:** ${m.volcanoCount} (${m.activeVolcanoes} active)`,
@@ -361,7 +365,7 @@ export function worldReportMarkdown(world       )         {
   lines.push("## Legends of the founding age");
   lines.push("");
   for (const e of h.events) {
-    lines.push(`- **${e.year} ${h.epoch}** — ${e.text}`);
+    lines.push(`- **${e.year} ${h.calendar.suffix}** — ${e.text}`);
   }
   lines.push("");
 

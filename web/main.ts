@@ -107,7 +107,7 @@ function renderPowersFrame(i: number): void {
   offCtx.putImageData(new ImageData(new Uint8ClampedArray(rgba), w, h), 0, 0);
   scrubYear = snap.year; // so the overlay shows only the towns alive then
   redraw();
-  $("yearlabel").textContent = `${snap.year.toLocaleString()} AR`;
+  $("yearlabel").textContent = `${snap.year.toLocaleString()} ${current.history.calendar.suffix}`;
 }
 
 function stopPlay(): void {
@@ -508,7 +508,7 @@ function pinDetail(clientX: number, clientY: number): void {
       const f = s.formerNames[s.formerNames.length - 1];
       parts.push(
         `<div class="drow">formerly <b>${f.name}</b> (${glossPhrase(f.gloss)}) — ` +
-          `renamed under foreign rule c. ${f.untilYear} AR</div>`,
+          `renamed under foreign rule c. ${f.untilYear} ${current.history.calendar.suffix}</div>`,
       );
     }
     const eco = current.economy.economies.find((e) => e.settlementId === s.id);
@@ -661,7 +661,7 @@ function renderInfo(world: World): void {
     .map(
       (e) =>
         `<li class="ev" data-x="${e.x}" data-y="${e.y}" title="Find on map">` +
-        `<span class="yr">${e.year} AR</span> ${escapeHtml(e.text)}</li>`,
+        `<span class="yr">${e.year} ${world.history.calendar.suffix}</span> ${escapeHtml(e.text)}</li>`,
     )
     .join("");
 

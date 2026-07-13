@@ -10,7 +10,8 @@
 - **Peoples:** 28 regions, 19 settlements, 3 realms
 - **Capital:** Deoliria, seat of House Belentaria
 - **Dominant power:** Steirkastall (of 4 surviving realm(s))
-- **The present year:** 1100 After Reckoning
+- **The present year:** 1100 A.C. — 1100 years after the Crowning
+- **The reckoning:** years are counted from **The First Crowning** (year 0); dates wear `A.C.`
 - **Highest peak:** 4,500 m · **volcanoes:** 4 (1 active)
 
 ## Volcanoes
@@ -327,20 +328,21 @@ Followed across 1 region(s).
 
 ## Legends of the founding age
 
-- **41 After Reckoning** — The city of Deoliria was founded on a sheltered harbour, destined to become the seat of power.
-- **65 After Reckoning** — The city of Ghashmakh was founded along the Belenbella.
-- **76 After Reckoning** — The city of Deotomor was founded on a sheltered harbour.
-- **80 After Reckoning** — Deoliria rose to rule its hinterland, and the realm of Redente was proclaimed.
-- **96 After Reckoning** — Deotomor rose to rule its hinterland, and the realm of Remeonte was proclaimed.
-- **99 After Reckoning** — Ghashmakh rose to rule its hinterland, and the realm of Mishmaad was proclaimed.
-- **330 After Reckoning** — A great storm-tide flooded Deoliria; the lower quarters were lost to the sea.
-- **500 After Reckoning** — Semorneosso woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **671 After Reckoning** — An academy founded on the shores of Mariamilen gathered the age's finest cartographers.
-- **1035 After Reckoning** — Under a long peace, Deoliria flourished; its libraries and roads became the wonder of the world.
+- **0 A.C.** — In the year now called zero, the scattered halls around Deoliria set a circlet on one head for the first time, and — having at last someone to blame — began to keep records. From that year the peoples of this world count their days.
+- **41 A.C.** — The city of Deoliria was founded on a sheltered harbour, destined to become the seat of power.
+- **65 A.C.** — The city of Ghashmakh was founded along the Belenbella.
+- **76 A.C.** — The city of Deotomor was founded on a sheltered harbour.
+- **80 A.C.** — Deoliria rose to rule its hinterland, and the realm of Redente was proclaimed.
+- **96 A.C.** — Deotomor rose to rule its hinterland, and the realm of Remeonte was proclaimed.
+- **99 A.C.** — Ghashmakh rose to rule its hinterland, and the realm of Mishmaad was proclaimed.
+- **330 A.C.** — A great storm-tide flooded Deoliria; the lower quarters were lost to the sea.
+- **500 A.C.** — Semorneosso woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **671 A.C.** — An academy founded on the shores of Mariamilen gathered the age's finest cartographers.
+- **1035 A.C.** — Under a long peace, Deoliria flourished; its libraries and roads became the wonder of the world.
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 4 realm(s) endured to the present.*
+*Simulated 100–1100 after the Crowning. 4 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
@@ -427,68 +429,68 @@ In 1050, Caubinte held Shinshaa against Caumeonte, whose army went home leaner a
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 After Reckoning** — Caubinte seized Khirkhajez from Mishmaad.
-- **100 After Reckoning** — The realm of Mishmaad was extinguished.
-- **100 After Reckoning** — Redente's invasion of Beossoda was thrown back by Rairqe.
-- **125 After Reckoning** — Caubinte seized Beossoda from Rairqe.
-- **125 After Reckoning** — Caumeonte seized Shinshaa from Rairqe.
-- **125 After Reckoning** — The realm of Rairqe was extinguished.
-- **150 After Reckoning** — Caumeonte's invasion of Niantepeona was thrown back by Remeonte.
-- **150 After Reckoning** — Shinshaa rose against Caumeonte and declared the free realm of Rairghen.
-- **150 After Reckoning** — A long drought gripped Niantepeona; many perished.
-- **175 After Reckoning** — Caubinte seized Shinshaa from Rairghen.
-- **175 After Reckoning** — The realm of Rairghen was extinguished.
-- **200 After Reckoning** — Deotomor was stormed and left a ruin.
-- **200 After Reckoning** — Caumeonte seized Niantepeona from Remeonte.
-- **200 After Reckoning** — Steirkastall seized Deoneosso from Remeonte.
-- **200 After Reckoning** — Brasturn and 1 neighbouring province(s) broke away from Steirkastall to found the realm of Vynkno.
-- **200 After Reckoning** — Brafjan turned from the Faith of Vathorkveill to the Way of Varondovomor.
-- **225 After Reckoning** — Caumeonte's invasion of Khirkhukha was thrown back by Remeonte.
-- **225 After Reckoning** — Steirkastall seized Khirshaa from Remeonte.
-- **225 After Reckoning** — A long drought gripped Syaeenmelen; many perished.
-- **250 After Reckoning** — Redente seized Brasturn from Vynkno.
-- **250 After Reckoning** — Niantepeona rose against Caumeonte and declared the free realm of Rauriameonte.
-- **250 After Reckoning** — Beossolaria and 1 neighbouring province(s) broke away from Caumeonte to found the realm of Tenameonte.
-- **250 After Reckoning** — Brasturn and 1 neighbouring province(s) broke away from Redente to found the realm of Knauskno.
-- **275 After Reckoning** — Steirkastall seized Khirkhidku from Remeonte.
-- **275 After Reckoning** — The realm of Remeonte was extinguished.
-- **300 After Reckoning** — Caumeonte seized Niantepeona from Rauriameonte.
-- **300 After Reckoning** — The realm of Rauriameonte was extinguished.
-- **300 After Reckoning** — Caubinte's invasion of Brafjan was thrown back by Tenameonte.
-- **300 After Reckoning** — A plague swept Khirkhajez; many perished.
-- **325 After Reckoning** — Caumeonte seized Khirkhukha from Remeonte.
-- **325 After Reckoning** — The realm of Remeonte was extinguished.
-- **325 After Reckoning** — A golden age dawned over Steirkastall; its cities flourished as never before.
-- **350 After Reckoning** — Caumeonte seized Brafjan from Tenameonte.
-- **350 After Reckoning** — A golden age dawned over Caumeonte; its cities flourished as never before.
-- **375 After Reckoning** — Caumeonte seized Beossolaria from Tenameonte.
-- **375 After Reckoning** — The realm of Tenameonte was extinguished.
-- **375 After Reckoning** — Redente seized Stagrba from Vynkno.
-- **375 After Reckoning** — The realm of Vynkno was extinguished.
-- **375 After Reckoning** — A plague swept Brasturn; many perished.
-- **400 After Reckoning** — Steirkastall seized Brasturn from Knauskno.
-- **425 After Reckoning** — Steirkastall seized Peonapo from Knauskno.
-- **425 After Reckoning** — The realm of Knauskno was extinguished.
-- **450 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **450 After Reckoning** — A golden age dawned over Caumeonte; its cities flourished as never before.
-- **475 After Reckoning** — A long drought gripped Mairzujikh; many perished.
-- **500 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **500 After Reckoning** — A plague swept Khirshaa; many perished.
-- **550 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **550 After Reckoning** — A long drought gripped Brasturn; many perished.
-- **600 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **650 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **700 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **725 After Reckoning** — A plague swept Brasturn; many perished.
-- **750 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **800 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **825 After Reckoning** — A long drought gripped Khirkhidku; many perished.
-- **850 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **850 After Reckoning** — A golden age dawned over Steirkastall; its cities flourished as never before.
-- **900 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **950 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **1000 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
-- **1050 After Reckoning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **100 after the Crowning** — Caubinte seized Khirkhajez from Mishmaad.
+- **100 after the Crowning** — The realm of Mishmaad was extinguished.
+- **100 after the Crowning** — Redente's invasion of Beossoda was thrown back by Rairqe.
+- **125 after the Crowning** — Caubinte seized Beossoda from Rairqe.
+- **125 after the Crowning** — Caumeonte seized Shinshaa from Rairqe.
+- **125 after the Crowning** — The realm of Rairqe was extinguished.
+- **150 after the Crowning** — Caumeonte's invasion of Niantepeona was thrown back by Remeonte.
+- **150 after the Crowning** — Shinshaa rose against Caumeonte and declared the free realm of Rairghen.
+- **150 after the Crowning** — A long drought gripped Niantepeona; many perished.
+- **175 after the Crowning** — Caubinte seized Shinshaa from Rairghen.
+- **175 after the Crowning** — The realm of Rairghen was extinguished.
+- **200 after the Crowning** — Deotomor was stormed and left a ruin.
+- **200 after the Crowning** — Caumeonte seized Niantepeona from Remeonte.
+- **200 after the Crowning** — Steirkastall seized Deoneosso from Remeonte.
+- **200 after the Crowning** — Brasturn and 1 neighbouring province(s) broke away from Steirkastall to found the realm of Vynkno.
+- **200 after the Crowning** — Brafjan turned from the Faith of Vathorkveill to the Way of Varondovomor.
+- **225 after the Crowning** — Caumeonte's invasion of Khirkhukha was thrown back by Remeonte.
+- **225 after the Crowning** — Steirkastall seized Khirshaa from Remeonte.
+- **225 after the Crowning** — A long drought gripped Syaeenmelen; many perished.
+- **250 after the Crowning** — Redente seized Brasturn from Vynkno.
+- **250 after the Crowning** — Niantepeona rose against Caumeonte and declared the free realm of Rauriameonte.
+- **250 after the Crowning** — Beossolaria and 1 neighbouring province(s) broke away from Caumeonte to found the realm of Tenameonte.
+- **250 after the Crowning** — Brasturn and 1 neighbouring province(s) broke away from Redente to found the realm of Knauskno.
+- **275 after the Crowning** — Steirkastall seized Khirkhidku from Remeonte.
+- **275 after the Crowning** — The realm of Remeonte was extinguished.
+- **300 after the Crowning** — Caumeonte seized Niantepeona from Rauriameonte.
+- **300 after the Crowning** — The realm of Rauriameonte was extinguished.
+- **300 after the Crowning** — Caubinte's invasion of Brafjan was thrown back by Tenameonte.
+- **300 after the Crowning** — A plague swept Khirkhajez; many perished.
+- **325 after the Crowning** — Caumeonte seized Khirkhukha from Remeonte.
+- **325 after the Crowning** — The realm of Remeonte was extinguished.
+- **325 after the Crowning** — A golden age dawned over Steirkastall; its cities flourished as never before.
+- **350 after the Crowning** — Caumeonte seized Brafjan from Tenameonte.
+- **350 after the Crowning** — A golden age dawned over Caumeonte; its cities flourished as never before.
+- **375 after the Crowning** — Caumeonte seized Beossolaria from Tenameonte.
+- **375 after the Crowning** — The realm of Tenameonte was extinguished.
+- **375 after the Crowning** — Redente seized Stagrba from Vynkno.
+- **375 after the Crowning** — The realm of Vynkno was extinguished.
+- **375 after the Crowning** — A plague swept Brasturn; many perished.
+- **400 after the Crowning** — Steirkastall seized Brasturn from Knauskno.
+- **425 after the Crowning** — Steirkastall seized Peonapo from Knauskno.
+- **425 after the Crowning** — The realm of Knauskno was extinguished.
+- **450 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **450 after the Crowning** — A golden age dawned over Caumeonte; its cities flourished as never before.
+- **475 after the Crowning** — A long drought gripped Mairzujikh; many perished.
+- **500 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **500 after the Crowning** — A plague swept Khirshaa; many perished.
+- **550 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **550 after the Crowning** — A long drought gripped Brasturn; many perished.
+- **600 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **650 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **700 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **725 after the Crowning** — A plague swept Brasturn; many perished.
+- **750 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **800 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **825 after the Crowning** — A long drought gripped Khirkhidku; many perished.
+- **850 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **850 after the Crowning** — A golden age dawned over Steirkastall; its cities flourished as never before.
+- **900 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **950 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **1000 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
+- **1050 after the Crowning** — Caumeonte's invasion of Shinshaa was thrown back by Caubinte.
 
 ## A Traveller's Account, in the year 1100
 

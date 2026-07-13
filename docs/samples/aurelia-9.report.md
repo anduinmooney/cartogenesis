@@ -10,7 +10,8 @@
 - **Peoples:** 19 regions, 13 settlements, 2 realms
 - **Capital:** Vonthu, seat of House Breistagra
 - **Dominant power:** Steirkafjysk (of 4 surviving realm(s))
-- **The present year:** 1100 After Reckoning
+- **The present year:** 1100 A.T. — 1100 years after the Thaw
+- **The reckoning:** years are counted from **The Long Winter** (year 0); dates wear `A.T.`
 - **Highest peak:** 4,500 m · **volcanoes:** 3 (1 active)
 
 ## Volcanoes
@@ -246,18 +247,19 @@ Followed across 8 region(s).
 
 ## Legends of the founding age
 
-- **55 After Reckoning** — The city of Vonthu was founded on a sheltered harbour, destined to become the seat of power.
-- **69 After Reckoning** — The city of Deotomor was founded on a sheltered harbour.
-- **71 After Reckoning** — Vonthu rose to rule its hinterland, and the realm of Steirkafjysk was proclaimed.
-- **81 After Reckoning** — Deotomor rose to rule its hinterland, and the realm of Lossocaria was proclaimed.
-- **476 After Reckoning** — Storkabra woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **764 After Reckoning** — A great storm-tide flooded Vonthu; the lower quarters were lost to the sea.
-- **809 After Reckoning** — Under a long peace, Vonthu flourished; its libraries and roads became the wonder of the world.
-- **971 After Reckoning** — An academy founded on the shores of Mantemilen gathered the age's finest cartographers.
+- **0 A.T.** — In the year now called zero, snow lay a man deep from sea to sea, and those who lived through it dated everything afterwards from the year the thaw came. From that year the peoples of this world count their days.
+- **55 A.T.** — The city of Vonthu was founded on a sheltered harbour, destined to become the seat of power.
+- **69 A.T.** — The city of Deotomor was founded on a sheltered harbour.
+- **71 A.T.** — Vonthu rose to rule its hinterland, and the realm of Steirkafjysk was proclaimed.
+- **81 A.T.** — Deotomor rose to rule its hinterland, and the realm of Lossocaria was proclaimed.
+- **476 A.T.** — Storkabra woke in fire and ash; a hard winter followed, and harvests failed across the land.
+- **764 A.T.** — A great storm-tide flooded Vonthu; the lower quarters were lost to the sea.
+- **809 A.T.** — Under a long peace, Vonthu flourished; its libraries and roads became the wonder of the world.
+- **971 A.T.** — An academy founded on the shores of Mantemilen gathered the age's finest cartographers.
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 After Reckoning. 4 realm(s) endured to the present.*
+*Simulated 100–1100 after the Thaw. 4 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
@@ -272,7 +274,7 @@ Followed across 8 region(s).
 
 ## The Chronicle of Steirkafjysk
 
-*Set down in Vonthu, in the year 1100 After Reckoning, by a servant of House Breistagra. What follows is not legend — of the founding age the legends tell enough — but the plain record of 1000 years, as well as one hand could gather it.*
+*Set down in Vonthu, in the year 1100 after the Thaw, by a servant of House Breistagra. What follows is not legend — of the founding age the legends tell enough — but the plain record of 1000 years, as well as one hand could gather it.*
 
 *The world it happened in is quickly drawn: Mount Storkabra in the high places, and the Knauskba running to the sea, and between them every road this chronicle walks.*
 
@@ -354,86 +356,86 @@ In 1000, a great drought lay upon Panada; the rivers shrank and the wells soured
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 After Reckoning** — Steirkafjysk seized Stagrahrei from Peoriabinte.
-- **100 After Reckoning** — Lossocaria seized Peonariando from Rauriabinte.
-- **125 After Reckoning** — Lossocaria seized Khirarer from Rauriabinte.
-- **125 After Reckoning** — The realm of Rauriabinte was extinguished.
-- **125 After Reckoning** — Steirkafjysk seized Rairkhidku from Peoriabinte.
-- **125 After Reckoning** — Stagrahrei rose against Steirkafjysk and declared the free realm of Storkdaurk.
-- **125 After Reckoning** — Brydaurk turned from the Cult of Vavollvyrk to the Rite of Vaghazasaid.
-- **150 After Reckoning** — Steirkafjysk seized Stagrahrei from Storkdaurk.
-- **150 After Reckoning** — The realm of Storkdaurk was extinguished.
-- **150 After Reckoning** — Storkdaurk's invasion of Panada was thrown back by Peoriabinte.
-- **175 After Reckoning** — Steirkafjysk seized Panada from Peoriabinte.
-- **175 After Reckoning** — The realm of Peoriabinte was extinguished.
-- **175 After Reckoning** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
-- **200 After Reckoning** — Steirkafjysk's invasion of Mairghen was thrown back by Lossocaria.
-- **200 After Reckoning** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
-- **225 After Reckoning** — Panada rose against Steirkafjysk and declared the free realm of Tenameonte.
-- **225 After Reckoning** — A plague swept Pananeosso; many perished.
-- **250 After Reckoning** — Steirkafjysk seized Panada from Tenameonte.
-- **250 After Reckoning** — The realm of Tenameonte was extinguished.
-- **250 After Reckoning** — A plague swept Khirkhaim; many perished.
-- **275 After Reckoning** — Steirkafjysk's invasion of Mairghen was thrown back by Lossocaria.
-- **300 After Reckoning** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
-- **325 After Reckoning** — Steirkafjysk seized Mairghen from Lossocaria.
-- **350 After Reckoning** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
-- **400 After Reckoning** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
-- **425 After Reckoning** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
-- **450 After Reckoning** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
-- **450 After Reckoning** — A plague swept Pananeosso; many perished.
-- **475 After Reckoning** — A plague swept Peonariando; many perished.
-- **475 After Reckoning** — A golden age dawned over Lossocaria; its cities flourished as never before.
-- **500 After Reckoning** — Steirkafjysk seized Khirsham from Lossocaria.
-- **500 After Reckoning** — Khirsham rose against Steirkafjysk and declared the free realm of Meshaa.
-- **525 After Reckoning** — Steirkafjysk's invasion of Khirsham was thrown back by Meshaa.
-- **550 After Reckoning** — Meshaa seized Deodinte from Lossocaria.
-- **575 After Reckoning** — Meshaa's invasion of Shinsham was thrown back by Lossocaria.
-- **575 After Reckoning** — Steirkafjysk seized Khirsham from Meshaa.
-- **575 After Reckoning** — Khirsham rose against Steirkafjysk and declared the free realm of Mishtaitan.
-- **600 After Reckoning** — Steirkafjysk seized Khirsham from Mishtaitan.
-- **600 After Reckoning** — The realm of Mishtaitan was extinguished.
-- **625 After Reckoning** — Steirkafjysk seized Shinsham from Lossocaria.
-- **625 After Reckoning** — Lossocaria's invasion of Deodinte was thrown back by Meshaa.
-- **625 After Reckoning** — A plague swept Khirkhaim; many perished.
-- **650 After Reckoning** — Steirkafjysk's invasion of Deodinte was thrown back by Meshaa.
-- **650 After Reckoning** — Meshaa's invasion of Pananeosso was thrown back by Lossocaria.
-- **675 After Reckoning** — Lossocaria's invasion of Deodinte was thrown back by Meshaa.
-- **675 After Reckoning** — Shinsham rose against Steirkafjysk and declared the free realm of Jutaitan.
-- **700 After Reckoning** — Steirkafjysk seized Shinsham from Jutaitan.
-- **700 After Reckoning** — The realm of Jutaitan was extinguished.
-- **700 After Reckoning** — Shinsham rose against Steirkafjysk and declared the free realm of Rairkaasi.
-- **725 After Reckoning** — Steirkafjysk seized Shinsham from Rairkaasi.
-- **725 After Reckoning** — The realm of Rairkaasi was extinguished.
-- **725 After Reckoning** — Lossocaria seized Deodinte from Meshaa.
-- **725 After Reckoning** — The realm of Meshaa was extinguished.
-- **725 After Reckoning** — Shinsham and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Kheqmaad.
-- **750 After Reckoning** — Steirkafjysk's invasion of Mairghen was thrown back by Kheqmaad.
-- **775 After Reckoning** — Lossocaria's invasion of Shinsham was thrown back by Kheqmaad.
-- **775 After Reckoning** — Mairkhaim and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Jaqe.
-- **775 After Reckoning** — A plague swept Peonariando; many perished.
-- **800 After Reckoning** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
-- **825 After Reckoning** — Khirkhaim and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Meqe.
-- **850 After Reckoning** — Steirkafjysk's invasion of Brathaugr was thrown back by Meqe.
-- **850 After Reckoning** — Kheqmaad seized Brydaurk from Meqe.
-- **875 After Reckoning** — Jaqe seized Brathaugr from Meqe.
-- **875 After Reckoning** — Lossocaria's invasion of Shinsham was thrown back by Kheqmaad.
-- **900 After Reckoning** — Steirkafjysk seized Khirkhaim from Meqe.
-- **900 After Reckoning** — The realm of Meqe was extinguished.
-- **900 After Reckoning** — A plague swept Deodinte; many perished.
-- **900 After Reckoning** — A golden age dawned over Kheqmaad; its cities flourished as never before.
-- **925 After Reckoning** — Steirkafjysk seized Brathaugr from Jaqe.
-- **925 After Reckoning** — Khirkhaim and 1 neighbouring province(s) broke away from Steirkafjysk to found the realm of Rairghen.
-- **950 After Reckoning** — Steirkafjysk seized Brathaugr from Rairghen.
-- **950 After Reckoning** — Kheqmaad seized Khirkhaim from Rairghen.
-- **950 After Reckoning** — The realm of Rairghen was extinguished.
-- **950 After Reckoning** — A long drought gripped Brydaurk; many perished.
-- **975 After Reckoning** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
-- **975 After Reckoning** — A golden age dawned over Jaqe; its cities flourished as never before.
-- **1000 After Reckoning** — A long drought gripped Panada; many perished.
-- **1025 After Reckoning** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
-- **1075 After Reckoning** — Steirkafjysk seized Brasturn from Jaqe.
-- **1075 After Reckoning** — A golden age dawned over Kheqmaad; its cities flourished as never before.
+- **100 after the Thaw** — Steirkafjysk seized Stagrahrei from Peoriabinte.
+- **100 after the Thaw** — Lossocaria seized Peonariando from Rauriabinte.
+- **125 after the Thaw** — Lossocaria seized Khirarer from Rauriabinte.
+- **125 after the Thaw** — The realm of Rauriabinte was extinguished.
+- **125 after the Thaw** — Steirkafjysk seized Rairkhidku from Peoriabinte.
+- **125 after the Thaw** — Stagrahrei rose against Steirkafjysk and declared the free realm of Storkdaurk.
+- **125 after the Thaw** — Brydaurk turned from the Cult of Vavollvyrk to the Rite of Vaghazasaid.
+- **150 after the Thaw** — Steirkafjysk seized Stagrahrei from Storkdaurk.
+- **150 after the Thaw** — The realm of Storkdaurk was extinguished.
+- **150 after the Thaw** — Storkdaurk's invasion of Panada was thrown back by Peoriabinte.
+- **175 after the Thaw** — Steirkafjysk seized Panada from Peoriabinte.
+- **175 after the Thaw** — The realm of Peoriabinte was extinguished.
+- **175 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
+- **200 after the Thaw** — Steirkafjysk's invasion of Mairghen was thrown back by Lossocaria.
+- **200 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
+- **225 after the Thaw** — Panada rose against Steirkafjysk and declared the free realm of Tenameonte.
+- **225 after the Thaw** — A plague swept Pananeosso; many perished.
+- **250 after the Thaw** — Steirkafjysk seized Panada from Tenameonte.
+- **250 after the Thaw** — The realm of Tenameonte was extinguished.
+- **250 after the Thaw** — A plague swept Khirkhaim; many perished.
+- **275 after the Thaw** — Steirkafjysk's invasion of Mairghen was thrown back by Lossocaria.
+- **300 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
+- **325 after the Thaw** — Steirkafjysk seized Mairghen from Lossocaria.
+- **350 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
+- **400 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
+- **425 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
+- **450 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
+- **450 after the Thaw** — A plague swept Pananeosso; many perished.
+- **475 after the Thaw** — A plague swept Peonariando; many perished.
+- **475 after the Thaw** — A golden age dawned over Lossocaria; its cities flourished as never before.
+- **500 after the Thaw** — Steirkafjysk seized Khirsham from Lossocaria.
+- **500 after the Thaw** — Khirsham rose against Steirkafjysk and declared the free realm of Meshaa.
+- **525 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Meshaa.
+- **550 after the Thaw** — Meshaa seized Deodinte from Lossocaria.
+- **575 after the Thaw** — Meshaa's invasion of Shinsham was thrown back by Lossocaria.
+- **575 after the Thaw** — Steirkafjysk seized Khirsham from Meshaa.
+- **575 after the Thaw** — Khirsham rose against Steirkafjysk and declared the free realm of Mishtaitan.
+- **600 after the Thaw** — Steirkafjysk seized Khirsham from Mishtaitan.
+- **600 after the Thaw** — The realm of Mishtaitan was extinguished.
+- **625 after the Thaw** — Steirkafjysk seized Shinsham from Lossocaria.
+- **625 after the Thaw** — Lossocaria's invasion of Deodinte was thrown back by Meshaa.
+- **625 after the Thaw** — A plague swept Khirkhaim; many perished.
+- **650 after the Thaw** — Steirkafjysk's invasion of Deodinte was thrown back by Meshaa.
+- **650 after the Thaw** — Meshaa's invasion of Pananeosso was thrown back by Lossocaria.
+- **675 after the Thaw** — Lossocaria's invasion of Deodinte was thrown back by Meshaa.
+- **675 after the Thaw** — Shinsham rose against Steirkafjysk and declared the free realm of Jutaitan.
+- **700 after the Thaw** — Steirkafjysk seized Shinsham from Jutaitan.
+- **700 after the Thaw** — The realm of Jutaitan was extinguished.
+- **700 after the Thaw** — Shinsham rose against Steirkafjysk and declared the free realm of Rairkaasi.
+- **725 after the Thaw** — Steirkafjysk seized Shinsham from Rairkaasi.
+- **725 after the Thaw** — The realm of Rairkaasi was extinguished.
+- **725 after the Thaw** — Lossocaria seized Deodinte from Meshaa.
+- **725 after the Thaw** — The realm of Meshaa was extinguished.
+- **725 after the Thaw** — Shinsham and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Kheqmaad.
+- **750 after the Thaw** — Steirkafjysk's invasion of Mairghen was thrown back by Kheqmaad.
+- **775 after the Thaw** — Lossocaria's invasion of Shinsham was thrown back by Kheqmaad.
+- **775 after the Thaw** — Mairkhaim and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Jaqe.
+- **775 after the Thaw** — A plague swept Peonariando; many perished.
+- **800 after the Thaw** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
+- **825 after the Thaw** — Khirkhaim and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Meqe.
+- **850 after the Thaw** — Steirkafjysk's invasion of Brathaugr was thrown back by Meqe.
+- **850 after the Thaw** — Kheqmaad seized Brydaurk from Meqe.
+- **875 after the Thaw** — Jaqe seized Brathaugr from Meqe.
+- **875 after the Thaw** — Lossocaria's invasion of Shinsham was thrown back by Kheqmaad.
+- **900 after the Thaw** — Steirkafjysk seized Khirkhaim from Meqe.
+- **900 after the Thaw** — The realm of Meqe was extinguished.
+- **900 after the Thaw** — A plague swept Deodinte; many perished.
+- **900 after the Thaw** — A golden age dawned over Kheqmaad; its cities flourished as never before.
+- **925 after the Thaw** — Steirkafjysk seized Brathaugr from Jaqe.
+- **925 after the Thaw** — Khirkhaim and 1 neighbouring province(s) broke away from Steirkafjysk to found the realm of Rairghen.
+- **950 after the Thaw** — Steirkafjysk seized Brathaugr from Rairghen.
+- **950 after the Thaw** — Kheqmaad seized Khirkhaim from Rairghen.
+- **950 after the Thaw** — The realm of Rairghen was extinguished.
+- **950 after the Thaw** — A long drought gripped Brydaurk; many perished.
+- **975 after the Thaw** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
+- **975 after the Thaw** — A golden age dawned over Jaqe; its cities flourished as never before.
+- **1000 after the Thaw** — A long drought gripped Panada; many perished.
+- **1025 after the Thaw** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
+- **1075 after the Thaw** — Steirkafjysk seized Brasturn from Jaqe.
+- **1075 after the Thaw** — A golden age dawned over Kheqmaad; its cities flourished as never before.
 
 ## A Traveller's Account, in the year 1100
 
