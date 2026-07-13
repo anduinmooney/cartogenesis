@@ -290,8 +290,8 @@ Followed across 1 region(s).
 
 ### The Saga of Kaarkaasi (Kesh (desert))
 
-> Out of the singing sands came the desert folk,
-> and the shore they found they would not leave.
+> Long the desert folk wandered the singing sands,
+> and where the water ended, so did the wandering.
 > Qughen they named it — the red land —
 > and the name has outlived every wall they raised.
 > Khirghekh they built first, the sea gate,
@@ -299,24 +299,24 @@ Followed across 1 region(s).
 > (The maps write it Khirdund now. The saga does not.)
 > Over it they set Vaghimzizam, the sun storm,
 > whose dominion is the sun;
-> and the Way of Vaghimzizam keeps that fire yet.
-> In their tongue, sagha is star and khaim is stone;
-> so read their map: every name a small song.
+> and the Way of Vaghimzizam remembers.
+> In their tongue, zajiq is fire and khaim is stone;
+> learn those two words and their map opens like a door.
 > Of Kaarkaasi their singers made much, once.
 > It rose to 4 provinces and it fell, and the saga does not say so —
 > but the chronicle does.
 
 ### The Saga of Vynthon (Auld (northern))
 
-> First came the northern folk over the grey water,
+> Long the northern folk wandered the grey water,
 > and the land they found they would not leave.
 > Brahrei they named it — the mountain hill —
-> and the name has outlived every wall they raised.
+> a name that fit the land like weather.
 > Vonthu they built first, the green fort,
-> its harbour open like a hand.
+> its quays the first words of a long argument with the sea.
 > Over it they set Vaskyvathork, the wind holy,
 > whose dominion is the sea;
-> and the Rite of Vaskyvathork keeps that fire yet.
+> and the Rite of Vaskyvathork remembers.
 > In their tongue, stall is king and stagr is sea;
 > so read their map: every name a small song.
 > And of Vynthon the singers still sing,
@@ -324,31 +324,31 @@ Followed across 1 region(s).
 
 ### The Saga of Rauriameonte (Meridian (southern))
 
-> Out of the warm sea came the southern folk,
+> Long the southern folk wandered the warm sea,
 > and the land they found they would not leave.
 > Niantepo they named it — the green marsh —
-> and the name has outlived every wall they raised.
+> and no one has improved on it since.
 > Deoliria they built first, the sea haven,
 > its harbour open like a hand.
 > Over it they set Vatenavomor, the holy sky,
 > whose dominion is the harvest;
 > and the Faith of Vatenavomor keeps that fire yet.
-> In their tongue, na is king and selen is star;
-> so read their map: every name a small song.
+> In their tongue, demor is home and selen is star;
+> learn those two words and their map opens like a door.
 > And of Rauriameonte the singers still sing,
 > for its banners stand as high as ever they did.
 
 ### How the Woodland Folk Came to Syaeentheo (Sylvan (woodland))
 
-> Out of the deep wood came the woodland folk,
+> First came the woodland folk over the deep wood,
 > and the shore they found they would not leave.
 > Syaeentheo they named it — the sea cliff —
-> for they were a people who named things truly.
+> and the name has outlived every wall they raised.
 > Over it they set Vasyaenlia, the dread king,
 > whose dominion is the storm;
 > and the Rite of Vasyaenlia keeps that fire yet.
-> In their tongue, sieos is home and phen is star;
-> so read their map: every name a small song.
+> In their tongue, laeen is fire and phen is star;
+> their map is a psalter, if you can read it.
 
 ## Legends of the founding age
 
@@ -537,47 +537,47 @@ In the year 1050, Rauriameonte came for Mairsham and left without it; the war so
 
 ## A Traveller's Account, in the year 1100
 
-*I, Rauriai, a mapmaker's apprentice, set out from Deoliria in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
+*I, Rauriai, a collector of road-tolls, lately retired from collecting them, set out from Deoliria in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
 
-From Deoliria the road runs 12 leagues to Peonadinte, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Peonadinte itself — the grass spring — is a village; its market is all livestock and grain.
+Peonadinte lies 12 leagues on from Deoliria, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Peonadinte itself — the grass spring — is a village; its market is all livestock and grain.
 
 I went back down my own road as far as Deoliria, then turned for Knyrklamor. We forded once, boots held high. Knyrklamor itself — the wild hall — is a village with its face to the sea; its market is all grain and livestock. The people here still say Knyrkba; the ledgers say Knyrklamor. I bought bread in both names.
 
-I went back down my own road as far as Deoliria, then turned for Bellademor. The road finds water twice on this stretch. Bellademor itself — the river home — is a village; its market is all livestock and grain.
+I went back down my own road as far as Deoliria, then turned for Bellademor. We forded twice; I stopped counting wet boots. Bellademor itself — the river home — is a village; its market is all livestock and grain.
 
-From Bellademor the road runs 12 leagues to Pananelen, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Pananelen itself — the field bridge — is a village with its face to the sea; its market is all spices and horses.
+Two days' walking took me from Bellademor to Pananelen, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Pananelen itself — the field bridge — is a village with its face to the sea; its market is all spices and horses.
 
-From Pananelen the road runs 12 leagues to Deopana, through more of the same. The road finds water twice on this stretch. Deopana itself — the sea field — is a village with its face to the sea; its market is all livestock and timber.
+Deopana lies 12 leagues on from Pananelen, through more of the same. The road finds water twice on this stretch. Deopana itself — the sea field — is a village with its face to the sea; its market is all livestock and timber.
 
-Out of Deopana, then, toward Rairdemor, the country unchanged. We forded twice; I stopped counting wet boots. Rairdemor itself — the gold home — is a village; its market is all stone and livestock. The people here still say Rairkhukha; the ledgers say Rairdemor. I bought bread in both names.
+Two days' walking took me from Deopana to Rairdemor, the country unchanged. We forded twice; I stopped counting wet boots. Rairdemor itself — the gold home — is a village; its market is all stone and livestock. The people here still say Rairkhukha; the ledgers say Rairdemor. I bought bread in both names.
 
-From Rairdemor the road runs 23 leagues to Nianteciamor. The way crosses Rairghen and then Beossobinte. The road finds water twice on this stretch. Nianteciamor itself — the green gate — is a town; its market is all livestock and copper.
+Out of Rairdemor, then, toward Nianteciamor. The way crosses Rairghen and then Beossobinte. The road finds water twice on this stretch. Nianteciamor itself — the green gate — is a town; its market is all livestock and copper.
 
-Deotelen lies 13 leagues on from Nianteciamor, through grass as high as the stirrup. The road finds water twice on this stretch. The road climbs some 450 metres before it thinks better of it. Deotelen itself — the sea market — is a city with its face to the sea; its market is all fish and livestock.
+From Nianteciamor the road runs 13 leagues to Deotelen, through grass as high as the stirrup. The road finds water twice on this stretch. The road climbs some 450 metres before it thinks better of it. Deotelen itself — the sea market — is a city with its face to the sea; its market is all fish and livestock.
 
-From Deotelen the road runs 12 leagues to Deohro, under green galleries. The road finds water twice on this stretch. Deohro itself — the sea hall — is a town with its face to the sea; its market is all grain and livestock. The people here still say Deonelen; the ledgers say Deohro. I bought bread in both names.
+Two days' walking took me from Deotelen to Deohro, under green galleries. We forded twice; I stopped counting wet boots. Deohro itself — the sea hall — is a town with its face to the sea; its market is all grain and livestock. The people here still say Deonelen; the ledgers say Deohro. I bought bread in both names.
 
-Out of Deohro, then, toward Peonabust, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Peonabust itself — the grass gate — is a town with its face to the sea; its market is all livestock and grain. The people here still say Peonaliria; the ledgers say Peonabust. I bought bread in both names.
+Two days' walking took me from Deohro to Peonabust, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Peonabust itself — the grass gate — is a town with its face to the sea; its market is all livestock and grain. The people here still say Peonaliria; the ledgers say Peonabust. I bought bread in both names.
 
-Vonthu lies 14 leagues on from Peonabust. The road finds water twice on this stretch. The road climbs some 500 metres before it thinks better of it. Vonthu itself — the green fort — is a town with its face to the sea; its market is all grain and livestock.
+Two days' walking took me from Peonabust to Vonthu. The road finds water twice on this stretch. The road climbs some 500 metres before it thinks better of it. Vonthu itself — the green fort — is a town with its face to the sea; its market is all grain and livestock.
 
-Out of Vonthu, then, toward Stagrathu. The road finds water twice on this stretch. Stagrathu itself — the sea fort — is a village with its face to the sea; its market is all grain and livestock.
+From Vonthu the road runs 13 leagues to Stagrathu. We forded twice; I stopped counting wet boots. Stagrathu itself — the sea fort — is a village with its face to the sea; its market is all grain and livestock.
 
-From Stagrathu the road runs 18 leagues to Khirfjysk, the country unchanged. The road finds water twice on this stretch. The road climbs some 550 metres before it thinks better of it. Khirfjysk itself — the sea home — is a town with its face to the sea; its market is all grain and livestock. The people here still say Khirqe; the ledgers say Khirfjysk. I bought bread in both names.
+The Khirfjysk road leaves Stagrathu by the long way, through more of the same. The road finds water twice on this stretch. The road climbs some 550 metres before it thinks better of it. Khirfjysk itself — the sea home — is a town with its face to the sea; its market is all grain and livestock. The people here still say Khirqe; the ledgers say Khirfjysk. I bought bread in both names.
 
-Khirdund lies 12 leagues on from Khirfjysk. We forded twice; I stopped counting wet boots. The road climbs some 300 metres before it thinks better of it. Khirdund itself — the sea haven — is a city with its face to the sea; its market is all grain and livestock. The people here still say Khirghekh; the ledgers say Khirdund. I bought bread in both names.
+Two days' walking took me from Khirfjysk to Khirdund, the country unchanged. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Khirdund itself — the sea haven — is a city with its face to the sea; its market is all grain and livestock. The people here still say Khirghekh; the ledgers say Khirdund. I bought bread in both names.
 
-Out of Khirdund, then, toward Khirhro, through gold grass and scattered trees. The road finds water twice on this stretch. Khirhro itself — the sea hall — is a town with its face to the sea; its market is all livestock and horses. The people here still say Khirmakh; the ledgers say Khirhro. I bought bread in both names.
+Khirhro lies 11 leagues on from Khirdund, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Khirhro itself — the sea hall — is a town with its face to the sea; its market is all livestock and horses. The people here still say Khirmakh; the ledgers say Khirhro. I bought bread in both names.
 
-Khirbust lies 10 leagues on from Khirhro, the country unchanged. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Khirbust itself — the sea gate — is a village with its face to the sea; its market is all livestock and fish. The people here still say Khirzaa; the ledgers say Khirbust. I bought bread in both names.
+Khirbust lies 10 leagues on from Khirhro, through more of the same. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Khirbust itself — the sea gate — is a village with its face to the sea; its market is all livestock and fish. The people here still say Khirzaa; the ledgers say Khirbust. I bought bread in both names.
 
-Out of Khirbust, then, toward Rairba, the country unchanged. The road finds water twice on this stretch. Rairba itself — the gold spring — is a village; its market is all livestock and horses. The people here still say Rairkai; the ledgers say Rairba. I bought bread in both names.
+The Rairba road leaves Khirbust by the long way. The road finds water twice on this stretch. Rairba itself — the gold spring — is a village; its market is all livestock and horses. The people here still say Rairkai; the ledgers say Rairba. I bought bread in both names.
 
-Out of Rairba, then, toward Bellapana. We forded twice; I stopped counting wet boots. The road climbs some 350 metres before it thinks better of it. Bellapana itself — the river field — is a village; its market is all livestock and wine.
+The Bellapana road leaves Rairba by the short way, through more of the same. The road finds water twice on this stretch. The road climbs some 350 metres before it thinks better of it. Bellapana itself — the river field — is a village; its market is all livestock and wine.
 
 *The rest of that country I crossed more quickly than it deserved: Khirtomor, Deociamor, Bellatomor, Hralamor, Stagrlamor, Ghashbust, Niantefjysk — each worth a page I did not have.*
 
-*My boots did not survive the year. The account did. Rauriai, 1100.*
+*I do not say I saw everything; I say I walked past it. Rauriai, 1100.*
 
 ## Heightmap
 

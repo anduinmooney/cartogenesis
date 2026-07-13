@@ -201,47 +201,47 @@ Followed across 8 region(s).
 
 ### The Saga of Kheqmaad (Kesh (desert))
 
-> Out of the singing sands came the desert folk,
+> Long the desert folk wandered the singing sands,
 > and the shore they found they would not leave.
 > Mairkhaim they named it — the mountain stone —
-> for they were a people who named things truly.
+> a name that fit the land like weather.
 > Ghashzaa they built first, the river bridge,
 > its walls set square against the weather.
 > (The maps write it Ghashbust now. The saga does not.)
 > Over it they set Vaghazasaid, the sky blood,
 > whose dominion is the harvest;
 > and the Rite of Vaghazasaid remembers.
-> In their tongue, zajiq is fire and khaim is stone;
+> In their tongue, zajiq is fire and qe is home;
 > so read their map: every name a small song.
 > And of Kheqmaad the singers still sing,
 > for its banners stand as high as ever they did.
 
 ### The Saga of Steirkafjysk (Auld (northern))
 
-> First came the northern folk over the grey water,
-> and the land they found they would not leave.
+> Long the northern folk wandered the grey water,
+> and here the road wore out before the people did.
 > Brasturn they named it — the mountain cliff —
-> and the name has outlived every wall they raised.
+> for they were a people who named things truly.
 > Vonthu they built first, the green fort,
-> its harbour open like a hand.
+> its quays the first words of a long argument with the sea.
 > Over it they set Vavollvyrk, the storm sun,
 > whose dominion is the hearth;
 > and the Cult of Vavollvyrk keeps that fire yet.
-> In their tongue, thygr is fire and stall is king;
+> In their tongue, thygr is fire and fjull is star;
 > so read their map: every name a small song.
 > Steirkafjysk endures, lesser than its songs —
 > as all things are, that last long enough to be sung of.
 
 ### The Saga of Lossocaria (Meridian (southern))
 
-> First came the southern folk over the warm sea,
-> and the shore they found they would not leave.
+> Out of the warm sea came the southern folk,
+> and where the water ended, so did the wandering.
 > Deodinte they named it — the sea spring —
 > and the name has outlived every wall they raised.
 > Deotomor they built first, the sea fort,
-> its harbour open like a hand.
-> In their tongue, demor is home and neosso is stone;
-> so read their map: every name a small song.
+> its quays the first words of a long argument with the sea.
+> In their tongue, demor is home and deo is sea;
+> their map is a psalter, if you can read it.
 > Lossocaria endures, lesser than its songs —
 > as all things are, that last long enough to be sung of.
 
@@ -441,7 +441,7 @@ About the year 1025, Jaqe held Khirzash against Steirkafjysk, whose army went ho
 
 ## A Traveller's Account, in the year 1100
 
-*I, Hryrkir, a pilgrim of no great piety, set out from Vonthu in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
+*I, Hryrkir, a buyer of horses and rumours, set out from Vonthu in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
 
 Ghashbust lies 12 leagues on from Vonthu, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Ghashbust itself — the river gate — is a village; its market is all livestock and horses. The people here still say Ghashzaa; the ledgers say Ghashbust. I bought bread in both names.
 
@@ -449,25 +449,25 @@ From Ghashbust the road runs 41 leagues to Ghashdund, through more of the same. 
 
 I went back down my own road as far as Vonthu, then turned for Stagrathu. We forded once, boots held high. The road climbs some 600 metres before it thinks better of it. Stagrathu itself — the sea fort — is a village with its face to the sea; its market is all fish and grain.
 
-Stagrafjysk lies 13 leagues on from Stagrathu, the country unchanged. There is one ford, cold but honest. The road climbs some 350 metres before it thinks better of it. Stagrafjysk itself — the sea home — is a village with its face to the sea; its market is all fish and grain.
+Out of Stagrathu, then, toward Stagrafjysk, through more of the same. We forded once, boots held high. The road climbs some 350 metres before it thinks better of it. Stagrafjysk itself — the sea home — is a village with its face to the sea; its market is all fish and grain.
 
-From Stagrafjysk the road runs 22 leagues to Niantebust, the country unchanged. The way crosses Stagrahrei. The road finds water twice on this stretch. The road climbs some 350 metres before it thinks better of it. Niantebust itself — the green gate — is a town with its face to the sea; its market is all grain and livestock. The people here still say Nianteliria; the ledgers say Niantebust. I bought bread in both names.
+The Niantebust road leaves Stagrafjysk by the long way, the country unchanged. The way crosses Stagrahrei. We forded twice; I stopped counting wet boots. The road climbs some 350 metres before it thinks better of it. Niantebust itself — the green gate — is a town with its face to the sea; its market is all grain and livestock. The people here still say Nianteliria; the ledgers say Niantebust. I bought bread in both names.
 
 Deogrull lies 12 leagues on from Niantebust, through more of the same. We forded once, boots held high. The road climbs some 400 metres before it thinks better of it. Deogrull itself — the sea bridge — is a town with its face to the sea; its market is all livestock and furs. The people here still say Deonelen; the ledgers say Deogrull. I bought bread in both names.
 
-Midhro lies 12 leagues on from Deogrull, through gold grass and scattered trees. There is one ford, cold but honest. The road climbs some 400 metres before it thinks better of it. Midhro itself — the grass hall — is a village with its face to the sea; its market is all horses and livestock. The people here still say Midshu; the ledgers say Midhro. I bought bread in both names.
+The Midhro road leaves Deogrull by the short way, through gold grass and scattered trees. There is one ford, cold but honest. The road climbs some 400 metres before it thinks better of it. Midhro itself — the grass hall — is a village with its face to the sea; its market is all horses and livestock. The people here still say Midshu; the ledgers say Midhro. I bought bread in both names.
 
-Out of Midhro, then, toward Ghashtomor. The way crosses Khirkhaim and then Mairghen. The road finds water twice on this stretch. The road climbs some 900 metres before it thinks better of it. Ghashtomor itself — the river fort — is a village; its market is all livestock and horses. The people here still say Ghashakhukha; the ledgers say Ghashtomor. I bought bread in both names.
+Two days' walking took me from Midhro to Ghashtomor. The way crosses Khirkhaim and then Mairghen. We forded twice; I stopped counting wet boots. The road climbs some 900 metres before it thinks better of it. Ghashtomor itself — the river fort — is a village; its market is all livestock and horses. The people here still say Ghashakhukha; the ledgers say Ghashtomor. I bought bread in both names.
 
-Bellamakh lies 13 leagues on from Ghashtomor, the country unchanged. We forded twice; I stopped counting wet boots. Bellamakh itself — the river hall — is a village; its market is all livestock and grain. The people here still say Bellapana; the ledgers say Bellamakh. I bought bread in both names.
+Bellamakh lies 13 leagues on from Ghashtomor, through more of the same. We forded twice; I stopped counting wet boots. Bellamakh itself — the river hall — is a village; its market is all livestock and grain. The people here still say Bellapana; the ledgers say Bellamakh. I bought bread in both names.
 
-Deotomor lies 14 leagues on from Bellamakh, the country unchanged. We forded twice; I stopped counting wet boots. Deotomor itself — the sea fort — is a city with its face to the sea; its market is all grain and livestock.
+From Bellamakh the road runs 14 leagues to Deotomor, through more of the same. We forded twice; I stopped counting wet boots. Deotomor itself — the sea fort — is a city with its face to the sea; its market is all grain and livestock.
 
 From Deotomor the road runs 15 leagues to Deotelen, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. The road climbs some 550 metres before it thinks better of it. Deotelen itself — the sea market — is a town with its face to the sea; its market is all grain and livestock.
 
-Deoliria lies 10 leagues on from Deotelen, the country unchanged. We forded once, boots held high. Deoliria itself — the sea haven — is a town with its face to the sea; its market is all livestock and horses.
+Deoliria lies 10 leagues on from Deotelen, through more of the same. We forded once, boots held high. Deoliria itself — the sea haven — is a town with its face to the sea; its market is all livestock and horses.
 
-*I came home by the same roads, which were somehow longer in that direction. Hryrkir, 1100.*
+*I do not say I saw everything; I say I walked past it. Hryrkir, 1100.*
 
 ## Heightmap
 

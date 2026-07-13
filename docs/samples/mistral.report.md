@@ -267,48 +267,48 @@ Followed across 1 region(s).
 
 ### The Saga of Caumeonte (Meridian (southern))
 
-> Out of the warm sea came the southern folk,
-> and the land they found they would not leave.
+> Long the southern folk wandered the warm sea,
+> and here the road wore out before the people did.
 > Beossolaria they named it — the mountain cliff —
-> and the name has outlived every wall they raised.
+> for they were a people who named things truly.
 > Deoliria they built first, the sea haven,
-> its harbour open like a hand.
+> its quays the first words of a long argument with the sea.
 > Over it they set Varondovomor, the sun sky,
 > whose dominion is war;
-> and the Way of Varondovomor keeps that fire yet.
-> In their tongue, comor is fire and selen is star;
-> so read their map: every name a small song.
+> and the Way of Varondovomor remembers.
+> In their tongue, comor is fire and na is king;
+> learn those two words and their map opens like a door.
 > And of Caumeonte the singers still sing,
 > for its banners stand as high as ever they did.
 
 ### The Saga of Steirkastall (Auld (northern))
 
-> First came the northern folk over the grey water,
+> Long the northern folk wandered the grey water,
 > and the land they found they would not leave.
 > Brastausk they named it — the mountain isle —
-> for they were a people who named things truly.
+> a name that fit the land like weather.
 > Stagrafjysk they built first, the sea home,
-> its harbour open like a hand.
+> its quays the first words of a long argument with the sea.
 > Over it they set Vathorkveill, the holy sky,
 > whose dominion is the forest;
 > and the Faith of Vathorkveill keeps that fire yet.
-> In their tongue, stall is king and stagr is sea;
-> so read their map: every name a small song.
+> In their tongue, fjysk is home and stall is king;
+> learn those two words and their map opens like a door.
 > And of Steirkastall the singers still sing,
 > for its banners stand as high as ever they did.
 
 ### The Saga of Rairqe (Kesh (desert))
 
-> Out of the singing sands came the desert folk,
-> and the shore they found they would not leave.
+> First came the desert folk over the singing sands,
+> and where the water ended, so did the wandering.
 > Mairkai they named it — the mountain spring —
-> and the name has outlived every wall they raised.
+> for they were a people who named things truly.
 > Ghashmakh they built first, the river hall,
-> its walls set square against the weather.
+> its well dug before its walls, as wise folk build.
 > Over it they set Vaghairzajiq, the dawn fire,
 > whose dominion is the storm;
 > and the Way of Vaghairzajiq keeps that fire yet.
-> In their tongue, qe is home and maad is king;
+> In their tongue, maad is king and sagha is star;
 > so read their map: every name a small song.
 > Of Rairqe their singers made much, once.
 > It rose to 2 provinces and it fell, and the saga does not say so —
@@ -316,14 +316,14 @@ Followed across 1 region(s).
 
 ### How the Woodland Folk Came to Syaeenmelen (Sylvan (woodland))
 
-> First came the woodland folk over the deep wood,
-> and the shore they found they would not leave.
+> Out of the deep wood came the woodland folk,
+> and where the water ended, so did the wandering.
 > Syaeenmelen they named it — the sea land —
 > and the name has outlived every wall they raised.
 > Over it they set Vareilthas, the storm sun,
 > whose dominion is the sun;
 > and the Cult of Vareilthas keeps that fire yet.
-> In their tongue, lia is king and phen is star;
+> In their tongue, phen is star and ne is stone;
 > so read their map: every name a small song.
 
 ## Legends of the founding age
@@ -500,39 +500,39 @@ In 1050, Caumeonte came for Shinshaa and left without it; the war songs on both 
 
 From Deoliria the road runs 10 leagues to Niantenelen, through grass as high as the stirrup. The road finds water twice on this stretch. The road climbs some 250 metres before it thinks better of it. Niantenelen itself — the green bridge — is a town; its market is all livestock and grain.
 
-Out of Niantenelen, then, toward Ghashlamor, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Ghashlamor itself — the river hall — is a village; its market is all horses and livestock. The people here still say Ghashakhukha; the ledgers say Ghashlamor. I bought bread in both names.
+The Ghashlamor road leaves Niantenelen by the short way, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Ghashlamor itself — the river hall — is a village; its market is all horses and livestock. The people here still say Ghashakhukha; the ledgers say Ghashlamor. I bought bread in both names.
 
 From Ghashlamor the road runs 48 leagues to Shinlamor. The way crosses Beossoneosso and then Beossoda. The road finds water twice on this stretch. The road climbs some 2550 metres before it thinks better of it. Shinlamor itself — the wild hall — is a town with its face to the sea; its market is all livestock and grain. The people here still say Shinghekh; the ledgers say Shinlamor. I bought bread in both names.
 
-Deolamor lies 12 leagues on from Shinlamor, through more of the same. We forded twice; I stopped counting wet boots. Deolamor itself — the sea hall — is a town with its face to the sea; its market is all wine and grain.
+Out of Shinlamor, then, toward Deolamor, through more of the same. We forded twice; I stopped counting wet boots. Deolamor itself — the sea hall — is a town with its face to the sea; its market is all wine and grain.
 
 Ghashmakh lies 13 leagues on from Deolamor, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. The road climbs some 400 metres before it thinks better of it. Ghashmakh itself — the river hall — is a city; its market is all grain and horses.
 
-Ghashciamor lies 14 leagues on from Ghashmakh, through gold grass and scattered trees. The road finds water twice on this stretch. Ghashciamor itself — the river gate — is a village; its market is all livestock and timber. The people here still say Ghashqe; the ledgers say Ghashciamor. I bought bread in both names.
+Two days' walking took me from Ghashmakh to Ghashciamor, through gold grass and scattered trees. The road finds water twice on this stretch. Ghashciamor itself — the river gate — is a village; its market is all livestock and timber. The people here still say Ghashqe; the ledgers say Ghashciamor. I bought bread in both names.
 
-I went back down my own road as far as Shinlamor, then turned for Pananelen. The road finds water twice on this stretch. Pananelen itself — the field bridge — is a village; its market is all livestock and spices.
+Back through Shinlamor, then — a road walked twice is half as long, whatever my boots say — and on to Pananelen. We forded twice; I stopped counting wet boots. Pananelen itself — the field bridge — is a village; its market is all livestock and spices.
 
-Deonelen lies 12 leagues on from Pananelen, the country unchanged. The road finds water twice on this stretch. Deonelen itself — the sea bridge — is a town with its face to the sea; its market is all livestock and grain.
+The Deonelen road leaves Pananelen by the short way, through more of the same. We forded twice; I stopped counting wet boots. Deonelen itself — the sea bridge — is a town with its face to the sea; its market is all livestock and grain.
 
-Stagrciamor lies 13 leagues on from Deonelen, under green galleries. We forded once, boots held high. Stagrciamor itself — the sea gate — is a village with its face to the sea; its market is all fish and grain. The people here still say Stagrafjan; the ledgers say Stagrciamor. I bought bread in both names.
+From Deonelen the road runs 13 leagues to Stagrciamor, under green galleries. There is one ford, cold but honest. Stagrciamor itself — the sea gate — is a village with its face to the sea; its market is all fish and grain. The people here still say Stagrafjan; the ledgers say Stagrciamor. I bought bread in both names.
 
-I went back down my own road as far as Deonelen, then turned for Stagrlamor. The way crosses Stagrabry. There is one ford, cold but honest. The road climbs some 650 metres before it thinks better of it. Stagrlamor itself — the sea hall — is a village with its face to the sea; its market is all grain and fish. The people here still say Stagragrull; the ledgers say Stagrlamor. I bought bread in both names.
+There was nothing for it but to retrace my steps to Deonelen and strike out for Stagrlamor. The way crosses Stagrabry. There is one ford, cold but honest. The road climbs some 650 metres before it thinks better of it. Stagrlamor itself — the sea hall — is a village with its face to the sea; its market is all grain and fish. The people here still say Stagragrull; the ledgers say Stagrlamor. I bought bread in both names.
 
-Out of Stagrlamor, then, toward Bellademor, through more of the same. We forded once, boots held high. Bellademor itself — the river home — is a village; its market is all grain and livestock.
+Out of Stagrlamor, then, toward Bellademor, through more of the same. There is one ford, cold but honest. Bellademor itself — the river home — is a village; its market is all grain and livestock.
 
-I went back down my own road as far as Ghashlamor, then turned for Belladund. The way crosses Beossoneosso and then Rauriabinte. The road finds water twice on this stretch. The road climbs some 2200 metres before it thinks better of it. Belladund itself — the river haven — is a village; its market is all grain and livestock. The people here still say Belladinte; the ledgers say Belladund. I bought bread in both names.
+Back through Ghashlamor, then — a road walked twice is half as long, whatever my boots say — and on to Belladund. The way crosses Beossoneosso and then Rauriabinte. We forded twice; I stopped counting wet boots. The road climbs some 2200 metres before it thinks better of it. Belladund itself — the river haven — is a village; its market is all grain and livestock. The people here still say Belladinte; the ledgers say Belladund. I bought bread in both names.
 
-I went back down my own road as far as Deoliria, then turned for Deopana. The road finds water twice on this stretch. Deopana itself — the sea field — is a village with its face to the sea; its market is all grain and livestock.
+Back through Deoliria, then — a road walked twice is half as long, whatever my boots say — and on to Deopana. The road finds water twice on this stretch. Deopana itself — the sea field — is a village with its face to the sea; its market is all grain and livestock.
 
-Out of Deopana, then, toward Stagrdinte, the country unchanged. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Stagrdinte itself — the sea spring — is a village with its face to the sea; its market is all livestock and grain. The people here still say Stagrba; the ledgers say Stagrdinte. I bought bread in both names.
+The Stagrdinte road leaves Deopana by the short way, the country unchanged. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Stagrdinte itself — the sea spring — is a village with its face to the sea; its market is all livestock and grain. The people here still say Stagrba; the ledgers say Stagrdinte. I bought bread in both names.
 
-From Stagrdinte the road runs 25 leagues to Stagrathu, through more of the same. The road finds water twice on this stretch. The road climbs some 350 metres before it thinks better of it. Stagrathu itself — the sea fort — is a village with its face to the sea; its market is all livestock and grain.
+Stagrathu lies 25 leagues on from Stagrdinte. We forded twice; I stopped counting wet boots. The road climbs some 350 metres before it thinks better of it. Stagrathu itself — the sea fort — is a village with its face to the sea; its market is all livestock and grain.
 
-Out of Stagrathu, then, toward Stagrafjysk. We forded once, boots held high. The road climbs some 750 metres before it thinks better of it. Stagrafjysk itself — the sea home — is a town with its face to the sea; its market is all grain and livestock.
+From Stagrathu the road runs 13 leagues to Stagrafjysk, the country unchanged. We forded once, boots held high. The road climbs some 750 metres before it thinks better of it. Stagrafjysk itself — the sea home — is a town with its face to the sea; its market is all grain and livestock.
 
-From Stagrafjysk the road runs 10 leagues to Bellafjysk, through more of the same. We forded once, boots held high. Bellafjysk itself — the river home — is a town; its market is all livestock and grain. The people here still say Bellatelen; the ledgers say Bellafjysk. I bought bread in both names.
+Bellafjysk lies 10 leagues on from Stagrafjysk, the country unchanged. There is one ford, cold but honest. Bellafjysk itself — the river home — is a town; its market is all livestock and grain. The people here still say Bellatelen; the ledgers say Bellafjysk. I bought bread in both names.
 
-*I came home by the same roads, which were somehow longer in that direction. Mantir, 1100.*
+*Whoever walks these roads after me: the fords are colder than they look. Mantir, 1100.*
 
 ## Heightmap
 

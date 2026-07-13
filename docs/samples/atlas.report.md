@@ -245,18 +245,18 @@ Followed across 11 region(s).
 
 ### The Saga of Qidkaqe (Kesh (desert))
 
-> First came the desert folk over the singing sands,
+> Out of the singing sands came the desert folk,
 > and the shore they found they would not leave.
 > Khirghen they named it — the sea land —
-> for they were a people who named things truly.
+> and the name has outlived every wall they raised.
 > Ghashmakh they built first, the river hall,
-> its walls set square against the weather.
+> its well dug before its walls, as wise folk build.
 > (The maps write it Ghashciamor now. The saga does not.)
 > Over it they set Varikhaamaad, the wind king,
 > whose dominion is war;
 > and the Cult of Varikhaamaad keeps that fire yet.
-> In their tongue, zajiq is fire and khaim is stone;
-> so read their map: every name a small song.
+> In their tongue, qe is home and maad is king;
+> their map is a psalter, if you can read it.
 > Qidkaqe endures, lesser than its songs —
 > as all things are, that last long enough to be sung of.
 
@@ -265,30 +265,30 @@ Followed across 11 region(s).
 > Out of the warm sea came the southern folk,
 > and the shore they found they would not leave.
 > Panalaria they named it — the field cliff —
-> and the name has outlived every wall they raised.
+> and no one has improved on it since.
 > Deoliria they built first, the sea haven,
 > its harbour open like a hand.
 > Over it they set Vabamortena, the dusk holy,
 > whose dominion is the sea;
 > and the Faith of Vabamortena remembers.
-> In their tongue, demor is home and na is king;
+> In their tongue, deo is sea and selen is star;
 > so read their map: every name a small song.
 > Caudente endures, lesser than its songs —
 > as all things are, that last long enough to be sung of.
 
 ### The Saga of Fjeiskdaurk (Auld (northern))
 
-> Out of the grey water came the northern folk,
-> and the land they found they would not leave.
+> It was hunger drove the northern folk across the grey water,
+> and here the road wore out before the people did.
 > Brahrei they named it — the mountain hill —
-> and the name has outlived every wall they raised.
+> a name that fit the land like weather.
 > Hrafjysk they built first, the river home,
 > its walls set square against the weather.
 > (The maps write it Hraliria now. The saga does not.)
 > Over it they set Vabrograthygr, the dread fire,
 > whose dominion is the forest;
-> and the Rite of Vabrograthygr remembers.
-> In their tongue, fjull is star and bry is stone;
+> and the Rite of Vabrograthygr keeps that fire yet.
+> In their tongue, thygr is fire and bry is stone;
 > so read their map: every name a small song.
 > Of Fjeiskdaurk their singers made much, once.
 > It rose to 2 provinces and it fell, and the saga does not say so —
@@ -296,12 +296,12 @@ Followed across 11 region(s).
 
 ### How the Woodland Folk Came to Melareth (Sylvan (woodland))
 
-> Out of the deep wood came the woodland folk,
-> and the shore they found they would not leave.
+> It was hunger drove the woodland folk across the deep wood,
+> and where the water ended, so did the wandering.
 > Melareth they named it — the wood vale —
-> for they were a people who named things truly.
-> In their tongue, syaeen is sea and ne is stone;
-> so read their map: every name a small song.
+> and no one has improved on it since.
+> In their tongue, lia is king and ne is stone;
+> their map is a psalter, if you can read it.
 
 ## Legends of the founding age
 
@@ -511,41 +511,41 @@ In 1075, it was Caudente's year: Midkhash was taken from Jamaad before the passe
 
 ## A Traveller's Account, in the year 1100
 
-*I, Rondir, a pilgrim of no great piety, set out from Deoliria in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
+*I, Rondir, a scribe whose physician prescribed walking, set out from Deoliria in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
 
-From Deoliria the road runs 12 leagues to Panaliria, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Panaliria itself — the field haven — is a town; its market is all livestock and fish.
+Panaliria lies 12 leagues on from Deoliria, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Panaliria itself — the field haven — is a town; its market is all livestock and fish.
 
 From Panaliria the road runs 9 leagues to Ghashlamor, through gold grass and scattered trees. The road finds water twice on this stretch. Ghashlamor itself — the river hall — is a village; its market is all livestock and fish. The people here still say Ghashkai; the ledgers say Ghashlamor. I bought bread in both names.
 
-From Ghashlamor the road runs 43 leagues to Ghashakhukha. The way crosses Jakhidku and then Mairkai. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Ghashakhukha itself — the river field — is a village; its market is all livestock and iron.
+Ghashakhukha lies 43 leagues on from Ghashlamor. The way crosses Jakhidku and then Mairkai. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Ghashakhukha itself — the river field — is a village; its market is all livestock and iron.
 
 Khirghekh lies 16 leagues on from Ghashakhukha, through more of the same. The road finds water twice on this stretch. Khirghekh itself — the sea gate — is a town with its face to the sea; its market is all livestock and grain.
 
 I went back down my own road as far as Ghashakhukha, then turned for Khirzaa. We forded once, boots held high. Khirzaa itself — the sea bridge — is a village with its face to the sea; its market is all coal and horses.
 
-Out of Khirzaa, then, toward Shintomor, the country unchanged. We forded once, boots held high. Shintomor itself — the wild fort — is a village; its market is all livestock and horses. The people here still say Shinshu; the ledgers say Shintomor. I bought bread in both names.
+Shintomor lies 11 leagues on from Khirzaa. There is one ford, cold but honest. Shintomor itself — the wild fort — is a village; its market is all livestock and horses. The people here still say Shinshu; the ledgers say Shintomor. I bought bread in both names.
 
-From Shintomor the road runs 12 leagues to Ghashciamor, through more of the same. We forded twice; I stopped counting wet boots. Ghashciamor itself — the river gate — is a town; its market is all grain and livestock. The people here still say Ghashmakh; the ledgers say Ghashciamor. I bought bread in both names.
+Ghashciamor lies 12 leagues on from Shintomor, the country unchanged. We forded twice; I stopped counting wet boots. Ghashciamor itself — the river gate — is a town; its market is all grain and livestock. The people here still say Ghashmakh; the ledgers say Ghashciamor. I bought bread in both names.
 
-Nianteqe lies 12 leagues on from Ghashciamor, through grass as high as the stirrup. The road finds water twice on this stretch. Nianteqe itself — the green home — is a city; its market is all livestock and grain. The people here still say Niantetomor; the ledgers say Nianteqe. I bought bread in both names.
+The Nianteqe road leaves Ghashciamor by the short way, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Nianteqe itself — the green home — is a city; its market is all livestock and grain. The people here still say Niantetomor; the ledgers say Nianteqe. I bought bread in both names.
 
-Deotomor lies 15 leagues on from Nianteqe, the country unchanged. We forded once, boots held high. The road climbs some 900 metres before it thinks better of it. Deotomor itself — the sea fort — is a town with its face to the sea; its market is all grain and wine.
+Deotomor lies 15 leagues on from Nianteqe, through more of the same. There is one ford, cold but honest. The road climbs some 900 metres before it thinks better of it. Deotomor itself — the sea fort — is a town with its face to the sea; its market is all grain and wine.
 
-Out of Deotomor, then, toward Khirlamor, through gold grass and scattered trees. We forded once, boots held high. Khirlamor itself — the sea hall — is a village with its face to the sea; its market is all livestock and horses. The people here still say Khirkai; the ledgers say Khirlamor. I bought bread in both names.
+Khirlamor lies 14 leagues on from Deotomor, through gold grass and scattered trees. There is one ford, cold but honest. Khirlamor itself — the sea hall — is a village with its face to the sea; its market is all livestock and horses. The people here still say Khirkai; the ledgers say Khirlamor. I bought bread in both names.
 
-I went back down my own road as far as Deoliria, then turned for Bellalamor. The way crosses Beossoda. The road finds water twice on this stretch. Bellalamor itself — the river hall — is a town; its market is all wine and livestock.
+There was nothing for it but to retrace my steps to Deoliria and strike out for Bellalamor. The way crosses Beossoda. We forded twice; I stopped counting wet boots. Bellalamor itself — the river hall — is a town; its market is all wine and livestock.
 
-From Bellalamor the road runs 12 leagues to Hraliria, through more of the same. The road finds water twice on this stretch. Hraliria itself — the river haven — is a village; its market is all grain and livestock. The people here still say Hrafjysk; the ledgers say Hraliria. I bought bread in both names.
+From Bellalamor the road runs 12 leagues to Hraliria. We forded twice; I stopped counting wet boots. Hraliria itself — the river haven — is a village; its market is all grain and livestock. The people here still say Hrafjysk; the ledgers say Hraliria. I bought bread in both names.
 
-Panadinte lies 21 leagues on from Hraliria, the country unchanged. There is one ford, cold but honest. The road climbs some 300 metres before it thinks better of it. Panadinte itself — the field spring — is a village with its face to the sea; its market is all livestock and grain.
+The Panadinte road leaves Hraliria by the long way. There is one ford, cold but honest. The road climbs some 300 metres before it thinks better of it. Panadinte itself — the field spring — is a village with its face to the sea; its market is all livestock and grain.
 
-Out of Panadinte, then, toward Deolamor. We forded once, boots held high. Deolamor itself — the sea hall — is a city with its face to the sea; its market is all grain and timber.
+From Panadinte the road runs 10 leagues to Deolamor, the country unchanged. There is one ford, cold but honest. Deolamor itself — the sea hall — is a city with its face to the sea; its market is all grain and timber.
 
-Out of Deolamor, then, toward Peonapana, the country unchanged. We forded twice; I stopped counting wet boots. Peonapana itself — the grass field — is a village; its market is all grain and livestock.
+From Deolamor the road runs 9 leagues to Peonapana, the country unchanged. We forded twice; I stopped counting wet boots. Peonapana itself — the grass field — is a village; its market is all grain and livestock.
 
-From Peonapana the road runs 13 leagues to Khirdemor, through gold grass and scattered trees. We forded once, boots held high. Khirdemor itself — the sea home — is a village with its face to the sea; its market is all livestock and horses. The people here still say Khirqe; the ledgers say Khirdemor. I bought bread in both names.
+The Khirdemor road leaves Peonapana by the short way, through gold grass and scattered trees. We forded once, boots held high. Khirdemor itself — the sea home — is a village with its face to the sea; its market is all livestock and horses. The people here still say Khirqe; the ledgers say Khirdemor. I bought bread in both names.
 
-*My boots did not survive the year. The account did. Rondir, 1100.*
+*I do not say I saw everything; I say I walked past it. Rondir, 1100.*
 
 ## Heightmap
 

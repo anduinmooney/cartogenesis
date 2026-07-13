@@ -284,34 +284,34 @@ Followed across 1 region(s).
 
 ### The Saga of Kheqshaa (Kesh (desert))
 
-> Out of the singing sands came the desert folk,
+> Long the desert folk wandered the singing sands,
 > and the shore they found they would not leave.
 > Khirkhaim they named it — the sea stone —
 > for they were a people who named things truly.
 > Khirghekh they built first, the sea gate,
-> its harbour open like a hand.
+> its quays the first words of a long argument with the sea.
 > (The maps write it Khirlamor now. The saga does not.)
 > Over it they set Vaghazazizam, the sky storm,
 > whose dominion is the sun;
 > and the Cult of Vaghazazizam keeps that fire yet.
-> In their tongue, maad is king and khaim is stone;
-> so read their map: every name a small song.
+> In their tongue, khir is sea and khaim is stone;
+> their map is a psalter, if you can read it.
 > And of Kheqshaa the singers still sing,
 > for its banners stand as high as ever they did.
 
 ### The Saga of Vynskei (Auld (northern))
 
-> Out of the grey water came the northern folk,
-> and the shore they found they would not leave.
+> Long the northern folk wandered the grey water,
+> and where the water ended, so did the wandering.
 > Stagrahrei they named it — the sea hill —
-> and the name has outlived every wall they raised.
+> a name that fit the land like weather.
 > Fjangry they built first, the field market,
 > its walls set square against the weather.
 > (The maps write it Fjanqe now. The saga does not.)
 > Over it they set Vavathygr, the moon fire,
 > whose dominion is the storm;
 > and the Faith of Vavathygr remembers.
-> In their tongue, thygr is fire and bry is stone;
+> In their tongue, stagr is sea and bry is stone;
 > so read their map: every name a small song.
 > Of Vynskei their singers made much, once.
 > It rose to 6 provinces and it fell, and the saga does not say so —
@@ -319,31 +319,31 @@ Followed across 1 region(s).
 
 ### The Saga of Mantebinte (Meridian (southern))
 
-> Out of the warm sea came the southern folk,
+> Long the southern folk wandered the warm sea,
 > and the land they found they would not leave.
 > Beossoriando they named it — the mountain vale —
-> and the name has outlived every wall they raised.
+> for they were a people who named things truly.
 > Deociamor they built first, the sea gate,
 > its harbour open like a hand.
 > Over it they set Vabamorvomor, the dusk sky,
 > whose dominion is the hearth;
-> and the Rite of Vabamorvomor remembers.
-> In their tongue, demor is home and neosso is stone;
+> and the Rite of Vabamorvomor keeps that fire yet.
+> In their tongue, selen is star and neosso is stone;
 > so read their map: every name a small song.
 > And of Mantebinte the singers still sing,
 > for its banners stand as high as ever they did.
 
 ### How the Woodland Folk Came to Melamelen (Sylvan (woodland))
 
-> First came the woodland folk over the deep wood,
-> and the shore they found they would not leave.
+> Long the woodland folk wandered the deep wood,
+> and where the water ended, so did the wandering.
 > Melamelen they named it — the wood land —
-> for they were a people who named things truly.
+> and no one has improved on it since.
 > Over it they set Vananalia, the wind king,
 > whose dominion is the harvest;
-> and the Rite of Vananalia keeps that fire yet.
-> In their tongue, phen is star and ne is stone;
-> so read their map: every name a small song.
+> and the Rite of Vananalia remembers.
+> In their tongue, syaeen is sea and phen is star;
+> learn those two words and their map opens like a door.
 
 ## Legends of the founding age
 
@@ -584,35 +584,35 @@ Conquest re-said the very map: Khirghekh became Khirlamor on its new masters' to
 
 ## A Traveller's Account, in the year 1100
 
-*I, Donan, a pilgrim of no great piety, set out from Deociamor in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
+*I, Donan, a buyer of horses and rumours, set out from Deociamor in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
 
-Stagrliria lies 10 leagues on from Deociamor, through grass as high as the stirrup. There is one ford, cold but honest. The road climbs some 400 metres before it thinks better of it. Stagrliria itself — the sea haven — is a town with its face to the sea; its market is all grain and stone. The people here still say Stagrathu; the ledgers say Stagrliria. I bought bread in both names.
+Two days' walking took me from Deociamor to Stagrliria, through grass as high as the stirrup. There is one ford, cold but honest. The road climbs some 400 metres before it thinks better of it. Stagrliria itself — the sea haven — is a town with its face to the sea; its market is all grain and stone. The people here still say Stagrathu; the ledgers say Stagrliria. I bought bread in both names.
 
-Thaurntomor lies 35 leagues on from Stagrliria, through more of the same. The way crosses Staunbry and then Brabry. There is one ford, cold but honest. The road climbs some 1700 metres before it thinks better of it. Thaurntomor itself — the grass fort — is a village with its face to the sea; its market is all livestock and furs. The people here still say Thaurnafjysk; the ledgers say Thaurntomor. I bought bread in both names.
+Out of Stagrliria, then, toward Thaurntomor, through more of the same. The way crosses Staunbry and then Brabry. There is one ford, cold but honest. The road climbs some 1700 metres before it thinks better of it. Thaurntomor itself — the grass fort — is a village with its face to the sea; its market is all livestock and furs. The people here still say Thaurnafjysk; the ledgers say Thaurntomor. I bought bread in both names.
 
 Bellaghekh lies 13 leagues on from Thaurntomor, the country unchanged. The way crosses Brabry. We forded twice; I stopped counting wet boots. Bellaghekh itself — the river gate — is a town; its market is all grain and livestock. The people here still say Bellatelen; the ledgers say Bellaghekh. I bought bread in both names.
 
-From Bellaghekh the road runs 15 leagues to Ghashliria, through gold grass and scattered trees. The road finds water twice on this stretch. Ghashliria itself — the river haven — is a village; its market is all horses and livestock. The people here still say Ghashkai; the ledgers say Ghashliria. I bought bread in both names.
+Ghashliria lies 15 leagues on from Bellaghekh, through gold grass and scattered trees. The road finds water twice on this stretch. Ghashliria itself — the river haven — is a village; its market is all horses and livestock. The people here still say Ghashkai; the ledgers say Ghashliria. I bought bread in both names.
 
-Khirqe lies 17 leagues on from Ghashliria, the country unchanged. The way crosses Khirkhukha. There is one ford, cold but honest. Khirqe itself — the sea home — is a town with its face to the sea; its market is all livestock.
+Out of Ghashliria, then, toward Khirqe, the country unchanged. The way crosses Khirkhukha. There is one ford, cold but honest. Khirqe itself — the sea home — is a town with its face to the sea; its market is all livestock.
 
-Out of Khirqe, then, toward Midshu, the country unchanged. We forded once, boots held high. Midshu itself — the grass fort — is a village with its face to the sea; its market is all livestock and horses.
+Two days' walking took me from Khirqe to Midshu, the country unchanged. We forded once, boots held high. Midshu itself — the grass fort — is a village with its face to the sea; its market is all livestock and horses.
 
-Shinzaa lies 12 leagues on from Midshu, through more of the same. We forded twice; I stopped counting wet boots. The road climbs some 550 metres before it thinks better of it. Shinzaa itself — the wild bridge — is a village; its market is all livestock and horses.
+Out of Midshu, then, toward Shinzaa, through more of the same. We forded twice; I stopped counting wet boots. The road climbs some 550 metres before it thinks better of it. Shinzaa itself — the wild bridge — is a village; its market is all livestock and horses.
 
-Out of Shinzaa, then, toward Ghashaghekh, through more of the same. We forded twice; I stopped counting wet boots. Ghashaghekh itself — the river gate — is a town with its face to the sea; its market is all horses and livestock.
+The Ghashaghekh road leaves Shinzaa by the short way, through more of the same. We forded twice; I stopped counting wet boots. Ghashaghekh itself — the river gate — is a town with its face to the sea; its market is all horses and livestock.
 
-I went back down my own road as far as Shinzaa, then turned for Midund. The way crosses Khirkhaim and then Khirghen. The road finds water twice on this stretch. The road climbs some 350 metres before it thinks better of it. Midund itself — the grass haven — is a village with its face to the sea; its market is all horses and spices. The people here still say Midqe; the ledgers say Midund. I bought bread in both names.
+Back through Shinzaa, then — a road walked twice is half as long, whatever my boots say — and on to Midund. The way crosses Khirkhaim and then Khirghen. The road finds water twice on this stretch. The road climbs some 350 metres before it thinks better of it. Midund itself — the grass haven — is a village with its face to the sea; its market is all horses and spices. The people here still say Midqe; the ledgers say Midund. I bought bread in both names.
 
-Out of Midund, then, toward Ghashathu. We forded twice; I stopped counting wet boots. Ghashathu itself — the river fort — is a village; its market is all livestock and horses. The people here still say Ghashzaa; the ledgers say Ghashathu. I bought bread in both names.
+Ghashathu lies 13 leagues on from Midund. The road finds water twice on this stretch. Ghashathu itself — the river fort — is a village; its market is all livestock and horses. The people here still say Ghashzaa; the ledgers say Ghashathu. I bought bread in both names.
 
-Out of Ghashathu, then, toward Fjanqe, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Fjanqe itself — the field home — is a city; its market is all livestock and grain. The people here still say Fjangry; the ledgers say Fjanqe. I bought bread in both names.
+From Ghashathu the road runs 11 leagues to Fjanqe, through grass as high as the stirrup. The road finds water twice on this stretch. Fjanqe itself — the field home — is a city; its market is all livestock and grain. The people here still say Fjangry; the ledgers say Fjanqe. I bought bread in both names.
 
-From Fjanqe the road runs 10 leagues to Hrashu. The road finds water twice on this stretch. The road climbs some 600 metres before it thinks better of it. Hrashu itself — the river fort — is a village with its face to the sea; its market is all livestock and stone. The people here still say Hrathu; the ledgers say Hrashu. I bought bread in both names.
+Out of Fjanqe, then, toward Hrashu, the country unchanged. The road finds water twice on this stretch. The road climbs some 600 metres before it thinks better of it. Hrashu itself — the river fort — is a village with its face to the sea; its market is all livestock and stone. The people here still say Hrathu; the ledgers say Hrashu. I bought bread in both names.
 
-I went back down my own road as far as Deociamor, then turned for Khirtomor. We forded once, boots held high. The road climbs some 300 metres before it thinks better of it. Khirtomor itself — the sea fort — is a village with its face to the sea; its market is all livestock and fish. The people here still say Khirkai; the ledgers say Khirtomor. I bought bread in both names.
+Back through Deociamor, then — a road walked twice is half as long, whatever my boots say — and on to Khirtomor. We forded once, boots held high. The road climbs some 300 metres before it thinks better of it. Khirtomor itself — the sea fort — is a village with its face to the sea; its market is all livestock and fish. The people here still say Khirkai; the ledgers say Khirtomor. I bought bread in both names.
 
-I went back down my own road as far as Deociamor, then turned for Hrademor. We forded twice; I stopped counting wet boots. Hrademor itself — the river home — is a village; its market is all grain and livestock. The people here still say Hragrull; the ledgers say Hrademor. I bought bread in both names.
+I went back down my own road as far as Deociamor, then turned for Hrademor. The road finds water twice on this stretch. Hrademor itself — the river home — is a village; its market is all grain and livestock. The people here still say Hragrull; the ledgers say Hrademor. I bought bread in both names.
 
 *Of Khirlamor and Midciamor and Deotomor and Ghashciamor and Knyrkashu and Khirciamor I say nothing, for no road goes there; they keep to their water, and perhaps they are right to.*
 

@@ -90,23 +90,36 @@ export function generateSagas(
     const lines           = [];
 
     // I. Arrival.
+    const crossing = CROSSING[cultureId] ?? "the wide world";
     lines.push(
-      rng.bool()
-        ? `First came the ${epithet} folk over ${CROSSING[cultureId] ?? "the wide world"},`
-        : `Out of ${CROSSING[cultureId] ?? "the wide world"} came the ${epithet} folk,`,
+      rng.pick([
+        `First came the ${epithet} folk over ${crossing},`,
+        `Out of ${crossing} came the ${epithet} folk,`,
+        `Long the ${epithet} folk wandered ${crossing},`,
+        `It was hunger drove the ${epithet} folk across ${crossing},`,
+      ]),
     );
     lines.push(
       heartland.coastal
-        ? `and the shore they found they would not leave.`
-        : `and the land they found they would not leave.`,
+        ? rng.pick([
+            `and the shore they found they would not leave.`,
+            `and where the water ended, so did the wandering.`,
+          ])
+        : rng.pick([
+            `and the land they found they would not leave.`,
+            `and here the road wore out before the people did.`,
+          ]),
     );
 
     // II. Naming the land — the lexicon speaks in its own voice.
     lines.push(`${heartland.name} they named it — ${glossPhrase(heartland.gloss)} —`);
     lines.push(
-      rng.bool()
-        ? `for they were a people who named things truly.`
-        : `and the name has outlived every wall they raised.`,
+      rng.pick([
+        `for they were a people who named things truly.`,
+        `and the name has outlived every wall they raised.`,
+        `and no one has improved on it since.`,
+        `a name that fit the land like weather.`,
+      ]),
     );
 
     // III. The first city. A founding saga keeps the name the founders gave —
@@ -119,8 +132,14 @@ export function generateSagas(
       lines.push(`${firstName} they built first, ${glossPhrase(firstGloss)},`);
       lines.push(
         firstCity.isPort
-          ? `its harbour open like a hand.`
-          : `its walls set square against the weather.`,
+          ? rng.pick([
+              `its harbour open like a hand.`,
+              `its quays the first words of a long argument with the sea.`,
+            ])
+          : rng.pick([
+              `its walls set square against the weather.`,
+              `its well dug before its walls, as wise folk build.`,
+            ]),
       );
       if (original) {
         lines.push(`(The maps write it ${firstCity.name} now. The saga does not.)`);
@@ -146,7 +165,13 @@ export function generateSagas(
     lines.push(
       `In their tongue, ${lex.roots[taught[0]]} is ${taught[0]} and ${lex.roots[taught[1]]} is ${taught[1]};`,
     );
-    lines.push(`so read their map: every name a small song.`);
+    lines.push(
+      rng.pick([
+        `so read their map: every name a small song.`,
+        `learn those two words and their map opens like a door.`,
+        `their map is a psalter, if you can read it.`,
+      ]),
+    );
 
     // VI. The fate of their greatest realm — the simulation has the last word.
     if (realm) {

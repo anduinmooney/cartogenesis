@@ -106,7 +106,14 @@ export function generateJourney(input              , cfg                  )     
   const capRegion = regions.regions.find((r) => r.id === capital?.regionId);
   const lang = languageById(capRegion?.languageId ?? "meridian");
   const traveller = composeName(lang, new Rng(`${cfg.seed}:traveller`), { kind: "person" });
-  const persona = rng.pick(["a dealer in wool and salt", "a mapmaker's apprentice", "a pilgrim of no great piety"]);
+  const persona = rng.pick([
+    "a dealer in wool and salt",
+    "a mapmaker's apprentice",
+    "a pilgrim of no great piety",
+    "a collector of road-tolls, lately retired from collecting them",
+    "a buyer of horses and rumours",
+    "a scribe whose physician prescribed walking",
+  ]);
 
   if (!capital || roads.edges.length === 0) {
     return {
@@ -222,13 +229,21 @@ export function generateJourney(input              , cfg                  )     
     lastBiome = f.dominantBiome;
 
     if (backtrackFrom) {
-      bits.push(`I went back down my own road as far as ${from.name}, then turned for ${to.name}.`);
+      bits.push(
+        pick([
+          `I went back down my own road as far as ${from.name}, then turned for ${to.name}.`,
+          `There was nothing for it but to retrace my steps to ${from.name} and strike out for ${to.name}.`,
+          `Back through ${from.name}, then — a road walked twice is half as long, whatever my boots say — and on to ${to.name}.`,
+        ]),
+      );
     } else {
       bits.push(
         pick([
           `From ${from.name} the road runs ${leagues} league${leagues === 1 ? "" : "s"} to ${to.name}`,
           `${to.name} lies ${leagues} league${leagues === 1 ? "" : "s"} on from ${from.name}`,
           `Out of ${from.name}, then, toward ${to.name}`,
+          `Two days' walking took me from ${from.name} to ${to.name}`,
+          `The ${to.name} road leaves ${from.name} by the ${leagues > 15 ? "long" : "short"} way`,
         ]) + underfoot + ".",
       );
     }
@@ -340,6 +355,8 @@ export function generateJourney(input              , cfg                  )     
     pick([
       `I came home by the same roads, which were somehow longer in that direction. ${traveller.name}, ${year}.`,
       `My boots did not survive the year. The account did. ${traveller.name}, ${year}.`,
+      `I do not say I saw everything; I say I walked past it. ${traveller.name}, ${year}.`,
+      `Whoever walks these roads after me: the fords are colder than they look. ${traveller.name}, ${year}.`,
     ]),
   );
 

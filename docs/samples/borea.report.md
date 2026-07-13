@@ -282,39 +282,39 @@ Followed across 10 region(s).
 
 ### The Saga of Mishmaad (Kesh (desert))
 
-> First came the desert folk over the singing sands,
-> and the shore they found they would not leave.
+> Out of the singing sands came the desert folk,
+> and where the water ended, so did the wandering.
 > Mairkhaim they named it — the mountain stone —
 > and the name has outlived every wall they raised.
 > Ghashzaa they built first, the river bridge,
 > its walls set square against the weather.
 > Over it they set Vaghimsaid, the sun blood,
 > whose dominion is the harvest;
-> and the Faith of Vaghimsaid keeps that fire yet.
+> and the Faith of Vaghimsaid remembers.
 > In their tongue, maad is king and sagha is star;
-> so read their map: every name a small song.
+> learn those two words and their map opens like a door.
 > Mishmaad endures, lesser than its songs —
 > as all things are, that last long enough to be sung of.
 
 ### The Saga of Knauskaskei (Auld (northern))
 
-> First came the northern folk over the grey water,
+> Out of the grey water came the northern folk,
 > and the land they found they would not leave.
 > Bragra they named it — the mountain thorn —
-> for they were a people who named things truly.
+> and the name has outlived every wall they raised.
 > Vongry they built first, the green market,
 > its harbour open like a hand.
 > Over it they set Vathostvoll, the dawn storm,
 > whose dominion is the hearth;
 > and the Way of Vathostvoll remembers.
-> In their tongue, fjysk is home and fjull is star;
-> so read their map: every name a small song.
+> In their tongue, thygr is fire and fjull is star;
+> learn those two words and their map opens like a door.
 > And of Knauskaskei the singers still sing,
 > for its banners stand as high as ever they did.
 
 ### The Saga of Tariadente (Meridian (southern))
 
-> First came the southern folk over the warm sea,
+> Long the southern folk wandered the warm sea,
 > and the land they found they would not leave.
 > Mantecaria they named it — the white land —
 > and the name has outlived every wall they raised.
@@ -322,9 +322,9 @@ Followed across 10 region(s).
 > its harbour open like a hand.
 > Over it they set Varondomomor, the sun storm,
 > whose dominion is the sea;
-> and the Faith of Varondomomor keeps that fire yet.
-> In their tongue, comor is fire and na is king;
-> so read their map: every name a small song.
+> and the Faith of Varondomomor remembers.
+> In their tongue, demor is home and deo is sea;
+> learn those two words and their map opens like a door.
 > And of Tariadente the singers still sing,
 > for its banners stand as high as ever they did.
 
@@ -598,33 +598,33 @@ About the year 1075, whatever Knauskaskei intended for Fjeiskba, Mantemeonte had
 
 ## A Traveller's Account, in the year 1100
 
-*I, Tariai, a dealer in wool and salt, set out from Niantetomor in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
+*I, Tariai, a mapmaker's apprentice, set out from Niantetomor in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
 
-Out of Niantetomor, then, toward Gratomor, under green galleries. We forded twice; I stopped counting wet boots. The road climbs some 300 metres before it thinks better of it. Gratomor itself — the thorn fort — is a town with its face to the sea; its market is all wine and grain. The people here still say Grathu; the ledgers say Gratomor. I bought bread in both names.
+The Gratomor road leaves Niantetomor by the short way, under green galleries. We forded twice; I stopped counting wet boots. The road climbs some 300 metres before it thinks better of it. Gratomor itself — the thorn fort — is a town with its face to the sea; its market is all wine and grain. The people here still say Grathu; the ledgers say Gratomor. I bought bread in both names.
 
-From Gratomor the road runs 16 leagues to Grabust, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Grabust itself — the thorn gate — is a town; its market is all livestock and grain.
+Grabust lies 16 leagues on from Gratomor, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Grabust itself — the thorn gate — is a town; its market is all livestock and grain.
 
-Knyrkafjysk lies 17 leagues on from Grabust, through more of the same. The road finds water twice on this stretch. The road climbs some 400 metres before it thinks better of it. Knyrkafjysk itself — the wild home — is a village with its face to the sea; its market is all livestock and horses.
+Out of Grabust, then, toward Knyrkafjysk, through more of the same. The road finds water twice on this stretch. The road climbs some 400 metres before it thinks better of it. Knyrkafjysk itself — the wild home — is a village with its face to the sea; its market is all livestock and horses.
 
-I went back down my own road as far as Niantetomor, then turned for Variadinte. The road finds water twice on this stretch. Variadinte itself — the wild spring — is a village; its market is all livestock and wine.
+There was nothing for it but to retrace my steps to Niantetomor and strike out for Variadinte. The road finds water twice on this stretch. Variadinte itself — the wild spring — is a village; its market is all livestock and wine.
 
-Ghashdemor lies 12 leagues on from Variadinte. The road finds water twice on this stretch. The road climbs some 850 metres before it thinks better of it. Ghashdemor itself — the river home — is a village; its market is all livestock and coal. The people here still say Ghashkai; the ledgers say Ghashdemor. I bought bread in both names.
+The Ghashdemor road leaves Variadinte by the short way, through more of the same. We forded twice; I stopped counting wet boots. The road climbs some 850 metres before it thinks better of it. Ghashdemor itself — the river home — is a village; its market is all livestock and coal. The people here still say Ghashkai; the ledgers say Ghashdemor. I bought bread in both names.
 
 From Ghashdemor the road runs 30 leagues to Ghashtomor, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Ghashtomor itself — the river fort — is a village; its market is all livestock and stone. The people here still say Ghashakhukha; the ledgers say Ghashtomor. I bought bread in both names.
 
-From Ghashtomor the road runs 11 leagues to Bellapana, through more of the same. The way crosses Deolaria. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Bellapana itself — the river field — is a village; its market is all livestock and grain.
+The Bellapana road leaves Ghashtomor by the short way, the country unchanged. The way crosses Deolaria. We forded twice; I stopped counting wet boots. The road climbs some 300 metres before it thinks better of it. Bellapana itself — the river field — is a village; its market is all livestock and grain.
 
-Peonaliria lies 12 leagues on from Bellapana, through grass as high as the stirrup. There is one ford, cold but honest. Peonaliria itself — the grass haven — is a town with its face to the sea; its market is all grain and fish.
+The Peonaliria road leaves Bellapana by the short way, through grass as high as the stirrup. We forded once, boots held high. Peonaliria itself — the grass haven — is a town with its face to the sea; its market is all grain and fish.
 
-From Peonaliria the road runs 15 leagues to Bellaliria, the country unchanged. We forded once, boots held high. The road climbs some 350 metres before it thinks better of it. Bellaliria itself — the river haven — is a town with its face to the sea; its market is all grain and livestock.
+Out of Peonaliria, then, toward Bellaliria, the country unchanged. We forded once, boots held high. The road climbs some 350 metres before it thinks better of it. Bellaliria itself — the river haven — is a town with its face to the sea; its market is all grain and livestock.
 
-Stagrathu lies 20 leagues on from Bellaliria, under green galleries. The way crosses Fjeiskba. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Stagrathu itself — the sea fort — is a town with its face to the sea; its market is all livestock and grain.
+Two days' walking took me from Bellaliria to Stagrathu, under green galleries. The way crosses Fjeiskba. We forded twice; I stopped counting wet boots. The road climbs some 300 metres before it thinks better of it. Stagrathu itself — the sea fort — is a town with its face to the sea; its market is all livestock and grain.
 
-From Stagrathu the road runs 22 leagues to Stagrafjan, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. The road climbs some 350 metres before it thinks better of it. Stagrafjan itself — the sea field — is a village with its face to the sea; its market is all livestock and grain.
+From Stagrathu the road runs 22 leagues to Stagrafjan, through grass as high as the stirrup. The road finds water twice on this stretch. The road climbs some 350 metres before it thinks better of it. Stagrafjan itself — the sea field — is a village with its face to the sea; its market is all livestock and grain.
 
-Out of Stagrafjan, then, toward Niantehro. We forded twice; I stopped counting wet boots. The road climbs some 400 metres before it thinks better of it. Niantehro itself — the green hall — is a village with its face to the sea; its market is all livestock and fish. The people here still say Niantepana; the ledgers say Niantehro. I bought bread in both names.
+From Stagrafjan the road runs 14 leagues to Niantehro. We forded twice; I stopped counting wet boots. The road climbs some 400 metres before it thinks better of it. Niantehro itself — the green hall — is a village with its face to the sea; its market is all livestock and fish. The people here still say Niantepana; the ledgers say Niantehro. I bought bread in both names.
 
-Out of Niantehro, then, toward Midciamor, through more of the same. The road finds water twice on this stretch. The road climbs some 550 metres before it thinks better of it. Midciamor itself — the grass gate — is a village with its face to the sea; its market is all livestock and spices. The people here still say Midzaa; the ledgers say Midciamor. I bought bread in both names.
+Two days' walking took me from Niantehro to Midciamor. We forded twice; I stopped counting wet boots. The road climbs some 550 metres before it thinks better of it. Midciamor itself — the grass gate — is a village with its face to the sea; its market is all livestock and spices. The people here still say Midzaa; the ledgers say Midciamor. I bought bread in both names.
 
 *Of Vongry and Ghashzaa and Stagrba and Midshu and Bellaba I say nothing, for no road goes there; they keep to their water, and perhaps they are right to.*
 
