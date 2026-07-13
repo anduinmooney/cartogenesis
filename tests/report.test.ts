@@ -23,6 +23,20 @@ test("world report is deterministic and contains the key sections", () => {
   assert.ok(a.includes(String(w.meta.seed)));
 });
 
+test("report presents the calendar in the world's own terms, never 'the reckoning'", () => {
+  const w = generateWorld({ seed: "dossier", width: 140, height: 140 });
+  const md = worldReportMarkdown(w);
+  assert.ok(md.includes("**The calendar:**"), "calendar line missing");
+  assert.ok(
+    md.includes(`year 0 is **${w.history.calendar.origin.title}**`),
+    "calendar line does not name the origin",
+  );
+  assert.ok(md.includes(w.history.epoch), "calendar line does not use the era phrase");
+  // "The reckoning" read like the NAME of a year system (a leftover of the old
+  // single 'After Reckoning' era) — the calendar must speak per-world terms.
+  assert.ok(!/reckoning/i.test(md), "the word 'reckoning' survives in the gazetteer");
+});
+
 test("report references the capital and a real region name", () => {
   const w = generateWorld({ seed: "gazette", width: 160, height: 160 });
   const md = worldReportMarkdown(w);
