@@ -7,11 +7,11 @@
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 63.8% land, 36.2% ocean, 2 lake(s)
 - **Climate & life:** dominant biome **Grassland**, 16 biomes in all
-- **Peoples:** 29 regions, 26 settlements, 4 realms
+- **Peoples:** 29 regions, 26 settlements
 - **Capital:** Deoliria, seat of House Belentaria
-- **Dominant power:** Vynthon (of 4 surviving realm(s))
+- **Realms:** 12 rose over the simulated centuries; 4 stand in the present year, Vynthon the greatest among them
 - **The present year:** 1100 A.C. — 1100 years after the Crowning
-- **The reckoning:** years are counted from **The First Crowning** (year 0); dates wear `A.C.`
+- **The calendar:** year 0 is **The First Crowning**; every date in this book is counted after the Crowning and wears `A.C.`
 - **Highest peak:** 4,500 m · **volcanoes:** 6 (1 active)
 
 ## Volcanoes

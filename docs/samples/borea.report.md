@@ -7,11 +7,11 @@
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 59.9% land, 40.1% ocean, 1 lake(s)
 - **Climate & life:** dominant biome **Grassland**, 17 biomes in all
-- **Peoples:** 28 regions, 24 settlements, 4 realms
+- **Peoples:** 28 regions, 24 settlements
 - **Capital:** Niantetomor, seat of House Caumeonte
-- **Dominant power:** Knauskaskei (of 6 surviving realm(s))
+- **Realms:** 26 rose over the simulated centuries; 6 stand in the present year, Knauskaskei the greatest among them
 - **The present year:** 1100 A.L. — 1100 years after the Landing
-- **The reckoning:** years are counted from **The Landing** (year 0); dates wear `A.L.`
+- **The calendar:** year 0 is **The Landing**; every date in this book is counted after the Landing and wears `A.L.`
 - **Highest peak:** 4,500 m · **volcanoes:** 6 (2 active)
 
 ## Volcanoes

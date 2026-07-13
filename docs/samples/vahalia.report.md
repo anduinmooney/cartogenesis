@@ -7,11 +7,11 @@
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 56.8% land, 43.1% ocean, 7 lake(s)
 - **Climate & life:** dominant biome **Savanna**, 17 biomes in all
-- **Peoples:** 31 regions, 23 settlements, 3 realms
+- **Peoples:** 31 regions, 23 settlements
 - **Capital:** Deociamor, seat of House Variatindo
-- **Dominant power:** Kheqshaa (of 5 surviving realm(s))
+- **Realms:** 21 rose over the simulated centuries; 5 stand in the present year, Kheqshaa the greatest among them
 - **The present year:** 1100 A.L. — 1100 years after the Landing
-- **The reckoning:** years are counted from **The Landing** (year 0); dates wear `A.L.`
+- **The calendar:** year 0 is **The Landing**; every date in this book is counted after the Landing and wears `A.L.`
 - **Highest peak:** 4,500 m · **volcanoes:** 6 (4 active)
 
 ## Volcanoes

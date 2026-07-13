@@ -427,7 +427,10 @@ export function generateWorld(config             )        {
     settlementCount: settlements.settlements.length,
     capital: capital?.name ?? "—",
     roadLength: roadsNow.length,
-    realmCount: history.realms.length,
+    // Realms that ever rose in the simulated centuries — NOT the written
+    // history's founding realms, which once sat here and made the stats read
+    // "Realms 3" beside "Surviving realms 13".
+    realmCount: simulation.realms.length,
     eventCount: history.events.length,
     presentYear: simulation.endYear,
     capitalHouse: lore.capitalHouse,

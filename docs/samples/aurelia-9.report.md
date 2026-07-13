@@ -7,11 +7,11 @@
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 33.8% land, 66.2% ocean, 1 lake(s)
 - **Climate & life:** dominant biome **Savanna**, 16 biomes in all
-- **Peoples:** 19 regions, 13 settlements, 2 realms
+- **Peoples:** 19 regions, 13 settlements
 - **Capital:** Vonthu, seat of House Breistagra
-- **Dominant power:** Steirkafjysk (of 4 surviving realm(s))
+- **Realms:** 14 rose over the simulated centuries; 4 stand in the present year, Steirkafjysk the greatest among them
 - **The present year:** 1100 A.T. — 1100 years after the Thaw
-- **The reckoning:** years are counted from **The Long Winter** (year 0); dates wear `A.T.`
+- **The calendar:** year 0 is **The Long Winter**; every date in this book is counted after the Thaw and wears `A.T.`
 - **Highest peak:** 4,500 m · **volcanoes:** 3 (1 active)
 
 ## Volcanoes

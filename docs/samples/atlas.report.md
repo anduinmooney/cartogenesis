@@ -7,11 +7,11 @@
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 41.7% land, 58.3% ocean, 1 lake(s)
 - **Climate & life:** dominant biome **Savanna**, 15 biomes in all
-- **Peoples:** 26 regions, 17 settlements, 3 realms
+- **Peoples:** 26 regions, 17 settlements
 - **Capital:** Deoliria, seat of House Niantetindo
-- **Dominant power:** Rauriacaria (of 4 surviving realm(s))
+- **Realms:** 14 rose over the simulated centuries; 4 stand in the present year, Rauriacaria the greatest among them
 - **The present year:** 1100 A.B. — 1100 years after the Burning
-- **The reckoning:** years are counted from **The Great Burning of Mount Thathobry** (year 0); dates wear `A.B.`
+- **The calendar:** year 0 is **The Great Burning of Mount Thathobry**; every date in this book is counted after the Burning and wears `A.B.`
 - **Highest peak:** 4,490 m · **volcanoes:** 3 (2 active)
 
 ## Volcanoes

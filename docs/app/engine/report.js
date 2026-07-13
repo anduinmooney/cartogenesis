@@ -49,17 +49,17 @@ export function worldReportMarkdown(world       )         {
     `- **Climate & life:** dominant biome **${m.dominantBiome}**, ${m.biomeDiversity} biomes in all`,
   );
   lines.push(
-    `- **Peoples:** ${m.regionCount} regions, ${m.settlementCount} settlements, ` +
-      `${m.realmCount} realms`,
+    `- **Peoples:** ${m.regionCount} regions, ${m.settlementCount} settlements`,
   );
   lines.push(`- **Capital:** ${m.capital}, seat of House ${m.capitalHouse}`);
   lines.push(
-    `- **Dominant power:** ${m.dominantPower} (of ${m.survivingRealms} surviving realm(s))`,
+    `- **Realms:** ${m.realmCount} rose over the simulated centuries; ` +
+      `${m.survivingRealms} stand in the present year, ${m.dominantPower} the greatest among them`,
   );
   lines.push(`- **The present year:** ${m.presentYear} ${h.calendar.suffix} — ${m.presentYear} years ${h.epoch}`);
   lines.push(
-    `- **The reckoning:** years are counted from **${h.calendar.origin.title}** ` +
-      `(year 0); dates wear \`${h.calendar.suffix}\``,
+    `- **The calendar:** year 0 is **${h.calendar.origin.title}**; ` +
+      `every date in this book is counted ${h.epoch} and wears \`${h.calendar.suffix}\``,
   );
   lines.push(
     `- **Highest peak:** ${m.highestPeakMetres.toLocaleString()} m · ` +

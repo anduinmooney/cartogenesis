@@ -7,11 +7,11 @@
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 46.7% land, 53.3% ocean, 1 lake(s)
 - **Climate & life:** dominant biome **Grassland**, 17 biomes in all
-- **Peoples:** 28 regions, 19 settlements, 3 realms
+- **Peoples:** 28 regions, 19 settlements
 - **Capital:** Deoliria, seat of House Belentaria
-- **Dominant power:** Steirkastall (of 4 surviving realm(s))
+- **Realms:** 13 rose over the simulated centuries; 4 stand in the present year, Steirkastall the greatest among them
 - **The present year:** 1100 A.C. — 1100 years after the Crowning
-- **The reckoning:** years are counted from **The First Crowning** (year 0); dates wear `A.C.`
+- **The calendar:** year 0 is **The First Crowning**; every date in this book is counted after the Crowning and wears `A.C.`
 - **Highest peak:** 4,500 m · **volcanoes:** 4 (1 active)
 
 ## Volcanoes

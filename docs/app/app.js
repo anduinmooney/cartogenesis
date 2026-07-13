@@ -17,7 +17,8 @@ import { glossPhrase, glossary } from "./engine/language.js";
 import { languageById } from "./engine/names.js";
 import { worldReportMarkdown } from "./engine/report.js";
 import { worldPosterSVG } from "./engine/svgmap.js";
-import { pickContourInterval, renderRegions } from "./engine/render.js";
+import { pickContourInterval, renderRegions, regionColor } from "./engine/render.js";
+                                                      
 import {
   containsPlace,
   placePattern,
@@ -189,6 +190,178 @@ let highlight                                                 = null;
  *  event" lands on something visible even in townless countryside. */
 let eventPin                                                              = null;
 
+// --- Layer-scoped story markers ---------------------------------------------
+// Each layer tab curates its own marker set, so the world's story is on the
+// map without one cluttered view: the physical tabs carry the named features
+// and volcanoes; Political carries region names and the ruins history left;
+// Powers carries realm names that follow the time scrubber, plus each era's
+// events as they happen; Faiths writes each faith's name on its own ground.
+
+/** Tabs whose furniture is the land itself (features + volcanoes). */
+const PHYSICAL_LAYERS = new Set([
+  "terrain",
+  "topographic",
+  "biome",
+  "height",
+  "temperature",
+  "moisture",
+]);
+
+                       
+            
+            
+               
+                
+                                                        
+                   
+                                                                   
+                  
+ 
+let faithMarkers                = [];
+
+                      
+            
+            
+               
+               
+ 
+let ruinMarkers               = [];
+
+                       
+            
+            
+               
+                
+                                                       
+                
+ 
+/** Realm label positions per shown year (control maps differ per snapshot). */
+const realmMarkerCache = new Map                       ();
+
+/** Lighten an engine RGB so it reads as label ink on the dark-bordered map. */
+function inkOf(c                              )         {
+  const l = (v        ) => Math.round(v + (255 - v) * 0.45);
+  return `rgb(${l(c[0])},${l(c[1])},${l(c[2])})`;
+}
+
+/** Rebuilt on every generate: faith homes/cradles and present-day ruins. */
+function buildStoryMarkers(world       )       {
+  realmMarkerCache.clear();
+  const regs = world.regions.regions;
+  const regById = new Map(regs.map((r) => [r.id, r]));
+
+  faithMarkers = [];
+  for (const f of world.religion.faiths) {
+    const color = inkOf(FAITH_PALETTE[f.id % FAITH_PALETTE.length]);
+    const held = regs
+      .filter((r) => world.religion.regionFaith[r.id] === f.id)
+      .sort((a, b) => b.area - a.area);
+    const home = held[0];
+    const origin = regById.get(f.originRegionId);
+    if (home) {
+      faithMarkers.push({
+        x: home.cx,
+        y: home.cy,
+        name: f.name,
+        color,
+        primary: true,
+        cradle: home.id === f.originRegionId,
+      });
+    }
+    if (origin && origin.id !== home?.id) {
+      faithMarkers.push({
+        x: origin.cx,
+        y: origin.cy,
+        name: f.name,
+        color,
+        primary: false,
+        cradle: true,
+      });
+    }
+  }
+
+  ruinMarkers = world.simulation.settlementTimeline
+    .filter((t) => t.fellYear !== undefined)
+    .map((t) => ({ x: t.x, y: t.y, name: t.name, fate: t.fate ?? "fell" }));
+}
+
+/** Realm name anchors for a control map: the label sits on the centroid of the
+ *  controlled region nearest the realm's weighted centre — always on own soil,
+ *  drifting with the borders as the timeline plays. */
+function realmMarkersFor(world       , control                        )                {
+  const regs = world.regions.regions;
+  const acc = new Map                                                                      ();
+  let totalLand = 0;
+  for (const r of regs) {
+    totalLand += r.area;
+    const owner = control[r.id];
+    if (owner === undefined || owner < 0) continue;
+    let e = acc.get(owner);
+    if (!e) acc.set(owner, (e = { ax: 0, ay: 0, area: 0, held: [] }));
+    e.ax += r.cx * r.area;
+    e.ay += r.cy * r.area;
+    e.area += r.area;
+    e.held.push(r);
+  }
+  const byId = new Map(world.simulation.realms.map((r) => [r.id, r]));
+  const out                = [];
+  for (const [id, e] of acc) {
+    const realm = byId.get(id);
+    if (!realm || e.area === 0) continue;
+    const mx = e.ax / e.area;
+    const my = e.ay / e.area;
+    let best = e.held[0];
+    let bestD = Infinity;
+    for (const r of e.held) {
+      const dd = (r.cx - mx) * (r.cx - mx) + (r.cy - my) * (r.cy - my);
+      if (dd < bestD) {
+        bestD = dd;
+        best = r;
+      }
+    }
+    out.push({
+      x: best.cx,
+      y: best.cy,
+      name: realm.name,
+      color: inkOf(regionColor(id * 3 + 1)), // same hue the powers map fills with
+      share: e.area / Math.max(1, totalLand),
+    });
+  }
+  return out;
+}
+
+/** Realm labels for the year the Powers map is showing, cached per year. */
+function realmMarkersAt(world       , year        )                {
+  const hit = realmMarkerCache.get(year);
+  if (hit) return hit;
+  const snap = world.simulation.snapshots.find((s) => s.year === year);
+  const control = snap ? snap.control : world.simulation.finalControl;
+  const built = realmMarkersFor(world, control);
+  realmMarkerCache.set(year, built);
+  return built;
+}
+
+/** The glyph and colour an event wears on the Powers map. */
+function eventGlyph(type        )                                   {
+  switch (type) {
+    case "conquest":
+    case "repulsed":
+      return { glyph: "⚔", color: "#ff7a6a" };
+    case "revolt":
+    case "secession":
+    case "fall":
+      return { glyph: "⚑", color: "#ffab4a" };
+    case "plague":
+      return { glyph: "☠", color: "#b6de8a" };
+    case "famine":
+      return { glyph: "⊘", color: "#e8c95a" };
+    case "ruin":
+      return { glyph: "✕", color: "#c3c9d1" };
+    default: // founding, goldenage, conversion — the good news
+      return { glyph: "✦", color: "#ffd96e" };
+  }
+}
+
 function redraw()       {
   if (!current) return;
   clampView();
@@ -241,32 +414,107 @@ function drawOverlays()       {
   const inBounds = (sx        , sy        ) =>
     sx > -80 && sy > -20 && sx < canvas.width + 80 && sy < canvas.height + 20;
 
-  // Named features — always visible so they're findable.
-  const ffont = Math.round(12 * d);
-  for (const f of current.history.features) {
-    const sx = f.x * view.scale + view.ox;
-    const sy = f.y * view.scale + view.oy;
-    if (!inBounds(sx, sy)) continue;
-    const glyph = f.kind === "peak" ? "▲" : f.kind === "lake" ? "◆" : "≈";
-    const prefix = f.kind === "peak" ? "Mt. " : f.kind === "lake" ? "Lake " : "R. ";
-    // Marker
-    ctx.fillStyle = "#eafcff";
-    ctx.strokeStyle = "rgba(8,10,14,0.92)";
-    ctx.lineWidth = 2;
-    drawLabel(sx, sy, glyph, "#eafcff", ffont);
-    drawLabel(sx, sy - ffont * 1.15, prefix + f.name, "#eafcff", Math.round(ffont * 0.92));
+  const fitScaleNow = canvas.width / current.elevation.width;
+  const zoom = view.scale / fitScaleNow;
+
+  // Named features and volcanoes — the physical tabs' furniture. The thematic
+  // tabs (political / powers / faiths / resources) drop them so their own
+  // story markers have the map to themselves.
+  if (PHYSICAL_LAYERS.has(activeLayer)) {
+    const ffont = Math.round(12 * d);
+    for (const f of current.history.features) {
+      const sx = f.x * view.scale + view.ox;
+      const sy = f.y * view.scale + view.oy;
+      if (!inBounds(sx, sy)) continue;
+      const glyph = f.kind === "peak" ? "▲" : f.kind === "lake" ? "◆" : "≈";
+      const prefix = f.kind === "peak" ? "Mt. " : f.kind === "lake" ? "Lake " : "R. ";
+      drawLabel(sx, sy, glyph, "#eafcff", ffont);
+      drawLabel(sx, sy - ffont * 1.15, prefix + f.name, "#eafcff", Math.round(ffont * 0.92));
+    }
+    const vfont = Math.round(12 * d);
+    for (const v of current.volcanoes) {
+      const sx = v.x * view.scale + view.ox;
+      const sy = v.y * view.scale + view.oy;
+      if (!inBounds(sx, sy)) continue;
+      const color =
+        v.status === "active" ? "#ff6a3d" : v.status === "dormant" ? "#ffb347" : "#c8ccd2";
+      drawLabel(sx, sy, "▲", color, vfont);
+      drawLabel(sx, sy - vfont * 1.15, `Mt. ${v.name}`, color, Math.round(vfont * 0.9));
+    }
   }
 
-  // Volcanoes — a triangle coloured by status, always visible.
-  const vfont = Math.round(12 * d);
-  for (const v of current.volcanoes) {
-    const sx = v.x * view.scale + view.ox;
-    const sy = v.y * view.scale + view.oy;
-    if (!inBounds(sx, sy)) continue;
-    const color =
-      v.status === "active" ? "#ff6a3d" : v.status === "dormant" ? "#ffb347" : "#c8ccd2";
-    drawLabel(sx, sy, "▲", color, vfont);
-    drawLabel(sx, sy - vfont * 1.15, `Mt. ${v.name}`, color, Math.round(vfont * 0.9));
+  // Political tab: every region wears its name (small ones once you zoom),
+  // and the ruins history left behind are marked where they fell.
+  if (activeLayer === "political") {
+    const rfont = Math.round(11 * d);
+    for (const r of current.regions.regions) {
+      if (r.area * zoom * zoom < 350) continue; // tiny regions earn a label on zoom
+      const sx = r.cx * view.scale + view.ox;
+      const sy = r.cy * view.scale + view.oy;
+      if (!inBounds(sx, sy)) continue;
+      drawLabel(sx, sy, r.name, "#f2ede0", rfont);
+    }
+    const rufont = Math.round(11 * d);
+    for (const ru of ruinMarkers) {
+      const sx = ru.x * view.scale + view.ox;
+      const sy = ru.y * view.scale + view.oy;
+      if (!inBounds(sx, sy)) continue;
+      drawLabel(sx, sy, "†", "#b9bfc7", Math.round(rufont * 1.1));
+      if (zoom > 1.6) {
+        drawLabel(sx, sy - rufont * 1.2, `${ru.name} (${ru.fate})`, "#b9bfc7", Math.round(rufont * 0.85));
+      }
+    }
+  }
+
+  // Powers tab: each realm's name sits on its own territory and follows the
+  // borders as the timeline scrubs — and the era's events flare up where they
+  // happened (the same events the chronicle tells).
+  if (activeLayer === "powers") {
+    const shown = scrubYear ?? current.simulation.endYear;
+    for (const rm of realmMarkersAt(current, shown)) {
+      const sx = rm.x * view.scale + view.ox;
+      const sy = rm.y * view.scale + view.oy;
+      if (!inBounds(sx, sy)) continue;
+      const font = Math.round((11 + 7 * Math.sqrt(rm.share)) * d);
+      drawLabel(sx, sy, rm.name.toUpperCase(), rm.color, font);
+    }
+    // Events belonging to the era being shown: those since the previous
+    // snapshot. Stack same-spot glyphs sideways so none hide.
+    const snaps = current.simulation.snapshots;
+    const idx = snaps.findIndex((s) => s.year === shown);
+    const prevYear = idx > 0 ? snaps[idx - 1].year : idx === 0 ? -Infinity : shown - 1;
+    const seen = new Map                ();
+    const efont = Math.round(13 * d);
+    for (const e of current.simulation.events) {
+      if (e.year <= prevYear || e.year > shown) continue;
+      const k = `${e.x},${e.y}`;
+      const n = seen.get(k) ?? 0;
+      seen.set(k, n + 1);
+      const sx = e.x * view.scale + view.ox + (n % 3) * 13 * d - 13 * d;
+      const sy = e.y * view.scale + view.oy + Math.floor(n / 3) * 13 * d;
+      if (!inBounds(sx, sy)) continue;
+      const { glyph, color } = eventGlyph(e.type);
+      drawLabel(sx, sy, glyph, color, efont);
+    }
+  }
+
+  // Faiths tab: the faith's name on its largest holding, and a star where it
+  // arose — so the map itself says what the legend colours mean.
+  if (activeLayer === "faiths") {
+    const ffont = Math.round(13 * d);
+    for (const fm of faithMarkers) {
+      const sx = fm.x * view.scale + view.ox;
+      const sy = fm.y * view.scale + view.oy;
+      if (!inBounds(sx, sy)) continue;
+      if (fm.primary) {
+        drawLabel(sx, sy, fm.name, fm.color, ffont);
+        if (fm.cradle) {
+          drawLabel(sx, sy + ffont * 1.1, "✦ where it arose", fm.color, Math.round(ffont * 0.75));
+        }
+      } else {
+        drawLabel(sx, sy, `✦ ${fm.name} arose here`, fm.color, Math.round(ffont * 0.8));
+      }
+    }
   }
 
   // Settlements standing in the year being shown. On other layers that's the
@@ -630,7 +878,7 @@ function renderInfo(world       )       {
     ["Volcanoes", `${m.volcanoCount} (${m.activeVolcanoes} active)`],
     ["Regions", String(m.regionCount)],
     ["Settlements", String(m.settlementCount)],
-    ["Realms", String(m.realmCount)],
+    ["Realms risen", String(m.realmCount)],
     ["Biomes", String(m.biomeDiversity)],
     ["Capital", m.capital],
     ["Ruling house", m.capitalHouse],
@@ -698,10 +946,23 @@ function updateLegend()       {
       .sort((a, b) => a - b)
       .map((b) => [BIOME_NAMES[b                            ], BIOME_COLORS[b                             ]]);
   } else if (activeLayer === "faiths") {
-    items = current.religion.faiths.map((f, i) => [
+    items = current.religion.faiths.map((f) => [
       `${f.name} — ${f.deity.domain}`,
-      FAITH_PALETTE[i % FAITH_PALETTE.length],
+      FAITH_PALETTE[f.id % FAITH_PALETTE.length],
     ]);
+  } else if (activeLayer === "powers") {
+    // The Powers map marks each era's events as the timeline scrubs.
+    const g = (glyph        , color        , label        ) =>
+      `<span class="lg"><b style="color:${color}">${glyph}</b>&nbsp;${label}</span>`;
+    el.innerHTML =
+      g("⚔", "#ff7a6a", "war") +
+      g("⚑", "#ffab4a", "revolt · fall") +
+      g("☠", "#b6de8a", "plague") +
+      g("⊘", "#e8c95a", "famine") +
+      g("✕", "#c3c9d1", "ruin") +
+      g("✦", "#ffd96e", "founding · golden age") +
+      `<span class="lg">— each era's events, as the timeline plays</span>`;
+    return;
   }
   el.innerHTML = items
     .map(
@@ -728,6 +989,7 @@ worker.onmessage = (e              ) => {
   current = world;
   layerBuffers = layers;
   ruinedIds = ruinedSettlementIds(world.simulation.settlementTimeline);
+  buildStoryMarkers(world);
   scrubYear = null;
   eventPin = null;
   renderInfo(world);
@@ -922,8 +1184,12 @@ function init()       {
       // Drop a labelled pin at the event so the fly-to lands on something
       // visible — events anchor to towns when the region has one, but a famine
       // in empty country still deserves a mark.
-      const year = li.querySelector(".yr")?.textContent?.replace(/\D+$/, "") ?? "";
-      const text = (li.textContent ?? "").replace(/^\s*\d[\d,]*\s*AR\s*/, "").trim();
+      // Strip the entry's own date prefix (the .yr span — "150 A.C." or
+      // whatever this world's suffix is) so the pin doesn't say the year twice.
+      const yr = li.querySelector(".yr")?.textContent?.trim() ?? "";
+      const year = yr.replace(/[^\d,].*$/, "");
+      let text = (li.textContent ?? "").trim();
+      if (yr && text.startsWith(yr)) text = text.slice(yr.length).trim();
       eventPin = { x, y, year: Number(year.replace(/,/g, "")) || 0, text: text.slice(0, 46) + (text.length > 46 ? "…" : "") };
       flyTo(x, y);
     }
