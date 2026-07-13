@@ -612,17 +612,36 @@ const TOPO_RAMP: Array<[number, RGB]> = [
  * (1/bands) of the land elevation range. Volcano craters read as concentric
  * rings. `bands` maps to the metre interval = maxAltitude / bands.
  */
+/**
+ * A round contour interval, in metres, sized to the world's real relief: the
+ * smallest of the standard cartographic intervals that keeps the map under
+ * ~20 bands. A 4,500 m world contours every 250 m; a low island every 50 m.
+ */
+export function pickContourInterval(peakMetres: number): number {
+  for (const interval of [25, 50, 100, 200, 250, 500, 1000]) {
+    if (peakMetres / interval <= 20) return interval;
+  }
+  return 2000;
+}
+
 export function renderContours(
   elevation: Grid,
   seaLevel: number,
-  bands = 18,
+  maxAltitudeMetres = 4500,
 ): Uint8Array {
   const { width, height, data } = elevation;
   const out = new Uint8Array(width * height * 4);
   const inv = 1 / (1 - seaLevel);
+
+  // Metre-accurate isolines: every line sits on a round elevation, and every
+  // fifth (the INDEX contour, as on a real topo sheet) is drawn heavier.
+  let peak = 0;
+  for (let i = 0; i < data.length; i++) if (data[i] > peak) peak = data[i];
+  const peakMetres = Math.max(1, (peak - seaLevel) * inv * maxAltitudeMetres);
+  const interval = pickContourInterval(peakMetres);
   const bandOf = (i: number) => {
-    const t = (data[i] - seaLevel) * inv;
-    return Math.floor(t * bands);
+    const metres = (data[i] - seaLevel) * inv * maxAltitudeMetres;
+    return Math.floor(metres / interval);
   };
 
   for (let y = 0; y < height; y++) {
@@ -635,14 +654,17 @@ export function renderContours(
         const t = (data[i] - seaLevel) * inv;
         color = ramp(TOPO_RAMP, t);
         const b = bandOf(i);
-        const rightDiff = x + 1 < width && data[i + 1] >= seaLevel && bandOf(i + 1) !== b;
-        const downDiff = y + 1 < height && data[i + width] >= seaLevel && bandOf(i + width) !== b;
-        if (rightDiff || downDiff) {
-          // Contour line — darken toward a topographic brown-black.
+        const rb = x + 1 < width && data[i + 1] >= seaLevel ? bandOf(i + 1) : b;
+        const db = y + 1 < height && data[i + width] >= seaLevel ? bandOf(i + width) : b;
+        if (rb !== b || db !== b) {
+          // The boundary this pixel draws is the higher band's lower edge.
+          const boundary = Math.max(b, rb, db);
+          const isIndex = boundary % 5 === 0;
+          const k = isIndex ? 0.22 : 0.55; // index contours heavier/darker
           color = [
-            Math.round(color[0] * 0.45),
-            Math.round(color[1] * 0.42),
-            Math.round(color[2] * 0.4),
+            Math.round(color[0] * k),
+            Math.round(color[1] * (k - 0.03)),
+            Math.round(color[2] * (k - 0.05)),
           ];
         }
       }

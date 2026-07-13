@@ -127,7 +127,7 @@ function runGenerate(opts: CliOptions): void {
   const heightPng = encodePNG(W, H, renderGrayscale(world.elevation));
 
   // Topographic contour map.
-  const topoPng = encodePNG(W, H, renderContours(world.elevation, world.meta.seaLevel));
+  const topoPng = encodePNG(W, H, renderContours(world.elevation, world.meta.seaLevel, world.meta.maxAltitudeMetres));
 
   // Real heightmap exports for 3D tools: a 16-bit grayscale PNG (Blender/
   // Unity/Godot/World Machine) and a raw little-endian 16-bit .r16.

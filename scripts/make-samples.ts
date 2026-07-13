@@ -87,7 +87,7 @@ function main(): void {
 
     const layers: Record<string, Uint8Array> = {
       map,
-      topographic: renderContours(world.elevation, world.meta.seaLevel),
+      topographic: renderContours(world.elevation, world.meta.seaLevel, world.meta.maxAltitudeMetres),
       biome,
       political,
       powers,

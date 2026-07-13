@@ -55,7 +55,7 @@ function layerPixels(world       , layer        )             {
       return px;
     }
     case "topographic":
-      return renderContours(world.elevation, world.meta.seaLevel);
+      return renderContours(world.elevation, world.meta.seaLevel, world.meta.maxAltitudeMetres);
     case "powers":
       return renderPowers(world.regions, world.simulation, world.water, world.elevation);
     case "faiths":

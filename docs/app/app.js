@@ -17,7 +17,7 @@ import { glossPhrase, glossary } from "./engine/language.js";
 import { languageById } from "./engine/names.js";
 import { worldReportMarkdown } from "./engine/report.js";
 import { worldPosterSVG } from "./engine/svgmap.js";
-import { renderRegions } from "./engine/render.js";
+import { pickContourInterval, renderRegions } from "./engine/render.js";
 import {
   containsPlace,
   placePattern,
@@ -684,6 +684,12 @@ function updateLegend()       {
   if (activeLayer === "resources") {
     const kinds = [...new Set(current.resources.deposits.map((d) => d.kind))].sort((a, b) => a - b);
     items = kinds.map((k) => [RESOURCE_NAMES[k], RESOURCE_COLORS[k]]);
+  } else if (activeLayer === "topographic") {
+    const peak = current.meta.highestPeakMetres;
+    const interval = pickContourInterval(Math.max(1, peak));
+    el.innerHTML =
+      `<span class="lg">contour interval <b>&nbsp;${interval} m</b>&nbsp;· heavier line every ${interval * 5} m · peak ${peak.toLocaleString()} m</span>`;
+    return;
   } else if (activeLayer === "biome") {
     const bset = new Set        ();
     for (let i = 0; i < current.biomes.ids.length; i++) bset.add(current.biomes.ids[i]);
