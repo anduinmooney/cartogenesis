@@ -8,6 +8,47 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 23 — 2026-07-10 — Every world its own calendar, every chronicler their own voice
+
+**Theme:** direct user feedback, twofold: "all generations look the same — the
+sentence structure is all the same, X happens, then Y" and "unique worlds would
+have their own time system, with a year-zero event that explains why people
+start counting". Both delivered.
+
+### Per-world calendars (year zero explained)
+Every world now counts its years from its own origin: a volcanic world may
+reckon from **the Great Burning of Mount Thathobry** (a real, named volcano —
+tested), a seafaring one from **the Landing**, others from the Long Winter's
+thaw, the First Crowning at the actual capital, or the Falling Star. The origin
+joins the founding legends AT year zero and says why the count began ("From
+that year the peoples of this world count their days"). Dates everywhere wear
+the world's own suffix (A.B., A.L., A.T., A.C., A.S.) — gazetteer, annals,
+legends, app scrubber and sidebar (three hardcoded "AR"s gone). Drawn on a
+private stream: all three fingerprints byte-identical.
+
+### The chronicle stops reading like a ledger
+Two structural levers plus roughly doubled banks:
+- **Voice** — each world's chronicler has a temperament drawn once per world:
+  plain, wry ("Where I have failed to keep my opinions out, the reader may
+  enjoy them"), or grave ("Nothing in these pages was free"). Voice chooses
+  the opening, the sign-off, and rare editorial asides, at most two a chapter:
+  "The reader will notice a pattern; the realms did not."
+- **Frame** — sentences vary in SHAPE: same-season events drop the time
+  connective (40%), conquests can tuck the time mid-clause, new anchors include
+  the chronicle-terse "1050:". Measured: time-led sentences fall from ~100% to
+  62%, with a test pinning the band (<80%, >30% so chronology survives).
+- **Banks** — conquest 4→8 (+3 mid-time), repulsed 3→6, ruin 4→8, all disaster
+  and upheaval banks widened, every time-phrase bank +2, all five chapter-title
+  banks 3→5. Sagas and the traveller got the same pass (arrival couplets,
+  personas 3→6, sign-offs 2→4).
+
+A colon-stutter ("…opened with trouble: X held: …") was found by reading and
+caged by test. **221 tests** (7 new). Fingerprints untouched throughout — the
+calendar and every prose change are pure overlay, and the pinned hashes prove
+it.
+
+---
+
 ## Session 22 — 2026-07-10 — The truth-telling pass: README, contours, a budget
 
 Three pieces of overdue honesty, none of which touch generation (fingerprints

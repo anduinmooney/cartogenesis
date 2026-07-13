@@ -1,14 +1,16 @@
-# Next Session — Session 23
+# Next Session — Session 24
 
 > Read `PROJECT_STATE.md` first, then this. Session 22 closed the truth-telling
 > tail: the README finally matches the project, the Topo layer contours in real
 > metres with index lines, and there is a performance budget. What remains is
-> one deliberate heavy item and polish.
+> one deliberate heavy item and polish. Session 23 added per-world calendars
+> (year-zero origins) and chronicler voices/frames per user direction — any new
+> event types or prose must join the voice/frame system and its tests.
 
 ## Start-of-session checklist
 
-1. `node --version` → ≥ 22.6. `npm test` green first (baseline: **214**).
-2. Skim `CHANGELOG.md` (top, Session 22) and `DECISIONS.md` (D-025 before
+1. `node --version` → ≥ 22.6. `npm test` green first (baseline: **221**).
+2. Skim `CHANGELOG.md` (top, Session 23) and `DECISIONS.md` (D-025 before
    narrative work).
 3. **Rebuild `build-web` LAST after any src/ edit**; new engine module →
    `MODULES`, new web helper → `WEB_MODULES`. Then `make-samples` if output
@@ -67,7 +69,7 @@ not start it without budget to finish, regenerate, and verify.
 ## Close out (do not skip)
 
 1. `build-web` + `make-samples` LAST. Note which fingerprints moved.
-2. CHANGELOG (Session 23), PROJECT_STATE, ROADMAP, DECISIONS if warranted;
+2. CHANGELOG (Session 24), PROJECT_STATE, ROADMAP, DECISIONS if warranted;
    rewrite this file.
 3. Commit per piece; push; CI green on CI's Node; verify deployed with a
    cache-busting reload.

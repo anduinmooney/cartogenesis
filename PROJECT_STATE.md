@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 22 · 2026-07-10 (Fable)
+- **As of:** Session 23 · 2026-07-10 (Fable)
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 214 tests pass (CI enforced). **Reproducible across
+- **Health:** 🟢 Green. 221 tests pass (CI enforced). **Reproducible across
   Node builds and platforms** — the engine uses only exactly-specified
   arithmetic, guarded by an exact bit-level hash (D-022 resolved, Session 16).
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
@@ -33,6 +33,12 @@
   hover any name — ruler, realm, house, faith, god, town, old town name — for a
   tooltip, anywhere it appears; click flies to it. Chronicle clicks drop a
   labelled pin at the event.
+- **Every world counts its own years.** A year-zero origin event (the Great
+  Burning of a real volcano, the Landing, the Long Winter…) explains the
+  reckoning; every date wears the world's own suffix (A.B., A.L., …).
+- **Every chronicler has a voice.** Plain, wry, or grave — one per world —
+  choosing the opening, sign-off, and rare asides; sentence FRAMES vary so the
+  telling never falls back into "[date] X did Y" (measured and test-pinned).
 - **The chronicle, told.** An in-world chronicler (L17) narrates the simulated
   centuries as real prose — named ages, realm introductions, rivalry memory,
   falls attached to their conquests — deterministic to the letter and proven
@@ -73,7 +79,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 214 passing tests, incl. exact + simulation determinism guards, an
+- 221 passing tests, incl. exact + simulation determinism guards, an
   approximated-math lint, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
@@ -107,13 +113,15 @@
 | L17b/c Sagas · traveller's account | ✅ done |
 | Entity tooltips everywhere · chronicle event pins | ✅ done |
 | Metre-accurate contours (index lines) · benchmark · honest README | ✅ done |
+| Per-world calendars (year-zero origins) | ✅ done |
+| Chronicler voices · sentence frames · widened banks | ✅ done |
 | islets merge · narrative polish · more | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 214 tests, all offline
+npm test                  # 221 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)

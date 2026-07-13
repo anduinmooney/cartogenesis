@@ -61,6 +61,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   metre-accurate contour intervals.
 - ✅ **L17b/c — Sagas & the traveller.** Verse founding-sagas per culture and a
   first-person road journey, both under the narrator's three laws (Session 21).
+- ✅ **Calendars & voices.** Per-world reckonings anchored to year-zero origin
+  events, and per-world chronicler temperaments with varied sentence frames
+  (Session 23, user direction).
 - ✅ **Truth-telling pass.** README rewritten to match the project; Topo layer
   contours in round metres with index lines; a benchmark + performance budget
   (Session 22).
