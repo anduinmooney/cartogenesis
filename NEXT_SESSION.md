@@ -1,73 +1,73 @@
-# Next Session — Session 22
+# Next Session — Session 23
 
-> Read `PROJECT_STATE.md` first, then this. Session 21 delivered sagas, the
-> traveller's account, and a user-driven legibility pass (entity tooltips
-> everywhere, chronicle event pins, calmer volcanoes). The cleanup tail remains.
+> Read `PROJECT_STATE.md` first, then this. Session 22 closed the truth-telling
+> tail: the README finally matches the project, the Topo layer contours in real
+> metres with index lines, and there is a performance budget. What remains is
+> one deliberate heavy item and polish.
 
 ## Start-of-session checklist
 
-1. `node --version` → ≥ 22.6. `npm test` green first (baseline: **211**).
-2. Skim `CHANGELOG.md` (top, Session 21) and `DECISIONS.md` (D-025 before any
+1. `node --version` → ≥ 22.6. `npm test` green first (baseline: **214**).
+2. Skim `CHANGELOG.md` (top, Session 22) and `DECISIONS.md` (D-025 before
    narrative work).
-3. **After any `src/` change, rerun `node scripts/build-web.ts` LAST** (a src
-   edit after the build cost a CI red once). New engine module → `MODULES`;
-   new `web/` helper → `WEB_MODULES`.
-4. **Preview transport:** the ext-shaped Chrome cannot reach sandbox-bound
-   localhost (ERR_CONNECTION_REFUSED; curl works). Verify content in Node;
-   verify pixels on the DEPLOYED Pages site after push — and force a fresh
-   bundle with `fetch("app.js", {cache:"reload"}); location.reload()` or you
-   will debug a stale cache (it happened; it looked exactly like a real bug).
-5. **If you touch war/revolt/plague logic**, run the ~30-seed balance check
-   (mean top-power share ~55–62%).
+3. **Rebuild `build-web` LAST after any src/ edit**; new engine module →
+   `MODULES`, new web helper → `WEB_MODULES`. Then `make-samples` if output
+   changed.
+4. **Preview transport:** ext-shaped Chrome cannot reach sandbox localhost.
+   Verify content in Node; verify pixels on the deployed Pages site — with a
+   cache-busting reload (`fetch("app.js",{cache:"reload"}); location.reload()`),
+   or a stale bundle will impersonate a bug.
+5. War/revolt/plague changes → 30-seed balance check (~55–62% mean top share).
 
 ## Invariants
 
-- Exact arithmetic (D-022): `+ - * / sqrt` only via `src/exact.ts`; lint test
-  enforces. Three fingerprints pinned (content `86c5fef6`, exact `418ddfd2`,
-  sim `15371f11`) — note which move and why.
-- Names/narrative/sagas/journey never perturb the sim (D-021/24/25): private
-  streams, out of `events`; the pinned fingerprints are the proof.
-- `CONCEPTS` append-only. Dated things derive from `meta.presentYear`. No test
-  hard-codes a simulated outcome for a seed.
-- **Sidebar lists:** linkification must run AFTER innerHTML assignment (a
-  comment in `renderInfo` marks the spot).
+- Exact arithmetic (D-022): `+ - * / sqrt` via `src/exact.ts`; lint-test
+  enforced. Fingerprints pinned: content `86c5fef6`, exact `418ddfd2`, sim
+  `15371f11` — note which move and why.
+- Prose layers never perturb the sim (D-021/24/25). `CONCEPTS` append-only.
+  Dated things derive from `meta.presentYear`. No test hard-codes a simulated
+  outcome. Sidebar linkification runs AFTER innerHTML assignment.
+- Run `node scripts/bench.ts` after heavy changes; budget in PROJECT_STATE.
 
 **Priority note:** user feedback first, always.
 
 ---
 
-# Option A — Metre-accurate contour intervals (rendering only; no fingerprints)
+# Option A — The islets merge (deliberate; moves fingerprints)
 
-`renderContours` uses a uniform interval. Choose a round metre interval
-(100/250/500) from the world's real relief; label a few isolines. Pure
-`render.ts` — safe, quick, satisfying on the Topo layer.
+Single-cell islands become their own 1-cell "regions" and clutter every
+gazetteer table. Merge sub-threshold islets (< ~12 cells): either into one
+"Scattered Isles" bucket region (flagged `scattered: true`; centroid on the
+largest islet so flyTo lands sanely) or into the nearest large region. Check
+what the region full-partition test asserts before choosing. Downstream: region
+count and names shift → settlements/sim → `simulationHash` moves (terrain
+hashes should NOT — that split is your check). Regenerate fingerprints +
+samples; 30-seed balance check; DECISIONS entry.
 
-# Option B — Cleanup: islets, a benchmark, an honest README
+# Option B — Narrative polish (small, delightful)
 
-- **Islets** (moves fingerprints — deliberate): merge sub-threshold islands
-  (< ~12 cells) into a neighbour or a "Scattered Isles" bucket region.
-- **Benchmark** (`scripts/bench.ts`): per-layer timings 256²/384²/512²; record
-  a budget in PROJECT_STATE. The narrative layers and two-pass roads add cost.
-- **README**: one honest rewrite — it predates languages, the temporal atlas,
-  exact determinism, the gazetteer, the chronicle, sagas, the traveller, and
-  the entity tooltips. It has more than earned it.
+- The traveller names crater lakes when the road passes one (facts are already
+  computed; the phrase bank just never mentions the lake's name).
+- The chronicle could close chapters with a one-line "state of the powers".
+- Saga ↔ chronicle cross-reference ("the chronicle records otherwise").
+All strictly downstream; fingerprints must not move.
 
-# Option C — Narrative polish (only if it calls to you)
+# Option C — Whatever the world suggests
 
-The traveller could notice crater lakes by name; the chronicle could
-cross-reference the traveller ("the road I walked in 1100 crosses the field of
-that battle"). Small, delightful, strictly downstream.
+The engine is complete enough that the best next feature may be visible only
+from inside a generated world. Generate three seeds, read their gazetteers end
+to end, and fix whatever reads worst. (This is how the duplicate-rename bug and
+the volcano clutter were found — reading, not planning.)
 
 ## Recommended order
 
-**B-README → A → B-rest.** The README is the project's face and is years of
-sessions out of date. Do not start a piece without budget to finish AND verify.
+**A → B**, unless C surfaces something better. A alone is a solid session; do
+not start it without budget to finish, regenerate, and verify.
 
 ## Close out (do not skip)
 
-1. `build-web` + `make-samples` (in that order, LAST). Fingerprints only move
-   for terrain/sim changes — note which.
-2. Update CHANGELOG (Session 22), PROJECT_STATE, ROADMAP, DECISIONS if
-   warranted; rewrite this file.
-3. Commit per piece; push; CI green on CI's Node; verify the deployed app with
-   a cache-busting reload.
+1. `build-web` + `make-samples` LAST. Note which fingerprints moved.
+2. CHANGELOG (Session 23), PROJECT_STATE, ROADMAP, DECISIONS if warranted;
+   rewrite this file.
+3. Commit per piece; push; CI green on CI's Node; verify deployed with a
+   cache-busting reload.

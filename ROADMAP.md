@@ -61,6 +61,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   metre-accurate contour intervals.
 - ✅ **L17b/c — Sagas & the traveller.** Verse founding-sagas per culture and a
   first-person road journey, both under the narrator's three laws (Session 21).
+- ✅ **Truth-telling pass.** README rewritten to match the project; Topo layer
+  contours in round metres with index lines; a benchmark + performance budget
+  (Session 22).
 - ✅ **A legible map.** Entity tooltips for everything referenced, chronicle
   event pins, town-anchored events, a calmer volcano field (Session 21).
 - ✅ **L17 — The chronicle, told.** A deterministic in-world narrator turns the

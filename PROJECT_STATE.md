@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 21 · 2026-07-10 (Fable)
+- **As of:** Session 22 · 2026-07-10 (Fable)
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 211 tests pass (CI enforced). **Reproducible across
+- **Health:** 🟢 Green. 214 tests pass (CI enforced). **Reproducible across
   Node builds and platforms** — the engine uses only exactly-specified
   arithmetic, guarded by an exact bit-level hash (D-022 resolved, Session 16).
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
@@ -73,7 +73,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 211 passing tests, incl. exact + simulation determinism guards, an
+- 214 passing tests, incl. exact + simulation determinism guards, an
   approximated-math lint, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
@@ -106,13 +106,14 @@
 | L17 Narrative (the chronicle, told) | ✅ done |
 | L17b/c Sagas · traveller's account | ✅ done |
 | Entity tooltips everywhere · chronicle event pins | ✅ done |
-| contour intervals · islets · benchmark · README | 🔜 the world keeps deepening |
+| Metre-accurate contours (index lines) · benchmark · honest README | ✅ done |
+| islets merge · narrative polish · more | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 211 tests, all offline
+npm test                  # 214 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)

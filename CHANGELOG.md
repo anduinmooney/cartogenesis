@@ -8,6 +8,36 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 22 — 2026-07-10 — The truth-telling pass: README, contours, a budget
+
+Three pieces of overdue honesty, none of which touch generation (fingerprints
+verified unchanged throughout).
+
+### README rewritten
+The project's face stopped at roughly Session 10: it knew nothing of languages,
+exact determinism, the in-app gazetteer, calderas, conquest-layered names, the
+chronicle, the sagas, or the traveller — and claimed "34+ tests" against 211.
+Rewritten around what the project actually is: geography, language, history,
+and the telling of it, with the browser app leading and the narrator's three
+laws and the D-022 story each given a paragraph.
+
+### Metre-accurate topographic contours
+The Topo layer's 18 uniform bands meant the interval was never a round number.
+`pickContourInterval` now chooses the smallest standard cartographic interval
+(25/50/100/200/250/500/1000 m) keeping the map under ~20 bands, and every fifth
+line is a heavier INDEX contour, as on a paper topo sheet. The app's Topo
+legend states the interval. Rendering only; samples regenerated.
+
+### A benchmark and a budget
+`scripts/bench.ts` times generation at three sizes and breaks a 384² world
+into separable stages. Baseline recorded in PROJECT_STATE: ~620 ms for the
+app-size world; erosion/roads/rivers are the heavy stages.
+
+**214 tests** (3 new). Remaining queue: the islets merge (deliberate,
+fingerprint-moving) and small narrative polish.
+
+---
+
 ## Session 21 — 2026-07-10 — Sagas, a traveller, and a legible map
 
 **Theme:** the largest session yet, in two movements — the narrative layer grew
