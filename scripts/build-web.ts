@@ -20,6 +20,7 @@ const MODULES = [
   "exact",
   "noise",
   "grid",
+  "worldtype",
   "terrain",
   "volcanoes",
   "erosion",

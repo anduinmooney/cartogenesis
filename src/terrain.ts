@@ -1,12 +1,15 @@
 // terrain.ts — Elevation generation.
 //
-// Produces a normalized [0,1] elevation Grid by combining fractal noise with
-// an optional radial "continent mask" that pulls coastlines inward so worlds
-// look like islands/continents surrounded by ocean rather than noise squares.
+// Produces a normalized [0,1] elevation Grid by combining fractal noise with a
+// continent mask. The mask now comes from a per-world ARCHETYPE (worldtype.ts)
+// — a lone continent, twin continents, an archipelago, a supercontinent, a
+// ring about an inland sea — so worlds are real geographies, not one central
+// blob. A legacy single radial island mask remains for callers that ask for it.
 
 import { Grid } from "./grid.ts";
 import { powExact } from "./exact.ts";
 import { fbm2D, ridge2D } from "./noise.ts";
+import { maskAt, edgeFalloff, type WorldType } from "./worldtype.ts";
 
 export interface TerrainConfig {
   width: number;
@@ -23,6 +26,8 @@ export interface TerrainConfig {
   island?: boolean;
   /** Steepness of the island falloff (higher = smaller central landmass). */
   islandPower?: number;
+  /** The world archetype shaping where land rises. Overrides the radial mask. */
+  worldType?: WorldType;
 }
 
 export function generateElevation(cfg: TerrainConfig): Grid {
@@ -30,12 +35,13 @@ export function generateElevation(cfg: TerrainConfig): Grid {
     width,
     height,
     seed,
-    frequency = 2.6,
     octaves = 6,
     ridgeMix = 0.3,
     island = true,
     islandPower = 1.25,
+    worldType,
   } = cfg;
+  const frequency = cfg.frequency ?? worldType?.frequency ?? 2.6;
 
   const grid = new Grid(width, height);
   const invW = 1 / width;
@@ -56,8 +62,15 @@ export function generateElevation(cfg: TerrainConfig): Grid {
         h = base * (1 - ridgeMix) + r * ridgeMix;
       }
 
-      if (island) {
-        // Distance from center, normalized so a corner ≈ 1.
+      if (worldType) {
+        // Additive blend: the mask leads placement, the noise carves coasts.
+        // (Multiplying the two would crush the elevation range on sparse
+        // island worlds — a few dim isles the sea level cannot cleanly cut.)
+        // The edge falloff then rings the whole world in ocean.
+        const m = maskAt(nx, ny, worldType);
+        h = (0.45 * h + 0.55 * m) * edgeFalloff(nx, ny);
+      } else if (island) {
+        // Legacy single radial island (CLI overrides, tests that ask for it).
         const dx = (nx - 0.5) * 2;
         const dy = (ny - 0.5) * 2;
         const d = Math.sqrt(dx * dx + dy * dy) / Math.SQRT2;
@@ -70,6 +83,39 @@ export function generateElevation(cfg: TerrainConfig): Grid {
   }
 
   return grid.normalize();
+}
+
+/**
+ * The sea level at which exactly `targetLand` of the map stands above water.
+ * A histogram quantile, so every archetype hits a realistic land fraction no
+ * matter how the noise fell — no world drowns entirely or turns all to rock.
+ * Exact arithmetic (bin counting), computed once on the base field.
+ */
+export function seaLevelForLandFraction(elevation: Grid, targetLand: number): number {
+  const data = elevation.data;
+  const n = data.length;
+  const want = Math.max(0.02, Math.min(0.95, targetLand));
+  const BINS = 2048;
+  const hist = new Int32Array(BINS);
+  // Field is normalized to [0,1]; bin each cell.
+  for (let i = 0; i < n; i++) {
+    let b = Math.floor(data[i] * BINS);
+    if (b < 0) b = 0;
+    else if (b >= BINS) b = BINS - 1;
+    hist[b]++;
+  }
+  // Walk down from the top until we have collected `want` of the cells: that
+  // bin's lower edge is the sea level. Floored just above the very bottom bin
+  // so the deep-ocean floor (mask = 0, elevation ≈ 0) always stays wet — a
+  // drowned world whose islands cannot supply the whole target simply keeps
+  // the ocean it has, rather than reporting itself 100% land.
+  const targetCount = want * n;
+  let collected = 0;
+  for (let b = BINS - 1; b >= 1; b--) {
+    collected += hist[b];
+    if (collected >= targetCount) return b / BINS;
+  }
+  return 1 / BINS;
 }
 
 /**

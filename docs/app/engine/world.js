@@ -11,7 +11,8 @@
 import { Rng } from "./rng.js";
 import { hashExact, hashQuantized, hashTokens } from "./hash.js";
 import { Grid } from "./grid.js";
-import { generateElevation, landFraction } from "./terrain.js";
+import { generateElevation, landFraction, seaLevelForLandFraction } from "./terrain.js";
+import { pickWorldType,                } from "./worldtype.js";
 import {
   addVolcanoes,
   fillCraterLakes,
@@ -73,6 +74,14 @@ export const ENGINE_VERSION = "0.13.0";
                 
                  
                    
+                                                                         
+                    
+                                                               
+                         
+                                                             
+                         
+                                                                        
+                        
                        
                         
                        
@@ -151,9 +160,18 @@ export function elevationToMetres(
 export function generateWorld(config             )        {
   const width = config.width ?? 512;
   const height = config.height ?? 512;
-  const seaLevel = config.seaLevel ?? 0.42;
 
   const root = new Rng(config.seed);
+
+  // L0.5 — World type: what KIND of world this is (a lone continent, twin
+  // continents, an archipelago, a supercontinent…). Chosen on its own stream,
+  // it hands the terrain a mask. The archetype is the default; it steps aside
+  // only when the caller explicitly dictates the shape via `island` or
+  // `frequency` (the CLI's --no-island / --frequency, and shape-specific tests).
+  const legacyShape = config.island !== undefined || config.frequency !== undefined;
+  const worldType                        = legacyShape
+    ? undefined
+    : pickWorldType(root.stream("worldtype"));
 
   // L1 — Elevation.
   const terrainRng = root.stream("terrain");
@@ -164,7 +182,15 @@ export function generateWorld(config             )        {
     frequency: config.frequency,
     octaves: config.octaves,
     island: config.island,
+    worldType,
   });
+
+  // Sea level: a fixed value if the caller sets one, else the quantile that
+  // gives this archetype its target land fraction — so no world drowns or
+  // petrifies whole. Derived from the base field before erosion redistributes.
+  const seaLevel =
+    config.seaLevel ??
+    (worldType ? seaLevelForLandFraction(elevation, worldType.targetLand) : 0.42);
 
   // L1.6 — Volcanoes: build volcanic cones BEFORE erosion, so erosion carves
   // realistic radial gullies down their flanks.
@@ -421,6 +447,10 @@ export function generateWorld(config             )        {
     width,
     height,
     seaLevel,
+    worldType: worldType?.name ?? "continent",
+    worldTypeLabel: worldType?.label ?? "a lone continent",
+    worldTypeRare: worldType?.rare ?? false,
+    worldQuirks: worldType?.quirks ?? [],
     landFraction: landFraction(elevation, seaLevel),
     oceanFraction: water.oceanFraction,
     lakeFraction: water.lakeFraction,

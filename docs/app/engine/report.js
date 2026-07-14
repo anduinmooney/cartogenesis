@@ -43,6 +43,10 @@ export function worldReportMarkdown(world       )         {
   lines.push("");
   lines.push(`- **Extent:** ${m.width} × ${m.height} cells`);
   lines.push(
+    `- **The world:** ${m.worldTypeLabel}${m.worldTypeRare ? " — a rare shape" : ""}` +
+      (m.worldQuirks.length ? `; ${m.worldQuirks.join("; ")}` : ""),
+  );
+  lines.push(
     `- **Land / ocean:** ${pct(m.landFraction)} land, ${pct(m.oceanFraction)} ocean` +
       `, ${m.lakeCount} lake(s)`,
   );

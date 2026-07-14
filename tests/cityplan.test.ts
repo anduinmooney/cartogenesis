@@ -22,6 +22,17 @@ function inputOf(w: ReturnType<typeof generateWorld>): CityPlanInput {
 const world = generateWorld({ seed: "plans", width: 200, height: 200 });
 const input = inputOf(world);
 
+// A world that actually lost a town — discovered at run time, since which
+// seed has ruins depends on chaotic dynamics (and, since Session 29, on which
+// world archetype the seed drew). Never hard-code "seed X has ruins".
+function worldWithRuins(): ReturnType<typeof generateWorld> {
+  for (let i = 0; i < 40; i++) {
+    const w = generateWorld({ seed: `ruinplans-${i}`, width: 200, height: 200 });
+    if (w.simulation.settlementTimeline.some((t) => t.fellYear !== undefined)) return w;
+  }
+  throw new Error("no ruin-bearing world found across 40 seeds — suspicious");
+}
+
 test("a town plan is deterministic to the cell", () => {
   const t = world.settlements.settlements[0];
   const a = generateCityPlan(input, t.id);
@@ -139,10 +150,12 @@ test("walls enclose the town when history earned them, with gates carved through
 });
 
 test("a fallen town's plan is a ruin, and says so", () => {
-  const fallen = world.simulation.settlementTimeline.filter((t) => t.fellYear !== undefined);
+  const w = worldWithRuins();
+  const inp = inputOf(w);
+  const fallen = w.simulation.settlementTimeline.filter((t) => t.fellYear !== undefined);
   assert.ok(fallen.length > 0, "test world has no ruins to plan");
   for (const f of fallen) {
-    const p = generateCityPlan(input, f.id)!;
+    const p = generateCityPlan(inp, f.id)!;
     assert.ok(p.ruined);
     assert.ok(p.title.startsWith("What remains of "));
     assert.ok(
@@ -173,10 +186,12 @@ test("planning a city mutates nothing: fingerprints untouched", () => {
 });
 
 test("a fallen town can be drawn as it stood: same streets, no rubble (S27)", () => {
-  const fallen = world.simulation.settlementTimeline.find((t) => t.fellYear !== undefined);
+  const w = worldWithRuins();
+  const inp = inputOf(w);
+  const fallen = w.simulation.settlementTimeline.find((t) => t.fellYear !== undefined);
   assert.ok(fallen, "test world has no ruins");
-  const asRuin = generateCityPlan(input, fallen!.id)!;
-  const whole = generateCityPlan(input, fallen!.id, { asItStood: true })!;
+  const asRuin = generateCityPlan(inp, fallen!.id)!;
+  const whole = generateCityPlan(inp, fallen!.id, { asItStood: true })!;
   assert.equal(asRuin.ruined, true);
   assert.equal(whole.ruined, false);
   assert.equal(whole.fell, true);

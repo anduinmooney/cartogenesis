@@ -34,16 +34,20 @@ const SIZE = 360;
 interface SampleSpec {
   seed: string;
   title: string;
-  note: string;
+  /** If omitted, the note is derived from the world's own archetype. */
+  note?: string;
 }
 
+// A curated spread across the world archetypes (Session 29): a lone continent,
+// twin continents, a continent and its isles, an archipelago, and two of the
+// rarer shapes — a ring of land about an inland sea, and a supercontinent.
 const SAMPLES: SampleSpec[] = [
-  { seed: "cartogenesis", title: "Cartogenesis", note: "The canonical world." },
-  { seed: "atlas", title: "Atlas", note: "A fragmented archipelago." },
-  { seed: "borea", title: "Borea", note: "A broad northern continent." },
-  { seed: "mistral", title: "Mistral", note: "Scattered coastal isles." },
-  { seed: "vahalia", title: "Vahalia", note: "A rugged, river-veined land." },
-  { seed: "aurelia-9", title: "Aurelia IX", note: "A temperate heartland." },
+  { seed: "show-2", title: "Peonacia" },
+  { seed: "show-5", title: "Deothu" },
+  { seed: "show-9", title: "Bellatelen" },
+  { seed: "show-4", title: "Deotelen" },
+  { seed: "show-1", title: "Deocia" },
+  { seed: "show-32", title: "Deolamma" },
 ];
 
 function main(): void {
@@ -120,12 +124,21 @@ function main(): void {
     writeFileSync(join(OUT, reportFile), worldReportMarkdown(world));
     files.report = reportFile;
 
+    // The note is the world's own archetype, spoken plainly — plus any rare
+    // quirk it drew. No hand-curation: the gallery says what the world is.
+    const label = world.meta.worldTypeLabel;
+    const derivedNote =
+      label.charAt(0).toUpperCase() +
+      label.slice(1) +
+      (world.meta.worldQuirks.length ? ` — ${world.meta.worldQuirks[0]}.` : ".");
     worlds.push({
       seed: spec.seed,
       title: spec.title,
-      note: spec.note,
+      note: spec.note ?? derivedNote,
       files,
       stats: {
+        worldType: world.meta.worldType,
+        worldTypeRare: world.meta.worldTypeRare,
         landFraction: Number((world.meta.landFraction * 100).toFixed(1)),
         oceanFraction: Number((world.meta.oceanFraction * 100).toFixed(1)),
         lakeCount: world.meta.lakeCount,

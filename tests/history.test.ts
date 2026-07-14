@@ -136,7 +136,7 @@ test("a fiery calendar names a real mountain", () => {
 
 test("the calendar never perturbs the world: fingerprints byte-identical", () => {
   const w = generateWorld({ seed: "cartogenesis", width: 256, height: 256 });
-  assert.equal(w.meta.contentHash, "1a70fd39d1e061c9");
-  assert.equal(w.meta.exactHash, "1835f6229fa2c005");
-  assert.equal(w.meta.simulationHash, "4767346f9031e40f");
+  assert.equal(w.meta.contentHash, "5117e36895b43e29");
+  assert.equal(w.meta.exactHash, "8ca93e852693aefd");
+  assert.equal(w.meta.simulationHash, "a3a0ce94d75568f4");
 });

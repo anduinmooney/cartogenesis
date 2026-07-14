@@ -1122,11 +1122,16 @@ function renderInfo(world: World): void {
   // number is real, and the sentences are assembled from the world's facts.
   const land = Math.round(m.landFraction * 100);
   const dossier: string[] = [];
+  const capFirst = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
   dossier.push(
-    `A world <b>${land}%</b> land, rising to <b>${m.highestPeakMetres.toLocaleString()} m</b>, ` +
+    `${capFirst(m.worldTypeLabel)}${m.worldTypeRare ? " — a rare shape" : ""}: <b>${land}%</b> land, ` +
+      `rising to <b>${m.highestPeakMetres.toLocaleString()} m</b>, ` +
       `with <b>${m.volcanoCount}</b> volcano${m.volcanoCount === 1 ? "" : "es"}` +
       `${m.activeVolcanoes > 0 ? ` — <b>${m.activeVolcanoes}</b> still restless` : ", all quiet"}.`,
   );
+  if (m.worldQuirks && m.worldQuirks.length) {
+    dossier.push(`Notably, ${m.worldQuirks.join("; ")}.`);
+  }
   dossier.push(
     `Its people hold <b>${m.regionCount}</b> provinces and <b>${m.settlementCount}</b> towns; ` +
       `<b>${m.realmCount}</b> realms rose over the centuries and <b>${m.survivingRealms}</b> stand today, ` +

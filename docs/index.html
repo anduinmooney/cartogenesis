@@ -222,6 +222,18 @@
         border: 1px solid var(--ink-soft);
         padding: 0.14rem 0.5rem;
       }
+      .rare-badge {
+        position: absolute;
+        top: 0.55rem;
+        right: 0.6rem;
+        font-size: 0.6rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #f3e6cf;
+        background: var(--oxblood);
+        border: 1px solid var(--oxblood-deep);
+        padding: 0.14rem 0.5rem;
+      }
       .tabs {
         position: absolute;
         bottom: 0.5rem;
@@ -454,6 +466,7 @@
               <figure>
                 <img alt="${w.title} — terrain" src="samples/${w.files.map}" />
                 <span class="platenum">Plate ${num}</span>
+                ${s.worldTypeRare ? '<span class="rare-badge" title="an uncommon world shape">rare</span>' : ""}
                 <div class="tabs" role="group" aria-label="Map layer"></div>
               </figure>
               <div class="caption">
