@@ -61,7 +61,11 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   metre-accurate contour intervals.
 - ✅ **L17b/c — Sagas & the traveller.** Verse founding-sagas per culture and a
   first-person road journey, both under the narrator's three laws (Session 21).
-- ✅ **Expeditions & the Folio.** L18 chartered expeditions (point at two
+- ✅ **Course correction & city plans.** Expeditions removed (D-027: the
+  world is what was generated); history dated year-by-year (D-028); L19 city
+  plans for every town and ruin; the folio's second design pass (Session 26,
+  user direction).
+- ↩ **Expeditions & the Folio.** L18 chartered expeditions (later removed, D-027) (point at two
   towns; a deterministic route is walked and journalled) and the full
   Cartographer's Folio redesign of the app (Session 25, user direction).
 - ✅ **Story markers & islets merge.** Layer-scoped map markers (faiths named

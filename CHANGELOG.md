@@ -8,6 +8,59 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 26 — 2026-07-13 — Course correction: the world is what was generated
+
+**Theme:** the user set the project back on course, three ways, and was right
+on all three: the expedition contradicted the pregenerated-world identity;
+the design still hid in neat boxes behind cute labels ("By Chance"); and a
+chronicle stamped in 25-year blocks read as the machinery it was.
+
+### Removed: chartered expeditions (D-027)
+Module, tests, and UI — an expedition was a story invented AFTER generation,
+walked by a traveller no chronicle knows. The DECISIONS log records the
+reversal rather than hiding it. The folio and the verification handle survive.
+
+### Year-by-year history (D-028)
+The dynamics still tick in 25-year turns, but every event — and every linked
+fact: rebel foundings, town falls, conquest renamings — now lands on its own
+year inside the turn's window, drawn from a private stream with a
+forward-only cursor (causal order survives; draws stop short of the round
+caps, so nothing piles on multiples of 25). The dynamics are BIT-IDENTICAL —
+only the dates moved. Annals now read 115, 116, 120, 143… Declared move:
+`simulationHash` 146934d0 → **09995e24**; terrain untouched.
+
+### L19 — City plans (the impressive replacement, and properly pregenerated)
+Every town in every world has a street plan, and every stone of it derives
+from facts the generator already decided: gates stand where the town's REAL
+roads leave it, each named for the real town its road runs to; the harbour
+faces the REAL ocean; the river crosses the way the real river flows; the
+temple names the region's real god, the keep the real ruling house; walls
+exist only where history earned them ("walled, for the wars crossed Deocina
+4 times"); districts smell of the real market goods; a conquest-renamed town
+keeps an Old Town "where they still say the former name"; and a town that
+FELL has the plan of what remains — roofless, breached, dated to its fall.
+Click any town (ruins are now clickable too) → the plan opens in the folio
+style, its legend entity-linkified. Deterministic per (seed, settlement) on
+a private stream; pure like the report renderer — a test plans five towns
+and asserts every fingerprint untouched. Exact arithmetic only (octants by
+comparison). Eight tests.
+
+### Design, second impression
+"By Chance" is gone — every control now reads functionally, most as
+sentences: "Survey the world named ⟨seed⟩ — or try a random seed · today's
+date"; "save: the map · the poster · the heightmap". The boxed toolbar is
+written words; the stats grid is a written dossier ("A world 41% land…
+38 realms rose and 13 stand, Tenacaria the greatest among them"), its names
+live; the chronicle hangs its years in a margin-ruled timeline; notes and
+chits sit slightly askew with hand-drawn borders; a spine label runs down
+the folio's edge.
+
+**232 tests** (8 city-plan + 1 year-by-year new; 6 expedition removed).
+Verified live: capital plan (gates SW to Deonelen / E to Panaliria — its real
+road neighbours), ruin plan reachable from bare ground, no console errors.
+
+---
+
 ## Session 25 — 2026-07-13 — Chartered expeditions, and the Cartographer's Folio
 
 **Theme:** the user asked for two big things: a genuinely new way to INTERACT
