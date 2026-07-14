@@ -133,6 +133,25 @@
 - **Deonelen**, *the sea bridge* (port, prosperous) — Fish, Livestock, Grain, Horses *(founded 571)*
 - **Midliria**, *the grass haven* (prosperous) — Livestock, Fish, Stone, Horses *(founded 650)* — formerly **Midshu**, before conquest remade the name
 
+## The capital, drawn
+
+Niantetomor — the green fort; capital and port of Pananeosso (Meridian (southern)).
+Founded 100 A.T. — walled, for the wars crossed Pananeosso 5 times.
+2 gates: northeast to Peonatomor · east to Deotelen.
+
+On the plan:
+
+- **the temple of Vazizamghim** — the Cult of Vazizamghim; the god's dominion is the hearth
+- **the high keep** — no one house has held it long
+- **the market square** — all livestock, grain, horses
+- **the northeast gate** — the road to Peonatomor
+- **the east gate** — the road to Deotelen
+- **the quays** — open water lies northward
+- *the Beast Fair* — held where the ring-road widens; mind your boots
+- *the Granary Rows* — the countryside eats from these floors in a bad year
+- *the Horse Fair* — buyers of horses and rumours, both overpriced
+- *the Shambles* — fish and argument, mornings only
+
 ## Ruins
 
 *Settlements that did not survive to the present day.*

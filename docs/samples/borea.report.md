@@ -194,6 +194,25 @@
 - **Variademor**, *the wild home* (rich) — Livestock, Wine, Grain, Stone *(founded 619)*
 - **Rairtomor**, *the gold fort* (port, prosperous) — Livestock, Timber, Fish, Spices *(founded 641)* — formerly **Rairshu**, before conquest remade the name
 
+## The capital, drawn
+
+Niantetomor — the green fort; capital and port of Deocaria (Meridian (southern)).
+Founded 100 A.L. — walled, for the wars crossed Deocaria 2 times.
+2 gates: northeast to Peonatomor · southwest to Variademor.
+
+On the plan:
+
+- **the temple of Vaselenvomor** — the Rite of Vaselenvomor; the god's dominion is the mountain
+- **the hall of House Semortaria** — seat of the power that holds Deocaria in the present year
+- **the market square** — all livestock, wine, grain
+- **the northeast gate** — the road to Peonatomor
+- **the southwest gate** — the road to Variademor
+- **the quays** — open water lies northeastward
+- *the Beast Fair* — held where the ring-road widens; mind your boots
+- *the Vintners' Court* — casks below, accounting above
+- *the Granary Rows* — the countryside eats from these floors in a bad year
+- *the Bell Ward* — everything here is measured from the bell
+
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*

@@ -147,6 +147,25 @@
 - **Stagrtomor**, *the sea fort* (port, prosperous) — Grain, Livestock *(founded 633)* — formerly **Stagrba**, before conquest remade the name
 - **Peonapana**, *the grass field* (prosperous) — Livestock, Horses, Grain, Wine *(founded 627)*
 
+## The capital, drawn
+
+Deoliria — the sea haven; capital and port of Deoneosso (Meridian (southern)).
+Founded 100 A.B. — walled, as its rank demanded.
+2 gates: east to Thaurnliria · southwest to Deonelen.
+
+On the plan:
+
+- **the temple of Vaghisaaju** — the Faith of Vaghisaaju; the god's dominion is the sea
+- **the hall of House Niantetindo** — seat of the power that holds Deoneosso in the present year
+- **the market square** — all grain, fish, wine
+- **the east gate** — the road to Thaurnliria
+- **the southwest gate** — the road to Deonelen
+- **the quays** — open water lies northward
+- *the Granary Rows* — the countryside eats from these floors in a bad year
+- *the Shambles* — fish and argument, mornings only
+- *the Vintners' Court* — casks below, accounting above
+- *the Horse Fair* — buyers of horses and rumours, both overpriced
+
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*

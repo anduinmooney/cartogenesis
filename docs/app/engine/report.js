@@ -10,6 +10,7 @@ import { BIOME_NAMES, Biome } from "./biomes.js";
 import { RESOURCE_NAMES } from "./resources.js";
 import { glossPhrase, glossary } from "./language.js";
 import { languageById } from "./names.js";
+import { generateCityPlan } from "./cityplan.js";
 
 function pct(x        )         {
   return `${(x * 100).toFixed(1)}%`;
@@ -234,6 +235,44 @@ export function worldReportMarkdown(world       )         {
       );
     }
     lines.push("");
+  }
+
+  // The capital, drawn — its street plan (L19) read into prose. The plan is
+  // a pure function of the world, so this section, like every other, is a
+  // reading of decided facts.
+  const capitalTown = world.settlements.settlements.find((s) => s.isCapital);
+  if (capitalTown) {
+    const plan = generateCityPlan(
+      {
+        water: world.water,
+        rivers: world.rivers,
+        regions: world.regions,
+        settlements: world.settlements.settlements,
+        roads: world.roads,
+        simulation: world.simulation,
+        economy: world.economy,
+        religion: world.religion,
+        lore: world.lore,
+        history: world.history,
+        meta: { seed: m.seed, width: world.elevation.width, presentYear: m.presentYear },
+      },
+      capitalTown.id,
+    );
+    if (plan) {
+      lines.push("## The capital, drawn");
+      lines.push("");
+      for (const f of plan.facts) lines.push(f);
+      lines.push("");
+      lines.push("On the plan:");
+      lines.push("");
+      for (const l of plan.landmarks) {
+        lines.push(`- **${l.name}** — ${l.note}`);
+      }
+      for (const d of plan.districts) {
+        lines.push(`- *${d.name}* — ${d.note}`);
+      }
+      lines.push("");
+    }
   }
 
   // Ruins — the settlements history swallowed.

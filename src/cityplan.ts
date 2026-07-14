@@ -83,7 +83,10 @@ export interface CityPlan {
   landmarks: PlanLandmark[];
   districts: PlanDistrict[];
   walled: boolean;
+  /** Drawn as a ruin (fell, and not asked for whole). */
   ruined: boolean;
+  /** The town fell in the simulation, however it is drawn. */
+  fell: boolean;
 }
 
 export interface CityPlanInput {
@@ -145,14 +148,35 @@ const GENERIC_DISTRICTS: Array<[string, string]> = [
   ["the Bell Ward", "everything here is measured from the bell"],
 ];
 
-export function generateCityPlan(input: CityPlanInput, settlementId: number): CityPlan | null {
+export interface CityPlanOptions {
+  /** Draw a FALLEN town as it stood before its fall — the same plan, whole.
+   *  The ruin transform runs last on its own draws, so both views share
+   *  every street; only the damage differs. */
+  asItStood?: boolean;
+}
+
+export function generateCityPlan(
+  input: CityPlanInput,
+  settlementId: number,
+  opts: CityPlanOptions = {},
+): CityPlan | null {
   const { water, rivers, regions, settlements, roads, simulation, economy, religion, lore } =
     input;
   const worldW = input.meta.width;
   const s = settlements.find((t) => t.id === settlementId);
   if (!s) return null;
   const timed = simulation.settlementTimeline.find((t) => t.id === settlementId);
-  const ruined = timed?.fellYear !== undefined;
+  const fell = timed?.fellYear !== undefined;
+  const ruined = fell && !opts.asItStood;
+  // A town renamed by conquest and LATER fallen is remembered by the map (and
+  // the ruins section) under the name it was founded with — the timeline's.
+  // The plan wears the same name, so clicking a ruin opens the plan of the
+  // place you clicked, not of a name you never saw.
+  const shownName = fell && timed ? timed.name : s.name;
+  const shownGloss =
+    shownName === s.name
+      ? s.gloss
+      : (s.formerNames?.find((f) => f.name === shownName)?.gloss ?? s.gloss);
   const rng = new Rng(`${input.meta.seed}:cityplan:${settlementId}`);
 
   // ---- The facts the plan is built from. ----
@@ -518,7 +542,7 @@ export function generateCityPlan(input: CityPlanInput, settlementId: number): Ci
   // ---- The dossier. ----
   const facts: string[] = [];
   facts.push(
-    `${s.name} — ${glossPhrase(s.gloss)}; ${s.isCapital ? "capital" : s.tier}${s.isPort ? " and port" : ""} of ${region?.name ?? "the wilds"}${region ? ` (${region.languageLabel})` : ""}.`,
+    `${shownName} — ${glossPhrase(shownGloss)}; ${s.isCapital ? "capital" : s.tier}${s.isPort ? " and port" : ""} of ${region?.name ?? "the wilds"}${region ? ` (${region.languageLabel})` : ""}.`,
   );
   if (timed) {
     facts.push(
@@ -538,15 +562,22 @@ export function generateCityPlan(input: CityPlanInput, settlementId: number): Ci
   if (former) {
     facts.push(`The charters once wrote it ${former.name} (${glossPhrase(former.gloss)}).`);
   }
-  if (ruined && timed?.fellYear !== undefined) {
+  if (fell && timed?.fellYear !== undefined) {
     facts.push(
-      `${timed.fate === "sacked" ? "Stormed" : "Abandoned"} in ${timed.fellYear} ${suffix} — what is drawn here is what remains.`,
+      `${timed.fate === "sacked" ? "Stormed" : "Abandoned"} in ${timed.fellYear} ${suffix} — ` +
+        (ruined
+          ? `what is drawn here is what remains.`
+          : `but this plate draws it as it stood, whole.`),
     );
   }
 
   return {
     settlementId,
-    title: ruined ? `What remains of ${s.name}` : `A plan of ${s.name}`,
+    title: ruined
+      ? `What remains of ${shownName}`
+      : fell
+        ? `${shownName}, as it stood`
+        : `A plan of ${shownName}`,
     facts,
     width: W,
     height: W,
@@ -555,5 +586,6 @@ export function generateCityPlan(input: CityPlanInput, settlementId: number): Ci
     districts,
     walled,
     ruined,
+    fell,
   };
 }

@@ -781,10 +781,20 @@ const PLAN_INK: Record<number, string> = {
   [PLAN.River]: "#93aab4",
 };
 
-function openPlan(settlementId: number): void {
+/** The plan on display, for the ruined ↔ as-it-stood flip. */
+let planShownId = -1;
+let planShownWhole = false;
+
+function openPlan(settlementId: number, asItStood = false): void {
   if (!current) return;
-  const plan = generateCityPlan(cityPlanInput(current), settlementId);
+  const plan = generateCityPlan(cityPlanInput(current), settlementId, { asItStood });
   if (!plan) return;
+  planShownId = settlementId;
+  planShownWhole = asItStood;
+  // A fallen town can be seen both ways: as it remains, and as it stood.
+  const flip = $("plan-flip");
+  flip.hidden = !plan.fell;
+  flip.textContent = plan.ruined ? "see it as it stood" : "see what remains";
   $("plan-title").textContent = plan.title;
   $("plan-facts").innerHTML = plan.facts
     .map((f) => `<p>${escapeHtml(f)}</p>`)
@@ -1351,6 +1361,9 @@ function init(): void {
 
   $("plan-close").addEventListener("click", () => {
     $("planovl").hidden = true;
+  });
+  $("plan-flip").addEventListener("click", () => {
+    if (planShownId >= 0) openPlan(planShownId, !planShownWhole);
   });
   $("planovl").addEventListener("click", (e) => {
     if (e.target === $("planovl")) $("planovl").hidden = true;

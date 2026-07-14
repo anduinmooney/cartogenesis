@@ -44,7 +44,11 @@ test("every settlement has a plan with streets, a market, and its dossier", () =
       `${s.name}: no market or fields`,
     );
     assert.ok(p!.facts.length >= 2, `${s.name}: dossier too thin`);
-    assert.ok(p!.facts[0].includes(s.name));
+    // A fallen town wears the name the map remembers (the timeline's), which
+    // for a renamed-then-fallen town differs from the settlement list's.
+    const timed = world.simulation.settlementTimeline.find((t) => t.id === s.id);
+    const expected = timed?.fellYear !== undefined ? timed.name : s.name;
+    assert.ok(p!.facts[0].includes(expected), `${s.name}: dossier names neither name`);
     assert.ok(
       p!.landmarks.some((l) => l.kind === "market"),
       `${s.name}: no market landmark`,
@@ -166,4 +170,28 @@ test("planning a city mutates nothing: fingerprints untouched", () => {
   assert.equal(world.meta.exactHash, before.exact);
   assert.equal(world.meta.simulationHash, before.sim);
   assert.equal(world.simulation.events.length, before.events);
+});
+
+test("a fallen town can be drawn as it stood: same streets, no rubble (S27)", () => {
+  const fallen = world.simulation.settlementTimeline.find((t) => t.fellYear !== undefined);
+  assert.ok(fallen, "test world has no ruins");
+  const asRuin = generateCityPlan(input, fallen!.id)!;
+  const whole = generateCityPlan(input, fallen!.id, { asItStood: true })!;
+  assert.equal(asRuin.ruined, true);
+  assert.equal(whole.ruined, false);
+  assert.equal(whole.fell, true);
+  assert.equal(whole.title, `${fallen!.name}, as it stood`);
+  assert.ok(![...whole.cells].some((c) => c === PLAN.Rubble), "whole view has rubble");
+  assert.ok([...asRuin.cells].some((c) => c === PLAN.Rubble), "ruin view lost its rubble");
+  // The two views share every street — the ruin transform only damages.
+  const W = asRuin.width;
+  for (let i = 0; i < W * W; i++) {
+    if (whole.cells[i] === PLAN.Street) {
+      assert.equal(asRuin.cells[i], PLAN.Street, `street lost at cell ${i}`);
+    }
+  }
+  assert.ok(
+    whole.facts.some((f) => f.includes("as it stood")),
+    "the whole view does not admit the town fell",
+  );
 });

@@ -76,3 +76,11 @@ test("SVG escapes special characters safely", () => {
   assert.ok(svg.includes("A &amp; B &lt;test&gt;"));
   assert.ok(!svg.includes("<test>"));
 });
+
+test("the gazetteer draws the capital (S27)", () => {
+  const w = generateWorld({ seed: "dossier", width: 140, height: 140 });
+  const md = worldReportMarkdown(w);
+  assert.ok(md.includes("## The capital, drawn"), "capital plan section missing");
+  assert.ok(md.includes("the market square"), "no market in the capital plan");
+  assert.ok(md.includes(w.meta.capital), "capital unnamed in its own plan");
+});

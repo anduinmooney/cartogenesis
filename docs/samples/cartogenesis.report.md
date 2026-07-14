@@ -192,6 +192,25 @@
 - **Khirliria**, *the sea haven* (port, prosperous) — Livestock, Fish, Horses *(founded 629)* — formerly **Khirkhukha**, before conquest remade the name
 - **Rauriadinte**, *the high spring* (prosperous) — Livestock, Stone, Grain, Wine *(founded 650)*
 
+## The capital, drawn
+
+Deoliria — the sea haven; capital and port of Niantecaria (Meridian (southern)).
+Founded 100 A.C. — walled, as its rank demanded.
+2 gates: northwest to Bellatomor · south to Deopana.
+
+On the plan:
+
+- **the temple of Valollatena** — the Rite of Valollatena; the god's dominion is the sea
+- **the hall of House Belentaria** — seat of the power that holds Niantecaria in the present year
+- **the market square** — all grain, wine, livestock
+- **the northwest gate** — the road to Bellatomor
+- **the south gate** — the road to Deopana
+- **the quays** — open water lies northward
+- *the Granary Rows* — the countryside eats from these floors in a bad year
+- *the Vintners' Court* — casks below, accounting above
+- *the Beast Fair* — held where the ring-road widens; mind your boots
+- *the Shambles* — fish and argument, mornings only
+
 ## Ruins
 
 *Settlements that did not survive to the present day.*

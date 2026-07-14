@@ -179,6 +179,26 @@
 - **Stagrliria**, *the sea haven* (port, modest) — Livestock, Grain, Furs, Horses *(founded 629)* — formerly **Stagragrull**, before conquest remade the name
 - **Ghashdemor**, *the river home* (modest) — Livestock, Fish, Horses *(founded 650)* — formerly **Ghashqe**, before conquest remade the name
 
+## The capital, drawn
+
+Deociamor — the sea gate; capital and port of Deodoria (Meridian (southern)).
+Founded 100 A.L. — walled, as its rank demanded.
+3 gates: northeast to Ghashtomor · northwest to Pananelen · southwest to Deodemor.
+
+On the plan:
+
+- **the temple of Vakneirkveill** — the Rite of Vakneirkveill; the god's dominion is the hearth
+- **the hall of House Variatindo** — seat of the power that holds Deodoria in the present year
+- **the market square** — all grain, wine, horses
+- **the northeast gate** — the road to Ghashtomor
+- **the northwest gate** — the road to Pananelen
+- **the southwest gate** — the road to Deodemor
+- **the quays** — open water lies eastward
+- *the Granary Rows* — the countryside eats from these floors in a bad year
+- *the Vintners' Court* — casks below, accounting above
+- *the Horse Fair* — buyers of horses and rumours, both overpriced
+- *the Beast Fair* — held where the ring-road widens; mind your boots
+
 ## Ruins
 
 *Settlements that did not survive to the present day.*

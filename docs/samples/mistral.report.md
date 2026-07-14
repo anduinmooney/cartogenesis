@@ -173,6 +173,25 @@
 - **Shinlamor**, *the wild hall* (prosperous) — Horses, Grain, Wine, Iron *(founded 606)* — formerly **Shinzaa**, before conquest remade the name
 - **Stagrlamor**, *the sea hall* (port, prosperous) — Livestock, Timber, Furs, Grain *(founded 647)* — formerly **Stagrba**, before conquest remade the name
 
+## The capital, drawn
+
+Deoliria — the sea haven; capital and port of Deolaria (Meridian (southern)).
+Founded 100 A.C. — walled, as its rank demanded.
+2 gates: northeast to Vonciamor · southwest to Peonanelen.
+
+On the plan:
+
+- **the temple of Vavyrkveill** — the Way of Vavyrkveill; the god's dominion is war
+- **the hall of House Belentaria** — seat of the power that holds Deolaria in the present year
+- **the market square** — all wine, livestock, grain
+- **the northeast gate** — the road to Vonciamor
+- **the southwest gate** — the road to Peonanelen
+- **the quays** — open water lies westward
+- *the Vintners' Court* — casks below, accounting above
+- *the Beast Fair* — held where the ring-road widens; mind your boots
+- *the Granary Rows* — the countryside eats from these floors in a bad year
+- *the Shambles* — fish and argument, mornings only
+
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
