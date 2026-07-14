@@ -77,5 +77,5 @@ test("sagas never perturb the world: fingerprints are byte-identical", () => {
   const w = generateWorld({ seed: "cartogenesis", width: 256, height: 256 });
   assert.equal(w.meta.contentHash, "86c5fef61d7a567b");
   assert.equal(w.meta.exactHash, "418ddfd224e6f31c");
-  assert.equal(w.meta.simulationHash, "15371f1173c805ad");
+  assert.equal(w.meta.simulationHash, "146934d0ec2014cd");
 });

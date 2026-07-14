@@ -87,3 +87,19 @@ test("neighbor relations are symmetric", () => {
     }
   }
 });
+
+test("no region smaller than the islet threshold survives (when a mainland exists)", () => {
+  // Across several seeds: every surviving region has at least ISLET_MIN cells,
+  // provided the world has at least one substantial region to merge into.
+  for (const seed of ["prov", "isles", "atlas", "s10"]) {
+    const { regions } = build(seed, 160);
+    const biggest = Math.max(...regions.regions.map((r) => r.area));
+    if (biggest < 12) continue; // a world of nothing but skerries keeps them
+    for (const r of regions.regions) {
+      assert.ok(
+        r.area >= 12,
+        `${seed}: region ${r.name} (id ${r.id}) survives with only ${r.area} cells`,
+      );
+    }
+  }
+});

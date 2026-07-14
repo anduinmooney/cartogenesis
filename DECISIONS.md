@@ -6,6 +6,32 @@ old one — the history is the point.
 
 ---
 
+## D-026 — Islets merge: a lone skerry is not a province (2026-07-13, Session 24)
+**Decision:** After the region BFS partition, any region smaller than
+`ISLET_MIN = 12` cells — an unseeded coverage island, or a seed that landed on
+one — is folded into the nearest substantial region by centroid distance, the
+way a coastal province claims its offshore skerries. Ids are **not**
+renumbered: an emptied id yields no region, so every surviving region keeps
+its id-keyed name. Skipped entirely if no region reaches the threshold (a
+world of nothing but skerries keeps them all).
+
+**Why:** Tiny 1-cell "regions" cluttered every gazetteer table, and — worse —
+acted as *unconquerable microstates*: conquest spreads by land adjacency, so
+armies can't reach islands, and every island realm survived to the present on
+every world, padding "surviving realms" with phantoms.
+
+**Fingerprint impact (declared):** `simulationHash` moved
+`15371f1173c805ad → 146934d0ec2014cd` (region sets feed settlements and the
+sim). Terrain hashes `86c5fef6` / `418ddfd2` did NOT move — the split proves
+the change touched only the partition, not the land.
+
+**Balance re-measured (30 seeds):** at the app's 384²: mean top-power share
+29.6% → 35.7%, zero worlds >90% unified, 5.5 surviving powers (was 8.1 — the
+difference is exactly the phantom island realms). At 256²: mean 54.5%, sd 17 —
+inside the historic healthy band. The "histories vary" guard moved from 160²
+to 256²: a post-merge 160² world has only ~4 mainland regions, too few for a
+share-of-regions metric to mean anything.
+
 ## D-025 — The narrator is a generator with three laws, not a model (2026-07-10, Session 20)
 **Decision:** L17 (`src/narrative.ts`) turns the simulation into prose using
 grammar-driven phrase banks expanded by a private RNG stream — no model call at

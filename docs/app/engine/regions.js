@@ -1,11 +1,13 @@
 // regions.ts — L7: partition the land into named regions (provinces).
 //
 // Scatter well-spaced seed points across the land, then grow regions outward by
-// multi-source BFS that never crosses water — so every region is a single
-// contiguous landmass province. Each region takes a naming culture chosen from
-// its own climate (cold coasts sound Auld, deserts sound Kesh, deep forests
-// sound Sylvan, everything else Meridian), so the map's cultures follow its
-// geography.
+// multi-source BFS that never crosses water — so a region's mainland is one
+// contiguous landmass. Islands too small to be provinces of their own
+// (< ISLET_MIN cells) are folded into the nearest substantial region, the way
+// a real coastal province claims its offshore skerries. Each region takes a
+// naming culture chosen from its own climate (cold coasts sound Auld, deserts
+// sound Kesh, deep forests sound Sylvan, everything else Meridian), so the
+// map's cultures follow its geography.
 
 import { Rng } from "./rng.js";
                                       
@@ -174,6 +176,52 @@ export function generateRegions(
           stack.push(ni);
         }
       }
+    }
+  }
+
+  // --- Islets merge: a lone skerry is not a province. Any region smaller
+  // than ISLET_MIN cells (an unseeded coverage island, or a seed that landed
+  // on one) is folded into the nearest substantial region by centroid — the
+  // coastal province claims its offshore isles, as real atlases do. Region
+  // ids are NOT renumbered: an emptied id simply yields no region below, so
+  // every surviving region keeps its name (each is drawn from a private
+  // stream keyed by id). Uses only exact arithmetic (D-022).
+  const ISLET_MIN = 12;
+  {
+    const tally = new Float64Array(nextId);
+    const tx = new Float64Array(nextId);
+    const ty = new Float64Array(nextId);
+    for (let i = 0; i < n; i++) {
+      const rid = ids[i];
+      if (rid < 0) continue;
+      tally[rid]++;
+      tx[rid] += i % width;
+      ty[rid] += (i / width) | 0;
+    }
+    const big           = [];
+    for (let r = 0; r < nextId; r++) if (tally[r] >= ISLET_MIN) big.push(r);
+    // A world of nothing but skerries keeps them all — merging needs a mainland.
+    if (big.length > 0 && big.length < nextId) {
+      const remap = new Int32Array(nextId);
+      for (let r = 0; r < nextId; r++) {
+        remap[r] = r;
+        if (tally[r] === 0 || tally[r] >= ISLET_MIN) continue;
+        const cx = tx[r] / tally[r];
+        const cy = ty[r] / tally[r];
+        let bestR = big[0];
+        let bestD = Infinity;
+        for (const b of big) {
+          const dx = tx[b] / tally[b] - cx;
+          const dy = ty[b] / tally[b] - cy;
+          const dd = dx * dx + dy * dy;
+          if (dd < bestD) {
+            bestD = dd;
+            bestR = b;
+          }
+        }
+        remap[r] = bestR;
+      }
+      for (let i = 0; i < n; i++) if (ids[i] >= 0) ids[i] = remap[ids[i]];
     }
   }
 

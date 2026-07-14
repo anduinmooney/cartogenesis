@@ -7,9 +7,9 @@
 - **Extent:** 360 × 360 cells
 - **Land / ocean:** 63.8% land, 36.2% ocean, 2 lake(s)
 - **Climate & life:** dominant biome **Grassland**, 16 biomes in all
-- **Peoples:** 29 regions, 26 settlements
+- **Peoples:** 28 regions, 26 settlements
 - **Capital:** Deoliria, seat of House Belentaria
-- **Realms:** 12 rose over the simulated centuries; 4 stand in the present year, Vynthon the greatest among them
+- **Realms:** 17 rose over the simulated centuries; 3 stand in the present year, Vynthon the greatest among them
 - **The present year:** 1100 A.C. — 1100 years after the Crowning
 - **The calendar:** year 0 is **The First Crowning**; every date in this book is counted after the Crowning and wears `A.C.`
 - **Highest peak:** 4,500 m · **volcanoes:** 6 (1 active)
@@ -55,7 +55,7 @@
 | Deoriando | *the sea vale* | Meridian (southern) | 2584 | Grassland | yes |
 | Beossobinte | *the mountain folk* | Meridian (southern) | 2553 | Grassland | — |
 | Mairsham | *the mountain cliff* | Kesh (desert) | 2543 | Cold Desert | — |
-| Deoveolla | *the sea wood* | Meridian (southern) | 2133 | Grassland | yes |
+| Deoveolla | *the sea wood* | Meridian (southern) | 2134 | Grassland | yes |
 | Brakno | *the mountain land* | Auld (northern) | 2038 | Shrubland | — |
 | Rairghen | *the gold land* | Kesh (desert) | 1735 | Savanna | yes |
 | Khirshaa | *the sea folk* | Kesh (desert) | 1495 | Savanna | yes |
@@ -63,7 +63,6 @@
 | Deopeona | *the sea grass* | Meridian (southern) | 1438 | Grassland | yes |
 | Panalaria | *the field cliff* | Meridian (southern) | 1399 | Grassland | yes |
 | Deobinte | *the sea folk* | Meridian (southern) | 1084 | Grassland | yes |
-| Syaeentheo | *the sea cliff* | Sylvan (woodland) | 1 | Temperate Rainforest | yes |
 
 - Qughen is a coast of sun-scoured dunes, its people caravan-traders and readers of stars, seat of Khirqe.
 - Mairkhukha is an inland reach of sun-scoured dunes, its people caravan-traders and readers of stars.
@@ -164,18 +163,17 @@
 ### Cities
 
 - **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Grain, Livestock, Horses *(founded 100)*
-- **Deociamor**, *the sea gate* (port, prosperous) — Livestock, Horses, Grain *(founded 122)*
+- **Deociamor**, *the sea gate* (port, trade hub, prosperous) — Livestock, Horses, Grain *(founded 122)*
 - **Deotelen**, *the sea market* (port, prosperous) — Fish, Livestock, Grain, Wine *(founded 144)*
-- **Khirdund**, *the sea haven* (port, trade hub, prosperous) — Grain, Livestock, Fish, Wine *(founded 166)* — formerly **Khirghekh**, before conquest remade the name
+- **Khirdund**, *the sea haven* (port, prosperous) — Grain, Livestock, Fish, Wine *(founded 166)* — formerly **Khirghekh**, before conquest remade the name
 
 ### Towns
 
-- **Khirfjysk**, *the sea home* (port, trade hub, rich) — Grain, Livestock, Horses, Iron *(founded 188)* — formerly **Khirqe**, before conquest remade the name
-- **Deohro**, *the sea hall* (port, prosperous) — Grain, Livestock, Fish, Horses *(founded 210)* — formerly **Deonelen**, before conquest remade the name
+- **Khirthu**, *the sea fort* (port, trade hub, rich) — Grain, Livestock, Horses, Iron *(founded 188)* — formerly **Khirqe**, before conquest remade the name
+- **Deogrull**, *the sea bridge* (port, prosperous) — Grain, Livestock, Fish, Horses *(founded 210)* — formerly **Deonelen**, before conquest remade the name
 - **Vonthu**, *the green fort* (port, trade hub, rich) — Grain, Livestock, Wine, Horses *(founded 232)*
-- **Khirhro**, *the sea hall* (port, prosperous) — Livestock, Horses *(founded 254)* — formerly **Khirmakh**, before conquest remade the name
-- **Khirtomor**, *the sea fort* (port, modest) — Timber, Livestock, Horses *(founded 276)* — formerly **Khirkad**, before conquest remade the name
-- **Peonabust**, *the grass gate* (port, prosperous) — Livestock, Grain, Wine *(founded 298)* — formerly **Peonaliria**, before conquest remade the name
+- **Khirbust**, *the sea gate* (port, prosperous) — Livestock, Horses *(founded 254)* — formerly **Khirmakh**, before conquest remade the name
+- **Peonadund**, *the grass haven* (port, prosperous) — Livestock, Grain, Wine *(founded 298)* — formerly **Peonaliria**, before conquest remade the name
 - **Bellatomor**, *the river fort* (modest) — Grain, Fish, Horses, Livestock *(founded 320)*
 - **Nianteciamor**, *the green gate* (prosperous) — Livestock, Copper, Stone, Horses *(founded 342)*
 
@@ -188,13 +186,19 @@
 - **Knyrklamor**, *the wild hall* (port, modest) — Grain, Livestock, Wine *(founded 452)* — formerly **Knyrkba**, before conquest remade the name
 - **Hralamor**, *the river hall* (prosperous) — Grain, Livestock, Fish, Horses *(founded 474)* — formerly **Hrafjysk**, before conquest remade the name
 - **Bellademor**, *the river home* (prosperous) — Livestock, Grain, Wine, Horses *(founded 496)*
-- **Khirbust**, *the sea gate* (port, prosperous) — Livestock, Fish, Timber, Coal *(founded 518)* — formerly **Khirzaa**, before conquest remade the name
+- **Khirhro**, *the sea hall* (port, prosperous) — Livestock, Fish, Timber, Coal *(founded 518)* — formerly **Khirzaa**, before conquest remade the name
 - **Stagrlamor**, *the sea hall* (port, prosperous) — Livestock, Grain, Horses *(founded 540)* — formerly **Stagrafjan**, before conquest remade the name
 - **Niantefjysk**, *the green home* (prosperous) — Livestock, Wine, Grain, Horses *(founded 562)* — formerly **Niantedinte**, before conquest remade the name
-- **Ghashbust**, *the river gate* (prosperous) — Livestock, Grain, Furs, Stone *(founded 584)* — formerly **Ghashzaa**, before conquest remade the name
+- **Ghashro**, *the river hall* (prosperous) — Livestock, Grain, Furs, Stone *(founded 584)* — formerly **Ghashzaa**, before conquest remade the name
 - **Rairdemor**, *the gold home* (modest) — Stone, Livestock *(founded 606)* — formerly **Rairkhukha**, before conquest remade the name
 - **Deopana**, *the sea field* (port, prosperous) — Livestock, Timber, Horses *(founded 628)*
-- **Rairba**, *the gold spring* (modest) — Livestock, Horses, Salt *(founded 650)* — formerly **Rairkai**, before conquest remade the name
+- **Rairdund**, *the gold haven* (modest) — Livestock, Horses, Salt *(founded 650)* — formerly **Rairkai**, before conquest remade the name
+
+## Ruins
+
+*Settlements that did not survive to the present day.*
+
+- **Khirkad** (town) — founded 276, stormed and left a ruin in 600
 
 ## Names remade by conquest
 
@@ -205,15 +209,14 @@
 - **Hrafjysk** → **Hralamor** *(the river hall)* — Auld (northern) land under Meridian (southern) rule, c. 150
 - **Stagrafjan** → **Stagrlamor** *(the sea hall)* — Auld (northern) land under Meridian (southern) rule, c. 150
 - **Rairkhukha** → **Rairdemor** *(the gold home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Khirqe** → **Khirfjysk** *(the sea home)* — Kesh (desert) land under Auld (northern) rule, c. 175
-- **Ghashzaa** → **Ghashbust** *(the river gate)* — Kesh (desert) land under Auld (northern) rule, c. 175
-- **Deonelen** → **Deohro** *(the sea hall)* — Meridian (southern) land under Auld (northern) rule, c. 225
-- **Peonaliria** → **Peonabust** *(the grass gate)* — Meridian (southern) land under Auld (northern) rule, c. 225
-- **Khirzaa** → **Khirbust** *(the sea gate)* — Kesh (desert) land under Auld (northern) rule, c. 275
-- **Khirghekh** → **Khirdund** *(the sea haven)* — Kesh (desert) land under Auld (northern) rule, c. 300
-- **Khirmakh** → **Khirhro** *(the sea hall)* — Kesh (desert) land under Auld (northern) rule, c. 300
-- **Khirkad** → **Khirtomor** *(the sea fort)* — Kesh (desert) land under Meridian (southern) rule, c. 450
-- **Rairkai** → **Rairba** *(the gold spring)* — Kesh (desert) land under Auld (northern) rule, c. 475
+- **Deonelen** → **Deogrull** *(the sea bridge)* — Meridian (southern) land under Auld (northern) rule, c. 150
+- **Peonaliria** → **Peonadund** *(the grass haven)* — Meridian (southern) land under Auld (northern) rule, c. 150
+- **Khirqe** → **Khirthu** *(the sea fort)* — Kesh (desert) land under Auld (northern) rule, c. 200
+- **Ghashzaa** → **Ghashro** *(the river hall)* — Kesh (desert) land under Auld (northern) rule, c. 200
+- **Khirzaa** → **Khirhro** *(the sea hall)* — Kesh (desert) land under Auld (northern) rule, c. 350
+- **Khirghekh** → **Khirdund** *(the sea haven)* — Kesh (desert) land under Auld (northern) rule, c. 375
+- **Khirmakh** → **Khirbust** *(the sea gate)* — Kesh (desert) land under Auld (northern) rule, c. 375
+- **Rairkai** → **Rairdund** *(the gold haven)* — Kesh (desert) land under Auld (northern) rule, c. 550
 
 ## Faiths
 
@@ -223,7 +226,7 @@
 
 > Each dawn Vaghimzizam drives the sun over Dobra; the people of Qughen greet it with fire.
 
-Followed across 12 region(s).
+Followed across 10 region(s).
 
 ### the Rite of Vaskyvathork — Vaskyvathork, god of the Sea
 
@@ -241,19 +244,19 @@ Followed across 13 region(s).
 
 Followed across 3 region(s).
 
-### the Rite of Vasyaenlia — Vasyaenlia, god of the Storm
+### the Rite of Vaqidkamaad — Vaqidkamaad, god of the Storm
 
-*Vasyaenlia: the dread king.*
+*Vaqidkamaad: the dread king.*
 
-> Vasyaenlia rides the storms down the Mishkan, and Syaeentheo both fears and blesses the rain.
+> Vaqidkamaad rides the storms down the Mishkan, and Mairkhukha both fears and blesses the rain.
 
-Followed across 1 region(s).
+Followed across 2 region(s).
 
 ## Resources & trade
 
 - **Major exports:** Livestock, Grain, Horses, Wine, Fish
-- **Wealthiest settlement:** Khirfjysk
-- **Trade hubs:** Deoliria, Khirdund, Khirfjysk, Vonthu
+- **Wealthiest settlement:** Khirthu
+- **Trade hubs:** Deoliria, Deociamor, Khirthu, Vonthu
 - **Deposits:** Iron ×40, Copper ×29, Gold ×13, Gems ×8, Stone ×87, Coal ×35, Timber ×4, Grain ×46, Livestock ×140, Fish ×12, Furs ×11, Spices ×1, Salt ×32, Horses ×36, Wine ×20
 
 ## Languages
@@ -277,12 +280,6 @@ Followed across 1 region(s).
 *Spoken in Qughen, Mairkhukha, Mairzash.*
 
 **kan** water · **khir** sea · **ghash** river · **takish** lake · **kai** spring · **khaim** stone · **mair** mountain · **khidku** hill · **khukha** field · **zash** vale · **zujikh** isle · **sham** cliff · **khash** marsh · **ghen** land · **khajez** wood · **qa** tree · **shid** thorn · **mid** grass · **zajiq** fire · **zair** ash · **kash** ice · **rarer** sand · **kaz** salt · **mish** iron · **rair** gold · **ja** high · **qish** deep · **shaim** dark · **me** bright · **kaar** old · **ki** new · **qu** red · **kheq** white · **ran** black · **ghush** green · **tu** cold · **shin** wild · **shu** fort · **makh** hall · **ghekh** gate · **zaa** bridge · **kad** haven · **qe** home · **riz** market · **shaa** folk · **maad** king · **said** blood · **kaasi** war · **taitan** peace · **ju** holy · **qidka** dread · **ghair** dawn · **ghisaa** dusk · **sagha** star · **shad** moon · **ghim** sun · **ghaza** sky · **rikhaa** wind · **zizam** storm
-
-### Sylvan (woodland)
-
-*Spoken in Syaeentheo.*
-
-**syys** water · **syaeen** sea · **melyn** river · **syes** lake · **siaen** spring · **ne** stone · **thaeen** mountain · **melia** hill · **siien** field · **reth** vale · **sier** isle · **theo** cliff · **nil** marsh · **melen** land · **mela** wood · **phae** tree · **le** thorn · **phi** grass · **laeen** fire · **sieen** ash · **reo** ice · **melir** sand · **thiail** salt · **phyil** iron · **sial** gold · **syeo** high · **siael** deep · **nas** dark · **rien** bright · **ly** old · **thil** new · **rywyn** red · **syeil** white · **syia** black · **ril** green · **rith** cold · **this** wild · **phes** fort · **siy** hall · **phawyn** gate · **siawyn** bridge · **raeth** haven · **sieos** home · **nywyn** market · **thyth** folk · **lia** king · **siany** blood · **meler** war · **thaen** peace · **syith** holy · **syaen** dread · **lith** dawn · **theen** dusk · **phen** star · **nar** moon · **thas** sun · **rias** sky · **nana** wind · **reil** storm
 
 ## Sagas of the Peoples
 
@@ -322,7 +319,7 @@ Followed across 1 region(s).
 > And of Vynthon the singers still sing,
 > for its banners stand as high as ever they did.
 
-### The Saga of Rauriameonte (Meridian (southern))
+### The Saga of Tariademor (Meridian (southern))
 
 > Long the southern folk wandered the warm sea,
 > and the land they found they would not leave.
@@ -335,20 +332,8 @@ Followed across 1 region(s).
 > and the Faith of Vatenavomor keeps that fire yet.
 > In their tongue, demor is home and selen is star;
 > learn those two words and their map opens like a door.
-> And of Rauriameonte the singers still sing,
+> And of Tariademor the singers still sing,
 > for its banners stand as high as ever they did.
-
-### How the Woodland Folk Came to Syaeentheo (Sylvan (woodland))
-
-> First came the woodland folk over the deep wood,
-> and the shore they found they would not leave.
-> Syaeentheo they named it — the sea cliff —
-> and the name has outlived every wall they raised.
-> Over it they set Vasyaenlia, the dread king,
-> whose dominion is the storm;
-> and the Rite of Vasyaenlia keeps that fire yet.
-> In their tongue, laeen is fire and phen is star;
-> their map is a psalter, if you can read it.
 
 ## Legends of the founding age
 
@@ -368,94 +353,109 @@ Followed across 1 region(s).
 
 ## Rise and fall of realms
 
-*Simulated 100–1100 after the Crowning. 4 realm(s) endured to the present.*
+*Simulated 100–1100 after the Crowning. 3 realm(s) endured to the present.*
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Vynthon | 100 | 10 | 425 | 10 | ascendant |
-| Rauriameonte | 100 | 10 | 850 | 10 | ascendant |
-| Tenademor | 100 | 8 | 400 | 4 | diminished |
-| Tariademor | 100 | 5 | 150 | 5 | ascendant |
+| Vynthon | 100 | 16 | 975 | 16 | ascendant |
+| Tariademor | 100 | 7 | 975 | 7 | ascendant |
+| Rauriameonte | 100 | 7 | 425 | 5 | diminished |
+| Tenademor | 100 | 6 | 100 | 0 | extinct |
 | Kaarkaasi | 100 | 4 | 100 | 0 | extinct |
+| Vynfjysk | 725 | 3 | 725 | 0 | extinct |
 | Kheqghen | 100 | 2 | 100 | 0 | extinct |
 
 ## The Chronicle of Vynthon
 
-*I write in Deoliria, in the year 1100, at the pleasure of House Belentaria — which is to say, at its expense. Here are 1000 years, told as honestly as patronage allows, which is more honestly than you might think.*
+*Set down in Deoliria, in the year 1100 after the Crowning, by a servant of House Belentaria, who was asked for a history and has tried to keep his opinions out of it. Where he has failed, the reader may enjoy them.*
 
 *The years in these pages are counted after the Crowning; the first of the legends tells how the count began, with the First Crowning.*
 
 *The world it happened in is quickly drawn: Mount Dobra in the high places, and the Mishkan running to the sea, and between them every road this chronicle walks.*
 
-### I. The First Banners, 100–300
+### I. The Shaping Years, 100–300
 
 Deobinte fell to Vynthon in 100; Rauriacaria's protest is preserved, and was ignored. And that was the whole of Rauriacaria's ending — no siege worth the name, no song; a surrender and a seal. Nor was that all: Tariademor seized Rairghen from Mantebinte, and the border stones were moved in the night.
 
-In the year 125, Mantebinte lost Panalaria to Tariademor, and the harvest went with it. It was the end of Mantebinte: 25 years of banners, done in a single season. Vynthon took Qughen in the same season, and the desert realm of Kaarkaasi could do little but record the loss. And in that year too, the garrison of Rairghen woke to new flags — Rairghen had declared itself overnight, and made it stick.
+In the year 100, in Deopeona the bells rang without ceasing; a third of its people were laid in the ground. Soon after, the matter of Panalaria was settled with spears — Tariademor kept the province, Mantebinte the grievance. With that, the realm of Mantebinte was extinguished; its name passes from the roll of the powers. Kaarkaasi lost Qughen to Vynthon, and the harvest went with it.
 
-It was in 150 that Tariademor crossed into Rairghen, and it did not cross back; Rairghen redrew its maps. With that, the realm of Rairghen was extinguished; its name passes from the roll of the powers. The same year, the people of Deobinte drove out Vynthon's governors and took for themselves the name Caumeonte. These were the high years of Tenademor — its markets loud, its walls, for a while, unneeded. Historians are asked why wars begin. Read on; they mostly begin on purpose.
+150: Tenademor held Brabrein against Rauriameonte, whose army went home leaner and wiser. Tariademor taxed Rairghen once too often; the realm of Kheqghen was the receipt. Nor was that all: the physicians of Rairghen tried everything; the gravediggers finished what was left.
 
-In the year 175, swollen with victories, Vynthon pressed on into Deobinte, and the southern realm of Caumeonte could not hold it. It was the end of Caumeonte: 25 years of banners, done in a single season. Close on that, Vynthon, whose appetite grew with the eating, took Mairkhukha next.
+In 175, it was Tariademor's year: Rairghen was taken from Kheqghen before the passes closed. It was the end of Kheqghen: 25 years of banners, done in a single season. Vynthon marched on Mairkhukha, and by winter the province had fallen to it; Kaarkaasi was the poorer. The reader will notice a pattern; the realms did not.
 
-About the year 200, the banners of Tenademor entered Mairkhash, and what Kaarkaasi had held it held no longer. Before long, the old quarrel between Vynthon and Kaarkaasi found its old battlefield: Khirghen changed hands once more, in the usual direction. And that was the whole of Kaarkaasi's ending — no siege worth the name, no song; a surrender and a seal. The reader will notice a pattern; the realms did not.
+About the year 200, Rauriameonte came for Brabrein and left without it; the war songs on both sides insist otherwise. In the same season, no rain came to Mairkhukha for two years together; many perished. Before long, the old quarrel between Vynthon and Kaarkaasi found its old battlefield: Mairkhash changed hands once more, in the usual direction.
 
-In 225, the southern realm of Rauriameonte moved against Brabrein, but Tenademor threw the invaders back over the border. Vynthon marched on Khirkhidku, and by winter the province had fallen to it; the desert realm of Meqe was the poorer. With that, the realm of Meqe was extinguished; its name passes from the roll of the powers. That same year, whatever Tenademor intended for Khirshaa, Kheqghen had prepared for it twice over.
+The year 225 opened with trouble: the people of Mairkhash drove out Vynthon's governors and took for themselves the name Jughen. Sickness walked through Bradaurk and was not particular. Vynthon seized Mairkhash from Jughen, and the border stones were moved in the night. And that was the whole of Jughen's ending — no siege worth the name, no song; a surrender and a seal.
 
-About the year 250, Tenademor had its great noon: roads mended, songs written, taxes very nearly forgiven. Hard on its heels, Brabrein held — Tenademor met Rauriameonte at the border and sent it back the way it came. Whatever Kheqghen intended for Mairsham, Tenademor had prepared for it twice over.
+In 250, word came from Mairkhukha that it would be governed from within: thus Jamaad, born in a single furious season. Within the year, the appetite of Vynthon was becoming proverbial: Mairkhukha this time, and Jamaad unable to answer. It was the end of Jamaad: 25 years of banners, done in a single season.
 
-The map grew fuller meanwhile: 9 new settlements took root, Deociamor first among them.
+These years also built more than they burned — 9 new settlements, of which Deociamor would become the best known.
 
-The occupiers kept the land-words and changed the rest, and so Niantedinte is written Niantefjysk in every ledger since — and 9 other names with it.
+Names changed hands with the land: Niantedinte would be Niantefjysk from then on — and 8 other names with it.
 
-### II. The Contested Years, 300–500
+### II. The Age of Iron, 300–500
 
-300: Tenademor moved against Khirshaa, but Kheqghen threw the invaders back over the border. In the same season, for a while everything Vynthon touched came back gold; even its rivals banked in its coin. Within the year, whatever Rauriameonte intended for Brabrein, Tenademor had prepared for it twice over.
+The year 300 opened with trouble: Vynthon and Kaarkaasi met over Khirghen yet again, and yet again it was Vynthon that kept the field. And that was the whole of Kaarkaasi's ending — no siege worth the name, no song; a surrender and a seal. Whatever Rauriameonte intended for Brabrein, Tenademor had prepared for it twice over.
 
-In 325, the physicians of Mairkhash tried everything; the gravediggers finished what was left. Soon after, Khirshaa held — Kheqghen met Tenademor at the border and sent it back the way it came. Whatever Kheqghen intended for Mairsham, Tenademor had prepared for it twice over.
+300: a pestilence swept Qughen and carried off more than any war had. Hard on its heels, Vynthon marched on Khirkhidku, and by winter the province had fallen to it; the desert realm of Meqe was the poorer. With that, the realm of Meqe was extinguished; its name passes from the roll of the powers. The wells of Bradaurk gave dust, and the river shrank to an argument.
 
-The year 375 opened with trouble: Rauriameonte came for Brabrein and left without it; the war songs on both sides insist otherwise. Rauriameonte had its great noon: roads mended, songs written, taxes very nearly forgiven. What had once broken against Khirshaa's defences now carried them: Tenademor took the province, and Kheqghen's pride with it.
+In 350, Rauriameonte moved against Brabrein, but Tenademor threw the invaders back over the border. The shrines of the Rite of Vaskyvathork in Vaudoria emptied, and those of the Faith of Vatenavomor filled. Close on that, one more province, Mairghen, joined Vynthon's list; Tenademor's name joined another. It was, the singers insist, a heroic age. The granary ledgers take a different view.
 
-About the year 400, Mairsham held — Tenademor met Kheqghen at the border and sent it back the way it came. And in that year too, quieter conquests were made as well: Vaudoria turned from the Faith of Vatenavomor to the Way of Vaghimzizam. Before long, there was no halting Vynthon that season: Khirkhukha fell to it while Kheqghen looked on. And that was the whole of Kheqghen's ending — no siege worth the name, no song; a surrender and a seal.
+375: Kheqghen held Khirshaa against Tenademor, whose army went home leaner and wiser. Soon after, what had once broken against Brabrein's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it. The assault Vynthon loosed upon Mairsham broke against Tenademor's spears and came to nothing. The old quarrel between Rauriameonte and Tenademor found its old battlefield: Bradaurk changed hands once more, in the usual direction. Historians are asked why wars begin. Read on; they mostly begin on purpose.
 
-In 425, what had once broken against Brabrein's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it. Nor was that all: the shrines of the Faith of Vatenavomor in Brakno emptied, and those of the Way of Vaghimzizam filled. The same year, for a while everything Tenademor touched came back gold; even its rivals banked in its coin. Close on that, Rauriameonte and Tenademor met over Bradaurk yet again, and yet again it was Rauriameonte that kept the field.
+In 450, whatever Rauriameonte intended for Skagra, Tenademor had prepared for it twice over. Within the year, what had once broken against Mairsham's defences now carried them: Vynthon took the province, and Tenademor's pride with it. That same year, Khirshaa held — Kheqghen met Tenademor at the border and sent it back the way it came.
 
-In the year 475, the assault Rauriameonte loosed upon Mairghen broke against Tenademor's spears and came to nothing. Nor was that all: a pestilence swept Mairkhash and carried off more than any war had. The same year, not all was iron: a golden age dawned over Rauriameonte, and its cities flourished as never before.
+The map grew fuller meanwhile: 9 new settlements took root, Bellatomor first among them.
 
-All the while the land was filling: 9 settlements were raised in these years, Bellatomor and Nianteciamor among them.
+Conquest re-said the very map: Khirzaa became Khirhro on its new masters' tongues — and 2 other names with it.
 
-Names changed hands with the land: Khirghekh would be Khirdund from then on — and 3 other names with it.
+### III. The Wars of the Marches, 500–700
 
-### III. The Marching Years, 500–700
+In 500, the appetite of Vynthon was becoming proverbial: Khirkhukha this time, and Kheqghen unable to answer. The people of Mairsham drove out Vynthon's governors and took for themselves the name Qidkakaasi. Close on that, one more province, Mairsham, joined Vynthon's list; Qidkakaasi's name joined another. It was the end of Qidkakaasi: 25 years of banners, done in a single season.
 
-500: whatever Tenademor intended for Bradaurk, Rauriameonte had prepared for it twice over. Mairghen held — Tenademor met Rauriameonte at the border and sent it back the way it came. Hard on its heels, Tenademor came for Bradaurk and left without it; the war songs on both sides insist otherwise. Soon after, Mairghen held — Tenademor met Rauriameonte at the border and sent it back the way it came.
+The year 525 opened with trouble: Kheqghen held Khirshaa against Tenademor, whose army went home leaner and wiser. Nor was that all: Mairsham rose against Vynthon, and out of the rising was proclaimed the free realm of Jakaasi. Soon after, Jakaasi lost Mairsham to Vynthon, and the harvest went with it. With that, the realm of Jakaasi was extinguished; its name passes from the roll of the powers.
 
-About the year 600, Tenademor came for Bradaurk and left without it; the war songs on both sides insist otherwise. And in that year too, sickness walked through Rairghen and was not particular. Before long, Tenademor held Mairghen against Rauriameonte, whose army went home leaner and wiser.
+About the year 550, Skagra held — Tenademor met Rauriameonte at the border and sent it back the way it came. What had once broken against Khirshaa's defences now carried them: Tenademor took the province, and Kheqghen's pride with it. It was the end of Kheqghen: 425 years of banners, done in a single season.
 
-The year 650 opened with trouble: Tenademor moved against Bradaurk, but Rauriameonte threw the invaders back over the border. What had once broken against Mairghen's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it. No one in this chapter believed themselves the villain of it.
+In 600, Khirkad did not survive its conquerors; what stands of it stands empty. The same year, Vynthon and Tenademor met over Khirshaa yet again, and yet again it was Vynthon that kept the field. Quieter conquests were made as well: Skagra turned from the Rite of Vaskyvathork to the Way of Vaghimzizam. Before long, Tenademor held Deodinte against Vynthon, whose army went home leaner and wiser.
+
+In the year 625, sickness walked through Khirshaa and was not particular. Hard on its heels, Rauriameonte came for Skagra and left without it; the war songs on both sides insist otherwise. Bradaurk held — Rauriameonte met Tenademor at the border and sent it back the way it came. Vynthon moved against Deodinte, but Tenademor threw the invaders back over the border.
+
+About the year 675, the assault Tariademor loosed upon Brahrei broke against Rauriameonte's spears and came to nothing.
 
 These years also built more than they burned — 7 new settlements, of which Khirzaa would become the best known.
 
-### IV. The Age of Iron, 700–900
+The occupiers kept the land-words and changed the rest, and so Rairkai is written Rairdund in every ledger since.
 
-700: whatever Rauriameonte intended for Skagra, Tenademor had prepared for it twice over. The same year, Bradaurk held — Rauriameonte met Tenademor at the border and sent it back the way it came. When a generation had passed, the assault Rauriameonte loosed upon Skagra broke against Tenademor's spears and came to nothing.
+### IV. The Marching Years, 700–900
 
-In 750, Tenademor moved against Bradaurk, but Rauriameonte threw the invaders back over the border. By 800, Rauriameonte came for Skagra and left without it; the war songs on both sides insist otherwise. No rain came to Khirkhidku for two years together; many perished.
+700: Skagra held — Tenademor met Rauriameonte at the border and sent it back the way it came. What had once broken against Bradaurk's defences now carried them: Tenademor took the province, and Rauriameonte's pride with it. In the same season, the shrines of the Way of Vaghimzizam in Deobinte emptied, and those of the Faith of Vatenavomor filled. The assault Vynthon loosed upon Bradaurk broke against Tenademor's spears and came to nothing.
 
-The year 800 opened with trouble: these were the high years of Vynthon — its markets loud, its walls, for a while, unneeded. Close on that, Tenademor moved against Bradaurk, but Rauriameonte threw the invaders back over the border. In the same season, in Rairghen the bells rang without ceasing; a third of its people were laid in the ground. What had once broken against Skagra's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it.
+In 725, whatever Tariademor intended for Brahrei, Rauriameonte had prepared for it twice over. The realm of Vynfjysk was carved whole out of Vynthon's flank, with Brakno at its heart. The old quarrel between Rauriameonte and Tenademor found its old battlefield: Bradaurk changed hands once more, in the usual direction. That same year, the priests of the Way of Vaghimzizam out-argued the priests of the Rite of Vaskyvathork in Panalaria, which is how those wars are won.
 
-In the year 875, the assault Rauriameonte loosed upon Mairsham broke against Tenademor's spears and came to nothing. Skagra rose against Rauriameonte, and out of the rising was proclaimed the free realm of Storkastall. That same year, the wells of Qughen gave dust, and the river shrank to an argument.
+About the year 750, a great drought lay upon Vaudoria; the rivers shrank and the wells soured. Close on that, Vynthon crossed into Brakno at first thaw; Vynfjysk spent the summer pretending it could be undone. Within the year, Vynthon moved against Vaudoria, but Vynfjysk threw the invaders back over the border.
 
-### V. The Age of Blood and Banners, 900–1100
+800: the garrison of Bradaurk woke to new flags — Brogrdaurk had declared itself overnight, and made it stick. Before long, Brogrdaurk held Bradaurk against Rauriameonte, whose army went home leaner and wiser. Hard on its heels, Vynthon marched on Bradaurk, and by winter the province had fallen to it; Brogrdaurk was the poorer. And that was the whole of Brogrdaurk's ending — no siege worth the name, no song; a surrender and a seal.
 
-The year 900 opened with trouble: Rauriameonte held Bradaurk against Tenademor, whose army went home leaner and wiser. Within the year, Rauriameonte crossed into Skagra at first thaw; Storkastall spent the summer pretending it could be undone. With that, the realm of Storkastall was extinguished; its name passes from the roll of the powers.
+In 850, there was no halting Tariademor that season: Vaudoria fell to it while Vynfjysk looked on. Niantepo held — Vynfjysk met Vynthon at the border and sent it back the way it came.
 
-950: whatever Rauriameonte intended for Mairsham, Tenademor had prepared for it twice over. Close on that, for a while everything Vynthon touched came back gold; even its rivals banked in its coin. Before long, Tenademor held Mairsham against Rauriameonte, whose army went home leaner and wiser.
+### V. The Wars of the Marches, 900–1100
 
-In the year 1050, Rauriameonte came for Mairsham and left without it; the war songs on both sides insist otherwise.
+About the year 900, the assault Rauriameonte loosed upon Skagra broke against Tenademor's spears and came to nothing. In the same season, Vynfjysk held Niantepo against Tariademor, whose army went home leaner and wiser. Within the year, what had once broken against Niantepo's defences now carried them: Vynthon took the province, and Vynfjysk's pride with it. With that, the realm of Vynfjysk was extinguished; its name passes from the roll of the powers.
 
-*So the matter stands in 1100: 4 realms endure, and Vynthon is mightiest among them, holding 10 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
+In 950, what had once broken against Skagra's defences now carried them: Vynthon took the province, and Tenademor's pride with it. That same year, these were the high years of Vynthon — its markets loud, its walls, for a while, unneeded. Close on that, Vynthon and Tenademor met over Deodinte yet again, and yet again it was Vynthon that kept the field. And that was the whole of Tenademor's ending — no siege worth the name, no song; a surrender and a seal.
 
-*In Deoliria, Semorai Belentaria the Silent holds the throne. If the reader has found errors, they should know the realms found them first, and at greater cost.*
+In 975, what had once broken against Brahrei's defences now carried them: Tariademor took the province, and Rauriameonte's pride with it. No rain came to Panalaria for two years together; many perished. Soon after, Vaudoria held — Tariademor met Vynthon at the border and sent it back the way it came. Rauriameonte came for Brahrei and left without it; the war songs on both sides insist otherwise. No one in this chapter believed themselves the villain of it.
+
+About the year 1000, Deodinte rose against Vynthon, and out of the rising was proclaimed the free realm of Tenadente. The physicians of Khirghen tried everything; the gravediggers finished what was left. Before long, Vynthon, whose appetite grew with the eating, took Deodinte next. It was the end of Tenadente: 50 years of banners, done in a single season. Historians are asked why wars begin. Read on; they mostly begin on purpose.
+
+The year 1050 opened with trouble: a pestilence swept Deobinte and carried off more than any war had. Within the year, the assault Vynthon loosed upon Vaudoria broke against Tariademor's spears and came to nothing. The same year, Brahrei held — Tariademor met Rauriameonte at the border and sent it back the way it came.
+
+In the year 1075, sickness walked through Skagra and was not particular.
+
+*So the matter stands in 1100: 3 realms endure, and Vynthon is mightiest among them, holding 16 provinces. 1 town lies in ruins; their names are kept in this book, which is more than their walls kept.*
+
+*Semorai Belentaria the Silent reigns in Deoliria, and is said to be pleased with this book. I am told the coming age will be quieter. I was told that about this one.*
 
 ## Annals
 
@@ -464,76 +464,100 @@ In the year 1050, Rauriameonte came for Mairsham and left without it; the war so
 - **100 after the Crowning** — Vynthon seized Deobinte from Rauriacaria.
 - **100 after the Crowning** — The realm of Rauriacaria was extinguished.
 - **100 after the Crowning** — Tariademor seized Rairghen from Mantebinte.
+- **100 after the Crowning** — A plague swept Deopeona; many perished.
 - **125 after the Crowning** — Tariademor seized Panalaria from Mantebinte.
 - **125 after the Crowning** — The realm of Mantebinte was extinguished.
-- **125 after the Crowning** — Vynthon seized Qughen from Kaarkaasi.
-- **125 after the Crowning** — Rairghen rose against Tariademor and declared the free realm of Rairghen.
-- **150 after the Crowning** — Tariademor seized Rairghen from Rairghen.
-- **150 after the Crowning** — The realm of Rairghen was extinguished.
-- **150 after the Crowning** — Deobinte rose against Vynthon and declared the free realm of Caumeonte.
-- **150 after the Crowning** — A golden age dawned over Tenademor; its cities flourished as never before.
-- **175 after the Crowning** — Vynthon seized Deobinte from Caumeonte.
-- **175 after the Crowning** — The realm of Caumeonte was extinguished.
+- **150 after the Crowning** — Vynthon seized Qughen from Kaarkaasi.
+- **150 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **150 after the Crowning** — Rairghen rose against Tariademor and declared the free realm of Kheqghen.
+- **150 after the Crowning** — A plague swept Rairghen; many perished.
+- **175 after the Crowning** — Tariademor seized Rairghen from Kheqghen.
+- **175 after the Crowning** — The realm of Kheqghen was extinguished.
 - **200 after the Crowning** — Vynthon seized Mairkhukha from Kaarkaasi.
-- **200 after the Crowning** — Tenademor seized Mairkhash from Kaarkaasi.
-- **225 after the Crowning** — Vynthon seized Khirghen from Kaarkaasi.
-- **225 after the Crowning** — The realm of Kaarkaasi was extinguished.
-- **225 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **250 after the Crowning** — Vynthon seized Khirkhidku from Meqe.
-- **250 after the Crowning** — The realm of Meqe was extinguished.
-- **250 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
-- **250 after the Crowning** — A golden age dawned over Tenademor; its cities flourished as never before.
-- **275 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **275 after the Crowning** — Kheqghen's invasion of Mairsham was thrown back by Tenademor.
-- **300 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
-- **300 after the Crowning** — A golden age dawned over Vynthon; its cities flourished as never before.
-- **325 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **325 after the Crowning** — A plague swept Mairkhash; many perished.
-- **350 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
-- **350 after the Crowning** — Kheqghen's invasion of Mairsham was thrown back by Tenademor.
-- **375 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **375 after the Crowning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
-- **400 after the Crowning** — Tenademor seized Khirshaa from Kheqghen.
-- **400 after the Crowning** — Kheqghen's invasion of Mairsham was thrown back by Tenademor.
-- **400 after the Crowning** — Vaudoria turned from the Faith of Vatenavomor to the Way of Vaghimzizam.
-- **425 after the Crowning** — Vynthon seized Khirkhukha from Kheqghen.
-- **425 after the Crowning** — The realm of Kheqghen was extinguished.
-- **425 after the Crowning** — Rauriameonte seized Brabrein from Tenademor.
-- **425 after the Crowning** — Brakno turned from the Faith of Vatenavomor to the Way of Vaghimzizam.
-- **425 after the Crowning** — A golden age dawned over Tenademor; its cities flourished as never before.
-- **450 after the Crowning** — Rauriameonte seized Bradaurk from Tenademor.
-- **475 after the Crowning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
-- **475 after the Crowning** — A plague swept Mairkhash; many perished.
-- **475 after the Crowning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
-- **500 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **525 after the Crowning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
-- **550 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **575 after the Crowning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
-- **600 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **600 after the Crowning** — A plague swept Rairghen; many perished.
-- **625 after the Crowning** — Rauriameonte's invasion of Mairghen was thrown back by Tenademor.
+- **200 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **200 after the Crowning** — A long drought gripped Mairkhukha; many perished.
+- **225 after the Crowning** — Vynthon seized Mairkhash from Kaarkaasi.
+- **225 after the Crowning** — Mairkhash rose against Vynthon and declared the free realm of Jughen.
+- **225 after the Crowning** — A plague swept Bradaurk; many perished.
+- **250 after the Crowning** — Vynthon seized Mairkhash from Jughen.
+- **250 after the Crowning** — The realm of Jughen was extinguished.
+- **250 after the Crowning** — Mairkhukha rose against Vynthon and declared the free realm of Jamaad.
+- **275 after the Crowning** — Vynthon seized Mairkhukha from Jamaad.
+- **275 after the Crowning** — The realm of Jamaad was extinguished.
+- **300 after the Crowning** — Vynthon seized Khirghen from Kaarkaasi.
+- **300 after the Crowning** — The realm of Kaarkaasi was extinguished.
+- **300 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **300 after the Crowning** — A plague swept Qughen; many perished.
+- **325 after the Crowning** — Vynthon seized Khirkhidku from Meqe.
+- **325 after the Crowning** — The realm of Meqe was extinguished.
+- **325 after the Crowning** — A long drought gripped Bradaurk; many perished.
+- **350 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **350 after the Crowning** — Vaudoria turned from the Rite of Vaskyvathork to the Faith of Vatenavomor.
+- **375 after the Crowning** — Vynthon seized Mairghen from Tenademor.
+- **375 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
+- **400 after the Crowning** — Rauriameonte seized Brabrein from Tenademor.
+- **425 after the Crowning** — Vynthon's invasion of Mairsham was thrown back by Tenademor.
+- **425 after the Crowning** — Rauriameonte seized Bradaurk from Tenademor.
+- **450 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **475 after the Crowning** — Vynthon seized Mairsham from Tenademor.
+- **475 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
+- **500 after the Crowning** — Vynthon seized Khirkhukha from Kheqghen.
+- **500 after the Crowning** — Mairsham rose against Vynthon and declared the free realm of Qidkakaasi.
+- **525 after the Crowning** — Vynthon seized Mairsham from Qidkakaasi.
+- **525 after the Crowning** — The realm of Qidkakaasi was extinguished.
+- **525 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
+- **525 after the Crowning** — Mairsham rose against Vynthon and declared the free realm of Jakaasi.
+- **550 after the Crowning** — Vynthon seized Mairsham from Jakaasi.
+- **550 after the Crowning** — The realm of Jakaasi was extinguished.
+- **550 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **575 after the Crowning** — Tenademor seized Khirshaa from Kheqghen.
+- **575 after the Crowning** — The realm of Kheqghen was extinguished.
+- **600 after the Crowning** — Khirkad was stormed and left a ruin.
+- **600 after the Crowning** — Vynthon seized Khirshaa from Tenademor.
+- **600 after the Crowning** — Skagra turned from the Rite of Vaskyvathork to the Way of Vaghimzizam.
+- **625 after the Crowning** — Vynthon's invasion of Deodinte was thrown back by Tenademor.
+- **625 after the Crowning** — A plague swept Khirshaa; many perished.
+- **650 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
 - **650 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **675 after the Crowning** — Rauriameonte seized Mairghen from Tenademor.
+- **675 after the Crowning** — Vynthon's invasion of Deodinte was thrown back by Tenademor.
+- **675 after the Crowning** — Tariademor's invasion of Brahrei was thrown back by Rauriameonte.
 - **700 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **700 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **750 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **750 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **800 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **800 after the Crowning** — A long drought gripped Khirkhidku; many perished.
-- **800 after the Crowning** — A golden age dawned over Vynthon; its cities flourished as never before.
-- **825 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **825 after the Crowning** — A plague swept Rairghen; many perished.
-- **850 after the Crowning** — Rauriameonte seized Skagra from Tenademor.
-- **875 after the Crowning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
-- **875 after the Crowning** — Skagra rose against Rauriameonte and declared the free realm of Storkastall.
-- **875 after the Crowning** — A long drought gripped Qughen; many perished.
-- **900 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **925 after the Crowning** — Rauriameonte seized Skagra from Storkastall.
-- **925 after the Crowning** — The realm of Storkastall was extinguished.
-- **950 after the Crowning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
-- **975 after the Crowning** — A golden age dawned over Vynthon; its cities flourished as never before.
-- **1000 after the Crowning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
-- **1050 after the Crowning** — Rauriameonte's invasion of Mairsham was thrown back by Tenademor.
+- **700 after the Crowning** — Tenademor seized Bradaurk from Rauriameonte.
+- **700 after the Crowning** — Deobinte turned from the Way of Vaghimzizam to the Faith of Vatenavomor.
+- **725 after the Crowning** — Vynthon's invasion of Bradaurk was thrown back by Tenademor.
+- **725 after the Crowning** — Tariademor's invasion of Brahrei was thrown back by Rauriameonte.
+- **725 after the Crowning** — Brakno and 2 neighbouring province(s) broke away from Vynthon to found the realm of Vynfjysk.
+- **750 after the Crowning** — Rauriameonte seized Bradaurk from Tenademor.
+- **750 after the Crowning** — Panalaria turned from the Rite of Vaskyvathork to the Way of Vaghimzizam.
+- **750 after the Crowning** — A long drought gripped Vaudoria; many perished.
+- **775 after the Crowning** — Vynthon seized Brakno from Vynfjysk.
+- **800 after the Crowning** — Vynthon's invasion of Vaudoria was thrown back by Vynfjysk.
+- **800 after the Crowning** — Bradaurk rose against Rauriameonte and declared the free realm of Brogrdaurk.
+- **825 after the Crowning** — Rauriameonte's invasion of Bradaurk was thrown back by Brogrdaurk.
+- **850 after the Crowning** — Vynthon seized Bradaurk from Brogrdaurk.
+- **850 after the Crowning** — The realm of Brogrdaurk was extinguished.
+- **850 after the Crowning** — Tariademor seized Vaudoria from Vynfjysk.
+- **875 after the Crowning** — Vynthon's invasion of Niantepo was thrown back by Vynfjysk.
+- **900 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **900 after the Crowning** — Tariademor's invasion of Niantepo was thrown back by Vynfjysk.
+- **925 after the Crowning** — Vynthon seized Niantepo from Vynfjysk.
+- **925 after the Crowning** — The realm of Vynfjysk was extinguished.
+- **950 after the Crowning** — Vynthon seized Skagra from Tenademor.
+- **950 after the Crowning** — A golden age dawned over Vynthon; its cities flourished as never before.
+- **975 after the Crowning** — Vynthon seized Deodinte from Tenademor.
+- **975 after the Crowning** — The realm of Tenademor was extinguished.
+- **975 after the Crowning** — Tariademor seized Brahrei from Rauriameonte.
+- **975 after the Crowning** — A long drought gripped Panalaria; many perished.
+- **1000 after the Crowning** — Vynthon's invasion of Vaudoria was thrown back by Tariademor.
+- **1000 after the Crowning** — Rauriameonte's invasion of Brahrei was thrown back by Tariademor.
+- **1000 after the Crowning** — Deodinte rose against Vynthon and declared the free realm of Tenadente.
+- **1025 after the Crowning** — A plague swept Khirghen; many perished.
+- **1050 after the Crowning** — Vynthon seized Deodinte from Tenadente.
+- **1050 after the Crowning** — The realm of Tenadente was extinguished.
+- **1050 after the Crowning** — A plague swept Deobinte; many perished.
+- **1075 after the Crowning** — Vynthon's invasion of Vaudoria was thrown back by Tariademor.
+- **1075 after the Crowning** — Rauriameonte's invasion of Brahrei was thrown back by Tariademor.
+- **1075 after the Crowning** — A plague swept Skagra; many perished.
 
 ## A Traveller's Account, in the year 1100
 
@@ -555,27 +579,27 @@ Out of Rairdemor, then, toward Nianteciamor. The way crosses Rairghen and then B
 
 From Nianteciamor the road runs 13 leagues to Deotelen, through grass as high as the stirrup. The road finds water twice on this stretch. The road climbs some 450 metres before it thinks better of it. Deotelen itself — the sea market — is a city with its face to the sea; its market is all fish and livestock.
 
-Two days' walking took me from Deotelen to Deohro, under green galleries. We forded twice; I stopped counting wet boots. Deohro itself — the sea hall — is a town with its face to the sea; its market is all grain and livestock. The people here still say Deonelen; the ledgers say Deohro. I bought bread in both names.
+Two days' walking took me from Deotelen to Deogrull, under green galleries. We forded twice; I stopped counting wet boots. Deogrull itself — the sea bridge — is a town with its face to the sea; its market is all grain and livestock. The people here still say Deonelen; the ledgers say Deogrull. I bought bread in both names.
 
-Two days' walking took me from Deohro to Peonabust, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Peonabust itself — the grass gate — is a town with its face to the sea; its market is all livestock and grain. The people here still say Peonaliria; the ledgers say Peonabust. I bought bread in both names.
+Two days' walking took me from Deogrull to Peonadund, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Peonadund itself — the grass haven — is a town with its face to the sea; its market is all livestock and grain. The people here still say Peonaliria; the ledgers say Peonadund. I bought bread in both names.
 
-Two days' walking took me from Peonabust to Vonthu. The road finds water twice on this stretch. The road climbs some 500 metres before it thinks better of it. Vonthu itself — the green fort — is a town with its face to the sea; its market is all grain and livestock.
+Two days' walking took me from Peonadund to Vonthu. The road finds water twice on this stretch. The road climbs some 500 metres before it thinks better of it. Vonthu itself — the green fort — is a town with its face to the sea; its market is all grain and livestock.
 
 From Vonthu the road runs 13 leagues to Stagrathu. We forded twice; I stopped counting wet boots. Stagrathu itself — the sea fort — is a village with its face to the sea; its market is all grain and livestock.
 
-The Khirfjysk road leaves Stagrathu by the long way, through more of the same. The road finds water twice on this stretch. The road climbs some 550 metres before it thinks better of it. Khirfjysk itself — the sea home — is a town with its face to the sea; its market is all grain and livestock. The people here still say Khirqe; the ledgers say Khirfjysk. I bought bread in both names.
+The Khirthu road leaves Stagrathu by the long way, through more of the same. The road finds water twice on this stretch. The road climbs some 550 metres before it thinks better of it. Khirthu itself — the sea fort — is a town with its face to the sea; its market is all grain and livestock. The people here still say Khirqe; the ledgers say Khirthu. I bought bread in both names.
 
-Two days' walking took me from Khirfjysk to Khirdund, the country unchanged. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Khirdund itself — the sea haven — is a city with its face to the sea; its market is all grain and livestock. The people here still say Khirghekh; the ledgers say Khirdund. I bought bread in both names.
+Two days' walking took me from Khirthu to Khirdund, the country unchanged. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Khirdund itself — the sea haven — is a city with its face to the sea; its market is all grain and livestock. The people here still say Khirghekh; the ledgers say Khirdund. I bought bread in both names.
 
-Khirhro lies 11 leagues on from Khirdund, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Khirhro itself — the sea hall — is a town with its face to the sea; its market is all livestock and horses. The people here still say Khirmakh; the ledgers say Khirhro. I bought bread in both names.
+Khirbust lies 11 leagues on from Khirdund, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Khirbust itself — the sea gate — is a town with its face to the sea; its market is all livestock and horses. The people here still say Khirmakh; the ledgers say Khirbust. I bought bread in both names.
 
-Khirbust lies 10 leagues on from Khirhro, through more of the same. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Khirbust itself — the sea gate — is a village with its face to the sea; its market is all livestock and fish. The people here still say Khirzaa; the ledgers say Khirbust. I bought bread in both names.
+Khirhro lies 10 leagues on from Khirbust, through more of the same. The road finds water twice on this stretch. The road climbs some 300 metres before it thinks better of it. Khirhro itself — the sea hall — is a village with its face to the sea; its market is all livestock and fish. The people here still say Khirzaa; the ledgers say Khirhro. I bought bread in both names.
 
-The Rairba road leaves Khirbust by the long way. The road finds water twice on this stretch. Rairba itself — the gold spring — is a village; its market is all livestock and horses. The people here still say Rairkai; the ledgers say Rairba. I bought bread in both names.
+Back through Khirthu, then — a road walked twice is half as long, whatever my boots say — and on to Ghashro. The road finds water twice on this stretch. Ghashro itself — the river hall — is a village; its market is all livestock and grain. The people here still say Ghashzaa; the ledgers say Ghashro. I bought bread in both names.
 
-The Bellapana road leaves Rairba by the short way, through more of the same. The road finds water twice on this stretch. The road climbs some 350 metres before it thinks better of it. Bellapana itself — the river field — is a village; its market is all livestock and wine.
+There was nothing for it but to retrace my steps to Vonthu and strike out for Niantefjysk. The road finds water twice on this stretch. The road climbs some 350 metres before it thinks better of it. Niantefjysk itself — the green home — is a village; its market is all livestock and wine. The people here still say Niantedinte; the ledgers say Niantefjysk. I bought bread in both names.
 
-*The rest of that country I crossed more quickly than it deserved: Khirtomor, Deociamor, Bellatomor, Hralamor, Stagrlamor, Ghashbust, Niantefjysk — each worth a page I did not have.*
+*Of Deociamor and Bellatomor and Bellapana and Hralamor and Stagrlamor and Rairdund I say nothing, for no road goes there; they keep to their water, and perhaps they are right to.*
 
 *I do not say I saw everything; I say I walked past it. Rauriai, 1100.*
 

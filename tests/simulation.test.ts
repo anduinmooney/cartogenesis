@@ -84,12 +84,18 @@ test("snapshots record every turn plus the initial state; last equals final", ()
  * every world (mean top-power share ~94%, 75% of worlds >90% unified), which
  * made every history read the same. Outcomes must stay varied — some worlds
  * unify, many end divided among rival powers.
+ *
+ * Measured at 256², not 160²: since the islets merge (Session 24), tiny
+ * island regions no longer survive as unconquerable microstates, and a 160²
+ * world has only ~4 mainland regions — too few for a share-of-regions metric
+ * to mean anything (one won war reads as "100% unified"). At 256² (~12
+ * regions) the metric is representative: 30-seed mean ~55%, sd ~17.
  */
 test("histories vary: not every world collapses into one power", () => {
   const seeds = ["alpha", "gamma", "juno", "orion", "pyxis", "rhea", "sirius", "vahalia"];
   const shares: number[] = [];
   for (const seed of seeds) {
-    const w = generateWorld({ seed, width: 160, height: 160 });
+    const w = generateWorld({ seed, width: 256, height: 256 });
     const total = w.regions.regions.length;
     const counts = new Map<number, number>();
     for (const rid of Object.keys(w.simulation.finalControl)) {
