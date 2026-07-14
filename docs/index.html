@@ -3,384 +3,394 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cartogenesis — an atlas of worlds from seeds</title>
+    <title>Cartogenesis — A Folio of Invented Worlds</title>
     <meta
       name="description"
-      content="A deterministic procedural world generation engine. Every world is a pure function of its seed."
+      content="A deterministic procedural world-generation engine. Every world — its terrain, climate, cities, and centuries of history — is a pure function of a single seed."
     />
     <style>
+      /* ============================================================
+         THE CARTOGRAPHER'S FOLIO — the frontispiece.
+         The gallery that opens the folio; same paper, ink, and rules
+         as the live app. No external assets — paper is gradients,
+         ornaments are text, the compass is one inline SVG.
+         ============================================================ */
       :root {
-        --ground: #0b1119;
-        --panel: #101923;
-        --panel-2: #0d151d;
-        --border: #23313f;
-        --border-soft: #1a2531;
-        --ink: #e9eff5;
-        --muted: #93a6b7;
-        --faint: #64768a;
-        --accent: #6cc0c9;
-        --accent-2: #d9a441;
-        --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
-          serif;
-        --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-        --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas,
-          monospace;
+        --desk: #211910;
+        --desk-2: #2c2216;
+        --paper: #e9dfc6;
+        --paper-2: #e0d2b1;
+        --paper-3: #d5c49d;
+        --ink: #2b2117;
+        --ink-soft: #4d4032;
+        --muted: #6b5b45;
+        --faint: #8d7c62;
+        --rule: #b3a17c;
+        --rule-soft: #cbbc98;
+        --oxblood: #7d2c23;
+        --oxblood-deep: #5d1f18;
+        --verdigris: #3c6e5c;
+        --gilt: #8a6d2f;
+        --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+        --scrawl: 255px 15px 225px 15px / 15px 225px 15px 255px;
       }
-      @media (prefers-color-scheme: light) {
-        :root {
-          --ground: #ece5d6;
-          --panel: #f6f1e6;
-          --panel-2: #efe8d8;
-          --border: #d3c7ad;
-          --border-soft: #e0d7c2;
-          --ink: #23292e;
-          --muted: #6d6553;
-          --faint: #928a76;
-          --accent: #2b7a86;
-          --accent-2: #96631a;
-        }
-      }
-      * {
-        box-sizing: border-box;
-      }
-      html {
-        -webkit-text-size-adjust: 100%;
-      }
+      * { box-sizing: border-box; }
+      html { background: var(--desk); -webkit-text-size-adjust: 100%; }
       body {
         margin: 0;
-        background: var(--ground);
+        min-height: 100vh;
+        background:
+          radial-gradient(120% 90% at 50% 0%, rgba(255, 236, 190, 0.06), transparent 60%),
+          radial-gradient(140% 120% at 50% 110%, rgba(0, 0, 0, 0.55), transparent 55%),
+          linear-gradient(160deg, var(--desk-2), var(--desk) 55%);
         color: var(--ink);
-        font-family: var(--sans);
+        font-family: var(--serif);
         line-height: 1.55;
-        -webkit-font-smoothing: antialiased;
-      }
-      .wrap {
-        max-width: 1180px;
-        margin: 0 auto;
-        padding: 0 1.5rem;
       }
 
-      /* ---- Masthead ---- */
-      header {
-        border-bottom: 1px solid var(--border);
-        background: linear-gradient(
-          180deg,
-          color-mix(in srgb, var(--accent) 6%, var(--ground)),
-          var(--ground)
-        );
+      /* --- The folio sheet, with its spine label --- */
+      .wrap {
+        position: relative;
+        max-width: 1240px;
+        margin: 2.2rem auto 3rem;
+        padding: 2.4rem 2.6rem 2.6rem 3.4rem;
+        background:
+          radial-gradient(90% 60% at 20% 10%, rgba(255, 252, 240, 0.5), transparent 60%),
+          radial-gradient(80% 70% at 85% 90%, rgba(120, 90, 40, 0.1), transparent 55%),
+          radial-gradient(120% 100% at 50% 50%, transparent 62%, rgba(101, 78, 42, 0.16) 100%),
+          var(--paper);
+        box-shadow:
+          0 1px 0 rgba(255, 245, 220, 0.12) inset,
+          0 30px 60px rgba(0, 0, 0, 0.55),
+          0 4px 14px rgba(0, 0, 0, 0.4);
+        border: 1px solid #3a2d1b;
+        border-radius: 3px;
       }
-      .masthead {
-        padding: 3rem 1.5rem 2rem;
-        max-width: 1180px;
-        margin: 0 auto;
+      .spine {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 2.4rem;
+        border-right: 1px solid var(--rule-soft);
+        background: linear-gradient(90deg, rgba(101, 78, 42, 0.12), transparent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      .eyebrow {
-        font-family: var(--mono);
-        font-size: 0.72rem;
-        letter-spacing: 0.22em;
+      .spine span {
+        writing-mode: vertical-rl;
+        font-size: 0.66rem;
+        letter-spacing: 0.42em;
         text-transform: uppercase;
-        color: var(--accent);
-        margin: 0 0 0.9rem;
+        color: var(--gilt);
+        white-space: nowrap;
+      }
+      @media (max-width: 900px) {
+        .wrap { margin: 0.6rem; padding: 1.4rem 1rem 1.8rem 2.8rem; }
+      }
+
+      /* --- The frontispiece --- */
+      header { text-align: center; padding: 1.2rem 0 1.6rem; }
+      .rose {
+        width: 78px;
+        height: 78px;
+        margin: 0 auto 0.4rem;
+        filter: drop-shadow(0 2px 3px rgba(50, 35, 15, 0.35));
+      }
+      @keyframes breathe { 0%, 100% { scale: 1; } 50% { scale: 1.03; } }
+      .rose svg { animation: breathe 7s ease-in-out infinite; }
+      .eyebrow {
+        font-size: 0.72rem;
+        letter-spacing: 0.34em;
+        text-transform: uppercase;
+        color: var(--gilt);
+        margin: 0 0 0.5rem;
       }
       h1 {
-        font-family: var(--serif);
-        font-weight: 600;
-        font-size: clamp(2.4rem, 6vw, 3.9rem);
-        line-height: 1.02;
-        letter-spacing: -0.015em;
-        margin: 0;
-        text-wrap: balance;
+        font-weight: 500;
+        font-size: clamp(2.3rem, 6vw, 3.7rem);
+        letter-spacing: 0.05em;
+        line-height: 1.04;
+        margin: 0 0 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
       }
-      h1 .amp {
-        color: var(--accent-2);
-        font-style: italic;
+      h1::before, h1::after {
+        content: "";
+        flex: 0 1 90px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--rule));
+        animation: ruledraw 1.4s ease-out both;
+        transform-origin: right center;
       }
+      h1::after { background: linear-gradient(90deg, var(--rule), transparent); transform-origin: left center; }
+      @keyframes ruledraw { from { transform: scaleX(0); } }
       .lede {
-        max-width: 60ch;
+        max-width: 64ch;
+        margin: 0.6rem auto 0;
         color: var(--muted);
-        font-size: 1.08rem;
-        margin: 1.1rem 0 0;
+        font-style: italic;
+        font-size: 1.04rem;
       }
       .lede code {
-        font-family: var(--mono);
-        font-size: 0.86em;
+        font-family: var(--serif);
+        font-style: normal;
+        font-size: 0.92em;
         color: var(--ink);
-        background: var(--panel);
-        padding: 0.12em 0.42em;
-        border-radius: 4px;
-        border: 1px solid var(--border-soft);
+        background: var(--paper-2);
+        padding: 0.04em 0.4em;
+        border: 1px solid var(--rule-soft);
       }
-      .meta-row {
+      .colophon {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.4rem;
-        margin-top: 1.6rem;
-        font-family: var(--mono);
-        font-size: 0.78rem;
+        justify-content: center;
+        gap: 0.35rem 1.1rem;
+        margin: 1.3rem auto 0;
+        font-size: 0.82rem;
         color: var(--faint);
       }
-      .meta-row b {
-        color: var(--ink);
-        font-weight: 600;
-      }
-      .meta-row a {
-        color: var(--accent);
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-      }
-      .meta-row a:hover {
-        border-bottom-color: var(--accent);
-      }
+      .colophon b { color: var(--ink); font-weight: 600; font-variant-numeric: oldstyle-nums; }
+      .colophon a { color: var(--verdigris); text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+      .colophon a:hover { color: var(--oxblood); }
       .cta {
         display: inline-block;
-        background: var(--accent);
-        color: #04141a;
-        font-weight: 600;
+        margin-top: 1.5rem;
+        background: radial-gradient(120% 140% at 30% 20%, #9a3c30, var(--oxblood) 55%, var(--oxblood-deep));
+        color: #f3e6cf;
+        border: 1px solid var(--oxblood-deep);
+        border-radius: 999px;
+        padding: 0.5rem 1.5rem;
+        font-size: 0.86rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
         text-decoration: none;
-        padding: 0.6rem 1.1rem;
-        border-radius: 7px;
-        font-size: 0.95rem;
-        transition: transform 0.12s;
+        box-shadow: 0 2px 5px rgba(60, 20, 12, 0.45), 0 1px 0 rgba(255, 220, 190, 0.25) inset;
+        transition: transform 0.08s, color 0.15s;
       }
-      .cta:hover { transform: translateY(-1px); }
+      .cta:hover { color: #fff4de; }
+      .cta:active { transform: scale(0.97); }
 
-      /* ---- Plate grid ---- */
-      main {
-        padding: 2.5rem 0 1rem;
+      .divider {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 1.8rem 0 1.6rem;
+        color: var(--gilt);
+        font-size: 0.72rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
       }
+      .divider::before, .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--rule-soft);
+      }
+
+      /* --- The plate gallery --- */
       .plates {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-        gap: 1.6rem;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        gap: 2rem 1.8rem;
       }
-      .plate {
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 6px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-      }
+      .plate { display: flex; flex-direction: column; }
       .plate figure {
-        margin: 0;
         position: relative;
-        background: #05080d;
+        margin: 0;
+        background: var(--paper-2);
+        border: 1px solid var(--ink-soft);
+        outline: 1px solid var(--rule);
+        outline-offset: 4px;
+        box-shadow: 0 0 0 6px var(--paper), 0 0 0 7px var(--rule-soft), 0 8px 22px rgba(70, 50, 22, 0.26);
         aspect-ratio: 1 / 1;
         overflow: hidden;
       }
-      .plate img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+      .plate img { display: block; width: 100%; height: 100%; object-fit: cover; }
       .platenum {
         position: absolute;
-        top: 0.6rem;
-        left: 0.7rem;
-        font-family: var(--mono);
-        font-size: 0.68rem;
-        letter-spacing: 0.12em;
-        color: #dfe8f0;
-        background: rgba(6, 10, 16, 0.62);
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        padding: 0.15rem 0.45rem;
-        border-radius: 3px;
-        backdrop-filter: blur(3px);
+        top: 0.55rem;
+        left: 0.6rem;
+        font-size: 0.64rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink);
+        background: rgba(233, 223, 198, 0.9);
+        border: 1px solid var(--ink-soft);
+        padding: 0.14rem 0.5rem;
       }
       .tabs {
         position: absolute;
-        bottom: 0.6rem;
-        left: 0.6rem;
-        right: 0.6rem;
+        bottom: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
         display: flex;
-        gap: 3px;
-        background: rgba(6, 10, 16, 0.6);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 5px;
-        padding: 3px;
-        backdrop-filter: blur(4px);
+        flex-wrap: wrap;
+        gap: 2px;
+        justify-content: center;
       }
       .tabs button {
-        flex: 1;
-        border: 0;
-        background: transparent;
-        color: #c6d4e0;
-        font-family: var(--mono);
-        font-size: 0.68rem;
-        letter-spacing: 0.03em;
-        padding: 0.32rem 0.1rem;
-        border-radius: 3px;
-        cursor: pointer;
-        transition: background 0.12s, color 0.12s;
-      }
-      .tabs button:hover {
-        color: #fff;
-      }
-      .tabs button[aria-pressed="true"] {
-        background: var(--accent);
-        color: #04141a;
-        font-weight: 600;
-      }
-      .tabs button:focus-visible {
-        outline: 2px solid var(--accent-2);
-        outline-offset: 1px;
-      }
-
-      .caption {
-        padding: 0.9rem 1rem 1.1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.55rem;
-        border-top: 1px solid var(--border-soft);
-      }
-      .caption h2 {
+        border: 1px solid var(--ink-soft);
+        background: rgba(233, 223, 198, 0.88);
+        color: var(--muted);
         font-family: var(--serif);
-        font-size: 1.28rem;
+        font-size: 0.62rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 0.2rem 0.42rem;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: color 0.12s, background 0.12s;
+      }
+      .tabs button:hover { color: var(--oxblood); }
+      .tabs button[aria-pressed="true"] {
+        background: var(--oxblood);
+        color: #f3e6cf;
+        border-color: var(--oxblood-deep);
         font-weight: 600;
+      }
+      .tabs button:focus-visible { outline: 2px solid var(--gilt); outline-offset: 1px; }
+
+      .caption { padding: 1rem 0.3rem 0; }
+      .caption h2 {
+        font-size: 1.35rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
         margin: 0;
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        gap: 0.5rem;
+        gap: 0.6rem;
       }
       .caption h2 .seed {
-        font-family: var(--mono);
-        font-size: 0.68rem;
+        font-size: 0.7rem;
+        font-style: italic;
         color: var(--faint);
-        letter-spacing: 0.04em;
         font-weight: 400;
+        white-space: nowrap;
       }
-      .caption .note {
-        color: var(--muted);
-        font-size: 0.9rem;
-        margin: 0;
-      }
+      .caption .note { color: var(--muted); font-style: italic; font-size: 0.92rem; margin: 0.25rem 0 0.7rem; }
       .stats {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.3rem 1rem;
-        font-family: var(--mono);
-        font-size: 0.74rem;
-        color: var(--muted);
-        border-top: 1px dashed var(--border-soft);
-        padding-top: 0.7rem;
-        font-variant-numeric: tabular-nums;
+        border-top: 1px solid var(--rule-soft);
+        border-bottom: 1px solid var(--rule-soft);
+        padding: 0.5rem 0;
+        font-size: 0.86rem;
+        color: var(--ink-soft);
       }
-      .stats span b {
-        color: var(--ink);
-        font-weight: 600;
-      }
-      .stats .wide {
-        grid-column: 1 / -1;
-      }
+      .stats p { margin: 0.2rem 0; }
+      .stats b { color: var(--ink); font-weight: 600; font-variant-numeric: oldstyle-nums; }
       .links {
         display: flex;
-        gap: 1rem;
-        margin-top: 0.2rem;
-        font-family: var(--mono);
-        font-size: 0.76rem;
+        gap: 1.1rem;
+        margin-top: 0.6rem;
+        font-size: 0.84rem;
       }
       .links a {
-        color: var(--accent);
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
+        color: var(--verdigris);
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 3px;
       }
-      .links a:hover {
-        border-bottom-color: var(--accent);
-      }
+      .links a:hover { color: var(--oxblood); }
 
-      /* ---- Legend ---- */
-      .legend {
-        margin: 2.5rem 0 1rem;
-        padding: 1.4rem 1.5rem;
-        background: var(--panel-2);
-        border: 1px solid var(--border);
-        border-radius: 6px;
-      }
+      /* --- The engraved biome legend --- */
+      .legend { margin: 2.4rem 0 0.5rem; }
       .legend h3 {
-        font-family: var(--mono);
         font-size: 0.72rem;
-        letter-spacing: 0.18em;
+        letter-spacing: 0.3em;
         text-transform: uppercase;
-        color: var(--accent);
-        margin: 0 0 1rem;
-      }
-      .swatches {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        gap: 0.5rem 1.2rem;
-      }
-      .swatch {
+        color: var(--gilt);
+        margin: 0 0 0.9rem;
         display: flex;
         align-items: center;
-        gap: 0.55rem;
-        font-size: 0.82rem;
-        color: var(--muted);
+        gap: 0.7rem;
       }
-      .swatch i {
-        width: 15px;
-        height: 15px;
-        border-radius: 3px;
-        border: 1px solid rgba(0, 0, 0, 0.25);
-        flex: none;
+      .legend h3::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--rule-soft), transparent); }
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 0.35rem 1.3rem;
       }
+      .swatch { display: flex; align-items: center; gap: 0.55rem; font-size: 0.84rem; color: var(--muted); }
+      .swatch i { width: 14px; height: 14px; border: 1px solid rgba(43, 33, 23, 0.5); flex: none; }
 
       footer {
-        border-top: 1px solid var(--border);
-        margin-top: 2.5rem;
-        padding: 1.6rem 0 3rem;
+        margin-top: 2.2rem;
+        padding-top: 1.4rem;
+        border-top: 3px double var(--rule);
         color: var(--faint);
-        font-family: var(--mono);
-        font-size: 0.76rem;
+        font-size: 0.82rem;
+        font-style: italic;
+        text-align: center;
       }
-      footer a {
-        color: var(--accent);
-        text-decoration: none;
-      }
-      footer a:hover {
-        text-decoration: underline;
-      }
+      footer a { color: var(--verdigris); text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+      footer a:hover { color: var(--oxblood); }
       @media (prefers-reduced-motion: reduce) {
-        * {
-          transition: none !important;
-        }
+        *, .rose svg { transition: none !important; animation: none !important; }
       }
     </style>
   </head>
   <body>
-    <header>
-      <div class="masthead">
-        <p class="eyebrow">Procedural World Engine · v0.8</p>
+    <div class="wrap">
+      <div class="spine"><span>Cartogenesis · a folio of invented worlds</span></div>
+
+      <header>
+        <div class="rose" aria-hidden="true">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="47" fill="#e9dfc6" fill-opacity="0.9" stroke="#4d4032" stroke-width="1.5" />
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#8d7c62" stroke-width="0.7" />
+            <g stroke="#4d4032" stroke-width="0.5">
+              <polygon points="50,50 61,39 66,34 61,44" fill="#8d7c62" />
+              <polygon points="50,50 61,61 66,66 56,61" fill="#8d7c62" />
+              <polygon points="50,50 39,61 34,66 44,61" fill="#8d7c62" />
+              <polygon points="50,50 39,39 34,34 39,44" fill="#8d7c62" />
+            </g>
+            <g stroke="#2b2117" stroke-width="0.6">
+              <polygon points="50,4 54,50 50,50" fill="#7d2c23" />
+              <polygon points="50,4 46,50 50,50" fill="#b0554a" />
+              <polygon points="96,50 50,54 50,50" fill="#2b2117" />
+              <polygon points="96,50 50,46 50,50" fill="#6b5b45" />
+              <polygon points="50,96 46,50 50,50" fill="#2b2117" />
+              <polygon points="50,96 54,50 50,50" fill="#6b5b45" />
+              <polygon points="4,50 50,46 50,50" fill="#2b2117" />
+              <polygon points="4,50 50,54 50,50" fill="#6b5b45" />
+            </g>
+            <circle cx="50" cy="50" r="3.2" fill="#2b2117" />
+            <text x="50" y="15.5" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#7d2c23" font-weight="bold">N</text>
+          </svg>
+        </div>
+        <p class="eyebrow">A deterministic engine of worlds</p>
         <h1>Cartogenesis</h1>
         <p class="lede">
           An atlas of worlds grown from single seeds. Terrain, seas, climate,
-          rivers, biomes, provinces, cities, roads, and a written history — each
-          layer derived, in order, by a deterministic engine with zero
-          dependencies. Same seed, <span class="amp">&amp;</span> same world,
-          forever. Every plate has a labeled poster and a gazetteer; regenerate
-          any with <code>node src/cli.ts generate --seed &lt;name&gt;</code>.
+          rivers, biomes, provinces, cities, roads, and eleven centuries of
+          history — each layer derived, in order, by a zero-dependency engine.
+          Name a seed and the same world returns, to the last river. Regenerate
+          any plate here with <code>node src/cli.ts generate --seed &lt;name&gt;</code>.
         </p>
-        <div class="meta-row" id="meta"></div>
-        <p style="margin-top:1.4rem">
-          <a class="cta" href="app/">▶ Generate your own world, live in the browser →</a>
-        </p>
-      </div>
-    </header>
+        <div class="colophon" id="meta"></div>
+        <a class="cta" href="app/">Survey your own world, live &rarr;</a>
+      </header>
 
-    <main class="wrap">
-      <div class="plates" id="plates"></div>
+      <div class="divider">The Plates</div>
 
-      <section class="legend">
-        <h3>Biome legend</h3>
-        <div class="swatches" id="legend"></div>
-      </section>
-    </main>
+      <main>
+        <div class="plates" id="plates"></div>
 
-    <footer class="wrap" id="footer"></footer>
+        <section class="legend">
+          <h3>The biomes, by their inks</h3>
+          <div class="swatches" id="legend"></div>
+        </section>
+      </main>
+
+      <footer id="footer"></footer>
+    </div>
 
     <script>
-      // Layer display order + labels shown on each plate's tab strip.
+      // Layer display order + labels shown on each plate's index-tab strip.
       const LAYERS = [
         ["map", "Terrain"],
         ["topographic", "Topo"],
@@ -420,8 +430,7 @@
       for (const [name, rgb] of BIOMES) {
         const el = document.createElement("div");
         el.className = "swatch";
-        el.innerHTML =
-          `<i style="background:rgb(${rgb.join(",")})"></i><span>${name}</span>`;
+        el.innerHTML = `<i style="background:rgb(${rgb.join(",")})"></i><span>${name}</span>`;
         $legend.appendChild(el);
       }
 
@@ -429,41 +438,36 @@
         .then((r) => r.json())
         .then((data) => {
           $meta.innerHTML =
-            `<span><b>${data.worlds.length}</b> worlds</span>` +
-            `<span><b>${data.size}×${data.size}</b> cells each</span>` +
-            `<span><b>${LAYERS.length}</b> layers per world</span>` +
-            `<span><b>0</b> dependencies</span>` +
-            `<span><a href="https://github.com/anduinmooney/cartogenesis">source →</a></span>`;
+            `<span><b>${data.worlds.length}</b> worlds surveyed</span>` +
+            `<span><b>${data.size}&times;${data.size}</b> cells each</span>` +
+            `<span><b>${LAYERS.length}</b> plates apiece</span>` +
+            `<span><b>zero</b> dependencies</span>` +
+            `<span><a href="https://github.com/anduinmooney/cartogenesis">the source &rarr;</a></span>`;
 
           data.worlds.forEach((w, idx) => {
             const plate = document.createElement("article");
             plate.className = "plate";
             const s = w.stats;
             const num = String(idx + 1).padStart(2, "0");
+            const peak = s.highestPeakMetres ? s.highestPeakMetres.toLocaleString() + " m" : "—";
             plate.innerHTML = `
               <figure>
-                <img alt="${w.title} — terrain map" src="samples/${w.files.map}" />
-                <span class="platenum">PLATE ${num}</span>
+                <img alt="${w.title} — terrain" src="samples/${w.files.map}" />
+                <span class="platenum">Plate ${num}</span>
                 <div class="tabs" role="group" aria-label="Map layer"></div>
               </figure>
               <div class="caption">
-                <h2>${w.title}<span class="seed">seed: ${w.seed}</span></h2>
+                <h2>${w.title}<span class="seed">seed &ldquo;${w.seed}&rdquo;</span></h2>
                 <p class="note">${w.note}</p>
                 <div class="stats">
-                  <span>land <b>${s.landFraction}%</b></span>
-                  <span>regions <b>${s.regionCount}</b></span>
-                  <span>towns <b>${s.settlementCount}</b></span>
-                  <span>realms <b>${s.realmCount}</b></span>
-                  <span>faiths <b>${s.faithCount ?? "—"}</b></span>
-                  <span>peak <b>${s.highestPeakMetres ? s.highestPeakMetres.toLocaleString() + " m" : "—"}</b></span>
-                  <span>volcanoes <b>${s.volcanoCount ?? "—"}</b></span>
-                  <span class="wide">capital <b>${s.capital}</b>, House ${s.capitalHouse ?? "—"}</span>
-                  <span class="wide">dominant power <b>${s.dominantPower ?? "—"}</b> (${s.survivingRealms ?? "—"} survive)</span>
-                  <span class="wide">exports: ${s.majorExports || "—"}</span>
+                  <p>${s.landFraction}% land, rising to <b>${peak}</b> over <b>${s.volcanoCount ?? "—"}</b> volcano${s.volcanoCount === 1 ? "" : "es"}.</p>
+                  <p><b>${s.regionCount}</b> provinces, <b>${s.settlementCount}</b> towns, <b>${s.realmCount}</b> realms risen; <b>${s.survivingRealms ?? "—"}</b> stand, <b>${s.dominantPower ?? "—"}</b> the greatest.</p>
+                  <p>Capital <b>${s.capital}</b>, seat of House <b>${s.capitalHouse ?? "—"}</b>; <b>${s.faithCount ?? "—"}</b> faiths.</p>
+                  <p>Its markets move ${s.majorExports ? s.majorExports.toLowerCase() : "little of note"}.</p>
                 </div>
                 <div class="links">
-                  <a href="samples/${w.files.poster}" target="_blank" rel="noopener">Labeled poster ↗</a>
-                  <a href="samples/${w.files.report}" target="_blank" rel="noopener">Gazetteer ↗</a>
+                  <a href="samples/${w.files.poster}" target="_blank" rel="noopener">the labeled poster &nearr;</a>
+                  <a href="samples/${w.files.report}" target="_blank" rel="noopener">the gazetteer &nearr;</a>
                 </div>
               </div>`;
 
@@ -476,9 +480,7 @@
               b.addEventListener("click", () => {
                 img.src = "samples/" + w.files[key];
                 img.alt = `${w.title} — ${label.toLowerCase()}`;
-                tabs
-                  .querySelectorAll("button")
-                  .forEach((x) => x.setAttribute("aria-pressed", "false"));
+                tabs.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", "false"));
                 b.setAttribute("aria-pressed", "true");
               });
               tabs.appendChild(b);
@@ -487,13 +489,13 @@
           });
 
           $footer.innerHTML =
-            `Cartogenesis engine v${data.engineVersion} · ` +
-            `all imagery generated from seeds, no external assets · ` +
+            `Cartogenesis engine v${data.engineVersion} — every plate drawn from a seed, ` +
+            `no external assets, nothing sent anywhere. ` +
             `<a href="https://github.com/anduinmooney/cartogenesis">github.com/anduinmooney/cartogenesis</a>`;
         })
         .catch(() => {
           $plates.innerHTML =
-            '<p style="color:var(--muted);font-family:var(--mono)">Could not load samples/manifest.json — run <code>node scripts/make-samples.ts</code>.</p>';
+            '<p style="color:var(--muted)">Could not load samples/manifest.json — run <code>node scripts/make-samples.ts</code>.</p>';
         });
     </script>
   </body>

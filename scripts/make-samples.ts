@@ -7,7 +7,7 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { generateWorld } from "../src/world.ts";
+import { generateWorld, ENGINE_VERSION } from "../src/world.ts";
 import { ruinedSettlementIds } from "../src/simulation.ts";
 import {
   renderHypsometric,
@@ -160,7 +160,7 @@ function main(): void {
     JSON.stringify(
       {
         size: SIZE,
-        engineVersion: "0.12.0",
+        engineVersion: ENGINE_VERSION,
         layers: ["map", "topographic", "biome", "political", "powers", "faiths", "resources", "temperature", "moisture", "height"],
         worlds,
       },
