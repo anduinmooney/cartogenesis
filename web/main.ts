@@ -683,7 +683,85 @@ function inspect(wx: number, wy: number) {
   return { x, y, isOcean, isLake, region, biome, elevation, settlement };
 }
 
+/** Screen (client) position of a world cell, for hit-testing drawn markers. */
+function worldToClient(wx: number, wy: number): { x: number; y: number } {
+  const rect = canvas.getBoundingClientRect();
+  const k = canvas.width / rect.width;
+  return {
+    x: rect.left + (wx * view.scale + view.ox) / k,
+    y: rect.top + (wy * view.scale + view.oy) / k,
+  };
+}
+
+/**
+ * The layer's own story markers are labels on the map — hovering one should
+ * explain it, not the dirt beneath it. Hit-tests the markers drawn for the
+ * active layer (faiths / realms / ruins) in screen space and returns a tip
+ * fragment, or null. So the folio's labels answer for themselves.
+ */
+function markerTip(clientX: number, clientY: number): string | null {
+  if (!current) return null;
+  const HIT = 24; // px around a marker's anchor
+  const near = (mx: number, my: number): boolean => {
+    const p = worldToClient(mx, my);
+    const dx = p.x - clientX;
+    const dy = p.y - clientY;
+    return dx * dx + dy * dy <= HIT * HIT;
+  };
+
+  if (activeLayer === "faiths") {
+    for (const fm of faithMarkers) {
+      if (!near(fm.x, fm.y)) continue;
+      const faith = current.religion.faiths.find((f) => f.name === fm.name);
+      if (!faith) continue;
+      return (
+        `<div class="tname">${escapeHtml(faith.name)}</div>` +
+        `<div class="tgloss">${glossPhrase(faith.deity.gloss)}</div>` +
+        `<div class="trow cap">${escapeHtml(faith.deity.name)}, god of ${escapeHtml(faith.deity.domain.toLowerCase())}</div>` +
+        (fm.cradle ? `<div class="trow">✦ the faith arose here</div>` : "")
+      );
+    }
+  }
+
+  if (activeLayer === "powers") {
+    const shown = scrubYear ?? current.simulation.endYear;
+    for (const rm of realmMarkersAt(current, shown)) {
+      if (!near(rm.x, rm.y)) continue;
+      const realm = current.simulation.realms.find((r) => r.name === rm.name);
+      const pct = Math.round(rm.share * 100);
+      return (
+        `<div class="tname">${escapeHtml(rm.name)}</div>` +
+        `<div class="trow">holds ${pct}% of the land${realm ? `, ${realm.status}` : ""}</div>` +
+        (realm ? `<div class="trow">peak ${realm.peakSize} province${realm.peakSize === 1 ? "" : "s"} in ${realm.peakYear}</div>` : "")
+      );
+    }
+  }
+
+  if (activeLayer === "political") {
+    for (const ru of ruinMarkers) {
+      if (!near(ru.x, ru.y)) continue;
+      const t = current.simulation.settlementTimeline.find((s) => s.name === ru.name);
+      const when =
+        t?.fellYear !== undefined ? ` in ${t.fellYear} ${current.history.calendar.suffix}` : "";
+      return (
+        `<div class="tname">${escapeHtml(ru.name)} <span class="trow">— a ruin</span></div>` +
+        `<div class="trow cap">${ru.fate === "sacked" ? "stormed" : "abandoned"}${when}</div>` +
+        `<div class="trow">click for the plan of what remains</div>`
+      );
+    }
+  }
+  return null;
+}
+
 function showTip(clientX: number, clientY: number): void {
+  // A drawn marker answers for itself before the terrain under it does.
+  const marker = markerTip(clientX, clientY);
+  if (marker) {
+    tip.innerHTML = marker;
+    tip.hidden = false;
+    positionTip(clientX, clientY);
+    return;
+  }
   const world = clientToWorld(clientX, clientY);
   const info = inspect(world.x, world.y);
   if (!info) {
@@ -730,6 +808,11 @@ function showTip(clientX: number, clientY: number): void {
     : "";
   tip.innerHTML = `<div class="tname">${place}</div>${glossLine}${rows.join("")}`;
   tip.hidden = false;
+  positionTip(clientX, clientY);
+}
+
+/** Place the tip beside the cursor, flipping to stay on screen. */
+function positionTip(clientX: number, clientY: number): void {
   const pad = 14;
   let left = clientX + pad;
   let top = clientY + pad;
@@ -784,6 +867,9 @@ const PLAN_INK: Record<number, string> = {
 /** The plan on display, for the ruined ↔ as-it-stood flip. */
 let planShownId = -1;
 let planShownWhole = false;
+const PLAN_SCALE = 8;
+/** Named points of the shown plan (plan-cell coords), for canvas hover. */
+let planPoints: Array<{ name: string; note: string; x: number; y: number }> = [];
 
 function openPlan(settlementId: number, asItStood = false): void {
   if (!current) return;
@@ -791,6 +877,10 @@ function openPlan(settlementId: number, asItStood = false): void {
   if (!plan) return;
   planShownId = settlementId;
   planShownWhole = asItStood;
+  planPoints = [
+    ...plan.landmarks.map((l) => ({ name: l.name, note: l.note, x: l.x, y: l.y })),
+    ...plan.districts.map((d) => ({ name: d.name, note: d.note, x: d.x, y: d.y })),
+  ];
   // A fallen town can be seen both ways: as it remains, and as it stood.
   const flip = $("plan-flip");
   flip.hidden = !plan.fell;
@@ -801,7 +891,7 @@ function openPlan(settlementId: number, asItStood = false): void {
     .join("");
 
   const cv = $("plancanvas") as HTMLCanvasElement;
-  const scale = 8;
+  const scale = PLAN_SCALE;
   cv.width = plan.width * scale;
   cv.height = plan.height * scale;
   const g = cv.getContext("2d")!;
@@ -1361,9 +1451,39 @@ function init(): void {
 
   $("plan-close").addEventListener("click", () => {
     $("planovl").hidden = true;
+    tip.hidden = true;
   });
   $("plan-flip").addEventListener("click", () => {
     if (planShownId >= 0) openPlan(planShownId, !planShownWhole);
+  });
+  // Hovering the plan drawing names the building under the cursor — so the
+  // legend's list and the engraving point at each other.
+  const planCanvas = $("plancanvas") as HTMLCanvasElement;
+  planCanvas.addEventListener("mousemove", (e) => {
+    const rect = planCanvas.getBoundingClientRect();
+    const cx = ((e.clientX - rect.left) * (planCanvas.width / rect.width)) / PLAN_SCALE;
+    const cy = ((e.clientY - rect.top) * (planCanvas.height / rect.height)) / PLAN_SCALE;
+    let best: (typeof planPoints)[number] | null = null;
+    let bestD = 7 * 7; // plan cells
+    for (const p of planPoints) {
+      const dd = (p.x - cx) * (p.x - cx) + (p.y - cy) * (p.y - cy);
+      if (dd < bestD) {
+        bestD = dd;
+        best = p;
+      }
+    }
+    if (!best) {
+      tip.hidden = true;
+      return;
+    }
+    tip.innerHTML =
+      `<div class="tname">${escapeHtml(best.name)}</div>` +
+      `<div class="tgloss">${escapeHtml(best.note)}</div>`;
+    tip.hidden = false;
+    positionTip(e.clientX, e.clientY);
+  });
+  planCanvas.addEventListener("mouseleave", () => {
+    tip.hidden = true;
   });
   $("planovl").addEventListener("click", (e) => {
     if (e.target === $("planovl")) $("planovl").hidden = true;
