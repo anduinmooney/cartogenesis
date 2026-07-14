@@ -186,3 +186,29 @@ test("realm summaries are consistent (peak >= final, statuses valid)", () => {
   }
   assert.ok(sim.survivingRealms >= 1, "everyone died");
 });
+
+test("history happens year by year, not in 25-year blocks (D-028)", () => {
+  const w = generateWorld({ seed: "annum", width: 160, height: 160 });
+  const years = w.simulation.events.map((e) => e.year);
+  assert.ok(years.length > 5, "world too quiet to test");
+  for (let i = 1; i < years.length; i++) {
+    assert.ok(years[i] >= years[i - 1], "events out of order");
+  }
+  const onTurn = years.filter((y) => y % 25 === 0).length;
+  assert.ok(
+    onTurn / years.length < 0.2,
+    `${onTurn}/${years.length} events land on round 25-year marks — the ledger is back`,
+  );
+  const distinct = new Set(years).size;
+  assert.ok(
+    distinct / years.length > 0.5,
+    `only ${distinct} distinct years across ${years.length} events`,
+  );
+  // The finer dating must stay consistent with the world it dates.
+  for (const t of w.simulation.settlementTimeline) {
+    if (t.fellYear !== undefined) {
+      assert.ok(t.fellYear > t.foundedYear, `${t.name} fell before it was founded`);
+      assert.ok(t.fellYear <= w.simulation.endYear);
+    }
+  }
+});

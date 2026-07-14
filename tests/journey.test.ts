@@ -61,5 +61,5 @@ test("the journey never perturbs the world: fingerprints byte-identical", () => 
   const w = generateWorld({ seed: "cartogenesis", width: 256, height: 256 });
   assert.equal(w.meta.contentHash, "86c5fef61d7a567b");
   assert.equal(w.meta.exactHash, "418ddfd224e6f31c");
-  assert.equal(w.meta.simulationHash, "146934d0ec2014cd");
+  assert.equal(w.meta.simulationHash, "09995e242eccf8b9");
 });

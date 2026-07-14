@@ -452,16 +452,38 @@ export function generateSimulation(
     ts.fellYear === undefined &&
     ts.foundedYear < year && // a town must actually stand before it can fall
     ruinCount < maxRuins;
+
+  // --- Real years, not round ones. The dynamics tick in 25-year turns, but a
+  // chronicle whose every entry lands on a multiple of 25 reads like a ledger
+  // of turns, not a history of years (user's note, Session 26). Each event is
+  // dated to its own year inside the turn's window (turnYear, turnYear+25],
+  // drawn from a PRIVATE stream so the dynamics never feel it. The cursor
+  // never runs backwards, so the record's causal order — a fall after its
+  // conquest, a sack during its war — survives the finer dating. Years land
+  // in the window the turn's snapshot closes, so the Powers-map era markers
+  // still bucket correctly. Declared fingerprint move: D-028.
+  const yearJitter = new Rng(`${cfg.seed}:yearjitter`);
+  let datedCursor = startYear;
+  const dated = (turnYear: number): number => {
+    const lo = Math.max(turnYear + 1, datedCursor);
+    const hi = turnYear + yearsPerTurn;
+    // Draw short of the cap: the window's last year is a multiple of 25, and
+    // history piling onto round years is exactly the ledger-feel to avoid.
+    datedCursor = lo >= hi ? hi : lo + yearJitter.int(0, hi - lo);
+    return datedCursor;
+  };
+
   const ruinSettlement = (
     ts: TimedSettlement,
-    year: number,
+    turnYear: number,
     fate: "sacked" | "abandoned",
   ): void => {
-    ts.fellYear = year;
+    const y = dated(turnYear);
+    ts.fellYear = y;
     ts.fate = fate;
     ruinCount++;
     events.push({
-      year,
+      year: y,
       type: "ruin",
       actors: { place: ts.name },
       text:
@@ -514,7 +536,7 @@ export function generateSimulation(
       if (pop > cap * 1.15) {
         pop *= 0.82;
         if (rng.next() < 0.15) {
-          { const at = anchorOf(r.id, year); events.push({ year, type: "famine", actors: { place: r.name }, text: `Famine struck ${r.name}; the fields could not feed its people.`, x: at.x, y: at.y }); }
+          { const at = anchorOf(r.id, year); events.push({ year: dated(year), type: "famine", actors: { place: r.name }, text: `Famine struck ${r.name}; the fields could not feed its people.`, x: at.x, y: at.y }); }
         }
       }
       population[r.id] = Math.max(0, pop);
@@ -576,7 +598,7 @@ export function generateSimulation(
         {
           const at = anchorOf(cr.id, year);
           events.push({
-            year,
+            year: dated(year),
             type: "repulsed",
             actors: { subject: attacker.name, object: defender.name, place: cr.name },
             text: `${attacker.name}'s invasion of ${cr.name} was thrown back by ${defender.name}.`,
@@ -604,7 +626,7 @@ export function generateSimulation(
       {
         const at = anchorOf(cr.id, year);
         events.push({
-          year,
+          year: dated(year),
           type: "conquest",
           actors: { subject: attacker.name, object: defender.name, place: cr.name },
           text: `${attacker.name} seized ${cr.name} from ${defender.name}.`,
@@ -614,7 +636,7 @@ export function generateSimulation(
       }
       if (defender.regions.size === 0 && defender.alive) {
         defender.alive = false;
-        { const at = anchorOf(cr.id, year); events.push({ year, type: "fall", actors: { subject: defender.name, place: cr.name }, text: `The realm of ${defender.name} was extinguished.`, x: at.x, y: at.y }); }
+        { const at = anchorOf(cr.id, year); events.push({ year: dated(year), type: "fall", actors: { subject: defender.name, place: cr.name }, text: `The realm of ${defender.name} was extinguished.`, x: at.x, y: at.y }); }
       }
     }
 
@@ -637,6 +659,7 @@ export function generateSimulation(
       if (rng.next() >= REVOLT_CHANCE * strain) continue;
       const reg = byId.get(rid)!;
       const lang = languageById(reg.languageId);
+      const revoltYear = dated(year); // the realm is founded the year it rose
       const rebel: Realm = {
         id: nextRealmId++,
         name: makeName(lang, new Rng(`${cfg.seed}:revolt:${rid}:${t}`), { kind: "realm" }),
@@ -645,9 +668,9 @@ export function generateSimulation(
         seatRegion: rid,
         regions: new Set([rid]),
         alive: true,
-        foundedYear: year,
+        foundedYear: revoltYear,
         peakSize: 1,
-        peakYear: year,
+        peakYear: revoltYear,
       };
       owner.regions.delete(rid);
       control[rid] = rebel.id;
@@ -658,7 +681,7 @@ export function generateSimulation(
       {
         const at = anchorOf(reg.id, year);
         events.push({
-          year,
+          year: revoltYear,
           type: "revolt",
           actors: { subject: rebel.name, object: owner.name, place: reg.name },
           text: `${reg.name} rose against ${owner.name} and declared the free realm of ${rebel.name}.`,
@@ -704,6 +727,7 @@ export function generateSimulation(
 
       const reg = byId.get(startId)!;
       const lang = languageById(reg.languageId);
+      const secessionYear = dated(year); // founded the year it broke away
       const newRealm: Realm = {
         id: nextRealmId++,
         name: makeName(lang, new Rng(`${cfg.seed}:breakaway:${startId}:${t}`), { kind: "realm" }),
@@ -712,9 +736,9 @@ export function generateSimulation(
         seatRegion: startId,
         regions: new Set(cluster),
         alive: true,
-        foundedYear: year,
+        foundedYear: secessionYear,
         peakSize: cluster.length,
-        peakYear: year,
+        peakYear: secessionYear,
       };
       for (const rid of cluster) {
         realm.regions.delete(rid);
@@ -725,7 +749,7 @@ export function generateSimulation(
       realmById.set(newRealm.id, newRealm);
       ensureSeat(realm);
       events.push({
-        year,
+        year: secessionYear,
         type: "secession",
         actors: { subject: newRealm.name, object: realm.name, place: reg.name },
         text:
@@ -756,7 +780,7 @@ export function generateSimulation(
           {
             const at = anchorOf(r.id, year);
             events.push({
-              year,
+              year: dated(year),
               type: "conversion",
               actors: { subject: faithName(faith[bestNb]), object: faithName(from), place: r.name },
               text: `${r.name} turned from ${faithName(from)} to ${faithName(faith[bestNb])}.`,
@@ -773,7 +797,7 @@ export function generateSimulation(
       const r = regs[rng.int(0, regs.length)];
       population[r.id] *= 0.45; // a true pestilence carries off a third or more
       const kind = rng.bool() ? "A plague swept" : "A long drought gripped";
-      { const at = anchorOf(r.id, year); events.push({ year, type: "plague", actors: { place: r.name }, text: `${kind} ${r.name}; many perished.`, x: at.x, y: at.y }); }
+      { const at = anchorOf(r.id, year); events.push({ year: dated(year), type: "plague", actors: { place: r.name }, text: `${kind} ${r.name}; many perished.`, x: at.x, y: at.y }); }
     }
 
     // 6) Golden ages for large, prosperous realms.
@@ -783,7 +807,7 @@ export function generateSimulation(
         const r = strong[rng.int(0, strong.length)];
         const seat = byId.get(r.seatRegion);
         events.push({
-          year,
+          year: dated(year),
           type: "goldenage",
           actors: { subject: r.name },
           text: `A golden age dawned over ${r.name}; its cities flourished as never before.`,
@@ -835,7 +859,7 @@ export function generateSimulation(
           gloss: layered.gloss,
           formerName: orig.name,
           formerGloss: orig.gloss,
-          year,
+          year: dated(year), // renames wear a real year too
           fromCulture: fromLang.label,
           toCulture: toLang.label,
         });

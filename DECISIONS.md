@@ -6,6 +6,26 @@ old one — the history is the point.
 
 ---
 
+## D-028 — History happens year by year, not in 25-year blocks (2026-07-13, Session 26)
+**Decision:** The dynamics still tick in 25-year turns, but every event —
+and every linked fact: a rebel realm's founding year, a town's fall, a
+conquest renaming — is dated to its own year inside the turn's window,
+drawn from a PRIVATE stream (`seed:yearjitter`). The dating cursor never
+runs backwards, so causal order (a fall after its conquest, a sack during
+its war) survives; draws stop short of the window cap so nothing piles onto
+round 25-multiples.
+
+**Why:** User note: "the chronicle shouldn't just go up by 25 year
+increments, make it year by year, so it feels more real." Correct — every
+annal dated 100/125/150 read as the machinery it was.
+
+**What did NOT change:** the dynamics. The jitter stream is private, so who
+wins every war is bit-identical to before — only the dates moved. Declared
+fingerprint move (years are hashed): `simulationHash`
+146934d0 → **09995e24**; terrain hashes untouched. Guarded by a regression
+test: events ordered, <20% on 25-multiples, >50% distinct years, ruins fall
+after their founding.
+
 ## D-027 — Expeditions removed: the world is what was generated (2026-07-13, Session 26)
 **Decision:** L18 chartered expeditions (Session 25) are removed — module,
 tests, and app UI. The DECISIONS log records reversals rather than hiding
