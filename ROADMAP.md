@@ -61,6 +61,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   metre-accurate contour intervals.
 - ✅ **L17b/c — Sagas & the traveller.** Verse founding-sagas per culture and a
   first-person road journey, both under the narrator's three laws (Session 21).
+- ✅ **The second reading pass.** Five defects found by reading three
+  gazetteers end to end, all fixed (D-029); plus the capital's plan in the
+  gazetteer and the ruins' "as it stood" view (Session 27).
 - ✅ **Course correction & city plans.** Expeditions removed (D-027: the
   world is what was generated); history dated year-by-year (D-028); L19 city
   plans for every town and ruin; the folio's second design pass (Session 26,

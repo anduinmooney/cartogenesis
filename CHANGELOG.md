@@ -8,6 +8,51 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 27 — 2026-07-13 — The reading pass earns its keep
+
+**Theme:** the overdue reading pass (three fresh gazetteers, end to end) —
+the method that found the duplicate-rename bug, the volcano clutter, and the
+realms contradiction — found five more, all fixed (D-029). Then the queued
+plan-deepening.
+
+### Found by reading, fixed by session's end
+1. **A realm conquering itself** — two realms could share a name (history
+   AND simulation), so the chronicle read "Deosena was taken from Tariademor
+   ... by Tariademor" and the rise-and-fall table listed two Mantebintes.
+   Realm names are now unique for the whole span, dead realms included.
+2. **Geography-blind region prose** — "sea-wise" folk in inland reaches,
+   "vineyards" on bare alpine peaks, one line repeated ten regions running.
+   Each culture now has coastal/inland/hard-country banks and three
+   verb-safe frames, drawn per region on a private stream.
+3. **The founding metronome** — settlements were founded exactly 19 (or 25,
+   or 32) years apart, a per-world constant. Foundings now jitter around
+   their quality-ranked slots (D-028's principle, applied to the organ it
+   missed).
+4. **Every summit 4,500 m** — big cones saturated the [0,1] clamp AND every
+   world's ceiling was the same constant, so every volcano and every world
+   read identically tall. Volcanoes now clamp amplitude to their own
+   ceilings; each world draws its own vertical scale (2,800–5,900 m).
+5. **"1040–1063 Meontai / 1020–1039 Meontai"** — repeated given names in a
+   house now wear regnal numbers: Meontai II.
+
+Declared move D-029 (3 and 4 touch hashed state): content 86c5fef6 →
+**1a70fd39**, exact 418ddfd2 → **1835f622**, sim 09995e24 → **4767346f**.
+Balance re-measured (30 seeds, 256²): mean top share 61%, sd 18 — the
+historic band. Four new regression guards.
+
+### The plans deepen (queued Option A)
+The gazetteer gains **"The capital, drawn"** — the capital's plan dossier,
+landmarks, and districts as prose (the plan generator is pure, so the report
+stays a reading of decided fact). And a fallen town's plan flips between
+**"What remains of X"** and **"X, as it stood"** — the same generator with
+the ruin transform skipped, so both views share every street (tested). A
+renamed-then-fallen town wears the name the map remembers.
+
+**238 tests** (6 new). Verified live: the flip both ways on a real ruin, the
+capital section in the in-app gazetteer, no console errors.
+
+---
+
 ## Session 26 — 2026-07-13 — Course correction: the world is what was generated
 
 **Theme:** the user set the project back on course, three ways, and was right

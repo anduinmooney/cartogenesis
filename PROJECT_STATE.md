@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 26 · 2026-07-13 (Fable)
+- **As of:** Session 27 · 2026-07-13 (Fable)
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 232 tests pass (CI enforced). **Reproducible across
+- **Health:** 🟢 Green. 238 tests pass (CI enforced). **Reproducible across
   Node builds and platforms** — the engine uses only exactly-specified
   arithmetic, guarded by an exact bit-level hash (D-022 resolved, Session 16).
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
@@ -29,6 +29,10 @@
 - **Sagas and a traveller.** One founding saga per culture in verse (keeping
   the pre-conquest names the maps gave up), and a named traveller who walks the
   real road network and tells every leg from the actual path cells.
+- **Every world its own height, every volcano its own summit.** Worlds
+  draw a vertical scale of 2,800–5,900 m; cones rise to their own ceilings
+  (D-029). Realm names are unique forever; region prose respects geography;
+  rulers wear regnal numbers; foundings are not a metronome.
 - **City plans (L19).** Every town — and every ruin — has a street plan
   derived from facts the generator decided: real gates named for real road
   neighbours, harbours facing the real ocean, the real god's temple, the
@@ -97,7 +101,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 232 passing tests, incl. exact + simulation determinism guards, an
+- 238 passing tests, incl. exact + simulation determinism guards, an
   approximated-math lint, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
@@ -138,6 +142,8 @@
 | L18 expeditions — built, then removed (D-027) | ↩ reversed |
 | Year-by-year history (D-028) | ✅ done |
 | L19 city plans (every town, every ruin) | ✅ done |
+| Reading pass Nº2: five defects fixed (D-029) | ✅ done |
+| Capital plan in the gazetteer · ruins "as it stood" | ✅ done |
 | Chronicler voices · sentence frames · widened banks | ✅ done |
 | narrative polish · reading pass · more | 🔜 the world keeps deepening |
 
@@ -145,7 +151,7 @@
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 232 tests, all offline
+npm test                  # 238 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)
