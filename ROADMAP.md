@@ -61,6 +61,10 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   metre-accurate contour intervals.
 - ✅ **L17b/c — Sagas & the traveller.** Verse founding-sagas per culture and a
   first-person road journey, both under the narrator's three laws (Session 21).
+- ✅ **Story markers & islets merge.** Layer-scoped map markers (faiths named
+  on their ground, realm labels that follow the scrubber, era-event glyphs,
+  region names, ruins) and the sub-12-cell islet merge, D-026 (Session 24,
+  user direction).
 - ✅ **Calendars & voices.** Per-world reckonings anchored to year-zero origin
   events, and per-world chronicler temperaments with varied sentence frames
   (Session 23, user direction).

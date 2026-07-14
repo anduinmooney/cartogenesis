@@ -8,6 +8,52 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 24 — 2026-07-13 — The map tells its story, and the skerries come home
+
+**Theme:** user notes first (three), then the heavy item queued since Session
+16. All three notes were real bugs or real gaps.
+
+### The user's notes
+- **"The reckoning is still referenced in the gazetteer"** — the overview's
+  calendar line led with "The reckoning:", reading like the NAME of a year
+  system left over from the old single After-Reckoning era. Now: "year 0 is
+  **<origin>**; every date in this book is counted <era> and wears `<suffix>`".
+  A test bans the word from the whole report. Found nearby: meta's "Realms 3"
+  sat beside "Surviving realms 13" — realmCount now counts the realms that
+  actually rose in the simulation (38), and the report reads "38 rose; 13
+  stand, X the greatest among them".
+- **"Years always say the same year twice, 150 – 150 A.C."** — the chronicle
+  pin's date-stripper still expected the old `AR` suffix, so per-world
+  suffixes never matched and the pin repeated the year. It now strips the
+  entry's own `.yr` span, whatever the world's calendar wears.
+- **"More markers for what's happening — perhaps in separate tabs; Faiths
+  doesn't show the faith's name"** — each layer tab now curates its own
+  markers. **Faiths:** every faith's name on its largest holding in its own
+  tint, a star where it arose. **Powers:** realm names sit on their territory
+  and FOLLOW the time scrubber; the era's events flare where they happened
+  (⚔ war · ⚑ revolt/fall · ☠ plague · ⊘ famine · ✕ ruin · ✦ founding), with a
+  glyph legend. **Political:** every region wears its name; fallen towns get a
+  dagger. Physical tabs keep features/volcanoes; thematic tabs drop them.
+
+### The islets merge (D-026 — declared fingerprint move)
+Any region under 12 cells folds into the nearest substantial region by
+centroid — the coastal province claims its skerries. Ids are not renumbered,
+so surviving regions keep their names. This also ended the quiet reign of the
+*unconquerable island microstate* (conquest is land-adjacent; island realms
+survived every war on every world): mean surviving powers at 384² fell
+8.1 → 5.5, all phantoms. `simulationHash` 15371f11 → **146934d0**; terrain
+hashes unchanged — proof the land itself never moved. Balance re-measured
+over 30 seeds (384²: mean top share 35.7%, zero unified; 256²: 54.5%, the
+historic band); the "histories vary" guard moved 160² → 256², where a share
+metric still means something.
+
+**223 tests** (2 new). Verified live by canvas pixel-sampling (faith inks,
+region ink, realm inks, era glyphs per scrubbed era) — the Browser pane's
+screenshotter was wedged, so the pixels were read straight off the canvas.
+Bench under budget (384²: 361 ms median).
+
+---
+
 ## Session 23 — 2026-07-10 — Every world its own calendar, every chronicler their own voice
 
 **Theme:** direct user feedback, twofold: "all generations look the same — the

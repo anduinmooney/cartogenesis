@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 23 · 2026-07-10 (Fable)
+- **As of:** Session 24 · 2026-07-13 (Fable)
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 221 tests pass (CI enforced). **Reproducible across
+- **Health:** 🟢 Green. 223 tests pass (CI enforced). **Reproducible across
   Node builds and platforms** — the engine uses only exactly-specified
   arithmetic, guarded by an exact bit-level hash (D-022 resolved, Session 16).
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
@@ -29,6 +29,14 @@
 - **Sagas and a traveller.** One founding saga per culture in verse (keeping
   the pre-conquest names the maps gave up), and a named traveller who walks the
   real road network and tells every leg from the actual path cells.
+- **The map tells its story, tab by tab.** Each layer curates its own
+  markers: Faiths names every faith on its ground (and stars where it arose),
+  Powers shows realm names that follow the time scrubber plus each era's
+  events as glyphs (war, revolt, plague, famine, ruin, founding), Political
+  names every region and marks fallen towns with a dagger.
+- **No province is a lone skerry.** Islands under 12 cells merge into the
+  nearest coastal province (D-026) — gazetteer tables are clean, and island
+  microstates no longer survive every war by being unreachable.
 - **Everything referenced is explained.** A full entity index backs the app:
   hover any name — ruler, realm, house, faith, god, town, old town name — for a
   tooltip, anywhere it appears; click flies to it. Chronicle clicks drop a
@@ -79,7 +87,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 221 passing tests, incl. exact + simulation determinism guards, an
+- 223 passing tests, incl. exact + simulation determinism guards, an
   approximated-math lint, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
@@ -114,14 +122,16 @@
 | Entity tooltips everywhere · chronicle event pins | ✅ done |
 | Metre-accurate contours (index lines) · benchmark · honest README | ✅ done |
 | Per-world calendars (year-zero origins) | ✅ done |
+| Layer-scoped map markers (faiths · realms · ruins · era events) | ✅ done |
+| Islets merge (D-026, declared sim-hash move) | ✅ done |
 | Chronicler voices · sentence frames · widened banks | ✅ done |
-| islets merge · narrative polish · more | 🔜 the world keeps deepening |
+| narrative polish · reading pass · more | 🔜 the world keeps deepening |
 
 ## How to run (cold start)
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 221 tests, all offline
+npm test                  # 223 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)
@@ -166,8 +176,6 @@ Re-run the bench after heavy changes; investigate anything 2× over budget.
 - Don't create `new Worker` in `preview_eval` without `.terminate()` — leaked
   workers wedge the whole preview browser (this bit Session 10; a fresh start
   fixed it in Session 11).
-- Tiny single-cell islands become their own 1-cell "regions" (coverage pass),
-  cluttering gazetteers. Consider merging sub-threshold islets.
 - Moisture runs a single west→east prevailing wind; latitude wind belts would be
   more realistic (future tuning).
 - Tests must never hard-code a *simulated* outcome for a seed (which seed has
