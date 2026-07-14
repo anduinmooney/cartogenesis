@@ -61,6 +61,11 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   metre-accurate contour intervals.
 - ✅ **L17b/c — Sagas & the traveller.** Verse founding-sagas per culture and a
   first-person road journey, both under the narrator's three laws (Session 21).
+- ✅ **Real worlds.** Eight world archetypes (continents, archipelagos, a
+  supercontinent, a ring about an inland sea, a drowned isle-world, a shattered
+  world) with common/rare weighting and small rare quirks, replacing the lone
+  central island — all statistics and downstream layers preserved (D-030,
+  Session 29, user direction).
 - ✅ **The folio, complete.** The landing page brought into the folio design
   (the last pre-folio surface), and hover reveals for map markers and plan
   landmarks (Session 28).

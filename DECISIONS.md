@@ -6,6 +6,42 @@ old one — the history is the point.
 
 ---
 
+## D-030 — Real worlds: eight archetypes, not one central island (2026-07-14, Session 29)
+**Decision:** A per-seed world ARCHETYPE (`src/worldtype.ts`) replaces the
+single radial island mask. Four common shapes (lone continent, twin
+continents, continent-and-isles, archipelago) and four rare ones
+(supercontinent, drowned/oceanic, ring-about-an-inland-sea, shattered),
+weighted ~83/17, plus small rare quirks (land bridge, great rift,
+subcontinent, polar reach). Chosen on a named stream (D-003).
+
+**Why:** User direction: "create actual worlds instead of just singular land
+masses… common and rare world types… small chances of rare occurrences." Every
+world being one central blob was the engine's oldest cosmetic limitation.
+
+**How the realism is kept:**
+- The mask blends **additively** with the noise (`h = 0.45·noise + 0.55·mask`,
+  then × edge falloff), not multiplicatively. Multiplying crushed sparse-isle
+  worlds into a near-zero field the sea level could not cut (532 micro-lakes,
+  a 100%-land bug). Additive keeps a healthy elevation range on every shape.
+- Sea level is the **quantile** that yields each archetype's target land
+  fraction (`seaLevelForLandFraction`), floored just above the ocean bed so a
+  drowned world keeps its ocean. No world is all-sea or all-rock (tested:
+  land ∈ (3%, 80%) across 120 seeds covering every archetype).
+- Exact arithmetic only — squared distances and polynomial bumps, no trig or
+  pow. The approximated-math lint (D-022) still passes.
+- Every downstream layer is unchanged and still valid; the region partition
+  covers every land cell across the oceans between continents (tested).
+
+**Balance:** 30 seeds at 256²: mean top-power share 52% (was ~61%), sd 15, no
+hegemons — multi-continent worlds fragment power across seas, as they should.
+Bench under budget (384²: 391 ms).
+
+**Declared fingerprint move (all three):** content `1a70fd39 → 5117e368`,
+exact `1835f622 → 8ca93e85`, sim `4767346f → a3a0ce94`. New meta:
+`worldType` / `worldTypeLabel` / `worldTypeRare` / `worldQuirks`, surfaced in
+gazetteer, app dossier, and gallery. Legacy single island stays reachable via
+`--no-island` / explicit `island` / `frequency` (CLI + shape-specific tests).
+
 ## D-029 — The reading pass: five defects, two declared moves (2026-07-13, Session 27)
 **Decision:** The Session 27 reading pass (three fresh gazetteers, read end to
 end) found five defects; all five are fixed, two of them behind this declared

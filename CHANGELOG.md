@@ -8,6 +8,55 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 29 — 2026-07-14 — Real worlds: eight archetypes, not one central island
+
+**Theme:** the user asked for the biggest update yet — "actual worlds instead
+of just singular land masses… common and rare world types… small changes of
+rare occurrences" — while keeping all the real statistics and realistic
+generation. Delivered (D-030).
+
+### Eight world archetypes
+Every world used to be one radial blob in the middle of the map. Now a
+per-seed archetype (src/worldtype.ts) shapes where land rises:
+- **common (~83%):** a lone continent · twin continents split by a strait ·
+  a continent and its isles · an archipelago strung along a chain.
+- **rare (~17%):** a single supercontinent · a drowned world of scattered
+  isles · a ring of land about an inland sea · a shattered world of many lands.
+- **quirks (small chances on top):** a land bridge welding two shores · a
+  great rift all but severing a heartland · a lone subcontinent far off to one
+  side · a frozen polar reach.
+
+### How the realism holds
+The mask blends ADDITIVELY with the noise (mask leads placement, noise carves
+coasts) — multiplying crushed sparse-isle worlds into a near-zero field the
+sea level could not cut (it produced a 100%-land bug and 532 micro-lakes; both
+gone). Sea level is then the quantile giving each archetype its target land
+fraction, floored just above the ocean bed, so no world drowns whole or turns
+all to rock (tested: land ∈ (3%, 80%) across 120 seeds, every archetype).
+Exact arithmetic only — squared distances and polynomials, no trig or pow; the
+approximated-math lint still passes. Every downstream layer is untouched and
+still valid; the region partition covers every land cell across the oceans
+between continents.
+
+Balance re-measured (30 seeds, 256²): mean top-power share 52% (was ~61%),
+no hegemons — multi-continent worlds fragment power across the seas, as they
+should. Bench UNDER budget (384²: 391 ms; the mask is cheap).
+
+### The world knows its own kind
+New meta — worldType / worldTypeLabel / worldTypeRare / worldQuirks — surfaced
+in the gazetteer ("The world: a ring of land about an inland sea — a rare
+shape"), the app dossier, and the sample gallery, which now showcases the
+spread with the two rare shapes wearing an oxblood badge.
+
+**Declared fingerprint move (all three):** content 1a70fd39 → **5117e368**,
+exact 1835f622 → **8ca93e85**, sim 4767346f → **a3a0ce94**. **244 tests**
+(6 new: determinism, common/rare distribution, non-degenerate land, partition
+across oceans, metadata, legacy-shape bypass). Verified live: all eight
+archetypes rendered and inspected, the gallery, the app dossier, no console
+errors.
+
+---
+
 ## Session 28 — 2026-07-14 — The folio closes over: the frontispiece and the labels
 
 **Theme:** the two remaining polish items — the last pre-folio surface, and
