@@ -8,6 +8,38 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 28 — 2026-07-14 — The folio closes over: the frontispiece and the labels
+
+**Theme:** the two remaining polish items — the last pre-folio surface, and
+the interactivity queued since Session 24.
+
+### The landing page joins the folio
+The sample gallery (docs/index.html) was the only surface still wearing the
+old dark-slate-and-teal dashboard — and the app's spine links back to it as
+"the sample atlas", so the round-trip jarred. It is now the folio's
+frontispiece: paper and ink, a breathing compass rose, the title set as a
+title page, a wax-seal CTA to the live app, and each world drawn as an
+engraved atlas plate (framed map, plate number, index-tab layer switcher)
+with its stats written as a prose dossier instead of a number grid. Fixed a
+stale version in passing: the manifest hardcoded engineVersion 0.12.0 and the
+masthead read v0.8 — both now read the real ENGINE_VERSION (0.13.0).
+
+### The labels answer for themselves (hover, queued since S24)
+Two hover surfaces, both pure reveals of decided fact:
+- **Map markers** hit-test in screen space and explain themselves in the chit
+  rather than the terrain beneath them. A ruin dagger (Political) gives its
+  name, how and when it fell, and "click for the plan"; a faith label
+  (Faiths) names its god and domain and marks where it arose; a realm label
+  (Powers) gives its land share, status, and peak — and follows the scrubber.
+- **Plan landmarks** — hovering a town plan's drawing names the building
+  under the cursor, so the legend list and the engraving point at each other.
+
+**238 tests** (app-only + static page; fingerprints untouched). Verified
+live: all three marker hovers and the plan-canvas hover, mobile single-column
+landing page, zero console errors.
+
+---
+
 ## Session 27 — 2026-07-13 — The reading pass earns its keep
 
 **Theme:** the overdue reading pass (three fresh gazetteers, end to end) —

@@ -1,29 +1,26 @@
-# Next Session — Session 28
+# Next Session — Session 29
 
-> Read `PROJECT_STATE.md` first, then this. Session 27 ran the second reading
-> pass — five defects found by reading, all fixed (D-029: unique realm names,
-> geography-aware region prose, founding jitter, per-volcano summits and
-> per-world vertical scale, regnal numbers) — then deepened the plans (the
-> capital drawn in the gazetteer; ruins viewable "as it stood").
-> D-027 still governs feature ideas: interactivity REVEALS pregenerated fact,
-> never authors new story.
+> Read `PROJECT_STATE.md` first, then this. Session 28 finished the folio's
+> visual reach — the landing page is now the folio's frontispiece (the last
+> pre-folio surface), and the map markers + plan landmarks explain themselves
+> on hover. The whole product now reads as one design. D-027 still governs
+> features: interactivity REVEALS pregenerated fact, never authors new story.
 
 ## Start-of-session checklist
 
 1. `node --version` → ≥ 22.6. `npm test` green first (baseline: **238**).
-2. Skim `CHANGELOG.md` (top, Session 27) and `DECISIONS.md` (D-027/28/29).
+2. Skim `CHANGELOG.md` (top, Session 28) and `DECISIONS.md` (D-027/28/29).
 3. **Rebuild `build-web` LAST after any src/ edit**; new engine module →
    `MODULES`, new web helper → `WEB_MODULES`. Then `make-samples` if output
-   changed.
+   changed (it also refreshes the landing page's manifest).
 4. **Preview transport:** Browser pane reaches localhost via `preview_start`
-   ("docs"); its screenshotter wedges — verify by canvas `getImageData`
-   sampling via `javascript_tool` + `window.__cartogenesis` for exact click
-   coords. Visual proof: push, then screenshot the DEPLOYED site in the
-   user's Chrome (cache-bust). **PowerShell corrupts UTF-8 and complex
+   ("docs"); the screenshotter now often works but can wedge — fall back to
+   canvas `getImageData` sampling + `window.__cartogenesis` {world, view} for
+   exact click coords. Visual proof: push, then screenshot the DEPLOYED site
+   in the user's Chrome (cache-bust). **PowerShell corrupts UTF-8 and complex
    quoting — Node for file edits, `git commit -F file`, Write-a-file-then-
    append for test additions. Escape backticks in .mjs template literals.**
-5. War/revolt/plague changes → 30-seed balance check (256²: mean ~61%,
-   sd ~18 after D-029).
+5. War/revolt/plague changes → 30-seed balance check (256²: mean ~61%, sd ~18).
 
 ## Invariants
 
@@ -42,34 +39,39 @@
 
 ---
 
-# Option A — Hover the world (marker & plan interactivity, queued since S24)
+# Option A — The third reading pass, unread organs
 
-- Hit-test faith/realm/ruin markers and plan landmarks in the existing
-  mousemove handlers → the chit tooltip explains them in place (the entity
-  index already knows every name).
-- The Powers scrubber pausing briefly on eventful eras.
+S27 read gazetteers; S24/S25/S26 read the app. Read what nothing has: three
+CITY PLANS end to end at several tiers (do the districts/gates/walls always
+make sense? do landlocked capitals ever look wrong?), and three full
+CHRONICLES aloud for voice drift and repeated phrasing. Fix the worst. The
+reading pass is 3-for-3 at finding real bugs — keep it in rotation.
 
-# Option B — Third reading pass, different organs
+# Option B — A genuinely new PREGENERATED layer (think big, D-027-safe)
 
-S27 read gazetteers. Read what it did NOT: three CITY PLANS end to end at
-several tiers, three full chronicles aloud for voice drift, the app's hover
-chits and detail cards for stale phrasing. Fix the worst.
+The world already has terrain, climate, cities, faiths, economy, history,
+and street plans. What is still latent in the data but never surfaced?
+Candidates that are pure functions of what exists: trade routes (the roads +
+economy already imply them), a climate/wind map with real prevailing belts,
+dynasty family trees (the rulers exist; the descent is inventable
+deterministically), or per-region folk costume/heraldry derived from culture
++ resources. Pick one, design it as a reader of decided fact, build + test.
 
-# Option C — The atlas index page
+# Option C — Deposits & resources hover/legibility
 
-docs/index.html (the sample gallery) predates the folio — it still wears the
-old design. Bring the landing page into the Cartographer's Folio so the
-first impression matches the app.
+The Resources layer shows deposits but the economy story (trade hubs, what
+flows where) is thin in the app. A reading of the existing economy layer.
 
 ## Recommended order
 
-**C first** (the landing page is the only pre-folio surface left), then A.
+**A first** (a reading pass is overdue on the unread organs), then B if a
+strong pregenerated layer suggests itself from the reading.
 
 ## Close out (do not skip)
 
 1. `build-web` + `make-samples` LAST. Note which fingerprints moved (none
    should, unless a new deliberate D-entry says so).
-2. CHANGELOG (Session 28), PROJECT_STATE, ROADMAP, DECISIONS if warranted;
+2. CHANGELOG (Session 29), PROJECT_STATE, ROADMAP, DECISIONS if warranted;
    rewrite this file.
 3. Commit per piece; push; CI green; verify deployed with a cache-busting
    reload; screenshot via the user's Chrome for visual work.

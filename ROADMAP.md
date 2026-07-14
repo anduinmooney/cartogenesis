@@ -61,6 +61,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   metre-accurate contour intervals.
 - ✅ **L17b/c — Sagas & the traveller.** Verse founding-sagas per culture and a
   first-person road journey, both under the narrator's three laws (Session 21).
+- ✅ **The folio, complete.** The landing page brought into the folio design
+  (the last pre-folio surface), and hover reveals for map markers and plan
+  landmarks (Session 28).
 - ✅ **The second reading pass.** Five defects found by reading three
   gazetteers end to end, all fixed (D-029); plus the capital's plan in the
   gazetteer and the ruins' "as it stood" view (Session 27).

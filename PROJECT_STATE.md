@@ -4,7 +4,7 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 27 · 2026-07-13 (Fable)
+- **As of:** Session 28 · 2026-07-14 (Fable/Opus)
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
 - **Health:** 🟢 Green. 238 tests pass (CI enforced). **Reproducible across
   Node builds and platforms** — the engine uses only exactly-specified
@@ -40,6 +40,9 @@
   town on the map to open it. Pure, deterministic, fingerprint-invisible.
 - **History is dated to the year.** Events land on their own years (115,
   116, 120…), never in 25-year blocks — same dynamics, real dates (D-028).
+- **The whole folio is one design.** The app AND the landing-page
+  frontispiece share the paper/ink/oxblood system; map markers and plan
+  landmarks explain themselves on hover.
 - **The Cartographer's Folio.** The app no longer looks like a dashboard: an
   atlas folio on a leather desk, engraved plate, index-tab layers, wax-seal
   button, a compass rose that leans into every pan. All CSS + one inline SVG.
@@ -143,6 +146,7 @@
 | Year-by-year history (D-028) | ✅ done |
 | L19 city plans (every town, every ruin) | ✅ done |
 | Reading pass Nº2: five defects fixed (D-029) | ✅ done |
+| Folio frontispiece (landing page) · hover reveals | ✅ done |
 | Capital plan in the gazetteer · ruins "as it stood" | ✅ done |
 | Chronicler voices · sentence frames · widened banks | ✅ done |
 | narrative polish · reading pass · more | 🔜 the world keeps deepening |
