@@ -42,7 +42,6 @@ const MODULES = [
   "narrative",
   "saga",
   "journey",
-  "expedition",
   "report",
   "svgmap",
   "world",

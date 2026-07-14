@@ -60,9 +60,8 @@ export interface JourneyInput {
   meta: { seaLevel: number; maxAltitudeMetres: number; presentYear: number; capital: string };
 }
 
-/** How each biome feels underfoot, to a traveller in a hurry. Exported so the
- *  chartered expeditions (L18) walk the same countryside in the same words. */
-export const BIOME_UNDERFOOT: Record<number, string> = {
+/** How each biome feels underfoot, to a traveller in a hurry. */
+const BIOME_UNDERFOOT: Record<number, string> = {
   [Biome.Snow]: "over snowfields that squeaked underfoot",
   [Biome.Alpine]: "across bare rock where the wind never rests",
   [Biome.Tundra]: "over hard, treeless miles",

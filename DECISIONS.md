@@ -6,6 +6,24 @@ old one — the history is the point.
 
 ---
 
+## D-027 — Expeditions removed: the world is what was generated (2026-07-13, Session 26)
+**Decision:** L18 chartered expeditions (Session 25) are removed — module,
+tests, and app UI. The DECISIONS log records reversals rather than hiding
+them; this is one.
+
+**Why:** Direct user feedback, and it is right on the merits: "You built a
+world generator... it's all about what was pregenerated." An expedition was a
+story invented AFTER generation — a caravan that was never part of the
+world's history, walked by a traveller no chronicle knows. It broke the
+project's identity rule of one authoritative past. The right interactive
+depth is *revealing more of what the generator already decided* (finer dates,
+city plans, deeper layers), not appending new fiction at click time.
+
+**What survives:** the folio redesign (Session 25's other half) and the
+`window.__cartogenesis` verification handle. The A*-over-terrain machinery is
+in git history if a *generated* use ever wants it (e.g. pregenerated trade
+routes as world-state).
+
 ## D-026 — Islets merge: a lone skerry is not a province (2026-07-13, Session 24)
 **Decision:** After the region BFS partition, any region smaller than
 `ISLET_MIN = 12` cells — an unseeded coverage island, or a seed that landed on

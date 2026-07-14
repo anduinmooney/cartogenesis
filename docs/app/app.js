@@ -19,7 +19,6 @@ import { worldReportMarkdown } from "./engine/report.js";
 import { worldPosterSVG } from "./engine/svgmap.js";
 import { pickContourInterval, renderRegions, regionColor } from "./engine/render.js";
                                                       
-import { charterExpedition,                                       } from "./engine/expedition.js";
 import {
   containsPlace,
   placePattern,
@@ -342,138 +341,6 @@ function realmMarkersAt(world       , year        )                {
   return built;
 }
 
-// --- Chartered expeditions (L18): pick two towns, watch the crossing. -------
-
-let expedition                    = null;
-/** 0 = idle · 1 = waiting for the starting town · 2 = waiting for the goal. */
-let charterStage            = 0;
-let charterFrom                    = null;
-/** How many route cells the march has revealed (drives the ink and marker). */
-let revealed = 0;
-let revealedLegs = 0;
-let marchTimer = 0;
-
-function expeditionInput(world       )                  {
-  return {
-    elevation: world.elevation,
-    water: world.water,
-    rivers: world.rivers,
-    biomes: world.biomes,
-    regions: world.regions,
-    roads: world.roads,
-    settlements: world.settlements.settlements,
-    volcanoes: world.volcanoes,
-    simulation: world.simulation,
-    economy: world.economy,
-    meta: {
-      seed: world.meta.seed,
-      seaLevel: world.meta.seaLevel,
-      maxAltitudeMetres: world.meta.maxAltitudeMetres,
-      presentYear: world.meta.presentYear,
-    },
-  };
-}
-
-function endExpedition()       {
-  if (marchTimer) {
-    clearTimeout(marchTimer);
-    marchTimer = 0;
-  }
-  expedition = null;
-  charterStage = 0;
-  charterFrom = null;
-  revealed = 0;
-  revealedLegs = 0;
-  const j = $("journal");
-  if (j) j.hidden = true;
-  const b = $("charter");
-  if (b) b.textContent = "⚑ Expedition";
-  if (current) redraw();
-}
-
-function startCharter()       {
-  if (!current) return;
-  if (charterStage > 0 || expedition) {
-    endExpedition();
-    $("status").textContent = "The expedition is disbanded.";
-    return;
-  }
-  endExpedition();
-  charterStage = 1;
-  $("charter").textContent = "✕ Disband";
-  $("status").textContent = "An expedition assembles — click the town it sets out from.";
-}
-
-/** Render the journal up to the marcher's position. */
-function renderJournal()       {
-  if (!expedition) return;
-  const e = expedition;
-  const parts           = [`<div class="jh">${escapeHtml(e.title)}</div>`];
-  parts.push(`<p class="jopen">${escapeHtml(e.opening)}</p>`);
-  for (let i = 0; i < Math.min(revealedLegs, e.legs.length); i++) {
-    const l = e.legs[i];
-    parts.push(
-      `<p class="jleg"><span class="jday">Day ${l.day}${l.kind === "sea" ? " · at sea" : ""}</span> ${escapeHtml(l.text)}</p>`,
-    );
-  }
-  if (!e.ok || revealedLegs >= e.legs.length) {
-    if (e.closing) parts.push(`<p class="jclose">${escapeHtml(e.closing)}</p>`);
-  } else {
-    parts.push(`<p class="jmarch">— the expedition is on the road —</p>`);
-  }
-  const j = $("journal");
-  j.innerHTML = parts.join("");
-  j.hidden = false;
-  if (currentEntities) linkifyPlaces(j, currentEntities);
-  j.scrollTop = j.scrollHeight;
-}
-
-/** Advance the march a few cells per tick; reveal journal legs as reached. */
-function marchStep()       {
-  if (!expedition?.ok) return;
-  const total = expedition.path.length;
-  revealed = Math.min(total, revealed + 3);
-  // Count legs fully entered: a leg is told when the march reaches its start.
-  let cellsSeen = 0;
-  let legsNow = 0;
-  for (const l of expedition.legs) {
-    if (revealed > cellsSeen + Math.min(6, l.path.length - 1)) legsNow++;
-    cellsSeen += l.path.length - 1;
-  }
-  if (revealed >= total) legsNow = expedition.legs.length;
-  if (legsNow !== revealedLegs) {
-    revealedLegs = legsNow;
-    renderJournal();
-  }
-  redraw();
-  if (revealed < total) marchTimer = window.setTimeout(marchStep, 45);
-  else {
-    marchTimer = 0;
-    $("status").textContent = `The crossing is made — ${expedition.days} day${expedition.days === 1 ? "" : "s"} on the way.`;
-  }
-}
-
-function charterTo(to            )       {
-  if (!current || !charterFrom) return;
-  const e = charterExpedition(expeditionInput(current), charterFrom.id, to.id);
-  expedition = e;
-  charterStage = 0;
-  charterFrom = null;
-  $("charter").textContent = "✕ Disband";
-  revealed = 0;
-  revealedLegs = 0;
-  renderJournal();
-  if (e.ok) {
-    const start = current.settlements.settlements.find((s) => s.id === e.fromId);
-    if (start) flyTo(start.x, start.y);
-    $("status").textContent = `${e.title} — ${e.days} days, ${e.legs.length} legs. The march begins.`;
-    marchTimer = window.setTimeout(marchStep, 500);
-  } else {
-    $("status").textContent = "The charter came to nothing; the journal records why.";
-    redraw();
-  }
-}
-
 /** The glyph and colour an event wears on the Powers map. */
 function eventGlyph(type        )                                   {
   switch (type) {
@@ -546,59 +413,6 @@ function drawOverlays()       {
   }
   const inBounds = (sx        , sy        ) =>
     sx > -80 && sy > -20 && sx < canvas.width + 80 && sy < canvas.height + 20;
-
-  // The expedition's route: the whole way faint and dashed (the plan), the
-  // marched portion in solid ink (the deed), and the marcher at its head.
-  if (expedition?.ok && expedition.path.length > 1) {
-    const px = (i        ) => (i % current .elevation.width) * view.scale + view.ox;
-    const py = (i        ) => (((i / current .elevation.width) | 0)) * view.scale + view.oy;
-    const trace = (upTo        ) => {
-      ctx.beginPath();
-      ctx.moveTo(px(expedition .path[0]), py(expedition .path[0]));
-      for (let k = 1; k < upTo; k++) ctx.lineTo(px(expedition .path[k]), py(expedition .path[k]));
-    };
-    // The plan, dashed.
-    ctx.setLineDash([3 * d, 5 * d]);
-    trace(expedition.path.length);
-    ctx.strokeStyle = "rgba(125, 44, 35, 0.55)";
-    ctx.lineWidth = 1.6 * d;
-    ctx.stroke();
-    ctx.setLineDash([]);
-    // The march so far: a paper halo, then the ink.
-    if (revealed > 1) {
-      trace(revealed);
-      ctx.strokeStyle = "rgba(244, 236, 219, 0.8)";
-      ctx.lineWidth = 4.4 * d;
-      ctx.lineJoin = "round";
-      ctx.stroke();
-      trace(revealed);
-      ctx.strokeStyle = "#7d2c23";
-      ctx.lineWidth = 1.9 * d;
-      ctx.stroke();
-      const head = expedition.path[Math.min(revealed, expedition.path.length) - 1];
-      const hx = px(head);
-      const hy = py(head);
-      ctx.beginPath();
-      ctx.arc(hx, hy, 4.4 * d, 0, Math.PI * 2);
-      ctx.fillStyle = "#7d2c23";
-      ctx.strokeStyle = "rgba(244,236,219,0.95)";
-      ctx.lineWidth = 1.6 * d;
-      ctx.fill();
-      ctx.stroke();
-      drawLabel(hx, hy - 13 * d, "⚑", "#7d2c23", Math.round(13 * d));
-    }
-  }
-  // While chartering, ring the chosen starting town.
-  if (charterStage === 2 && charterFrom) {
-    const sx = charterFrom.x * view.scale + view.ox;
-    const sy = charterFrom.y * view.scale + view.oy;
-    ctx.beginPath();
-    ctx.arc(sx, sy, 8 * d, 0, Math.PI * 2);
-    ctx.strokeStyle = "#7d2c23";
-    ctx.lineWidth = 2 * d;
-    ctx.stroke();
-    drawLabel(sx, sy - 15 * d, `${charterFrom.name} — and to where?`, "#7d2c23", Math.round(11 * d));
-  }
 
   const fitScaleNow = canvas.width / current.elevation.width;
   const zoom = view.scale / fitScaleNow;
@@ -997,27 +811,7 @@ canvas.addEventListener("mousedown", (e) => {
   canvas.classList.add("dragging");
 });
 window.addEventListener("mouseup", (e) => {
-  if (dragging && !moved) {
-    if (charterStage > 0) {
-      // The click is an appointment, not an inspection: pick the nearest town.
-      const world = clientToWorld(e.clientX, e.clientY);
-      const town = nearestSettlement(world.x, world.y, 9);
-      if (!town) {
-        $("status").textContent = "No town there — click a marked town.";
-      } else if (charterStage === 1) {
-        charterFrom = town;
-        charterStage = 2;
-        $("status").textContent = `From ${town.name} — now click the destination.`;
-        redraw();
-      } else if (charterFrom && town.id === charterFrom.id) {
-        $("status").textContent = `${town.name} to ${town.name} is a fine walk; pick a different destination.`;
-      } else {
-        charterTo(town);
-      }
-    } else {
-      pinDetail(e.clientX, e.clientY);
-    }
-  }
+  if (dragging && !moved) pinDetail(e.clientX, e.clientY);
   dragging = false;
   canvas.classList.remove("dragging");
   const rose = document.getElementById("rose");
@@ -1206,7 +1000,6 @@ worker.onmessage = (e              ) => {
   buildStoryMarkers(world);
   scrubYear = null;
   eventPin = null;
-  endExpedition();
   // Verification handle: lets session tooling read the world and the view
   // transform without scraping pixels. Not part of any public surface.
   (window                                      ).__cartogenesis = { world, view };
@@ -1365,7 +1158,6 @@ function init()       {
     fitView();
     redraw();
   });
-  $("charter").addEventListener("click", startCharter);
   $("heightmap").addEventListener("click", () => {
     downloadHeightmap().catch((e) => {
       $("status").textContent = `Heightmap export failed: ${e.message}`;
