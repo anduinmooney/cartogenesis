@@ -82,20 +82,116 @@ const BIOME_PHRASE: Record<number, string> = {
   [Biome.TropicalRainforest]: "steaming jungle",
 };
 
-// A cultural flavor line per naming language.
-const CULTURE_FLAVOR: Record<string, string> = {
-  auld: "its folk hardy and sea-wise",
-  meridian: "a country of vineyards and old stone towns",
-  kesh: "its people caravan-traders and readers of stars",
-  sylvan: "its villages half-hidden among the trees",
+// How a culture's people live — but geography gets a veto. The old version
+// gave every Auld region "sea-wise" folk (inland ones included) and every
+// Meridian region "vineyards" (bare alpine peaks included), and repeated the
+// same line for ten regions running (found by reading, Session 27). Each
+// culture now has coastal, inland, and hard-country banks, drawn per region
+// from a private stream.
+const COLD_BIOMES = new Set<number>([
+  Biome.Snow, Biome.Alpine, Biome.Tundra, Biome.ColdDesert, Biome.Taiga,
+]);
+
+const CULTURE_FLAVOR: Record<string, { coast: string[]; inland: string[]; hard: string[] }> = {
+  auld: {
+    coast: [
+      "its folk hardy and sea-wise",
+      "whalers' fires burning on its headlands",
+      "its people reckoning wealth in boats and grudges",
+    ],
+    inland: [
+      "its folk hardy and long of memory",
+      "herders of the high pastures, sparing with words",
+      "its halls warm precisely because the land is not",
+    ],
+    hard: [
+      "its folk hardy and long of memory",
+      "a country crossed on skis half the year",
+      "where hospitality is law because the weather enforces it",
+    ],
+  },
+  meridian: {
+    coast: [
+      "a country of vineyards and old stone towns",
+      "terraced hills running down to busy water",
+      "its harbours louder than its temples",
+    ],
+    inland: [
+      "a country of orchards and drove-roads",
+      "wheat country, its towns grown fat on the fields between them",
+      "old stone towns strung along older roads",
+    ],
+    hard: [
+      "high herding country, its stone villages shuttered half the year",
+      "a hard country the southern tongue softens in the telling",
+      "a country that keeps the old roads and the old prayers",
+    ],
+  },
+  kesh: {
+    coast: [
+      "its people pearl-divers and salt-traders",
+      "where the caravans meet the tide, and both leave richer",
+      "its ports paved with other countries' coin",
+    ],
+    inland: [
+      "its people caravan-traders and readers of stars",
+      "well-keepers and star-readers, rich in patience",
+      "a country crossed at night and remembered by its wells",
+    ],
+    hard: [
+      "its people caravan-traders and readers of stars",
+      "a country of stone shelters and long silences",
+      "where every spring has a name and a keeper",
+    ],
+  },
+  sylvan: {
+    coast: [
+      "its villages half-hidden where the trees meet the water",
+      "its people boat-builders who never quite trust open water",
+      "green to the tide-line, and quiet",
+    ],
+    inland: [
+      "its villages half-hidden among the trees",
+      "its people patient as the woods they keep",
+      "where the paths are known and the maps are not",
+    ],
+    hard: [
+      "its villages few and its woods listened to",
+      "its people patient as the woods they keep",
+      "where winter is answered with woodsmoke and silence",
+    ],
+  },
 };
 
-function describeRegion(region: RegionInfo, seatTowns: Settlement[]): string {
+function describeRegion(
+  region: RegionInfo,
+  seatTowns: Settlement[],
+  rng: Rng,
+): string {
   const phrase = BIOME_PHRASE[region.dominantBiome] ?? "wild country";
-  const flavor = CULTURE_FLAVOR[region.languageId] ?? "a land apart";
+  const banks = CULTURE_FLAVOR[region.languageId];
+  const bank = !banks
+    ? ["a land apart"]
+    : COLD_BIOMES.has(region.dominantBiome)
+      ? banks.hard
+      : region.coastal
+        ? banks.coast
+        : banks.inland;
+  const flavor = rng.pick(bank);
   const shore = region.coastal ? "a coast" : "an inland reach";
   const seat = seatTowns.find((s) => s.isCapital) ?? seatTowns[0];
   const seatClause = seat ? `, seat of ${seat.name}` : "";
+  // Vary the frame as well as the words — ten identical sentence shapes in a
+  // row read like a form letter even when the words differ. The frames avoid
+  // verbs whose number would have to agree with the biome phrase ("barrens
+  // stretches" once slipped through).
+  const shape = rng.int(0, 3);
+  if (shape === 1) {
+    return `${region.name} is ${region.coastal ? "a shore" : "a country"} of ${phrase} — ${flavor}${seatClause}.`;
+  }
+  if (shape === 2) {
+    return `In ${region.name}, ${phrase} and little else${region.coastal ? " but the sea" : ""}; ${flavor}${seatClause}.`;
+  }
   return `${region.name} is ${shore} of ${phrase}, ${flavor}${seatClause}.`;
 }
 
@@ -137,16 +233,24 @@ export function generateLore(
     const present = cfg.presentYear;
     let year = realm.foundedYear;
     let n = 0;
+    // A house reuses given names across the centuries, as houses do — but a
+    // second Meontai is "Meontai II", not an apparent typo (Session 27: two
+    // consecutive identical rulers read as a bug, because unnumbered they are).
+    const givenCounts = new Map<string, number>();
+    const NUMERALS = ["", "", " II", " III", " IV", " V", " VI", " VII", " VIII", " IX", " X"];
     while (year < present && n < 80) {
       const reign = rng.int(12, 42);
       const given = composeName(lang, new Rng(`${cfg.seed}:ruler:${realm.id}:${n}`), {
         kind: "person",
       }).name;
+      const nth = (givenCounts.get(given) ?? 0) + 1;
+      givenCounts.set(given, nth);
+      const numeral = NUMERALS[Math.min(nth, NUMERALS.length - 1)];
       const epithet = rng.bool(0.4) ? ` ${rng.pick(EPITHETS)}` : "";
       const endYear = Math.min(year + reign, present);
       rulers.push({
         realmId: realm.id,
-        name: `${given} ${houseName}${epithet}`,
+        name: `${given}${numeral} ${houseName}${epithet}`,
         startYear: year,
         endYear,
         reigning: endYear >= present,
@@ -165,12 +269,14 @@ export function generateLore(
   // Notable non-royal figures tied to real places.
   const figures = makeFigures(rng, regions, settlements, history);
 
-  // Region prose.
+  // Region prose — each region on its own private stream, so the variety
+  // never shifts the reign lengths drawn from the main stream above.
   const regionDescriptions: Record<number, string> = {};
   for (const region of regions.regions) {
     regionDescriptions[region.id] = describeRegion(
       region,
       townsByRegion.get(region.id) ?? [],
+      new Rng(`${cfg.seed}:regiondesc:${region.id}`),
     );
   }
 

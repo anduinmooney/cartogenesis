@@ -6,6 +6,41 @@ old one — the history is the point.
 
 ---
 
+## D-029 — The reading pass: five defects, two declared moves (2026-07-13, Session 27)
+**Decision:** The Session 27 reading pass (three fresh gazetteers, read end to
+end) found five defects; all five are fixed, two of them behind this declared
+fingerprint move.
+
+**Hash-free fixes** (private-stream retries and display conversions only):
+1. **Realm names are unique for the whole span** — history and simulation
+   both. Two realms named Mantebinte once made the chronicle read "taken from
+   itself" and the rise-and-fall table list duplicates. `composeName`'s
+   avoid-set retries inside each realm's own private stream.
+2. **Region prose respects geography** — no more "sea-wise" inlanders or
+   vineyards on bare alpine peaks; each culture has coastal/inland/hard-country
+   banks and three verb-safe frames, drawn per region on a private stream.
+3. **Regnal numbers** — a house's second Meontai is "Meontai II", not an
+   apparent copy-paste error.
+4. **Per-world vertical scale** — every world's highest peak read exactly
+   4,500 m (normalization pins the top cell at 1.0; the metres constant did
+   the rest). `maxAltitudeMetres` now draws 2,800–5,900 m on a named stream;
+   metres are a display conversion, so no fingerprint sees it.
+
+**Declared moves** (all three hashes: content `86c5fef6 → 1a70fd39`, exact
+`418ddfd2 → 1835f622`, sim `09995e24 → 4767346f`):
+5. **Volcano summit ceilings** — every big cone saturated the [0,1] clamp, so
+   every summit in every world ALSO read as the world maximum ("summit
+   4,500 m", six times running). Each cone now clamps its amplitude to its own
+   ceiling (0.78–0.99), keeping crater and flank shapes intact. Terrain moves.
+6. **Founding-year jitter** — settlement foundings were spaced by a perfect
+   per-world constant (19, 25, 32 years…). Each founding now jitters around
+   its quality-ranked slot on a private stream; the capital still opens the
+   span. The D-028 principle, applied to the organ it missed.
+
+**Balance re-measured** (30 seeds, 256²): mean top share 61%, sd 18 — inside
+the historic band. Guarded by new tests: unique names / no self-conquest,
+varied founding gaps, geographic prose invariants, numbered rulers.
+
 ## D-028 — History happens year by year, not in 25-year blocks (2026-07-13, Session 26)
 **Decision:** The dynamics still tick in 25-year turns, but every event —
 and every linked fact: a rebel realm's founding year, a town's fall, a

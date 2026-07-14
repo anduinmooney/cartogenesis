@@ -134,7 +134,14 @@ export function addVolcanoes(
     arcId?: number,
   ): void => {
     const shape = SHAPES[type];
-    const amp = shape.amp * (0.85 + rng.next() * 0.3);
+    let amp = shape.amp * (0.85 + rng.next() * 0.3);
+    // Each volcano rises to its own ceiling. Without one, every big cone
+    // saturated the [0,1] clamp and every summit in every world read exactly
+    // the same height in the gazetteer — "summit 4,500 m" six times running
+    // (found by reading, Session 27; declared terrain move, D-029). Clamping
+    // the amplitude (not the field) keeps the crater and flank shapes intact.
+    const peakCap = 0.78 + rng.next() * 0.21;
+    amp = Math.min(amp, Math.max(0.06, peakCap - data[cy * width + cx]));
 
     // A big stratovolcano or shield may have blown its top into a wide, flat-
     // floored caldera. Cinder cones are too small to.

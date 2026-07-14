@@ -251,6 +251,11 @@ export function generateSimulation(
   const realmById = new Map<number, Realm>();
   const control: Record<number, number> = {};
   let nextRealmId = 0;
+  // Realm names stay unique for the whole simulated span — even against dead
+  // realms, or the rise-and-fall table lists two Tenameontes and the annals
+  // read "seized from itself". Retries run inside each realm's own private
+  // stream (the avoid option), so the simulation's stream never feels it.
+  const takenRealmNames = new Set<string>(history.realms.map((r) => r.name));
   const seatRegionIds = [...seatByRegion.keys()].sort((a, b) => a - b);
   for (const regionId of seatRegionIds) {
     const reg = byId.get(regionId)!;
@@ -260,7 +265,10 @@ export function generateSimulation(
       id: nextRealmId++,
       name: hist
         ? hist.name
-        : makeName(lang, new Rng(`${cfg.seed}:realm:${regionId}`), { kind: "realm" }),
+        : makeName(lang, new Rng(`${cfg.seed}:realm:${regionId}`), {
+            kind: "realm",
+            avoid: takenRealmNames,
+          }),
       languageId: reg.languageId,
       aggression: 0.6 + rng.next() * 1.2,
       seatRegion: regionId,
@@ -279,7 +287,10 @@ export function generateSimulation(
     const lang = languageById(biggest.languageId);
     const realm: Realm = {
       id: nextRealmId++,
-      name: makeName(lang, new Rng(`${cfg.seed}:realm:${biggest.id}`), { kind: "realm" }),
+      name: makeName(lang, new Rng(`${cfg.seed}:realm:${biggest.id}`), {
+        kind: "realm",
+        avoid: takenRealmNames,
+      }),
       languageId: biggest.languageId,
       aggression: 0.6 + rng.next() * 1.2,
       seatRegion: biggest.id,
@@ -425,6 +436,14 @@ export function generateSimulation(
   const spanEnd = startYear + turns * yearsPerTurn;
   const byScore = [...settlements].sort((a, b) => b.score - a.score || a.id - b.id);
   const foundSpan = (spanEnd - startYear) * 0.55;
+  // Founding years follow the site quality, but not like a metronome: the
+  // even interpolation once spaced every founding in a world exactly 19 (or
+  // 25, or 32…) years apart, and the settlement list read as the machinery
+  // it was (found by reading, Session 27). Each town's year is jittered
+  // around its slot on a PRIVATE stream — the capital still opens the span,
+  // and the dynamics never feel the draw. Part of D-029.
+  const foundJitter = new Rng(`${cfg.seed}:foundingjitter`);
+  const slot = foundSpan / Math.max(1, byScore.length - 1);
   const settlementTimeline: TimedSettlement[] = byScore.map((s, i) => ({
     id: s.id,
     x: s.x,
@@ -433,9 +452,18 @@ export function generateSimulation(
     tier: s.tier,
     regionId: s.regionId,
     isCapital: s.isCapital,
-    foundedYear: Math.round(
-      startYear + (i / Math.max(1, byScore.length - 1)) * foundSpan,
-    ),
+    foundedYear:
+      i === 0
+        ? startYear
+        : Math.max(
+            startYear + 1,
+            Math.min(
+              Math.round(startYear + foundSpan),
+              Math.round(
+                startYear + i * slot + (foundJitter.next() - 0.5) * slot * 1.6,
+              ),
+            ),
+          ),
   }));
   const townsByRegion = new Map<number, TimedSettlement[]>();
   for (const ts of settlementTimeline) {
@@ -662,7 +690,10 @@ export function generateSimulation(
       const revoltYear = dated(year); // the realm is founded the year it rose
       const rebel: Realm = {
         id: nextRealmId++,
-        name: makeName(lang, new Rng(`${cfg.seed}:revolt:${rid}:${t}`), { kind: "realm" }),
+        name: makeName(lang, new Rng(`${cfg.seed}:revolt:${rid}:${t}`), {
+          kind: "realm",
+          avoid: takenRealmNames,
+        }),
         languageId: reg.languageId,
         aggression: 0.6 + rng.next() * 1.2,
         seatRegion: rid,
@@ -730,7 +761,10 @@ export function generateSimulation(
       const secessionYear = dated(year); // founded the year it broke away
       const newRealm: Realm = {
         id: nextRealmId++,
-        name: makeName(lang, new Rng(`${cfg.seed}:breakaway:${startId}:${t}`), { kind: "realm" }),
+        name: makeName(lang, new Rng(`${cfg.seed}:breakaway:${startId}:${t}`), {
+          kind: "realm",
+          avoid: takenRealmNames,
+        }),
         languageId: reg.languageId,
         aggression: 0.6 + rng.next() * 1.2,
         seatRegion: startId,

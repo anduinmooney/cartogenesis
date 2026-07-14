@@ -5,29 +5,29 @@
 ## Overview
 
 - **Extent:** 360 × 360 cells
-- **Land / ocean:** 46.7% land, 53.3% ocean, 1 lake(s)
+- **Land / ocean:** 46.8% land, 53.2% ocean, 2 lake(s)
 - **Climate & life:** dominant biome **Grassland**, 17 biomes in all
 - **Peoples:** 27 regions, 19 settlements
 - **Capital:** Deoliria, seat of House Belentaria
-- **Realms:** 25 rose over the simulated centuries; 4 stand in the present year, Redente the greatest among them
+- **Realms:** 14 rose over the simulated centuries; 4 stand in the present year, Rena the greatest among them
 - **The present year:** 1100 A.C. — 1100 years after the Crowning
 - **The calendar:** year 0 is **The First Crowning**; every date in this book is counted after the Crowning and wears `A.C.`
-- **Highest peak:** 4,500 m · **volcanoes:** 4 (1 active)
+- **Highest peak:** 3,400 m · **volcanoes:** 4 (1 active)
 
 ## Volcanoes
 
-- **Mount Thorkahrei** — *the holy hill* — stratovolcano, extinct, summit 4,500 m, one of an island arc
-- **Mount Vynbry** — *the old stone* — stratovolcano, dormant, summit 4,500 m, one of an island arc
-- **Mount Thorkasturn** — *the holy cliff* — stratovolcano, extinct, summit 4,500 m, a collapsed **caldera**, one of an island arc
-- **Mount Storkahrei** — *the white hill* — stratovolcano, active, summit 4,500 m, one of an island arc
+- **Mount Vynbry** — *the old stone* — stratovolcano, active, summit 3,400 m, **caldera** cradling a crater lake, one of an island arc
+- **Mount Storkahrei** — *the white hill* — stratovolcano, extinct, summit 3,400 m
+- **Mount Thorkahrei** — *the holy hill* — stratovolcano, dormant, summit 2,905 m, one of an island arc
+- **Mount Thorkasturn** — *the holy cliff* — stratovolcano, dormant, summit 2,668 m, one of an island arc
 
 *1 of the volcanic system forms an island arc — chains of cones strung along a line, as they rise over a moving plate.*
 
-*Fresh lava fields streak the flanks of the living peaks — 89 cells of cooled basalt where nothing grows and no one builds.*
+*Fresh lava fields streak the flanks of the living peaks — 18 cells of cooled basalt where nothing grows and no one builds.*
 
 ## Notable features
 
-- **Mount Semorneosso** — the highest peak, *the dark stone*
+- **Mount Thathobry** — the highest peak, *the dark stone*
 - **The Belenbella** — the greatest river, *the new river*
 - **Lake Mariamilen** — the largest inland water, *the salt water*
 
@@ -35,61 +35,61 @@
 
 | Region | Meaning | Culture | Area | Dominant biome | Coast |
 |--------|---------|---------|-----:|----------------|:-----:|
-| Brastausk | *the mountain isle* | Auld (northern) | 2926 | Snow | — |
-| Mairkai | *the mountain spring* | Kesh (desert) | 2904 | Savanna | yes |
-| Brabei | *the mountain wood* | Auld (northern) | 2889 | Shrubland | yes |
-| Shinshaa | *the wild folk* | Kesh (desert) | 2784 | Savanna | yes |
-| Beossolaria | *the mountain cliff* | Meridian (southern) | 2783 | Grassland | — |
-| Khirkhukha | *the sea field* | Kesh (desert) | 2783 | Savanna | yes |
-| Brasturn | *the mountain cliff* | Auld (northern) | 2746 | Shrubland | — |
-| Brafjan | *the mountain field* | Auld (northern) | 2659 | Snow | — |
-| Beossoda | *the mountain sand* | Meridian (southern) | 2653 | Alpine | — |
-| Deodinte | *the sea spring* | Meridian (southern) | 2600 | Grassland | yes |
-| Deoda | *the sea sand* | Meridian (southern) | 2541 | Grassland | yes |
-| Beossoneosso | *the mountain stone* | Meridian (southern) | 2407 | Grassland | — |
-| Stagrastausk | *the sea isle* | Auld (northern) | 2398 | Shrubland | yes |
-| Rauriabinte | *the high folk* | Meridian (southern) | 2250 | Grassland | — |
-| Stagrba | *the sea spring* | Auld (northern) | 2240 | Shrubland | yes |
-| Mairzujikh | *the mountain isle* | Kesh (desert) | 2231 | Temperate Desert | — |
-| Niantepeona | *the green grass* | Meridian (southern) | 2190 | Grassland | yes |
-| Deoneosso | *the sea stone* | Meridian (southern) | 2176 | Grassland | yes |
-| Khirshaa | *the sea folk* | Kesh (desert) | 2173 | Savanna | yes |
-| Rairkhaim | *the gold stone* | Kesh (desert) | 1927 | Savanna | yes |
-| Peonapo | *the grass marsh* | Meridian (southern) | 1785 | Grassland | — |
-| Deocina | *the sea hill* | Meridian (southern) | 1730 | Grassland | yes |
-| Khirkhajez | *the sea wood* | Kesh (desert) | 1675 | Savanna | yes |
-| Stagrasturn | *the sea cliff* | Auld (northern) | 1642 | Grassland | yes |
-| Stagrabry | *the sea stone* | Auld (northern) | 1422 | Grassland | yes |
-| Khirkhidku | *the sea hill* | Kesh (desert) | 993 | Savanna | yes |
-| Peonadoria | *the grass isle* | Meridian (southern) | 989 | Grassland | yes |
+| Nianteneosso | *the green stone* | Meridian (southern) | 3948 | Grassland | yes |
+| Mairkhukha | *the mountain field* | Kesh (desert) | 2907 | Savanna | yes |
+| Rauriabinte | *the high folk* | Meridian (southern) | 2865 | Grassland | — |
+| Stagrabry | *the sea stone* | Auld (northern) | 2817 | Tundra | yes |
+| Khirkhukha | *the sea field* | Kesh (desert) | 2759 | Savanna | yes |
+| Braknaurk | *the mountain sand* | Auld (northern) | 2751 | Snow | — |
+| Braba | *the mountain spring* | Auld (northern) | 2724 | Cold Desert | — |
+| Brabei | *the mountain wood* | Auld (northern) | 2702 | Shrubland | yes |
+| Brabry | *the mountain stone* | Auld (northern) | 2549 | Alpine | — |
+| Mairkhidku | *the mountain hill* | Kesh (desert) | 2466 | Temperate Desert | — |
+| Deolaria | *the sea cliff* | Meridian (southern) | 2399 | Grassland | yes |
+| Beossoveolla | *the mountain wood* | Meridian (southern) | 2310 | Alpine | — |
+| Khirarer | *the sea sand* | Kesh (desert) | 2232 | Savanna | yes |
+| Mairzujikh | *the mountain isle* | Kesh (desert) | 2134 | Savanna | — |
+| Beossodoria | *the mountain isle* | Meridian (southern) | 2117 | Grassland | — |
+| Beossocina | *the mountain hill* | Meridian (southern) | 2017 | Grassland | — |
+| Deoveolla | *the sea wood* | Meridian (southern) | 1988 | Grassland | yes |
+| Khirshaa | *the sea folk* | Kesh (desert) | 1885 | Savanna | yes |
+| Mairkai | *the mountain spring* | Kesh (desert) | 1799 | Savanna | — |
+| Khirsham | *the sea cliff* | Kesh (desert) | 1749 | Savanna | yes |
+| Variapeona | *the wild grass* | Meridian (southern) | 1686 | Shrubland | — |
+| Deopo | *the sea marsh* | Meridian (southern) | 1681 | Grassland | yes |
+| Khirzujikh | *the sea isle* | Kesh (desert) | 1672 | Savanna | yes |
+| Stagrasturn | *the sea cliff* | Auld (northern) | 1550 | Grassland | yes |
+| Deodinte | *the sea spring* | Meridian (southern) | 1544 | Grassland | yes |
+| Thaurnastausk | *the grass isle* | Auld (northern) | 1502 | Grassland | yes |
+| Fjandaurk | *the field folk* | Auld (northern) | 1490 | Grassland | yes |
 
-- Brastausk is an inland reach of snowbound heights, its folk hardy and sea-wise.
-- Mairkai is a coast of golden savanna, its people caravan-traders and readers of stars.
-- Brabei is a coast of windswept scrub, its folk hardy and sea-wise, seat of Stagrafjysk.
-- Shinshaa is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Shinghekh.
-- Beossolaria is an inland reach of rolling grassland, a country of vineyards and old stone towns.
-- Khirkhukha is a coast of golden savanna, its people caravan-traders and readers of stars.
-- Brasturn is an inland reach of windswept scrub, its folk hardy and sea-wise.
-- Brafjan is an inland reach of snowbound heights, its folk hardy and sea-wise.
-- Beossoda is an inland reach of bare grey peaks, a country of vineyards and old stone towns.
-- Deodinte is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deolamor.
-- Deoda is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deonelen.
-- Beossoneosso is an inland reach of rolling grassland, a country of vineyards and old stone towns.
-- Stagrastausk is a coast of windswept scrub, its folk hardy and sea-wise, seat of Stagragrull.
-- Rauriabinte is an inland reach of rolling grassland, a country of vineyards and old stone towns.
-- Stagrba is a coast of windswept scrub, its folk hardy and sea-wise, seat of Stagrba.
-- Mairzujikh is an inland reach of dry basin country, its people caravan-traders and readers of stars.
-- Niantepeona is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deotomor.
-- Deoneosso is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Bellatelen.
-- Khirshaa is a coast of golden savanna, its people caravan-traders and readers of stars.
-- Rairkhaim is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Ghashakhukha.
-- Peonapo is an inland reach of rolling grassland, a country of vineyards and old stone towns, seat of Belladinte.
-- Deocina is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deoliria.
-- Khirkhajez is a coast of golden savanna, its people caravan-traders and readers of stars, seat of Ghashmakh.
-- Stagrasturn is a coast of rolling grassland, its folk hardy and sea-wise, seat of Stagrathu.
-- Stagrabry is a coast of rolling grassland, its folk hardy and sea-wise, seat of Stagrafjan.
-- Khirkhidku is a coast of golden savanna, its people caravan-traders and readers of stars.
-- Peonadoria is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deopana.
+- Nianteneosso is a coast of rolling grassland, a country of vineyards and old stone towns, seat of Deolamor.
+- Mairkhukha is a shore of golden savanna — its people pearl-divers and salt-traders.
+- In Rauriabinte, rolling grassland and little else; old stone towns strung along older roads.
+- Stagrabry is a coast of frozen barrens, a country crossed on skis half the year, seat of Stagrba.
+- Khirkhukha is a shore of golden savanna — where the caravans meet the tide, and both leave richer.
+- Braknaurk is a country of snowbound heights — a country crossed on skis half the year.
+- Braba is an inland reach of cold, stony flats, its folk hardy and long of memory.
+- In Brabei, windswept scrub and little else but the sea; whalers' fires burning on its headlands, seat of Stagrafjysk.
+- Brabry is a country of bare grey peaks — its folk hardy and long of memory.
+- Mairkhidku is an inland reach of dry basin country, its people caravan-traders and readers of stars.
+- Deolaria is a shore of rolling grassland — a country of vineyards and old stone towns, seat of Deoliria.
+- Beossoveolla is an inland reach of bare grey peaks, a hard country the southern tongue softens in the telling.
+- Khirarer is a coast of golden savanna, where the caravans meet the tide, and both leave richer.
+- Mairzujikh is a country of golden savanna — well-keepers and star-readers, rich in patience.
+- Beossodoria is an inland reach of rolling grassland, old stone towns strung along older roads.
+- Beossocina is an inland reach of rolling grassland, a country of orchards and drove-roads.
+- In Deoveolla, rolling grassland and little else but the sea; its harbours louder than its temples.
+- Khirshaa is a coast of golden savanna, its people pearl-divers and salt-traders.
+- Mairkai is a country of golden savanna — its people caravan-traders and readers of stars.
+- In Khirsham, golden savanna and little else but the sea; its people pearl-divers and salt-traders, seat of Ghashqe.
+- In Variapeona, windswept scrub and little else; wheat country, its towns grown fat on the fields between them.
+- Deopo is a coast of rolling grassland, terraced hills running down to busy water, seat of Deotomor.
+- Khirzujikh is a coast of golden savanna, its ports paved with other countries' coin, seat of Shinghekh.
+- Stagrasturn is a shore of rolling grassland — its people reckoning wealth in boats and grudges, seat of Stagrafjan.
+- Deodinte is a coast of rolling grassland, terraced hills running down to busy water, seat of Deodemor.
+- Thaurnastausk is a shore of rolling grassland — its folk hardy and sea-wise, seat of Vonfjysk.
+- Fjandaurk is a coast of rolling grassland, whalers' fires burning on its headlands, seat of Stagrathu.
 
 ## Ruling houses
 
@@ -97,153 +97,150 @@
 
 *Belentaria, the new gold; Redente, the iron peace.*
 
-- **80–97** Peorir Belentaria
-- **98–119** Tindan Belentaria the Cruel
-- **120–155** Vassai Belentaria
-- **156–181** Peorir Belentaria
+- **62–79** Peorir Belentaria
+- **80–101** Tindan Belentaria the Cruel
+- **102–137** Vassai Belentaria
+- **138–163** Peorir II Belentaria
 - *… 29 rulers over the intervening years …*
-- **1000–1023** Tindan Belentaria
-- **1024–1050** Riandan Belentaria the Golden
-- **1051–1084** Peoriai Belentaria the Far-Sighted
-- **1085–1100** Veollai Belentaria *(reigning)*
+- **982–1005** Tindan III Belentaria
+- **1006–1032** Riandan Belentaria the Golden
+- **1033–1066** Peoriai Belentaria the Far-Sighted
+- **1067–1100** Veollai Belentaria *(reigning)*
 
-### House Donameonte — realm of Remeonte
+### House Semorsena — realm of Rena
 
-*Donameonte, the black war; Remeonte, the iron war.*
+*Semorsena, the dark thorn; Rena, the iron king.*
 
-- **96–110** Peonan Donameonte
-- **111–143** Vassan Donameonte
-- **144–179** Lariai Donameonte
-- **180–198** Vassai Donameonte
-- *… 30 rulers over the intervening years …*
-- **1006–1031** Veollan Donameonte the Just
-- **1032–1063** Neossai Donameonte the Lawgiver
-- **1064–1084** Panan Donameonte the Young
-- **1085–1100** Cinan Donameonte *(reigning)*
-
-### House Shaimshid — realm of Mishmaad
-
-*Shaimshid, the dark thorn; Mishmaad, the iron king.*
-
-- **99–138** Zashir Shaimshid
-- **139–170** Rareran Shaimshid
-- **171–203** Shidir Shaimshid
-- **204–225** Rairan Shaimshid
+- **104–143** Riandan Semorsena
+- **144–175** Donan Semorsena
+- **176–208** Senan Semorsena
+- **209–230** Tarir Semorsena
 - *… 31 rulers over the intervening years …*
-- **995–1028** Kaasan Shaimshid
-- **1029–1061** Shamir Shaimshid the Bold
-- **1062–1076** Kaaran Shaimshid
-- **1077–1100** Shinir Shaimshid the Grim *(reigning)*
+- **1000–1033** Vair III Semorsena
+- **1034–1066** Vair IV Semorsena the Bold
+- **1067–1081** Cair Semorsena
+- **1082–1100** Varian Semorsena the Grim *(reigning)*
+
+### House Doskei — realm of Tharnaskei
+
+*Doskei, the black war; Tharnaskei, the iron war.*
+
+- **109–123** Thaurnos Doskei
+- **124–156** Breistos Doskei
+- **157–192** Sturnai Doskei
+- **193–211** Breistai Doskei
+- *… 30 rulers over the intervening years …*
+- **1019–1044** Beos Doskei the Just
+- **1045–1076** Brai Doskei the Lawgiver
+- **1077–1097** Fjanos Doskei the Young
+- **1098–1100** Hreos Doskei *(reigning)*
 
 ## Notable figures
 
 - **Meontai, the Heretic** — Meontai was exiled from Deoliria for denying the old gods.
 - **Dintir, the Scholar** — Dintir mapped the waters of Mariamilen.
-- **Tindir, the General** — Tindir broke the long siege of Ghashmakh.
+- **Tindir, the General** — Tindir broke the long siege of Deolamor.
 - **Panan, the Explorer** — Panan charted the far coasts and traced the Belenbella to its source.
-- **Vair, the Architect** — Vair raised the great road between Deoliria and Ghashmakh.
+- **Vair, the Architect** — Vair raised the great road between Deoliria and Deolamor.
 
 ## Settlements
 
 ### Cities
 
-- **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Grain, Livestock, Horses, Wine *(founded 100)*
-- **Ghashdemor**, *the river home* (prosperous) — Grain, Horses, Timber, Livestock *(founded 131)* — formerly **Ghashmakh**, before conquest remade the name
-- **Deotomor**, *the sea fort* (port, prosperous) — Grain, Horses, Livestock, Wine *(founded 161)*
+- **Deoliria**, *the sea haven* (**capital**, port, trade hub, rich) — Wine, Livestock, Grain, Fish *(founded 100)*
+- **Deolamor**, *the sea hall* (port, rich) — Livestock, Grain, Wine, Horses *(founded 109)*
+- **Stagrtomor**, *the sea fort* (port, prosperous) — Fish, Timber, Livestock, Grain *(founded 175)* — formerly **Stagrathu**, before conquest remade the name
 
 ### Towns
 
-- **Deolamor**, *the sea hall* (port, prosperous) — Wine, Grain, Livestock, Horses *(founded 192)*
-- **Deonelen**, *the sea bridge* (port, trade hub, rich) — Livestock, Grain, Fish, Spices *(founded 222)*
-- **Stagrafjysk**, *the sea home* (port, prosperous) — Grain, Livestock, Timber, Fish *(founded 253)*
-- **Niantenelen**, *the green bridge* (prosperous) — Livestock, Grain, Wine, Timber *(founded 283)*
-- **Shintomor**, *the wild fort* (port, prosperous) — Livestock, Grain, Horses *(founded 314)* — formerly **Shinghekh**, before conquest remade the name
+- **Deonelen**, *the sea bridge* (port, rich) — Grain, Wine, Horses, Livestock *(founded 186)*
+- **Deodemor**, *the sea home* (port, trade hub, rich) — Livestock, Grain, Horses *(founded 235)*
+- **Deotomor**, *the sea fort* (port, prosperous) — Grain, Livestock, Horses, Fish *(founded 252)*
+- **Peonanelen**, *the grass bridge* (port, modest) — Livestock, Grain, Horses *(founded 278)*
+- **Shintomor**, *the wild fort* (port, modest) — Grain, Horses, Livestock *(founded 319)* — formerly **Shinghekh**, before conquest remade the name
+- **Bellatelen**, *the river market* (prosperous) — Livestock, Horses, Timber, Grain *(founded 348)*
 
 ### Villages
 
-- **Ghashciamor**, *the river gate* (modest) — Livestock, Timber, Spices, Horses *(founded 375)* — formerly **Ghashqe**, before conquest remade the name
-- **Stagrathu**, *the sea fort* (port, prosperous) — Livestock, Grain, Timber, Horses *(founded 406)*
-- **Deopana**, *the sea field* (port, prosperous) — Grain, Livestock, Fish, Horses *(founded 436)*
-- **Pananelen**, *the field bridge* (modest) — Livestock, Spices, Grain, Horses *(founded 467)*
-- **Stagrciamor**, *the sea gate* (port, prosperous) — Fish, Grain, Timber *(founded 497)* — formerly **Stagrafjan**, before conquest remade the name
-- **Bellademor**, *the river home* (modest) — Grain, Livestock, Wine, Horses *(founded 528)*
-- **Stagrlamor**, *the sea hall* (port, prosperous) — Grain, Fish, Horses, Livestock *(founded 558)* — formerly **Stagragrull**, before conquest remade the name
-- **Stagrdemor**, *the sea home* (port, prosperous) — Livestock, Grain, Fish, Horses *(founded 589)* — formerly **Stagrba**, before conquest remade the name
-- **Belladinte**, *the river spring* (rich) — Grain, Livestock, Horses, Wine *(founded 619)*
-- **Ghashlamor**, *the river hall* (trade hub, modest) — Horses, Livestock *(founded 650)* — formerly **Ghashakhukha**, before conquest remade the name
-
-## Ruins
-
-*Settlements that did not survive to the present day.*
-
-- **Bellatelen** (town) — founded 344, stormed and left a ruin in 991
+- **Stagrciamor**, *the sea gate* (port, prosperous) — Livestock, Grain, Wine, Horses *(founded 352)* — formerly **Stagrafjysk**, before conquest remade the name
+- **Bellatomor**, *the river fort* (prosperous) — Livestock, Grain, Horses *(founded 394)*
+- **Stagrliria**, *the sea haven* (port, modest) — Livestock *(founded 418)* — formerly **Stagrafjan**, before conquest remade the name
+- **Niantenelen**, *the green bridge* (port, modest) — Livestock, Horses *(founded 465)*
+- **Vonciamor**, *the green gate* (port, prosperous) — Grain, Horses, Livestock, Furs *(founded 492)* — formerly **Vonfjysk**, before conquest remade the name
+- **Ghashlamor**, *the river hall* (prosperous) — Livestock, Grain, Wine, Horses *(founded 544)* — formerly **Ghashqe**, before conquest remade the name
+- **Stagrdemor**, *the sea home* (port, prosperous) — Grain, Horses, Livestock *(founded 544)* — formerly **Stagragrull**, before conquest remade the name
+- **Belladinte**, *the river spring* (trade hub, rich) — Livestock, Grain, Wine, Horses *(founded 586)*
+- **Shinlamor**, *the wild hall* (prosperous) — Horses, Grain, Wine, Iron *(founded 606)* — formerly **Shinzaa**, before conquest remade the name
+- **Stagrlamor**, *the sea hall* (port, prosperous) — Livestock, Timber, Furs, Grain *(founded 647)* — formerly **Stagrba**, before conquest remade the name
 
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Stagragrull** → **Stagrlamor** *(the sea hall)* — Auld (northern) land under Meridian (southern) rule, c. 174
+- **Ghashqe** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Stagrba** → **Stagrlamor** *(the sea hall)* — Auld (northern) land under Meridian (southern) rule, c. 174
+- **Vonfjysk** → **Vonciamor** *(the green gate)* — Auld (northern) land under Meridian (southern) rule, c. 174
 - **Shinghekh** → **Shintomor** *(the wild fort)* — Kesh (desert) land under Meridian (southern) rule, c. 174
-- **Ghashakhukha** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 174
-- **Stagrafjan** → **Stagrciamor** *(the sea gate)* — Auld (northern) land under Meridian (southern) rule, c. 174
-- **Ghashmakh** → **Ghashdemor** *(the river home)* — Kesh (desert) land under Meridian (southern) rule, c. 219
-- **Ghashqe** → **Ghashciamor** *(the river gate)* — Kesh (desert) land under Meridian (southern) rule, c. 220
-- **Stagrba** → **Stagrdemor** *(the sea home)* — Auld (northern) land under Meridian (southern) rule, c. 841
+- **Shinzaa** → **Shinlamor** *(the wild hall)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Stagrafjysk** → **Stagrciamor** *(the sea gate)* — Auld (northern) land under Meridian (southern) rule, c. 174
+- **Stagrafjan** → **Stagrliria** *(the sea haven)* — Auld (northern) land under Meridian (southern) rule, c. 174
+- **Stagrathu** → **Stagrtomor** *(the sea fort)* — Auld (northern) land under Meridian (southern) rule, c. 249
+- **Stagragrull** → **Stagrdemor** *(the sea home)* — Auld (northern) land under Meridian (southern) rule, c. 249
 
 ## Faiths
 
-### the Faith of Vathorkveill — Vathorkveill, god of the Forest
+### the Faith of Vabamortindo — Vabamortindo, god of the Forest
 
-*Vathorkveill: the holy sky.*
+*Vabamortindo: the dusk blood.*
 
-> Vathorkveill planted the first tree in Brastausk and hides still among the deep woods.
+> Vabamortindo planted the first tree in Nianteneosso and hides still among the deep woods.
 
-Followed across 13 region(s).
+Followed across 9 region(s).
 
 ### the Way of Vaghairzajiq — Vaghairzajiq, god of the Storm
 
 *Vaghairzajiq: the dawn fire.*
 
-> Vaghairzajiq rides the storms down the Belenbella, and Mairkai both fears and blesses the rain.
+> Vaghairzajiq rides the storms down the Belenbella, and Mairkhukha both fears and blesses the rain.
 
-Followed across 9 region(s).
+Followed across 13 region(s).
 
-### the Way of Varondovomor — Varondovomor, god of War
+### the Way of Vavyrkveill — Vavyrkveill, god of War
 
-*Varondovomor: the sun sky.*
+*Vavyrkveill: the sun sky.*
 
-> Varondovomor forged the first blade in the fires of Semorneosso and gave it to the bold of Beossolaria.
+> Vavyrkveill forged the first blade in the fires of Thathobry and gave it to the bold of Stagrabry.
 
 Followed across 5 region(s).
 
 ## Resources & trade
 
-- **Major exports:** Livestock, Grain, Horses, Timber, Fish
+- **Major exports:** Livestock, Grain, Horses, Wine, Timber
 - **Wealthiest settlement:** Deoliria
-- **Trade hubs:** Deoliria, Deonelen, Ghashlamor
-- **Deposits:** Iron ×31, Copper ×22, Gold ×9, Gems ×6, Stone ×61, Coal ×22, Timber ×9, Grain ×45, Livestock ×125, Fish ×12, Furs ×4, Spices ×2, Salt ×11, Horses ×37, Wine ×23
+- **Trade hubs:** Deoliria, Deodemor, Belladinte
+- **Deposits:** Iron ×32, Copper ×22, Gold ×9, Gems ×6, Stone ×60, Coal ×22, Timber ×4, Grain ×40, Livestock ×126, Fish ×12, Furs ×6, Spices ×1, Salt ×12, Horses ×36, Wine ×22
 
 ## Languages
 
 *Every place-name in this world is a compound of the roots below. Read them and the map reads back.*
 
-### Auld (northern)
-
-*Spoken in Brastausk, Brabei, Brasturn.*
-
-**vyvask** water · **stagr** sea · **hra** river · **grei** lake · **ba** spring · **bry** stone · **bra** mountain · **hrei** hill · **fjan** field · **thaugr** vale · **stausk** isle · **sturn** cliff · **brein** marsh · **kno** land · **bei** wood · **gro** tree · **gra** thorn · **thaurn** grass · **thygr** fire · **vu** ash · **staun** ice · **knaurk** sand · **than** salt · **tharn** iron · **steirk** gold · **fjeisk** high · **knyst** deep · **thatho** dark · **knausk** bright · **vyn** old · **fjaun** new · **breist** red · **stork** white · **do** black · **von** green · **ska** cold · **knyrk** wild · **thu** fort · **hro** hall · **bust** gate · **grull** bridge · **dund** haven · **fjysk** home · **gry** market · **daurk** folk · **stall** king · **hryrk** blood · **skei** war · **thon** peace · **thork** holy · **brogr** dread · **thost** dawn · **kneirk** dusk · **fjull** star · **va** moon · **vyrk** sun · **veill** sky · **skyva** wind · **voll** storm
-
 ### Meridian (southern)
 
-*Spoken in Beossolaria, Beossoda, Deodinte.*
+*Spoken in Nianteneosso, Rauriabinte, Deolaria.*
 
 **milen** water · **deo** sea · **bella** river · **si** lake · **dinte** spring · **neosso** stone · **beosso** mountain · **cina** hill · **pana** field · **riando** vale · **doria** isle · **laria** cliff · **po** marsh · **caria** land · **veolla** wood · **baria** tree · **sena** thorn · **peona** grass · **comor** fire · **le** ash · **vi** ice · **da** sand · **maria** salt · **re** iron · **taria** gold · **rauria** high · **sauna** deep · **semor** dark · **peoria** bright · **cau** old · **belen** new · **vasso** red · **mante** white · **dona** black · **niante** green · **vau** cold · **varia** wild · **tomor** fort · **lamor** hall · **ciamor** gate · **nelen** bridge · **liria** haven · **demor** home · **telen** market · **binte** folk · **na** king · **tindo** blood · **meonte** war · **dente** peace · **tena** holy · **losso** dread · **mau** dawn · **bamor** dusk · **selen** star · **raulla** moon · **rondo** sun · **vomor** sky · **lolla** wind · **momor** storm
 
 ### Kesh (desert)
 
-*Spoken in Mairkai, Shinshaa, Khirkhukha.*
+*Spoken in Mairkhukha, Khirkhukha, Mairkhidku.*
 
 **kan** water · **khir** sea · **ghash** river · **takish** lake · **kai** spring · **khaim** stone · **mair** mountain · **khidku** hill · **khukha** field · **zash** vale · **zujikh** isle · **sham** cliff · **khash** marsh · **ghen** land · **khajez** wood · **qa** tree · **shid** thorn · **mid** grass · **zajiq** fire · **zair** ash · **kash** ice · **rarer** sand · **kaz** salt · **mish** iron · **rair** gold · **ja** high · **qish** deep · **shaim** dark · **me** bright · **kaar** old · **ki** new · **qu** red · **kheq** white · **ran** black · **ghush** green · **tu** cold · **shin** wild · **shu** fort · **makh** hall · **ghekh** gate · **zaa** bridge · **kad** haven · **qe** home · **riz** market · **shaa** folk · **maad** king · **said** blood · **kaasi** war · **taitan** peace · **ju** holy · **qidka** dread · **ghair** dawn · **ghisaa** dusk · **sagha** star · **shad** moon · **ghim** sun · **ghaza** sky · **rikhaa** wind · **zizam** storm
+
+### Auld (northern)
+
+*Spoken in Stagrabry, Braknaurk, Braba.*
+
+**vyvask** water · **stagr** sea · **hra** river · **grei** lake · **ba** spring · **bry** stone · **bra** mountain · **hrei** hill · **fjan** field · **thaugr** vale · **stausk** isle · **sturn** cliff · **brein** marsh · **kno** land · **bei** wood · **gro** tree · **gra** thorn · **thaurn** grass · **thygr** fire · **vu** ash · **staun** ice · **knaurk** sand · **than** salt · **tharn** iron · **steirk** gold · **fjeisk** high · **knyst** deep · **thatho** dark · **knausk** bright · **vyn** old · **fjaun** new · **breist** red · **stork** white · **do** black · **von** green · **ska** cold · **knyrk** wild · **thu** fort · **hro** hall · **bust** gate · **grull** bridge · **dund** haven · **fjysk** home · **gry** market · **daurk** folk · **stall** king · **hryrk** blood · **skei** war · **thon** peace · **thork** holy · **brogr** dread · **thost** dawn · **kneirk** dusk · **fjull** star · **va** moon · **vyrk** sun · **veill** sky · **skyva** wind · **voll** storm
 
 ## Sagas of the Peoples
 
@@ -252,50 +249,52 @@ Followed across 5 region(s).
 ### The Saga of Redente (Meridian (southern))
 
 > Long the southern folk wandered the warm sea,
-> and here the road wore out before the people did.
-> Beossolaria they named it — the mountain cliff —
+> and where the water ended, so did the wandering.
+> Nianteneosso they named it — the green stone —
 > for they were a people who named things truly.
 > Deoliria they built first, the sea haven,
 > its quays the first words of a long argument with the sea.
-> Over it they set Varondovomor, the sun sky,
-> whose dominion is war;
-> and the Way of Varondovomor remembers.
+> Over it they set Vabamortindo, the dusk blood,
+> whose dominion is the forest;
+> and the Faith of Vabamortindo remembers.
 > In their tongue, comor is fire and na is king;
 > learn those two words and their map opens like a door.
 > And of Redente the singers still sing,
 > for its banners stand as high as ever they did.
 
-### The Saga of Steirkastall (Auld (northern))
+### The Saga of Kheqshaa (Kesh (desert))
 
-> Long the northern folk wandered the grey water,
-> and the land they found they would not leave.
-> Brastausk they named it — the mountain isle —
+> Long the desert folk wandered the singing sands,
+> and the shore they found they would not leave.
+> Mairkhukha they named it — the mountain field —
 > a name that fit the land like weather.
-> Stagrafjysk they built first, the sea home,
+> Shinghekh they built first, the wild gate,
 > its quays the first words of a long argument with the sea.
-> Over it they set Vathorkveill, the holy sky,
-> whose dominion is the forest;
-> and the Faith of Vathorkveill keeps that fire yet.
-> In their tongue, fjysk is home and stall is king;
-> learn those two words and their map opens like a door.
-> And of Steirkastall the singers still sing,
-> for its banners stand as high as ever they did.
-
-### The Saga of Rairkaasi (Kesh (desert))
-
-> First came the desert folk over the singing sands,
-> and where the water ended, so did the wandering.
-> Mairkai they named it — the mountain spring —
-> for they were a people who named things truly.
-> Ghashmakh they built first, the river hall,
-> its well dug before its walls, as wise folk build.
-> (The maps write it Ghashdemor now. The saga does not.)
+> (The maps write it Shintomor now. The saga does not.)
 > Over it they set Vaghairzajiq, the dawn fire,
 > whose dominion is the storm;
 > and the Way of Vaghairzajiq keeps that fire yet.
-> In their tongue, maad is king and sagha is star;
+> In their tongue, qe is home and maad is king;
+> learn those two words and their map opens like a door.
+> Of Kheqshaa their singers made much, once.
+> It rose to 0 provinces and it fell, and the saga does not say so —
+> but the chronicle does.
+
+### The Saga of Knauskafjysk (Auld (northern))
+
+> First came the northern folk over the grey water,
+> and where the water ended, so did the wandering.
+> Stagrabry they named it — the sea stone —
+> for they were a people who named things truly.
+> Stagrathu they built first, the sea fort,
+> its quays the first words of a long argument with the sea.
+> (The maps write it Stagrtomor now. The saga does not.)
+> Over it they set Vavyrkveill, the sun sky,
+> whose dominion is war;
+> and the Way of Vavyrkveill keeps that fire yet.
+> In their tongue, stall is king and fjull is star;
 > so read their map: every name a small song.
-> Of Rairkaasi their singers made much, once.
+> Of Knauskafjysk their singers made much, once.
 > It rose to 3 provinces and it fell, and the saga does not say so —
 > but the chronicle does.
 
@@ -303,15 +302,15 @@ Followed across 5 region(s).
 
 - **0 A.C.** — In the year now called zero, the scattered halls around Deoliria set a circlet on one head for the first time, and — having at last someone to blame — began to keep records. From that year the peoples of this world count their days.
 - **41 A.C.** — The city of Deoliria was founded on a sheltered harbour, destined to become the seat of power.
-- **65 A.C.** — The city of Ghashmakh was founded along the Belenbella.
-- **76 A.C.** — The city of Deotomor was founded on a sheltered harbour.
-- **80 A.C.** — Deoliria rose to rule its hinterland, and the realm of Redente was proclaimed.
-- **96 A.C.** — Deotomor rose to rule its hinterland, and the realm of Remeonte was proclaimed.
-- **99 A.C.** — Ghashmakh rose to rule its hinterland, and the realm of Mishmaad was proclaimed.
-- **330 A.C.** — A great storm-tide flooded Deoliria; the lower quarters were lost to the sea.
-- **500 A.C.** — Semorneosso woke in fire and ash; a hard winter followed, and harvests failed across the land.
-- **671 A.C.** — An academy founded on the shores of Mariamilen gathered the age's finest cartographers.
-- **1035 A.C.** — Under a long peace, Deoliria flourished; its libraries and roads became the wonder of the world.
+- **62 A.C.** — Deoliria rose to rule its hinterland, and the realm of Redente was proclaimed.
+- **65 A.C.** — The city of Deolamor was founded on a sheltered harbour.
+- **75 A.C.** — The city of Stagrathu was founded on a sheltered harbour.
+- **104 A.C.** — Deolamor rose to rule its hinterland, and the realm of Rena was proclaimed.
+- **109 A.C.** — Stagrathu rose to rule its hinterland, and the realm of Tharnaskei was proclaimed.
+- **371 A.C.** — An academy founded on the shores of Mariamilen gathered the age's finest cartographers.
+- **550 A.C.** — A great storm-tide flooded Deoliria; the lower quarters were lost to the sea.
+- **932 A.C.** — Under a long peace, Deoliria flourished; its libraries and roads became the wonder of the world.
+- **1022 A.C.** — Thathobry woke in fire and ash; a hard winter followed, and harvests failed across the land.
 
 ## Rise and fall of realms
 
@@ -319,118 +318,100 @@ Followed across 5 region(s).
 
 | Realm | Founded | Peak | Peak year | Final | Fate |
 |-------|--------:|-----:|----------:|------:|------|
-| Redente | 100 | 10 | 1050 | 10 | ascendant |
-| Caumeonte | 100 | 9 | 450 | 8 | ascendant |
-| Steirkastall | 100 | 7 | 600 | 7 | ascendant |
-| Caubinte | 100 | 4 | 150 | 2 | diminished |
-| Remeonte | 100 | 3 | 100 | 0 | extinct |
-| Rairkaasi | 249 | 3 | 249 | 0 | extinct |
-| Rairmaad | 524 | 3 | 524 | 0 | extinct |
-| Remeonte | 100 | 2 | 100 | 0 | extinct |
-| Tariacaria | 599 | 2 | 650 | 0 | extinct |
-| Thorkdaurk | 649 | 2 | 649 | 0 | extinct |
-| Steirkafjysk | 649 | 2 | 649 | 0 | extinct |
-| Tariameonte | 921 | 2 | 921 | 0 | extinct |
+| Redente | 100 | 10 | 100 | 9 | ascendant |
+| Rena | 100 | 10 | 925 | 10 | ascendant |
+| Rauriameonte | 100 | 7 | 975 | 6 | ascendant |
+| Rauriacaria | 100 | 7 | 125 | 2 | diminished |
+| Knauskafjysk | 699 | 3 | 699 | 0 | extinct |
+| Tharnaskei | 100 | 2 | 100 | 0 | extinct |
 
 ## The Chronicle of Redente
 
-*I write in Deoliria, in the year 1100, having outlived most of the men in this book and served House Belentaria longer than either of us expected. That is the whole of my qualification, and it is enough.*
+*Set down in Deoliria, in the year 1100 after the Crowning, by a servant of House Belentaria. Nothing in these pages was free; the prices are recorded where they were paid.*
 
 *The years in these pages are counted after the Crowning; the first of the legends tells how the count began, with the First Crowning.*
 
-*The world it happened in is quickly drawn: Mount Semorneosso in the high places, and the Belenbella running to the sea, and between them every road this chronicle walks.*
+*The world it happened in is quickly drawn: Mount Thathobry in the high places, and the Belenbella running to the sea, and between them every road this chronicle walks.*
 
-### I. The Shaping Years, 100–300
+### I. The First Banners, 100–300
 
-The year 117 opened with trouble: Redente crossed into Beossoda at first thaw; Rairqe spent the summer pretending it could be undone. Shinshaa fell to Caumeonte within the year; Rairqe's protest is preserved, and was ignored. Before long, so ended Rairqe, whose banners had flown for 23 years. Beossoda rose against Redente, and out of the rising was proclaimed the free realm of Recaria.
+The year 117 opened with trouble: Rena crossed into Khirzujikh at first thaw; Kheqshaa spent the summer pretending it could be undone. Hard on its heels, the realm of Kheqshaa was extinguished; its name passes from the roll of the powers. Within the year, Braknaurk changed its prayers — the Way of Vaghairzajiq out, the Way of Vavyrkveill in, and the festival days re-hung on the calendar.
 
-About the year 132, Caumeonte marched on Beossoda, and by winter the province had fallen to it; the southern realm of Recaria was the poorer. Hard on its heels, the realm of Recaria was extinguished; its name passes from the roll of the powers. By 173, Caubinte seized Khirkhajez from Mishmaad, and the border stones were moved in the night. With that, the realm of Mishmaad was extinguished; its name passes from the roll of the powers.
+123: a pestilence swept Khirshaa and carried off more than any war had. Close on that, Deoveolla passed by force from Tharnaskei to Rauriacaria; the tax rolls were rewritten before the dead were counted. Within the year, Beossoveolla held — Rauriacaria met Rena at the border and sent it back the way it came. The land keeps no grudges; men keep enough for both.
 
-The year 174 opened with trouble: Caumeonte moved against Niantepeona, but the southern realm of Remeonte threw the invaders back over the border. Within the year, the assault Steirkastall loosed upon Deoneosso broke against Remeonte's spears and came to nothing. When a generation had passed, what had once broken against Niantepeona's defences now carried them: Caumeonte took the province, and Remeonte's pride with it.
+In 149, not all was iron: a golden age dawned over the southern realm of Rauriameonte, and its cities flourished as never before. The banners of Rauriacaria entered Fjandaurk, and what Tharnaskei had held it held no longer. Soon after, so ended Tharnaskei, whose banners had flown for 73 years. Before long, Rauriacaria taxed Fjandaurk once too often; the realm of Steirkno was the receipt. So much for the work of a generation.
 
-212: in Brasturn the bells rang without ceasing; a third of its people were laid in the ground. A generation on, the old quarrel between Caumeonte and Remeonte found its old battlefield: Khirkhukha changed hands once more, in the usual direction. So ended Remeonte, whose banners had flown for 147 years. Close on that, whatever Steirkastall intended for Deoneosso, Remeonte had prepared for it twice over.
+174: the shrines of the Way of Vaghairzajiq in Variapeona emptied, and those of the Faith of Vabamortindo filled. The same year, Rauriabinte cracked and browned under a sky that owed it water and paid none. Close on that, the matter of Fjandaurk was settled with spears — Rauriacaria kept the province, Steirkno the grievance.
 
-The year 249 opened with trouble: Rairkaasi left Caumeonte the way grown children leave — with Khirkhukha, and without asking. Soon after, Caumeonte moved against Brafjan, but the desert realm of Rairkaasi threw the invaders back over the border. In the same season, for a while everything Caumeonte touched came back gold; even its rivals banked in its coin. When a generation had passed, Rairkaasi held Brafjan against Steirkastall, whose army went home leaner and wiser.
+The year 197 opened with trouble: of Steirkno nothing more is written. Within the year, what had once broken against Beossoveolla's defences now carried them: Rena took the province, and Rauriacaria's pride with it. Hard on its heels, the banners of Rauriameonte entered Braknaurk, and what Redente had held it held no longer. Nor was that all: Mairkai changed its prayers — the Way of Vaghairzajiq out, the Way of Vavyrkveill in, and the festival days re-hung on the calendar.
 
-299: whatever Redente intended for Mairzujikh, Steirkastall had prepared for it twice over. No rain came to Mairkai for two years together; many perished.
+In 238, Rena came for Mairkai and left without it; the war songs on both sides insist otherwise. Soon after, the shrines of the Way of Vavyrkveill in Brabei emptied, and those of the Way of Vaghairzajiq filled. For a while everything Rena touched came back gold; even its rivals banked in its coin.
 
-All the while the land was filling: 6 settlements were raised in these years, Ghashmakh and Deotomor among them.
+About the year 264, the assault Rauriameonte loosed upon Braba broke against Redente's spears and came to nothing. Before long, in Rauriabinte the bells rang without ceasing; a third of its people were laid in the ground. Whatever Rena intended for Deodinte, Rauriacaria had prepared for it twice over.
 
-Names changed hands with the land: Stagragrull would be Stagrlamor from then on — and 5 other names with it.
+All the while the land was filling: 6 settlements were raised in these years, Deolamor and Stagrathu among them.
+
+The occupiers kept the land-words and changed the rest, and so Ghashqe is written Ghashlamor in every ledger since — and 8 other names with it.
 
 ### II. The Contested Years, 300–500
 
-In the year 304, Caumeonte moved against Brafjan, but Rairkaasi threw the invaders back over the border. The assault Remeonte loosed upon Khirkhukha broke against Rairkaasi's spears and came to nothing. Whatever Steirkastall intended for Brafjan, Rairkaasi had prepared for it twice over.
+The year 315 opened with trouble: Redente held Braba against Rauriameonte, whose army went home leaner and wiser. The assault Redente loosed upon Braknaurk broke against Rauriameonte's spears and came to nothing. Close on that, whatever Rena intended for Deodinte, Rauriacaria had prepared for it twice over.
 
-About the year 348, Redente came for Mairzujikh and left without it; the war songs on both sides insist otherwise. Before long, what had once broken against Brafjan's defences now carried them: Caumeonte took the province, and Rairkaasi's pride with it. Caumeonte taxed Brafjan once too often; the realm of Vynfjysk was the receipt. Close on that, sickness walked through Deoneosso and was not particular. So much for the work of a generation.
+In 335, no rain came to Mairzujikh for two years together; many perished. A generation on, Redente moved against Braknaurk, but Rauriameonte threw the invaders back over the border. Soon after, the wells of Deopo gave dust, and the river shrank to an argument. What had once broken against Deodinte's defences now carried them: Rena took the province, and Rauriacaria's pride with it.
 
-In the year 373, not all was iron: a golden age dawned over Caumeonte, and its cities flourished as never before. Hard on its heels, the matter of Brafjan was settled with spears — Caumeonte kept the province, Vynfjysk the grievance. Before long, the maps needed redrawing that year: Vynfjysk was gone from them.
+In 391, quieter conquests were made as well: Braknaurk turned from the Way of Vavyrkveill to the Way of Vaghairzajiq. Within the year, Rauriacaria held Variapeona against Rena, whose army went home leaner and wiser. Close on that, not all was iron: a golden age dawned over Rena, and its cities flourished as never before. What had once broken against Braknaurk's defences now carried them: Redente took the province, and Rauriameonte's pride with it.
 
-398: the physicians of Stagrba tried everything; the gravediggers finished what was left. Within the year, Caumeonte and Rairkaasi met over Beossolaria yet again, and yet again it was Caumeonte that kept the field. Soon after, Deoneosso held — Remeonte met Steirkastall at the border and sent it back the way it came. Hard on its heels, a pestilence swept Stagrastausk and carried off more than any war had.
+In 435, word came from Braknaurk that it would be governed from within: thus Fjeiskno, born in a single furious season. Rena taxed Deodinte once too often; the realm of Lossona was the receipt. Hard on its heels, Rauriameonte seized Braknaurk from Fjeiskno, and the border stones were moved in the night. The realm of Fjeiskno was extinguished; its name passes from the roll of the powers.
 
-In the year 420, these were the high years of Caumeonte — its markets loud, its walls, for a while, unneeded. Before long, the old quarrel between Caumeonte and Rairkaasi found its old battlefield: Khirkhukha changed hands once more, in the usual direction. The realm of Rairkaasi was extinguished; its name passes from the roll of the powers. The people of Beossolaria drove out Caumeonte's governors and took for themselves the name Caumeonte.
+In 474, swollen with victories, Rena pressed on into Deodinte, and the young southern realm of Lossona could not hold it. With that, the realm of Lossona was extinguished; its name passes from the roll of the powers. In the same season, a great drought lay upon Khirsham; the rivers shrank and the wells soured. And in that year too, these were the high years of Redente — its markets loud, its walls, for a while, unneeded.
 
-About the year 455, there was no halting Caumeonte that season: Beossolaria fell to it while Caumeonte looked on. Hard on its heels, the maps needed redrawing that year: Caumeonte was gone from them. And in that year too, Steirkastall came for Deoneosso and left without it; the war songs on both sides insist otherwise. Nor was that all: the physicians of Beossolaria tried everything; the gravediggers finished what was left.
-
-In 492, Caumeonte moved against Khirshaa, but Remeonte threw the invaders back over the border.
+The year 496 opened with trouble: whatever Rena intended for Variapeona, Rauriacaria had prepared for it twice over. Within the year, Braknaurk rose against Rauriameonte, and out of the rising was proclaimed the free realm of Fjeiskastall. The land keeps no grudges; men keep enough for both.
 
 The map grew fuller meanwhile: 7 new settlements took root, Shinghekh first among them.
 
 ### III. The Marching Years, 500–700
 
-The year 523 opened with trouble: Remeonte held Deoneosso against Steirkastall, whose army went home leaner and wiser. Before long, Caumeonte had grown past its own strength: Khirkhukha and its neighbours broke away to found Rairmaad. Close on that, Caumeonte, whose appetite grew with the eating, took Beossolaria next.
+In 515, the appetite of Rauriameonte was becoming proverbial: Braknaurk this time, and Fjeiskastall unable to answer. Close on that, of Fjeiskastall nothing more is written. It was that same year that Redente crossed into Rauriabinte, and it did not cross back; Rauriacaria redrew its maps.
 
-About the year 565, the banners of Caumeonte entered Brafjan, and what Rairmaad had held it held no longer. Before long, Caumeonte taxed Brafjan once too often; the realm of Vynfjysk was the receipt. Caumeonte took Brafjan soon after, and Vynfjysk could do little but record the loss. The realm of Vynfjysk was extinguished; its name passes from the roll of the powers.
+In the year 517, sickness walked through Mairkhidku and was not particular. Before long, Rauriameonte had its great noon: roads mended, songs written, taxes very nearly forgiven. Hard on its heels, what had once broken against Variapeona's defences now carried them: Rena took the province, and Rauriacaria's pride with it. Redente came for Braknaurk and left without it; the war songs on both sides insist otherwise.
 
-In the year 598, Khirkhukha passed by force from Rairmaad to Steirkastall; the tax rolls were rewritten before the dead were counted. Close on that, of Rairmaad nothing more is written. The garrison of Beossolaria woke to new flags — Tariacaria had declared itself overnight, and made it stick. The same year, the people of Khirkhukha drove out Steirkastall's governors and took for themselves the name Meghen.
+About the year 573, whatever Rena intended for Stagrasturn, Rauriacaria had prepared for it twice over. The people of Variapeona drove out Rena's governors and took for themselves the name Mantedemor. Within the year, swollen with victories, Rauriacaria pressed on into Variapeona, and the young southern realm of Mantedemor could not hold it. Soon after, the maps needed redrawing that year: Mantedemor was gone from them.
 
-About the year 599, word came from Brafjan that it would be governed from within: thus Vynfjysk, born in a single furious season. Not all was iron: a golden age dawned over Remeonte, and its cities flourished as never before. Hard on its heels, Caumeonte and Vynfjysk met over Brafjan yet again, and yet again it was Caumeonte that kept the field.
+The year 595 opened with trouble: these were the high years of Redente — its markets loud, its walls, for a while, unneeded. Before long, what had once broken against Variapeona's defences now carried them: Rena took the province, and Rauriacaria's pride with it. Hard on its heels, Rena moved against Stagrasturn, but Rauriacaria threw the invaders back over the border.
 
-In 612, the maps needed redrawing that year: Vynfjysk was gone from them. Within the year, Meghen lost Khirkhukha to Steirkastall, and the harvest went with it. So ended Meghen, whose banners had flown for 17 years.
+About the year 647, whatever Redente intended for Braknaurk, Rauriameonte had prepared for it twice over. Close on that, for a while everything Rena touched came back gold; even its rivals banked in its coin. Hard on its heels, Rauriameonte came for Khirsham and left without it; the war songs on both sides insist otherwise. So much for the work of a generation.
 
-About the year 646, whatever Caumeonte intended for Beossolaria, Tariacaria had prepared for it twice over. Soon after, the assault Steirkastall loosed upon Deoneosso broke against Remeonte's spears and came to nothing. That same year, too big to govern and too proud to shrink, Caumeonte watched Brafjan walk away and become Thorkdaurk. The same year, Steirkastall had grown past its own strength: Brasturn and its neighbours broke away to found Steirkafjysk.
+In the year 693, what had once broken against Stagrasturn's defences now carried them: Rena took the province, and Rauriacaria's pride with it. And in that year too, what had once broken against Braknaurk's defences now carried them: Redente took the province, and Rauriameonte's pride with it. Knauskafjysk left Redente the way grown children leave — with Brabry, and without asking.
 
-649: these were the high years of Remeonte — its markets loud, its walls, for a while, unneeded. Caubinte marched on Beossoda, and by winter the province had fallen to it; the young northern realm of Thorkdaurk was the poorer. In the same season, the matter of Brafjan was settled with spears — Tariacaria kept the province, Thorkdaurk the grievance. And that was the whole of Thorkdaurk's ending — no siege worth the name, no song; a surrender and a seal.
+About the year 699, the physicians of Deodinte tried everything; the gravediggers finished what was left. The land keeps no grudges; men keep enough for both.
 
-In 674, Caubinte taxed Beossoda once too often; the realm of Lossodente was the receipt. Nor was that all: in Beossolaria the bells rang without ceasing; a third of its people were laid in the ground. That same year, Caubinte had its great noon: roads mended, songs written, taxes very nearly forgiven. The land keeps no grudges; men keep enough for both.
-
-About the year 695, Beossoda passed by force from Lossodente to Caumeonte; the tax rolls were rewritten before the dead were counted. Before long, the realm of Lossodente was extinguished; its name passes from the roll of the powers. Soon after, a great drought lay upon Brafjan; the rivers shrank and the wells soured.
-
-These years also built more than they burned — 5 new settlements, of which Bellademor would become the best known.
+All the while the land was filling: 5 settlements were raised in these years, Ghashqe and Stagragrull among them.
 
 ### IV. The Age of Iron, 700–900
 
-In 703, what had once broken against Beossolaria's defences now carried them: Caumeonte took the province, and Tariacaria's pride with it. In the years that followed, the old quarrel between Caumeonte and Tariacaria found its old battlefield: Brafjan changed hands once more, in the usual direction. Before long, of Tariacaria nothing more is written. Within the year, Beossoda rose against Caumeonte, and out of the rising was proclaimed the free realm of Tenabinte.
+In 705, the appetite of Rena was becoming proverbial: Brabry this time, and Knauskafjysk unable to answer. Rauriameonte took Braknaurk in 733, and Knauskafjysk could do little but record the loss. Before long, these were the high years of Rauriameonte — its markets loud, its walls, for a while, unneeded. Within the year, whatever Rena intended for Rauriabinte, Knauskafjysk had prepared for it twice over.
 
-About the year 753, one more province, Beossoda, joined Caumeonte's list; Tenabinte's name joined another. Close on that, the realm of Tenabinte was extinguished; its name passes from the roll of the powers. Steirkafjysk lost Brasturn to Redente, and the harvest went with it. Sickness walked through Khirkhajez and was not particular. Write the names while they are still names.
+In the year 795, there was no halting Rauriacaria that season: Rauriabinte fell to it while Knauskafjysk looked on. Before long, of Knauskafjysk nothing more is written. Within the year, the assault Rauriameonte loosed upon Khirsham broke against Rauriacaria's spears and came to nothing.
 
-The year 781 opened with trouble: swollen with victories, Redente pressed on into Stagrba, and Steirkafjysk could not hold it. Soon after, so ended Steirkafjysk, whose banners had flown for 150 years. The same year, the people of Brasturn drove out Redente's governors and took for themselves the name Storkdaurk. The land keeps no grudges; men keep enough for both.
+About the year 803, Rena came for Rauriabinte and left without it; the war songs on both sides insist otherwise. Hard on its heels, Rauriameonte held Braknaurk against Redente, whose army went home leaner and wiser. Rauriameonte came for Rauriabinte and left without it; the war songs on both sides insist otherwise.
 
-819: Redente seized Brasturn from Storkdaurk, and the border stones were moved in the night. Before long, the maps needed redrawing that year: Storkdaurk was gone from them. Mairzujikh cracked and browned under a sky that owed it water and paid none. Steirkastall held Mairzujikh against Redente, whose army went home leaner and wiser.
+In 843, no rain came to Beossocina for two years together; many perished. Within the year, whatever Rena intended for Rauriabinte, Rauriacaria had prepared for it twice over. Close on that, the assault Redente loosed upon Braknaurk broke against Rauriameonte's spears and came to nothing. A generation on, Rauriabinte held — Rauriacaria met Rauriameonte at the border and sent it back the way it came.
 
-In the year 841, Caumeonte came for Khirkhukha and left without it; the war songs on both sides insist otherwise. Hard on its heels, what had once broken against Deoneosso's defences now carried them: Steirkastall took the province, and Remeonte's pride with it. By 896, Steirkastall and Remeonte met over Khirshaa yet again, and yet again it was Steirkastall that kept the field. Before long, what had once broken against Mairzujikh's defences now carried them: Redente took the province, and Steirkastall's pride with it.
+### V. The Wars of the Marches, 900–1100
 
-About the year 898, Deoneosso rose against Steirkastall, and out of the rising was proclaimed the free realm of Caucaria. Soon after, the people of Khirshaa drove out Steirkastall's governors and took for themselves the name Qidkashaa. Nor was that all: a pestilence swept Brafjan and carried off more than any war had. The same year, these were the high years of Redente — its markets loud, its walls, for a while, unneeded.
+In the year 911, what had once broken against Rauriabinte's defences now carried them: Rena took the province, and Rauriacaria's pride with it. Hard on its heels, Rauriabinte rose against Rena, and out of the rising was proclaimed the free realm of Recaria. Within the year, Beossoveolla cracked and browned under a sky that owed it water and paid none.
 
-Conquest re-said the very map: Stagrba became Stagrdemor on its new masters' tongues.
+In 935, Rena marched on Rauriabinte, and by winter the province had fallen to it; the young southern realm of Recaria was the poorer. The realm of Recaria was extinguished; its name passes from the roll of the powers. Hard on its heels, Rauriameonte moved against Khirsham, but Rauriacaria threw the invaders back over the border.
 
-### V. The Contested Years, 900–1100
+In the year 974, Rauriacaria held Deoveolla against Rena, whose army went home leaner and wiser. The same year, the people of Rauriabinte drove out Rena's governors and took for themselves the name Tariacaria. The matter of Rauriabinte was settled with spears — Rauriameonte kept the province, Tariacaria the grievance. It was the end of Tariacaria: 14 years of banners, done in a single season.
 
-In 909, the appetite of Steirkastall was becoming proverbial: Khirshaa this time, and Qidkashaa unable to answer. The realm of Qidkashaa was extinguished; its name passes from the roll of the powers. Close on that, the realm of Tariameonte was carved whole out of Caumeonte's flank, with Beossolaria at its heart. Soon after, no rain came to Stagrabry for two years together; many perished.
+About the year 994, for a while everything Redente touched came back gold; even its rivals banked in its coin. In the years that followed, Rena came for Fjandaurk and left without it; the war songs on both sides insist otherwise. Rauriacaria held Khirsham against Rauriameonte, whose army went home leaner and wiser. Within the year, what had once broken against Braknaurk's defences now carried them: Redente took the province, and Rauriameonte's pride with it.
 
-It was in 929 that Caumeonte crossed into Brafjan, and it did not cross back; Tariameonte redrew its maps. When a generation had passed, it was Caumeonte's year: Beossolaria was taken from Tariameonte before the passes closed. Before long, of Tariameonte nothing more is written.
+In the year 1064, what had once broken against Deoveolla's defences now carried them: Rena took the province, and Rauriacaria's pride with it. Hard on its heels, Rauriameonte came for Khirsham and left without it; the war songs on both sides insist otherwise. Not all was iron: a golden age dawned over Rauriameonte, and its cities flourished as never before. Whatever Rena intended for Fjandaurk, Rauriacaria had prepared for it twice over. So much for the work of a generation.
 
-In 967, the old quarrel between Steirkastall and Remeonte found its old battlefield: Khirkhidku changed hands once more, in the usual direction. Soon after, the realm of Remeonte was extinguished; its name passes from the roll of the powers. Before long, Bellatelen burned for two nights and was not rebuilt. Caucaria lost Deoneosso to Steirkastall, and the harvest went with it.
+The year 1089 opened with trouble: Redente came for Brabei and left without it; the war songs on both sides insist otherwise. The wells of Mairkhidku gave dust, and the river shrank to an argument.
 
-In the year 994, of Caucaria nothing more is written. Khirkhukha held — Steirkastall met Caumeonte at the border and sent it back the way it came. Hard on its heels, Mairkai cracked and browned under a sky that owed it water and paid none.
-
-1006: Redente, whose appetite grew with the eating, took Beossoneosso next. The assault Steirkastall loosed upon Brasturn broke against Redente's spears and came to nothing. A generation on, whatever Caumeonte intended for Deodinte, Caubinte had prepared for it twice over. Within the year, the wells of Stagrabry gave dust, and the river shrank to an argument.
-
-Redente took Mairkai in 1054, and Caubinte could do little but record the loss. In the years that followed, Caumeonte moved against Deodinte, but Caubinte threw the invaders back over the border. The assault Redente loosed upon Khirkhajez broke against Caubinte's spears and came to nothing.
-
-In 1099, Steirkastall had its great noon: roads mended, songs written, taxes very nearly forgiven.
-
-*So the matter stands in 1100: 4 realms endure, and Redente is mightiest among them, holding 10 provinces. 1 town lies in ruins; their names are kept in this book, which is more than their walls kept.*
+*So the matter stands in 1100: 4 realms endure, and Rena is mightiest among them, holding 10 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
 
 *In Deoliria, Veollai Belentaria holds the throne. I have kept the names. It is the only keeping a chronicler can promise.*
 
@@ -438,171 +419,152 @@ In 1099, Steirkastall had its great noon: roads mended, songs written, taxes ver
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **117 after the Crowning** — Redente seized Beossoda from Rairqe.
-- **120 after the Crowning** — Caumeonte seized Shinshaa from Rairqe.
-- **123 after the Crowning** — The realm of Rairqe was extinguished.
-- **123 after the Crowning** — Beossoda rose against Redente and declared the free realm of Recaria.
-- **132 after the Crowning** — Caumeonte seized Beossoda from Recaria.
-- **138 after the Crowning** — The realm of Recaria was extinguished.
-- **173 after the Crowning** — Caubinte seized Khirkhajez from Mishmaad.
-- **173 after the Crowning** — The realm of Mishmaad was extinguished.
-- **174 after the Crowning** — Caumeonte's invasion of Niantepeona was thrown back by Remeonte.
-- **181 after the Crowning** — Steirkastall's invasion of Deoneosso was thrown back by Remeonte.
-- **207 after the Crowning** — Caumeonte seized Niantepeona from Remeonte.
-- **212 after the Crowning** — A plague swept Brasturn; many perished.
-- **238 after the Crowning** — Caumeonte seized Khirkhukha from Remeonte.
-- **247 after the Crowning** — The realm of Remeonte was extinguished.
-- **248 after the Crowning** — Steirkastall's invasion of Deoneosso was thrown back by Remeonte.
-- **249 after the Crowning** — Khirkhukha and 2 neighbouring province(s) broke away from Caumeonte to found the realm of Rairkaasi.
-- **251 after the Crowning** — Caumeonte's invasion of Brafjan was thrown back by Rairkaasi.
-- **251 after the Crowning** — A golden age dawned over Caumeonte; its cities flourished as never before.
-- **288 after the Crowning** — Steirkastall's invasion of Brafjan was thrown back by Rairkaasi.
-- **299 after the Crowning** — Redente's invasion of Mairzujikh was thrown back by Steirkastall.
-- **299 after the Crowning** — A long drought gripped Mairkai; many perished.
-- **304 after the Crowning** — Caumeonte's invasion of Brafjan was thrown back by Rairkaasi.
-- **316 after the Crowning** — Remeonte's invasion of Khirkhukha was thrown back by Rairkaasi.
-- **339 after the Crowning** — Steirkastall's invasion of Brafjan was thrown back by Rairkaasi.
-- **348 after the Crowning** — Redente's invasion of Mairzujikh was thrown back by Steirkastall.
-- **363 after the Crowning** — Caumeonte seized Brafjan from Rairkaasi.
-- **370 after the Crowning** — Brafjan rose against Caumeonte and declared the free realm of Vynfjysk.
-- **373 after the Crowning** — A plague swept Deoneosso; many perished.
-- **373 after the Crowning** — A golden age dawned over Caumeonte; its cities flourished as never before.
-- **385 after the Crowning** — Caumeonte seized Brafjan from Vynfjysk.
-- **394 after the Crowning** — The realm of Vynfjysk was extinguished.
-- **398 after the Crowning** — A plague swept Stagrba; many perished.
-- **415 after the Crowning** — Caumeonte seized Beossolaria from Rairkaasi.
-- **416 after the Crowning** — Steirkastall's invasion of Deoneosso was thrown back by Remeonte.
-- **418 after the Crowning** — A plague swept Stagrastausk; many perished.
-- **420 after the Crowning** — A golden age dawned over Caumeonte; its cities flourished as never before.
-- **432 after the Crowning** — Caumeonte seized Khirkhukha from Rairkaasi.
-- **435 after the Crowning** — The realm of Rairkaasi was extinguished.
-- **448 after the Crowning** — Beossolaria rose against Caumeonte and declared the free realm of Caumeonte.
-- **455 after the Crowning** — Caumeonte seized Beossolaria from Caumeonte.
-- **474 after the Crowning** — The realm of Caumeonte was extinguished.
-- **474 after the Crowning** — Steirkastall's invasion of Deoneosso was thrown back by Remeonte.
-- **474 after the Crowning** — A plague swept Beossolaria; many perished.
-- **492 after the Crowning** — Caumeonte's invasion of Khirshaa was thrown back by Remeonte.
-- **523 after the Crowning** — Steirkastall's invasion of Deoneosso was thrown back by Remeonte.
-- **524 after the Crowning** — Khirkhukha and 2 neighbouring province(s) broke away from Caumeonte to found the realm of Rairmaad.
-- **534 after the Crowning** — Caumeonte seized Beossolaria from Rairmaad.
-- **565 after the Crowning** — Caumeonte seized Brafjan from Rairmaad.
-- **566 after the Crowning** — Brafjan rose against Caumeonte and declared the free realm of Vynfjysk.
-- **578 after the Crowning** — Caumeonte seized Brafjan from Vynfjysk.
-- **582 after the Crowning** — The realm of Vynfjysk was extinguished.
-- **598 after the Crowning** — Steirkastall seized Khirkhukha from Rairmaad.
-- **599 after the Crowning** — The realm of Rairmaad was extinguished.
-- **599 after the Crowning** — Beossolaria rose against Caumeonte and declared the free realm of Tariacaria.
-- **599 after the Crowning** — Khirkhukha rose against Steirkastall and declared the free realm of Meghen.
-- **599 after the Crowning** — Brafjan rose against Caumeonte and declared the free realm of Vynfjysk.
-- **599 after the Crowning** — A golden age dawned over Remeonte; its cities flourished as never before.
-- **611 after the Crowning** — Caumeonte seized Brafjan from Vynfjysk.
-- **612 after the Crowning** — The realm of Vynfjysk was extinguished.
-- **615 after the Crowning** — Steirkastall seized Khirkhukha from Meghen.
-- **616 after the Crowning** — The realm of Meghen was extinguished.
-- **646 after the Crowning** — Caumeonte's invasion of Beossolaria was thrown back by Tariacaria.
-- **649 after the Crowning** — Steirkastall's invasion of Deoneosso was thrown back by Remeonte.
-- **649 after the Crowning** — Brafjan and 1 neighbouring province(s) broke away from Caumeonte to found the realm of Thorkdaurk.
-- **649 after the Crowning** — Brasturn and 1 neighbouring province(s) broke away from Steirkastall to found the realm of Steirkafjysk.
-- **649 after the Crowning** — A golden age dawned over Remeonte; its cities flourished as never before.
-- **674 after the Crowning** — Caubinte seized Beossoda from Thorkdaurk.
-- **674 after the Crowning** — Tariacaria seized Brafjan from Thorkdaurk.
-- **674 after the Crowning** — The realm of Thorkdaurk was extinguished.
-- **674 after the Crowning** — Beossoda rose against Caubinte and declared the free realm of Lossodente.
-- **674 after the Crowning** — A plague swept Beossolaria; many perished.
-- **674 after the Crowning** — A golden age dawned over Caubinte; its cities flourished as never before.
-- **695 after the Crowning** — Caumeonte seized Beossoda from Lossodente.
-- **697 after the Crowning** — The realm of Lossodente was extinguished.
-- **698 after the Crowning** — A long drought gripped Brafjan; many perished.
-- **703 after the Crowning** — Caumeonte seized Beossolaria from Tariacaria.
-- **741 after the Crowning** — Caumeonte seized Brafjan from Tariacaria.
-- **746 after the Crowning** — The realm of Tariacaria was extinguished.
-- **747 after the Crowning** — Beossoda rose against Caumeonte and declared the free realm of Tenabinte.
-- **753 after the Crowning** — Caumeonte seized Beossoda from Tenabinte.
-- **763 after the Crowning** — The realm of Tenabinte was extinguished.
-- **770 after the Crowning** — Redente seized Brasturn from Steirkafjysk.
-- **772 after the Crowning** — A plague swept Khirkhajez; many perished.
-- **781 after the Crowning** — Redente seized Stagrba from Steirkafjysk.
-- **799 after the Crowning** — The realm of Steirkafjysk was extinguished.
-- **799 after the Crowning** — Brasturn rose against Redente and declared the free realm of Storkdaurk.
-- **819 after the Crowning** — Redente seized Brasturn from Storkdaurk.
-- **822 after the Crowning** — The realm of Storkdaurk was extinguished.
-- **824 after the Crowning** — A long drought gripped Mairzujikh; many perished.
-- **833 after the Crowning** — Redente's invasion of Mairzujikh was thrown back by Steirkastall.
-- **841 after the Crowning** — Caumeonte's invasion of Khirkhukha was thrown back by Steirkastall.
-- **864 after the Crowning** — Steirkastall seized Deoneosso from Remeonte.
-- **896 after the Crowning** — Steirkastall seized Khirshaa from Remeonte.
-- **898 after the Crowning** — Redente seized Mairzujikh from Steirkastall.
-- **898 after the Crowning** — Deoneosso rose against Steirkastall and declared the free realm of Caucaria.
-- **899 after the Crowning** — Khirshaa rose against Steirkastall and declared the free realm of Qidkashaa.
-- **899 after the Crowning** — A plague swept Brafjan; many perished.
-- **899 after the Crowning** — A golden age dawned over Redente; its cities flourished as never before.
-- **909 after the Crowning** — Steirkastall seized Khirshaa from Qidkashaa.
-- **914 after the Crowning** — The realm of Qidkashaa was extinguished.
-- **921 after the Crowning** — Beossolaria and 1 neighbouring province(s) broke away from Caumeonte to found the realm of Tariameonte.
-- **922 after the Crowning** — A long drought gripped Stagrabry; many perished.
-- **929 after the Crowning** — Caumeonte seized Brafjan from Tariameonte.
-- **964 after the Crowning** — Caumeonte seized Beossolaria from Tariameonte.
-- **967 after the Crowning** — The realm of Tariameonte was extinguished.
-- **967 after the Crowning** — Steirkastall seized Khirkhidku from Remeonte.
-- **968 after the Crowning** — The realm of Remeonte was extinguished.
-- **991 after the Crowning** — Bellatelen was stormed and left a ruin.
-- **991 after the Crowning** — Steirkastall seized Deoneosso from Caucaria.
-- **994 after the Crowning** — The realm of Caucaria was extinguished.
-- **994 after the Crowning** — Caumeonte's invasion of Khirkhukha was thrown back by Steirkastall.
-- **999 after the Crowning** — A long drought gripped Mairkai; many perished.
-- **1006 after the Crowning** — Redente seized Beossoneosso from Caubinte.
-- **1007 after the Crowning** — Steirkastall's invasion of Brasturn was thrown back by Redente.
-- **1046 after the Crowning** — Caumeonte's invasion of Deodinte was thrown back by Caubinte.
-- **1047 after the Crowning** — A long drought gripped Stagrabry; many perished.
-- **1054 after the Crowning** — Redente seized Mairkai from Caubinte.
-- **1091 after the Crowning** — Caumeonte's invasion of Deodinte was thrown back by Caubinte.
-- **1093 after the Crowning** — Redente's invasion of Khirkhajez was thrown back by Caubinte.
-- **1099 after the Crowning** — A golden age dawned over Steirkastall; its cities flourished as never before.
+- **117 after the Crowning** — Rena seized Khirzujikh from Kheqshaa.
+- **120 after the Crowning** — The realm of Kheqshaa was extinguished.
+- **123 after the Crowning** — Braknaurk turned from the Way of Vaghairzajiq to the Way of Vavyrkveill.
+- **123 after the Crowning** — A plague swept Khirshaa; many perished.
+- **132 after the Crowning** — Rauriacaria seized Deoveolla from Tharnaskei.
+- **138 after the Crowning** — Rena's invasion of Beossoveolla was thrown back by Rauriacaria.
+- **149 after the Crowning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
+- **155 after the Crowning** — Rauriacaria seized Fjandaurk from Tharnaskei.
+- **173 after the Crowning** — The realm of Tharnaskei was extinguished.
+- **174 after the Crowning** — Fjandaurk rose against Rauriacaria and declared the free realm of Steirkno.
+- **174 after the Crowning** — Variapeona turned from the Way of Vaghairzajiq to the Faith of Vabamortindo.
+- **174 after the Crowning** — A long drought gripped Rauriabinte; many perished.
+- **194 after the Crowning** — Rauriacaria seized Fjandaurk from Steirkno.
+- **197 after the Crowning** — The realm of Steirkno was extinguished.
+- **199 after the Crowning** — Rena seized Beossoveolla from Rauriacaria.
+- **201 after the Crowning** — Rauriameonte seized Braknaurk from Redente.
+- **201 after the Crowning** — Mairkai turned from the Way of Vaghairzajiq to the Way of Vavyrkveill.
+- **238 after the Crowning** — Rena's invasion of Mairkai was thrown back by Redente.
+- **249 after the Crowning** — Brabei turned from the Way of Vavyrkveill to the Way of Vaghairzajiq.
+- **249 after the Crowning** — A golden age dawned over Rena; its cities flourished as never before.
+- **264 after the Crowning** — Rauriameonte's invasion of Braba was thrown back by Redente.
+- **273 after the Crowning** — A plague swept Rauriabinte; many perished.
+- **288 after the Crowning** — Rena's invasion of Deodinte was thrown back by Rauriacaria.
+- **315 after the Crowning** — Rauriameonte's invasion of Braba was thrown back by Redente.
+- **321 after the Crowning** — Redente's invasion of Braknaurk was thrown back by Rauriameonte.
+- **326 after the Crowning** — Rena's invasion of Deodinte was thrown back by Rauriacaria.
+- **335 after the Crowning** — A long drought gripped Mairzujikh; many perished.
+- **365 after the Crowning** — Redente's invasion of Braknaurk was thrown back by Rauriameonte.
+- **372 after the Crowning** — A long drought gripped Deopo; many perished.
+- **390 after the Crowning** — Rena seized Deodinte from Rauriacaria.
+- **391 after the Crowning** — Braknaurk turned from the Way of Vavyrkveill to the Way of Vaghairzajiq.
+- **407 after the Crowning** — Rena's invasion of Variapeona was thrown back by Rauriacaria.
+- **413 after the Crowning** — A golden age dawned over Rena; its cities flourished as never before.
+- **432 after the Crowning** — Redente seized Braknaurk from Rauriameonte.
+- **435 after the Crowning** — Braknaurk rose against Redente and declared the free realm of Fjeiskno.
+- **448 after the Crowning** — Deodinte rose against Rena and declared the free realm of Lossona.
+- **455 after the Crowning** — Rauriameonte seized Braknaurk from Fjeiskno.
+- **474 after the Crowning** — The realm of Fjeiskno was extinguished.
+- **474 after the Crowning** — Rena seized Deodinte from Lossona.
+- **474 after the Crowning** — The realm of Lossona was extinguished.
+- **474 after the Crowning** — A long drought gripped Khirsham; many perished.
+- **474 after the Crowning** — A golden age dawned over Redente; its cities flourished as never before.
+- **496 after the Crowning** — Rena's invasion of Variapeona was thrown back by Rauriacaria.
+- **497 after the Crowning** — Braknaurk rose against Rauriameonte and declared the free realm of Fjeiskastall.
+- **515 after the Crowning** — Rauriameonte seized Braknaurk from Fjeiskastall.
+- **516 after the Crowning** — The realm of Fjeiskastall was extinguished.
+- **516 after the Crowning** — Redente seized Rauriabinte from Rauriacaria.
+- **517 after the Crowning** — A plague swept Mairkhidku; many perished.
+- **524 after the Crowning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
+- **546 after the Crowning** — Rena seized Variapeona from Rauriacaria.
+- **546 after the Crowning** — Redente's invasion of Braknaurk was thrown back by Rauriameonte.
+- **573 after the Crowning** — Rena's invasion of Stagrasturn was thrown back by Rauriacaria.
+- **573 after the Crowning** — Variapeona rose against Rena and declared the free realm of Mantedemor.
+- **592 after the Crowning** — Rauriacaria seized Variapeona from Mantedemor.
+- **595 after the Crowning** — The realm of Mantedemor was extinguished.
+- **595 after the Crowning** — A golden age dawned over Redente; its cities flourished as never before.
+- **607 after the Crowning** — Rena seized Variapeona from Rauriacaria.
+- **630 after the Crowning** — Rena's invasion of Stagrasturn was thrown back by Rauriacaria.
+- **647 after the Crowning** — Redente's invasion of Braknaurk was thrown back by Rauriameonte.
+- **649 after the Crowning** — A golden age dawned over Rena; its cities flourished as never before.
+- **659 after the Crowning** — Rauriameonte's invasion of Khirsham was thrown back by Rauriacaria.
+- **693 after the Crowning** — Rena seized Stagrasturn from Rauriacaria.
+- **693 after the Crowning** — Redente seized Braknaurk from Rauriameonte.
+- **699 after the Crowning** — Brabry and 2 neighbouring province(s) broke away from Redente to found the realm of Knauskafjysk.
+- **699 after the Crowning** — A plague swept Deodinte; many perished.
+- **705 after the Crowning** — Rena seized Brabry from Knauskafjysk.
+- **733 after the Crowning** — Rauriameonte seized Braknaurk from Knauskafjysk.
+- **746 after the Crowning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
+- **751 after the Crowning** — Rena's invasion of Rauriabinte was thrown back by Knauskafjysk.
+- **795 after the Crowning** — Rauriacaria seized Rauriabinte from Knauskafjysk.
+- **797 after the Crowning** — The realm of Knauskafjysk was extinguished.
+- **798 after the Crowning** — Rauriameonte's invasion of Khirsham was thrown back by Rauriacaria.
+- **803 after the Crowning** — Rena's invasion of Rauriabinte was thrown back by Rauriacaria.
+- **816 after the Crowning** — Redente's invasion of Braknaurk was thrown back by Rauriameonte.
+- **840 after the Crowning** — Rauriameonte's invasion of Rauriabinte was thrown back by Rauriacaria.
+- **843 after the Crowning** — A long drought gripped Beossocina; many perished.
+- **853 after the Crowning** — Rena's invasion of Rauriabinte was thrown back by Rauriacaria.
+- **863 after the Crowning** — Redente's invasion of Braknaurk was thrown back by Rauriameonte.
+- **891 after the Crowning** — Rauriameonte's invasion of Rauriabinte was thrown back by Rauriacaria.
+- **911 after the Crowning** — Rena seized Rauriabinte from Rauriacaria.
+- **914 after the Crowning** — Rauriabinte rose against Rena and declared the free realm of Recaria.
+- **924 after the Crowning** — A long drought gripped Beossoveolla; many perished.
+- **935 after the Crowning** — Rena seized Rauriabinte from Recaria.
+- **946 after the Crowning** — The realm of Recaria was extinguished.
+- **948 after the Crowning** — Rauriameonte's invasion of Khirsham was thrown back by Rauriacaria.
+- **974 after the Crowning** — Rena's invasion of Deoveolla was thrown back by Rauriacaria.
+- **974 after the Crowning** — Rauriabinte rose against Rena and declared the free realm of Tariacaria.
+- **988 after the Crowning** — Rauriameonte seized Rauriabinte from Tariacaria.
+- **988 after the Crowning** — The realm of Tariacaria was extinguished.
+- **994 after the Crowning** — A golden age dawned over Redente; its cities flourished as never before.
+- **1021 after the Crowning** — Rena's invasion of Fjandaurk was thrown back by Rauriacaria.
+- **1023 after the Crowning** — Rauriameonte's invasion of Khirsham was thrown back by Rauriacaria.
+- **1034 after the Crowning** — Redente seized Braknaurk from Rauriameonte.
+- **1064 after the Crowning** — Rena seized Deoveolla from Rauriacaria.
+- **1071 after the Crowning** — Rauriameonte's invasion of Khirsham was thrown back by Rauriacaria.
+- **1073 after the Crowning** — A golden age dawned over Rauriameonte; its cities flourished as never before.
+- **1084 after the Crowning** — Rena's invasion of Fjandaurk was thrown back by Rauriacaria.
+- **1089 after the Crowning** — Redente's invasion of Brabei was thrown back by Rauriameonte.
+- **1096 after the Crowning** — A long drought gripped Mairkhidku; many perished.
 
 ## A Traveller's Account, in the year 1100
 
 *I, Mantir, a dealer in wool and salt, set out from Deoliria in the spring of 1100 to see how much of this country a pair of boots could hold. What follows is the road as I found it — no more, and I hope no less.*
 
-From Deoliria the road runs 10 leagues to Niantenelen, through grass as high as the stirrup. The road finds water twice on this stretch. The road climbs some 250 metres before it thinks better of it. Niantenelen itself — the green bridge — is a town; its market is all livestock and grain.
+From Deoliria the road runs 10 leagues to Peonanelen, through grass as high as the stirrup. The road finds water twice on this stretch. Peonanelen itself — the grass bridge — is a town with its face to the sea; its market is all livestock and grain.
 
-The Ghashlamor road leaves Niantenelen by the short way, through gold grass and scattered trees. We forded twice; I stopped counting wet boots. Ghashlamor itself — the river hall — is a village; its market is all horses and livestock. The people here still say Ghashakhukha; the ledgers say Ghashlamor. I bought bread in both names.
+I went back down my own road as far as Deoliria, then turned for Vonciamor. There is one ford, cold but honest. Vonciamor itself — the green gate — is a village with its face to the sea; its market is all grain and horses. The people here still say Vonfjysk; the ledgers say Vonciamor. I bought bread in both names.
 
-From Ghashlamor the road runs 48 leagues to Shintomor. The way crosses Beossoneosso and then Beossoda. The road finds water twice on this stretch. The road climbs some 2550 metres before it thinks better of it. Shintomor itself — the wild fort — is a town with its face to the sea; its market is all livestock and grain. The people here still say Shinghekh; the ledgers say Shintomor. I bought bread in both names.
+Two days' walking took me from Vonciamor to Stagrlamor, the country unchanged. We forded once, boots held high. The road climbs some 450 metres before it thinks better of it. Stagrlamor itself — the sea hall — is a village with its face to the sea; its market is all livestock and timber. The people here still say Stagrba; the ledgers say Stagrlamor. I bought bread in both names.
 
-Out of Shintomor, then, toward Deolamor, through more of the same. We forded twice; I stopped counting wet boots. Deolamor itself — the sea hall — is a town with its face to the sea; its market is all wine and grain.
+From Stagrlamor the road runs 13 leagues to Stagrciamor, through more of the same. We forded twice; I stopped counting wet boots. Stagrciamor itself — the sea gate — is a village with its face to the sea; its market is all livestock and grain. The people here still say Stagrafjysk; the ledgers say Stagrciamor. I bought bread in both names.
 
-Ghashdemor lies 13 leagues on from Deolamor, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. The road climbs some 400 metres before it thinks better of it. Ghashdemor itself — the river home — is a city; its market is all grain and horses. The people here still say Ghashmakh; the ledgers say Ghashdemor. I bought bread in both names.
+Two days' walking took me from Stagrciamor to Deotomor, the country unchanged. There is one ford, cold but honest. The road climbs some 550 metres before it thinks better of it. Deotomor itself — the sea fort — is a town with its face to the sea; its market is all grain and livestock.
 
-Two days' walking took me from Ghashdemor to Ghashciamor, through gold grass and scattered trees. The road finds water twice on this stretch. Ghashciamor itself — the river gate — is a village; its market is all livestock and timber. The people here still say Ghashqe; the ledgers say Ghashciamor. I bought bread in both names.
+Two days' walking took me from Deotomor to Bellatelen, through more of the same. We forded once, boots held high. Bellatelen itself — the river market — is a town; its market is all livestock and horses.
 
-Back through Shintomor, then — a road walked twice is half as long, whatever my boots say — and on to Pananelen. We forded twice; I stopped counting wet boots. Pananelen itself — the field bridge — is a village; its market is all livestock and spices.
+Two days' walking took me from Bellatelen to Ghashlamor, through gold grass and scattered trees. The way crosses Mairzujikh and then Mairkhukha. The road finds water twice on this stretch. The road climbs some 400 metres before it thinks better of it. Ghashlamor itself — the river hall — is a village; its market is all livestock and grain. The people here still say Ghashqe; the ledgers say Ghashlamor. I bought bread in both names.
 
-The Deonelen road leaves Pananelen by the short way, through more of the same. We forded twice; I stopped counting wet boots. Deonelen itself — the sea bridge — is a town with its face to the sea; its market is all livestock and grain.
+Stagrtomor lies 17 leagues on from Ghashlamor, through grass as high as the stirrup. The way crosses Deoveolla. We forded twice; I stopped counting wet boots. Stagrtomor itself — the sea fort — is a city with its face to the sea; its market is all fish and timber. The people here still say Stagrathu; the ledgers say Stagrtomor. I bought bread in both names.
 
-From Deonelen the road runs 13 leagues to Stagrciamor, under green galleries. There is one ford, cold but honest. Stagrciamor itself — the sea gate — is a village with its face to the sea; its market is all fish and grain. The people here still say Stagrafjan; the ledgers say Stagrciamor. I bought bread in both names.
+Out of Stagrtomor, then, toward Stagrdemor, through more of the same. There is one ford, cold but honest. Stagrdemor itself — the sea home — is a village with its face to the sea; its market is all grain and horses. The people here still say Stagragrull; the ledgers say Stagrdemor. I bought bread in both names.
 
-There was nothing for it but to retrace my steps to Deonelen and strike out for Stagrlamor. The way crosses Stagrabry. There is one ford, cold but honest. The road climbs some 650 metres before it thinks better of it. Stagrlamor itself — the sea hall — is a village with its face to the sea; its market is all grain and fish. The people here still say Stagragrull; the ledgers say Stagrlamor. I bought bread in both names.
+Out of Stagrdemor, then, toward Deodemor, through more of the same. The way crosses Stagrasturn. There is one ford, cold but honest. The road climbs some 500 metres before it thinks better of it. Deodemor itself — the sea home — is a town with its face to the sea; its market is all livestock and grain.
 
-Out of Stagrlamor, then, toward Deotomor, through more of the same. There is one ford, cold but honest. Deotomor itself — the sea fort — is a city with its face to the sea; its market is all grain and horses.
+Two days' walking took me from Deodemor to Bellatomor, through gold grass and scattered trees. The road finds water twice on this stretch. Bellatomor itself — the river fort — is a village; its market is all livestock and grain.
 
-Two days' walking took me from Deotomor to Bellademor. We forded twice; I stopped counting wet boots. Bellademor itself — the river home — is a village; its market is all grain and livestock.
+The Shinlamor road leaves Bellatomor by the short way, the country unchanged. The road finds water twice on this stretch. Shinlamor itself — the wild hall — is a village; its market is all horses and grain. The people here still say Shinzaa; the ledgers say Shinlamor. I bought bread in both names.
 
-Back through Ghashlamor, then — a road walked twice is half as long, whatever my boots say — and on to Belladinte. The way crosses Beossoneosso and then Rauriabinte. The road finds water twice on this stretch. The road climbs some 2200 metres before it thinks better of it. Belladinte itself — the river spring — is a village; its market is all grain and livestock.
+Shintomor lies 12 leagues on from Shinlamor, through more of the same. The road finds water twice on this stretch. Shintomor itself — the wild fort — is a town with its face to the sea; its market is all grain and horses. The people here still say Shinghekh; the ledgers say Shintomor. I bought bread in both names.
 
-Back through Deoliria, then — a road walked twice is half as long, whatever my boots say — and on to Deopana. The road finds water twice on this stretch. Deopana itself — the sea field — is a village with its face to the sea; its market is all grain and livestock.
+The Deonelen road leaves Shintomor by the short way. We forded twice; I stopped counting wet boots. Deonelen itself — the sea bridge — is a town with its face to the sea; its market is all grain and wine.
 
-Stagrdemor lies 14 leagues on from Deopana. We forded twice; I stopped counting wet boots. The road climbs some 300 metres before it thinks better of it. Stagrdemor itself — the sea home — is a village with its face to the sea; its market is all livestock and grain. The people here still say Stagrba; the ledgers say Stagrdemor. I bought bread in both names.
+Belladinte lies 11 leagues on from Deonelen, through grass as high as the stirrup. We forded twice; I stopped counting wet boots. Belladinte itself — the river spring — is a village; its market is all livestock and grain.
 
-From Stagrdemor the road runs 25 leagues to Stagrathu, the country unchanged. We forded twice; I stopped counting wet boots. The road climbs some 350 metres before it thinks better of it. Stagrathu itself — the sea fort — is a village with its face to the sea; its market is all livestock and grain.
+From Belladinte the road runs 9 leagues to Deolamor, the country unchanged. We forded twice; I stopped counting wet boots. Deolamor itself — the sea hall — is a city with its face to the sea; its market is all livestock and grain.
 
-Stagrafjysk lies 13 leagues on from Stagrathu, the country unchanged. There is one ford, cold but honest. The road climbs some 750 metres before it thinks better of it. Stagrafjysk itself — the sea home — is a town with its face to the sea; its market is all grain and livestock.
+Niantenelen lies 12 leagues on from Deolamor, through gold grass and scattered trees. The road finds water twice on this stretch. Niantenelen itself — the green bridge — is a village with its face to the sea; its market is all livestock and horses.
 
-*Whoever walks these roads after me: the fords are colder than they look. Mantir, 1100.*
+Back through Deodemor, then — a road walked twice is half as long, whatever my boots say — and on to Stagrliria. We forded once, boots held high. Stagrliria itself — the sea haven — is a village with its face to the sea; its market is all livestock. The people here still say Stagrafjan; the ledgers say Stagrliria. I bought bread in both names.
+
+*My boots did not survive the year. The account did. Mantir, 1100.*
 
 ## Heightmap
 
-A real 360×360 16-bit heightmap is exported alongside this report (`.heightmap16.png` and raw `.heightmap.r16`). Import it into Blender, Unity, Godot, or World Machine and scale the height to **4,500 m** (value 65535 = 4,500 m above the lowest point). The topographic contour map (`.topo.png`) shows the same relief as isolines.
+A real 360×360 16-bit heightmap is exported alongside this report (`.heightmap16.png` and raw `.heightmap.r16`). Import it into Blender, Unity, Godot, or World Machine and scale the height to **3,400 m** (value 65535 = 3,400 m above the lowest point). The topographic contour map (`.topo.png`) shows the same relief as isolines.
 
 ---
 
-*Elevation fingerprint `6b64829cb94b32a3`. This document and every map of Redente are pure functions of the seed — reproducible anywhere, forever.*
+*Elevation fingerprint `b8014a6157bbf93d`. This document and every map of Redente are pure functions of the seed — reproducible anywhere, forever.*

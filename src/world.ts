@@ -361,7 +361,14 @@ export function generateWorld(config: WorldConfig): World {
     .filter((r) => r.status !== "extinct")
     .sort((a, b) => b.finalSize - a.finalSize)[0];
 
-  const maxAltitudeMetres = config.maxAltitudeMetres ?? 4500;
+  // The world's vertical scale. Every world once topped out at exactly
+  // 4,500 m (normalization pins the highest cell at 1.0, and this constant
+  // converted it) — so every gazetteer's "highest peak" read identically.
+  // Each world now draws its own ceiling on a named stream (order-independent,
+  // D-003): metres are a display conversion, so no fingerprint sees this.
+  const maxAltitudeMetres =
+    config.maxAltitudeMetres ??
+    2800 + Math.round(root.stream("altitude").next() * 31) * 100;
 
   // L17 — Narrative: the chronicle told as a story. Strictly downstream of the
   // simulation (its own stream; reads events, never writes them), so the

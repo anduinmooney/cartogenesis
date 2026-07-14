@@ -123,3 +123,62 @@ test("capital house is populated", () => {
   assert.ok(lore.capitalHouse.length >= 2);
   assert.notEqual(lore.capitalHouse, "—");
 });
+
+test("region prose respects geography, varies, and never contradicts (S27)", () => {
+  const w = generateWorld({ seed: "emberwild", width: 200, height: 200 });
+  const seen = new Map<string, number>();
+  for (const region of w.regions.regions) {
+    const desc = w.lore.regionDescriptions[region.id];
+    assert.ok(desc && desc.includes(region.name), `${region.name}: no prose`);
+    // Coastal-only ways of life stay on the coast.
+    if (!region.coastal) {
+      for (const coastal of ["sea-wise", "harbour", "tide", "pearl-divers", "boat"]) {
+        assert.ok(
+          !desc.includes(coastal),
+          `${region.name} is inland but its people are "${coastal}": ${desc}`,
+        );
+      }
+    }
+    // The flavour clause repeats far less than it used to (ten in a row, once).
+    const flavour = desc.split(", ").slice(1).join(", ");
+    seen.set(flavour, (seen.get(flavour) ?? 0) + 1);
+  }
+  const worst = Math.max(...seen.values());
+  assert.ok(
+    worst <= Math.max(4, Math.ceil(w.regions.regions.length / 3)),
+    `one flavour line appears ${worst} times across ${w.regions.regions.length} regions`,
+  );
+});
+
+test("a house numbers its repeated given names — Meontai II, not a seeming typo (S27)", () => {
+  // Search seeds until a house reuses a given name; the reuse must be numbered.
+  let found = false;
+  for (const seed of ["emberwild", "saltmarsh", "kettlebrook", "atlas", "s10", "borea"]) {
+    const w = generateWorld({ seed, width: 160, height: 160 });
+    const byRealm = new Map<number, string[]>();
+    for (const r of w.lore.rulers) {
+      const list = byRealm.get(r.realmId) ?? [];
+      list.push(r.name);
+      byRealm.set(r.realmId, list);
+    }
+    for (const names of byRealm.values()) {
+      // Strip epithets; the given name is the first token, numeral second.
+      const givens = names.map((n) => n.split(" ")[0]);
+      const counts = new Map<string, number>();
+      for (let i = 0; i < names.length; i++) {
+        const g = givens[i];
+        const nth = (counts.get(g) ?? 0) + 1;
+        counts.set(g, nth);
+        if (nth === 2) {
+          found = true;
+          assert.ok(
+            names[i].includes(" II ") || names[i].split(" ")[1] === "II",
+            `second ${g} is not numbered: "${names[i]}"`,
+          );
+        }
+      }
+    }
+    if (found) break;
+  }
+  assert.ok(found, "no house reused a given name across six seeds — suspicious");
+});

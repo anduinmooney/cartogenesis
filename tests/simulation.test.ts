@@ -212,3 +212,38 @@ test("history happens year by year, not in 25-year blocks (D-028)", () => {
     }
   }
 });
+
+test("realm names are unique for the whole span — no realm ever conquers 'itself' (S27)", () => {
+  // Two realms named Mantebinte once made the chronicle read "Deosena was
+  // taken from Tariademor ... by Tariademor". Checked across seeds.
+  for (const seed of ["emberwild", "saltmarsh", "kettlebrook", "atlas"]) {
+    const w = generateWorld({ seed, width: 200, height: 200 });
+    const names = w.simulation.realms.map((r) => r.name);
+    assert.equal(new Set(names).size, names.length, `${seed}: duplicate realm names`);
+    const hist = w.history.realms.map((r) => r.name);
+    assert.equal(new Set(hist).size, hist.length, `${seed}: duplicate written-history realms`);
+    for (const e of w.simulation.events) {
+      if (e.actors?.subject && e.actors?.object) {
+        assert.notEqual(
+          e.actors.subject,
+          e.actors.object,
+          `${seed}: "${e.text}" — a realm acting against itself`,
+        );
+      }
+    }
+  }
+});
+
+test("foundings are not a metronome: the gaps between them vary (S27, D-029)", () => {
+  const w = generateWorld({ seed: "emberwild", width: 200, height: 200 });
+  const years = w.simulation.settlementTimeline
+    .map((t) => t.foundedYear)
+    .sort((a, b) => a - b);
+  const gaps = new Set<number>();
+  for (let i = 1; i < years.length; i++) gaps.add(years[i] - years[i - 1]);
+  assert.ok(
+    gaps.size >= 4,
+    `only ${gaps.size} distinct founding gaps — the metronome is back`,
+  );
+  assert.equal(years[0], w.simulation.startYear, "the capital opens the span");
+});

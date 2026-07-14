@@ -283,13 +283,18 @@ export function generateHistory(
     year += rng.int(6, 34);
   }
 
-  // Realms: one per city, seated there.
+  // Realms: one per city, seated there. Names must be unique — two realms
+  // both called Mantebinte once made the chronicle read "taken from itself"
+  // (found by reading, Session 27). The avoid-set retries inside each realm's
+  // own private stream, so nothing else in the world shifts.
+  const takenRealmNames = new Set<string>();
   const realms: Realm[] = cities.map((c, i) => {
     const region = regions.regions.find((r) => r.id === c.regionId);
     const lang = languageById(region?.languageId ?? "meridian");
     const founded = (foundYear.get(c.id) ?? 100) + rng.int(10, 40);
     const { name, gloss } = composeName(lang, new Rng(`${cfg.seed}:realm:${i}`), {
       kind: "realm",
+      avoid: takenRealmNames,
     });
     events.push({
       year: founded,
