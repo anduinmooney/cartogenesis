@@ -420,30 +420,30 @@
         margin: 0;
         max-height: 340px;
         overflow-y: auto;
+        /* the timeline's one continuous rule, scrolling with its entries */
+        background: linear-gradient(var(--rule-soft), var(--rule-soft)) no-repeat 4.85rem 0 / 1px 100%;
+        background-attachment: local;
       }
       #chronicle li {
-        display: grid;
-        grid-template-columns: 4.6rem 1fr;
-        gap: 0.7rem;
+        position: relative;
         font-size: 0.88rem;
         color: var(--ink-soft);
-        padding: 0.22rem 0;
+        padding: 0.22rem 0 0.22rem 5.5rem;
       }
       #chronicle .yr {
+        position: absolute;
+        left: 0;
+        top: 0.34rem;
+        width: 4.35rem;
         text-align: right;
         font-size: 0.76rem;
         letter-spacing: 0.04em;
         color: var(--oxblood);
         white-space: nowrap;
         font-variant-numeric: tabular-nums;
-        border-right: 1px solid var(--rule-soft);
-        padding-right: 0.7rem;
-        align-self: start;
-        padding-top: 0.1rem;
       }
       #chronicle li.ev { cursor: pointer; transition: background 0.15s; }
       #chronicle li.ev:hover { background: rgba(125, 44, 35, 0.07); }
-      #chronicle li.ev:hover .yr { border-right-color: var(--oxblood); }
 
       /* --- Marginalia: notes sit slightly askew, as real notes do --- */
       #detail {
