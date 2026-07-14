@@ -6,14 +6,15 @@
     <title>Cartogenesis — A Folio of Invented Worlds</title>
     <meta
       name="description"
-      content="Type a seed and a whole world is surveyed live in your browser — terrain, climate, rivers, biomes, provinces, cities, and a written history. Charter an expedition and walk it."
+      content="Type a seed and a whole world is surveyed live in your browser — terrain, climate, rivers, biomes, provinces, cities, a year-by-year history, and a street plan for every town."
     />
     <style>
       /* ============================================================
-         THE CARTOGRAPHER'S FOLIO
-         One committed look: an atlas folio open on a leather desk.
-         Paper is paper in any room; no external assets, no webfonts —
-         the whole design is CSS and one inline compass.
+         THE CARTOGRAPHER'S FOLIO — second impression.
+         Fewer boxes, more manuscript: the controls read as sentences,
+         the dossier reads as prose, the chronicle hangs its years in
+         the margin, and notes sit slightly askew, as real notes do.
+         No external assets; paper is gradients, ornaments are text.
          ============================================================ */
       :root {
         --desk: #211910;
@@ -32,6 +33,7 @@
         --verdigris: #3c6e5c;
         --gilt: #8a6d2f;
         --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+        --scrawl: 255px 15px 225px 15px / 15px 225px 15px 255px;
       }
       * { box-sizing: border-box; }
       html { background: var(--desk); }
@@ -47,11 +49,12 @@
         line-height: 1.55;
       }
 
-      /* --- The folio sheet on the desk --- */
+      /* --- The folio sheet, with its spine label --- */
       .wrap {
-        max-width: 1220px;
+        position: relative;
+        max-width: 1240px;
         margin: 2.2rem auto 3rem;
-        padding: 2.2rem 2.4rem 2.6rem;
+        padding: 1.8rem 2.6rem 2.6rem 3.4rem;
         background:
           radial-gradient(90% 60% at 20% 10%, rgba(255, 252, 240, 0.5), transparent 60%),
           radial-gradient(80% 70% at 85% 90%, rgba(120, 90, 40, 0.1), transparent 55%),
@@ -64,33 +67,45 @@
         border: 1px solid #3a2d1b;
         border-radius: 3px;
       }
-      @media (max-width: 900px) {
-        .wrap { margin: 0.6rem; padding: 1.2rem 1rem 1.6rem; }
+      .spine {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 2.4rem;
+        border-right: 1px solid var(--rule-soft);
+        background: linear-gradient(90deg, rgba(101, 78, 42, 0.12), transparent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-
-      /* --- Title block: a folio's title page, condensed --- */
-      header { text-align: center; padding-bottom: 1.2rem; }
-      .eyebrow {
-        font-size: 0.72rem;
-        letter-spacing: 0.34em;
+      .spine span {
+        writing-mode: vertical-rl;
+        font-size: 0.66rem;
+        letter-spacing: 0.42em;
         text-transform: uppercase;
         color: var(--gilt);
-        margin: 0 0 0.6rem;
+        white-space: nowrap;
       }
-      .eyebrow a { color: var(--faint); text-decoration: none; letter-spacing: 0.18em; }
-      .eyebrow a:hover { color: var(--oxblood); }
+      .spine a { color: inherit; text-decoration: none; }
+      .spine a:hover { color: var(--oxblood); }
+      @media (max-width: 900px) {
+        .wrap { margin: 0.6rem; padding: 1.2rem 1rem 1.6rem 2.8rem; }
+      }
+
+      /* --- The title, set like a title page --- */
+      header { text-align: center; padding-bottom: 0.9rem; }
       h1 {
         font-weight: 500;
         font-size: clamp(1.9rem, 4.2vw, 2.9rem);
         letter-spacing: 0.04em;
-        margin: 0 0 0.35rem;
+        margin: 0.4rem 0 0.3rem;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 0.9rem;
       }
-      h1::before,
-      h1::after {
+      h1::before, h1::after {
         content: "";
         flex: 0 1 120px;
         height: 1px;
@@ -106,12 +121,12 @@
       .sub {
         color: var(--muted);
         font-style: italic;
-        margin: 0 auto 0.2rem;
-        max-width: 62ch;
-        font-size: 0.98rem;
+        margin: 0 auto;
+        max-width: 64ch;
+        font-size: 0.96rem;
       }
 
-      /* --- The spread: plate on the left page, notes on the right --- */
+      /* --- The spread --- */
       .app {
         display: grid;
         grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
@@ -120,104 +135,109 @@
         position: relative;
       }
       .app::before {
-        /* the gutter between the two pages */
         content: "";
         position: absolute;
         inset: 0 auto 0 calc(57.4% - 14px);
         width: 28px;
         background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(90, 68, 35, 0.14) 38%,
-          rgba(60, 44, 20, 0.22) 50%,
-          rgba(90, 68, 35, 0.14) 62%,
+          90deg, transparent,
+          rgba(90, 68, 35, 0.14) 38%, rgba(60, 44, 20, 0.22) 50%, rgba(90, 68, 35, 0.14) 62%,
           transparent
         );
         pointer-events: none;
       }
-      .stage { padding: 0.4rem 1.6rem 0 0.2rem; }
-      .info { padding: 0.4rem 0.2rem 0 1.6rem; }
+      .stage { padding: 0.3rem 1.6rem 0 0; }
+      .info { padding: 0.3rem 0 0 1.6rem; }
       @media (max-width: 860px) {
         .app { grid-template-columns: 1fr; }
         .app::before { display: none; }
-        .stage, .info { padding: 0.4rem 0; }
+        .stage, .info { padding: 0.3rem 0; }
       }
 
-      /* --- Instruments (buttons & the seed line) --- */
+      /* --- The survey line: controls that read as a sentence --- */
       .controls {
         display: flex;
+        align-items: baseline;
         gap: 0.55rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.4rem;
         flex-wrap: wrap;
-        align-items: center;
+        font-size: 1rem;
       }
+      .controls .say { color: var(--muted); }
       input[type="text"] {
-        flex: 1;
-        min-width: 150px;
+        width: 11ch;
         background: transparent;
         border: none;
         border-bottom: 1px solid var(--rule);
         color: var(--ink);
         font-family: var(--serif);
         font-style: italic;
-        font-size: 1.02rem;
-        padding: 0.35rem 0.2rem;
+        font-size: 1.05rem;
+        padding: 0.1rem 0.2rem;
         border-radius: 0;
+        text-align: center;
       }
       input[type="text"]:focus-visible {
         outline: none;
         border-bottom-color: var(--oxblood);
         box-shadow: 0 1px 0 var(--oxblood);
       }
-      button {
-        border: 1px solid var(--rule);
-        background: transparent;
-        color: var(--ink-soft);
-        font-family: var(--serif);
-        font-size: 0.78rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        padding: 0.42rem 0.85rem;
-        border-radius: 2px;
-        cursor: pointer;
-        transition: color 0.15s, border-color 0.15s, background 0.15s, transform 0.08s;
-      }
-      button:hover {
-        border-color: var(--oxblood);
-        color: var(--oxblood);
-        background: rgba(125, 44, 35, 0.05);
-      }
-      button:active { transform: translateY(1px); }
+      button { font-family: var(--serif); cursor: pointer; }
       button:focus-visible { outline: 2px solid var(--gilt); outline-offset: 1px; }
       #generate {
         background: radial-gradient(120% 140% at 30% 20%, #9a3c30, var(--oxblood) 55%, var(--oxblood-deep));
         color: #f3e6cf;
-        border-color: var(--oxblood-deep);
+        border: 1px solid var(--oxblood-deep);
         border-radius: 999px;
-        padding: 0.45rem 1.25rem;
+        padding: 0.34rem 1.2rem;
+        font-size: 0.8rem;
         letter-spacing: 0.16em;
-        box-shadow:
-          0 2px 5px rgba(60, 20, 12, 0.45),
-          0 1px 0 rgba(255, 220, 190, 0.25) inset;
+        text-transform: uppercase;
+        box-shadow: 0 2px 5px rgba(60, 20, 12, 0.45), 0 1px 0 rgba(255, 220, 190, 0.25) inset;
+        transition: transform 0.08s;
       }
       #generate:hover { color: #fff4de; }
       #generate:active {
-        transform: scale(0.97);
+        transform: scale(0.96);
         box-shadow: 0 1px 2px rgba(60, 20, 12, 0.5), 0 1px 4px rgba(30, 10, 5, 0.4) inset;
       }
+      /* quiet verbs: buttons that read as written words, not boxes */
+      .textlink {
+        background: none;
+        border: none;
+        padding: 0;
+        font-size: inherit;
+        color: var(--verdigris);
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 3px;
+      }
+      .textlink:hover { color: var(--oxblood); }
+      .wordbar {
+        display: flex;
+        align-items: baseline;
+        gap: 0.45rem;
+        flex-wrap: wrap;
+        margin: 0.7rem 0.6rem 0;
+        font-size: 0.88rem;
+        color: var(--faint);
+      }
+      .wordbar .textlink { font-size: 0.88rem; }
+      .wordbar .sep { color: var(--rule); }
 
-      /* --- The plate's index tabs (map layers) --- */
+      /* --- The plate and its thumbed index tabs --- */
       .layertabs {
         display: flex;
         gap: 2px;
         flex-wrap: wrap;
-        margin: 0 0.6rem -1px 0.6rem;
+        margin: 0.6rem 0.6rem -1px 0.6rem;
         position: relative;
         z-index: 2;
       }
       .layertabs button {
         font-size: 0.66rem;
         letter-spacing: 0.1em;
+        text-transform: uppercase;
         padding: 0.3rem 0.62rem 0.34rem;
         border: 1px solid var(--rule);
         border-bottom: none;
@@ -225,7 +245,7 @@
         background: linear-gradient(var(--paper-3), var(--paper-2));
         color: var(--muted);
       }
-      .layertabs button:hover { color: var(--oxblood); transform: none; }
+      .layertabs button:hover { color: var(--oxblood); }
       .layertabs button[aria-pressed="true"] {
         background: var(--paper);
         color: var(--ink);
@@ -235,8 +255,6 @@
         margin-top: -0.12rem;
         box-shadow: 0 -2px 4px rgba(80, 60, 30, 0.12);
       }
-
-      /* --- The plate itself: an engraved atlas plate --- */
       .canvas-frame {
         position: relative;
         background: var(--paper-2);
@@ -244,8 +262,7 @@
         outline: 1px solid var(--rule);
         outline-offset: 4px;
         box-shadow:
-          0 0 0 7px var(--paper),
-          0 0 0 8px var(--rule-soft),
+          0 0 0 7px var(--paper), 0 0 0 8px var(--rule-soft),
           0 10px 26px rgba(70, 50, 22, 0.28);
         overflow: hidden;
         aspect-ratio: 1 / 1;
@@ -254,8 +271,6 @@
       #map { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; }
       #map.dragging { cursor: grabbing; }
       #map.busy { opacity: 0.45; filter: sepia(0.35) blur(1px); transition: opacity 0.2s, filter 0.2s; }
-
-      /* the compass rose — leans into a pan, rights itself after */
       #rose {
         position: absolute;
         right: 10px;
@@ -270,12 +285,12 @@
       }
       @keyframes breathe { 0%, 100% { scale: 1; } 50% { scale: 1.02; } }
       #rose svg { animation: breathe 7s ease-in-out infinite; }
-
       .plate-caption {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        margin: 0.7rem 0.6rem 0;
+        gap: 1rem;
+        margin: 0.65rem 0.6rem 0;
         font-size: 0.72rem;
         letter-spacing: 0.18em;
         text-transform: uppercase;
@@ -286,37 +301,29 @@
         text-transform: none;
         letter-spacing: 0.02em;
         font-size: 0.78rem;
+        text-align: right;
       }
 
-      .viewbar {
-        display: flex;
-        align-items: center;
-        gap: 0.45rem;
-        margin: 0.8rem 0.6rem 0;
-        flex-wrap: wrap;
-      }
-      .viewbar button { font-size: 0.68rem; padding: 0.32rem 0.6rem; }
-      #charter { border-color: var(--verdigris); color: var(--verdigris); }
-      #charter:hover { background: rgba(60, 110, 92, 0.08); }
-
-      /* --- The scrubber: a survey of the centuries --- */
+      /* --- The scrubber --- */
       #scrubber[hidden] { display: none; }
       #scrubber {
         display: flex;
         align-items: center;
         gap: 0.6rem;
         margin: 0.8rem 0.6rem 0;
-        padding: 0.4rem 0.6rem;
+        padding: 0.4rem 0;
         border-top: 1px solid var(--rule-soft);
         border-bottom: 1px solid var(--rule-soft);
       }
+      #scrubber .say { font-size: 0.8rem; color: var(--faint); font-style: italic; }
       #scrubber #timeslider { flex: 1; accent-color: var(--oxblood); cursor: pointer; }
       #scrubber #playbtn {
         border-radius: 50%;
         width: 2rem;
         height: 2rem;
         padding: 0;
-        border-color: var(--gilt);
+        background: transparent;
+        border: 1px solid var(--gilt);
         color: var(--gilt);
       }
       #scrubber #playbtn:hover { border-color: var(--oxblood); color: var(--oxblood); }
@@ -332,14 +339,14 @@
         font-style: italic;
         font-size: 0.85rem;
         color: var(--muted);
-        margin: 0.6rem 0.6rem 0;
+        margin: 0.55rem 0.6rem 0;
         min-height: 1.3em;
       }
       .maplegend {
         display: flex;
         flex-wrap: wrap;
         gap: 0.3rem 0.85rem;
-        margin: 0.45rem 0.6rem 0;
+        margin: 0.4rem 0.6rem 0;
         min-height: 1em;
       }
       .maplegend .lg {
@@ -357,28 +364,32 @@
         flex: none;
       }
 
-      /* --- The right-hand page: notes on the world --- */
+      /* --- The right page: the dossier, written --- */
       #worldname {
-        font-size: 1.85rem;
+        font-size: 1.95rem;
         font-weight: 500;
         letter-spacing: 0.02em;
-        margin: 0 0 0.1rem;
+        margin: 0 0 0.05rem;
         text-wrap: balance;
       }
       #worldsub {
         font-size: 0.74rem;
         font-style: italic;
         color: var(--faint);
-        margin: 0 0 1rem;
+        margin: 0 0 0.9rem;
         word-break: break-word;
       }
+      #stats { margin: 0 0 0.4rem; }
+      #stats p { margin: 0.35rem 0; font-size: 0.92rem; color: var(--ink-soft); }
+      #stats b { color: var(--ink); font-weight: 600; font-variant-numeric: oldstyle-nums; }
+
       .info h3 {
         font-size: 0.72rem;
         font-weight: 600;
         letter-spacing: 0.3em;
         text-transform: uppercase;
         color: var(--gilt);
-        margin: 1.3rem 0 0.5rem;
+        margin: 1.25rem 0 0.45rem;
         display: flex;
         align-items: center;
         gap: 0.6rem;
@@ -389,116 +400,83 @@
         height: 1px;
         background: linear-gradient(90deg, var(--rule-soft), transparent);
       }
-      #stats {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.4rem 1.2rem;
-        margin-bottom: 0.4rem;
-      }
-      #stats div {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        gap: 0.5rem;
-        border-bottom: 1px dotted var(--rule);
-        padding-bottom: 0.22rem;
-        font-size: 0.88rem;
-      }
-      #stats span { color: var(--muted); font-size: 0.8rem; }
-      #stats b { font-variant-numeric: tabular-nums; font-weight: 600; }
-
       #features { list-style: none; padding: 0; margin: 0; }
-      #features li { font-size: 0.9rem; color: var(--ink-soft); padding: 0.12rem 0; }
+      #features li { font-size: 0.9rem; color: var(--ink-soft); padding: 0.1rem 0; }
       #features .gl, .tgloss, .dgloss { font-style: italic; color: var(--faint); }
       .tgloss { font-size: 0.76rem; margin-top: 0.1rem; }
       .dgloss { font-size: 0.9rem; margin-bottom: 0.35rem; }
 
-      #languages details { border-bottom: 1px solid var(--rule-soft); padding: 0.35rem 0; }
+      #languages details { padding: 0.3rem 0; }
       #languages summary { cursor: pointer; font-size: 0.9rem; color: var(--ink); }
       #languages summary .spoken { color: var(--faint); font-size: 0.76rem; font-style: italic; }
       #languages .lex { display: flex; flex-wrap: wrap; gap: 0.25rem 0.6rem; margin: 0.5rem 0 0.3rem; }
       #languages .lex span { font-size: 0.78rem; color: var(--muted); white-space: nowrap; }
       #languages .lex b { color: var(--oxblood); font-weight: 600; }
 
-      #chronicle { list-style: none; padding: 0; margin: 0; max-height: 320px; overflow-y: auto; }
+      /* --- The chronicle: years hang in the margin, one rule binds them --- */
+      #chronicle {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        max-height: 340px;
+        overflow-y: auto;
+      }
       #chronicle li {
+        display: grid;
+        grid-template-columns: 4.6rem 1fr;
+        gap: 0.7rem;
         font-size: 0.88rem;
         color: var(--ink-soft);
-        padding: 0.34rem 0;
-        border-bottom: 1px solid var(--rule-soft);
+        padding: 0.22rem 0;
       }
       #chronicle .yr {
-        font-size: 0.72rem;
-        letter-spacing: 0.08em;
+        text-align: right;
+        font-size: 0.76rem;
+        letter-spacing: 0.04em;
         color: var(--oxblood);
-        margin-right: 0.45rem;
         white-space: nowrap;
         font-variant-numeric: tabular-nums;
+        border-right: 1px solid var(--rule-soft);
+        padding-right: 0.7rem;
+        align-self: start;
+        padding-top: 0.1rem;
       }
-      #chronicle li.ev { cursor: pointer; padding-left: 0.35rem; margin-left: -0.35rem; transition: background 0.15s; }
+      #chronicle li.ev { cursor: pointer; transition: background 0.15s; }
       #chronicle li.ev:hover { background: rgba(125, 44, 35, 0.07); }
-      #chronicle li.ev::after {
-        content: " ☞ find";
-        font-size: 0.7rem;
-        font-style: italic;
-        color: var(--faint);
-        opacity: 0;
-        transition: opacity 0.15s;
-      }
-      #chronicle li.ev:hover::after { opacity: 1; }
+      #chronicle li.ev:hover .yr { border-right-color: var(--oxblood); }
 
-      /* --- Marginalia: the pinned detail card --- */
+      /* --- Marginalia: notes sit slightly askew, as real notes do --- */
       #detail {
         background: var(--paper-2);
-        border-left: 3px solid var(--oxblood);
-        padding: 0.7rem 0.9rem;
+        border: 1px solid var(--ink-soft);
+        border-radius: var(--scrawl);
+        transform: rotate(-0.5deg);
+        padding: 0.75rem 1rem;
         margin-bottom: 1rem;
         font-size: 0.88rem;
-        box-shadow: 0 2px 8px rgba(80, 60, 30, 0.14);
+        box-shadow: 0 3px 10px rgba(80, 60, 30, 0.18);
         animation: unfoldnote 0.28s ease-out both;
         transform-origin: top center;
       }
       @keyframes unfoldnote {
-        from { transform: scaleY(0.85); opacity: 0; }
+        from { transform: rotate(-0.5deg) scaleY(0.85); opacity: 0; }
+        to { transform: rotate(-0.5deg) scaleY(1); opacity: 1; }
       }
       #detail .dh { font-size: 1.12rem; font-weight: 600; margin-bottom: 0.15rem; }
       #detail .drow { color: var(--muted); font-size: 0.8rem; }
       #detail .dprose { margin-top: 0.5rem; font-style: italic; color: var(--ink-soft); line-height: 1.5; }
       #detail .dclose { float: right; cursor: pointer; color: var(--faint); }
       #detail .dclose:hover { color: var(--oxblood); }
-
-      /* --- The expedition journal --- */
-      #journal[hidden] { display: none; }
-      #journal {
-        background:
-          radial-gradient(120% 100% at 80% 0%, rgba(255, 250, 235, 0.5), transparent 55%),
-          var(--paper-2);
-        border-top: 3px double var(--oxblood);
-        border-bottom: 1px solid var(--rule);
-        padding: 0.8rem 0.95rem;
-        margin-bottom: 1.1rem;
-        max-height: 340px;
-        overflow-y: auto;
-        box-shadow: 0 3px 10px rgba(80, 60, 30, 0.16);
-        animation: unfoldnote 0.35s ease-out both;
-        transform-origin: top center;
+      .planlink {
+        color: var(--verdigris);
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 3px;
       }
-      #journal .jh { font-size: 1.08rem; font-weight: 600; letter-spacing: 0.02em; margin-bottom: 0.3rem; }
-      #journal .jopen { font-style: italic; color: var(--ink-soft); font-size: 0.86rem; margin: 0 0 0.5rem; }
-      #journal .jleg { font-size: 0.87rem; color: var(--ink-soft); margin: 0.45rem 0; animation: inkin 0.5s ease-out both; }
-      @keyframes inkin { from { opacity: 0; transform: translateY(3px); } }
-      #journal .jday {
-        font-style: normal;
-        font-size: 0.68rem;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--oxblood);
-        margin-right: 0.3rem;
-      }
-      #journal .jclose { font-style: italic; color: var(--ink); font-size: 0.88rem; margin: 0.6rem 0 0; border-top: 1px solid var(--rule-soft); padding-top: 0.5rem; }
-      #journal .jmarch { text-align: center; color: var(--faint); font-style: italic; font-size: 0.78rem; margin: 0.5rem 0 0; animation: breathe 2.4s ease-in-out infinite; }
+      .planlink:hover { color: var(--oxblood); }
 
-      /* --- The hovering label chit --- */
+      /* --- The label chit --- */
       #tip {
         position: fixed;
         z-index: 60;
@@ -507,19 +485,20 @@
         background: var(--paper);
         color: var(--ink);
         border: 1px solid var(--ink-soft);
-        padding: 0.5rem 0.7rem;
+        border-radius: var(--scrawl);
+        padding: 0.5rem 0.8rem;
         font-size: 0.82rem;
         line-height: 1.42;
         transform: rotate(-0.5deg);
-        box-shadow: 0 8px 22px rgba(25, 15, 5, 0.4), 0 0 0 4px var(--paper), 0 0 0 5px var(--rule-soft);
+        box-shadow: 0 8px 22px rgba(25, 15, 5, 0.4);
       }
       #tip .tname { font-weight: 600; font-size: 0.9rem; }
       #tip .trow { color: var(--muted); font-size: 0.75rem; }
       #tip .cap { color: var(--oxblood); }
 
-      /* --- The gazetteer: the folio's book, opened over the desk --- */
-      #gazovl[hidden] { display: none; }
-      #gazovl {
+      /* --- Overlays: the gazetteer book, and the town plans --- */
+      #gazovl[hidden], #planovl[hidden] { display: none; }
+      #gazovl, #planovl {
         position: fixed;
         inset: 0;
         z-index: 50;
@@ -529,19 +508,19 @@
         align-items: stretch;
         padding: 3vh 2vw;
       }
-      .gaz-panel {
+      .gaz-panel, .plan-panel {
         background:
           radial-gradient(80% 50% at 25% 8%, rgba(255, 252, 240, 0.55), transparent 55%),
           var(--paper);
         border: 1px solid #3a2d1b;
-        width: min(1040px, 96vw);
-        height: 94vh;
         display: flex;
         flex-direction: column;
         overflow: hidden;
         box-shadow: 0 30px 80px rgba(0, 0, 0, 0.65);
         animation: bookopen 0.4s cubic-bezier(0.2, 0.8, 0.3, 1) both;
       }
+      .gaz-panel { width: min(1040px, 96vw); height: 94vh; }
+      .plan-panel { width: min(1180px, 96vw); max-height: 94vh; align-self: center; }
       @keyframes bookopen {
         from { transform: perspective(1400px) rotateX(7deg) translateY(20px); opacity: 0; }
       }
@@ -549,12 +528,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 1rem;
         padding: 0.85rem 1.2rem;
         border-bottom: 3px double var(--rule);
         font-size: 1.15rem;
         letter-spacing: 0.04em;
       }
-      .gaz-actions { display: flex; gap: 0.5rem; }
+      .gaz-actions { display: flex; gap: 1rem; align-items: baseline; }
       .gaz-body { display: grid; grid-template-columns: 225px 1fr; min-height: 0; flex: 1; }
       #gaz-toc { border-right: 1px solid var(--rule); overflow-y: auto; padding: 1rem 0.7rem; }
       #gaz-toc a {
@@ -612,17 +592,46 @@
         text-transform: uppercase;
         color: var(--muted);
       }
-      #gaz-content .place {
+      #gaz-content .place, .place {
         color: var(--verdigris);
         cursor: pointer;
         border-bottom: 1px dotted var(--verdigris);
       }
-      #gaz-content .place:hover { color: var(--oxblood); border-bottom-color: var(--oxblood); }
+      #gaz-content .place:hover, .place:hover { color: var(--oxblood); border-bottom-color: var(--oxblood); }
       #gaz-content code { background: var(--paper-2); padding: 0 0.25rem; font-size: 0.85em; }
 
-      @media (max-width: 680px) {
+      /* the plan: the drawing left, its reading right */
+      .plan-body {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+        gap: 0;
+        min-height: 0;
+        overflow: auto;
+      }
+      #plancanvas {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-right: 1px solid var(--rule);
+      }
+      .plan-notes { padding: 1.1rem 1.4rem 1.4rem; overflow-y: auto; }
+      .plan-notes h3 {
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gilt);
+        margin: 1.1rem 0 0.4rem;
+      }
+      #plan-facts p { margin: 0.35rem 0; font-size: 0.92rem; color: var(--ink-soft); }
+      #plan-legend { list-style: none; padding: 0; margin: 0; }
+      #plan-legend li { font-size: 0.86rem; padding: 0.14rem 0; color: var(--ink-soft); }
+      #plan-legend .gl { font-style: italic; color: var(--faint); }
+      @media (max-width: 760px) {
         .gaz-body { grid-template-columns: 1fr; }
         #gaz-toc { display: none; }
+        .plan-body { grid-template-columns: 1fr; }
+        #plancanvas { border-right: none; border-bottom: 1px solid var(--rule); }
       }
       @media (prefers-reduced-motion: reduce) {
         *, #rose, #rose svg { transition: none !important; animation: none !important; }
@@ -631,27 +640,29 @@
   </head>
   <body>
     <div class="wrap">
+      <div class="spine">
+        <span>Cartogenesis · a folio of invented worlds · <a href="../index.html">the sample atlas</a></span>
+      </div>
       <header>
-        <p class="eyebrow">
-          Cartogenesis · A Folio of Invented Worlds ·
-          <a href="../index.html">the sample atlas</a>
-        </p>
         <h1>Survey a World</h1>
         <p class="sub">
           Name a seed and the engraver sets to work — coasts, mountains, rivers,
-          provinces, cities, and eleven centuries of history, surveyed live in
-          your browser. Same seed, same world, to the last river. Nothing leaves
-          your desk.
+          provinces, cities with their own street plans, and eleven centuries of
+          history dated to the year. Same seed, same world, to the last river.
+          Nothing leaves your desk.
         </p>
       </header>
 
       <div class="app">
         <section class="stage">
           <div class="controls">
+            <span class="say">Survey the world named</span>
             <input id="seed" type="text" spellcheck="false" aria-label="World seed" />
             <button id="generate">Survey</button>
-            <button id="random">By chance</button>
-            <button id="today">Today's world</button>
+            <span class="say">— or try</span>
+            <button id="random" class="textlink" title="Fill in a random seed and survey it">a random seed</button>
+            <span class="say">·</span>
+            <button id="today" class="textlink" title="Survey the seed named for today's date">today's date</button>
           </div>
           <div class="layertabs" id="layertabs" role="group" aria-label="Map layer"></div>
           <div class="canvas-frame">
@@ -682,19 +693,26 @@
             </div>
           </div>
           <div class="plate-caption">
-            <span>Plate I — engraved from the survey</span>
-            <span class="hint">scroll to zoom · drag to pan · hover to inspect · click to pin</span>
+            <span>Plate I — the survey, engraved</span>
+            <span class="hint">scroll to zoom · drag to pan · hover to read · click a town for its plan</span>
           </div>
-          <div class="viewbar">
-            <button id="resetview" title="Reset pan &amp; zoom">Reset view</button>
-            <button id="copylink" title="Copy a shareable link to this seed">Copy link</button>
-            <button id="gazetteer" title="Read the full gazetteer for this world">📖 Gazetteer</button>
-            <button id="dlmap" title="Download the current map layer as a PNG">↓ Map</button>
-            <button id="dlposter" title="Download a labeled SVG poster of this world">↓ Poster</button>
-            <button id="heightmap" title="Download a 16-bit heightmap PNG for Blender/Unity/Godot">↓ Heightmap</button>
+          <div class="wordbar">
+            <button id="resetview" class="textlink" title="Fit the whole world in the frame again">reset the view</button>
+            <span class="sep">·</span>
+            <button id="copylink" class="textlink" title="Copy a link that opens this exact world">copy a link to this world</button>
+            <span class="sep">·</span>
+            <button id="gazetteer" class="textlink" title="Open the full written gazetteer">read the gazetteer</button>
+            <span class="sep">—</span>
+            <span>save:</span>
+            <button id="dlmap" class="textlink" title="Save the current map layer as a PNG">the map</button>
+            <span class="sep">·</span>
+            <button id="dlposter" class="textlink" title="Save a labeled poster of this world as an SVG">the poster</button>
+            <span class="sep">·</span>
+            <button id="heightmap" class="textlink" title="Save a 16-bit heightmap PNG for Blender, Unity, or Godot">the heightmap</button>
           </div>
           <div id="scrubber" hidden>
-            <button id="playbtn" title="Play the history">▶</button>
+            <button id="playbtn" title="Play the centuries">▶</button>
+            <span class="say">the centuries:</span>
             <input id="timeslider" type="range" min="0" max="1" value="1" step="1" aria-label="History year" />
             <span id="yearlabel"></span>
           </div>
@@ -709,9 +727,9 @@
           <div id="stats"></div>
           <h3>Notable features</h3>
           <ul id="features"></ul>
-          <h3>Chronicle</h3>
+          <h3>The chronicle</h3>
           <ul id="chronicle"></ul>
-          <h3>Languages</h3>
+          <h3>The tongues</h3>
           <div id="languages"></div>
         </aside>
       </div>
@@ -722,13 +740,32 @@
         <header class="gaz-head">
           <strong id="gaz-title">Gazetteer</strong>
           <div class="gaz-actions">
-            <button id="gaz-dl-md" title="Download this gazetteer as Markdown">↓ .md</button>
-            <button id="gaz-close" title="Close">✕</button>
+            <button id="gaz-dl-md" class="textlink" title="Save this gazetteer as a Markdown file">save as Markdown</button>
+            <button id="gaz-close" class="textlink" title="Close the gazetteer">✕ close</button>
           </div>
         </header>
         <div class="gaz-body">
           <nav id="gaz-toc" aria-label="Table of contents"></nav>
           <article id="gaz-content"></article>
+        </div>
+      </div>
+    </div>
+
+    <div id="planovl" hidden>
+      <div class="plan-panel" role="dialog" aria-label="Town plan" aria-modal="true">
+        <header class="gaz-head">
+          <strong id="plan-title">A plan</strong>
+          <div class="gaz-actions">
+            <button id="plan-close" class="textlink" title="Close the plan">✕ close</button>
+          </div>
+        </header>
+        <div class="plan-body">
+          <canvas id="plancanvas" width="768" height="768"></canvas>
+          <div class="plan-notes">
+            <div id="plan-facts"></div>
+            <h3>On the plan</h3>
+            <ul id="plan-legend"></ul>
+          </div>
         </div>
       </div>
     </div>

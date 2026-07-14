@@ -140,13 +140,13 @@
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Ghashashu** → **Ghashdund** *(the river haven)* — Kesh (desert) land under Auld (northern) rule, c. 150
-- **Ghashakhukha** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Ghashzaa** → **Ghashbust** *(the river gate)* — Kesh (desert) land under Auld (northern) rule, c. 150
-- **Midshu** → **Midhro** *(the grass hall)* — Kesh (desert) land under Auld (northern) rule, c. 150
-- **Nianteliria** → **Niantebust** *(the green gate)* — Meridian (southern) land under Auld (northern) rule, c. 300
-- **Deonelen** → **Deogrull** *(the sea bridge)* — Meridian (southern) land under Auld (northern) rule, c. 300
-- **Bellapana** → **Bellamakh** *(the river hall)* — Meridian (southern) land under Kesh (desert) rule, c. 600
+- **Ghashashu** → **Ghashdund** *(the river haven)* — Kesh (desert) land under Auld (northern) rule, c. 174
+- **Ghashakhukha** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Ghashzaa** → **Ghashbust** *(the river gate)* — Kesh (desert) land under Auld (northern) rule, c. 174
+- **Midshu** → **Midhro** *(the grass hall)* — Kesh (desert) land under Auld (northern) rule, c. 174
+- **Nianteliria** → **Niantebust** *(the green gate)* — Meridian (southern) land under Auld (northern) rule, c. 324
+- **Deonelen** → **Deogrull** *(the sea bridge)* — Meridian (southern) land under Auld (northern) rule, c. 324
+- **Bellapana** → **Bellamakh** *(the river hall)* — Meridian (southern) land under Kesh (desert) rule, c. 621
 
 ## Faiths
 
@@ -265,12 +265,12 @@ Followed across 8 region(s).
 |-------|--------:|-----:|----------:|------:|------|
 | Steirkafjysk | 100 | 15 | 625 | 8 | diminished |
 | Lossocaria | 100 | 7 | 125 | 4 | diminished |
-| Kheqmaad | 725 | 5 | 950 | 5 | ascendant |
-| Jaqe | 775 | 4 | 875 | 2 | diminished |
-| Meqe | 825 | 3 | 825 | 0 | extinct |
+| Kheqmaad | 749 | 5 | 950 | 5 | ascendant |
+| Jaqe | 798 | 4 | 875 | 2 | diminished |
+| Meqe | 833 | 3 | 833 | 0 | extinct |
 | Peoriabinte | 100 | 2 | 100 | 0 | extinct |
-| Meshaa | 500 | 2 | 550 | 0 | extinct |
-| Rairghen | 925 | 2 | 925 | 0 | extinct |
+| Meshaa | 524 | 2 | 550 | 0 | extinct |
+| Rairghen | 949 | 2 | 949 | 0 | extinct |
 
 ## The Chronicle of Steirkafjysk
 
@@ -282,17 +282,17 @@ Followed across 8 region(s).
 
 ### I. The Age of First Things, 100–300
 
-It was in 100 that Steirkafjysk crossed into Stagrahrei, and it did not cross back; Peoriabinte redrew its maps. Lossocaria crossed into Peonariando at first thaw; Rauriabinte spent the summer pretending it could be undone. Khirarer fell to Lossocaria within the year; Rauriabinte's protest is preserved, and was ignored. With that, the realm of Rauriabinte was extinguished; its name passes from the roll of the powers.
+It was in 106 that Steirkafjysk crossed into Stagrahrei, and it did not cross back; Peoriabinte redrew its maps. Within the year, Rauriabinte lost Peonariando to Lossocaria, and the harvest went with it. In the years that followed, it was Lossocaria's year: Khirarer was taken from Rauriabinte before the passes closed. Soon after, of Rauriabinte nothing more is written.
 
-It was in 125 that Steirkafjysk crossed into Rairkhidku, and it did not cross back; Peoriabinte redrew its maps. And in that year too, Stagrahrei rose against Steirkafjysk, and out of the rising was proclaimed the free realm of Storkdaurk. The priests of the Rite of Vaghazasaid out-argued the priests of the Cult of Vavollvyrk in Brydaurk, which is how those wars are won.
+In the year 149, the matter of Rairkhidku was settled with spears — Steirkafjysk kept the province, Peoriabinte the grievance. That same year, Steirkafjysk taxed Stagrahrei once too often; the realm of Storkdaurk was the receipt. In the same season, quieter conquests were made as well: Brydaurk turned from the Cult of Vavollvyrk to the Rite of Vaghazasaid. Before long, one more province, Stagrahrei, joined Steirkafjysk's list; Storkdaurk's name joined another. With that, the realm of Storkdaurk was extinguished; its name passes from the roll of the powers.
 
-Stagrahrei fell to Steirkafjysk in 150; Storkdaurk's protest is preserved, and was ignored. It was the end of Storkdaurk: 25 years of banners, done in a single season. Nor was that all: Storkdaurk came for Panada and left without it; the war songs on both sides insist otherwise.
+174: Storkdaurk came for Panada and left without it; the war songs on both sides insist otherwise. The old quarrel between Steirkafjysk and Peoriabinte found its old battlefield: Panada changed hands once more, in the usual direction. And that was the whole of Peoriabinte's ending — no siege worth the name, no song; a surrender and a seal. Close on that, not all was iron: a golden age dawned over Steirkafjysk, and its cities flourished as never before.
 
-175: Steirkafjysk and Peoriabinte met over Panada yet again, and yet again it was Steirkafjysk that kept the field. And that was the whole of Peoriabinte's ending — no siege worth the name, no song; a surrender and a seal. Steirkafjysk had its great noon: roads mended, songs written, taxes very nearly forgiven. Whatever Steirkafjysk intended for Mairghen, Lossocaria had prepared for it twice over.
+In 223, whatever Steirkafjysk intended for Mairghen, Lossocaria had prepared for it twice over. Soon after, these were the high years of Steirkafjysk — its markets loud, its walls, for a while, unneeded. Before long, Panada rose against Steirkafjysk, and out of the rising was proclaimed the free realm of Tenameonte.
 
-In 200, not all was iron: a golden age dawned over Steirkafjysk, and its cities flourished as never before. Soon after, the people of Panada drove out Steirkafjysk's governors and took for themselves the name Tenameonte. And in that year too, a pestilence swept Pananeosso and carried off more than any war had. Within the year, Steirkafjysk seized Panada from Tenameonte, and the border stones were moved in the night. With that, the realm of Tenameonte was extinguished; its name passes from the roll of the powers.
+About the year 246, a pestilence swept Pananeosso and carried off more than any war had. By 273, Panada passed by force from Tenameonte to Steirkafjysk; the tax rolls were rewritten before the dead were counted. Within the year, the maps needed redrawing that year: Tenameonte was gone from them.
 
-250: in Khirkhaim the bells rang without ceasing; a third of its people were laid in the ground. Soon after, Lossocaria held Mairghen against Steirkafjysk, whose army went home leaner and wiser.
+274: in Khirkhaim the bells rang without ceasing; a third of its people were laid in the ground. Soon after, Lossocaria held Mairghen against Steirkafjysk, whose army went home leaner and wiser.
 
 These years also built more than they burned — 4 new settlements, of which Deotomor would become the best known.
 
@@ -300,11 +300,11 @@ Conquest re-said the very map: Ghashashu became Ghashdund on its new masters' to
 
 ### II. The Marching Years, 300–500
 
-In 300, for a while everything Steirkafjysk touched came back gold; even its rivals banked in its coin. What had once broken against Mairghen's defences now carried them: Steirkafjysk took the province, and Lossocaria's pride with it. Close on that, Khirsham held — Lossocaria met Steirkafjysk at the border and sent it back the way it came. In the years that followed, whatever Steirkafjysk intended for Khirsham, Lossocaria had prepared for it twice over.
+In 316, for a while everything Steirkafjysk touched came back gold; even its rivals banked in its coin. What had once broken against Mairghen's defences now carried them: Steirkafjysk took the province, and Lossocaria's pride with it. Close on that, Khirsham held — Lossocaria met Steirkafjysk at the border and sent it back the way it came. In the years that followed, whatever Steirkafjysk intended for Khirsham, Lossocaria had prepared for it twice over.
 
-In 425, Steirkafjysk had its great noon: roads mended, songs written, taxes very nearly forgiven. Soon after, Steirkafjysk moved against Khirsham, but Lossocaria threw the invaders back over the border. Nor was that all: a pestilence swept Pananeosso and carried off more than any war had. The physicians of Peonariando tried everything; the gravediggers finished what was left.
+In 436, Steirkafjysk had its great noon: roads mended, songs written, taxes very nearly forgiven. When a generation had passed, Steirkafjysk moved against Khirsham, but Lossocaria threw the invaders back over the border. Within the year, the physicians of Pananeosso tried everything; the gravediggers finished what was left.
 
-In 475, for a while everything Lossocaria touched came back gold; even its rivals banked in its coin.
+In 477, a pestilence swept Peonariando and carried off more than any war had. Soon after, for a while everything Lossocaria touched came back gold; even its rivals banked in its coin.
 
 The map grew fuller meanwhile: 4 new settlements took root, Deonelen first among them.
 
@@ -312,43 +312,43 @@ The occupiers kept the land-words and changed the rest, and so Nianteliria is wr
 
 ### III. The Age of Blood and Banners, 500–700
 
-In 500, what had once broken against Khirsham's defences now carried them: Steirkafjysk took the province, and Lossocaria's pride with it. Steirkafjysk taxed Khirsham once too often; the realm of Meshaa was the receipt. Steirkafjysk came for Khirsham and left without it; the war songs on both sides insist otherwise. It was soon after that Meshaa crossed into Deodinte, and it did not cross back; Lossocaria redrew its maps. Other accounts differ; this one stood nearest the events.
+In 524, what had once broken against Khirsham's defences now carried them: Steirkafjysk took the province, and Lossocaria's pride with it. Steirkafjysk taxed Khirsham once too often; the realm of Meshaa was the receipt. Steirkafjysk came for Khirsham and left without it; the war songs on both sides insist otherwise. Meshaa took Deodinte within the year, and Lossocaria could do little but record the loss. Other accounts differ; this one stood nearest the events.
 
-575: Lossocaria held Shinsham against Meshaa, whose army went home leaner and wiser. That same year, what had once broken against Khirsham's defences now carried them: Steirkafjysk took the province, and Meshaa's pride with it. Word came from Khirsham that it would be governed from within: thus Mishtaitan, born in a single furious season.
+578: Lossocaria held Shinsham against Meshaa, whose army went home leaner and wiser. Close on that, what had once broken against Khirsham's defences now carried them: Steirkafjysk took the province, and Meshaa's pride with it. Word came from Khirsham that it would be governed from within: thus Mishtaitan, born in a single furious season.
 
-In 600, Steirkafjysk, whose appetite grew with the eating, took Khirsham next. And that was the whole of Mishtaitan's ending — no siege worth the name, no song; a surrender and a seal. The old quarrel between Steirkafjysk and Lossocaria found its old battlefield: Shinsham changed hands once more, in the usual direction. In the same season, whatever Lossocaria intended for Deodinte, Meshaa had prepared for it twice over.
+In 601, Steirkafjysk, whose appetite grew with the eating, took Khirsham next. Before long, the realm of Mishtaitan was extinguished; its name passes from the roll of the powers. By 649, Steirkafjysk and Lossocaria met over Shinsham yet again, and yet again it was Steirkafjysk that kept the field.
 
-In the year 625, sickness walked through Khirkhaim and was not particular. Hard on its heels, Meshaa held Deodinte against Steirkafjysk, whose army went home leaner and wiser. That same year, Pananeosso held — Lossocaria met Meshaa at the border and sent it back the way it came. Meshaa held Deodinte against Lossocaria, whose army went home leaner and wiser.
+The year 649 opened with trouble: Deodinte held — Meshaa met Lossocaria at the border and sent it back the way it came. The same year, sickness walked through Khirkhaim and was not particular. Soon after, Steirkafjysk came for Deodinte and left without it; the war songs on both sides insist otherwise.
 
-About the year 675, Shinsham rose against Steirkafjysk, and out of the rising was proclaimed the free realm of Jutaitan.
+About the year 674, the assault Meshaa loosed upon Pananeosso broke against Lossocaria's spears and came to nothing. Hard on its heels, Meshaa held Deodinte against Lossocaria, whose army went home leaner and wiser. Close on that, Shinsham rose against Steirkafjysk, and out of the rising was proclaimed the free realm of Jutaitan. The record here is thin, and I have not thickened it.
 
 All the while the land was filling: 4 settlements were raised in these years, Midshu and Stagrathu among them.
 
-Conquest re-said the very map: Bellapana became Bellamakh on its new masters' tongues.
+Names changed hands with the land: Bellapana would be Bellamakh from then on.
 
-### IV. The Marching Years, 700–900
+### IV. The Wars of the Marches, 700–900
 
-Shinsham fell to Steirkafjysk in 700; Jutaitan's protest is preserved, and was ignored. It was the end of Jutaitan: 25 years of banners, done in a single season. Steirkafjysk taxed Shinsham once too often; the realm of Rairkaasi was the receipt. Within the year, Rairkaasi lost Shinsham to Steirkafjysk, and the harvest went with it. And that was the whole of Rairkaasi's ending — no siege worth the name, no song; a surrender and a seal. I set it down as it was told to me.
+In 723, the appetite of Steirkafjysk was becoming proverbial: Shinsham this time, and Jutaitan unable to answer. Soon after, the maps needed redrawing that year: Jutaitan was gone from them. In 724, word came from Shinsham that it would be governed from within: thus Rairkaasi, born in a single furious season.
 
-In the year 725, what had once broken against Deodinte's defences now carried them: Lossocaria took the province, and Meshaa's pride with it. With that, the realm of Meshaa was extinguished; its name passes from the roll of the powers. Steirkafjysk had grown past its own strength: Shinsham and its neighbours broke away to found Kheqmaad. Soon after, Steirkafjysk moved against Mairghen, but the young desert realm of Kheqmaad threw the invaders back over the border. The record here is thin, and I have not thickened it.
+In the year 743, swollen with victories, Steirkafjysk pressed on into Shinsham, and the young desert realm of Rairkaasi could not hold it. The realm of Rairkaasi was extinguished; its name passes from the roll of the powers. What had once broken against Deodinte's defences now carried them: Lossocaria took the province, and Meshaa's pride with it. With that, the realm of Meshaa was extinguished; its name passes from the roll of the powers. I set it down as it was told to me.
 
-About the year 775, Shinsham held — Kheqmaad met Lossocaria at the border and sent it back the way it came. Nor was that all: the realm of Jaqe was carved whole out of Steirkafjysk's flank, with Mairkhaim at its heart. A pestilence swept Peonariando and carried off more than any war had. Steirkafjysk came for Khirzash and left without it; the war songs on both sides insist otherwise.
+About the year 749, Steirkafjysk had grown past its own strength: Shinsham and its neighbours broke away to found Kheqmaad. Hard on its heels, Mairghen held — Kheqmaad met Steirkafjysk at the border and sent it back the way it came. Soon after, whatever Lossocaria intended for Shinsham, Kheqmaad had prepared for it twice over.
 
-825: too big to govern and too proud to shrink, Steirkafjysk watched Khirkhaim walk away and become Meqe. Before long, whatever Steirkafjysk intended for Brathaugr, Meqe had prepared for it twice over. That same year, it was Kheqmaad's year: Brydaurk was taken from Meqe before the passes closed.
+798: the realm of Jaqe was carved whole out of Steirkafjysk's flank, with Mairkhaim at its heart. The physicians of Peonariando tried everything; the gravediggers finished what was left. Hard on its heels, Steirkafjysk moved against Khirzash, but the young desert realm of Jaqe threw the invaders back over the border. Within the year, Meqe left Steirkafjysk the way grown children leave — with Khirkhaim, and without asking.
 
-The year 875 opened with trouble: the matter of Brathaugr was settled with spears — Jaqe kept the province, Meqe the grievance. The assault Lossocaria loosed upon Shinsham broke against Kheqmaad's spears and came to nothing.
+In the year 859, Brathaugr held — Meqe met Steirkafjysk at the border and sent it back the way it came. Brydaurk fell to Kheqmaad soon after; Meqe's protest is preserved, and was ignored. When a generation had passed, Jaqe marched on Brathaugr, and by winter the province had fallen to it; Meqe was the poorer. Soon after, Lossocaria moved against Shinsham, but Kheqmaad threw the invaders back over the border.
 
-### V. The Age of Iron, 900–1100
+### V. The Marching Years, 900–1100
 
-In 900, what had once broken against Khirkhaim's defences now carried them: Steirkafjysk took the province, and Meqe's pride with it. It was the end of Meqe: 75 years of banners, done in a single season. In the same season, in Deodinte the bells rang without ceasing; a third of its people were laid in the ground.
+About the year 912, what had once broken against Khirkhaim's defences now carried them: Steirkafjysk took the province, and Meqe's pride with it. Before long, the maps needed redrawing that year: Meqe was gone from them. Hard on its heels, a pestilence swept Deodinte and carried off more than any war had.
 
-In the year 900, these were the high years of Kheqmaad — its markets loud, its walls, for a while, unneeded. Hard on its heels, what had once broken against Brathaugr's defences now carried them: Steirkafjysk took the province, and Jaqe's pride with it. And in that year too, the realm of Rairghen was carved whole out of Steirkafjysk's flank, with Khirkhaim at its heart. Within the year, Steirkafjysk marched on Brathaugr, and by winter the province had fallen to it; the young desert realm of Rairghen was the poorer.
+In 921, Kheqmaad had its great noon: roads mended, songs written, taxes very nearly forgiven. Soon after, what had once broken against Brathaugr's defences now carried them: Steirkafjysk took the province, and Jaqe's pride with it. Close on that, Steirkafjysk had grown past its own strength: Khirkhaim and its neighbours broke away to found Rairghen. Other accounts differ; this one stood nearest the events.
 
-In 950, the matter of Khirkhaim was settled with spears — Kheqmaad kept the province, Rairghen the grievance. With that, the realm of Rairghen was extinguished; its name passes from the roll of the powers. In the same season, Brydaurk cracked and browned under a sky that owed it water and paid none.
+It was in 961 that Steirkafjysk crossed into Brathaugr, and it did not cross back; Rairghen redrew its maps. Before long, Rairghen lost Khirkhaim to Kheqmaad, and the harvest went with it. Hard on its heels, the realm of Rairghen was extinguished; its name passes from the roll of the powers. That same year, no rain came to Brydaurk for two years together; many perished.
 
-In the year 975, whatever Steirkafjysk intended for Khirzash, Jaqe had prepared for it twice over. And in that year too, not all was iron: a golden age dawned over Jaqe, and its cities flourished as never before. Soon after, the wells of Panada gave dust, and the river shrank to an argument.
+In 976, Khirzash held — Jaqe met Steirkafjysk at the border and sent it back the way it came. Close on that, for a while everything Jaqe touched came back gold; even its rivals banked in its coin. Before long, the wells of Panada gave dust, and the river shrank to an argument. The assault Steirkafjysk loosed upon Khirzash broke against Jaqe's spears and came to nothing.
 
-About the year 1025, Jaqe held Khirzash against Steirkafjysk, whose army went home leaner and wiser. A generation on, what had once broken against Brasturn's defences now carried them: Steirkafjysk took the province, and Jaqe's pride with it. For a while everything Kheqmaad touched came back gold; even its rivals banked in its coin.
+In 1089, what had once broken against Brasturn's defences now carried them: Steirkafjysk took the province, and Jaqe's pride with it. Soon after, not all was iron: a golden age dawned over Kheqmaad, and its cities flourished as never before.
 
 *So the matter stands in 1100: 4 realms endure, and Steirkafjysk is mightiest among them, holding 8 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
 
@@ -358,86 +358,86 @@ About the year 1025, Jaqe held Khirzash against Steirkafjysk, whose army went ho
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 after the Thaw** — Steirkafjysk seized Stagrahrei from Peoriabinte.
-- **100 after the Thaw** — Lossocaria seized Peonariando from Rauriabinte.
-- **125 after the Thaw** — Lossocaria seized Khirarer from Rauriabinte.
-- **125 after the Thaw** — The realm of Rauriabinte was extinguished.
-- **125 after the Thaw** — Steirkafjysk seized Rairkhidku from Peoriabinte.
-- **125 after the Thaw** — Stagrahrei rose against Steirkafjysk and declared the free realm of Storkdaurk.
-- **125 after the Thaw** — Brydaurk turned from the Cult of Vavollvyrk to the Rite of Vaghazasaid.
-- **150 after the Thaw** — Steirkafjysk seized Stagrahrei from Storkdaurk.
-- **150 after the Thaw** — The realm of Storkdaurk was extinguished.
-- **150 after the Thaw** — Storkdaurk's invasion of Panada was thrown back by Peoriabinte.
-- **175 after the Thaw** — Steirkafjysk seized Panada from Peoriabinte.
-- **175 after the Thaw** — The realm of Peoriabinte was extinguished.
-- **175 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
-- **200 after the Thaw** — Steirkafjysk's invasion of Mairghen was thrown back by Lossocaria.
-- **200 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
-- **225 after the Thaw** — Panada rose against Steirkafjysk and declared the free realm of Tenameonte.
-- **225 after the Thaw** — A plague swept Pananeosso; many perished.
-- **250 after the Thaw** — Steirkafjysk seized Panada from Tenameonte.
-- **250 after the Thaw** — The realm of Tenameonte was extinguished.
-- **250 after the Thaw** — A plague swept Khirkhaim; many perished.
-- **275 after the Thaw** — Steirkafjysk's invasion of Mairghen was thrown back by Lossocaria.
-- **300 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
-- **325 after the Thaw** — Steirkafjysk seized Mairghen from Lossocaria.
-- **350 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
-- **400 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
-- **425 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
-- **450 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
-- **450 after the Thaw** — A plague swept Pananeosso; many perished.
-- **475 after the Thaw** — A plague swept Peonariando; many perished.
-- **475 after the Thaw** — A golden age dawned over Lossocaria; its cities flourished as never before.
-- **500 after the Thaw** — Steirkafjysk seized Khirsham from Lossocaria.
-- **500 after the Thaw** — Khirsham rose against Steirkafjysk and declared the free realm of Meshaa.
-- **525 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Meshaa.
-- **550 after the Thaw** — Meshaa seized Deodinte from Lossocaria.
-- **575 after the Thaw** — Meshaa's invasion of Shinsham was thrown back by Lossocaria.
-- **575 after the Thaw** — Steirkafjysk seized Khirsham from Meshaa.
-- **575 after the Thaw** — Khirsham rose against Steirkafjysk and declared the free realm of Mishtaitan.
-- **600 after the Thaw** — Steirkafjysk seized Khirsham from Mishtaitan.
-- **600 after the Thaw** — The realm of Mishtaitan was extinguished.
-- **625 after the Thaw** — Steirkafjysk seized Shinsham from Lossocaria.
-- **625 after the Thaw** — Lossocaria's invasion of Deodinte was thrown back by Meshaa.
-- **625 after the Thaw** — A plague swept Khirkhaim; many perished.
-- **650 after the Thaw** — Steirkafjysk's invasion of Deodinte was thrown back by Meshaa.
-- **650 after the Thaw** — Meshaa's invasion of Pananeosso was thrown back by Lossocaria.
-- **675 after the Thaw** — Lossocaria's invasion of Deodinte was thrown back by Meshaa.
-- **675 after the Thaw** — Shinsham rose against Steirkafjysk and declared the free realm of Jutaitan.
-- **700 after the Thaw** — Steirkafjysk seized Shinsham from Jutaitan.
-- **700 after the Thaw** — The realm of Jutaitan was extinguished.
-- **700 after the Thaw** — Shinsham rose against Steirkafjysk and declared the free realm of Rairkaasi.
-- **725 after the Thaw** — Steirkafjysk seized Shinsham from Rairkaasi.
-- **725 after the Thaw** — The realm of Rairkaasi was extinguished.
-- **725 after the Thaw** — Lossocaria seized Deodinte from Meshaa.
-- **725 after the Thaw** — The realm of Meshaa was extinguished.
-- **725 after the Thaw** — Shinsham and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Kheqmaad.
-- **750 after the Thaw** — Steirkafjysk's invasion of Mairghen was thrown back by Kheqmaad.
-- **775 after the Thaw** — Lossocaria's invasion of Shinsham was thrown back by Kheqmaad.
-- **775 after the Thaw** — Mairkhaim and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Jaqe.
-- **775 after the Thaw** — A plague swept Peonariando; many perished.
-- **800 after the Thaw** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
-- **825 after the Thaw** — Khirkhaim and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Meqe.
-- **850 after the Thaw** — Steirkafjysk's invasion of Brathaugr was thrown back by Meqe.
-- **850 after the Thaw** — Kheqmaad seized Brydaurk from Meqe.
-- **875 after the Thaw** — Jaqe seized Brathaugr from Meqe.
-- **875 after the Thaw** — Lossocaria's invasion of Shinsham was thrown back by Kheqmaad.
-- **900 after the Thaw** — Steirkafjysk seized Khirkhaim from Meqe.
-- **900 after the Thaw** — The realm of Meqe was extinguished.
-- **900 after the Thaw** — A plague swept Deodinte; many perished.
-- **900 after the Thaw** — A golden age dawned over Kheqmaad; its cities flourished as never before.
-- **925 after the Thaw** — Steirkafjysk seized Brathaugr from Jaqe.
-- **925 after the Thaw** — Khirkhaim and 1 neighbouring province(s) broke away from Steirkafjysk to found the realm of Rairghen.
-- **950 after the Thaw** — Steirkafjysk seized Brathaugr from Rairghen.
-- **950 after the Thaw** — Kheqmaad seized Khirkhaim from Rairghen.
-- **950 after the Thaw** — The realm of Rairghen was extinguished.
-- **950 after the Thaw** — A long drought gripped Brydaurk; many perished.
-- **975 after the Thaw** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
-- **975 after the Thaw** — A golden age dawned over Jaqe; its cities flourished as never before.
-- **1000 after the Thaw** — A long drought gripped Panada; many perished.
-- **1025 after the Thaw** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
-- **1075 after the Thaw** — Steirkafjysk seized Brasturn from Jaqe.
-- **1075 after the Thaw** — A golden age dawned over Kheqmaad; its cities flourished as never before.
+- **106 after the Thaw** — Steirkafjysk seized Stagrahrei from Peoriabinte.
+- **108 after the Thaw** — Lossocaria seized Peonariando from Rauriabinte.
+- **138 after the Thaw** — Lossocaria seized Khirarer from Rauriabinte.
+- **146 after the Thaw** — The realm of Rauriabinte was extinguished.
+- **149 after the Thaw** — Steirkafjysk seized Rairkhidku from Peoriabinte.
+- **149 after the Thaw** — Stagrahrei rose against Steirkafjysk and declared the free realm of Storkdaurk.
+- **149 after the Thaw** — Brydaurk turned from the Cult of Vavollvyrk to the Rite of Vaghazasaid.
+- **174 after the Thaw** — Steirkafjysk seized Stagrahrei from Storkdaurk.
+- **174 after the Thaw** — The realm of Storkdaurk was extinguished.
+- **174 after the Thaw** — Storkdaurk's invasion of Panada was thrown back by Peoriabinte.
+- **197 after the Thaw** — Steirkafjysk seized Panada from Peoriabinte.
+- **197 after the Thaw** — The realm of Peoriabinte was extinguished.
+- **198 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
+- **223 after the Thaw** — Steirkafjysk's invasion of Mairghen was thrown back by Lossocaria.
+- **224 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
+- **246 after the Thaw** — Panada rose against Steirkafjysk and declared the free realm of Tenameonte.
+- **246 after the Thaw** — A plague swept Pananeosso; many perished.
+- **273 after the Thaw** — Steirkafjysk seized Panada from Tenameonte.
+- **274 after the Thaw** — The realm of Tenameonte was extinguished.
+- **274 after the Thaw** — A plague swept Khirkhaim; many perished.
+- **283 after the Thaw** — Steirkafjysk's invasion of Mairghen was thrown back by Lossocaria.
+- **316 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
+- **340 after the Thaw** — Steirkafjysk seized Mairghen from Lossocaria.
+- **355 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
+- **403 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
+- **436 after the Thaw** — A golden age dawned over Steirkafjysk; its cities flourished as never before.
+- **464 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Lossocaria.
+- **465 after the Thaw** — A plague swept Pananeosso; many perished.
+- **477 after the Thaw** — A plague swept Peonariando; many perished.
+- **496 after the Thaw** — A golden age dawned over Lossocaria; its cities flourished as never before.
+- **524 after the Thaw** — Steirkafjysk seized Khirsham from Lossocaria.
+- **524 after the Thaw** — Khirsham rose against Steirkafjysk and declared the free realm of Meshaa.
+- **544 after the Thaw** — Steirkafjysk's invasion of Khirsham was thrown back by Meshaa.
+- **566 after the Thaw** — Meshaa seized Deodinte from Lossocaria.
+- **578 after the Thaw** — Meshaa's invasion of Shinsham was thrown back by Lossocaria.
+- **599 after the Thaw** — Steirkafjysk seized Khirsham from Meshaa.
+- **599 after the Thaw** — Khirsham rose against Steirkafjysk and declared the free realm of Mishtaitan.
+- **601 after the Thaw** — Steirkafjysk seized Khirsham from Mishtaitan.
+- **619 after the Thaw** — The realm of Mishtaitan was extinguished.
+- **649 after the Thaw** — Steirkafjysk seized Shinsham from Lossocaria.
+- **649 after the Thaw** — Lossocaria's invasion of Deodinte was thrown back by Meshaa.
+- **649 after the Thaw** — A plague swept Khirkhaim; many perished.
+- **673 after the Thaw** — Steirkafjysk's invasion of Deodinte was thrown back by Meshaa.
+- **674 after the Thaw** — Meshaa's invasion of Pananeosso was thrown back by Lossocaria.
+- **677 after the Thaw** — Lossocaria's invasion of Deodinte was thrown back by Meshaa.
+- **693 after the Thaw** — Shinsham rose against Steirkafjysk and declared the free realm of Jutaitan.
+- **723 after the Thaw** — Steirkafjysk seized Shinsham from Jutaitan.
+- **724 after the Thaw** — The realm of Jutaitan was extinguished.
+- **724 after the Thaw** — Shinsham rose against Steirkafjysk and declared the free realm of Rairkaasi.
+- **743 after the Thaw** — Steirkafjysk seized Shinsham from Rairkaasi.
+- **749 after the Thaw** — The realm of Rairkaasi was extinguished.
+- **749 after the Thaw** — Lossocaria seized Deodinte from Meshaa.
+- **749 after the Thaw** — The realm of Meshaa was extinguished.
+- **749 after the Thaw** — Shinsham and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Kheqmaad.
+- **767 after the Thaw** — Steirkafjysk's invasion of Mairghen was thrown back by Kheqmaad.
+- **784 after the Thaw** — Lossocaria's invasion of Shinsham was thrown back by Kheqmaad.
+- **798 after the Thaw** — Mairkhaim and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Jaqe.
+- **798 after the Thaw** — A plague swept Peonariando; many perished.
+- **814 after the Thaw** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
+- **833 after the Thaw** — Khirkhaim and 2 neighbouring province(s) broke away from Steirkafjysk to found the realm of Meqe.
+- **859 after the Thaw** — Steirkafjysk's invasion of Brathaugr was thrown back by Meqe.
+- **866 after the Thaw** — Kheqmaad seized Brydaurk from Meqe.
+- **893 after the Thaw** — Jaqe seized Brathaugr from Meqe.
+- **897 after the Thaw** — Lossocaria's invasion of Shinsham was thrown back by Kheqmaad.
+- **912 after the Thaw** — Steirkafjysk seized Khirkhaim from Meqe.
+- **914 after the Thaw** — The realm of Meqe was extinguished.
+- **921 after the Thaw** — A plague swept Deodinte; many perished.
+- **921 after the Thaw** — A golden age dawned over Kheqmaad; its cities flourished as never before.
+- **945 after the Thaw** — Steirkafjysk seized Brathaugr from Jaqe.
+- **949 after the Thaw** — Khirkhaim and 1 neighbouring province(s) broke away from Steirkafjysk to found the realm of Rairghen.
+- **961 after the Thaw** — Steirkafjysk seized Brathaugr from Rairghen.
+- **962 after the Thaw** — Kheqmaad seized Khirkhaim from Rairghen.
+- **970 after the Thaw** — The realm of Rairghen was extinguished.
+- **970 after the Thaw** — A long drought gripped Brydaurk; many perished.
+- **976 after the Thaw** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
+- **988 after the Thaw** — A golden age dawned over Jaqe; its cities flourished as never before.
+- **1009 after the Thaw** — A long drought gripped Panada; many perished.
+- **1032 after the Thaw** — Steirkafjysk's invasion of Khirzash was thrown back by Jaqe.
+- **1089 after the Thaw** — Steirkafjysk seized Brasturn from Jaqe.
+- **1094 after the Thaw** — A golden age dawned over Kheqmaad; its cities flourished as never before.
 
 ## A Traveller's Account, in the year 1100
 

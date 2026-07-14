@@ -198,25 +198,25 @@
 
 *Settlements that did not survive to the present day.*
 
-- **Khirkad** (town) — founded 276, stormed and left a ruin in 600
+- **Khirkad** (town) — founded 276, stormed and left a ruin in 622
 
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Niantedinte** → **Niantefjysk** *(the green home)* — Meridian (southern) land under Auld (northern) rule, c. 150
-- **Knyrkba** → **Knyrklamor** *(the wild hall)* — Auld (northern) land under Meridian (southern) rule, c. 150
-- **Hrafjysk** → **Hralamor** *(the river hall)* — Auld (northern) land under Meridian (southern) rule, c. 150
-- **Stagrafjan** → **Stagrlamor** *(the sea hall)* — Auld (northern) land under Meridian (southern) rule, c. 150
-- **Rairkhukha** → **Rairdemor** *(the gold home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Deonelen** → **Deogrull** *(the sea bridge)* — Meridian (southern) land under Auld (northern) rule, c. 150
-- **Peonaliria** → **Peonadund** *(the grass haven)* — Meridian (southern) land under Auld (northern) rule, c. 150
-- **Khirqe** → **Khirthu** *(the sea fort)* — Kesh (desert) land under Auld (northern) rule, c. 200
-- **Ghashzaa** → **Ghashro** *(the river hall)* — Kesh (desert) land under Auld (northern) rule, c. 200
-- **Khirzaa** → **Khirhro** *(the sea hall)* — Kesh (desert) land under Auld (northern) rule, c. 350
-- **Khirghekh** → **Khirdund** *(the sea haven)* — Kesh (desert) land under Auld (northern) rule, c. 375
-- **Khirmakh** → **Khirbust** *(the sea gate)* — Kesh (desert) land under Auld (northern) rule, c. 375
-- **Rairkai** → **Rairdund** *(the gold haven)* — Kesh (desert) land under Auld (northern) rule, c. 550
+- **Niantedinte** → **Niantefjysk** *(the green home)* — Meridian (southern) land under Auld (northern) rule, c. 174
+- **Knyrkba** → **Knyrklamor** *(the wild hall)* — Auld (northern) land under Meridian (southern) rule, c. 174
+- **Hrafjysk** → **Hralamor** *(the river hall)* — Auld (northern) land under Meridian (southern) rule, c. 174
+- **Stagrafjan** → **Stagrlamor** *(the sea hall)* — Auld (northern) land under Meridian (southern) rule, c. 174
+- **Rairkhukha** → **Rairdemor** *(the gold home)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Deonelen** → **Deogrull** *(the sea bridge)* — Meridian (southern) land under Auld (northern) rule, c. 174
+- **Peonaliria** → **Peonadund** *(the grass haven)* — Meridian (southern) land under Auld (northern) rule, c. 174
+- **Khirqe** → **Khirthu** *(the sea fort)* — Kesh (desert) land under Auld (northern) rule, c. 221
+- **Ghashzaa** → **Ghashro** *(the river hall)* — Kesh (desert) land under Auld (northern) rule, c. 221
+- **Khirzaa** → **Khirhro** *(the sea hall)* — Kesh (desert) land under Auld (northern) rule, c. 374
+- **Khirghekh** → **Khirdund** *(the sea haven)* — Kesh (desert) land under Auld (northern) rule, c. 399
+- **Khirmakh** → **Khirbust** *(the sea gate)* — Kesh (desert) land under Auld (northern) rule, c. 399
+- **Rairkai** → **Rairdund** *(the gold haven)* — Kesh (desert) land under Auld (northern) rule, c. 574
 
 ## Faiths
 
@@ -362,7 +362,7 @@ Followed across 2 region(s).
 | Rauriameonte | 100 | 7 | 425 | 5 | diminished |
 | Tenademor | 100 | 6 | 100 | 0 | extinct |
 | Kaarkaasi | 100 | 4 | 100 | 0 | extinct |
-| Vynfjysk | 725 | 3 | 725 | 0 | extinct |
+| Vynfjysk | 746 | 3 | 746 | 0 | extinct |
 | Kheqghen | 100 | 2 | 100 | 0 | extinct |
 
 ## The Chronicle of Vynthon
@@ -373,191 +373,191 @@ Followed across 2 region(s).
 
 *The world it happened in is quickly drawn: Mount Dobra in the high places, and the Mishkan running to the sea, and between them every road this chronicle walks.*
 
-### I. The Shaping Years, 100–300
+### I. The Settling, 100–300
 
-Deobinte fell to Vynthon in 100; Rauriacaria's protest is preserved, and was ignored. And that was the whole of Rauriacaria's ending — no siege worth the name, no song; a surrender and a seal. Nor was that all: Tariademor seized Rairghen from Mantebinte, and the border stones were moved in the night.
+Deobinte fell to Vynthon in 103; Rauriacaria's protest is preserved, and was ignored. Close on that, the realm of Rauriacaria was extinguished; its name passes from the roll of the powers. It was soon after that Tariademor crossed into Rairghen, and it did not cross back; Mantebinte redrew its maps.
 
-In the year 100, in Deopeona the bells rang without ceasing; a third of its people were laid in the ground. Soon after, the matter of Panalaria was settled with spears — Tariademor kept the province, Mantebinte the grievance. With that, the realm of Mantebinte was extinguished; its name passes from the roll of the powers. Kaarkaasi lost Qughen to Vynthon, and the harvest went with it.
+The year 122 opened with trouble: sickness walked through Deopeona and was not particular. By 148, Tariademor crossed into Panalaria at first thaw; Mantebinte spent the summer pretending it could be undone. With that, the realm of Mantebinte was extinguished; its name passes from the roll of the powers. Kaarkaasi lost Qughen to Vynthon, and the harvest went with it.
 
-150: Tenademor held Brabrein against Rauriameonte, whose army went home leaner and wiser. Tariademor taxed Rairghen once too often; the realm of Kheqghen was the receipt. Nor was that all: the physicians of Rairghen tried everything; the gravediggers finished what was left.
+174: Tenademor held Brabrein against Rauriameonte, whose army went home leaner and wiser. Tariademor taxed Rairghen once too often; the realm of Kheqghen was the receipt. Nor was that all: the physicians of Rairghen tried everything; the gravediggers finished what was left.
 
-In 175, it was Tariademor's year: Rairghen was taken from Kheqghen before the passes closed. It was the end of Kheqghen: 25 years of banners, done in a single season. Vynthon marched on Mairkhukha, and by winter the province had fallen to it; Kaarkaasi was the poorer. The reader will notice a pattern; the realms did not.
+In 194, it was Tariademor's year: Rairghen was taken from Kheqghen before the passes closed. Hard on its heels, so ended Kheqghen, whose banners had flown for 23 years. Swollen with victories, Vynthon pressed on into Mairkhukha, and Kaarkaasi could not hold it.
 
-About the year 200, Rauriameonte came for Brabrein and left without it; the war songs on both sides insist otherwise. In the same season, no rain came to Mairkhukha for two years together; many perished. Before long, the old quarrel between Vynthon and Kaarkaasi found its old battlefield: Mairkhash changed hands once more, in the usual direction.
+221: whatever Rauriameonte intended for Brabrein, Tenademor had prepared for it twice over. No rain came to Mairkhukha for two years together; many perished. Before long, the old quarrel between Vynthon and Kaarkaasi found its old battlefield: Mairkhash changed hands once more, in the usual direction.
 
-The year 225 opened with trouble: the people of Mairkhash drove out Vynthon's governors and took for themselves the name Jughen. Sickness walked through Bradaurk and was not particular. Vynthon seized Mairkhash from Jughen, and the border stones were moved in the night. And that was the whole of Jughen's ending — no siege worth the name, no song; a surrender and a seal.
+About the year 244, the people of Mairkhash drove out Vynthon's governors and took for themselves the name Jughen. Sickness walked through Bradaurk and was not particular. Vynthon seized Mairkhash from Jughen, and the border stones were moved in the night.
 
-In 250, word came from Mairkhukha that it would be governed from within: thus Jamaad, born in a single furious season. Within the year, the appetite of Vynthon was becoming proverbial: Mairkhukha this time, and Jamaad unable to answer. It was the end of Jamaad: 25 years of banners, done in a single season.
+In 263, of Jughen nothing more is written. Mairkhukha rose against Vynthon, and out of the rising was proclaimed the free realm of Jamaad. Mairkhukha fell to Vynthon within the year; Jamaad's protest is preserved, and was ignored. Hard on its heels, the maps needed redrawing that year: Jamaad was gone from them.
 
-These years also built more than they burned — 9 new settlements, of which Deociamor would become the best known.
+All the while the land was filling: 9 settlements were raised in these years, Deociamor and Deotelen among them.
 
 Names changed hands with the land: Niantedinte would be Niantefjysk from then on — and 8 other names with it.
 
 ### II. The Age of Iron, 300–500
 
-The year 300 opened with trouble: Vynthon and Kaarkaasi met over Khirghen yet again, and yet again it was Vynthon that kept the field. And that was the whole of Kaarkaasi's ending — no siege worth the name, no song; a surrender and a seal. Whatever Rauriameonte intended for Brabrein, Tenademor had prepared for it twice over.
+In the year 322, Vynthon and Kaarkaasi met over Khirghen yet again, and yet again it was Vynthon that kept the field. Of Kaarkaasi nothing more is written. Rauriameonte moved against Brabrein, but Tenademor threw the invaders back over the border.
 
-300: a pestilence swept Qughen and carried off more than any war had. Hard on its heels, Vynthon marched on Khirkhidku, and by winter the province had fallen to it; the desert realm of Meqe was the poorer. With that, the realm of Meqe was extinguished; its name passes from the roll of the powers. The wells of Bradaurk gave dust, and the river shrank to an argument.
+About the year 324, the physicians of Qughen tried everything; the gravediggers finished what was left. Vynthon took Khirkhidku soon after, and the desert realm of Meqe could do little but record the loss. The realm of Meqe was extinguished; its name passes from the roll of the powers. Bradaurk cracked and browned under a sky that owed it water and paid none.
 
-In 350, Rauriameonte moved against Brabrein, but Tenademor threw the invaders back over the border. The shrines of the Rite of Vaskyvathork in Vaudoria emptied, and those of the Faith of Vatenavomor filled. Close on that, one more province, Mairghen, joined Vynthon's list; Tenademor's name joined another. It was, the singers insist, a heroic age. The granary ledgers take a different view.
+354: the assault Rauriameonte loosed upon Brabrein broke against Tenademor's spears and came to nothing. Quieter conquests were made as well: Vaudoria turned from the Rite of Vaskyvathork to the Faith of Vatenavomor. Hard on its heels, the matter of Mairghen was settled with spears — Vynthon kept the province, Tenademor the grievance. It was, the singers insist, a heroic age. The granary ledgers take a different view.
 
-375: Kheqghen held Khirshaa against Tenademor, whose army went home leaner and wiser. Soon after, what had once broken against Brabrein's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it. The assault Vynthon loosed upon Mairsham broke against Tenademor's spears and came to nothing. The old quarrel between Rauriameonte and Tenademor found its old battlefield: Bradaurk changed hands once more, in the usual direction. Historians are asked why wars begin. Read on; they mostly begin on purpose.
+The year 399 opened with trouble: Kheqghen held Khirshaa against Tenademor, whose army went home leaner and wiser. Soon after, what had once broken against Brabrein's defences now carried them: Rauriameonte took the province, and Tenademor's pride with it. When a generation had passed, whatever Vynthon intended for Mairsham, Tenademor had prepared for it twice over. Within the year, the old quarrel between Rauriameonte and Tenademor found its old battlefield: Bradaurk changed hands once more, in the usual direction. No one in this chapter believed themselves the villain of it.
 
-In 450, whatever Rauriameonte intended for Skagra, Tenademor had prepared for it twice over. Within the year, what had once broken against Mairsham's defences now carried them: Vynthon took the province, and Tenademor's pride with it. That same year, Khirshaa held — Kheqghen met Tenademor at the border and sent it back the way it came.
+467: Rauriameonte came for Skagra and left without it; the war songs on both sides insist otherwise. A generation on, what had once broken against Mairsham's defences now carried them: Vynthon took the province, and Tenademor's pride with it. Close on that, Khirshaa held — Kheqghen met Tenademor at the border and sent it back the way it came.
 
-The map grew fuller meanwhile: 9 new settlements took root, Bellatomor first among them.
+These years also built more than they burned — 9 new settlements, of which Bellatomor would become the best known.
 
 Conquest re-said the very map: Khirzaa became Khirhro on its new masters' tongues — and 2 other names with it.
 
 ### III. The Wars of the Marches, 500–700
 
-In 500, the appetite of Vynthon was becoming proverbial: Khirkhukha this time, and Kheqghen unable to answer. The people of Mairsham drove out Vynthon's governors and took for themselves the name Qidkakaasi. Close on that, one more province, Mairsham, joined Vynthon's list; Qidkakaasi's name joined another. It was the end of Qidkakaasi: 25 years of banners, done in a single season.
+The year 524 opened with trouble: one more province, Khirkhukha, joined Vynthon's list; Kheqghen's name joined another. That same year, Vynthon taxed Mairsham once too often; the realm of Qidkakaasi was the receipt. Before long, the appetite of Vynthon was becoming proverbial: Mairsham this time, and Qidkakaasi unable to answer. It was the end of Qidkakaasi: 20 years of banners, done in a single season.
 
-The year 525 opened with trouble: Kheqghen held Khirshaa against Tenademor, whose army went home leaner and wiser. Nor was that all: Mairsham rose against Vynthon, and out of the rising was proclaimed the free realm of Jakaasi. Soon after, Jakaasi lost Mairsham to Vynthon, and the harvest went with it. With that, the realm of Jakaasi was extinguished; its name passes from the roll of the powers.
+545: Tenademor came for Khirshaa and left without it; the war songs on both sides insist otherwise. The same year, Mairsham rose against Vynthon, and out of the rising was proclaimed the free realm of Jakaasi. When a generation had passed, it was Vynthon's year: Mairsham was taken from Jakaasi before the passes closed.
 
-About the year 550, Skagra held — Tenademor met Rauriameonte at the border and sent it back the way it came. What had once broken against Khirshaa's defences now carried them: Tenademor took the province, and Kheqghen's pride with it. It was the end of Kheqghen: 425 years of banners, done in a single season.
+About the year 574, of Jakaasi nothing more is written. That same year, Tenademor held Skagra against Rauriameonte, whose army went home leaner and wiser. Hard on its heels, what had once broken against Khirshaa's defences now carried them: Tenademor took the province, and Kheqghen's pride with it.
 
-In 600, Khirkad did not survive its conquerors; what stands of it stands empty. The same year, Vynthon and Tenademor met over Khirshaa yet again, and yet again it was Vynthon that kept the field. Quieter conquests were made as well: Skagra turned from the Rite of Vaskyvathork to the Way of Vaghimzizam. Before long, Tenademor held Deodinte against Vynthon, whose army went home leaner and wiser.
+In 594, the realm of Kheqghen was extinguished; its name passes from the roll of the powers. In the years that followed, Khirkad did not survive its conquerors; what stands of it stands empty. Close on that, Vynthon and Tenademor met over Khirshaa yet again, and yet again it was Vynthon that kept the field. The same year, the shrines of the Rite of Vaskyvathork in Skagra emptied, and those of the Way of Vaghimzizam filled. The reader will notice a pattern; the realms did not.
 
-In the year 625, sickness walked through Khirshaa and was not particular. Hard on its heels, Rauriameonte came for Skagra and left without it; the war songs on both sides insist otherwise. Bradaurk held — Rauriameonte met Tenademor at the border and sent it back the way it came. Vynthon moved against Deodinte, but Tenademor threw the invaders back over the border.
+About the year 630, whatever Vynthon intended for Deodinte, Tenademor had prepared for it twice over. Sickness walked through Khirshaa and was not particular. Before long, Tenademor held Skagra against Rauriameonte, whose army went home leaner and wiser.
 
-About the year 675, the assault Tariademor loosed upon Brahrei broke against Rauriameonte's spears and came to nothing.
+The year 667 opened with trouble: Tenademor moved against Bradaurk, but Rauriameonte threw the invaders back over the border. Close on that, the assault Vynthon loosed upon Deodinte broke against Tenademor's spears and came to nothing. Before long, Rauriameonte held Brahrei against Tariademor, whose army went home leaner and wiser.
 
-These years also built more than they burned — 7 new settlements, of which Khirzaa would become the best known.
+All the while the land was filling: 7 settlements were raised in these years, Khirzaa and Stagrafjan among them.
 
 The occupiers kept the land-words and changed the rest, and so Rairkai is written Rairdund in every ledger since.
 
-### IV. The Marching Years, 700–900
+### IV. The Contested Years, 700–900
 
-700: Skagra held — Tenademor met Rauriameonte at the border and sent it back the way it came. What had once broken against Bradaurk's defences now carried them: Tenademor took the province, and Rauriameonte's pride with it. In the same season, the shrines of the Way of Vaghimzizam in Deobinte emptied, and those of the Faith of Vatenavomor filled. The assault Vynthon loosed upon Bradaurk broke against Tenademor's spears and came to nothing.
+In 706, whatever Rauriameonte intended for Skagra, Tenademor had prepared for it twice over. What had once broken against Bradaurk's defences now carried them: Tenademor took the province, and Rauriameonte's pride with it. That same year, the priests of the Faith of Vatenavomor out-argued the priests of the Way of Vaghimzizam in Deobinte, which is how those wars are won. Soon after, Vynthon came for Bradaurk and left without it; the war songs on both sides insist otherwise.
 
-In 725, whatever Tariademor intended for Brahrei, Rauriameonte had prepared for it twice over. The realm of Vynfjysk was carved whole out of Vynthon's flank, with Brakno at its heart. The old quarrel between Rauriameonte and Tenademor found its old battlefield: Bradaurk changed hands once more, in the usual direction. That same year, the priests of the Way of Vaghimzizam out-argued the priests of the Rite of Vaskyvathork in Panalaria, which is how those wars are won.
+About the year 743, whatever Tariademor intended for Brahrei, Rauriameonte had prepared for it twice over. Close on that, Vynfjysk left Vynthon the way grown children leave — with Brakno, and without asking. Soon after, the old quarrel between Rauriameonte and Tenademor found its old battlefield: Bradaurk changed hands once more, in the usual direction. Before long, quieter conquests were made as well: Panalaria turned from the Rite of Vaskyvathork to the Way of Vaghimzizam.
 
-About the year 750, a great drought lay upon Vaudoria; the rivers shrank and the wells soured. Close on that, Vynthon crossed into Brakno at first thaw; Vynfjysk spent the summer pretending it could be undone. Within the year, Vynthon moved against Vaudoria, but Vynfjysk threw the invaders back over the border.
+The year 763 opened with trouble: the wells of Vaudoria gave dust, and the river shrank to an argument. By 793, swollen with victories, Vynthon pressed on into Brakno, and the young northern realm of Vynfjysk could not hold it. Close on that, Vynthon moved against Vaudoria, but Vynfjysk threw the invaders back over the border. Hard on its heels, the people of Bradaurk drove out Rauriameonte's governors and took for themselves the name Brogrdaurk.
 
-800: the garrison of Bradaurk woke to new flags — Brogrdaurk had declared itself overnight, and made it stick. Before long, Brogrdaurk held Bradaurk against Rauriameonte, whose army went home leaner and wiser. Hard on its heels, Vynthon marched on Bradaurk, and by winter the province had fallen to it; Brogrdaurk was the poorer. And that was the whole of Brogrdaurk's ending — no siege worth the name, no song; a surrender and a seal.
+In the year 827, Bradaurk held — Brogrdaurk met Rauriameonte at the border and sent it back the way it came. A generation on, Bradaurk passed by force from Brogrdaurk to Vynthon; the tax rolls were rewritten before the dead were counted. Before long, of Brogrdaurk nothing more is written. There was no halting Tariademor that season: Vaudoria fell to it while Vynfjysk looked on.
 
-In 850, there was no halting Tariademor that season: Vaudoria fell to it while Vynfjysk looked on. Niantepo held — Vynfjysk met Vynthon at the border and sent it back the way it came.
+878: whatever Vynthon intended for Niantepo, Vynfjysk had prepared for it twice over.
 
-### V. The Wars of the Marches, 900–1100
+### V. The Marching Years, 900–1100
 
-About the year 900, the assault Rauriameonte loosed upon Skagra broke against Tenademor's spears and came to nothing. In the same season, Vynfjysk held Niantepo against Tariademor, whose army went home leaner and wiser. Within the year, what had once broken against Niantepo's defences now carried them: Vynthon took the province, and Vynfjysk's pride with it. With that, the realm of Vynfjysk was extinguished; its name passes from the roll of the powers.
+In 913, the assault Rauriameonte loosed upon Skagra broke against Tenademor's spears and came to nothing. Hard on its heels, Niantepo held — Vynfjysk met Tariademor at the border and sent it back the way it came. Before long, what had once broken against Niantepo's defences now carried them: Vynthon took the province, and Vynfjysk's pride with it. Historians are asked why wars begin. Read on; they mostly begin on purpose.
 
-In 950, what had once broken against Skagra's defences now carried them: Vynthon took the province, and Tenademor's pride with it. That same year, these were the high years of Vynthon — its markets loud, its walls, for a while, unneeded. Close on that, Vynthon and Tenademor met over Deodinte yet again, and yet again it was Vynthon that kept the field. And that was the whole of Tenademor's ending — no siege worth the name, no song; a surrender and a seal.
+About the year 946, the maps needed redrawing that year: Vynfjysk was gone from them. Soon after, what had once broken against Skagra's defences now carried them: Vynthon took the province, and Tenademor's pride with it. Before long, not all was iron: a golden age dawned over Vynthon, and its cities flourished as never before. Soon after, Vynthon and Tenademor met over Deodinte yet again, and yet again it was Vynthon that kept the field. No one in this chapter believed themselves the villain of it.
 
-In 975, what had once broken against Brahrei's defences now carried them: Tariademor took the province, and Rauriameonte's pride with it. No rain came to Panalaria for two years together; many perished. Soon after, Vaudoria held — Tariademor met Vynthon at the border and sent it back the way it came. Rauriameonte came for Brahrei and left without it; the war songs on both sides insist otherwise. No one in this chapter believed themselves the villain of it.
+The year 996 opened with trouble: the realm of Tenademor was extinguished; its name passes from the roll of the powers. What had once broken against Brahrei's defences now carried them: Tariademor took the province, and Rauriameonte's pride with it. The same year, a great drought lay upon Panalaria; the rivers shrank and the wells soured.
 
-About the year 1000, Deodinte rose against Vynthon, and out of the rising was proclaimed the free realm of Tenadente. The physicians of Khirghen tried everything; the gravediggers finished what was left. Before long, Vynthon, whose appetite grew with the eating, took Deodinte next. It was the end of Tenadente: 50 years of banners, done in a single season. Historians are asked why wars begin. Read on; they mostly begin on purpose.
+In the year 1015, Tariademor held Vaudoria against Vynthon, whose army went home leaner and wiser. Before long, whatever Rauriameonte intended for Brahrei, Tariademor had prepared for it twice over. Close on that, word came from Deodinte that it would be governed from within: thus Tenadente, born in a single furious season. The physicians of Khirghen tried everything; the gravediggers finished what was left.
 
-The year 1050 opened with trouble: a pestilence swept Deobinte and carried off more than any war had. Within the year, the assault Vynthon loosed upon Vaudoria broke against Tariademor's spears and came to nothing. The same year, Brahrei held — Tariademor met Rauriameonte at the border and sent it back the way it came.
+The year 1055 opened with trouble: Vynthon seized Deodinte from Tenadente, and the border stones were moved in the night. Soon after, so ended Tenadente, whose banners had flown for 39 years. Before long, in Deobinte the bells rang without ceasing; a third of its people were laid in the ground.
 
-In the year 1075, sickness walked through Skagra and was not particular.
+In the year 1092, Vynthon came for Vaudoria and left without it; the war songs on both sides insist otherwise. Hard on its heels, Tariademor held Brahrei against Rauriameonte, whose army went home leaner and wiser. Within the year, a pestilence swept Skagra and carried off more than any war had.
 
 *So the matter stands in 1100: 3 realms endure, and Vynthon is mightiest among them, holding 16 provinces. 1 town lies in ruins; their names are kept in this book, which is more than their walls kept.*
 
-*Semorai Belentaria the Silent reigns in Deoliria, and is said to be pleased with this book. I am told the coming age will be quieter. I was told that about this one.*
+*In Deoliria, Semorai Belentaria the Silent holds the throne. If the reader has found errors, they should know the realms found them first, and at greater cost.*
 
 ## Annals
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 after the Crowning** — Vynthon seized Deobinte from Rauriacaria.
-- **100 after the Crowning** — The realm of Rauriacaria was extinguished.
-- **100 after the Crowning** — Tariademor seized Rairghen from Mantebinte.
-- **100 after the Crowning** — A plague swept Deopeona; many perished.
-- **125 after the Crowning** — Tariademor seized Panalaria from Mantebinte.
-- **125 after the Crowning** — The realm of Mantebinte was extinguished.
-- **150 after the Crowning** — Vynthon seized Qughen from Kaarkaasi.
-- **150 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **150 after the Crowning** — Rairghen rose against Tariademor and declared the free realm of Kheqghen.
-- **150 after the Crowning** — A plague swept Rairghen; many perished.
-- **175 after the Crowning** — Tariademor seized Rairghen from Kheqghen.
-- **175 after the Crowning** — The realm of Kheqghen was extinguished.
-- **200 after the Crowning** — Vynthon seized Mairkhukha from Kaarkaasi.
-- **200 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **200 after the Crowning** — A long drought gripped Mairkhukha; many perished.
-- **225 after the Crowning** — Vynthon seized Mairkhash from Kaarkaasi.
-- **225 after the Crowning** — Mairkhash rose against Vynthon and declared the free realm of Jughen.
-- **225 after the Crowning** — A plague swept Bradaurk; many perished.
-- **250 after the Crowning** — Vynthon seized Mairkhash from Jughen.
-- **250 after the Crowning** — The realm of Jughen was extinguished.
-- **250 after the Crowning** — Mairkhukha rose against Vynthon and declared the free realm of Jamaad.
-- **275 after the Crowning** — Vynthon seized Mairkhukha from Jamaad.
-- **275 after the Crowning** — The realm of Jamaad was extinguished.
-- **300 after the Crowning** — Vynthon seized Khirghen from Kaarkaasi.
-- **300 after the Crowning** — The realm of Kaarkaasi was extinguished.
-- **300 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **300 after the Crowning** — A plague swept Qughen; many perished.
-- **325 after the Crowning** — Vynthon seized Khirkhidku from Meqe.
-- **325 after the Crowning** — The realm of Meqe was extinguished.
-- **325 after the Crowning** — A long drought gripped Bradaurk; many perished.
-- **350 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
-- **350 after the Crowning** — Vaudoria turned from the Rite of Vaskyvathork to the Faith of Vatenavomor.
-- **375 after the Crowning** — Vynthon seized Mairghen from Tenademor.
-- **375 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
-- **400 after the Crowning** — Rauriameonte seized Brabrein from Tenademor.
-- **425 after the Crowning** — Vynthon's invasion of Mairsham was thrown back by Tenademor.
-- **425 after the Crowning** — Rauriameonte seized Bradaurk from Tenademor.
-- **450 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **475 after the Crowning** — Vynthon seized Mairsham from Tenademor.
-- **475 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
-- **500 after the Crowning** — Vynthon seized Khirkhukha from Kheqghen.
-- **500 after the Crowning** — Mairsham rose against Vynthon and declared the free realm of Qidkakaasi.
-- **525 after the Crowning** — Vynthon seized Mairsham from Qidkakaasi.
-- **525 after the Crowning** — The realm of Qidkakaasi was extinguished.
-- **525 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
-- **525 after the Crowning** — Mairsham rose against Vynthon and declared the free realm of Jakaasi.
-- **550 after the Crowning** — Vynthon seized Mairsham from Jakaasi.
-- **550 after the Crowning** — The realm of Jakaasi was extinguished.
-- **550 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **575 after the Crowning** — Tenademor seized Khirshaa from Kheqghen.
-- **575 after the Crowning** — The realm of Kheqghen was extinguished.
-- **600 after the Crowning** — Khirkad was stormed and left a ruin.
-- **600 after the Crowning** — Vynthon seized Khirshaa from Tenademor.
-- **600 after the Crowning** — Skagra turned from the Rite of Vaskyvathork to the Way of Vaghimzizam.
-- **625 after the Crowning** — Vynthon's invasion of Deodinte was thrown back by Tenademor.
-- **625 after the Crowning** — A plague swept Khirshaa; many perished.
-- **650 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **650 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
-- **675 after the Crowning** — Vynthon's invasion of Deodinte was thrown back by Tenademor.
-- **675 after the Crowning** — Tariademor's invasion of Brahrei was thrown back by Rauriameonte.
-- **700 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **700 after the Crowning** — Tenademor seized Bradaurk from Rauriameonte.
-- **700 after the Crowning** — Deobinte turned from the Way of Vaghimzizam to the Faith of Vatenavomor.
-- **725 after the Crowning** — Vynthon's invasion of Bradaurk was thrown back by Tenademor.
-- **725 after the Crowning** — Tariademor's invasion of Brahrei was thrown back by Rauriameonte.
-- **725 after the Crowning** — Brakno and 2 neighbouring province(s) broke away from Vynthon to found the realm of Vynfjysk.
-- **750 after the Crowning** — Rauriameonte seized Bradaurk from Tenademor.
-- **750 after the Crowning** — Panalaria turned from the Rite of Vaskyvathork to the Way of Vaghimzizam.
-- **750 after the Crowning** — A long drought gripped Vaudoria; many perished.
-- **775 after the Crowning** — Vynthon seized Brakno from Vynfjysk.
-- **800 after the Crowning** — Vynthon's invasion of Vaudoria was thrown back by Vynfjysk.
-- **800 after the Crowning** — Bradaurk rose against Rauriameonte and declared the free realm of Brogrdaurk.
-- **825 after the Crowning** — Rauriameonte's invasion of Bradaurk was thrown back by Brogrdaurk.
-- **850 after the Crowning** — Vynthon seized Bradaurk from Brogrdaurk.
-- **850 after the Crowning** — The realm of Brogrdaurk was extinguished.
-- **850 after the Crowning** — Tariademor seized Vaudoria from Vynfjysk.
-- **875 after the Crowning** — Vynthon's invasion of Niantepo was thrown back by Vynfjysk.
-- **900 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
-- **900 after the Crowning** — Tariademor's invasion of Niantepo was thrown back by Vynfjysk.
-- **925 after the Crowning** — Vynthon seized Niantepo from Vynfjysk.
-- **925 after the Crowning** — The realm of Vynfjysk was extinguished.
-- **950 after the Crowning** — Vynthon seized Skagra from Tenademor.
-- **950 after the Crowning** — A golden age dawned over Vynthon; its cities flourished as never before.
-- **975 after the Crowning** — Vynthon seized Deodinte from Tenademor.
-- **975 after the Crowning** — The realm of Tenademor was extinguished.
-- **975 after the Crowning** — Tariademor seized Brahrei from Rauriameonte.
-- **975 after the Crowning** — A long drought gripped Panalaria; many perished.
-- **1000 after the Crowning** — Vynthon's invasion of Vaudoria was thrown back by Tariademor.
-- **1000 after the Crowning** — Rauriameonte's invasion of Brahrei was thrown back by Tariademor.
-- **1000 after the Crowning** — Deodinte rose against Vynthon and declared the free realm of Tenadente.
-- **1025 after the Crowning** — A plague swept Khirghen; many perished.
-- **1050 after the Crowning** — Vynthon seized Deodinte from Tenadente.
-- **1050 after the Crowning** — The realm of Tenadente was extinguished.
-- **1050 after the Crowning** — A plague swept Deobinte; many perished.
-- **1075 after the Crowning** — Vynthon's invasion of Vaudoria was thrown back by Tariademor.
-- **1075 after the Crowning** — Rauriameonte's invasion of Brahrei was thrown back by Tariademor.
-- **1075 after the Crowning** — A plague swept Skagra; many perished.
+- **103 after the Crowning** — Vynthon seized Deobinte from Rauriacaria.
+- **108 after the Crowning** — The realm of Rauriacaria was extinguished.
+- **119 after the Crowning** — Tariademor seized Rairghen from Mantebinte.
+- **122 after the Crowning** — A plague swept Deopeona; many perished.
+- **148 after the Crowning** — Tariademor seized Panalaria from Mantebinte.
+- **148 after the Crowning** — The realm of Mantebinte was extinguished.
+- **173 after the Crowning** — Vynthon seized Qughen from Kaarkaasi.
+- **174 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **174 after the Crowning** — Rairghen rose against Tariademor and declared the free realm of Kheqghen.
+- **174 after the Crowning** — A plague swept Rairghen; many perished.
+- **194 after the Crowning** — Tariademor seized Rairghen from Kheqghen.
+- **197 after the Crowning** — The realm of Kheqghen was extinguished.
+- **212 after the Crowning** — Vynthon seized Mairkhukha from Kaarkaasi.
+- **221 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **221 after the Crowning** — A long drought gripped Mairkhukha; many perished.
+- **243 after the Crowning** — Vynthon seized Mairkhash from Kaarkaasi.
+- **244 after the Crowning** — Mairkhash rose against Vynthon and declared the free realm of Jughen.
+- **244 after the Crowning** — A plague swept Bradaurk; many perished.
+- **260 after the Crowning** — Vynthon seized Mairkhash from Jughen.
+- **263 after the Crowning** — The realm of Jughen was extinguished.
+- **269 after the Crowning** — Mairkhukha rose against Vynthon and declared the free realm of Jamaad.
+- **283 after the Crowning** — Vynthon seized Mairkhukha from Jamaad.
+- **292 after the Crowning** — The realm of Jamaad was extinguished.
+- **322 after the Crowning** — Vynthon seized Khirghen from Kaarkaasi.
+- **324 after the Crowning** — The realm of Kaarkaasi was extinguished.
+- **324 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **324 after the Crowning** — A plague swept Qughen; many perished.
+- **333 after the Crowning** — Vynthon seized Khirkhidku from Meqe.
+- **341 after the Crowning** — The realm of Meqe was extinguished.
+- **343 after the Crowning** — A long drought gripped Bradaurk; many perished.
+- **354 after the Crowning** — Rauriameonte's invasion of Brabrein was thrown back by Tenademor.
+- **374 after the Crowning** — Vaudoria turned from the Rite of Vaskyvathork to the Faith of Vatenavomor.
+- **382 after the Crowning** — Vynthon seized Mairghen from Tenademor.
+- **399 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
+- **403 after the Crowning** — Rauriameonte seized Brabrein from Tenademor.
+- **440 after the Crowning** — Vynthon's invasion of Mairsham was thrown back by Tenademor.
+- **442 after the Crowning** — Rauriameonte seized Bradaurk from Tenademor.
+- **467 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **495 after the Crowning** — Vynthon seized Mairsham from Tenademor.
+- **496 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
+- **524 after the Crowning** — Vynthon seized Khirkhukha from Kheqghen.
+- **524 after the Crowning** — Mairsham rose against Vynthon and declared the free realm of Qidkakaasi.
+- **544 after the Crowning** — Vynthon seized Mairsham from Qidkakaasi.
+- **544 after the Crowning** — The realm of Qidkakaasi was extinguished.
+- **545 after the Crowning** — Tenademor's invasion of Khirshaa was thrown back by Kheqghen.
+- **545 after the Crowning** — Mairsham rose against Vynthon and declared the free realm of Jakaasi.
+- **572 after the Crowning** — Vynthon seized Mairsham from Jakaasi.
+- **574 after the Crowning** — The realm of Jakaasi was extinguished.
+- **574 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **578 after the Crowning** — Tenademor seized Khirshaa from Kheqghen.
+- **594 after the Crowning** — The realm of Kheqghen was extinguished.
+- **622 after the Crowning** — Khirkad was stormed and left a ruin.
+- **623 after the Crowning** — Vynthon seized Khirshaa from Tenademor.
+- **623 after the Crowning** — Skagra turned from the Rite of Vaskyvathork to the Way of Vaghimzizam.
+- **630 after the Crowning** — Vynthon's invasion of Deodinte was thrown back by Tenademor.
+- **643 after the Crowning** — A plague swept Khirshaa; many perished.
+- **666 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **667 after the Crowning** — Tenademor's invasion of Bradaurk was thrown back by Rauriameonte.
+- **685 after the Crowning** — Vynthon's invasion of Deodinte was thrown back by Tenademor.
+- **690 after the Crowning** — Tariademor's invasion of Brahrei was thrown back by Rauriameonte.
+- **706 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **717 after the Crowning** — Tenademor seized Bradaurk from Rauriameonte.
+- **717 after the Crowning** — Deobinte turned from the Way of Vaghimzizam to the Faith of Vatenavomor.
+- **734 after the Crowning** — Vynthon's invasion of Bradaurk was thrown back by Tenademor.
+- **743 after the Crowning** — Tariademor's invasion of Brahrei was thrown back by Rauriameonte.
+- **746 after the Crowning** — Brakno and 2 neighbouring province(s) broke away from Vynthon to found the realm of Vynfjysk.
+- **760 after the Crowning** — Rauriameonte seized Bradaurk from Tenademor.
+- **763 after the Crowning** — Panalaria turned from the Rite of Vaskyvathork to the Way of Vaghimzizam.
+- **763 after the Crowning** — A long drought gripped Vaudoria; many perished.
+- **793 after the Crowning** — Vynthon seized Brakno from Vynfjysk.
+- **816 after the Crowning** — Vynthon's invasion of Vaudoria was thrown back by Vynfjysk.
+- **823 after the Crowning** — Bradaurk rose against Rauriameonte and declared the free realm of Brogrdaurk.
+- **827 after the Crowning** — Rauriameonte's invasion of Bradaurk was thrown back by Brogrdaurk.
+- **870 after the Crowning** — Vynthon seized Bradaurk from Brogrdaurk.
+- **874 after the Crowning** — The realm of Brogrdaurk was extinguished.
+- **874 after the Crowning** — Tariademor seized Vaudoria from Vynfjysk.
+- **878 after the Crowning** — Vynthon's invasion of Niantepo was thrown back by Vynfjysk.
+- **913 after the Crowning** — Rauriameonte's invasion of Skagra was thrown back by Tenademor.
+- **915 after the Crowning** — Tariademor's invasion of Niantepo was thrown back by Vynfjysk.
+- **926 after the Crowning** — Vynthon seized Niantepo from Vynfjysk.
+- **946 after the Crowning** — The realm of Vynfjysk was extinguished.
+- **969 after the Crowning** — Vynthon seized Skagra from Tenademor.
+- **970 after the Crowning** — A golden age dawned over Vynthon; its cities flourished as never before.
+- **989 after the Crowning** — Vynthon seized Deodinte from Tenademor.
+- **996 after the Crowning** — The realm of Tenademor was extinguished.
+- **998 after the Crowning** — Tariademor seized Brahrei from Rauriameonte.
+- **998 after the Crowning** — A long drought gripped Panalaria; many perished.
+- **1015 after the Crowning** — Vynthon's invasion of Vaudoria was thrown back by Tariademor.
+- **1017 after the Crowning** — Rauriameonte's invasion of Brahrei was thrown back by Tariademor.
+- **1018 after the Crowning** — Deodinte rose against Vynthon and declared the free realm of Tenadente.
+- **1026 after the Crowning** — A plague swept Khirghen; many perished.
+- **1055 after the Crowning** — Vynthon seized Deodinte from Tenadente.
+- **1057 after the Crowning** — The realm of Tenadente was extinguished.
+- **1063 after the Crowning** — A plague swept Deobinte; many perished.
+- **1092 after the Crowning** — Vynthon's invasion of Vaudoria was thrown back by Tariademor.
+- **1093 after the Crowning** — Rauriameonte's invasion of Brahrei was thrown back by Tariademor.
+- **1096 after the Crowning** — A plague swept Skagra; many perished.
 
 ## A Traveller's Account, in the year 1100
 

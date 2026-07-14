@@ -194,24 +194,24 @@
 
 *Settlements that did not survive to the present day.*
 
-- **Deociamor** (city) — founded 124, stormed and left a ruin in 275
-- **Bellanelen** (town) — founded 291, abandoned in 450
-- **Panalamor** (city) — founded 148, stormed and left a ruin in 475
-- **Rairkhukha** (village) — founded 578, stormed and left a ruin in 800
-- **Shinshu** (village) — founded 554, stormed and left a ruin in 1025
+- **Deociamor** (city) — founded 124, stormed and left a ruin in 279
+- **Bellanelen** (town) — founded 291, abandoned in 453
+- **Panalamor** (city) — founded 148, stormed and left a ruin in 490
+- **Rairkhukha** (village) — founded 578, stormed and left a ruin in 824
+- **Shinshu** (village) — founded 554, stormed and left a ruin in 1046
 
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Belladinte** → **Bellaba** *(the river spring)* — Meridian (southern) land under Auld (northern) rule, c. 150
-- **Shinshu** → **Shindund** *(the wild haven)* — Kesh (desert) land under Auld (northern) rule, c. 150
-- **Ghashkai** → **Ghashdemor** *(the river home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Rairkhukha** → **Rairciamor** *(the gold gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Midzaa** → **Midciamor** *(the grass gate)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Ghashakhukha** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Grathu** → **Gratomor** *(the thorn fort)* — Auld (northern) land under Meridian (southern) rule, c. 200
-- **Niantepana** → **Niantehro** *(the green hall)* — Meridian (southern) land under Auld (northern) rule, c. 375
+- **Belladinte** → **Bellaba** *(the river spring)* — Meridian (southern) land under Auld (northern) rule, c. 171
+- **Shinshu** → **Shindund** *(the wild haven)* — Kesh (desert) land under Auld (northern) rule, c. 171
+- **Ghashkai** → **Ghashdemor** *(the river home)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Rairkhukha** → **Rairciamor** *(the gold gate)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Midzaa** → **Midciamor** *(the grass gate)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Ghashakhukha** → **Ghashtomor** *(the river fort)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Grathu** → **Gratomor** *(the thorn fort)* — Auld (northern) land under Meridian (southern) rule, c. 224
+- **Niantepana** → **Niantehro** *(the green hall)* — Meridian (southern) land under Auld (northern) rule, c. 399
 
 ## Faiths
 
@@ -357,12 +357,12 @@ Followed across 10 region(s).
 | Knauskathon | 100 | 5 | 125 | 5 | ascendant |
 | Mishmaad | 100 | 3 | 100 | 2 | diminished |
 | Tariademor | 100 | 3 | 100 | 0 | extinct |
-| Steirkno | 400 | 3 | 400 | 0 | extinct |
+| Steirkno | 421 | 3 | 421 | 0 | extinct |
 | Rauriabinte | 100 | 2 | 100 | 0 | extinct |
-| Tariacaria | 600 | 2 | 600 | 0 | extinct |
-| Fjeiskdaurk | 625 | 2 | 625 | 0 | extinct |
-| Tenabinte | 725 | 2 | 725 | 0 | extinct |
-| Rairqe | 1025 | 1 | 1025 | 1 | ascendant |
+| Tariacaria | 619 | 2 | 619 | 0 | extinct |
+| Fjeiskdaurk | 646 | 2 | 646 | 0 | extinct |
+| Tenabinte | 743 | 2 | 743 | 0 | extinct |
+| Rairqe | 1048 | 1 | 1048 | 1 | ascendant |
 
 ## The Chronicle of Knauskaskei
 
@@ -374,227 +374,227 @@ Followed across 10 region(s).
 
 ### I. The Shaping Years, 100–300
 
-In 100, the matter of Stagrdaurk was settled with spears — Knauskathon kept the province, Fjeiskno the grievance. And that was the whole of Fjeiskno's ending — no siege worth the name, no song; a surrender and a seal. The banners of Tariademor entered Mairkhajez, and what Vynskei had held it held no longer. That same year, word came from Stagrdaurk that it would be governed from within: thus Steirkathon, born in a single furious season. The record here is thin, and I have not thickened it.
+In 103, the matter of Stagrdaurk was settled with spears — Knauskathon kept the province, Fjeiskno the grievance. Within the year, so ended Fjeiskno, whose banners had flown for 21 years. Close on that, Tariademor seized Mairkhajez from Vynskei, and the border stones were moved in the night.
 
-In 100, Tariademor had its great noon: roads mended, songs written, taxes very nearly forgiven. Close on that, Knauskathon seized Stagrdaurk from Steirkathon, and the border stones were moved in the night. It was the end of Steirkathon: 25 years of banners, done in a single season.
+In the year 122, Knauskathon taxed Stagrdaurk once too often; the realm of Steirkathon was the receipt. That same year, Tariademor had its great noon: roads mended, songs written, taxes very nearly forgiven. Soon after, Steirkathon lost Stagrdaurk to Knauskathon, and the harvest went with it. The maps needed redrawing that year: Steirkathon was gone from them.
 
-125: Tariademor came for Brakno and left without it; the war songs on both sides insist otherwise. The physicians of Peonasena tried everything; the gravediggers finished what was left. Soon after, the southern realm of Tariadente marched on Brakno, and by winter the province had fallen to it; Vynskei was the poorer. And that was the whole of Vynskei's ending — no siege worth the name, no song; a surrender and a seal.
+In 136, Tariademor moved against Brakno, but Vynskei threw the invaders back over the border. Close on that, a pestilence swept Peonasena and carried off more than any war had. Brakno passed by force from Vynskei to Tariadente; the tax rolls were rewritten before the dead were counted. It was the end of Vynskei: 68 years of banners, done in a single season.
 
-In the year 175, Rauriabinte held Deobinte against Knauskaskei, whose army went home leaner and wiser. Nor was that all: the assault Tariadente loosed upon Peonasena broke against Tariademor's spears and came to nothing. Sickness walked through Jakhukha and was not particular.
+About the year 186, the assault Knauskaskei loosed upon Deobinte broke against Rauriabinte's spears and came to nothing. Soon after, Tariadente came for Peonasena and left without it; the war songs on both sides insist otherwise. In the same season, the physicians of Jakhukha tried everything; the gravediggers finished what was left. In the years that followed, whatever Knauskathon intended for Jakhukha, Mishmaad had prepared for it twice over.
 
-The year 200 opened with trouble: Mishmaad held Jakhukha against Knauskathon, whose army went home leaner and wiser. Hard on its heels, Tariadente moved against Peonasena, but Tariademor threw the invaders back over the border. The assault Knauskaskei loosed upon Jakhukha broke against Mishmaad's spears and came to nothing. The wells of Bragra gave dust, and the river shrank to an argument.
+In 229, Tariadente moved against Peonasena, but Tariademor threw the invaders back over the border. Within the year, the assault Knauskaskei loosed upon Jakhukha broke against Mishmaad's spears and came to nothing. The wells of Bragra gave dust, and the river shrank to an argument. By 267, Mantemeonte crossed into Fjeiskba at first thaw; Knauskaskei spent the summer pretending it could be undone.
 
-250: Fjeiskba passed by force from Knauskaskei to Mantemeonte; the tax rolls were rewritten before the dead were counted. That same year, Mairkhajez changed its prayers — the Rite of Vasaghaghaza out, the Faith of Vaghimsaid in, and the festival days re-hung on the calendar. In the same season, a great drought lay upon Thaurnbei; the rivers shrank and the wells soured. Deociamor did not survive its conquerors; what stands of it stands empty.
-
-In 275, what had once broken against Deobinte's defences now carried them: Knauskaskei took the province, and Rauriabinte's pride with it.
+The year 268 opened with trouble: Mairkhajez changed its prayers — the Rite of Vasaghaghaza out, the Faith of Vaghimsaid in, and the festival days re-hung on the calendar. A great drought lay upon Thaurnbei; the rivers shrank and the wells soured. Deociamor did not survive its conquerors; what stands of it stands empty. What had once broken against Deobinte's defences now carried them: Knauskaskei took the province, and Rauriabinte's pride with it. Other accounts differ; this one stood nearest the events.
 
 These years also built more than they burned — 8 new settlements, of which Deociamor would become the best known.
 
 Conquest re-said the very map: Belladinte became Bellaba on its new masters' tongues — and 6 other names with it.
 
-### II. The Age of Blood and Banners, 300–500
+### II. The Wars of the Marches, 300–500
 
-300: Knauskaskei and Rauriabinte met over Khirzujikh yet again, and yet again it was Knauskaskei that kept the field. With that, the realm of Rauriabinte was extinguished; its name passes from the roll of the powers. Whatever Tariadente intended for Thaurnbei, Knauskathon had prepared for it twice over. Nor was that all: Knauskaskei taxed Deobinte once too often; the realm of Lossomeonte was the receipt. I set it down as it was told to me.
+307: Knauskaskei and Rauriabinte met over Khirzujikh yet again, and yet again it was Knauskaskei that kept the field. Soon after, the realm of Rauriabinte was extinguished; its name passes from the roll of the powers. Hard on its heels, Thaurnbei held — Knauskathon met Tariadente at the border and sent it back the way it came. Close on that, Deobinte rose against Knauskaskei, and out of the rising was proclaimed the free realm of Lossomeonte. I set it down as it was told to me.
 
-In 325, one more province, Deobinte, joined Knauskaskei's list; Lossomeonte's name joined another. It was the end of Lossomeonte: 25 years of banners, done in a single season. Before long, Knauskathon held Thaurnbei against Tariadente, whose army went home leaner and wiser. Jakhukha held — Mishmaad met Knauskaskei at the border and sent it back the way it came.
+The year 329 opened with trouble: swollen with victories, Knauskaskei pressed on into Deobinte, and the southern realm of Lossomeonte could not hold it. Before long, so ended Lossomeonte, whose banners had flown for 17 years. Knauskathon held Thaurnbei against Tariadente, whose army went home leaner and wiser. Close on that, the assault Knauskaskei loosed upon Jakhukha broke against Mishmaad's spears and came to nothing.
 
-350: the shrines of the Rite of Vasaghaghaza in Brakno emptied, and those of the Faith of Vaghimsaid filled. Raurianeosso changed its prayers — the Rite of Vasaghaghaza out, the Faith of Vaghimsaid in, and the festival days re-hung on the calendar. Close on that, Mishmaad held Jakhukha against Knauskathon, whose army went home leaner and wiser. Whatever Tariademor intended for Bryhrei, Mantemeonte had prepared for it twice over.
+About the year 373, the priests of the Faith of Vaghimsaid out-argued the priests of the Rite of Vasaghaghaza in Brakno, which is how those wars are won. And in that year too, quieter conquests were made as well: Raurianeosso turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid. When a generation had passed, whatever Knauskathon intended for Jakhukha, Mishmaad had prepared for it twice over. The assault Tariademor loosed upon Bryhrei broke against Mantemeonte's spears and came to nothing.
 
-In the year 375, no rain came to Peonasena for two years together; many perished. Hard on its heels, what had once broken against Mairkhajez's defences now carried them: Tariadente took the province, and Tariademor's pride with it. That same year, too big to govern and too proud to shrink, Knauskaskei watched Brafjan walk away and become Steirkno. In the same season, in Peonasena the bells rang without ceasing; a third of its people were laid in the ground.
+The year 399 opened with trouble: the wells of Peonasena gave dust, and the river shrank to an argument. What had once broken against Mairkhajez's defences now carried them: Tariadente took the province, and Tariademor's pride with it. Soon after, Knauskaskei had grown past its own strength: Brafjan and its neighbours broke away to found Steirkno.
 
-425: Steirkno lost Mantecaria to Knauskaskei, and the harvest went with it. Tariadente moved against Brafjan, but Steirkno threw the invaders back over the border. The last households left Bellanelen, and it kept only its name.
+423: a pestilence swept Peonasena and carried off more than any war had. Mantecaria fell to Knauskaskei soon after; Steirkno's protest is preserved, and was ignored. In the same season, Steirkno held Brafjan against Tariadente, whose army went home leaner and wiser. Within the year, Bellanelen was abandoned; its people drifted away, and the grass came back to its streets.
 
-About the year 450, there was no halting Knauskaskei that season: Raurianeosso fell to it while Steirkno looked on. In 450, it was Mantemeonte's year: Brafjan was taken from Steirkno before the passes closed. With that, the realm of Steirkno was extinguished; its name passes from the roll of the powers.
+The year 454 opened with trouble: Raurianeosso passed by force from Steirkno to Knauskaskei; the tax rolls were rewritten before the dead were counted. Steirkno lost Brafjan to Mantemeonte, and the harvest went with it. And that was the whole of Steirkno's ending — no siege worth the name, no song; a surrender and a seal.
 
-In 450, the physicians of Rarerkai tried everything; the gravediggers finished what was left. Panalamor was stormed and left a ruin; travellers still point out its broken walls. In 475, the old quarrel between Tariadente and Tariademor found its old battlefield: Peonasena changed hands once more, in the usual direction.
+In 474, in Rarerkai the bells rang without ceasing; a third of its people were laid in the ground. Hard on its heels, Panalamor burned for two nights and was not rebuilt. Soon after, the old quarrel between Tariadente and Tariademor found its old battlefield: Peonasena changed hands once more, in the usual direction.
 
-The year 475 opened with trouble: Peonasena rose against Tariadente, and out of the rising was proclaimed the free realm of Caudemor. Mairkhajez cracked and browned under a sky that owed it water and paid none.
+In the year 499, Tariadente taxed Peonasena once too often; the realm of Caudemor was the receipt. No rain came to Mairkhajez for two years together; many perished.
 
 The map grew fuller meanwhile: 8 new settlements took root, Ghashzaa first among them.
 
 The occupiers kept the land-words and changed the rest, and so Niantepana is written Niantehro in every ledger since.
 
-### III. The Age of Iron, 500–700
+### III. The Contested Years, 500–700
 
-500: the matter of Peonasena was settled with spears — Tariadente kept the province, Caudemor the grievance. And that was the whole of Caudemor's ending — no siege worth the name, no song; a surrender and a seal. Close on that, Tariadente and Tariademor met over Mairkhaim yet again, and yet again it was Tariadente that kept the field. With that, the realm of Tariademor was extinguished; its name passes from the roll of the powers. The record here is thin, and I have not thickened it.
+The year 515 opened with trouble: the matter of Peonasena was settled with spears — Tariadente kept the province, Caudemor the grievance. The realm of Caudemor was extinguished; its name passes from the roll of the powers. Tariadente and Tariademor met over Mairkhaim yet again, and yet again it was Tariadente that kept the field. Hard on its heels, so ended Tariademor, whose banners had flown for 437 years.
 
-In 525, the priests of the Way of Vathostvoll out-argued the priests of the Faith of Vaghimsaid in Fjeiskba, which is how those wars are won. Knauskaskei came for Jakhukha and left without it; the war songs on both sides insist otherwise. Thaurnbei held — Knauskathon met Tariadente at the border and sent it back the way it came.
+In the year 544, Fjeiskba changed its prayers — the Faith of Vaghimsaid out, the Way of Vathostvoll in, and the festival days re-hung on the calendar. Before long, the assault Knauskaskei loosed upon Jakhukha broke against Mishmaad's spears and came to nothing. Close on that, Knauskathon held Thaurnbei against Tariadente, whose army went home leaner and wiser. Mairkhaim rose against Tariadente, and out of the rising was proclaimed the free realm of Meghen.
 
-In the year 550, the people of Mairkhaim drove out Tariadente's governors and took for themselves the name Meghen. That same year, these were the high years of Mantemeonte — its markets loud, its walls, for a while, unneeded. Knauskathon moved against Jakhukha, but Mishmaad threw the invaders back over the border.
+The year 571 opened with trouble: for a while everything Mantemeonte touched came back gold; even its rivals banked in its coin. Knauskathon moved against Jakhukha, but Mishmaad threw the invaders back over the border. Within the year, a great drought lay upon Shinkhukha; the rivers shrank and the wells soured.
 
-The year 575 opened with trouble: the wells of Shinkhukha gave dust, and the river shrank to an argument. What had once broken against Jakhukha's defences now carried them: Knauskaskei took the province, and Mishmaad's pride with it. Word came from Jakhukha that it would be governed from within: thus Jumaad, born in a single furious season. Knauskaskei had grown past its own strength: Mantecaria and its neighbours broke away to found Tariacaria.
+About the year 608, what had once broken against Jakhukha's defences now carried them: Knauskaskei took the province, and Mishmaad's pride with it. The garrison of Jakhukha woke to new flags — Jumaad had declared itself overnight, and made it stick. Close on that, the realm of Tariacaria was carved whole out of Knauskaskei's flank, with Mantecaria at its heart.
 
-In the year 600, a great drought lay upon Deobinte; the rivers shrank and the wells soured. Nor was that all: for a while everything Knauskaskei touched came back gold; even its rivals banked in its coin. The banners of Tariadente entered Jakhukha, and what Jumaad had held it held no longer. It was the end of Jumaad: 25 years of banners, done in a single season.
+In the year 623, Deobinte cracked and browned under a sky that owed it water and paid none. And in that year too, not all was iron: a golden age dawned over Knauskaskei, and its cities flourished as never before. Tariadente, whose appetite grew with the eating, took Jakhukha next.
 
-About the year 625, the realm of Fjeiskdaurk was carved whole out of Mantemeonte's flank, with Brafjan at its heart. Quieter conquests were made as well: Mantecaria turned from the Faith of Varondomomor to the Way of Vathostvoll. That same year, not all was iron: a golden age dawned over Knauskaskei, and its cities flourished as never before. Hard on its heels, swollen with victories, Mantemeonte pressed on into Bryhrei, and the young northern realm of Fjeiskdaurk could not hold it.
+646: the realm of Jumaad was extinguished; its name passes from the roll of the powers. In the same season, too big to govern and too proud to shrink, Mantemeonte watched Brafjan walk away and become Fjeiskdaurk. Quieter conquests were made as well: Mantecaria turned from the Faith of Varondomomor to the Way of Vathostvoll. Nor was that all: these were the high years of Knauskaskei — its markets loud, its walls, for a while, unneeded.
 
-The year 650 opened with trouble: the wells of Deoriando gave dust, and the river shrank to an argument. Within the year, one more province, Brafjan, joined Tariadente's list; Fjeiskdaurk's name joined another. And that was the whole of Fjeiskdaurk's ending — no siege worth the name, no song; a surrender and a seal.
+In 654, Fjeiskdaurk lost Bryhrei to Mantemeonte, and the harvest went with it. Hard on its heels, the wells of Deoriando gave dust, and the river shrank to an argument. A generation on, swollen with victories, Tariadente pressed on into Brafjan, and Fjeiskdaurk could not hold it. Soon after, the maps needed redrawing that year: Fjeiskdaurk was gone from them.
 
-These years also built more than they burned — 7 new settlements, of which Variadinte would become the best known.
+All the while the land was filling: 7 settlements were raised in these years, Variadinte and Ghashkai among them.
 
 ### IV. The Age of Blood and Banners, 700–900
 
-700: swollen with victories, Knauskaskei pressed on into Mantecaria, and the young southern realm of Tariacaria could not hold it. Soon after, whatever Tariadente intended for Mairkhaim, Meghen had prepared for it twice over. In the same season, the garrison of Brafjan woke to new flags — Fjeiskaskei had declared itself overnight, and made it stick.
+In the year 703, Mantecaria passed by force from Tariacaria to Knauskaskei; the tax rolls were rewritten before the dead were counted. By 734, whatever Tariadente intended for Mairkhaim, Meghen had prepared for it twice over. Before long, Brafjan rose against Tariadente, and out of the rising was proclaimed the free realm of Fjeiskaskei. The record here is thin, and I have not thickened it.
 
-About the year 725, too big to govern and too proud to shrink, Knauskaskei watched Mantecaria walk away and become Tenabinte. Nor was that all: no rain came to Deoriando for two years together; many perished. Brafjan passed by force from Fjeiskaskei to Knauskaskei; the tax rolls were rewritten before the dead were counted. With that, the realm of Fjeiskaskei was extinguished; its name passes from the roll of the powers.
+About the year 743, Knauskaskei had grown past its own strength: Mantecaria and its neighbours broke away to found Tenabinte. Close on that, a great drought lay upon Deoriando; the rivers shrank and the wells soured. Soon after, Knauskaskei, whose appetite grew with the eating, took Brafjan next.
 
-In 775, the appetite of Knauskaskei was becoming proverbial: Mantecaria this time, and Tenabinte unable to answer. The same year, these were the high years of Knauskaskei — its markets loud, its walls, for a while, unneeded. There was no halting Knauskaskei that season: Rarerkai fell to it while Tenabinte looked on. It was the end of Tenabinte; its lands were divided among its enemies.
+771: the realm of Fjeiskaskei was extinguished; its name passes from the roll of the powers. Close on that, the appetite of Knauskaskei was becoming proverbial: Mantecaria this time, and Tenabinte unable to answer. Soon after, for a while everything Knauskaskei touched came back gold; even its rivals banked in its coin.
 
-About the year 800, what the army wanted from Rairkhukha it took; the rest it left to the crows. That same year, what had once broken against Mairkhaim's defences now carried them: Tariadente took the province, and Meghen's pride with it. And that was the whole of Meghen's ending — no siege worth the name, no song; a surrender and a seal. The same year, the people of Brafjan drove out Knauskaskei's governors and took for themselves the name Tharnafjysk.
+The year 808 opened with trouble: the banners of Knauskaskei entered Rarerkai, and what Tenabinte had held it held no longer. Close on that, so ended Tenabinte; its lands were divided among its enemies. Rairkhukha was stormed and left a ruin; travellers still point out its broken walls. I set it down as it was told to me.
 
-In 800, word came from Mairkhaim that it would be governed from within: thus Meshaa, born in a single furious season. Tariadente, whose appetite grew with the eating, took Brafjan next. With that, the realm of Tharnafjysk was extinguished; its name passes from the roll of the powers. Nor was that all: Knauskaskei moved against Rairghen, but Tariacaria threw the invaders back over the border.
+About the year 824, what had once broken against Mairkhaim's defences now carried them: Tariadente took the province, and Meghen's pride with it. With that, the realm of Meghen was extinguished; its name passes from the roll of the powers. The people of Brafjan drove out Knauskaskei's governors and took for themselves the name Tharnafjysk. In 824, word came from Mairkhaim that it would be governed from within: thus Meshaa, born in a single furious season.
 
-In 825, Knauskaskei taxed Mantecaria once too often; the realm of Rauriadente was the receipt. And in that year too, Bragra cracked and browned under a sky that owed it water and paid none. Rauriadente lost Mantecaria to Tariacaria, and the harvest went with it. It was the end of Rauriadente: 25 years of banners, done in a single season.
+In 836, there was no halting Tariadente that season: Brafjan fell to it while Tharnafjysk looked on. Soon after, of Tharnafjysk nothing more is written. Hard on its heels, Rairghen held — Tariacaria met Knauskaskei at the border and sent it back the way it came.
 
-About the year 850, word came from Rarerkai that it would be governed from within: thus Rairshaa, born in a single furious season. Within the year, it was Knauskaskei's year: Rarerkai was taken from Rairshaa before the passes closed. And that was the whole of Rairshaa's ending — no siege worth the name, no song; a surrender and a seal. The same year, the garrison of Brafjan woke to new flags — Storkathon had declared itself overnight, and made it stick.
+846: Knauskaskei taxed Mantecaria once too often; the realm of Rauriadente was the receipt. Within the year, no rain came to Bragra for two years together; many perished. Close on that, the matter of Mantecaria was settled with spears — Tariacaria kept the province, Rauriadente the grievance.
 
-The year 875 opened with trouble: for a while everything Knauskaskei touched came back gold; even its rivals banked in its coin.
+In the year 874, the maps needed redrawing that year: Rauriadente was gone from them. That same year, Rarerkai rose against Knauskaskei, and out of the rising was proclaimed the free realm of Rairshaa. One more province, Rarerkai, joined Knauskaskei's list; Rairshaa's name joined another. Soon after, so ended Rairshaa, whose banners had flown for 5 years.
+
+885: the people of Brafjan drove out Tariadente's governors and took for themselves the name Storkathon. And in that year too, Knauskaskei had its great noon: roads mended, songs written, taxes very nearly forgiven.
 
 ### V. The Contested Years, 900–1100
 
-In the year 900, swollen with victories, Mantemeonte pressed on into Brafjan, and the young northern realm of Storkathon could not hold it. With that, the realm of Storkathon was extinguished; its name passes from the roll of the powers. In Jakhukha the bells rang without ceasing; a third of its people were laid in the ground. Tariacaria held Mantecaria against Knauskaskei, whose army went home leaner and wiser.
+In the year 924, Mantemeonte seized Brafjan from Storkathon, and the border stones were moved in the night. It was the end of Storkathon: 39 years of banners, done in a single season. Sickness walked through Jakhukha and was not particular.
 
-The year 925 opened with trouble: Tariadente moved against Bryhrei, but Mantemeonte threw the invaders back over the border. Close on that, Shinkhukha held — Mishmaad met Knauskathon at the border and sent it back the way it came. Not all was iron: a golden age dawned over Tariadente, and its cities flourished as never before. Within the year, what had once broken against Mantecaria's defences now carried them: Knauskaskei took the province, and Tariacaria's pride with it.
+In 943, Knauskaskei came for Mantecaria and left without it; the war songs on both sides insist otherwise. Before long, Tariadente moved against Bryhrei, but Mantemeonte threw the invaders back over the border. Soon after, whatever Knauskathon intended for Shinkhukha, Mishmaad had prepared for it twice over. Before long, for a while everything Tariadente touched came back gold; even its rivals banked in its coin.
 
-In 975, Knauskaskei taxed Mantecaria once too often; the realm of Tenabinte was the receipt. Soon after, the old quarrel between Knauskaskei and Tenabinte found its old battlefield: Mantecaria changed hands once more, in the usual direction. And that was the whole of Tenabinte's ending — no siege worth the name, no song; a surrender and a seal.
+In 976, what had once broken against Mantecaria's defences now carried them: Knauskaskei took the province, and Tariacaria's pride with it. Hard on its heels, word came from Mantecaria that it would be governed from within: thus Tenabinte, born in a single furious season. Before long, the old quarrel between Knauskaskei and Tenabinte found its old battlefield: Mantecaria changed hands once more, in the usual direction. Hard on its heels, of Tenabinte nothing more is written.
 
-Mairkhaim fell to Tariadente in 1025; Meshaa's protest is preserved, and was ignored. With that, the realm of Meshaa was extinguished; its name passes from the roll of the powers. Shinshu burned for two nights and was not rebuilt.
+In 1035, the appetite of Tariadente was becoming proverbial: Mairkhaim this time, and Meshaa unable to answer. Close on that, the realm of Meshaa was extinguished; its name passes from the roll of the powers. Before long, Shinshu did not survive its conquerors; what stands of it stands empty. Other accounts differ; this one stood nearest the events.
 
-In the year 1025, Knauskaskei and Tariacaria met over Rairghen yet again, and yet again it was Knauskaskei that kept the field. It was the end of Tariacaria: 425 years of banners, done in a single season. In the same season, the garrison of Mairkhaim woke to new flags — Rairqe had declared itself overnight, and made it stick. Before long, the assault Tariadente loosed upon Mairkhaim broke against Rairqe's spears and came to nothing.
+The year 1046 opened with trouble: Knauskaskei and Tariacaria met over Rairghen yet again, and yet again it was Knauskaskei that kept the field. Soon after, so ended Tariacaria, whose banners had flown for 429 years. In the same season, Tariadente taxed Mairkhaim once too often; the realm of Rairqe was the receipt. Before long, Tariadente came for Mairkhaim and left without it; the war songs on both sides insist otherwise.
 
-About the year 1075, whatever Knauskaskei intended for Fjeiskba, Mantemeonte had prepared for it twice over. Nor was that all: these were the high years of Tariadente — its markets loud, its walls, for a while, unneeded.
+About the year 1089, whatever Knauskaskei intended for Fjeiskba, Mantemeonte had prepared for it twice over. Close on that, Tariadente had its great noon: roads mended, songs written, taxes very nearly forgiven.
 
 *So the matter stands in 1100: 6 realms endure, and Knauskaskei is mightiest among them, holding 8 provinces. 5 towns lie in ruins; their names are kept in this book, which is more than their walls kept.*
 
-*In Niantetomor, Saunan Caumeonte the Unlucky holds the throne. Here the record rests — not because history has, but because ink runs out before it does.*
+*Saunan Caumeonte the Unlucky reigns in Niantetomor. Let whoever comes after me write the next page better than I have written this one.*
 
 ## Annals
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 after the Landing** — Knauskathon seized Stagrdaurk from Fjeiskno.
-- **100 after the Landing** — The realm of Fjeiskno was extinguished.
-- **100 after the Landing** — Tariademor seized Mairkhajez from Vynskei.
-- **100 after the Landing** — Stagrdaurk rose against Knauskathon and declared the free realm of Steirkathon.
-- **100 after the Landing** — A golden age dawned over Tariademor; its cities flourished as never before.
-- **125 after the Landing** — Knauskathon seized Stagrdaurk from Steirkathon.
-- **125 after the Landing** — The realm of Steirkathon was extinguished.
-- **125 after the Landing** — Tariademor's invasion of Brakno was thrown back by Vynskei.
-- **125 after the Landing** — A plague swept Peonasena; many perished.
-- **150 after the Landing** — Tariadente seized Brakno from Vynskei.
-- **150 after the Landing** — The realm of Vynskei was extinguished.
-- **175 after the Landing** — Knauskaskei's invasion of Deobinte was thrown back by Rauriabinte.
-- **175 after the Landing** — Tariadente's invasion of Peonasena was thrown back by Tariademor.
-- **175 after the Landing** — A plague swept Jakhukha; many perished.
-- **200 after the Landing** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
-- **225 after the Landing** — Tariadente's invasion of Peonasena was thrown back by Tariademor.
-- **225 after the Landing** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
-- **225 after the Landing** — A long drought gripped Bragra; many perished.
-- **250 after the Landing** — Mantemeonte seized Fjeiskba from Knauskaskei.
-- **250 after the Landing** — Mairkhajez turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
-- **250 after the Landing** — A long drought gripped Thaurnbei; many perished.
-- **275 after the Landing** — Deociamor was stormed and left a ruin.
-- **275 after the Landing** — Knauskaskei seized Deobinte from Rauriabinte.
-- **300 after the Landing** — Knauskaskei seized Khirzujikh from Rauriabinte.
-- **300 after the Landing** — The realm of Rauriabinte was extinguished.
-- **300 after the Landing** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
-- **300 after the Landing** — Deobinte rose against Knauskaskei and declared the free realm of Lossomeonte.
-- **325 after the Landing** — Knauskaskei seized Deobinte from Lossomeonte.
-- **325 after the Landing** — The realm of Lossomeonte was extinguished.
-- **350 after the Landing** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
-- **350 after the Landing** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
-- **350 after the Landing** — Brakno turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
-- **350 after the Landing** — Raurianeosso turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
-- **375 after the Landing** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
-- **375 after the Landing** — Tariademor's invasion of Bryhrei was thrown back by Mantemeonte.
-- **375 after the Landing** — A long drought gripped Peonasena; many perished.
-- **400 after the Landing** — Tariadente seized Mairkhajez from Tariademor.
-- **400 after the Landing** — Brafjan and 2 neighbouring province(s) broke away from Knauskaskei to found the realm of Steirkno.
-- **400 after the Landing** — A plague swept Peonasena; many perished.
-- **425 after the Landing** — Knauskaskei seized Mantecaria from Steirkno.
-- **425 after the Landing** — Tariadente's invasion of Brafjan was thrown back by Steirkno.
-- **450 after the Landing** — Bellanelen was abandoned; its people drifted away.
-- **450 after the Landing** — Knauskaskei seized Raurianeosso from Steirkno.
-- **450 after the Landing** — Mantemeonte seized Brafjan from Steirkno.
-- **450 after the Landing** — The realm of Steirkno was extinguished.
-- **450 after the Landing** — A plague swept Rarerkai; many perished.
-- **475 after the Landing** — Panalamor was stormed and left a ruin.
-- **475 after the Landing** — Tariadente seized Peonasena from Tariademor.
-- **475 after the Landing** — Peonasena rose against Tariadente and declared the free realm of Caudemor.
-- **475 after the Landing** — A long drought gripped Mairkhajez; many perished.
-- **500 after the Landing** — Tariadente seized Peonasena from Caudemor.
-- **500 after the Landing** — The realm of Caudemor was extinguished.
-- **525 after the Landing** — Tariadente seized Mairkhaim from Tariademor.
-- **525 after the Landing** — The realm of Tariademor was extinguished.
-- **525 after the Landing** — Fjeiskba turned from the Faith of Vaghimsaid to the Way of Vathostvoll.
-- **550 after the Landing** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
-- **550 after the Landing** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
-- **550 after the Landing** — Mairkhaim rose against Tariadente and declared the free realm of Meghen.
-- **550 after the Landing** — A golden age dawned over Mantemeonte; its cities flourished as never before.
-- **575 after the Landing** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
-- **575 after the Landing** — A long drought gripped Shinkhukha; many perished.
-- **600 after the Landing** — Knauskaskei seized Jakhukha from Mishmaad.
-- **600 after the Landing** — Jakhukha rose against Knauskaskei and declared the free realm of Jumaad.
-- **600 after the Landing** — Mantecaria and 1 neighbouring province(s) broke away from Knauskaskei to found the realm of Tariacaria.
-- **600 after the Landing** — A long drought gripped Deobinte; many perished.
-- **600 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
-- **625 after the Landing** — Tariadente seized Jakhukha from Jumaad.
-- **625 after the Landing** — The realm of Jumaad was extinguished.
-- **625 after the Landing** — Brafjan and 1 neighbouring province(s) broke away from Mantemeonte to found the realm of Fjeiskdaurk.
-- **625 after the Landing** — Mantecaria turned from the Faith of Varondomomor to the Way of Vathostvoll.
-- **625 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
-- **650 after the Landing** — Mantemeonte seized Bryhrei from Fjeiskdaurk.
-- **650 after the Landing** — A long drought gripped Deoriando; many perished.
-- **675 after the Landing** — Tariadente seized Brafjan from Fjeiskdaurk.
-- **675 after the Landing** — The realm of Fjeiskdaurk was extinguished.
-- **700 after the Landing** — Knauskaskei seized Mantecaria from Tariacaria.
-- **725 after the Landing** — Tariadente's invasion of Mairkhaim was thrown back by Meghen.
-- **725 after the Landing** — Brafjan rose against Tariadente and declared the free realm of Fjeiskaskei.
-- **725 after the Landing** — Mantecaria and 1 neighbouring province(s) broke away from Knauskaskei to found the realm of Tenabinte.
-- **725 after the Landing** — A long drought gripped Deoriando; many perished.
-- **750 after the Landing** — Knauskaskei seized Brafjan from Fjeiskaskei.
-- **750 after the Landing** — The realm of Fjeiskaskei was extinguished.
-- **775 after the Landing** — Knauskaskei seized Mantecaria from Tenabinte.
-- **775 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
-- **800 after the Landing** — Knauskaskei seized Rarerkai from Tenabinte.
-- **800 after the Landing** — The realm of Tenabinte was extinguished.
-- **800 after the Landing** — Rairkhukha was stormed and left a ruin.
-- **800 after the Landing** — Tariadente seized Mairkhaim from Meghen.
-- **800 after the Landing** — The realm of Meghen was extinguished.
-- **800 after the Landing** — Brafjan rose against Knauskaskei and declared the free realm of Tharnafjysk.
-- **800 after the Landing** — Mairkhaim rose against Tariadente and declared the free realm of Meshaa.
-- **825 after the Landing** — Tariadente seized Brafjan from Tharnafjysk.
-- **825 after the Landing** — The realm of Tharnafjysk was extinguished.
-- **825 after the Landing** — Knauskaskei's invasion of Rairghen was thrown back by Tariacaria.
-- **825 after the Landing** — Mantecaria rose against Knauskaskei and declared the free realm of Rauriadente.
-- **825 after the Landing** — A long drought gripped Bragra; many perished.
-- **850 after the Landing** — Tariacaria seized Mantecaria from Rauriadente.
-- **850 after the Landing** — The realm of Rauriadente was extinguished.
-- **850 after the Landing** — Rarerkai rose against Knauskaskei and declared the free realm of Rairshaa.
-- **875 after the Landing** — Knauskaskei seized Rarerkai from Rairshaa.
-- **875 after the Landing** — The realm of Rairshaa was extinguished.
-- **875 after the Landing** — Brafjan rose against Tariadente and declared the free realm of Storkathon.
-- **875 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
-- **900 after the Landing** — Mantemeonte seized Brafjan from Storkathon.
-- **900 after the Landing** — The realm of Storkathon was extinguished.
-- **900 after the Landing** — A plague swept Jakhukha; many perished.
-- **925 after the Landing** — Knauskaskei's invasion of Mantecaria was thrown back by Tariacaria.
-- **925 after the Landing** — Tariadente's invasion of Bryhrei was thrown back by Mantemeonte.
-- **950 after the Landing** — Knauskathon's invasion of Shinkhukha was thrown back by Mishmaad.
-- **950 after the Landing** — A golden age dawned over Tariadente; its cities flourished as never before.
-- **975 after the Landing** — Knauskaskei seized Mantecaria from Tariacaria.
-- **975 after the Landing** — Mantecaria rose against Knauskaskei and declared the free realm of Tenabinte.
-- **1000 after the Landing** — Knauskaskei seized Mantecaria from Tenabinte.
-- **1000 after the Landing** — The realm of Tenabinte was extinguished.
-- **1025 after the Landing** — Tariadente seized Mairkhaim from Meshaa.
-- **1025 after the Landing** — The realm of Meshaa was extinguished.
-- **1025 after the Landing** — Shinshu was stormed and left a ruin.
-- **1025 after the Landing** — Knauskaskei seized Rairghen from Tariacaria.
-- **1025 after the Landing** — The realm of Tariacaria was extinguished.
-- **1025 after the Landing** — Mairkhaim rose against Tariadente and declared the free realm of Rairqe.
-- **1050 after the Landing** — Tariadente's invasion of Mairkhaim was thrown back by Rairqe.
-- **1075 after the Landing** — Knauskaskei's invasion of Fjeiskba was thrown back by Mantemeonte.
-- **1075 after the Landing** — A golden age dawned over Tariadente; its cities flourished as never before.
+- **103 after the Landing** — Knauskathon seized Stagrdaurk from Fjeiskno.
+- **121 after the Landing** — The realm of Fjeiskno was extinguished.
+- **122 after the Landing** — Tariademor seized Mairkhajez from Vynskei.
+- **122 after the Landing** — Stagrdaurk rose against Knauskathon and declared the free realm of Steirkathon.
+- **122 after the Landing** — A golden age dawned over Tariademor; its cities flourished as never before.
+- **134 after the Landing** — Knauskathon seized Stagrdaurk from Steirkathon.
+- **135 after the Landing** — The realm of Steirkathon was extinguished.
+- **136 after the Landing** — Tariademor's invasion of Brakno was thrown back by Vynskei.
+- **143 after the Landing** — A plague swept Peonasena; many perished.
+- **168 after the Landing** — Tariadente seized Brakno from Vynskei.
+- **168 after the Landing** — The realm of Vynskei was extinguished.
+- **186 after the Landing** — Knauskaskei's invasion of Deobinte was thrown back by Rauriabinte.
+- **196 after the Landing** — Tariadente's invasion of Peonasena was thrown back by Tariademor.
+- **196 after the Landing** — A plague swept Jakhukha; many perished.
+- **223 after the Landing** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
+- **229 after the Landing** — Tariadente's invasion of Peonasena was thrown back by Tariademor.
+- **231 after the Landing** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
+- **234 after the Landing** — A long drought gripped Bragra; many perished.
+- **267 after the Landing** — Mantemeonte seized Fjeiskba from Knauskaskei.
+- **268 after the Landing** — Mairkhajez turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
+- **272 after the Landing** — A long drought gripped Thaurnbei; many perished.
+- **279 after the Landing** — Deociamor was stormed and left a ruin.
+- **292 after the Landing** — Knauskaskei seized Deobinte from Rauriabinte.
+- **307 after the Landing** — Knauskaskei seized Khirzujikh from Rauriabinte.
+- **316 after the Landing** — The realm of Rauriabinte was extinguished.
+- **320 after the Landing** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
+- **324 after the Landing** — Deobinte rose against Knauskaskei and declared the free realm of Lossomeonte.
+- **329 after the Landing** — Knauskaskei seized Deobinte from Lossomeonte.
+- **341 after the Landing** — The realm of Lossomeonte was extinguished.
+- **364 after the Landing** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
+- **372 after the Landing** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
+- **373 after the Landing** — Brakno turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
+- **373 after the Landing** — Raurianeosso turned from the Rite of Vasaghaghaza to the Faith of Vaghimsaid.
+- **399 after the Landing** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
+- **399 after the Landing** — Tariademor's invasion of Bryhrei was thrown back by Mantemeonte.
+- **399 after the Landing** — A long drought gripped Peonasena; many perished.
+- **411 after the Landing** — Tariadente seized Mairkhajez from Tariademor.
+- **421 after the Landing** — Brafjan and 2 neighbouring province(s) broke away from Knauskaskei to found the realm of Steirkno.
+- **423 after the Landing** — A plague swept Peonasena; many perished.
+- **447 after the Landing** — Knauskaskei seized Mantecaria from Steirkno.
+- **447 after the Landing** — Tariadente's invasion of Brafjan was thrown back by Steirkno.
+- **453 after the Landing** — Bellanelen was abandoned; its people drifted away.
+- **454 after the Landing** — Knauskaskei seized Raurianeosso from Steirkno.
+- **470 after the Landing** — Mantemeonte seized Brafjan from Steirkno.
+- **470 after the Landing** — The realm of Steirkno was extinguished.
+- **474 after the Landing** — A plague swept Rarerkai; many perished.
+- **490 after the Landing** — Panalamor was stormed and left a ruin.
+- **496 after the Landing** — Tariadente seized Peonasena from Tariademor.
+- **499 after the Landing** — Peonasena rose against Tariadente and declared the free realm of Caudemor.
+- **499 after the Landing** — A long drought gripped Mairkhajez; many perished.
+- **515 after the Landing** — Tariadente seized Peonasena from Caudemor.
+- **522 after the Landing** — The realm of Caudemor was extinguished.
+- **526 after the Landing** — Tariadente seized Mairkhaim from Tariademor.
+- **537 after the Landing** — The realm of Tariademor was extinguished.
+- **544 after the Landing** — Fjeiskba turned from the Faith of Vaghimsaid to the Way of Vathostvoll.
+- **556 after the Landing** — Knauskaskei's invasion of Jakhukha was thrown back by Mishmaad.
+- **570 after the Landing** — Tariadente's invasion of Thaurnbei was thrown back by Knauskathon.
+- **570 after the Landing** — Mairkhaim rose against Tariadente and declared the free realm of Meghen.
+- **571 after the Landing** — A golden age dawned over Mantemeonte; its cities flourished as never before.
+- **586 after the Landing** — Knauskathon's invasion of Jakhukha was thrown back by Mishmaad.
+- **597 after the Landing** — A long drought gripped Shinkhukha; many perished.
+- **608 after the Landing** — Knauskaskei seized Jakhukha from Mishmaad.
+- **613 after the Landing** — Jakhukha rose against Knauskaskei and declared the free realm of Jumaad.
+- **619 after the Landing** — Mantecaria and 1 neighbouring province(s) broke away from Knauskaskei to found the realm of Tariacaria.
+- **623 after the Landing** — A long drought gripped Deobinte; many perished.
+- **623 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
+- **644 after the Landing** — Tariadente seized Jakhukha from Jumaad.
+- **646 after the Landing** — The realm of Jumaad was extinguished.
+- **646 after the Landing** — Brafjan and 1 neighbouring province(s) broke away from Mantemeonte to found the realm of Fjeiskdaurk.
+- **649 after the Landing** — Mantecaria turned from the Faith of Varondomomor to the Way of Vathostvoll.
+- **649 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
+- **654 after the Landing** — Mantemeonte seized Bryhrei from Fjeiskdaurk.
+- **657 after the Landing** — A long drought gripped Deoriando; many perished.
+- **698 after the Landing** — Tariadente seized Brafjan from Fjeiskdaurk.
+- **699 after the Landing** — The realm of Fjeiskdaurk was extinguished.
+- **703 after the Landing** — Knauskaskei seized Mantecaria from Tariacaria.
+- **734 after the Landing** — Tariadente's invasion of Mairkhaim was thrown back by Meghen.
+- **736 after the Landing** — Brafjan rose against Tariadente and declared the free realm of Fjeiskaskei.
+- **743 after the Landing** — Mantecaria and 1 neighbouring province(s) broke away from Knauskaskei to found the realm of Tenabinte.
+- **749 after the Landing** — A long drought gripped Deoriando; many perished.
+- **761 after the Landing** — Knauskaskei seized Brafjan from Fjeiskaskei.
+- **771 after the Landing** — The realm of Fjeiskaskei was extinguished.
+- **792 after the Landing** — Knauskaskei seized Mantecaria from Tenabinte.
+- **797 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
+- **808 after the Landing** — Knauskaskei seized Rarerkai from Tenabinte.
+- **817 after the Landing** — The realm of Tenabinte was extinguished.
+- **824 after the Landing** — Rairkhukha was stormed and left a ruin.
+- **824 after the Landing** — Tariadente seized Mairkhaim from Meghen.
+- **824 after the Landing** — The realm of Meghen was extinguished.
+- **824 after the Landing** — Brafjan rose against Knauskaskei and declared the free realm of Tharnafjysk.
+- **824 after the Landing** — Mairkhaim rose against Tariadente and declared the free realm of Meshaa.
+- **836 after the Landing** — Tariadente seized Brafjan from Tharnafjysk.
+- **844 after the Landing** — The realm of Tharnafjysk was extinguished.
+- **845 after the Landing** — Knauskaskei's invasion of Rairghen was thrown back by Tariacaria.
+- **846 after the Landing** — Mantecaria rose against Knauskaskei and declared the free realm of Rauriadente.
+- **849 after the Landing** — A long drought gripped Bragra; many perished.
+- **871 after the Landing** — Tariacaria seized Mantecaria from Rauriadente.
+- **874 after the Landing** — The realm of Rauriadente was extinguished.
+- **874 after the Landing** — Rarerkai rose against Knauskaskei and declared the free realm of Rairshaa.
+- **877 after the Landing** — Knauskaskei seized Rarerkai from Rairshaa.
+- **879 after the Landing** — The realm of Rairshaa was extinguished.
+- **885 after the Landing** — Brafjan rose against Tariadente and declared the free realm of Storkathon.
+- **885 after the Landing** — A golden age dawned over Knauskaskei; its cities flourished as never before.
+- **924 after the Landing** — Mantemeonte seized Brafjan from Storkathon.
+- **924 after the Landing** — The realm of Storkathon was extinguished.
+- **924 after the Landing** — A plague swept Jakhukha; many perished.
+- **943 after the Landing** — Knauskaskei's invasion of Mantecaria was thrown back by Tariacaria.
+- **947 after the Landing** — Tariadente's invasion of Bryhrei was thrown back by Mantemeonte.
+- **967 after the Landing** — Knauskathon's invasion of Shinkhukha was thrown back by Mishmaad.
+- **972 after the Landing** — A golden age dawned over Tariadente; its cities flourished as never before.
+- **976 after the Landing** — Knauskaskei seized Mantecaria from Tariacaria.
+- **998 after the Landing** — Mantecaria rose against Knauskaskei and declared the free realm of Tenabinte.
+- **1011 after the Landing** — Knauskaskei seized Mantecaria from Tenabinte.
+- **1022 after the Landing** — The realm of Tenabinte was extinguished.
+- **1035 after the Landing** — Tariadente seized Mairkhaim from Meshaa.
+- **1045 after the Landing** — The realm of Meshaa was extinguished.
+- **1046 after the Landing** — Shinshu was stormed and left a ruin.
+- **1046 after the Landing** — Knauskaskei seized Rairghen from Tariacaria.
+- **1048 after the Landing** — The realm of Tariacaria was extinguished.
+- **1048 after the Landing** — Mairkhaim rose against Tariadente and declared the free realm of Rairqe.
+- **1071 after the Landing** — Tariadente's invasion of Mairkhaim was thrown back by Rairqe.
+- **1089 after the Landing** — Knauskaskei's invasion of Fjeiskba was thrown back by Mantemeonte.
+- **1097 after the Landing** — A golden age dawned over Tariadente; its cities flourished as never before.
 
 ## A Traveller's Account, in the year 1100
 

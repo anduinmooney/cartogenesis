@@ -169,12 +169,12 @@
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Khirqe** → **Khirdemor** *(the sea home)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Hrafjysk** → **Hrademor** *(the river home)* — Auld (northern) land under Meridian (southern) rule, c. 150
-- **Ghashkai** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Khirkai** → **Khirlamor** *(the sea hall)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Ghashmakh** → **Ghashciamor** *(the river gate)* — Kesh (desert) land under Meridian (southern) rule, c. 350
-- **Shinshu** → **Shintomor** *(the wild fort)* — Kesh (desert) land under Meridian (southern) rule, c. 350
+- **Khirqe** → **Khirdemor** *(the sea home)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Hrafjysk** → **Hrademor** *(the river home)* — Auld (northern) land under Meridian (southern) rule, c. 174
+- **Ghashkai** → **Ghashlamor** *(the river hall)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Khirkai** → **Khirlamor** *(the sea hall)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Ghashmakh** → **Ghashciamor** *(the river gate)* — Kesh (desert) land under Meridian (southern) rule, c. 369
+- **Shinshu** → **Shintomor** *(the wild fort)* — Kesh (desert) land under Meridian (southern) rule, c. 374
 
 ## Faiths
 
@@ -311,9 +311,9 @@ Followed across 11 region(s).
 | Mishqe | 100 | 4 | 175 | 0 | extinct |
 | Lossobinte | 100 | 3 | 100 | 2 | diminished |
 | Tenameonte | 100 | 2 | 100 | 2 | ascendant |
-| Fjeiskastall | 950 | 2 | 950 | 1 | diminished |
-| Lossona | 1000 | 2 | 1000 | 2 | ascendant |
-| Kheqshaa | 1050 | 2 | 1050 | 2 | ascendant |
+| Fjeiskastall | 957 | 2 | 957 | 1 | diminished |
+| Lossona | 1018 | 2 | 1018 | 2 | ascendant |
+| Kheqshaa | 1074 | 2 | 1074 | 2 | ascendant |
 
 ## The Chronicle of Caudente
 
@@ -325,15 +325,15 @@ Followed across 11 region(s).
 
 ### I. The First Banners, 100–300
 
-In the year 100, whatever Mishqe intended for Deodinte, Tariacaria had prepared for it twice over. The banners of Rauriacaria entered Khirkhajez, and what Mishqe had held it held no longer. That same year, these were the high years of Mishqe — its markets loud, its walls, for a while, unneeded. Deodinte fell to Rauriacaria soon after; Tariacaria's protest is preserved, and was ignored. And that was the whole of Tariacaria's ending — no siege worth the name, no song; a surrender and a seal.
+In the year 115, whatever Mishqe intended for Deodinte, Tariacaria had prepared for it twice over. The banners of Rauriacaria entered Khirkhajez, and what Mishqe had held it held no longer. Soon after, these were the high years of Mishqe — its markets loud, its walls, for a while, unneeded. Deodinte fell to Rauriacaria soon after; Tariacaria's protest is preserved, and was ignored.
 
-In 125, Deodinte rose against Rauriacaria, and out of the rising was proclaimed the free realm of Rauriameonte. Rauriacaria took Deodinte within the year, and the southern realm of Rauriameonte could do little but record the loss. With that, the realm of Rauriameonte was extinguished; its name passes from the roll of the powers.
+145: so ended Tariacaria, whose banners had flown for 45 years. Deodinte rose against Rauriacaria, and out of the rising was proclaimed the free realm of Rauriameonte. Rauriacaria took Deodinte within the year, and the southern realm of Rauriameonte could do little but record the loss. Close on that, the realm of Rauriameonte was extinguished; its name passes from the roll of the powers.
 
-In the year 150, the people of Deodinte drove out Rauriacaria's governors and took for themselves the name Mantebinte. Deodinte fell to Rauriacaria soon after; Mantebinte's protest is preserved, and was ignored. It was the end of Mantebinte: 25 years of banners, done in a single season.
+In the year 174, word came from Deodinte that it would be governed from within: thus Mantebinte, born in a single furious season. Within the year, there was no halting Rauriacaria that season: Deodinte fell to it while Mantebinte looked on. And that was the whole of Mantebinte's ending — no siege worth the name, no song; a surrender and a seal.
 
-175: Mishqe seized Brahrei from Lossobinte, and the border stones were moved in the night. That same year, Qidkaqe had its great noon: roads mended, songs written, taxes very nearly forgiven. Rauriacaria moved against Khirshaa, but Mishqe threw the invaders back over the border. And in that year too, Mishqe came for Khirkhajez and left without it; the war songs on both sides insist otherwise.
+About the year 199, the matter of Brahrei was settled with spears — Mishqe kept the province, Lossobinte the grievance. Qidkaqe had its great noon: roads mended, songs written, taxes very nearly forgiven. Mishqe held Khirshaa against Rauriacaria, whose army went home leaner and wiser. Mishqe moved against Khirkhajez, but Rauriacaria threw the invaders back over the border.
 
-About the year 250, Khirshaa held — Mishqe met Rauriacaria at the border and sent it back the way it came. These were the high years of Qidkaqe — its markets loud, its walls, for a while, unneeded. Before long, the assault Mishqe loosed upon Khirkhajez broke against Rauriacaria's spears and came to nothing.
+The year 260 opened with trouble: Rauriacaria came for Khirshaa and left without it; the war songs on both sides insist otherwise. Hard on its heels, for a while everything Qidkaqe touched came back gold; even its rivals banked in its coin. A generation on, Rauriacaria held Khirkhajez against Mishqe, whose army went home leaner and wiser.
 
 The map grew fuller meanwhile: 5 new settlements took root, Deolamor first among them.
 
@@ -341,53 +341,49 @@ Conquest re-said the very map: Khirqe became Khirdemor on its new masters' tongu
 
 ### II. The Contested Years, 300–500
 
-In 300, what had once broken against Khirshaa's defences now carried them: Rauriacaria took the province, and Mishqe's pride with it. The matter of Beossodinte was settled with spears — Qidkaqe kept the province, Mishqe the grievance. It was within the year that Caudente crossed into Brahrei, and it did not cross back; Mishqe redrew its maps. The same year, word came from Beossodinte that it would be governed from within: thus Tenademor, born in a single furious season.
+In 322, what had once broken against Khirshaa's defences now carried them: Rauriacaria took the province, and Mishqe's pride with it. Beossodinte passed by force from Mishqe to Qidkaqe; the tax rolls were rewritten before the dead were counted. Soon after, Mishqe lost Brahrei to Caudente, and the harvest went with it. Before long, the garrison of Beossodinte woke to new flags — Tenademor had declared itself overnight, and made it stick.
 
-In 375, Tenademor lost Beossodinte to Rauriacaria, and the harvest went with it. And that was the whole of Tenademor's ending — no siege worth the name, no song; a surrender and a seal. Caudente crossed into Mairghen at first thaw; Mishqe spent the summer pretending it could be undone. It was the end of Mishqe: 275 years of banners, done in a single season. So much for the work of a generation.
+In 385, Beossodinte passed by force from Tenademor to Rauriacaria; the tax rolls were rewritten before the dead were counted. Within the year, so ended Tenademor, whose banners had flown for 28 years. Close on that, the banners of Caudente entered Mairghen, and what Mishqe had held it held no longer. Hard on its heels, of Mishqe nothing more is written. So much for the work of a generation.
 
-In the year 375, Rauriacaria had its great noon: roads mended, songs written, taxes very nearly forgiven. Midkhajez held — Qidkaqe met Rauriacaria at the border and sent it back the way it came. Before long, Caudente taxed Mairghen once too often; the realm of Rairshaa was the receipt.
+In the year 397, these were the high years of Rauriacaria — its markets loud, its walls, for a while, unneeded. In the years that followed, Midkhajez held — Qidkaqe met Rauriacaria at the border and sent it back the way it came. When a generation had passed, the people of Mairghen drove out Caudente's governors and took for themselves the name Rairshaa. The wells of Midghen gave dust, and the river shrank to an argument.
 
-The year 425 opened with trouble: no rain came to Midghen for two years together; many perished. For a while everything Qidkaqe touched came back gold; even its rivals banked in its coin. Mairghen fell to Rauriacaria soon after; Rairshaa's protest is preserved, and was ignored. With that, the realm of Rairshaa was extinguished; its name passes from the roll of the powers.
+About the year 449, Qidkaqe had its great noon: roads mended, songs written, taxes very nearly forgiven. Close on that, Rauriacaria seized Mairghen from Rairshaa, and the border stones were moved in the night. Soon after, the realm of Rairshaa was extinguished; its name passes from the roll of the powers. Before long, word came from Mairghen that it would be governed from within: thus Kaartaitan, born in a single furious season.
 
-In 450, the people of Mairghen drove out Rauriacaria's governors and took for themselves the name Kaartaitan. Before long, the appetite of Caudente was becoming proverbial: Mairghen this time, and Kaartaitan unable to answer. And that was the whole of Kaartaitan's ending — no siege worth the name, no song; a surrender and a seal.
-
-In 475, word came from Mairghen that it would be governed from within: thus Qidkataitan, born in a single furious season. The land keeps no grudges; men keep enough for both.
+In the year 498, the appetite of Caudente was becoming proverbial: Mairghen this time, and Kaartaitan unable to answer. With that, the realm of Kaartaitan was extinguished; its name passes from the roll of the powers. Nor was that all: the people of Mairghen drove out Caudente's governors and took for themselves the name Qidkataitan. The land keeps no grudges; men keep enough for both.
 
 All the while the land was filling: 6 settlements were raised in these years, Ghashmakh and Khirghekh among them.
 
 The occupiers kept the land-words and changed the rest, and so Ghashmakh is written Ghashciamor in every ledger since — and 1 other name with it.
 
-### III. The Age of Blood and Banners, 500–700
+### III. The Age of Iron, 500–700
 
-In 500, it was Caudente's year: Mairghen was taken from Qidkataitan before the passes closed. It was the end of Qidkataitan: 25 years of banners, done in a single season. What had once broken against Midkhajez's defences now carried them: Rauriacaria took the province, and Qidkaqe's pride with it. Write the names while they are still names.
+In 510, it was Caudente's year: Mairghen was taken from Qidkataitan before the passes closed. Within the year, so ended Qidkataitan, whose banners had flown for 16 years. A generation on, what had once broken against Midkhajez's defences now carried them: Rauriacaria took the province, and Qidkaqe's pride with it.
 
-The year 525 opened with trouble: the people of Mairghen drove out Caudente's governors and took for themselves the name Jataitan. Hard on its heels, Caudente, whose appetite grew with the eating, took Mairghen next. With that, the realm of Jataitan was extinguished; its name passes from the roll of the powers.
+In 546, word came from Mairghen that it would be governed from within: thus Jataitan, born in a single furious season. By 572, Caudente seized Mairghen from Jataitan, and the border stones were moved in the night. Of Jataitan nothing more is written. And in that year too, the garrison of Midkhajez woke to new flags — Jakaasi had declared itself overnight, and made it stick.
 
-In 550, word came from Midkhajez that it would be governed from within: thus Jakaasi, born in a single furious season. These were the high years of Qidkaqe — its markets loud, its walls, for a while, unneeded. It was within the year that Qidkaqe crossed into Midkhajez, and it did not cross back; Jakaasi redrew its maps. It was the end of Jakaasi: 25 years of banners, done in a single season.
+In 573, these were the high years of Qidkaqe — its markets loud, its walls, for a while, unneeded. Before long, Qidkaqe marched on Midkhajez, and by winter the province had fallen to it; the young desert realm of Jakaasi was the poorer. Close on that, the realm of Jakaasi was extinguished; its name passes from the roll of the powers.
 
-In 575, Caudente taxed Mairghen once too often; the realm of Qidkakaasi was the receipt. Close on that, Caudente seized Mairghen from Qidkakaasi, and the border stones were moved in the night. With that, the realm of Qidkakaasi was extinguished; its name passes from the roll of the powers. Soon after, Qidkaqe held Midkhajez against Rauriacaria, whose army went home leaner and wiser.
+In the year 599, Mairghen rose against Caudente, and out of the rising was proclaimed the free realm of Qidkakaasi. Before long, Caudente seized Mairghen from Qidkakaasi, and the border stones were moved in the night. It was the end of Qidkakaasi: 25 years of banners, done in a single season.
 
-625: the physicians of Midkhash tried everything; the gravediggers finished what was left. A generation on, Rauriacaria moved against Mairghen, but Caudente threw the invaders back over the border.
+In 631, whatever Rauriacaria intended for Midkhajez, Qidkaqe had prepared for it twice over. Hard on its heels, a pestilence swept Midkhash and carried off more than any war had. A generation on, Rauriacaria moved against Mairghen, but Caudente threw the invaders back over the border. Write the names while they are still names.
 
-These years also built more than they burned — 5 new settlements, of which Khirqe would become the best known.
+The map grew fuller meanwhile: 5 new settlements took root, Khirqe first among them.
 
-### IV. The Wars of the Marches, 700–900
+### IV. The Marching Years, 700–900
 
-The year 725 opened with trouble: Rauriacaria came for Mairghen and left without it; the war songs on both sides insist otherwise. And in that year too, the wells of Khirghen gave dust, and the river shrank to an argument. By 775, Qidkaqe held Midkhajez against Rauriacaria, whose army went home leaner and wiser. When a generation had passed, Rauriacaria came for Mairghen and left without it; the war songs on both sides insist otherwise.
+About the year 748, whatever Rauriacaria intended for Mairghen, Caudente had prepared for it twice over. In the same season, a great drought lay upon Khirghen; the rivers shrank and the wells soured. By 789, Rauriacaria moved against Midkhajez, but Qidkaqe threw the invaders back over the border. In the years that followed, Mairghen held — Caudente met Rauriacaria at the border and sent it back the way it came.
 
-About the year 875, Midkhajez held — Qidkaqe met Rauriacaria at the border and sent it back the way it came.
+The year 896 opened with trouble: Rauriacaria came for Midkhajez and left without it; the war songs on both sides insist otherwise.
 
 ### V. The Age of Blood and Banners, 900–1100
 
-The year 925 opened with trouble: the assault Rauriacaria loosed upon Midkhajez broke against Qidkaqe's spears and came to nothing. Before long, Caudente had grown past its own strength: Stagrdaurk and its neighbours broke away to found Fjeiskastall. Hard on its heels, Fjeiskastall lost Mairkhidku to Caudente, and the harvest went with it.
+In the year 930, Rauriacaria moved against Midkhajez, but Qidkaqe threw the invaders back over the border. When a generation had passed, too big to govern and too proud to shrink, Caudente watched Stagrdaurk walk away and become Fjeiskastall. A generation on, Caudente crossed into Mairkhidku at first thaw; Fjeiskastall spent the summer pretending it could be undone. Before long, Rauriacaria came for Mairghen and left without it; the war songs on both sides insist otherwise.
 
-975: Caudente held Mairghen against Rauriacaria, whose army went home leaner and wiser. The same year, the people of Mairkhidku drove out Caudente's governors and took for themselves the name Kheqkaasi. Soon after, the assault Caudente loosed upon Mairkhidku broke against Kheqkaasi's spears and came to nothing.
+About the year 998, Caudente taxed Mairkhidku once too often; the realm of Kheqkaasi was the receipt. The assault Caudente loosed upon Mairkhidku broke against Kheqkaasi's spears and came to nothing. Hard on its heels, Lossona left Rauriacaria the way grown children leave — with Beossodinte, and without asking. In the years that followed, Mairkhidku held — Kheqkaasi met Fjeiskastall at the border and sent it back the way it came.
 
-In the year 1000, the realm of Lossona was carved whole out of Rauriacaria's flank, with Beossodinte at its heart. Before long, Mairkhidku held — Kheqkaasi met Fjeiskastall at the border and sent it back the way it came. Rauriacaria had its great noon: roads mended, songs written, taxes very nearly forgiven.
+In 1048, not all was iron: a golden age dawned over Rauriacaria, and its cities flourished as never before. When a generation had passed, what had once broken against Mairkhidku's defences now carried them: Caudente took the province, and Kheqkaasi's pride with it. And that was the whole of Kheqkaasi's ending — no siege worth the name, no song; a surrender and a seal.
 
-In 1050, what had once broken against Mairkhidku's defences now carried them: Caudente took the province, and Kheqkaasi's pride with it. And that was the whole of Kheqkaasi's ending — no siege worth the name, no song; a surrender and a seal. And in that year too, Rauriacaria came for Khirshaa and left without it; the war songs on both sides insist otherwise. Caudente had grown past its own strength: Mairghen and its neighbours broke away to found Kheqshaa.
-
-About the year 1050, a pestilence swept Peonapana and carried off more than any war had. Hard on its heels, Mairghen held — Kheqshaa met Lossona at the border and sent it back the way it came.
+About the year 1074, Rauriacaria came for Khirshaa and left without it; the war songs on both sides insist otherwise. Caudente had grown past its own strength: Mairghen and its neighbours broke away to found Kheqshaa. And in that year too, in Peonapana the bells rang without ceasing; a third of its people were laid in the ground. Within the year, Mairghen held — Kheqshaa met Lossona at the border and sent it back the way it came.
 
 *So the matter stands in 1100: 8 realms endure, and Qidkaqe is mightiest among them, holding 7 provinces. No town raised in these centuries has yet fallen — may the next chronicler write the same.*
 
@@ -397,79 +393,79 @@ About the year 1050, a pestilence swept Peonapana and carried off more than any 
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 after the Burning** — Mishqe's invasion of Deodinte was thrown back by Tariacaria.
-- **100 after the Burning** — Rauriacaria seized Khirkhajez from Mishqe.
-- **100 after the Burning** — A golden age dawned over Mishqe; its cities flourished as never before.
-- **125 after the Burning** — Rauriacaria seized Deodinte from Tariacaria.
-- **125 after the Burning** — The realm of Tariacaria was extinguished.
-- **125 after the Burning** — Deodinte rose against Rauriacaria and declared the free realm of Rauriameonte.
-- **150 after the Burning** — Rauriacaria seized Deodinte from Rauriameonte.
-- **150 after the Burning** — The realm of Rauriameonte was extinguished.
-- **150 after the Burning** — Deodinte rose against Rauriacaria and declared the free realm of Mantebinte.
-- **175 after the Burning** — Rauriacaria seized Deodinte from Mantebinte.
-- **175 after the Burning** — The realm of Mantebinte was extinguished.
-- **175 after the Burning** — Mishqe seized Brahrei from Lossobinte.
-- **175 after the Burning** — A golden age dawned over Qidkaqe; its cities flourished as never before.
-- **200 after the Burning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
-- **200 after the Burning** — Mishqe's invasion of Khirkhajez was thrown back by Rauriacaria.
-- **250 after the Burning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
-- **250 after the Burning** — A golden age dawned over Qidkaqe; its cities flourished as never before.
-- **275 after the Burning** — Mishqe's invasion of Khirkhajez was thrown back by Rauriacaria.
-- **300 after the Burning** — Rauriacaria seized Khirshaa from Mishqe.
-- **325 after the Burning** — Qidkaqe seized Beossodinte from Mishqe.
-- **350 after the Burning** — Caudente seized Brahrei from Mishqe.
-- **350 after the Burning** — Beossodinte rose against Qidkaqe and declared the free realm of Tenademor.
-- **375 after the Burning** — Rauriacaria seized Beossodinte from Tenademor.
-- **375 after the Burning** — The realm of Tenademor was extinguished.
-- **375 after the Burning** — Caudente seized Mairghen from Mishqe.
-- **375 after the Burning** — The realm of Mishqe was extinguished.
-- **375 after the Burning** — A golden age dawned over Rauriacaria; its cities flourished as never before.
-- **400 after the Burning** — Rauriacaria's invasion of Midkhajez was thrown back by Qidkaqe.
-- **425 after the Burning** — Mairghen rose against Caudente and declared the free realm of Rairshaa.
-- **425 after the Burning** — A long drought gripped Midghen; many perished.
-- **425 after the Burning** — A golden age dawned over Qidkaqe; its cities flourished as never before.
-- **450 after the Burning** — Rauriacaria seized Mairghen from Rairshaa.
-- **450 after the Burning** — The realm of Rairshaa was extinguished.
-- **450 after the Burning** — Mairghen rose against Rauriacaria and declared the free realm of Kaartaitan.
-- **475 after the Burning** — Caudente seized Mairghen from Kaartaitan.
-- **475 after the Burning** — The realm of Kaartaitan was extinguished.
-- **475 after the Burning** — Mairghen rose against Caudente and declared the free realm of Qidkataitan.
-- **500 after the Burning** — Caudente seized Mairghen from Qidkataitan.
-- **500 after the Burning** — The realm of Qidkataitan was extinguished.
-- **525 after the Burning** — Rauriacaria seized Midkhajez from Qidkaqe.
-- **525 after the Burning** — Mairghen rose against Caudente and declared the free realm of Jataitan.
-- **550 after the Burning** — Caudente seized Mairghen from Jataitan.
-- **550 after the Burning** — The realm of Jataitan was extinguished.
-- **550 after the Burning** — Midkhajez rose against Rauriacaria and declared the free realm of Jakaasi.
-- **550 after the Burning** — A golden age dawned over Qidkaqe; its cities flourished as never before.
-- **575 after the Burning** — Qidkaqe seized Midkhajez from Jakaasi.
-- **575 after the Burning** — The realm of Jakaasi was extinguished.
-- **575 after the Burning** — Mairghen rose against Caudente and declared the free realm of Qidkakaasi.
-- **600 after the Burning** — Caudente seized Mairghen from Qidkakaasi.
-- **600 after the Burning** — The realm of Qidkakaasi was extinguished.
-- **625 after the Burning** — Rauriacaria's invasion of Midkhajez was thrown back by Qidkaqe.
-- **625 after the Burning** — A plague swept Midkhash; many perished.
-- **675 after the Burning** — Rauriacaria's invasion of Mairghen was thrown back by Caudente.
-- **725 after the Burning** — Rauriacaria's invasion of Mairghen was thrown back by Caudente.
-- **725 after the Burning** — A long drought gripped Khirghen; many perished.
-- **775 after the Burning** — Rauriacaria's invasion of Midkhajez was thrown back by Qidkaqe.
-- **825 after the Burning** — Rauriacaria's invasion of Mairghen was thrown back by Caudente.
-- **875 after the Burning** — Rauriacaria's invasion of Midkhajez was thrown back by Qidkaqe.
-- **925 after the Burning** — Rauriacaria's invasion of Midkhajez was thrown back by Qidkaqe.
-- **950 after the Burning** — Stagrdaurk and 1 neighbouring province(s) broke away from Caudente to found the realm of Fjeiskastall.
-- **975 after the Burning** — Caudente seized Mairkhidku from Fjeiskastall.
-- **975 after the Burning** — Rauriacaria's invasion of Mairghen was thrown back by Caudente.
-- **975 after the Burning** — Mairkhidku rose against Caudente and declared the free realm of Kheqkaasi.
-- **1000 after the Burning** — Caudente's invasion of Mairkhidku was thrown back by Kheqkaasi.
-- **1000 after the Burning** — Beossodinte and 1 neighbouring province(s) broke away from Rauriacaria to found the realm of Lossona.
-- **1025 after the Burning** — Fjeiskastall's invasion of Mairkhidku was thrown back by Kheqkaasi.
-- **1025 after the Burning** — A golden age dawned over Rauriacaria; its cities flourished as never before.
-- **1050 after the Burning** — Caudente seized Mairkhidku from Kheqkaasi.
-- **1050 after the Burning** — The realm of Kheqkaasi was extinguished.
-- **1050 after the Burning** — Rauriacaria's invasion of Khirshaa was thrown back by Lossona.
-- **1050 after the Burning** — Mairghen and 1 neighbouring province(s) broke away from Caudente to found the realm of Kheqshaa.
-- **1050 after the Burning** — A plague swept Peonapana; many perished.
-- **1075 after the Burning** — Lossona's invasion of Mairghen was thrown back by Kheqshaa.
+- **115 after the Burning** — Mishqe's invasion of Deodinte was thrown back by Tariacaria.
+- **116 after the Burning** — Rauriacaria seized Khirkhajez from Mishqe.
+- **120 after the Burning** — A golden age dawned over Mishqe; its cities flourished as never before.
+- **143 after the Burning** — Rauriacaria seized Deodinte from Tariacaria.
+- **145 after the Burning** — The realm of Tariacaria was extinguished.
+- **147 after the Burning** — Deodinte rose against Rauriacaria and declared the free realm of Rauriameonte.
+- **152 after the Burning** — Rauriacaria seized Deodinte from Rauriameonte.
+- **160 after the Burning** — The realm of Rauriameonte was extinguished.
+- **174 after the Burning** — Deodinte rose against Rauriacaria and declared the free realm of Mantebinte.
+- **199 after the Burning** — Rauriacaria seized Deodinte from Mantebinte.
+- **199 after the Burning** — The realm of Mantebinte was extinguished.
+- **199 after the Burning** — Mishqe seized Brahrei from Lossobinte.
+- **199 after the Burning** — A golden age dawned over Qidkaqe; its cities flourished as never before.
+- **203 after the Burning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
+- **222 after the Burning** — Mishqe's invasion of Khirkhajez was thrown back by Rauriacaria.
+- **260 after the Burning** — Rauriacaria's invasion of Khirshaa was thrown back by Mishqe.
+- **266 after the Burning** — A golden age dawned over Qidkaqe; its cities flourished as never before.
+- **293 after the Burning** — Mishqe's invasion of Khirkhajez was thrown back by Rauriacaria.
+- **322 after the Burning** — Rauriacaria seized Khirshaa from Mishqe.
+- **347 after the Burning** — Qidkaqe seized Beossodinte from Mishqe.
+- **351 after the Burning** — Caudente seized Brahrei from Mishqe.
+- **358 after the Burning** — Beossodinte rose against Qidkaqe and declared the free realm of Tenademor.
+- **385 after the Burning** — Rauriacaria seized Beossodinte from Tenademor.
+- **386 after the Burning** — The realm of Tenademor was extinguished.
+- **389 after the Burning** — Caudente seized Mairghen from Mishqe.
+- **397 after the Burning** — The realm of Mishqe was extinguished.
+- **397 after the Burning** — A golden age dawned over Rauriacaria; its cities flourished as never before.
+- **423 after the Burning** — Rauriacaria's invasion of Midkhajez was thrown back by Qidkaqe.
+- **449 after the Burning** — Mairghen rose against Caudente and declared the free realm of Rairshaa.
+- **449 after the Burning** — A long drought gripped Midghen; many perished.
+- **449 after the Burning** — A golden age dawned over Qidkaqe; its cities flourished as never before.
+- **452 after the Burning** — Rauriacaria seized Mairghen from Rairshaa.
+- **453 after the Burning** — The realm of Rairshaa was extinguished.
+- **466 after the Burning** — Mairghen rose against Rauriacaria and declared the free realm of Kaartaitan.
+- **498 after the Burning** — Caudente seized Mairghen from Kaartaitan.
+- **498 after the Burning** — The realm of Kaartaitan was extinguished.
+- **498 after the Burning** — Mairghen rose against Caudente and declared the free realm of Qidkataitan.
+- **510 after the Burning** — Caudente seized Mairghen from Qidkataitan.
+- **514 after the Burning** — The realm of Qidkataitan was extinguished.
+- **543 after the Burning** — Rauriacaria seized Midkhajez from Qidkaqe.
+- **546 after the Burning** — Mairghen rose against Caudente and declared the free realm of Jataitan.
+- **572 after the Burning** — Caudente seized Mairghen from Jataitan.
+- **573 after the Burning** — The realm of Jataitan was extinguished.
+- **573 after the Burning** — Midkhajez rose against Rauriacaria and declared the free realm of Jakaasi.
+- **573 after the Burning** — A golden age dawned over Qidkaqe; its cities flourished as never before.
+- **586 after the Burning** — Qidkaqe seized Midkhajez from Jakaasi.
+- **599 after the Burning** — The realm of Jakaasi was extinguished.
+- **599 after the Burning** — Mairghen rose against Caudente and declared the free realm of Qidkakaasi.
+- **624 after the Burning** — Caudente seized Mairghen from Qidkakaasi.
+- **624 after the Burning** — The realm of Qidkakaasi was extinguished.
+- **631 after the Burning** — Rauriacaria's invasion of Midkhajez was thrown back by Qidkaqe.
+- **633 after the Burning** — A plague swept Midkhash; many perished.
+- **682 after the Burning** — Rauriacaria's invasion of Mairghen was thrown back by Caudente.
+- **748 after the Burning** — Rauriacaria's invasion of Mairghen was thrown back by Caudente.
+- **748 after the Burning** — A long drought gripped Khirghen; many perished.
+- **789 after the Burning** — Rauriacaria's invasion of Midkhajez was thrown back by Qidkaqe.
+- **838 after the Burning** — Rauriacaria's invasion of Mairghen was thrown back by Caudente.
+- **896 after the Burning** — Rauriacaria's invasion of Midkhajez was thrown back by Qidkaqe.
+- **930 after the Burning** — Rauriacaria's invasion of Midkhajez was thrown back by Qidkaqe.
+- **957 after the Burning** — Stagrdaurk and 1 neighbouring province(s) broke away from Caudente to found the realm of Fjeiskastall.
+- **995 after the Burning** — Caudente seized Mairkhidku from Fjeiskastall.
+- **997 after the Burning** — Rauriacaria's invasion of Mairghen was thrown back by Caudente.
+- **998 after the Burning** — Mairkhidku rose against Caudente and declared the free realm of Kheqkaasi.
+- **1003 after the Burning** — Caudente's invasion of Mairkhidku was thrown back by Kheqkaasi.
+- **1018 after the Burning** — Beossodinte and 1 neighbouring province(s) broke away from Rauriacaria to found the realm of Lossona.
+- **1046 after the Burning** — Fjeiskastall's invasion of Mairkhidku was thrown back by Kheqkaasi.
+- **1048 after the Burning** — A golden age dawned over Rauriacaria; its cities flourished as never before.
+- **1074 after the Burning** — Caudente seized Mairkhidku from Kheqkaasi.
+- **1074 after the Burning** — The realm of Kheqkaasi was extinguished.
+- **1074 after the Burning** — Rauriacaria's invasion of Khirshaa was thrown back by Lossona.
+- **1074 after the Burning** — Mairghen and 1 neighbouring province(s) broke away from Caudente to found the realm of Kheqshaa.
+- **1074 after the Burning** — A plague swept Peonapana; many perished.
+- **1093 after the Burning** — Lossona's invasion of Mairghen was thrown back by Kheqshaa.
 
 ## A Traveller's Account, in the year 1100
 

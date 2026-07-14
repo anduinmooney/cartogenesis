@@ -19,6 +19,7 @@ import { worldReportMarkdown } from "./engine/report.js";
 import { worldPosterSVG } from "./engine/svgmap.js";
 import { pickContourInterval, renderRegions, regionColor } from "./engine/render.js";
                                                       
+import { generateCityPlan, PLAN,                    } from "./engine/cityplan.js";
 import {
   containsPlace,
   placePattern,
@@ -739,16 +740,146 @@ function showTip(clientX        , clientY        )       {
   tip.style.top = `${Math.max(4, top)}px`;
 }
 
+// --- L19: the town plans. Click a town (or a ruin) and descend to its
+// streets — every stone derived from facts the generator already decided.
+
+function cityPlanInput(world       )                {
+  return {
+    water: world.water,
+    rivers: world.rivers,
+    regions: world.regions,
+    settlements: world.settlements.settlements,
+    roads: world.roads,
+    simulation: world.simulation,
+    economy: world.economy,
+    religion: world.religion,
+    lore: world.lore,
+    history: world.history,
+    meta: {
+      seed: world.meta.seed,
+      width: world.elevation.width,
+      presentYear: world.meta.presentYear,
+    },
+  };
+}
+
+/** The engraver's inks for each plan cell, in the folio's palette. */
+const PLAN_INK                         = {
+  [PLAN.Field]: "#e3d8bd",
+  [PLAN.Street]: "#f0e7d1",
+  [PLAN.Building]: "#94826a",
+  [PLAN.Wall]: "#2b2117",
+  [PLAN.Gate]: "#7d2c23",
+  [PLAN.Water]: "#93aab4",
+  [PLAN.Quay]: "#b3925d",
+  [PLAN.Market]: "#f5edd9",
+  [PLAN.Temple]: "#7d2c23",
+  [PLAN.Keep]: "#4d4032",
+  [PLAN.Green]: "#aab58c",
+  [PLAN.Rubble]: "#c4b493",
+  [PLAN.Bridge]: "#b3925d",
+  [PLAN.River]: "#93aab4",
+};
+
+function openPlan(settlementId        )       {
+  if (!current) return;
+  const plan = generateCityPlan(cityPlanInput(current), settlementId);
+  if (!plan) return;
+  $("plan-title").textContent = plan.title;
+  $("plan-facts").innerHTML = plan.facts
+    .map((f) => `<p>${escapeHtml(f)}</p>`)
+    .join("");
+
+  const cv = $("plancanvas")                     ;
+  const scale = 8;
+  cv.width = plan.width * scale;
+  cv.height = plan.height * scale;
+  const g = cv.getContext("2d") ;
+  for (let y = 0; y < plan.height; y++) {
+    for (let x = 0; x < plan.width; x++) {
+      const c = plan.cells[y * plan.width + x];
+      g.fillStyle = PLAN_INK[c] ?? "#e3d8bd";
+      g.fillRect(x * scale, y * scale, scale, scale);
+      // A second tone gives buildings and rubble an engraved grain.
+      if (c === PLAN.Building && (x * 7 + y * 13) % 4 === 0) {
+        g.fillStyle = "#87755d";
+        g.fillRect(x * scale, y * scale, scale, scale);
+      } else if (c === PLAN.Rubble && (x * 5 + y * 11) % 5 === 0) {
+        g.fillStyle = "#8d7c62";
+        g.fillRect(x * scale + 2, y * scale + 2, scale - 4, scale - 4);
+      }
+    }
+  }
+  // Labels: landmarks in ink with a paper halo; districts in italic.
+  const label = (text        , x        , y        , italic         , size        ) => {
+    g.font = `${italic ? "italic " : ""}600 ${size}px Georgia, serif`;
+    g.textAlign = "center";
+    g.textBaseline = "middle";
+    g.lineWidth = 4;
+    g.lineJoin = "round";
+    g.strokeStyle = "rgba(240, 231, 209, 0.9)";
+    g.strokeText(text, x * scale, y * scale);
+    g.fillStyle = italic ? "#6b5b45" : "#2b2117";
+    g.fillText(text, x * scale, y * scale);
+  };
+  for (const d of plan.districts) label(d.name, d.x, d.y, true, 15);
+  for (const l of plan.landmarks) {
+    if (l.kind === "market" || l.kind === "gate") continue; // legend carries these
+    label(l.name, l.x, l.y - 2.2, false, 14);
+  }
+
+  $("plan-legend").innerHTML = [...plan.landmarks, ...plan.districts.map((d) => ({
+    kind: "district"         ,
+    name: d.name,
+    note: d.note,
+  }))]
+    .map(
+      (l) =>
+        `<li><b>${escapeHtml(l.name)}</b> <span class="gl">— ${escapeHtml(l.note)}</span></li>`,
+    )
+    .join("");
+  if (currentEntities) linkifyPlaces($("plan-legend"), currentEntities);
+
+  $("planovl").hidden = false;
+}
+
+/** The nearest FALLEN town to a world point — so ruins are clickable too. */
+function nearestRuin(wx        , wy        , maxCells        ) {
+  if (!current) return null;
+  let best = null                                                                 ;
+  let bestD = maxCells * maxCells;
+  for (const t of current.simulation.settlementTimeline) {
+    if (t.fellYear === undefined) continue;
+    const dd = (t.x - wx) * (t.x - wx) + (t.y - wy) * (t.y - wy);
+    if (dd < bestD) {
+      bestD = dd;
+      best = t;
+    }
+  }
+  return best;
+}
+
 function pinDetail(clientX        , clientY        )       {
   const world = clientToWorld(clientX, clientY);
   const info = inspect(world.x, world.y);
   const detail = $("detail");
-  if (!info || (info.isOcean && !info.settlement)) {
+  // A fallen town has no living marker, but its ground remembers: clicking
+  // near a ruin shows what stood there — and the plan of what remains.
+  const ruin = info?.settlement ? null : nearestRuin(world.x, world.y, 4);
+  if (!info || (info.isOcean && !info.settlement && !ruin)) {
     detail.hidden = true;
     return;
   }
   const parts           = [`<span class="dclose" title="dismiss">✕</span>`];
-  if (info.settlement) {
+  if (ruin) {
+    parts.push(`<div class="dh">${ruin.name} <span class="drow">— a ruin</span></div>`);
+    parts.push(
+      `<div class="drow">${ruin.fate === "sacked" ? "stormed" : "abandoned"} in ${ruin.fellYear} ${current .history.calendar.suffix} · founded ${ruin.foundedYear}</div>`,
+    );
+    parts.push(
+      `<div class="drow"><span class="planlink" data-plan="${ruin.id}">⌖ the plan of what remains</span></div>`,
+    );
+  } else if (info.settlement) {
     const s = info.settlement;
     parts.push(`<div class="dh">${s.name}</div>`);
     parts.push(`<div class="dgloss">${glossPhrase(s.gloss)}</div>`);
@@ -775,6 +906,9 @@ function pinDetail(clientX        , clientY        )       {
         `<div class="drow">produces ${eco.produces.map((k) => RESOURCE_NAMES[k]).join(", ")}</div>`,
       );
     }
+    parts.push(
+      `<div class="drow"><span class="planlink" data-plan="${s.id}">⌖ the plan of the ${s.isCapital ? "capital" : s.tier}</span></div>`,
+    );
   } else if (info.region) {
     const r = info.region;
     parts.push(`<div class="dh">${r.name}</div>`);
@@ -795,6 +929,10 @@ function pinDetail(clientX        , clientY        )       {
   (detail.querySelector(".dclose")               ).addEventListener("click", () => {
     detail.hidden = true;
   });
+  const link = detail.querySelector(".planlink")                      ;
+  if (link) {
+    link.addEventListener("click", () => openPlan(Number(link.getAttribute("data-plan"))));
+  }
 }
 
 // --- Pointer interaction ---
@@ -880,25 +1018,29 @@ function renderInfo(world       )       {
   $("worldsub").textContent = `seed "${m.seed}" · ${m.width}×${m.height} · fingerprint ${m.contentHash}`;
   $("detail").hidden = true;
 
-  const stats                          = [
-    ["Land", `${(m.landFraction * 100).toFixed(0)}%`],
-    ["Highest peak", `${m.highestPeakMetres.toLocaleString()} m`],
-    ["Volcanoes", `${m.volcanoCount} (${m.activeVolcanoes} active)`],
-    ["Regions", String(m.regionCount)],
-    ["Settlements", String(m.settlementCount)],
-    ["Realms risen", String(m.realmCount)],
-    ["Biomes", String(m.biomeDiversity)],
-    ["Capital", m.capital],
-    ["Ruling house", m.capitalHouse],
-    ["Faiths", String(m.faithCount)],
-    ["Dominant power", m.dominantPower],
-    ["Surviving realms", String(m.survivingRealms)],
-    ["Ruins", String(m.ruinCount)],
-    ["Exports", m.majorExports || "—"],
-  ];
-  $("stats").innerHTML = stats
-    .map(([k, v]) => `<div><span>${k}</span><b>${v}</b></div>`)
-    .join("");
+  // The dossier reads as a surveyor's summary, not a spreadsheet — every
+  // number is real, and the sentences are assembled from the world's facts.
+  const land = Math.round(m.landFraction * 100);
+  const dossier           = [];
+  dossier.push(
+    `A world <b>${land}%</b> land, rising to <b>${m.highestPeakMetres.toLocaleString()} m</b>, ` +
+      `with <b>${m.volcanoCount}</b> volcano${m.volcanoCount === 1 ? "" : "es"}` +
+      `${m.activeVolcanoes > 0 ? ` — <b>${m.activeVolcanoes}</b> still restless` : ", all quiet"}.`,
+  );
+  dossier.push(
+    `Its people hold <b>${m.regionCount}</b> provinces and <b>${m.settlementCount}</b> towns; ` +
+      `<b>${m.realmCount}</b> realms rose over the centuries and <b>${m.survivingRealms}</b> stand today, ` +
+      `<b>${m.dominantPower}</b> the greatest among them.`,
+  );
+  dossier.push(
+    `The capital is <b>${m.capital}</b>, seat of House <b>${m.capitalHouse}</b>; ` +
+      `<b>${m.faithCount}</b> faiths keep their gods` +
+      `${m.ruinCount > 0 ? `, and <b>${m.ruinCount}</b> town${m.ruinCount === 1 ? " lies" : "s lie"} in ruins` : ""}.`,
+  );
+  if (m.majorExports) {
+    dossier.push(`Its markets move ${m.majorExports.toLowerCase()}.`);
+  }
+  $("stats").innerHTML = dossier.map((p) => `<p>${p}</p>`).join("");
 
   $("features").innerHTML = world.history.features
     .map((f) => {
@@ -927,6 +1069,7 @@ function renderInfo(world       )       {
   currentEntities = entityIndex(world);
   linkifyPlaces($("chronicle"), currentEntities);
   linkifyPlaces($("features"), currentEntities);
+  linkifyPlaces($("stats"), currentEntities); // the dossier's names are live too
 }
 
 /** A legend keyed to the active thematic layer (resources / biomes / faiths). */
@@ -1204,6 +1347,13 @@ function init()       {
       eventPin = { x, y, year: Number(year.replace(/,/g, "")) || 0, text: text.slice(0, 46) + (text.length > 46 ? "…" : "") };
       flyTo(x, y);
     }
+  });
+
+  $("plan-close").addEventListener("click", () => {
+    $("planovl").hidden = true;
+  });
+  $("planovl").addEventListener("click", (e) => {
+    if (e.target === $("planovl")) $("planovl").hidden = true;
   });
 
   wireGazetteer();

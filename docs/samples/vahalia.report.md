@@ -185,21 +185,21 @@
 
 *Settlements that did not survive to the present day.*
 
-- **Ghashkai** (village) — founded 425, stormed and left a ruin in 800
+- **Ghashkai** (village) — founded 425, stormed and left a ruin in 823
 
 ## Names remade by conquest
 
 *Where a foreign power held a land long enough, its towns took new names — the old land-word kept, the settlement re-said in the ruler's tongue.*
 
-- **Khirkai** → **Khirtomor** *(the sea fort)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Ghashzaa** → **Ghashathu** *(the river fort)* — Kesh (desert) land under Auld (northern) rule, c. 150
-- **Midqe** → **Midund** *(the grass haven)* — Kesh (desert) land under Auld (northern) rule, c. 150
-- **Knyrkathu** → **Knyrkashu** *(the wild fort)* — Auld (northern) land under Kesh (desert) rule, c. 150
-- **Ghashkai** → **Ghashliria** *(the river haven)* — Kesh (desert) land under Meridian (southern) rule, c. 150
-- **Bellatelen** → **Bellahro** *(the river hall)* — Meridian (southern) land under Auld (northern) rule, c. 350
-- **Deociamor** → **Deothu** *(the sea fort)* — Meridian (southern) land under Auld (northern) rule, c. 450
-- **Fjangry** → **Fjanqe** *(the field home)* — Auld (northern) land under Kesh (desert) rule, c. 1025
-- **Hrathu** → **Hrashu** *(the river fort)* — Auld (northern) land under Kesh (desert) rule, c. 1025
+- **Khirkai** → **Khirtomor** *(the sea fort)* — Kesh (desert) land under Meridian (southern) rule, c. 173
+- **Ghashzaa** → **Ghashathu** *(the river fort)* — Kesh (desert) land under Auld (northern) rule, c. 173
+- **Midqe** → **Midund** *(the grass haven)* — Kesh (desert) land under Auld (northern) rule, c. 174
+- **Knyrkathu** → **Knyrkashu** *(the wild fort)* — Auld (northern) land under Kesh (desert) rule, c. 174
+- **Ghashkai** → **Ghashliria** *(the river haven)* — Kesh (desert) land under Meridian (southern) rule, c. 174
+- **Bellatelen** → **Bellahro** *(the river hall)* — Meridian (southern) land under Auld (northern) rule, c. 369
+- **Deociamor** → **Deothu** *(the sea fort)* — Meridian (southern) land under Auld (northern) rule, c. 470
+- **Fjangry** → **Fjanqe** *(the field home)* — Auld (northern) land under Kesh (desert) rule, c. 1048
+- **Hrathu** → **Hrashu** *(the river fort)* — Auld (northern) land under Kesh (desert) rule, c. 1049
 
 ## Faiths
 
@@ -345,14 +345,14 @@ Followed across 2 region(s).
 | Knauskastall | 100 | 5 | 100 | 0 | extinct |
 | Mantebinte | 100 | 3 | 100 | 0 | extinct |
 | Caudemor | 100 | 3 | 100 | 0 | extinct |
-| Kaarshaa | 325 | 2 | 325 | 0 | extinct |
-| Qidkaghen | 400 | 2 | 400 | 0 | extinct |
-| Storkaskei | 425 | 2 | 425 | 0 | extinct |
-| Juqe | 500 | 2 | 500 | 0 | extinct |
-| Tariadente | 550 | 2 | 550 | 0 | extinct |
-| Kaarshaa | 875 | 2 | 875 | 0 | extinct |
+| Kaarshaa | 348 | 2 | 348 | 0 | extinct |
+| Qidkaghen | 423 | 2 | 423 | 0 | extinct |
+| Storkaskei | 449 | 2 | 449 | 0 | extinct |
+| Juqe | 523 | 2 | 523 | 0 | extinct |
+| Tariadente | 570 | 2 | 570 | 0 | extinct |
+| Kaarshaa | 888 | 2 | 888 | 0 | extinct |
 | Lossomeonte | 100 | 1 | 100 | 1 | ascendant |
-| Jashaa | 1050 | 1 | 1050 | 1 | ascendant |
+| Jashaa | 1072 | 1 | 1072 | 1 | ascendant |
 
 ## The Chronicle of Kheqshaa
 
@@ -364,15 +364,17 @@ Followed across 2 region(s).
 
 ### I. The Age of Foundations, 100–300
 
-100: Jararer held — Caudemor met Kheqshaa at the border and sent it back the way it came. The physicians of Stagrba tried everything; the gravediggers finished what was left. Hard on its heels, the assault Vynskei loosed upon Brabry broke against Caudemor's spears and came to nothing. It was soon after that Kheqshaa crossed into Midghen, and it did not cross back; Jakaasi redrew its maps. It was the end of Jakaasi: 50 years of banners, done in a single season.
+123: Jararer held — Caudemor met Kheqshaa at the border and sent it back the way it came. The physicians of Stagrba tried everything; the gravediggers finished what was left. Hard on its heels, the assault Vynskei loosed upon Brabry broke against Caudemor's spears and came to nothing. In the years that followed, Kheqshaa marched on Midghen, and by winter the province had fallen to it; the desert realm of Jakaasi was the poorer.
 
-The year 150 opened with trouble: Rairkaasi came for Stagraknaurk and left without it; the war songs on both sides insist otherwise. Close on that, Vynskei moved against Brabry, but Caudemor threw the invaders back over the border. Sickness walked through Deodoria and was not particular. Soon after, the assault Kheqshaa loosed upon Jararer broke against Caudemor's spears and came to nothing.
+In the year 169, so ended Jakaasi, whose banners had flown for 69 years. Rairkaasi came for Stagraknaurk and left without it; the war songs on both sides insist otherwise. Within the year, whatever Vynskei intended for Brabry, Caudemor had prepared for it twice over.
 
-About the year 200, Khirkhidku held — Mantebinte met Rairkaasi at the border and sent it back the way it came. The same year, for a while everything Mantebinte touched came back gold; even its rivals banked in its coin. Before long, Vynskei came for Brabry and left without it; the war songs on both sides insist otherwise. Soon after, what had once broken against Jararer's defences now carried them: Kheqshaa took the province, and Caudemor's pride with it.
+In 196, sickness walked through Deodoria and was not particular. Close on that, the assault Kheqshaa loosed upon Jararer broke against Caudemor's spears and came to nothing. Hard on its heels, Khirkhidku held — Mantebinte met Rairkaasi at the border and sent it back the way it came. The same year, for a while everything Mantebinte touched came back gold; even its rivals banked in its coin.
 
-The year 250 opened with trouble: a pestilence swept Khirkhajez and carried off more than any war had. Before long, what had once broken against Brabry's defences now carried them: Vynskei took the province, and Caudemor's pride with it. That same year, Knauskastall held Khirmid against Kheqshaa, whose army went home leaner and wiser.
+In the year 238, Vynskei came for Brabry and left without it; the war songs on both sides insist otherwise. Soon after, what had once broken against Jararer's defences now carried them: Kheqshaa took the province, and Caudemor's pride with it. Within the year, a pestilence swept Khirkhajez and carried off more than any war had.
 
-In 275, Jararer rose against Kheqshaa, and out of the rising was proclaimed the free realm of Qidkamaad. In the same season, in Beossolaria the bells rang without ceasing; a third of its people were laid in the ground.
+In 296, what had once broken against Brabry's defences now carried them: Vynskei took the province, and Caudemor's pride with it. Soon after, Knauskastall held Khirmid against Kheqshaa, whose army went home leaner and wiser. Before long, Jararer rose against Kheqshaa, and out of the rising was proclaimed the free realm of Qidkamaad.
+
+In the year 298, in Beossolaria the bells rang without ceasing; a third of its people were laid in the ground.
 
 All the while the land was filling: 7 settlements were raised in these years, Fjangry and Khirghekh among them.
 
@@ -380,79 +382,77 @@ Conquest re-said the very map: Khirkai became Khirtomor on its new masters' tong
 
 ### II. The Marching Years, 300–500
 
-In the year 300, the old quarrel between Vynskei and Caudemor found its old battlefield: Deobinte changed hands once more, in the usual direction. With that, the realm of Caudemor was extinguished; its name passes from the roll of the powers. The people of Brabry drove out Vynskei's governors and took for themselves the name Storkdaurk.
+About the year 306, the old quarrel between Vynskei and Caudemor found its old battlefield: Deobinte changed hands once more, in the usual direction. Of Caudemor nothing more is written. The people of Brabry drove out Vynskei's governors and took for themselves the name Storkdaurk.
 
-The year 325 opened with trouble: Vynskei moved against Brabry, but the northern realm of Storkdaurk threw the invaders back over the border. The same year, Rairkaasi had grown past its own strength: Jaghen and its neighbours broke away to found Kaarshaa. Within the year, the matter of Jaghen was settled with spears — Rairkaasi kept the province, Kaarshaa the grievance. That same year, Kheqshaa marched on Jararer, and by winter the province had fallen to it; the desert realm of Qidkamaad was the poorer. It was the end of Qidkamaad: 75 years of banners, done in a single season.
+In 345, Brabry held — Storkdaurk met Vynskei at the border and sent it back the way it came. Soon after, Rairkaasi had grown past its own strength: Jaghen and its neighbours broke away to found Kaarshaa. Close on that, Kaarshaa lost Jaghen to Rairkaasi, and the harvest went with it. Jararer passed by force from Qidkamaad to Kheqshaa; the tax rolls were rewritten before the dead were counted. And that was the whole of Qidkamaad's ending — no siege worth the name, no song; a surrender and a seal.
 
-In the year 350, not all was iron: a golden age dawned over Knauskastall, and its cities flourished as never before. What had once broken against Brabry's defences now carried them: Vynskei took the province, and Storkdaurk's pride with it. And that was the whole of Storkdaurk's ending — no siege worth the name, no song; a surrender and a seal. That same year, the matter of Stagrahrei was settled with spears — Rairkaasi kept the province, Kaarshaa the grievance. With that, the realm of Kaarshaa was extinguished; its name passes from the roll of the powers.
+In the year 368, these were the high years of Knauskastall — its markets loud, its walls, for a while, unneeded. Before long, what had once broken against Brabry's defences now carried them: Vynskei took the province, and Storkdaurk's pride with it. Within the year, the maps needed redrawing that year: Storkdaurk was gone from them. Close on that, it was Rairkaasi's year: Stagrahrei was taken from Kaarshaa before the passes closed. It was the end of Kaarshaa; its lands were divided among its enemies. The record here is thin, and I have not thickened it.
 
-In 375, sickness walked through Mairkhaim and was not particular. Hard on its heels, what had once broken against Khirmid's defences now carried them: Kheqshaa took the province, and Knauskastall's pride with it. Mantebinte lost Deodoria to Vynskei, and the harvest went with it. The garrison of Khirmid woke to new flags — Jamaad had declared itself overnight, and made it stick.
+About the year 399, the physicians of Mairkhaim tried everything; the gravediggers finished what was left. Before long, what had once broken against Khirmid's defences now carried them: Kheqshaa took the province, and Knauskastall's pride with it. Within the year, the appetite of Vynskei was becoming proverbial: Deodoria this time, and Mantebinte unable to answer. That same year, Kheqshaa taxed Khirmid once too often; the realm of Jamaad was the receipt.
 
-In the year 400, Kheqshaa taxed Jararer once too often; the realm of Rairmaad was the receipt. Too big to govern and too proud to shrink, Vynskei watched Midshaa walk away and become Qidkaghen. Within the year, Qidkaghen held Beossoriando against Kheqshaa, whose army went home leaner and wiser.
+In 422, word came from Jararer that it would be governed from within: thus Rairmaad, born in a single furious season. Hard on its heels, the realm of Qidkaghen was carved whole out of Vynskei's flank, with Midshaa at its heart. When a generation had passed, whatever Kheqshaa intended for Beossoriando, Qidkaghen had prepared for it twice over. Vynskei crossed into Midshaa at first thaw; Qidkaghen spent the summer pretending it could be undone.
 
-The year 425 opened with trouble: Vynskei seized Midshaa from Qidkaghen, and the border stones were moved in the night. And in that year too, the garrison of Midshaa woke to new flags — Rairghen had declared itself overnight, and made it stick. The same year, Vynskei had grown past its own strength: Staunbry and its neighbours broke away to found Storkaskei.
+About the year 449, Vynskei taxed Midshaa once too often; the realm of Rairghen was the receipt. Too big to govern and too proud to shrink, Vynskei watched Staunbry walk away and become Storkaskei. Within the year, the matter of Beossoriando was settled with spears — Rairkaasi kept the province, Qidkaghen the grievance. Before long, the realm of Qidkaghen was extinguished; its name passes from the roll of the powers.
 
-In the year 450, the matter of Beossoriando was settled with spears — Rairkaasi kept the province, Qidkaghen the grievance. And that was the whole of Qidkaghen's ending — no siege worth the name, no song; a surrender and a seal. Staunbry fell to Vynskei within the year; Storkaskei's protest is preserved, and was ignored. The same year, word came from Beossoriando that it would be governed from within: thus Caucaria, born in a single furious season. Other accounts differ; this one stood nearest the events.
-
-In 475, Vynskei had its great noon: roads mended, songs written, taxes very nearly forgiven.
+In 480, Storkaskei lost Staunbry to Vynskei, and the harvest went with it. Hard on its heels, the garrison of Beossoriando woke to new flags — Caucaria had declared itself overnight, and made it stick. Close on that, Vynskei had its great noon: roads mended, songs written, taxes very nearly forgiven.
 
 These years also built more than they burned — 8 new settlements, of which Ghashaghekh would become the best known.
 
 Names changed hands with the land: Bellatelen would be Bellahro from then on — and 1 other name with it.
 
-### III. The Wars of the Marches, 500–700
+### III. The Age of Iron, 500–700
 
-It was in 500 that Kheqshaa crossed into Beossoriando, and it did not cross back; Caucaria redrew its maps. With that, the realm of Caucaria was extinguished; its name passes from the roll of the powers. In the same season, one more province, Brabry, joined Vynskei's list; Storkaskei's name joined another. It was the end of Storkaskei; its lands were divided among its enemies.
+It was in 509 that Kheqshaa crossed into Beossoriando, and it did not cross back; Caucaria redrew its maps. The maps needed redrawing that year: Caucaria was gone from them. In the same season, one more province, Brabry, joined Vynskei's list; Storkaskei's name joined another.
 
-500: the realm of Juqe was carved whole out of Kheqshaa's flank, with Mairkhidku at its heart. The same year, the wells of Stagrdaurk gave dust, and the river shrank to an argument. Within the year, Midshaa passed by force from Rairghen to Vynskei; the tax rolls were rewritten before the dead were counted. And that was the whole of Rairghen's ending — no siege worth the name, no song; a surrender and a seal.
+In 523, of Storkaskei nothing more is written. That same year, Juqe left Kheqshaa the way grown children leave — with Mairkhidku, and without asking. Hard on its heels, no rain came to Stagrdaurk for two years together; many perished. Vynskei took Midshaa within the year, and the young desert realm of Rairghen could do little but record the loss.
 
-In 525, a great drought lay upon Stagrdaurk; the rivers shrank and the wells soured. Before long, it was Kheqshaa's year: Khirghen was taken from Juqe before the passes closed. Nor was that all: too big to govern and too proud to shrink, Kheqshaa watched Beossoriando walk away and become Tariadente.
+In the year 536, the maps needed redrawing that year: Rairghen was gone from them. Hard on its heels, Stagrdaurk cracked and browned under a sky that owed it water and paid none. Within the year, Khirghen passed by force from Juqe to Kheqshaa; the tax rolls were rewritten before the dead were counted. Soon after, too big to govern and too proud to shrink, Kheqshaa watched Beossoriando walk away and become Tariadente.
 
-In 550, not all was iron: a golden age dawned over Rairkaasi, and its cities flourished as never before. Hard on its heels, Beossolaria held — Tariadente met Kheqshaa at the border and sent it back the way it came. In the same season, Vynskei crossed into Beossoriando at first thaw; Tariadente spent the summer pretending it could be undone.
+About the year 571, for a while everything Rairkaasi touched came back gold; even its rivals banked in its coin. Beossolaria held — Tariadente met Kheqshaa at the border and sent it back the way it came. Before long, Vynskei seized Beossoriando from Tariadente, and the border stones were moved in the night. I set it down as it was told to me.
 
-The year 575 opened with trouble: a pestilence swept Stagrdaurk and carried off more than any war had. Swollen with victories, Vynskei pressed on into Beossolaria, and Tariadente could not hold it. With that, the realm of Tariadente was extinguished; its name passes from the roll of the powers. The same year, the people of Beossolaria drove out Vynskei's governors and took for themselves the name Peoriana.
+In 591, sickness walked through Stagrdaurk and was not particular. Beossolaria passed by force from Tariadente to Vynskei; the tax rolls were rewritten before the dead were counted. The realm of Tariadente was extinguished; its name passes from the roll of the powers.
 
-625: Rairkaasi, whose appetite grew with the eating, took Beossolaria next. It was the end of Peoriana: 25 years of banners, done in a single season. In the same season, the matter of Mairkhidku was settled with spears — Kheqshaa kept the province, Juqe the grievance. And that was the whole of Juqe's ending — no siege worth the name, no song; a surrender and a seal.
+In the year 616, the people of Beossolaria drove out Vynskei's governors and took for themselves the name Peoriana. Within the year, Peoriana lost Beossolaria to Rairkaasi, and the harvest went with it. Close on that, of Peoriana nothing more is written. Hard on its heels, the appetite of Kheqshaa was becoming proverbial: Mairkhidku this time, and Juqe unable to answer. And that was the whole of Juqe's ending — no siege worth the name, no song; a surrender and a seal.
 
-About the year 625, the garrison of Beossoriando woke to new flags — Tariacaria had declared itself overnight, and made it stick. Within the year, Beossoriando passed by force from Tariacaria to Rairkaasi; the tax rolls were rewritten before the dead were counted. With that, the realm of Tariacaria was extinguished; its name passes from the roll of the powers.
+About the year 648, word came from Beossoriando that it would be governed from within: thus Tariacaria, born in a single furious season. The banners of Rairkaasi entered Beossoriando, and what Tariacaria had held it held no longer. Before long, the maps needed redrawing that year: Tariacaria was gone from them.
 
-In the year 675, Kheqshaa came for Jararer and left without it; the war songs on both sides insist otherwise. Word came from Beossoriando that it would be governed from within: thus Redente, born in a single furious season.
+687: Rairmaad held Jararer against Kheqshaa, whose army went home leaner and wiser. Within the year, Rairkaasi taxed Beossoriando once too often; the realm of Redente was the receipt.
 
-The map grew fuller meanwhile: 7 new settlements took root, Khirkai first among them.
+All the while the land was filling: 7 settlements were raised in these years, Khirkai and Stagrba among them.
 
-### IV. The Age of Blood and Banners, 700–900
+### IV. The Marching Years, 700–900
 
-In 700, one more province, Beossoriando, joined Vynskei's list; Redente's name joined another. It was the end of Redente: 25 years of banners, done in a single season. That same year, what had once broken against Stagraknaurk's defences now carried them: Rairkaasi took the province, and Knauskastall's pride with it.
+In 711, there was no halting Vynskei that season: Beossoriando fell to it while Redente looked on. Before long, so ended Redente, whose banners had flown for 26 years. What had once broken against Stagraknaurk's defences now carried them: Rairkaasi took the province, and Knauskastall's pride with it. Nor was that all: the garrison of Beossoriando woke to new flags — Peoriademor had declared itself overnight, and made it stick.
 
-In the year 700, Vynskei taxed Beossoriando once too often; the realm of Peoriademor was the receipt. Soon after, Vynskei moved against Beossoriando, but the young southern realm of Peoriademor threw the invaders back over the border. The same year, Stagrdaurk held — Knauskastall met Rairkaasi at the border and sent it back the way it came. Before long, what had once broken against Jararer's defences now carried them: Kheqshaa took the province, and Rairmaad's pride with it. With that, the realm of Rairmaad was extinguished; its name passes from the roll of the powers.
+In the year 742, whatever Vynskei intended for Beossoriando, Peoriademor had prepared for it twice over. Within the year, the assault Rairkaasi loosed upon Stagrdaurk broke against Knauskastall's spears and came to nothing. Soon after, what had once broken against Jararer's defences now carried them: Kheqshaa took the province, and Rairmaad's pride with it. The maps needed redrawing that year: Rairmaad was gone from them.
 
-About the year 750, word came from Stagraknaurk that it would be governed from within: thus Storkaskei, born in a single furious season. That same year, the garrison of Jararer woke to new flags — Mishaghen had declared itself overnight, and made it stick. Close on that, what had once broken against Beossoriando's defences now carried them: Vynskei took the province, and Peoriademor's pride with it. It was the end of Peoriademor: 75 years of banners, done in a single season.
+In 768, word came from Stagraknaurk that it would be governed from within: thus Storkaskei, born in a single furious season. Kheqshaa taxed Jararer once too often; the realm of Mishaghen was the receipt. Before long, what had once broken against Beossoriando's defences now carried them: Vynskei took the province, and Peoriademor's pride with it. Hard on its heels, of Peoriademor nothing more is written.
 
-In the year 775, no rain came to Brabry for two years together; many perished. Hard on its heels, Rairkaasi crossed into Stagraknaurk at first thaw; Storkaskei spent the summer pretending it could be undone. With that, the realm of Storkaskei was extinguished; its name passes from the roll of the powers. Nor was that all: what the army wanted from Ghashkai it took; the rest it left to the crows. I set it down as it was told to me.
+In 792, a great drought lay upon Brabry; the rivers shrank and the wells soured. Within the year, Rairkaasi marched on Stagraknaurk, and by winter the province had fallen to it; Storkaskei was the poorer. Hard on its heels, the realm of Storkaskei was extinguished; its name passes from the roll of the powers. Soon after, Ghashkai burned for two nights and was not rebuilt.
 
-Jararer fell to Kheqshaa in 800; Mishaghen's protest is preserved, and was ignored. It was the end of Mishaghen: 50 years of banners, done in a single season. The people of Beossoriando drove out Vynskei's governors and took for themselves the name Lossomeonte. Before long, the appetite of Kheqshaa was becoming proverbial: Beossoriando this time, and Lossomeonte unable to answer. With that, the realm of Lossomeonte was extinguished; its name passes from the roll of the powers.
+In the year 824, Kheqshaa seized Jararer from Mishaghen, and the border stones were moved in the night. With that, the realm of Mishaghen was extinguished; its name passes from the roll of the powers. The garrison of Beossoriando woke to new flags — Lossomeonte had declared itself overnight, and made it stick. The record here is thin, and I have not thickened it.
 
-It was in 825 that Vynskei crossed into Khirkhidku, and it did not cross back; Mantebinte redrew its maps. Vynskei came for Khirkhajez and left without it; the war songs on both sides insist otherwise. In the same season, the wells of Midshaa gave dust, and the river shrank to an argument. Kheqshaa and Knauskastall met over Brakno yet again, and yet again it was Kheqshaa that kept the field.
+In 839, the banners of Kheqshaa entered Beossoriando, and what Lossomeonte had held it held no longer. Within the year, so ended Lossomeonte, whose banners had flown for 21 years. That same year, one more province, Khirkhidku, joined Vynskei's list; Mantebinte's name joined another.
 
-In the year 875, Vynskei had grown past its own strength: Midshaa and its neighbours broke away to found Kaarshaa.
+In the year 871, Mantebinte held Khirkhajez against Vynskei, whose army went home leaner and wiser. Before long, Midshaa cracked and browned under a sky that owed it water and paid none. Kheqshaa and Knauskastall met over Brakno yet again, and yet again it was Kheqshaa that kept the field. Within the year, Kaarshaa left Vynskei the way grown children leave — with Midshaa, and without asking.
 
-### V. The Wars of the Marches, 900–1100
+### V. The Age of Iron, 900–1100
 
-About the year 900, what had once broken against Khirkhajez's defences now carried them: Vynskei took the province, and Mantebinte's pride with it. It was the end of Mantebinte: 800 years of banners, done in a single season. The same year, whatever Kheqshaa intended for Vongra, Knauskastall had prepared for it twice over. Hard on its heels, there was no halting Vynskei that season: Midshaa fell to it while Kaarshaa looked on. The record here is thin, and I have not thickened it.
+About the year 906, what had once broken against Khirkhajez's defences now carried them: Vynskei took the province, and Mantebinte's pride with it. Of Mantebinte nothing more is written. Soon after, Vongra held — Knauskastall met Kheqshaa at the border and sent it back the way it came. Swollen with victories, Vynskei pressed on into Midshaa, and Kaarshaa could not hold it.
 
-In 925, what had once broken against Stagrdaurk's defences now carried them: Rairkaasi took the province, and Knauskastall's pride with it. Kaarshaa lost Khirkhidku to Vynskei, and the harvest went with it. And that was the whole of Kaarshaa's ending — no siege worth the name, no song; a surrender and a seal.
+In 937, what had once broken against Stagrdaurk's defences now carried them: Rairkaasi took the province, and Knauskastall's pride with it. A generation on, the appetite of Vynskei was becoming proverbial: Khirkhidku this time, and Kaarshaa unable to answer. So ended Kaarshaa, whose banners had flown for 82 years. Close on that, what had once broken against Vongra's defences now carried them: Kheqshaa took the province, and Knauskastall's pride with it.
 
-About the year 975, what had once broken against Vongra's defences now carried them: Kheqshaa took the province, and Knauskastall's pride with it. With that, the realm of Knauskastall was extinguished; its name passes from the roll of the powers. Vynskei crossed into Mairkhaim at first thaw; Rairkaasi spent the summer pretending it could be undone.
+About the year 991, of Knauskastall nothing more is written. It was soon after that Vynskei crossed into Mairkhaim, and it did not cross back; Rairkaasi redrew its maps. Soon after, Midshaa rose against Vynskei, and out of the rising was proclaimed the free realm of Mishkaasi.
 
-The year 975 opened with trouble: the garrison of Midshaa woke to new flags — Mishkaasi had declared itself overnight, and made it stick. Before long, one more province, Midshaa, joined Vynskei's list; Mishkaasi's name joined another. It was the end of Mishkaasi: 25 years of banners, done in a single season. The matter of Khirmid was settled with spears — Kheqshaa kept the province, Jamaad the grievance. With that, the realm of Jamaad was extinguished; its name passes from the roll of the powers.
+In 1008, one more province, Midshaa, joined Vynskei's list; Mishkaasi's name joined another. Close on that, the maps needed redrawing that year: Mishkaasi was gone from them. Soon after, the appetite of Kheqshaa was becoming proverbial: Khirmid this time, and Jamaad unable to answer. And that was the whole of Jamaad's ending — no siege worth the name, no song; a surrender and a seal.
 
-1025: Kheqshaa moved against Beossolaria, but Rairkaasi threw the invaders back over the border. And in that year too, the appetite of Vynskei was becoming proverbial: Jaghen this time, and Rairkaasi unable to answer. Shinkhash cracked and browned under a sky that owed it water and paid none. The old quarrel between Vynskei and Rairkaasi found its old battlefield: Beossolaria changed hands once more, in the usual direction.
+1038: Rairkaasi held Beossolaria against Kheqshaa, whose army went home leaner and wiser. Close on that, Vynskei, whose appetite grew with the eating, took Jaghen next. Soon after, the wells of Shinkhash gave dust, and the river shrank to an argument. Hard on its heels, the old quarrel between Vynskei and Rairkaasi found its old battlefield: Beossolaria changed hands once more, in the usual direction.
 
-The year 1050 opened with trouble: Midshaa rose against Vynskei, and out of the rising was proclaimed the free realm of Jashaa. The same year, the garrison of Beossolaria woke to new flags — Tariana had declared itself overnight, and made it stick. Hard on its heels, Kheqshaa, whose appetite grew with the eating, took Beossolaria next. And that was the whole of Tariana's ending — no siege worth the name, no song; a surrender and a seal.
+In the year 1072, the garrison of Midshaa woke to new flags — Jashaa had declared itself overnight, and made it stick. Before long, Beossolaria rose against Vynskei, and out of the rising was proclaimed the free realm of Tariana. Close on that, Kheqshaa seized Beossolaria from Tariana, and the border stones were moved in the night. It was the end of Tariana: 24 years of banners, done in a single season.
 
-About the year 1075, no rain came to Stagrba for two years together; many perished. I set it down as it was told to me.
+The year 1099 opened with trouble: a great drought lay upon Stagrba; the rivers shrank and the wells soured.
 
-The occupiers kept the land-words and changed the rest, and so Fjangry is written Fjanqe in every ledger since — and 1 other name with it.
+Conquest re-said the very map: Fjangry became Fjanqe on its new masters' tongues — and 1 other name with it.
 
 *So the matter stands in 1100: 5 realms endure, and Kheqshaa is mightiest among them, holding 11 provinces. 1 town lies in ruins; their names are kept in this book, which is more than their walls kept.*
 
@@ -462,129 +462,129 @@ The occupiers kept the land-words and changed the rest, and so Fjangry is writte
 
 *The ledger behind the chronicle: every event, dated, unadorned.*
 
-- **100 after the Landing** — Kheqshaa's invasion of Jararer was thrown back by Caudemor.
-- **100 after the Landing** — A plague swept Stagrba; many perished.
-- **125 after the Landing** — Vynskei's invasion of Brabry was thrown back by Caudemor.
-- **150 after the Landing** — Kheqshaa seized Midghen from Jakaasi.
-- **150 after the Landing** — The realm of Jakaasi was extinguished.
-- **150 after the Landing** — Rairkaasi's invasion of Stagraknaurk was thrown back by Knauskastall.
-- **175 after the Landing** — Vynskei's invasion of Brabry was thrown back by Caudemor.
-- **175 after the Landing** — A plague swept Deodoria; many perished.
-- **200 after the Landing** — Kheqshaa's invasion of Jararer was thrown back by Caudemor.
-- **200 after the Landing** — Rairkaasi's invasion of Khirkhidku was thrown back by Mantebinte.
-- **200 after the Landing** — A golden age dawned over Mantebinte; its cities flourished as never before.
-- **225 after the Landing** — Vynskei's invasion of Brabry was thrown back by Caudemor.
-- **250 after the Landing** — Kheqshaa seized Jararer from Caudemor.
-- **250 after the Landing** — A plague swept Khirkhajez; many perished.
-- **275 after the Landing** — Vynskei seized Brabry from Caudemor.
-- **275 after the Landing** — Kheqshaa's invasion of Khirmid was thrown back by Knauskastall.
-- **275 after the Landing** — Jararer rose against Kheqshaa and declared the free realm of Qidkamaad.
-- **275 after the Landing** — A plague swept Beossolaria; many perished.
-- **300 after the Landing** — Vynskei seized Deobinte from Caudemor.
-- **300 after the Landing** — The realm of Caudemor was extinguished.
-- **300 after the Landing** — Brabry rose against Vynskei and declared the free realm of Storkdaurk.
-- **325 after the Landing** — Vynskei's invasion of Brabry was thrown back by Storkdaurk.
-- **325 after the Landing** — Jaghen and 1 neighbouring province(s) broke away from Rairkaasi to found the realm of Kaarshaa.
-- **350 after the Landing** — Rairkaasi seized Jaghen from Kaarshaa.
-- **350 after the Landing** — Kheqshaa seized Jararer from Qidkamaad.
-- **350 after the Landing** — The realm of Qidkamaad was extinguished.
-- **350 after the Landing** — A golden age dawned over Knauskastall; its cities flourished as never before.
-- **375 after the Landing** — Vynskei seized Brabry from Storkdaurk.
-- **375 after the Landing** — The realm of Storkdaurk was extinguished.
-- **375 after the Landing** — Rairkaasi seized Stagrahrei from Kaarshaa.
-- **375 after the Landing** — The realm of Kaarshaa was extinguished.
-- **375 after the Landing** — A plague swept Mairkhaim; many perished.
-- **400 after the Landing** — Kheqshaa seized Khirmid from Knauskastall.
-- **400 after the Landing** — Vynskei seized Deodoria from Mantebinte.
-- **400 after the Landing** — Khirmid rose against Kheqshaa and declared the free realm of Jamaad.
-- **400 after the Landing** — Jararer rose against Kheqshaa and declared the free realm of Rairmaad.
-- **400 after the Landing** — Midshaa and 1 neighbouring province(s) broke away from Vynskei to found the realm of Qidkaghen.
-- **425 after the Landing** — Kheqshaa's invasion of Beossoriando was thrown back by Qidkaghen.
-- **425 after the Landing** — Vynskei seized Midshaa from Qidkaghen.
-- **425 after the Landing** — Midshaa rose against Vynskei and declared the free realm of Rairghen.
-- **425 after the Landing** — Staunbry and 1 neighbouring province(s) broke away from Vynskei to found the realm of Storkaskei.
-- **450 after the Landing** — Rairkaasi seized Beossoriando from Qidkaghen.
-- **450 after the Landing** — The realm of Qidkaghen was extinguished.
-- **475 after the Landing** — Vynskei seized Staunbry from Storkaskei.
-- **475 after the Landing** — Beossoriando rose against Rairkaasi and declared the free realm of Caucaria.
-- **475 after the Landing** — A golden age dawned over Vynskei; its cities flourished as never before.
-- **500 after the Landing** — Kheqshaa seized Beossoriando from Caucaria.
-- **500 after the Landing** — The realm of Caucaria was extinguished.
-- **500 after the Landing** — Vynskei seized Brabry from Storkaskei.
-- **500 after the Landing** — The realm of Storkaskei was extinguished.
-- **500 after the Landing** — Mairkhidku and 1 neighbouring province(s) broke away from Kheqshaa to found the realm of Juqe.
-- **500 after the Landing** — A long drought gripped Stagrdaurk; many perished.
-- **525 after the Landing** — Vynskei seized Midshaa from Rairghen.
-- **525 after the Landing** — The realm of Rairghen was extinguished.
-- **525 after the Landing** — A long drought gripped Stagrdaurk; many perished.
-- **550 after the Landing** — Kheqshaa seized Khirghen from Juqe.
-- **550 after the Landing** — Beossoriando and 1 neighbouring province(s) broke away from Kheqshaa to found the realm of Tariadente.
-- **550 after the Landing** — A golden age dawned over Rairkaasi; its cities flourished as never before.
-- **575 after the Landing** — Kheqshaa's invasion of Beossolaria was thrown back by Tariadente.
-- **575 after the Landing** — Vynskei seized Beossoriando from Tariadente.
-- **575 after the Landing** — A plague swept Stagrdaurk; many perished.
-- **600 after the Landing** — Vynskei seized Beossolaria from Tariadente.
-- **600 after the Landing** — The realm of Tariadente was extinguished.
-- **600 after the Landing** — Beossolaria rose against Vynskei and declared the free realm of Peoriana.
-- **625 after the Landing** — Rairkaasi seized Beossolaria from Peoriana.
-- **625 after the Landing** — The realm of Peoriana was extinguished.
-- **625 after the Landing** — Kheqshaa seized Mairkhidku from Juqe.
-- **625 after the Landing** — The realm of Juqe was extinguished.
-- **625 after the Landing** — Beossoriando rose against Vynskei and declared the free realm of Tariacaria.
-- **650 after the Landing** — Rairkaasi seized Beossoriando from Tariacaria.
-- **650 after the Landing** — The realm of Tariacaria was extinguished.
-- **675 after the Landing** — Kheqshaa's invasion of Jararer was thrown back by Rairmaad.
-- **675 after the Landing** — Beossoriando rose against Rairkaasi and declared the free realm of Redente.
-- **700 after the Landing** — Vynskei seized Beossoriando from Redente.
-- **700 after the Landing** — The realm of Redente was extinguished.
-- **700 after the Landing** — Rairkaasi seized Stagraknaurk from Knauskastall.
-- **700 after the Landing** — Beossoriando rose against Vynskei and declared the free realm of Peoriademor.
-- **725 after the Landing** — Vynskei's invasion of Beossoriando was thrown back by Peoriademor.
-- **725 after the Landing** — Rairkaasi's invasion of Stagrdaurk was thrown back by Knauskastall.
-- **750 after the Landing** — Kheqshaa seized Jararer from Rairmaad.
-- **750 after the Landing** — The realm of Rairmaad was extinguished.
-- **750 after the Landing** — Stagraknaurk rose against Rairkaasi and declared the free realm of Storkaskei.
-- **750 after the Landing** — Jararer rose against Kheqshaa and declared the free realm of Mishaghen.
-- **775 after the Landing** — Vynskei seized Beossoriando from Peoriademor.
-- **775 after the Landing** — The realm of Peoriademor was extinguished.
-- **775 after the Landing** — A long drought gripped Brabry; many perished.
-- **800 after the Landing** — Rairkaasi seized Stagraknaurk from Storkaskei.
-- **800 after the Landing** — The realm of Storkaskei was extinguished.
-- **800 after the Landing** — Ghashkai was stormed and left a ruin.
-- **800 after the Landing** — Kheqshaa seized Jararer from Mishaghen.
-- **800 after the Landing** — The realm of Mishaghen was extinguished.
-- **800 after the Landing** — Beossoriando rose against Vynskei and declared the free realm of Lossomeonte.
-- **825 after the Landing** — Kheqshaa seized Beossoriando from Lossomeonte.
-- **825 after the Landing** — The realm of Lossomeonte was extinguished.
-- **825 after the Landing** — Vynskei seized Khirkhidku from Mantebinte.
-- **850 after the Landing** — Vynskei's invasion of Khirkhajez was thrown back by Mantebinte.
-- **850 after the Landing** — A long drought gripped Midshaa; many perished.
-- **875 after the Landing** — Kheqshaa seized Brakno from Knauskastall.
-- **875 after the Landing** — Midshaa and 1 neighbouring province(s) broke away from Vynskei to found the realm of Kaarshaa.
-- **900 after the Landing** — Vynskei seized Khirkhajez from Mantebinte.
-- **900 after the Landing** — The realm of Mantebinte was extinguished.
-- **900 after the Landing** — Kheqshaa's invasion of Vongra was thrown back by Knauskastall.
-- **925 after the Landing** — Vynskei seized Midshaa from Kaarshaa.
-- **925 after the Landing** — Rairkaasi seized Stagrdaurk from Knauskastall.
-- **950 after the Landing** — Vynskei seized Khirkhidku from Kaarshaa.
-- **950 after the Landing** — The realm of Kaarshaa was extinguished.
-- **975 after the Landing** — Kheqshaa seized Vongra from Knauskastall.
-- **975 after the Landing** — The realm of Knauskastall was extinguished.
-- **975 after the Landing** — Vynskei seized Mairkhaim from Rairkaasi.
-- **975 after the Landing** — Midshaa rose against Vynskei and declared the free realm of Mishkaasi.
-- **1000 after the Landing** — Vynskei seized Midshaa from Mishkaasi.
-- **1000 after the Landing** — The realm of Mishkaasi was extinguished.
-- **1000 after the Landing** — Kheqshaa seized Khirmid from Jamaad.
-- **1000 after the Landing** — The realm of Jamaad was extinguished.
-- **1025 after the Landing** — Kheqshaa's invasion of Beossolaria was thrown back by Rairkaasi.
-- **1025 after the Landing** — Vynskei seized Jaghen from Rairkaasi.
-- **1025 after the Landing** — A long drought gripped Shinkhash; many perished.
-- **1050 after the Landing** — Vynskei seized Beossolaria from Rairkaasi.
-- **1050 after the Landing** — Midshaa rose against Vynskei and declared the free realm of Jashaa.
-- **1050 after the Landing** — Beossolaria rose against Vynskei and declared the free realm of Tariana.
-- **1075 after the Landing** — Kheqshaa seized Beossolaria from Tariana.
-- **1075 after the Landing** — The realm of Tariana was extinguished.
-- **1075 after the Landing** — A long drought gripped Stagrba; many perished.
+- **123 after the Landing** — Kheqshaa's invasion of Jararer was thrown back by Caudemor.
+- **124 after the Landing** — A plague swept Stagrba; many perished.
+- **133 after the Landing** — Vynskei's invasion of Brabry was thrown back by Caudemor.
+- **162 after the Landing** — Kheqshaa seized Midghen from Jakaasi.
+- **169 after the Landing** — The realm of Jakaasi was extinguished.
+- **172 after the Landing** — Rairkaasi's invasion of Stagraknaurk was thrown back by Knauskastall.
+- **191 after the Landing** — Vynskei's invasion of Brabry was thrown back by Caudemor.
+- **196 after the Landing** — A plague swept Deodoria; many perished.
+- **204 after the Landing** — Kheqshaa's invasion of Jararer was thrown back by Caudemor.
+- **224 after the Landing** — Rairkaasi's invasion of Khirkhidku was thrown back by Mantebinte.
+- **224 after the Landing** — A golden age dawned over Mantebinte; its cities flourished as never before.
+- **238 after the Landing** — Vynskei's invasion of Brabry was thrown back by Caudemor.
+- **263 after the Landing** — Kheqshaa seized Jararer from Caudemor.
+- **274 after the Landing** — A plague swept Khirkhajez; many perished.
+- **296 after the Landing** — Vynskei seized Brabry from Caudemor.
+- **297 after the Landing** — Kheqshaa's invasion of Khirmid was thrown back by Knauskastall.
+- **298 after the Landing** — Jararer rose against Kheqshaa and declared the free realm of Qidkamaad.
+- **298 after the Landing** — A plague swept Beossolaria; many perished.
+- **306 after the Landing** — Vynskei seized Deobinte from Caudemor.
+- **314 after the Landing** — The realm of Caudemor was extinguished.
+- **320 after the Landing** — Brabry rose against Vynskei and declared the free realm of Storkdaurk.
+- **345 after the Landing** — Vynskei's invasion of Brabry was thrown back by Storkdaurk.
+- **348 after the Landing** — Jaghen and 1 neighbouring province(s) broke away from Rairkaasi to found the realm of Kaarshaa.
+- **364 after the Landing** — Rairkaasi seized Jaghen from Kaarshaa.
+- **366 after the Landing** — Kheqshaa seized Jararer from Qidkamaad.
+- **366 after the Landing** — The realm of Qidkamaad was extinguished.
+- **368 after the Landing** — A golden age dawned over Knauskastall; its cities flourished as never before.
+- **393 after the Landing** — Vynskei seized Brabry from Storkdaurk.
+- **395 after the Landing** — The realm of Storkdaurk was extinguished.
+- **399 after the Landing** — Rairkaasi seized Stagrahrei from Kaarshaa.
+- **399 after the Landing** — The realm of Kaarshaa was extinguished.
+- **399 after the Landing** — A plague swept Mairkhaim; many perished.
+- **418 after the Landing** — Kheqshaa seized Khirmid from Knauskastall.
+- **420 after the Landing** — Vynskei seized Deodoria from Mantebinte.
+- **420 after the Landing** — Khirmid rose against Kheqshaa and declared the free realm of Jamaad.
+- **422 after the Landing** — Jararer rose against Kheqshaa and declared the free realm of Rairmaad.
+- **423 after the Landing** — Midshaa and 1 neighbouring province(s) broke away from Vynskei to found the realm of Qidkaghen.
+- **449 after the Landing** — Kheqshaa's invasion of Beossoriando was thrown back by Qidkaghen.
+- **449 after the Landing** — Vynskei seized Midshaa from Qidkaghen.
+- **449 after the Landing** — Midshaa rose against Vynskei and declared the free realm of Rairghen.
+- **449 after the Landing** — Staunbry and 1 neighbouring province(s) broke away from Vynskei to found the realm of Storkaskei.
+- **464 after the Landing** — Rairkaasi seized Beossoriando from Qidkaghen.
+- **469 after the Landing** — The realm of Qidkaghen was extinguished.
+- **480 after the Landing** — Vynskei seized Staunbry from Storkaskei.
+- **484 after the Landing** — Beossoriando rose against Rairkaasi and declared the free realm of Caucaria.
+- **497 after the Landing** — A golden age dawned over Vynskei; its cities flourished as never before.
+- **509 after the Landing** — Kheqshaa seized Beossoriando from Caucaria.
+- **519 after the Landing** — The realm of Caucaria was extinguished.
+- **519 after the Landing** — Vynskei seized Brabry from Storkaskei.
+- **523 after the Landing** — The realm of Storkaskei was extinguished.
+- **523 after the Landing** — Mairkhidku and 1 neighbouring province(s) broke away from Kheqshaa to found the realm of Juqe.
+- **524 after the Landing** — A long drought gripped Stagrdaurk; many perished.
+- **527 after the Landing** — Vynskei seized Midshaa from Rairghen.
+- **536 after the Landing** — The realm of Rairghen was extinguished.
+- **543 after the Landing** — A long drought gripped Stagrdaurk; many perished.
+- **555 after the Landing** — Kheqshaa seized Khirghen from Juqe.
+- **570 after the Landing** — Beossoriando and 1 neighbouring province(s) broke away from Kheqshaa to found the realm of Tariadente.
+- **571 after the Landing** — A golden age dawned over Rairkaasi; its cities flourished as never before.
+- **576 after the Landing** — Kheqshaa's invasion of Beossolaria was thrown back by Tariadente.
+- **584 after the Landing** — Vynskei seized Beossoriando from Tariadente.
+- **591 after the Landing** — A plague swept Stagrdaurk; many perished.
+- **605 after the Landing** — Vynskei seized Beossolaria from Tariadente.
+- **616 after the Landing** — The realm of Tariadente was extinguished.
+- **616 after the Landing** — Beossolaria rose against Vynskei and declared the free realm of Peoriana.
+- **631 after the Landing** — Rairkaasi seized Beossolaria from Peoriana.
+- **642 after the Landing** — The realm of Peoriana was extinguished.
+- **647 after the Landing** — Kheqshaa seized Mairkhidku from Juqe.
+- **647 after the Landing** — The realm of Juqe was extinguished.
+- **648 after the Landing** — Beossoriando rose against Vynskei and declared the free realm of Tariacaria.
+- **667 after the Landing** — Rairkaasi seized Beossoriando from Tariacaria.
+- **669 after the Landing** — The realm of Tariacaria was extinguished.
+- **687 after the Landing** — Kheqshaa's invasion of Jararer was thrown back by Rairmaad.
+- **689 after the Landing** — Beossoriando rose against Rairkaasi and declared the free realm of Redente.
+- **711 after the Landing** — Vynskei seized Beossoriando from Redente.
+- **715 after the Landing** — The realm of Redente was extinguished.
+- **716 after the Landing** — Rairkaasi seized Stagraknaurk from Knauskastall.
+- **716 after the Landing** — Beossoriando rose against Vynskei and declared the free realm of Peoriademor.
+- **742 after the Landing** — Vynskei's invasion of Beossoriando was thrown back by Peoriademor.
+- **746 after the Landing** — Rairkaasi's invasion of Stagrdaurk was thrown back by Knauskastall.
+- **764 after the Landing** — Kheqshaa seized Jararer from Rairmaad.
+- **767 after the Landing** — The realm of Rairmaad was extinguished.
+- **768 after the Landing** — Stagraknaurk rose against Rairkaasi and declared the free realm of Storkaskei.
+- **768 after the Landing** — Jararer rose against Kheqshaa and declared the free realm of Mishaghen.
+- **788 after the Landing** — Vynskei seized Beossoriando from Peoriademor.
+- **789 after the Landing** — The realm of Peoriademor was extinguished.
+- **792 after the Landing** — A long drought gripped Brabry; many perished.
+- **817 after the Landing** — Rairkaasi seized Stagraknaurk from Storkaskei.
+- **822 after the Landing** — The realm of Storkaskei was extinguished.
+- **823 after the Landing** — Ghashkai was stormed and left a ruin.
+- **824 after the Landing** — Kheqshaa seized Jararer from Mishaghen.
+- **824 after the Landing** — The realm of Mishaghen was extinguished.
+- **824 after the Landing** — Beossoriando rose against Vynskei and declared the free realm of Lossomeonte.
+- **839 after the Landing** — Kheqshaa seized Beossoriando from Lossomeonte.
+- **845 after the Landing** — The realm of Lossomeonte was extinguished.
+- **845 after the Landing** — Vynskei seized Khirkhidku from Mantebinte.
+- **871 after the Landing** — Vynskei's invasion of Khirkhajez was thrown back by Mantebinte.
+- **874 after the Landing** — A long drought gripped Midshaa; many perished.
+- **879 after the Landing** — Kheqshaa seized Brakno from Knauskastall.
+- **888 after the Landing** — Midshaa and 1 neighbouring province(s) broke away from Vynskei to found the realm of Kaarshaa.
+- **906 after the Landing** — Vynskei seized Khirkhajez from Mantebinte.
+- **920 after the Landing** — The realm of Mantebinte was extinguished.
+- **922 after the Landing** — Kheqshaa's invasion of Vongra was thrown back by Knauskastall.
+- **936 after the Landing** — Vynskei seized Midshaa from Kaarshaa.
+- **937 after the Landing** — Rairkaasi seized Stagrdaurk from Knauskastall.
+- **966 after the Landing** — Vynskei seized Khirkhidku from Kaarshaa.
+- **970 after the Landing** — The realm of Kaarshaa was extinguished.
+- **980 after the Landing** — Kheqshaa seized Vongra from Knauskastall.
+- **991 after the Landing** — The realm of Knauskastall was extinguished.
+- **995 after the Landing** — Vynskei seized Mairkhaim from Rairkaasi.
+- **997 after the Landing** — Midshaa rose against Vynskei and declared the free realm of Mishkaasi.
+- **1008 after the Landing** — Vynskei seized Midshaa from Mishkaasi.
+- **1023 after the Landing** — The realm of Mishkaasi was extinguished.
+- **1024 after the Landing** — Kheqshaa seized Khirmid from Jamaad.
+- **1024 after the Landing** — The realm of Jamaad was extinguished.
+- **1038 after the Landing** — Kheqshaa's invasion of Beossolaria was thrown back by Rairkaasi.
+- **1043 after the Landing** — Vynskei seized Jaghen from Rairkaasi.
+- **1045 after the Landing** — A long drought gripped Shinkhash; many perished.
+- **1062 after the Landing** — Vynskei seized Beossolaria from Rairkaasi.
+- **1072 after the Landing** — Midshaa rose against Vynskei and declared the free realm of Jashaa.
+- **1074 after the Landing** — Beossolaria rose against Vynskei and declared the free realm of Tariana.
+- **1098 after the Landing** — Kheqshaa seized Beossolaria from Tariana.
+- **1098 after the Landing** — The realm of Tariana was extinguished.
+- **1099 after the Landing** — A long drought gripped Stagrba; many perished.
 
 ## A Traveller's Account, in the year 1100
 
@@ -598,7 +598,7 @@ Thaurnafjysk lies 24 leagues on from Stagrba, over hard, treeless miles. The way
 
 From Thaurnafjysk the road runs 13 leagues to Bellahro, through grass as high as the stirrup. The way crosses Brabry. We forded twice; I stopped counting wet boots. Bellahro itself — the river hall — is a town; its market is all grain and livestock. The people here still say Bellatelen; the ledgers say Bellahro. I bought bread in both names.
 
-The Khirqe road leaves Bellahro by the long way, through gold grass and scattered trees. The way crosses Jararer and then Khirkhukha. We forded once, boots held high. The road climbs some 300 metres before it thinks better of it. We passed what remains of Ghashkai — stormed in 800 — and did not stop long. Khirqe itself — the sea home — is a town with its face to the sea; its market is all livestock.
+The Khirqe road leaves Bellahro by the long way, through gold grass and scattered trees. The way crosses Jararer and then Khirkhukha. We forded once, boots held high. The road climbs some 300 metres before it thinks better of it. We passed what remains of Ghashkai — stormed in 823 — and did not stop long. Khirqe itself — the sea home — is a town with its face to the sea; its market is all livestock.
 
 Out of Khirqe, then, toward Midshu, through more of the same. We forded once, boots held high. Midshu itself — the grass fort — is a village with its face to the sea; its market is all livestock and horses.
 
