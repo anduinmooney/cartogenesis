@@ -8,6 +8,48 @@ project's "releases" are work sessions.
 
 ---
 
+## Session 25 — 2026-07-13 — Chartered expeditions, and the Cartographer's Folio
+
+**Theme:** the user asked for two big things: a genuinely new way to INTERACT
+with a world, and a visual overhaul that does not look AI-made ("this has the
+classic AI palette... include moving elements, and designs for all visual
+elements, including popups"). Both delivered; the biggest session yet by
+surface area.
+
+### L18 — Chartered expeditions (the new way in)
+Point at any two towns and the world is walked. `src/expedition.ts` routes
+A* over the real terrain grid — exact arithmetic, total tie-breaking, so the
+same pair walks the same route on every machine. Roads are cheap, deserts and
+lava dear, climbing costs, and water is passable at a price: island towns are
+reached by sea and the journal calls it a voyage. The route is told as a
+dated journal from its actual cells — regions crossed, fords, climbs,
+volcanoes "smoking off to one side", ruins nobody suggests camping in, rest
+stops at real towns selling their real goods. Pure and on-demand: never runs
+inside generateWorld, and a test charters two crossings then asserts every
+fingerprint is untouched. In the app: ⚑ Expedition → click origin → click
+destination → the route inks itself across the plate (dashed plan, solid
+march, a flag at its head) while the journal writes itself leg by leg,
+entity-linkified like everything else.
+
+### The Cartographer's Folio (the overhaul)
+The dark-slate-and-teal dashboard is gone. The app is an atlas folio open on
+a leather desk — aged paper built from layered CSS gradients (zero external
+assets, no webfonts), the map framed as an engraved plate with the layer
+switcher as thumbed index tabs, ledger stats with dotted leaders, small-caps
+gilt heads, wax-seal Survey button, paper-chit tooltips set half a degree
+askew, marginalia detail cards, and a gazetteer that opens like a book.
+Moving elements: a compass rose that leans into every pan and rights itself,
+title rules that draw themselves, notes that unfold, journal entries that
+ink in. Palette: oxblood, verdigris, gilt, warm ink — no teal, no glow.
+
+**229 tests** (6 new). Fingerprints byte-identical (expedition + design are
+pure overlay/chrome). Verified in-browser end-to-end: a 17-day, 8-leg
+crossing from Deoliria, 478 route-ink pixels sampled off the canvas, mobile
+single-column, zero console errors. A `window.__cartogenesis` handle now
+exposes {world, view} for session tooling — pixels no longer need scraping.
+
+---
+
 ## Session 24 — 2026-07-13 — The map tells its story, and the skerries come home
 
 **Theme:** user notes first (three), then the heavy item queued since Session

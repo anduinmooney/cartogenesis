@@ -1,16 +1,17 @@
-# Next Session — Session 25
+# Next Session — Session 26
 
-> Read `PROJECT_STATE.md` first, then this. Session 24 delivered the user's
-> three notes (calendar wording, the double-year pin, layer-scoped map
-> markers) and the islets merge (D-026 — the queued heavy item; sim hash
-> moved deliberately). The engine and app have no known debt items left from
-> the Session 16 overhaul list. What remains is polish and whatever reading
-> the worlds reveals.
+> Read `PROJECT_STATE.md` first, then this. Session 25 added L18 chartered
+> expeditions (interactive A* routes + journals, pure overlay) and the
+> Cartographer's Folio (full app redesign — paper/ink/oxblood, no AI
+> palette; one committed look, all CSS). The app now has a verification
+> handle: `window.__cartogenesis` = {world, view}. Expedition polish ideas:
+> weather along the march, a "share this crossing" link (?from=&to= in the
+> URL), expeditions in the exported gazetteer, hoverable route waypoints.
 
 ## Start-of-session checklist
 
-1. `node --version` → ≥ 22.6. `npm test` green first (baseline: **223**).
-2. Skim `CHANGELOG.md` (top, Session 24) and `DECISIONS.md` (D-026 before
+1. `node --version` → ≥ 22.6. `npm test` green first (baseline: **229**).
+2. Skim `CHANGELOG.md` (top, Session 25) and `DECISIONS.md` (D-026 before
    region work, D-025 before narrative work).
 3. **Rebuild `build-web` LAST after any src/ edit**; new engine module →
    `MODULES`, new web helper → `WEB_MODULES`. Then `make-samples` if output
@@ -52,8 +53,12 @@ Generate three seeds, read their gazetteers end to end, and fix whatever reads
 worst. (This is how the duplicate-rename bug, the volcano clutter, and the
 "Realms 3 / Surviving 13" contradiction were found — reading, not planning.)
 
-# Option D — Marker polish (builds on Session 24)
+# Option D — Expedition & marker polish (builds on Sessions 24–25)
 
+- Shareable crossings: read ?from=&to= from the URL and charter on load;
+  write them when an expedition completes.
+- The journal in the gazetteer: a chartered crossing could be appended to
+  the exported .md (still on-demand; never in generateWorld).
 - Make canvas markers hoverable: hit-test faith/realm/ruin markers in the
   existing mousemove handler and show the entity tooltip (the entity index
   already has every one of these names).

@@ -61,6 +61,9 @@ Legend: ✅ done · 🔜 next · ⬜ planned
   metre-accurate contour intervals.
 - ✅ **L17b/c — Sagas & the traveller.** Verse founding-sagas per culture and a
   first-person road journey, both under the narrator's three laws (Session 21).
+- ✅ **Expeditions & the Folio.** L18 chartered expeditions (point at two
+  towns; a deterministic route is walked and journalled) and the full
+  Cartographer's Folio redesign of the app (Session 25, user direction).
 - ✅ **Story markers & islets merge.** Layer-scoped map markers (faiths named
   on their ground, realm labels that follow the scrubber, era-event glyphs,
   region names, ruins) and the sub-12-cell islet merge, D-026 (Session 24,

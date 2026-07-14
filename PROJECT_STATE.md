@@ -4,9 +4,9 @@
 > session. If you read only one file, read this one, then `NEXT_SESSION.md`.
 
 - **Project:** Cartogenesis — a deterministic procedural world generation engine.
-- **As of:** Session 24 · 2026-07-13 (Fable)
+- **As of:** Session 25 · 2026-07-13 (Fable)
 - **Engine version:** 0.13.0 (runs in Node **and** the browser)
-- **Health:** 🟢 Green. 223 tests pass (CI enforced). **Reproducible across
+- **Health:** 🟢 Green. 229 tests pass (CI enforced). **Reproducible across
   Node builds and platforms** — the engine uses only exactly-specified
   arithmetic, guarded by an exact bit-level hash (D-022 resolved, Session 16).
 - **Repo:** https://github.com/anduinmooney/cartogenesis (public, `main`).
@@ -29,6 +29,14 @@
 - **Sagas and a traveller.** One founding saga per culture in verse (keeping
   the pre-conquest names the maps gave up), and a named traveller who walks the
   real road network and tells every leg from the actual path cells.
+- **Chartered expeditions (L18).** Click any two towns and the world is
+  walked: a deterministic A* route over the real terrain (roads cheap, lava
+  dear, sea passable at a price) inks itself across the map while a dated
+  journal writes itself leg by leg from the route's actual cells. Pure,
+  on-demand, invisible to the fingerprints — and tested for it.
+- **The Cartographer's Folio.** The app no longer looks like a dashboard: an
+  atlas folio on a leather desk, engraved plate, index-tab layers, wax-seal
+  button, a compass rose that leans into every pan. All CSS + one inline SVG.
 - **The map tells its story, tab by tab.** Each layer curates its own
   markers: Faiths names every faith on its ground (and stars where it arose),
   Powers shows realm names that follow the time scrubber plus each era's
@@ -87,7 +95,7 @@
 - CLI: `node src/cli.ts generate --seed <s> [--width --height --sea-level …]`.
 - **Balanced history:** outcomes vary by world — some fragment among rival
   powers, some unify under an empire (mean top-power share ~59%, not ~94%).
-- 223 passing tests, incl. exact + simulation determinism guards, an
+- 229 passing tests, incl. exact + simulation determinism guards, an
   approximated-math lint, river mass-conservation, road
   no-cycle, region full-partition, and a balance-of-power regression guard.
 - A 6-world **multi-layer atlas** (6 layers + posters + gazetteers) + viewer
@@ -124,6 +132,8 @@
 | Per-world calendars (year-zero origins) | ✅ done |
 | Layer-scoped map markers (faiths · realms · ruins · era events) | ✅ done |
 | Islets merge (D-026, declared sim-hash move) | ✅ done |
+| L18 chartered expeditions (interactive routes + journals) | ✅ done |
+| The Cartographer's Folio (full app redesign) | ✅ done |
 | Chronicler voices · sentence frames · widened banks | ✅ done |
 | narrative polish · reading pass · more | 🔜 the world keeps deepening |
 
@@ -131,7 +141,7 @@
 
 ```bash
 node --version            # need ≥ 22.6
-npm test                  # 223 tests, all offline
+npm test                  # 229 tests, all offline
 node src/cli.ts generate --seed hello   # writes 10 artifacts to ./output
 node scripts/make-samples.ts   # rebuild docs/ atlas (maps + posters + reports)
 node scripts/build-web.ts      # rebuild docs/app/ browser bundle (after src/ edits!)
